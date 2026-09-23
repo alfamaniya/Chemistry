@@ -34,13 +34,7 @@
 
   <div id="element-modal" class="modal" hidden aria-hidden="true">
     <div class="modal-backdrop" data-close-modal></div>
-    <section
-      class="modal-dialog"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modal-title"
-      aria-describedby="modal-summary"
-    >
+    <section class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-summary">
       <button class="modal-close" type="button" aria-label="بستن" data-close-modal>×</button>
       <div class="modal-number" id="modal-number"></div>
       <div class="modal-symbol" id="modal-symbol"></div>
@@ -69,30 +63,16 @@
 
     const categoryColors = {
       metals: "#2563eb",
-      "non-metals": "#16a34a",
-      "semi-metals": "#d97706",
-      unclassified: "#64748b",
-      hydrogen: "#dc2626",
-      "alkali-metals": "#b91c1c",
-      "alkaline-earth-metals": "#ea580c",
-      "group-3": "#7c3aed",
-      "group-4": "#6d28d9",
-      "group-5": "#5b21b6",
-      "group-6": "#4338ca",
-      "group-7": "#3730a3",
-      "group-8": "#1d4ed8",
-      "group-9": "#0369a1",
-      "group-10": "#0f766e",
-      "group-11": "#15803d",
-      "group-12": "#4d7c0f",
-      "group-13": "#ca8a04",
-      "group-14": "#c2410c",
-      pnictogens: "#be123c",
-      chalcogens: "#c026d3",
+      nonmetals: "#16a34a",
+      metalloids: "#d97706",
+      alkali_metals: "#b91c1c",
+      alkaline_earth_metals: "#ea580c",
+      transition_metals: "#1d4ed8",
+      post_transition_metals: "#c2410c",
       halogens: "#7e22ce",
-      "noble-gases": "#0891b2",
-      lanthanides: "#9333ea",
-      actinides: "#a21caf"
+      noble_gases: "#0891b2",
+      lanthanoids: "#9333ea",
+      actinoids: "#a21caf"
     };
 
     Promise.all([
@@ -114,53 +94,34 @@
           } else if (element.atomicNumber === 2) {
             [row, column] = [1, 18];
           } else if (element.atomicNumber >= 3 && element.atomicNumber <= 10) {
-            const positions = {
-              3:[2,1], 4:[2,2], 5:[2,13], 6:[2,14],
-              7:[2,15], 8:[2,16], 9:[2,17], 10:[2,18]
-            };
+            const positions = {3:[2,1],4:[2,2],5:[2,13],6:[2,14],7:[2,15],8:[2,16],9:[2,17],10:[2,18]};
             [row, column] = positions[element.atomicNumber];
           } else if (element.atomicNumber >= 11 && element.atomicNumber <= 18) {
-            const positions = {
-              11:[3,1], 12:[3,2], 13:[3,13], 14:[3,14],
-              15:[3,15], 16:[3,16], 17:[3,17], 18:[3,18]
-            };
+            const positions = {11:[3,1],12:[3,2],13:[3,13],14:[3,14],15:[3,15],16:[3,16],17:[3,17],18:[3,18]};
             [row, column] = positions[element.atomicNumber];
           } else if (element.atomicNumber === 57) {
             [row, column] = [6, 3];
           } else if (element.atomicNumber === 89) {
             [row, column] = [7, 3];
-          } else if (
-            (element.atomicNumber >= 58 && element.atomicNumber <= 71) ||
-            (element.atomicNumber >= 90 && element.atomicNumber <= 103)
-          ) {
+          } else if ((element.atomicNumber >= 58 && element.atomicNumber <= 71) || (element.atomicNumber >= 90 && element.atomicNumber <= 103)) {
             return;
           } else {
-            const period =
-              element.atomicNumber <= 36 ? 4 :
-              element.atomicNumber <= 54 ? 5 :
-              element.atomicNumber <= 86 ? 6 : 7;
-
-            const start =
-              period === 4 ? 19 :
-              period === 5 ? 37 :
-              period === 6 ? 72 : 104;
-
+            const period = element.atomicNumber <= 36 ? 4 : element.atomicNumber <= 54 ? 5 : element.atomicNumber <= 86 ? 6 : 7;
+            const start = period === 4 ? 19 : period === 5 ? 37 : period === 6 ? 72 : 104;
             [row, column] = [period, element.atomicNumber - start + 3];
           }
 
           appendElement(element, row, column);
         });
 
-        const lanthanides = elements.filter(e => e.atomicNumber >= 58 && e.atomicNumber <= 71);
-        const actinides = elements.filter(e => e.atomicNumber >= 90 && e.atomicNumber <= 103);
+        const lanthanoids = elements.filter(e => e.atomicNumber >= 58 && e.atomicNumber <= 71);
+        const actinoids = elements.filter(e => e.atomicNumber >= 90 && e.atomicNumber <= 103);
 
-        [[lanthanides, 8], [actinides, 9]].forEach(([series, row]) => {
-          series.forEach((element, index) => {
-            appendElement(element, row, index + 4, true);
-          });
+        [[lanthanoids, 8], [actinoids, 9]].forEach(([series, row]) => {
+          series.forEach((element, index) => appendElement(element, row, index + 4, true));
         });
 
-        renderCategories(categoryData.categories);
+        renderCategories(categoryData.categories, elements);
       })
       .catch(error => {
         table.innerHTML = '<p class="error">بارگذاری عناصر با خطا مواجه شد.</p>';
@@ -177,18 +138,13 @@
       card.dataset.symbol = element.symbol;
       elementCards.set(String(element.atomicNumber), card);
       card.title = `${element.persianName || element.englishName} — ${element.englishName}`;
-      card.setAttribute(
-        "aria-label",
-        `عنصر ${element.persianName || element.englishName}، نام انگلیسی ${element.englishName}، نماد ${element.symbol}، عدد اتمی ${element.atomicNumber}`
-      );
-
+      card.setAttribute("aria-label", `عنصر ${element.persianName || element.englishName}، نام انگلیسی ${element.englishName}، نماد ${element.symbol}، عدد اتمی ${element.atomicNumber}`);
       card.innerHTML = `
         <span class="atomic-number" aria-label="عدد اتمی">${element.atomicNumber}</span>
         <strong class="symbol" aria-label="نماد">${element.symbol}</strong>
         <span class="name" dir="rtl">${element.persianName || element.englishName}</span>
         <span class="english-name" dir="ltr">${element.englishName}</span>
       `;
-
       card.addEventListener("click", () => openModal(element, card));
       table.appendChild(card);
     }
@@ -196,16 +152,11 @@
     function openModal(element, trigger) {
       lastFocusedElement = trigger;
       const displayName = element.persianName || element.englishName;
-
       modalNumber.textContent = `عدد اتمی: ${element.atomicNumber}`;
       modalSymbol.textContent = element.symbol;
       modalTitle.textContent = displayName;
-      modalEnglish.textContent = element.persianName
-        ? `نام انگلیسی: ${element.englishName}`
-        : `نام: ${element.englishName}`;
-      modalSummary.textContent =
-        `این پنجره خلاصه‌ای از اطلاعات موجود برای عنصر ${element.englishName} را نمایش می‌دهد: نماد ${element.symbol} و عدد اتمی ${element.atomicNumber}.`;
-
+      modalEnglish.textContent = element.persianName ? `نام انگلیسی: ${element.englishName}` : `نام: ${element.englishName}`;
+      modalSummary.textContent = `این پنجره خلاصه‌ای از اطلاعات موجود برای عنصر ${element.englishName} را نمایش می‌دهد: نماد ${element.symbol} و عدد اتمی ${element.atomicNumber}.`;
       modal.hidden = false;
       modal.setAttribute("aria-hidden", "false");
       document.body.classList.add("modal-open");
@@ -220,41 +171,36 @@
       lastFocusedElement?.focus();
     }
 
-    function renderCategories(categories) {
+    function renderCategories(categories, elements) {
       categoryGrid.innerHTML = "";
+      const elementBySymbol = new Map(elements.map(element => [element.symbol, element]));
 
-      Object.entries(categories).forEach(([key, category]) => {
+      categories.forEach(category => {
         const button = document.createElement("button");
         button.type = "button";
         button.className = "category-tile";
-        button.dataset.category = key;
+        button.dataset.category = category.id;
         button.setAttribute("aria-pressed", "false");
-        button.style.setProperty("--category-color", categoryColors[key] || "#475569");
-        button.setAttribute(
-          "aria-label",
-          `دسته‌بندی ${category.persianName}، شامل ${category.elements.length} عنصر`
-        );
+        button.style.setProperty("--category-color", categoryColors[category.id] || "#475569");
 
-        const numbers = category.elements.map(element => String(element.atomicNumber));
-        categoryElements.set(key, numbers);
+        const validElements = category.elements
+          .map(symbol => elementBySymbol.get(symbol))
+          .filter(Boolean);
+        const numbers = validElements.map(element => String(element.atomicNumber));
+        categoryElements.set(category.id, numbers);
 
+        button.setAttribute("aria-label", `دسته‌بندی ${category.persian_name}، شامل ${validElements.length} عنصر`);
+        button.title = category.persian_comment || category.description || "";
         button.innerHTML = `
           <span class="category-color-dot" aria-hidden="true"></span>
-          <strong class="category-name" dir="rtl">${category.persianName}</strong>
-          <span class="category-english" dir="ltr">${formatCategoryName(key)}</span>
-          <span class="category-count" dir="rtl">${category.elements.length} عنصر</span>
+          <strong class="category-name" dir="rtl">${category.persian_name}</strong>
+          <span class="category-english" dir="ltr">${category.name}</span>
+          <span class="category-count" dir="rtl">${validElements.length} عنصر</span>
         `;
 
-        button.addEventListener("click", () => selectCategory(key));
+        button.addEventListener("click", () => selectCategory(category.id));
         categoryGrid.appendChild(button);
       });
-    }
-
-    function formatCategoryName(key) {
-      return key
-        .split("-")
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
     }
 
     function selectCategory(key) {
@@ -268,22 +214,15 @@
       const tableRect = table.getBoundingClientRect();
 
       if (tableRect.top < 0 || tableRect.bottom > window.innerHeight) {
-        table.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
+        table.scrollIntoView({ behavior: "smooth", block: "start" });
       }
 
       elementCards.forEach((card, atomicNumber) => {
         const isActive = activeNumbers.has(atomicNumber);
         card.classList.toggle("category-active", isActive);
         card.classList.toggle("category-dimmed", !isActive);
-
-        if (isActive) {
-          card.style.setProperty("--active-category-color", categoryColors[key] || "#2563eb");
-        } else {
-          card.style.removeProperty("--active-category-color");
-        }
+        if (isActive) card.style.setProperty("--active-category-color", categoryColors[key] || "#2563eb");
+        else card.style.removeProperty("--active-category-color");
       });
 
       document.querySelectorAll(".category-tile").forEach(tile => {
@@ -300,17 +239,14 @@
 
     function clearCategorySelection() {
       activeCategory = null;
-
       elementCards.forEach(card => {
         card.classList.remove("category-active", "category-dimmed");
         card.style.removeProperty("--active-category-color");
       });
-
       document.querySelectorAll(".category-tile").forEach(tile => {
         tile.classList.remove("is-active", "is-inactive");
         tile.setAttribute("aria-pressed", "false");
       });
-
       categoryStatus.textContent = "فیلتر دسته‌بندی حذف شد؛ همه عناصر نمایش داده می‌شوند.";
     }
 
@@ -322,29 +258,20 @@
 
     document.addEventListener("keydown", event => {
       if (modal.hidden) return;
-
       if (event.key === "Escape") {
         closeModal();
         return;
       }
-
       if (event.key !== "Tab") return;
 
-      const focusable = Array.from(
-        modal.querySelectorAll(
-          'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
-        )
-      );
-
+      const focusable = Array.from(modal.querySelectorAll('button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'));
       if (!focusable.length) {
         event.preventDefault();
         modalClose.focus();
         return;
       }
-
       const first = focusable[0];
       const last = focusable[focusable.length - 1];
-
       if (event.shiftKey && document.activeElement === first) {
         event.preventDefault();
         last.focus();
