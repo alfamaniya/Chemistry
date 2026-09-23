@@ -1,0 +1,11 @@
+/* Source: PDF page 14 — Base Periodic Table
+ * Color model: neutral / unclassified reference table.
+ */
+:root {
+  --base-table-background: #f8f8f8;
+  --base-table-cell: #e8e8e8;
+  --base-table-border: #d8d8d8;
+  --base-table-text: #334155;
+}
+.base-periodic-table { background: var(--base-table-background); color: var(--base-table-text); }
+.base-periodic-table .cell { background: var(--base-table-cell); border-color: var(--base-table-border); }
