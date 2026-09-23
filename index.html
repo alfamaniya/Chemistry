@@ -260,6 +260,14 @@
       activeCategory = key;
       const activeNumbers = new Set(categoryElements.get(key) || []);
 
+      // The category tiles live below the table. Return the user to the table
+      // after selecting a category, while keeping the same behavior on desktop
+      // and mobile.
+      table.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
       elementCards.forEach((card, atomicNumber) => {
         const isActive = activeNumbers.has(atomicNumber);
         card.classList.toggle("category-active", isActive);
