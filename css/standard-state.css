@@ -1,0 +1,14 @@
+/* Source: PDF page 3 — Standard State
+ * Color model: categorical state colors. The supplied page is primarily neutral,
+ * with colored markers used to distinguish states.
+ */
+:root {
+  --standard-state-solid: #b8f8e8;
+  --standard-state-liquid: #f8c8c8;
+  --standard-state-gas: #c8e8f8;
+  --standard-state-unknown: #e8e8e8;
+}
+.standard-state-solid { background: var(--standard-state-solid); }
+.standard-state-liquid { background: var(--standard-state-liquid); }
+.standard-state-gas { background: var(--standard-state-gas); }
+.standard-state-unknown { background: var(--standard-state-unknown); }
