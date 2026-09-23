@@ -28,6 +28,7 @@
         <button id="clear-category" class="category-clear" type="button">نمایش همه</button>
       </div>
       <div id="category-grid" class="category-grid" aria-label="دسته‌بندی‌های عناصر"></div>
+      <p id="category-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
     </section>
   </main>
 
@@ -59,6 +60,8 @@
     const modalSummary = document.getElementById("modal-summary");
     const categoryGrid = document.getElementById("category-grid");
     const clearCategory = document.getElementById("clear-category");
+    const modalClose = modal.querySelector(".modal-close");
+    const categoryStatus = document.getElementById("category-status");
     let elementCards = new Map();
     let categoryElements = new Map();
     let activeCategory = null;
@@ -92,12 +95,17 @@
       actinides: "#a21caf"
     };
 
-    fetch("database/elements.json")
-      .then(response => {
+    Promise.all([
+      fetch("database/elements.json").then(response => {
         if (!response.ok) throw new Error("خطا در دریافت پایگاه داده عناصر");
         return response.json();
+      }),
+      fetch("database/categories/categories.json").then(response => {
+        if (!response.ok) throw new Error("خطا در دریافت دسته‌بندی عناصر");
+        return response.json();
       })
-      .then(async elements => {
+    ])
+      .then(([elements, categoryData]) => {
         elements.forEach(element => {
           let row, column;
 
@@ -152,9 +160,6 @@
           });
         });
 
-        const categoryResponse = await fetch("database/categories/categories.json");
-        if (!categoryResponse.ok) throw new Error("خطا در دریافت دسته‌بندی عناصر");
-        const categoryData = await categoryResponse.json();
         renderCategories(categoryData.categories);
       })
       .catch(error => {
@@ -204,7 +209,7 @@
       modal.hidden = false;
       modal.setAttribute("aria-hidden", "false");
       document.body.classList.add("modal-open");
-      modal.querySelector(".modal-close").focus();
+      modalClose.focus();
     }
 
     function closeModal() {
@@ -223,6 +228,7 @@
         button.type = "button";
         button.className = "category-tile";
         button.dataset.category = key;
+        button.setAttribute("aria-pressed", "false");
         button.style.setProperty("--category-color", categoryColors[key] || "#475569");
         button.setAttribute(
           "aria-label",
@@ -259,14 +265,14 @@
 
       activeCategory = key;
       const activeNumbers = new Set(categoryElements.get(key) || []);
+      const tableRect = table.getBoundingClientRect();
 
-      // The category tiles live below the table. Return the user to the table
-      // after selecting a category, while keeping the same behavior on desktop
-      // and mobile.
-      table.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
+      if (tableRect.top < 0 || tableRect.bottom > window.innerHeight) {
+        table.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
 
       elementCards.forEach((card, atomicNumber) => {
         const isActive = activeNumbers.has(atomicNumber);
@@ -284,7 +290,12 @@
         const isActive = tile.dataset.category === key;
         tile.classList.toggle("is-active", isActive);
         tile.classList.toggle("is-inactive", !isActive);
+        tile.setAttribute("aria-pressed", String(isActive));
       });
+
+      const selectedCategory = categoryElements.get(key) || [];
+      const categoryLabel = categoryGrid.querySelector(`[data-category="${CSS.escape(key)}"] .category-name`)?.textContent?.trim() || key;
+      categoryStatus.textContent = `دسته‌بندی ${categoryLabel} فعال شد؛ ${selectedCategory.length} عنصر برجسته شده است.`;
     }
 
     function clearCategorySelection() {
@@ -297,7 +308,10 @@
 
       document.querySelectorAll(".category-tile").forEach(tile => {
         tile.classList.remove("is-active", "is-inactive");
+        tile.setAttribute("aria-pressed", "false");
       });
+
+      categoryStatus.textContent = "فیلتر دسته‌بندی حذف شد؛ همه عناصر نمایش داده می‌شوند.";
     }
 
     clearCategory.addEventListener("click", clearCategorySelection);
@@ -307,7 +321,37 @@
     });
 
     document.addEventListener("keydown", event => {
-      if (event.key === "Escape" && !modal.hidden) closeModal();
+      if (modal.hidden) return;
+
+      if (event.key === "Escape") {
+        closeModal();
+        return;
+      }
+
+      if (event.key !== "Tab") return;
+
+      const focusable = Array.from(
+        modal.querySelectorAll(
+          'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+        )
+      );
+
+      if (!focusable.length) {
+        event.preventDefault();
+        modalClose.focus();
+        return;
+      }
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     });
   </script>
 </body>
