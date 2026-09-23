@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Interactive periodic table of the elements based on PubChem Elements data.">
+  <meta name="description" content="Interactive periodic table with educational property maps based on PubChem Elements data.">
   <title>Periodic Table of Elements</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,40 +13,86 @@
       <div>
         <p class="kicker">CHEMISTRY · PUBCHEM ELEMENTS</p>
         <h1>Periodic Table of Elements</h1>
-        <p class="subtitle">Explore atomic mass and the structure of the periodic table.</p>
+        <p class="subtitle">Explore periodic properties and element data (خواص تناوبی و داده‌های عناصر).</p>
       </div>
-      <div class="source-mark" aria-label="Data source">PubChem</div>
+      <div class="source-mark">PubChem</div>
     </header>
 
     <section class="table-card" aria-label="Interactive periodic table">
       <div class="table-topline">
-        <span>118 elements</span>
-        <span class="hint">Select an element for details</span>
+        <span>118 Elements (۱۱۸ عنصر)</span>
+        <span class="hint">Select an element for details (برای جزئیات روی عنصر کلیک کنید)</span>
       </div>
       <div id="periodic-table" class="periodic-table"></div>
     </section>
 
-    <section class="legend" aria-label="Element families">
-      <div class="legend-title">Element families</div>
+    <section id="property-cards" class="property-cards" aria-label="Periodic property maps">
+      <button class="property-card" type="button" data-key="atomic-mass"><span class="card-index">01</span><strong>Atomic Mass</strong><small>(جرم اتمی)</small></button>
+      <button class="property-card" type="button" data-key="density"><span class="card-index">02</span><strong>Density</strong><small>(چگالی)</small></button>
+      <button class="property-card" type="button" data-key="standard-state"><span class="card-index">03</span><strong>Standard State</strong><small>(حالت استاندارد)</small></button>
+      <button class="property-card" type="button" data-key="electronegativity"><span class="card-index">04</span><strong>Electronegativity</strong><small>(الکترونگاتیوی)</small></button>
+      <button class="property-card" type="button" data-key="ionization-energy"><span class="card-index">05</span><strong>Ionization Energy</strong><small>(انرژی یونش)</small></button>
+      <button class="property-card" type="button" data-key="electron-configuration"><span class="card-index">06</span><strong>Electron Configuration</strong><small>(آرایش الکترونی)</small></button>
+      <button class="property-card" type="button" data-key="atomic-radius"><span class="card-index">07</span><strong>Atomic Radius</strong><small>(شعاع اتمی)</small></button>
+      <button class="property-card" type="button" data-key="oxidation-states"><span class="card-index">08</span><strong>Oxidation States</strong><small>(حالت‌های اکسایش)</small></button>
+      <button class="property-card" type="button" data-key="electron-affinity"><span class="card-index">09</span><strong>Electron Affinity</strong><small>(میل الکترونی)</small></button>
+      <button class="property-card" type="button" data-key="melting-point"><span class="card-index">10</span><strong>Melting Point</strong><small>(نقطه ذوب)</small></button>
+      <button class="property-card" type="button" data-key="boiling-point"><span class="card-index">11</span><strong>Boiling Point</strong><small>(نقطه جوش)</small></button>
+      <button class="property-card" type="button" data-key="year-discovered"><span class="card-index">12</span><strong>Year Discovered</strong><small>(سال کشف)</small></button>
+      <button class="property-card" type="button" data-key="metal-metalloid-nonmetal"><span class="card-index">13</span><strong>Metal / Metalloid / Nonmetal</strong><small>(فلز / شبه‌فلز / نافلز)</small></button>
+      <button class="property-card" type="button" data-key="base-periodic-table"><span class="card-index">14</span><strong>Base Periodic Table</strong><small>(جدول تناوبی پایه)</small></button>
+      <button class="property-card" type="button" data-key="chemical-group-family"><span class="card-index">15</span><strong>Chemical Group / Family</strong><small>(گروه / خانواده شیمیایی)</small></button>
+    </section>
+
+    <section id="legend" class="legend" aria-label="Element families">
+      <div class="legend-title">Element Families (خانواده‌های عناصر)</div>
       <div id="legend-items" class="legend-items"></div>
     </section>
   </main>
 
   <dialog id="element-dialog" class="element-dialog">
     <button id="close-dialog" class="dialog-close" type="button" aria-label="Close">×</button>
-    <div class="dialog-number" id="dialog-number"></div>
-    <div class="dialog-symbol" id="dialog-symbol"></div>
-    <h2 id="dialog-name"></h2>
-    <p class="dialog-family" id="dialog-family"></p>
+    <div class="dialog-header">
+      <div>
+        <div class="dialog-number" id="dialog-number"></div>
+        <div class="dialog-symbol" id="dialog-symbol"></div>
+      </div>
+      <div class="dialog-title">
+        <h2 id="dialog-name"></h2>
+        <p id="dialog-persian-name"></p>
+        <p class="dialog-family" id="dialog-family"></p>
+      </div>
+    </div>
     <div class="property-grid" id="property-grid"></div>
   </dialog>
 
   <script>
     const table = document.getElementById('periodic-table');
-    const legend = document.getElementById('legend-items');
+    const legend = document.getElementById('legend');
+    const legendItems = document.getElementById('legend-items');
     const dialog = document.getElementById('element-dialog');
     const closeDialog = document.getElementById('close-dialog');
 
+    const metricDefinitions = {
+      'atomic-mass': { type: 'numeric', file: 'atomic-mass.json', css: 'atomic-mass.css' },
+      'density': { type: 'numeric', file: 'density.json', css: 'density.css' },
+      'standard-state': { type: 'categorical', file: 'standard-state.json', css: 'standard-state.css' },
+      'electronegativity': { type: 'numeric', file: 'electronegativity.json', css: 'electronegativity.css' },
+      'ionization-energy': { type: 'numeric', file: 'ionization-energy.json', css: 'ionization-energy.css' },
+      'electron-configuration': { type: 'categorical', file: 'electron-configuration.json', css: 'electron-configuration.css' },
+      'atomic-radius': { type: 'numeric', file: 'atomic-radius.json', css: 'atomic-radius.css' },
+      'oxidation-states': { type: 'categorical', file: 'oxidation-states.json', css: 'oxidation-states.css' },
+      'electron-affinity': { type: 'numeric', file: 'electron-affinity.json', css: 'electron-affinity.css' },
+      'melting-point': { type: 'numeric', file: 'melting-point.json', css: 'melting-point.css' },
+      'boiling-point': { type: 'numeric', file: 'boiling-point.json', css: 'boiling-point.css' },
+      'year-discovered': { type: 'numeric', file: 'year-discovered.json', css: 'year-discovered.css' },
+      'metal-metalloid-nonmetal': { type: 'categorical', file: 'metal-metalloid-nonmetal.json', css: 'metal-metalloid-nonmetal.css' },
+      'base-periodic-table': { type: 'categorical', file: 'base-periodic-table.json', css: 'base-periodic-table.css' },
+      'chemical-group-family': { type: 'categorical', file: 'chemical-group-family.json', css: 'chemical-group-family.css' }
+    };
+
+    const metricCache = new Map();
+    const cssCache = new Map();
     const familyStyles = {
       'Alkali metal': ['#f6b7c8', '#7d2746'],
       'Alkaline earth metal': ['#f4c1cf', '#7b3048'],
@@ -60,82 +106,147 @@
       'Actinide': ['#9fd8dd', '#235e65']
     };
 
-    const fallbackFamily = ['#d8e9ee', '#345b67'];
+    Promise.all([
+      fetch('data/table.json').then(r => r.ok ? r.json() : Promise.reject(new Error('table.json'))),
+      fetch('database/elements.json').then(r => r.ok ? r.json() : Promise.reject(new Error('elements.json'))),
+      ...Object.entries(metricDefinitions).flatMap(([key, def]) => [
+        fetch(`data/${def.file}`).then(r => r.ok ? r.json() : Promise.reject(new Error(def.file))).then(data => metricCache.set(key, data)),
+        fetch(`css/${def.css}`).then(r => r.ok ? r.text() : Promise.reject(new Error(def.css))).then(text => cssCache.set(key, extractPalette(text)))
+      ])
+    ]).then(([tableData, names]) => {
+      const persianByAtomicNumber = new Map(names.map(item => [item.atomicNumber, item.persianName]));
+      renderTable(tableData.elements, persianByAtomicNumber);
+      renderLegend();
+      bindPropertyCards(tableData.elements);
+    }).catch(error => {
+      table.innerHTML = '<p class="load-error">Element data could not be loaded (بارگذاری داده عناصر ناموفق بود).</p>';
+      console.error(error);
+    });
 
-    fetch('data/table.json')
-      .then(response => {
-        if (!response.ok) throw new Error('Unable to load data/table.json');
-        return response.json();
-      })
-      .then(data => {
-        renderTable(data.elements);
-        renderLegend(data.elements);
-      })
-      .catch(error => {
-        table.innerHTML = '<p class="load-error">Element data could not be loaded.</p>';
-        console.error(error);
-      });
-
-    function renderTable(elements) {
+    function renderTable(elements, persianByAtomicNumber) {
       table.innerHTML = '';
       elements.forEach(element => {
-        const card = document.createElement('button');
-        card.type = 'button';
-        card.className = 'element-tile';
-        card.style.gridRow = element.r;
-        card.style.gridColumn = element.c;
+        const tile = document.createElement('button');
+        tile.type = 'button';
+        tile.className = 'element-tile';
+        tile.style.gridRow = element.r;
+        tile.style.gridColumn = element.c;
+        tile.dataset.atomicNumber = element.n;
 
         const family = familyFor(element.n);
-        const [background, accent] = familyStyles[family] || fallbackFamily;
-        card.style.setProperty('--tile-bg', background);
-        card.style.setProperty('--tile-accent', accent);
+        const [background, accent] = familyStyles[family] || ['#e2e8f0', '#334155'];
+        tile.style.setProperty('--tile-bg', background);
+        tile.style.setProperty('--tile-accent', accent);
 
-        card.innerHTML = `
+        const persianName = persianByAtomicNumber.get(element.n) || '';
+        tile.innerHTML = `
           <span class="atomic-number">${element.n}</span>
-          <strong class="symbol">${element.s}</strong>
-          <span class="element-name">${element.name}</span>
-          <span class="atomic-mass">${formatNumber(element.mass)}</span>
+          <strong class="symbol">${escapeHtml(element.s)}</strong>
+          <span class="element-name">${escapeHtml(element.name)}</span>
+          <span class="element-persian">${escapeHtml(persianName)}</span>
+          <span class="atomic-mass">${escapeHtml(String(element.mass))} u</span>
         `;
-        card.title = `${element.name} (${element.s})`;
-        card.setAttribute('aria-label', `${element.name}, atomic number ${element.n}`);
-        card.addEventListener('click', () => showElement(element));
-        table.appendChild(card);
+        tile.title = `${element.name} (${persianName})`;
+        tile.setAttribute('aria-label', `${element.name} (${persianName}), atomic number ${element.n}`);
+        tile.addEventListener('click', () => showElement(element, persianName));
+        table.appendChild(tile);
       });
+    }
+
+    function bindPropertyCards(elements) {
+      document.querySelectorAll('.property-card').forEach(card => {
+        card.addEventListener('click', () => selectMetric(card.dataset.key, elements));
+      });
+    }
+
+    function selectMetric(key) {
+      const def = metricDefinitions[key];
+      const data = metricCache.get(key);
+      const palette = cssCache.get(key) || ['#e8eef2', '#cbd5e1', '#94a3b8', '#64748b', '#334155'];
+      if (!def || !data) return;
+
+      document.querySelectorAll('.property-card').forEach(card => card.classList.toggle('active', card.dataset.key === key));
+      legend.classList.add('is-hidden');
+      document.body.dataset.metric = key;
+
+      const values = buildValueMap(data);
+      const numericValues = def.type === 'numeric' ? [...values.values()].map(toNumber).filter(Number.isFinite) : [];
+
+      document.querySelectorAll('.element-tile').forEach(tile => {
+        const raw = values.get(Number(tile.dataset.atomicNumber));
+        const color = def.type === 'numeric' ? colorForNumeric(raw, numericValues, palette) : colorForCategory(raw, palette);
+        tile.style.setProperty('--tile-bg', color);
+        tile.style.setProperty('--tile-accent', contrastColor(color));
+        tile.dataset.metricValue = raw ?? '';
+      });
+    }
+
+    function buildValueMap(data) {
+      const map = new Map();
+      if (Array.isArray(data.elements)) {
+        data.elements.forEach(item => map.set(Number(item.atomic_number), item.value?.value ?? item.value ?? null));
+      } else if (data.values && typeof data.values === 'object') {
+        Object.entries(data.values).forEach(([atomicNumber, item]) => map.set(Number(atomicNumber), item?.value ?? item ?? null));
+      }
+      return map;
+    }
+
+    function colorForNumeric(raw, numericValues, palette) {
+      const value = toNumber(raw);
+      if (!Number.isFinite(value) || !numericValues.length) return '#edf2f4';
+      const min = Math.min(...numericValues);
+      const max = Math.max(...numericValues);
+      if (min === max) return palette[Math.floor(palette.length / 2)];
+      const ratio = Math.max(0, Math.min(1, (value - min) / (max - min)));
+      const index = Math.min(palette.length - 1, Math.floor(ratio * palette.length));
+      return palette[index];
+    }
+
+    function colorForCategory(raw, palette) {
+      if (raw === null || raw === undefined || raw === '') return '#edf2f4';
+      let hash = 0;
+      for (const char of String(raw)) hash = ((hash << 5) - hash + char.charCodeAt(0)) | 0;
+      return palette[Math.abs(hash) % palette.length] || '#edf2f4';
+    }
+
+    function toNumber(value) {
+      if (value === null || value === undefined) return NaN;
+      const match = String(value).replace(/,/g, '').match(/-?\d+(?:\.\d+)?/);
+      return match ? Number(match[0]) : NaN;
+    }
+
+    function extractPalette(cssText) {
+      const colors = [];
+      for (const match of cssText.matchAll(/#[0-9a-fA-F]{6}\b/g)) {
+        const color = match[0].toLowerCase();
+        if (!colors.includes(color)) colors.push(color);
+      }
+      return colors.length ? colors : ['#e8eef2', '#cbd5e1', '#94a3b8', '#64748b', '#334155'];
     }
 
     function renderLegend() {
-      const families = ['Alkali metal','Alkaline earth metal','Transition metal','Post-transition metal','Metalloid','Nonmetal','Halogen','Noble gas','Lanthanide','Actinide'];
-      legend.innerHTML = '';
-      families.forEach(family => {
-        const item = document.createElement('span');
-        item.className = 'legend-item';
-        const [background, accent] = familyStyles[family] || fallbackFamily;
-        item.style.setProperty('--legend-bg', background);
-        item.style.setProperty('--legend-accent', accent);
-        item.innerHTML = `<i></i><span>${family}</span>`;
-        legend.appendChild(item);
-      });
+      legendItems.innerHTML = Object.entries(familyStyles).map(([family, [background, accent]]) => `
+        <span class="legend-item"><i style="--legend-bg:${background};--legend-accent:${accent}"></i><span>${family} (${familyPersian(family)})</span></span>
+      `).join('');
     }
 
-    function showElement(element) {
+    function showElement(element, persianName) {
       const family = familyFor(element.n);
-      const [background, accent] = familyStyles[family] || fallbackFamily;
+      const [background, accent] = familyStyles[family] || ['#e2e8f0', '#334155'];
       document.documentElement.style.setProperty('--dialog-accent', accent);
       document.documentElement.style.setProperty('--dialog-bg', background);
-
-      document.getElementById('dialog-number').textContent = `Atomic number ${element.n}`;
+      document.getElementById('dialog-number').textContent = `Atomic Number (عدد اتمی): ${element.n}`;
       document.getElementById('dialog-symbol').textContent = element.s;
       document.getElementById('dialog-name').textContent = element.name;
-      document.getElementById('dialog-family').textContent = family;
+      document.getElementById('dialog-persian-name').textContent = persianName || '—';
+      document.getElementById('dialog-family').textContent = `${family} (${familyPersian(family)})`;
 
-      const grid = document.getElementById('property-grid');
-      grid.innerHTML = [
-        ['Atomic number', element.n],
-        ['Symbol', element.s],
-        ['Atomic mass', `${formatNumber(element.mass)} u`]
-      ].map(([label, value]) => `
-        <div class="property"><span>${label}</span><strong>${value}</strong></div>
-      `).join('');
+      document.getElementById('property-grid').innerHTML = [
+        ['Symbol (نماد)', element.s],
+        ['Atomic Mass (جرم اتمی)', `${element.mass} u`],
+        ['Period (دوره)', element.r <= 7 ? element.r : '—'],
+        ['Group / Column (گروه / ستون)', element.c]
+      ].map(([label, value]) => `<div class="property"><span>${label}</span><strong>${escapeHtml(String(value))}</strong></div>`).join('');
 
       dialog.showModal();
     }
@@ -154,9 +265,24 @@
       return 'Transition metal';
     }
 
-    function formatNumber(value) {
-      if (value === null || value === undefined) return '—';
-      return Number.isInteger(value) ? String(value) : String(value);
+    function familyPersian(family) {
+      const map = {
+        'Alkali metal': 'فلز قلیایی', 'Alkaline earth metal': 'فلز قلیایی خاکی', 'Transition metal': 'فلز واسطه',
+        'Post-transition metal': 'فلز پس‌واسطه', 'Metalloid': 'شبه‌فلز', 'Nonmetal': 'نافلز', 'Halogen': 'هالوژن',
+        'Noble gas': 'گاز نجیب', 'Lanthanide': 'لانتانوئید', 'Actinide': 'اکتینوئید'
+      };
+      return map[family] || family;
+    }
+
+    function contrastColor(hex) {
+      const value = hex.replace('#', '');
+      if (value.length !== 6) return '#334155';
+      const r = parseInt(value.slice(0, 2), 16), g = parseInt(value.slice(2, 4), 16), b = parseInt(value.slice(4, 6), 16);
+      return ((r * 299 + g * 587 + b * 114) / 1000) > 160 ? '#334155' : '#ffffff';
+    }
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
     }
 
     closeDialog.addEventListener('click', () => dialog.close());
