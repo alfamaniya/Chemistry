@@ -149,3 +149,35 @@ Commit:
 
 تست:
 - تغییر فقط در لایه CSS انجام شد؛ تست بصری واقعی مرورگر انجام نشده است.
+
+===== Conversation 012 =====
+Date: 2026-09-23
+
+هدف:
+- یکسان‌سازی فایل‌های دیتای پوشه database/categories با تعداد کارت‌های Classification سایت.
+
+بررسی:
+- categories.json فعلی ۱۱ دسته آموزشی دارد.
+- پوشه database/categories علاوه بر categories.json شامل فایل‌های قدیمی متعددی برای گروه‌های ۳ تا ۱۴، classificationهای قدیمی، hydrogen و چند خانواده بود که با ساختار فعلی کارت‌های Classification هم‌تعداد و هم‌نام نبودند.
+
+تغییرات انجام‌شده:
+- ۱۱ فایل دیتای دسته‌بندی مطابق کارت‌های فعلی ایجاد/همگام شد:
+  metals.json
+  nonmetals.json
+  metalloids.json
+  alkali-metals.json
+  alkaline-earth-metals.json
+  transition-metals.json
+  post-transition-metals.json
+  halogens.json
+  noble-gases.json
+  lanthanoids.json
+  actinoids.json
+- categories.json به عنوان فایل master/index دسته‌بندی حفظ شد چون index.html برای ساخت کارت‌های Classification از آن استفاده می‌کند.
+- فایل‌های قدیمی و غیرهمسان حذف شدند: classification-metals.json، classification-non-metals.json، classification-semi-metals.json، classification-unclassified.json، group-3.json تا group-14.json، hydrogen.json.
+- در نتیجه اکنون ۱۱ فایل دیتای مستقل برای ۱۱ کارت Classification وجود دارد، به‌علاوه categories.json به عنوان فایل فهرست/منبع اصلی.
+- هیچ تغییری در index.html یا رفتار UI در این مرحله انجام نشد.
+
+اعتبارسنجی:
+- پوشه database/categories بعد از تغییر بررسی شد و فایل‌های دسته‌بندی مستقل جدید موجود هستند و فایل‌های قدیمی حذف شده‌اند.
+- تعداد فایل‌های دیتای مستقل دسته‌بندی با تعداد کارت‌های Classification برابر است: ۱۱.
