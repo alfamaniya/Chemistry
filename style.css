@@ -63,6 +63,12 @@ h1 {
 .table-scroll {
   width: 100%;
   direction: ltr;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scrollbar-gutter: stable;
+  padding-bottom: 8px;
 }
 
 .periodic-table {
@@ -205,48 +211,98 @@ h1 {
 @media (max-width: 600px) {
   .container {
     width: calc(100% - 12px);
-    padding-top: 20px;
-    padding-bottom: 28px;
+    padding-top: 16px;
+    padding-bottom: 24px;
   }
 
   .hero {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 
   h1 {
-    font-size: clamp(24px, 7vw, 34px);
+    font-size: clamp(24px, 8vw, 34px);
   }
 
   .subtitle {
+    margin-top: 7px;
     font-size: 12px;
+    line-height: 1.7;
   }
 
+  .table-scroll {
+    margin-inline: -2px;
+    padding-bottom: 10px;
+  }
+
+  /*
+   * Keep the 18-column periodic-table structure readable on phones.
+   * The page itself stays within the viewport; only the table scrolls.
+   */
   .periodic-table {
-    grid-template-rows: repeat(9, 58px);
-    gap: 2px;
-    padding: 6px;
+    min-width: 720px;
+    width: 720px;
+    grid-template-rows: repeat(9, 62px);
+    gap: 3px;
+    padding: 7px;
     border-radius: 12px;
   }
 
   .element {
-    padding: 3px 2px;
+    min-height: 46px;
+    padding: 4px 3px;
     border-radius: 7px;
-    gap: 1px;
+    gap: 2px;
   }
 
   .atomic-number {
-    font-size: 6px;
+    font-size: 7px;
   }
 
   .symbol {
-    font-size: clamp(12px, 4vw, 18px);
+    font-size: 16px;
   }
 
   .name {
-    font-size: clamp(5px, 1.8vw, 8px);
+    font-size: 7px;
   }
 
   .english-name {
     display: none;
+  }
+
+  .element:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .element:active {
+    transform: scale(.97);
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    width: calc(100% - 8px);
+  }
+
+  .periodic-table {
+    min-width: 680px;
+    width: 680px;
+    grid-template-rows: repeat(9, 58px);
+    gap: 2px;
+    padding: 6px;
+  }
+
+  .element {
+    min-height: 42px;
+    padding: 3px 2px;
+  }
+
+  .symbol {
+    font-size: 15px;
+  }
+
+  .name {
+    font-size: 6px;
   }
 }
