@@ -1,0 +1,11 @@
+/* Source: PDF page 4 — Electronegativity
+ * Color model: light cyan/teal sequential scale.
+ */
+:root {
+  --electronegativity-low: #e8f8e8;
+  --electronegativity-mid-low: #b8f8e8;
+  --electronegativity-mid: #98e8d8;
+  --electronegativity-mid-high: #88e8d8;
+  --electronegativity-high: #68e8c8;
+}
+.electronegativity { background: linear-gradient(90deg, var(--electronegativity-low), var(--electronegativity-mid-low), var(--electronegativity-mid), var(--electronegativity-mid-high), var(--electronegativity-high)); color: #334155; }
