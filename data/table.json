@@ -1,1 +1,7 @@
-PLACEHOLDER
+{
+  "source": "PubChem Elements",
+  "sourceFile": "PubChemElements_all.json",
+  "description": "Periodic-table display data derived from the uploaded PubChem Elements table. Grid positions are added for the website layout.",
+  "columns": ["AtomicNumber","Symbol","Name","AtomicMass","CPKHexColor","ElectronConfiguration","Electronegativity","AtomicRadius","IonizationEnergy","ElectronAffinity","OxidationStates","StandardState","MeltingPoint","BoilingPoint","Density","GroupBlock","YearDiscovered"],
+  "elements": []
+}
