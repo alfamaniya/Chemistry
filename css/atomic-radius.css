@@ -1,0 +1,11 @@
+/* Source: PDF page 7 — Atomic Radius
+ * Color model: neutral-to-light-cyan scale with highlighted radius values.
+ */
+:root {
+  --atomic-radius-low: #f8f8f8;
+  --atomic-radius-mid-low: #e8f8f8;
+  --atomic-radius-mid: #d8f8e8;
+  --atomic-radius-mid-high: #a8f8e8;
+  --atomic-radius-high: #a8e8d8;
+}
+.atomic-radius { background: linear-gradient(90deg, var(--atomic-radius-low), var(--atomic-radius-mid-low), var(--atomic-radius-mid), var(--atomic-radius-mid-high), var(--atomic-radius-high)); color: #334155; }
