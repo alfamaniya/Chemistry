@@ -1,0 +1,11 @@
+/* Source: PDF page 5 — Ionization Energy
+ * Color model: light cyan/teal sequential scale.
+ */
+:root {
+  --ionization-energy-low: #e8f8f8;
+  --ionization-energy-mid-low: #c8f8e8;
+  --ionization-energy-mid: #b8f8e8;
+  --ionization-energy-mid-high: #98e8d8;
+  --ionization-energy-high: #68e8c8;
+}
+.ionization-energy { background: linear-gradient(90deg, var(--ionization-energy-low), var(--ionization-energy-mid-low), var(--ionization-energy-mid), var(--ionization-energy-mid-high), var(--ionization-energy-high)); color: #334155; }
