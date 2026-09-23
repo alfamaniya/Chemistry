@@ -20,8 +20,33 @@
     </div>
   </main>
 
+  <div id="element-modal" class="modal" hidden aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <section
+      class="modal-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-summary"
+    >
+      <button class="modal-close" type="button" aria-label="بستن" data-close-modal>×</button>
+      <div class="modal-number" id="modal-number"></div>
+      <div class="modal-symbol" id="modal-symbol"></div>
+      <h2 id="modal-title"></h2>
+      <p class="modal-english" id="modal-english"></p>
+      <p class="modal-summary" id="modal-summary"></p>
+    </section>
+  </div>
+
   <script>
     const table = document.getElementById("periodic-table");
+    const modal = document.getElementById("element-modal");
+    const modalNumber = document.getElementById("modal-number");
+    const modalSymbol = document.getElementById("modal-symbol");
+    const modalTitle = document.getElementById("modal-title");
+    const modalEnglish = document.getElementById("modal-english");
+    const modalSummary = document.getElementById("modal-summary");
+    let lastFocusedElement = null;
 
     fetch("database/elements.json")
       .then(response => {
@@ -56,7 +81,6 @@
             (element.atomicNumber >= 58 && element.atomicNumber <= 71) ||
             (element.atomicNumber >= 90 && element.atomicNumber <= 103)
           ) {
-            // Lanthanides and actinides are rendered in the two dedicated rows below.
             return;
           } else {
             const period =
@@ -110,8 +134,44 @@
         <span class="english-name">${element.englishName}</span>
       `;
 
+      card.addEventListener("click", () => openModal(element, card));
       table.appendChild(card);
     }
+
+    function openModal(element, trigger) {
+      lastFocusedElement = trigger;
+      const displayName = element.persianName || element.englishName;
+
+      modalNumber.textContent = `عدد اتمی: ${element.atomicNumber}`;
+      modalSymbol.textContent = element.symbol;
+      modalTitle.textContent = displayName;
+      modalEnglish.textContent = element.persianName
+        ? `نام انگلیسی: ${element.englishName}`
+        : `نام: ${element.englishName}`;
+      modalSummary.textContent =
+        `این پنجره خلاصه‌ای از اطلاعات موجود برای عنصر ${element.englishName} را نمایش می‌دهد: نماد ${element.symbol} و عدد اتمی ${element.atomicNumber}.`;
+
+      modal.hidden = false;
+      modal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-open");
+      modal.querySelector(".modal-close").focus();
+    }
+
+    function closeModal() {
+      if (modal.hidden) return;
+      modal.hidden = true;
+      modal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
+      lastFocusedElement?.focus();
+    }
+
+    modal.addEventListener("click", event => {
+      if (event.target.matches("[data-close-modal]")) closeModal();
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && !modal.hidden) closeModal();
+    });
   </script>
 </body>
 </html>
