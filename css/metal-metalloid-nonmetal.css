@@ -1,0 +1,13 @@
+/* Source: PDF page 13 — Metal / Metalloid / Nonmetal
+ * Color model: categorical classification colors.
+ */
+:root {
+  --classification-metal: #e8c8c8;
+  --classification-metalloid: #e8e8b8;
+  --classification-nonmetal: #c8e8d8;
+  --classification-unknown: #e8e8e8;
+}
+.classification-metal { background: var(--classification-metal); }
+.classification-metalloid { background: var(--classification-metalloid); }
+.classification-nonmetal { background: var(--classification-nonmetal); }
+.classification-unknown { background: var(--classification-unknown); }
