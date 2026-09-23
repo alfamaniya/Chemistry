@@ -121,17 +121,17 @@
       card.style.gridColumn = column;
       card.dataset.number = element.atomicNumber;
       card.dataset.symbol = element.symbol;
-      card.title = element.englishName;
+      card.title = `${element.persianName || element.englishName} — ${element.englishName}`;
       card.setAttribute(
         "aria-label",
-        `${element.atomicNumber} — ${element.persianName || element.englishName} — ${element.englishName}`
+        `عنصر ${element.persianName || element.englishName}، نام انگلیسی ${element.englishName}، نماد ${element.symbol}، عدد اتمی ${element.atomicNumber}`
       );
 
       card.innerHTML = `
-        <span class="atomic-number">${element.atomicNumber}</span>
-        <strong class="symbol">${element.symbol}</strong>
-        <span class="name">${element.persianName || element.englishName}</span>
-        <span class="english-name">${element.englishName}</span>
+        <span class="atomic-number" aria-label="عدد اتمی">${element.atomicNumber}</span>
+        <strong class="symbol" aria-label="نماد">${element.symbol}</strong>
+        <span class="name" dir="rtl">${element.persianName || element.englishName}</span>
+        <span class="english-name" dir="ltr">${element.englishName}</span>
       `;
 
       card.addEventListener("click", () => openModal(element, card));
