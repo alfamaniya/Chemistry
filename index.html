@@ -18,6 +18,17 @@
     <div class="table-scroll">
       <section id="periodic-table" class="periodic-table" aria-label="جدول تناوبی عناصر"></section>
     </div>
+
+    <section class="category-panel" aria-labelledby="category-title">
+      <div class="category-heading">
+        <div>
+          <p class="category-eyebrow">ELEMENT CATEGORIES</p>
+          <h2 id="category-title">دسته‌بندی عناصر</h2>
+        </div>
+        <button id="clear-category" class="category-clear" type="button">نمایش همه</button>
+      </div>
+      <div id="category-grid" class="category-grid" aria-label="دسته‌بندی‌های عناصر"></div>
+    </section>
   </main>
 
   <div id="element-modal" class="modal" hidden aria-hidden="true">
@@ -46,14 +57,47 @@
     const modalTitle = document.getElementById("modal-title");
     const modalEnglish = document.getElementById("modal-english");
     const modalSummary = document.getElementById("modal-summary");
+    const categoryGrid = document.getElementById("category-grid");
+    const clearCategory = document.getElementById("clear-category");
+    let elementCards = new Map();
+    let categoryElements = new Map();
+    let activeCategory = null;
     let lastFocusedElement = null;
+
+    const categoryColors = {
+      metals: "#2563eb",
+      "non-metals": "#16a34a",
+      "semi-metals": "#d97706",
+      unclassified: "#64748b",
+      hydrogen: "#dc2626",
+      "alkali-metals": "#b91c1c",
+      "alkaline-earth-metals": "#ea580c",
+      "group-3": "#7c3aed",
+      "group-4": "#6d28d9",
+      "group-5": "#5b21b6",
+      "group-6": "#4338ca",
+      "group-7": "#3730a3",
+      "group-8": "#1d4ed8",
+      "group-9": "#0369a1",
+      "group-10": "#0f766e",
+      "group-11": "#15803d",
+      "group-12": "#4d7c0f",
+      "group-13": "#ca8a04",
+      "group-14": "#c2410c",
+      pnictogens: "#be123c",
+      chalcogens: "#c026d3",
+      halogens: "#7e22ce",
+      "noble-gases": "#0891b2",
+      lanthanides: "#9333ea",
+      actinides: "#a21caf"
+    };
 
     fetch("database/elements.json")
       .then(response => {
         if (!response.ok) throw new Error("خطا در دریافت پایگاه داده عناصر");
         return response.json();
       })
-      .then(elements => {
+      .then(async elements => {
         elements.forEach(element => {
           let row, column;
 
@@ -107,6 +151,11 @@
             appendElement(element, row, index + 4, true);
           });
         });
+
+        const categoryResponse = await fetch("database/categories/categories.json");
+        if (!categoryResponse.ok) throw new Error("خطا در دریافت دسته‌بندی عناصر");
+        const categoryData = await categoryResponse.json();
+        renderCategories(categoryData.categories);
       })
       .catch(error => {
         table.innerHTML = '<p class="error">بارگذاری عناصر با خطا مواجه شد.</p>';
@@ -121,6 +170,7 @@
       card.style.gridColumn = column;
       card.dataset.number = element.atomicNumber;
       card.dataset.symbol = element.symbol;
+      elementCards.set(String(element.atomicNumber), card);
       card.title = `${element.persianName || element.englishName} — ${element.englishName}`;
       card.setAttribute(
         "aria-label",
@@ -164,6 +214,85 @@
       document.body.classList.remove("modal-open");
       lastFocusedElement?.focus();
     }
+
+    function renderCategories(categories) {
+      categoryGrid.innerHTML = "";
+
+      Object.entries(categories).forEach(([key, category]) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "category-tile";
+        button.dataset.category = key;
+        button.style.setProperty("--category-color", categoryColors[key] || "#475569");
+        button.setAttribute(
+          "aria-label",
+          `دسته‌بندی ${category.persianName}، شامل ${category.elements.length} عنصر`
+        );
+
+        const numbers = category.elements.map(element => String(element.atomicNumber));
+        categoryElements.set(key, numbers);
+
+        button.innerHTML = `
+          <span class="category-color-dot" aria-hidden="true"></span>
+          <strong class="category-name" dir="rtl">${category.persianName}</strong>
+          <span class="category-english" dir="ltr">${formatCategoryName(key)}</span>
+          <span class="category-count" dir="rtl">${category.elements.length} عنصر</span>
+        `;
+
+        button.addEventListener("click", () => selectCategory(key));
+        categoryGrid.appendChild(button);
+      });
+    }
+
+    function formatCategoryName(key) {
+      return key
+        .split("-")
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+    }
+
+    function selectCategory(key) {
+      if (activeCategory === key) {
+        clearCategorySelection();
+        return;
+      }
+
+      activeCategory = key;
+      const activeNumbers = new Set(categoryElements.get(key) || []);
+
+      elementCards.forEach((card, atomicNumber) => {
+        const isActive = activeNumbers.has(atomicNumber);
+        card.classList.toggle("category-active", isActive);
+        card.classList.toggle("category-dimmed", !isActive);
+
+        if (isActive) {
+          card.style.setProperty("--active-category-color", categoryColors[key] || "#2563eb");
+        } else {
+          card.style.removeProperty("--active-category-color");
+        }
+      });
+
+      document.querySelectorAll(".category-tile").forEach(tile => {
+        const isActive = tile.dataset.category === key;
+        tile.classList.toggle("is-active", isActive);
+        tile.classList.toggle("is-inactive", !isActive);
+      });
+    }
+
+    function clearCategorySelection() {
+      activeCategory = null;
+
+      elementCards.forEach(card => {
+        card.classList.remove("category-active", "category-dimmed");
+        card.style.removeProperty("--active-category-color");
+      });
+
+      document.querySelectorAll(".category-tile").forEach(tile => {
+        tile.classList.remove("is-active", "is-inactive");
+      });
+    }
+
+    clearCategory.addEventListener("click", clearCategorySelection);
 
     modal.addEventListener("click", event => {
       if (event.target.matches("[data-close-modal]")) closeModal();
