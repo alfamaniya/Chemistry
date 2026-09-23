@@ -1,0 +1,11 @@
+/* Source: PDF page 9 — Electron Affinity
+ * Color model: neutral-to-cyan/teal sequential scale.
+ */
+:root {
+  --electron-affinity-low: #f8f8f8;
+  --electron-affinity-mid-low: #e8f8f8;
+  --electron-affinity-mid: #d8e8e8;
+  --electron-affinity-mid-high: #c8f8e8;
+  --electron-affinity-high: #68e8c8;
+}
+.electron-affinity { background: linear-gradient(90deg, var(--electron-affinity-low), var(--electron-affinity-mid-low), var(--electron-affinity-mid), var(--electron-affinity-mid-high), var(--electron-affinity-high)); color: #334155; }
