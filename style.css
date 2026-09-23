@@ -296,6 +296,14 @@ h1 {
     --cell-size: 96px;
   }
 
+  /* Mobile owns its horizontal scroll behavior independently from desktop. */
+  .table-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
   .container {
     width: calc(100% - 20px);
     padding-top: 28px;
