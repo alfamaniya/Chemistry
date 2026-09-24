@@ -1,60 +1,130 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Interactive periodic table with educational element data based on PubChem Elements data.">
-<title>Periodic Table of Elements</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chemistry — Periodic Table</title>
 </head>
 <body>
-<main class="page-shell">
-<header class="page-header">
-  <div>
-    <p class="kicker">CHEMISTRY · PUBCHEM ELEMENTS</p>
-    <h1>Periodic Table of Elements</h1>
-    <p class="subtitle">Explore element data (داده‌های عناصر).</p>
-  </div>
-  <div class="source-mark">PubChem</div>
-</header>
-<section class="table-card" aria-label="Interactive periodic table">
-  <div class="table-topline">
-    <span>118 Elements (۱۱۸ عنصر)</span>
-    <span class="hint">Select an element for details (برای جزئیات روی عنصر کلیک کنید)</span>
-  </div>
-  <div id="periodic-table" class="periodic-table"></div>
-</section>
-<section id="legend" class="legend" aria-label="Element families">
-  <div class="legend-title">Element Families (خانواده‌های عناصر)</div>
-  <div id="legend-items" class="legend-items"></div>
-</section>
-</main>
-<dialog id="element-dialog" class="element-dialog">
-  <button id="close-dialog" class="dialog-close" type="button" aria-label="Close">×</button>
-  <div class="dialog-header">
-    <div>
-      <div class="dialog-number" id="dialog-number"></div>
-      <div class="dialog-symbol" id="dialog-symbol"></div>
-    </div>
-    <div class="dialog-title">
-      <h2 id="dialog-name"></h2>
-      <p id="dialog-persian-name"></p>
-      <p class="dialog-family" id="dialog-family"></p>
-    </div>
-  </div>
-  <div class="property-grid" id="property-grid"></div>
-</dialog>
-<script>
-const table=document.getElementById('periodic-table'),legendItems=document.getElementById('legend-items'),dialog=document.getElementById('element-dialog');
-const familyStyles={'Alkali metal':['#f6b7c8','#7d2746'],'Alkaline earth metal':['#f4c1cf','#7b3048'],'Transition metal':['#b8dce9','#24566b'],'Post-transition metal':['#bfe4d0','#24624a'],'Metalloid':['#f4e7a5','#6b5a12'],'Nonmetal':['#f7edbd','#6b5a12'],'Halogen':['#f6d69d','#80551b'],'Noble gas':['#dcebb1','#4d6320'],'Lanthanide':['#b9e4df','#256b68'],'Actinide':['#9fd8dd','#235e65']};
-Promise.all([fetch('data/table.json').then(r=>r.json()),fetch('database/elements.json').then(r=>r.json())]).then(([td,names])=>{const persian=new Map(names.map(x=>[x.atomicNumber,x.persianName]));renderTable(td.elements,persian);renderLegend()}).catch(console.error);
-function renderTable(elements,persian){table.innerHTML='';elements.forEach(e=>{const b=document.createElement('button');b.type='button';b.className='element-tile';b.style.gridRow=e.r;b.style.gridColumn=e.c;b.dataset.atomicNumber=e.n;const f=familyFor(e.n),c=familyStyles[f]||['#e2e8f0','#334155'];b.style.setProperty('--tile-bg',c[0]);b.style.setProperty('--tile-accent',c[1]);const pn=persian.get(e.n)||'';b.innerHTML=`<span class="atomic-number">${e.n}</span><strong class="symbol">${esc(e.s)}</strong><span class="element-name">${esc(e.name)}</span><span class="element-persian">${esc(pn)}</span><span class="atomic-mass">${esc(String(e.mass))} u</span>`;b.addEventListener('click',()=>showElement(e,pn));table.appendChild(b)})}
-function renderLegend(){legendItems.innerHTML=Object.entries(familyStyles).map(([f,c])=>`<span class="legend-item"><i style="--legend-bg:${c[0]};--legend-accent:${c[1]}"></i><span>${f} (${familyPersian(f)})</span></span>`).join('')}
-function showElement(e,pn){const f=familyFor(e.n),c=familyStyles[f]||['#e2e8f0','#334155'];document.documentElement.style.setProperty('--dialog-accent',c[1]);document.documentElement.style.setProperty('--dialog-bg',c[0]);document.getElementById('dialog-number').textContent=`Atomic Number (عدد اتمی): ${e.n}`;document.getElementById('dialog-symbol').textContent=e.s;document.getElementById('dialog-name').textContent=e.name;document.getElementById('dialog-persian-name').textContent=pn||'—';document.getElementById('dialog-family').textContent=`${f} (${familyPersian(f)})`;document.getElementById('property-grid').innerHTML=[['Symbol (نماد)',e.s],['Atomic Mass (جرم اتمی)',`${e.mass} u`],['Period (دوره)',e.r<=7?e.r:'—'],['Group / Column (گروه / ستون)',e.c]].map(([l,v])=>`<div class="property"><span>${l}</span><strong>${esc(v)}</strong></div>`).join('');dialog.showModal()}
-function familyFor(n){if([3,11,19,37,55,87].includes(n))return'Alkali metal';if([4,12,20,38,56,88].includes(n))return'Alkaline earth metal';if(n>=21&&n<=30||n>=39&&n<=48||n>=72&&n<=80||n>=104&&n<=112)return'Transition metal';if([13,31,49,50,81,82,83,113,114,115,116].includes(n))return'Post-transition metal';if([5,14,32,33,51,52,84].includes(n))return'Metalloid';if([1,6,7,8,15,16,34].includes(n))return'Nonmetal';if([9,17,35,53,85,117].includes(n))return'Halogen';if([2,10,18,36,54,86,118].includes(n))return'Noble gas';if(n>=57&&n<=71)return'Lanthanide';if(n>=89&&n<=103)return'Actinide';return'Transition metal'}
-function familyPersian(f){return({'Alkali metal':'فلز قلیایی','Alkaline earth metal':'فلز قلیایی خاکی','Transition metal':'فلز واسطه','Post-transition metal':'فلز پس‌واسطه','Metalloid':'شبه‌فلز','Nonmetal':'نافلز','Halogen':'هالوژن','Noble gas':'گاز نجیب','Lanthanide':'لانتانوئید','Actinide':'اکتینوئید'})[f]||f}
-function esc(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-document.getElementById('close-dialog').onclick=()=>dialog.close();dialog.onclick=e=>{const r=dialog.getBoundingClientRect();if(!(e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom))dialog.close()};
-</script>
+  <main id="periodic-table" aria-label="Periodic Table of Elements">
+    <div data-element="1"></div>
+    <div data-element="2"></div>
+    <div data-element="3"></div>
+    <div data-element="4"></div>
+    <div data-element="5"></div>
+    <div data-element="6"></div>
+    <div data-element="7"></div>
+    <div data-element="8"></div>
+    <div data-element="9"></div>
+    <div data-element="10"></div>
+    <div data-element="11"></div>
+    <div data-element="12"></div>
+    <div data-element="13"></div>
+    <div data-element="14"></div>
+    <div data-element="15"></div>
+    <div data-element="16"></div>
+    <div data-element="17"></div>
+    <div data-element="18"></div>
+    <div data-element="19"></div>
+    <div data-element="20"></div>
+    <div data-element="21"></div>
+    <div data-element="22"></div>
+    <div data-element="23"></div>
+    <div data-element="24"></div>
+    <div data-element="25"></div>
+    <div data-element="26"></div>
+    <div data-element="27"></div>
+    <div data-element="28"></div>
+    <div data-element="29"></div>
+    <div data-element="30"></div>
+    <div data-element="31"></div>
+    <div data-element="32"></div>
+    <div data-element="33"></div>
+    <div data-element="34"></div>
+    <div data-element="35"></div>
+    <div data-element="36"></div>
+    <div data-element="37"></div>
+    <div data-element="38"></div>
+    <div data-element="39"></div>
+    <div data-element="40"></div>
+    <div data-element="41"></div>
+    <div data-element="42"></div>
+    <div data-element="43"></div>
+    <div data-element="44"></div>
+    <div data-element="45"></div>
+    <div data-element="46"></div>
+    <div data-element="47"></div>
+    <div data-element="48"></div>
+    <div data-element="49"></div>
+    <div data-element="50"></div>
+    <div data-element="51"></div>
+    <div data-element="52"></div>
+    <div data-element="53"></div>
+    <div data-element="54"></div>
+    <div data-element="55"></div>
+    <div data-element="56"></div>
+    <div data-element="57"></div>
+    <div data-element="58"></div>
+    <div data-element="59"></div>
+    <div data-element="60"></div>
+    <div data-element="61"></div>
+    <div data-element="62"></div>
+    <div data-element="63"></div>
+    <div data-element="64"></div>
+    <div data-element="65"></div>
+    <div data-element="66"></div>
+    <div data-element="67"></div>
+    <div data-element="68"></div>
+    <div data-element="69"></div>
+    <div data-element="70"></div>
+    <div data-element="71"></div>
+    <div data-element="72"></div>
+    <div data-element="73"></div>
+    <div data-element="74"></div>
+    <div data-element="75"></div>
+    <div data-element="76"></div>
+    <div data-element="77"></div>
+    <div data-element="78"></div>
+    <div data-element="79"></div>
+    <div data-element="80"></div>
+    <div data-element="81"></div>
+    <div data-element="82"></div>
+    <div data-element="83"></div>
+    <div data-element="84"></div>
+    <div data-element="85"></div>
+    <div data-element="86"></div>
+    <div data-element="87"></div>
+    <div data-element="88"></div>
+    <div data-element="89"></div>
+    <div data-element="90"></div>
+    <div data-element="91"></div>
+    <div data-element="92"></div>
+    <div data-element="93"></div>
+    <div data-element="94"></div>
+    <div data-element="95"></div>
+    <div data-element="96"></div>
+    <div data-element="97"></div>
+    <div data-element="98"></div>
+    <div data-element="99"></div>
+    <div data-element="100"></div>
+    <div data-element="101"></div>
+    <div data-element="102"></div>
+    <div data-element="103"></div>
+    <div data-element="104"></div>
+    <div data-element="105"></div>
+    <div data-element="106"></div>
+    <div data-element="107"></div>
+    <div data-element="108"></div>
+    <div data-element="109"></div>
+    <div data-element="110"></div>
+    <div data-element="111"></div>
+    <div data-element="112"></div>
+    <div data-element="113"></div>
+    <div data-element="114"></div>
+    <div data-element="115"></div>
+    <div data-element="116"></div>
+    <div data-element="117"></div>
+    <div data-element="118"></div>
+  </main>
 </body>
 </html>
