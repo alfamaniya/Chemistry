@@ -2,10 +2,12 @@
 @media (min-width: 701px) {
   :root { --cell-width: 51px; --cell-height: 51px; --table-width: 1046px; }
   .periodic-table-page { padding: 10px; }
-  .periodic-table { padding: 14px; border-radius: 20px; }
-  .element { padding: 6px 3px 4px; border-radius: 12px; }
+  .periodic-table { padding: 14px; border-radius: 20px; grid-auto-rows: var(--cell-width); }
+  .element { width: var(--cell-width); height: var(--cell-width); min-width: 0; min-height: 0; aspect-ratio: 1 / 1; padding: 6px 3px 4px; border-radius: 12px; }
   .element-number { top: 5px; left: 5px; font-size: 10px; }
-  .element-symbol { font-size: 25px; letter-spacing: -.4px; }
+  .element-symbol { font-size: 25px; letter-spacing: -.4px; flex: 0 0 auto; }
+  .element-name-fa,
+  .element-name-en { width: 100%; min-width: 0; white-space: normal; overflow-wrap: anywhere; word-break: break-word; text-align: center; }
   .element-name-fa { margin-top: 4px; font-size: 8px; line-height: 1.1; }
   .element-name-en { margin-top: 2px; font-size: 6.5px; line-height: 1; }
 }
