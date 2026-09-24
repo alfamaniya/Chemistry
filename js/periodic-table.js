@@ -78,10 +78,21 @@ function fillCard(card, element) {
   card.title = `${element.PersianName || element.Name} — ${element.Name}`;
 }
 
-function blink(card) {
+function clearSelectedCard() {
+  document.querySelectorAll(".element.is-selected").forEach((card) => {
+    card.classList.remove("is-selected", "is-blinking");
+  });
+}
+
+function selectCard(card) {
+  clearSelectedCard();
   card.classList.remove("is-blinking");
   void card.offsetWidth;
   card.classList.add("is-blinking");
+
+  window.setTimeout(() => {
+    card.classList.add("is-selected");
+  }, 2600);
 }
 
 function setStatus(message) {
@@ -103,9 +114,14 @@ async function load() {
     if (!element) return;
 
     fillCard(card, element);
-    card.addEventListener("click", () => blink(card));
+    card.addEventListener("click", (event) => {
+      event.stopPropagation();
+      selectCard(card);
+    });
     populated += 1;
   });
+
+  document.addEventListener("click", clearSelectedCard);
 
   if (populated !== 118 || elements.size !== 118) {
     console.warn(`Expected 118 elements, found ${elements.size}; populated ${populated}.`);
