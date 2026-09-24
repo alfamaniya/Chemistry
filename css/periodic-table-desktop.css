@@ -1,55 +1,11 @@
-/* =========================================================
-   Desktop View — responsive overrides
-   Shared table rules remain in periodic-table.css.
-   ========================================================= */
-
+/* Desktop View — responsive overrides */
 @media (min-width: 701px) {
-  :root {
-    --cell-width: 51px;
-    --cell-height: 94px;
-    --table-width: 1016px;
-  }
-
-  .periodic-table-page {
-    padding: 10px;
-  }
-
-  .periodic-table {
-    padding: 14px;
-    border-radius: 20px;
-  }
-
-  .element {
-    padding: 18px 3px 5px;
-    border-radius: 12px;
-  }
-
-  .element-number {
-    top: 5px;
-    left: 5px;
-    font-size: 11px;
-  }
-
-  .element-symbol {
-    font-size: 27px;
-    letter-spacing: -.4px;
-  }
-
-  .element-name-fa {
-    margin-top: 8px;
-    font-size: 10px;
-    line-height: 1.15;
-  }
-
-  .element-name-en {
-    margin-top: 3px;
-    font-size: 7.5px;
-    line-height: 1.05;
-  }
-
-  .element:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--card-shadow-hover);
-    filter: saturate(1.04);
-  }
+  :root { --cell-width: 51px; --cell-height: 51px; --table-width: 1046px; }
+  .periodic-table-page { padding: 10px; }
+  .periodic-table { padding: 14px; border-radius: 20px; }
+  .element { padding: 6px 3px 4px; border-radius: 12px; }
+  .element-number { top: 5px; left: 5px; font-size: 10px; }
+  .element-symbol { font-size: 25px; letter-spacing: -.4px; }
+  .element-name-fa { margin-top: 4px; font-size: 8px; line-height: 1.1; }
+  .element-name-en { margin-top: 2px; font-size: 6.5px; line-height: 1; }
 }
