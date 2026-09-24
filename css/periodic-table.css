@@ -1,582 +1,396 @@
-/* متغیرهای اصلی ظاهر */
+/* =========================================================
+   Periodic Table — layout, cards and typography
+   ========================================================= */
 :root {
---gap:4px;
---text:#17202a;
---border:rgba(65,75,90,.28);
---table-bg:#f3f4f5;
---table-border:rgba(120,128,138,.24);
---table-shadow:0 10px 28px rgba(55,65,75,.08),inset 0 1px 0 rgba(255,255,255,.72);
---card-shadow:0 4px 10px rgba(30,45,65,.12),inset 0 1px 0 rgba(255,255,255,.65);
---card-shadow-hover:0 8px 18px rgba(30,45,65,.18),inset 0 1px 0 rgba(255,255,255,.78)
+  --gap: 4px;
+  --cell-width: 51px;
+  --cell-height: 94px;
+  --table-width: 1014px;
+  --text: #17202a;
+  --border: rgba(65, 75, 90, .25);
+  --table-bg: #f3f4f5;
+  --table-border: rgba(120, 128, 138, .24);
+  --table-shadow: 0 12px 30px rgba(55, 65, 75, .10), inset 0 1px 0 rgba(255,255,255,.72);
+  --card-shadow: 0 3px 8px rgba(30,45,65,.12), inset 0 1px 0 rgba(255,255,255,.62);
+  --card-shadow-hover: 0 7px 16px rgba(30,45,65,.18), inset 0 1px 0 rgba(255,255,255,.78);
 }
-* {
-box-sizing:border-box
-}
-/* بدنه و پس‌زمینه اصلی سایت */
+
+* { box-sizing: border-box; }
+
+html { overflow-x: hidden; }
+
 body {
-margin:0;
-background:#fff url("../image/file_00000000a4988243984e1f9d8443a40c.png") center/cover fixed no-repeat;
-color:var(--text);
-font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif
+  margin: 0;
+  min-width: 0;
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+  background: #fff url("../image/file_00000000a4988243984e1f9d8443a40c.png") center/cover fixed no-repeat;
 }
-/* محدوده کلی صفحه */
+
 .periodic-table-page {
-width:100%;
-padding:10px;
-overflow-x:auto
+  width: 100%;
+  min-width: 0;
+  padding: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
-/* کادر معرفی سایت */
+
+/* کادر معرفی */
 .site-intro {
-width:min(100%,793px);
-margin:0 auto 14px;
-padding:18px 20px;
-background:var(--table-bg);
-border:1px solid var(--table-border);
-border-radius:18px;
-box-shadow:var(--table-shadow);
-text-align:right
+  width: min(100%, var(--table-width));
+  margin: 0 auto 14px;
+  padding: 18px 20px;
+  background: var(--table-bg);
+  border: 1px solid var(--table-border);
+  border-radius: 18px;
+  box-shadow: var(--table-shadow);
+  text-align: right;
 }
+
 .site-intro h1 {
-margin:0 0 8px;
-font-size:clamp(20px,5vw,28px);
-line-height:1.3
+  margin: 0 0 8px;
+  font-size: clamp(20px, 4vw, 30px);
+  line-height: 1.3;
 }
+
 .site-intro p {
-margin:0;
-font-size:14px;
-line-height:1.9;
-color:#4d5661
+  margin: 0;
+  color: #4d5661;
+  font-size: 14px;
+  line-height: 1.9;
 }
+
 .site-intro .site-credit {
-margin-top:12px;
-font-size:12px;
-color:#6b737d
+  margin-top: 12px;
+  color: #6b737d;
+  font-size: 12px;
 }
-/* ساختار اصلی جدول */
+
+/* =========================================================
+   جدول
+   ========================================================= */
 .periodic-table {
-direction:ltr;
-display:grid;
-grid-template-columns:repeat(18,1fr);
-grid-template-rows:repeat(9,72px);
-gap:var(--gap);
-width:793px;
-min-width:793px;
-margin:0 auto;
-padding:14px;
-background:var(--table-bg);
-border:1px solid var(--table-border);
-border-radius:20px;
-box-shadow:var(--table-shadow)
+  direction: ltr;
+  display: grid;
+  grid-template-columns: repeat(18, var(--cell-width));
+  grid-template-rows: repeat(9, var(--cell-height));
+  gap: var(--gap);
+  width: var(--table-width);
+  min-width: var(--table-width);
+  margin: 0 auto;
+  padding: 14px;
+  background: var(--table-bg);
+  border: 1px solid var(--table-border);
+  border-radius: 20px;
+  box-shadow: var(--table-shadow);
 }
-/* کارت هر عنصر */
+
+/* =========================================================
+   کارت عنصر
+   ارتفاع و عرض کارت‌ها عمداً مستقل از متن نگه داشته شده‌اند.
+   ========================================================= */
 .element {
-direction:rtl;
-position:relative;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-min-width:0;
-min-height:0;
-padding:4px;
-border:1px solid var(--border);
-border-radius:12px;
-color:var(--text);
-cursor:pointer;
-overflow:hidden;
-box-shadow:var(--card-shadow);
-transition:transform .18s ease,box-shadow .18s ease,filter .18s ease
+  direction: rtl;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: var(--cell-width);
+  height: var(--cell-height);
+  min-width: var(--cell-width);
+  min-height: var(--cell-height);
+  margin: 0;
+  padding: 18px 3px 5px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  font-family: inherit;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+  -webkit-tap-highlight-color: transparent;
 }
+
 .element::after {
-content:"";
-position:absolute;
-inset:0;
-border-radius:inherit;
-background:linear-gradient(135deg,rgba(255,255,255,.28),transparent 55%);
-pointer-events:none
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255,255,255,.30), transparent 55%);
+  pointer-events: none;
 }
+
 .element:hover {
-transform:translateY(-2px);
-box-shadow:var(--card-shadow-hover);
-filter:saturate(1.04)
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover);
+  filter: saturate(1.04);
 }
-.element:active {
-transform:scale(.97)
+
+.element:active { transform: scale(.975); }
+
+.element:focus-visible {
+  outline: 2px solid rgba(65, 105, 145, .55);
+  outline-offset: 2px;
 }
-/* شماره اتمی */
+
+/* شماره اتمی — همیشه بالا و خوانا */
 .element-number {
-position:absolute;
-top:5px;
-left:6px;
-font-size:11px;
-font-weight:600;
-line-height:1
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 2;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  direction: ltr;
+  font-variant-numeric: tabular-nums;
 }
-/* نماد عنصر */
+
+/* نماد — عنصر اصلی کارت */
 .element-symbol {
-font-size:clamp(15px,2vw,25px);
-font-weight:800;
-line-height:1.05
+  display: block;
+  margin: 0;
+  font-size: 27px;
+  font-weight: 850;
+  line-height: .95;
+  letter-spacing: -.4px;
+  direction: ltr;
 }
-/* نام فارسی عنصر */
+
+/* نام فارسی */
 .element-name-fa {
-margin-top:4px;
-font-size:11px;
-font-weight:700;
-line-height:1.15;
-white-space:nowrap
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 0 1px;
+  font-size: 10px;
+  font-weight: 750;
+  line-height: 1.15;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
 }
-/* نام انگلیسی عنصر */
+
+/* نام انگلیسی */
 .element-name-en {
-margin-top:2px;
-font-size:8px;
-line-height:1.1;
-white-space:nowrap;
-opacity:.7;
-direction:ltr
-}
-[data-atomic-number="1"]{grid-column:1;
-grid-row:1
-}
-[data-atomic-number="2"]{grid-column:18;
-grid-row:1
-}
-[data-atomic-number="3"]{grid-column:1;
-grid-row:2
-}
-[data-atomic-number="4"]{grid-column:2;
-grid-row:2
-}
-[data-atomic-number="5"]{grid-column:13;
-grid-row:2
-}
-[data-atomic-number="6"]{grid-column:14;
-grid-row:2
-}
-[data-atomic-number="7"]{grid-column:15;
-grid-row:2
-}
-[data-atomic-number="8"]{grid-column:16;
-grid-row:2
-}
-[data-atomic-number="9"]{grid-column:17;
-grid-row:2
-}
-[data-atomic-number="10"]{grid-column:18;
-grid-row:2
-}
-[data-atomic-number="11"]{grid-column:1;
-grid-row:3
-}
-[data-atomic-number="12"]{grid-column:2;
-grid-row:3
-}
-[data-atomic-number="13"]{grid-column:13;
-grid-row:3
-}
-[data-atomic-number="14"]{grid-column:14;
-grid-row:3
-}
-[data-atomic-number="15"]{grid-column:15;
-grid-row:3
-}
-[data-atomic-number="16"]{grid-column:16;
-grid-row:3
-}
-[data-atomic-number="17"]{grid-column:17;
-grid-row:3
-}
-[data-atomic-number="18"]{grid-column:18;
-grid-row:3
-}
-[data-atomic-number="19"]{grid-column:1;
-grid-row:4
-}
-[data-atomic-number="20"]{grid-column:2;
-grid-row:4
-}
-[data-atomic-number="21"]{grid-column:3;
-grid-row:4
-}
-[data-atomic-number="22"]{grid-column:4;
-grid-row:4
-}
-[data-atomic-number="23"]{grid-column:5;
-grid-row:4
-}
-[data-atomic-number="24"]{grid-column:6;
-grid-row:4
-}
-[data-atomic-number="25"]{grid-column:7;
-grid-row:4
-}
-[data-atomic-number="26"]{grid-column:8;
-grid-row:4
-}
-[data-atomic-number="27"]{grid-column:9;
-grid-row:4
-}
-[data-atomic-number="28"]{grid-column:10;
-grid-row:4
-}
-[data-atomic-number="29"]{grid-column:11;
-grid-row:4
-}
-[data-atomic-number="30"]{grid-column:12;
-grid-row:4
-}
-[data-atomic-number="31"]{grid-column:13;
-grid-row:4
-}
-[data-atomic-number="32"]{grid-column:14;
-grid-row:4
-}
-[data-atomic-number="33"]{grid-column:15;
-grid-row:4
-}
-[data-atomic-number="34"]{grid-column:16;
-grid-row:4
-}
-[data-atomic-number="35"]{grid-column:17;
-grid-row:4
-}
-[data-atomic-number="36"]{grid-column:18;
-grid-row:4
-}
-[data-atomic-number="37"]{grid-column:1;
-grid-row:5
-}
-[data-atomic-number="38"]{grid-column:2;
-grid-row:5
-}
-[data-atomic-number="39"]{grid-column:3;
-grid-row:5
-}
-[data-atomic-number="40"]{grid-column:4;
-grid-row:5
-}
-[data-atomic-number="41"]{grid-column:5;
-grid-row:5
-}
-[data-atomic-number="42"]{grid-column:6;
-grid-row:5
-}
-[data-atomic-number="43"]{grid-column:7;
-grid-row:5
-}
-[data-atomic-number="44"]{grid-column:8;
-grid-row:5
-}
-[data-atomic-number="45"]{grid-column:9;
-grid-row:5
-}
-[data-atomic-number="46"]{grid-column:10;
-grid-row:5
-}
-[data-atomic-number="47"]{grid-column:11;
-grid-row:5
-}
-[data-atomic-number="48"]{grid-column:12;
-grid-row:5
-}
-[data-atomic-number="49"]{grid-column:13;
-grid-row:5
-}
-[data-atomic-number="50"]{grid-column:14;
-grid-row:5
-}
-[data-atomic-number="51"]{grid-column:15;
-grid-row:5
-}
-[data-atomic-number="52"]{grid-column:16;
-grid-row:5
-}
-[data-atomic-number="53"]{grid-column:17;
-grid-row:5
-}
-[data-atomic-number="54"]{grid-column:18;
-grid-row:5
-}
-[data-atomic-number="55"]{grid-column:1;
-grid-row:6
-}
-[data-atomic-number="56"]{grid-column:2;
-grid-row:6
-}
-[data-atomic-number="72"]{grid-column:4;
-grid-row:6
-}
-[data-atomic-number="73"]{grid-column:5;
-grid-row:6
-}
-[data-atomic-number="74"]{grid-column:6;
-grid-row:6
-}
-[data-atomic-number="75"]{grid-column:7;
-grid-row:6
-}
-[data-atomic-number="76"]{grid-column:8;
-grid-row:6
-}
-[data-atomic-number="77"]{grid-column:9;
-grid-row:6
-}
-[data-atomic-number="78"]{grid-column:10;
-grid-row:6
-}
-[data-atomic-number="79"]{grid-column:11;
-grid-row:6
-}
-[data-atomic-number="80"]{grid-column:12;
-grid-row:6
-}
-[data-atomic-number="81"]{grid-column:13;
-grid-row:6
-}
-[data-atomic-number="82"]{grid-column:14;
-grid-row:6
-}
-[data-atomic-number="83"]{grid-column:15;
-grid-row:6
-}
-[data-atomic-number="84"]{grid-column:16;
-grid-row:6
-}
-[data-atomic-number="85"]{grid-column:17;
-grid-row:6
-}
-[data-atomic-number="86"]{grid-column:18;
-grid-row:6
-}
-[data-atomic-number="87"]{grid-column:1;
-grid-row:7
-}
-[data-atomic-number="88"]{grid-column:2;
-grid-row:7
-}
-[data-atomic-number="104"]{grid-column:4;
-grid-row:7
-}
-[data-atomic-number="105"]{grid-column:5;
-grid-row:7
-}
-[data-atomic-number="106"]{grid-column:6;
-grid-row:7
-}
-[data-atomic-number="107"]{grid-column:7;
-grid-row:7
-}
-[data-atomic-number="108"]{grid-column:8;
-grid-row:7
-}
-[data-atomic-number="109"]{grid-column:9;
-grid-row:7
-}
-[data-atomic-number="110"]{grid-column:10;
-grid-row:7
-}
-[data-atomic-number="111"]{grid-column:11;
-grid-row:7
-}
-[data-atomic-number="112"]{grid-column:12;
-grid-row:7
-}
-[data-atomic-number="113"]{grid-column:13;
-grid-row:7
-}
-[data-atomic-number="114"]{grid-column:14;
-grid-row:7
-}
-[data-atomic-number="115"]{grid-column:15;
-grid-row:7
-}
-[data-atomic-number="116"]{grid-column:16;
-grid-row:7
-}
-[data-atomic-number="117"]{grid-column:17;
-grid-row:7
-}
-[data-atomic-number="118"]{grid-column:18;
-grid-row:7
-}
-[data-atomic-number="57"]{grid-column:3;
-grid-row:8
-}
-[data-atomic-number="58"]{grid-column:4;
-grid-row:8
-}
-[data-atomic-number="59"]{grid-column:5;
-grid-row:8
-}
-[data-atomic-number="60"]{grid-column:6;
-grid-row:8
-}
-[data-atomic-number="61"]{grid-column:7;
-grid-row:8
-}
-[data-atomic-number="62"]{grid-column:8;
-grid-row:8
-}
-[data-atomic-number="63"]{grid-column:9;
-grid-row:8
-}
-[data-atomic-number="64"]{grid-column:10;
-grid-row:8
-}
-[data-atomic-number="65"]{grid-column:11;
-grid-row:8
-}
-[data-atomic-number="66"]{grid-column:12;
-grid-row:8
-}
-[data-atomic-number="67"]{grid-column:13;
-grid-row:8
-}
-[data-atomic-number="68"]{grid-column:14;
-grid-row:8
-}
-[data-atomic-number="69"]{grid-column:15;
-grid-row:8
-}
-[data-atomic-number="70"]{grid-column:16;
-grid-row:8
-}
-[data-atomic-number="71"]{grid-column:17;
-grid-row:8
-}
-[data-atomic-number="89"]{grid-column:3;
-grid-row:9
-}
-[data-atomic-number="90"]{grid-column:4;
-grid-row:9
-}
-[data-atomic-number="91"]{grid-column:5;
-grid-row:9
-}
-[data-atomic-number="92"]{grid-column:6;
-grid-row:9
-}
-[data-atomic-number="93"]{grid-column:7;
-grid-row:9
-}
-[data-atomic-number="94"]{grid-column:8;
-grid-row:9
-}
-[data-atomic-number="95"]{grid-column:9;
-grid-row:9
-}
-[data-atomic-number="96"]{grid-column:10;
-grid-row:9
-}
-[data-atomic-number="97"]{grid-column:11;
-grid-row:9
-}
-[data-atomic-number="98"]{grid-column:12;
-grid-row:9
-}
-[data-atomic-number="99"]{grid-column:13;
-grid-row:9
-}
-[data-atomic-number="100"]{grid-column:14;
-grid-row:9
-}
-[data-atomic-number="101"]{grid-column:15;
-grid-row:9
-}
-[data-atomic-number="102"]{grid-column:16;
-grid-row:9
-}
-[data-atomic-number="103"]{grid-column:17;
-grid-row:9
-}
-[data-atomic-number="1"],[data-atomic-number="5"],[data-atomic-number="6"],[data-atomic-number="7"],[data-atomic-number="8"],[data-atomic-number="9"],[data-atomic-number="14"],[data-atomic-number="15"],[data-atomic-number="16"],[data-atomic-number="32"],[data-atomic-number="33"],[data-atomic-number="34"],[data-atomic-number="51"],[data-atomic-number="52"],[data-atomic-number="84"]{background:#fff0b2
-}
-[data-atomic-number="2"],[data-atomic-number="10"],[data-atomic-number="18"],[data-atomic-number="36"],[data-atomic-number="54"],[data-atomic-number="86"],[data-atomic-number="118"]{background:#f6d9ae
-}
-[data-atomic-number="3"],[data-atomic-number="11"],[data-atomic-number="19"],[data-atomic-number="37"],[data-atomic-number="55"],[data-atomic-number="87"]{background:#f5b9c0
-}
-[data-atomic-number="4"],[data-atomic-number="12"],[data-atomic-number="20"],[data-atomic-number="38"],[data-atomic-number="56"],[data-atomic-number="88"]{background:#d8d5ef
-}
-[data-atomic-number="21"],[data-atomic-number="22"],[data-atomic-number="23"],[data-atomic-number="24"],[data-atomic-number="25"],[data-atomic-number="26"],[data-atomic-number="27"],[data-atomic-number="28"],[data-atomic-number="29"],[data-atomic-number="30"],[data-atomic-number="39"],[data-atomic-number="40"],[data-atomic-number="41"],[data-atomic-number="42"],[data-atomic-number="43"],[data-atomic-number="44"],[data-atomic-number="45"],[data-atomic-number="46"],[data-atomic-number="47"],[data-atomic-number="48"],[data-atomic-number="72"],[data-atomic-number="73"],[data-atomic-number="74"],[data-atomic-number="75"],[data-atomic-number="76"],[data-atomic-number="77"],[data-atomic-number="78"],[data-atomic-number="79"],[data-atomic-number="80"],[data-atomic-number="104"],[data-atomic-number="105"],[data-atomic-number="106"],[data-atomic-number="107"],[data-atomic-number="108"],[data-atomic-number="109"],[data-atomic-number="110"],[data-atomic-number="111"],[data-atomic-number="112"]{background:#b9d8f5
-}
-[data-atomic-number="31"],[data-atomic-number="49"],[data-atomic-number="50"],[data-atomic-number="81"],[data-atomic-number="82"],[data-atomic-number="83"],[data-atomic-number="113"],[data-atomic-number="114"],[data-atomic-number="115"],[data-atomic-number="116"]{background:#b8efae
-}
-[data-atomic-number="35"],[data-atomic-number="53"],[data-atomic-number="85"],[data-atomic-number="117"]{background:#f0dfb0
-}
-[data-atomic-number="57"],[data-atomic-number="58"],[data-atomic-number="59"],[data-atomic-number="60"],[data-atomic-number="61"],[data-atomic-number="62"],[data-atomic-number="63"],[data-atomic-number="64"],[data-atomic-number="65"],[data-atomic-number="66"],[data-atomic-number="67"],[data-atomic-number="68"],[data-atomic-number="69"],[data-atomic-number="70"],[data-atomic-number="71"],[data-atomic-number="89"],[data-atomic-number="90"],[data-atomic-number="91"],[data-atomic-number="92"],[data-atomic-number="93"],[data-atomic-number="94"],[data-atomic-number="95"],[data-atomic-number="96"],[data-atomic-number="97"],[data-atomic-number="98"],[data-atomic-number="99"],[data-atomic-number="100"],[data-atomic-number="101"],[data-atomic-number="102"],[data-atomic-number="103"]{background:#b4eee8
-}
-/* انیمیشن چشمک کارت */
+  display: block;
+  width: 100%;
+  margin-top: 3px;
+  padding: 0 1px;
+  color: rgba(23,32,42,.72);
+  font-size: 7.5px;
+  font-weight: 500;
+  line-height: 1.05;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  direction: ltr;
+}
+
+/* =========================================================
+   جایگاه ۱۱۸ عنصر
+   ========================================================= */
+[data-atomic-number="1"]{grid-column:1;grid-row:1}
+[data-atomic-number="2"]{grid-column:18;grid-row:1}
+[data-atomic-number="3"]{grid-column:1;grid-row:2}
+[data-atomic-number="4"]{grid-column:2;grid-row:2}
+[data-atomic-number="5"]{grid-column:13;grid-row:2}
+[data-atomic-number="6"]{grid-column:14;grid-row:2}
+[data-atomic-number="7"]{grid-column:15;grid-row:2}
+[data-atomic-number="8"]{grid-column:16;grid-row:2}
+[data-atomic-number="9"]{grid-column:17;grid-row:2}
+[data-atomic-number="10"]{grid-column:18;grid-row:2}
+[data-atomic-number="11"]{grid-column:1;grid-row:3}
+[data-atomic-number="12"]{grid-column:2;grid-row:3}
+[data-atomic-number="13"]{grid-column:13;grid-row:3}
+[data-atomic-number="14"]{grid-column:14;grid-row:3}
+[data-atomic-number="15"]{grid-column:15;grid-row:3}
+[data-atomic-number="16"]{grid-column:16;grid-row:3}
+[data-atomic-number="17"]{grid-column:17;grid-row:3}
+[data-atomic-number="18"]{grid-column:18;grid-row:3}
+[data-atomic-number="19"]{grid-column:1;grid-row:4}
+[data-atomic-number="20"]{grid-column:2;grid-row:4}
+[data-atomic-number="21"]{grid-column:3;grid-row:4}
+[data-atomic-number="22"]{grid-column:4;grid-row:4}
+[data-atomic-number="23"]{grid-column:5;grid-row:4}
+[data-atomic-number="24"]{grid-column:6;grid-row:4}
+[data-atomic-number="25"]{grid-column:7;grid-row:4}
+[data-atomic-number="26"]{grid-column:8;grid-row:4}
+[data-atomic-number="27"]{grid-column:9;grid-row:4}
+[data-atomic-number="28"]{grid-column:10;grid-row:4}
+[data-atomic-number="29"]{grid-column:11;grid-row:4}
+[data-atomic-number="30"]{grid-column:12;grid-row:4}
+[data-atomic-number="31"]{grid-column:13;grid-row:4}
+[data-atomic-number="32"]{grid-column:14;grid-row:4}
+[data-atomic-number="33"]{grid-column:15;grid-row:4}
+[data-atomic-number="34"]{grid-column:16;grid-row:4}
+[data-atomic-number="35"]{grid-column:17;grid-row:4}
+[data-atomic-number="36"]{grid-column:18;grid-row:4}
+[data-atomic-number="37"]{grid-column:1;grid-row:5}
+[data-atomic-number="38"]{grid-column:2;grid-row:5}
+[data-atomic-number="39"]{grid-column:3;grid-row:5}
+[data-atomic-number="40"]{grid-column:4;grid-row:5}
+[data-atomic-number="41"]{grid-column:5;grid-row:5}
+[data-atomic-number="42"]{grid-column:6;grid-row:5}
+[data-atomic-number="43"]{grid-column:7;grid-row:5}
+[data-atomic-number="44"]{grid-column:8;grid-row:5}
+[data-atomic-number="45"]{grid-column:9;grid-row:5}
+[data-atomic-number="46"]{grid-column:10;grid-row:5}
+[data-atomic-number="47"]{grid-column:11;grid-row:5}
+[data-atomic-number="48"]{grid-column:12;grid-row:5}
+[data-atomic-number="49"]{grid-column:13;grid-row:5}
+[data-atomic-number="50"]{grid-column:14;grid-row:5}
+[data-atomic-number="51"]{grid-column:15;grid-row:5}
+[data-atomic-number="52"]{grid-column:16;grid-row:5}
+[data-atomic-number="53"]{grid-column:17;grid-row:5}
+[data-atomic-number="54"]{grid-column:18;grid-row:5}
+[data-atomic-number="55"]{grid-column:1;grid-row:6}
+[data-atomic-number="56"]{grid-column:2;grid-row:6}
+[data-atomic-number="57"]{grid-column:3;grid-row:8}
+[data-atomic-number="58"]{grid-column:4;grid-row:8}
+[data-atomic-number="59"]{grid-column:5;grid-row:8}
+[data-atomic-number="60"]{grid-column:6;grid-row:8}
+[data-atomic-number="61"]{grid-column:7;grid-row:8}
+[data-atomic-number="62"]{grid-column:8;grid-row:8}
+[data-atomic-number="63"]{grid-column:9;grid-row:8}
+[data-atomic-number="64"]{grid-column:10;grid-row:8}
+[data-atomic-number="65"]{grid-column:11;grid-row:8}
+[data-atomic-number="66"]{grid-column:12;grid-row:8}
+[data-atomic-number="67"]{grid-column:13;grid-row:8}
+[data-atomic-number="68"]{grid-column:14;grid-row:8}
+[data-atomic-number="69"]{grid-column:15;grid-row:8}
+[data-atomic-number="70"]{grid-column:16;grid-row:8}
+[data-atomic-number="71"]{grid-column:17;grid-row:8}
+[data-atomic-number="72"]{grid-column:4;grid-row:6}
+[data-atomic-number="73"]{grid-column:5;grid-row:6}
+[data-atomic-number="74"]{grid-column:6;grid-row:6}
+[data-atomic-number="75"]{grid-column:7;grid-row:6}
+[data-atomic-number="76"]{grid-column:8;grid-row:6}
+[data-atomic-number="77"]{grid-column:9;grid-row:6}
+[data-atomic-number="78"]{grid-column:10;grid-row:6}
+[data-atomic-number="79"]{grid-column:11;grid-row:6}
+[data-atomic-number="80"]{grid-column:12;grid-row:6}
+[data-atomic-number="81"]{grid-column:13;grid-row:6}
+[data-atomic-number="82"]{grid-column:14;grid-row:6}
+[data-atomic-number="83"]{grid-column:15;grid-row:6}
+[data-atomic-number="84"]{grid-column:16;grid-row:6}
+[data-atomic-number="85"]{grid-column:17;grid-row:6}
+[data-atomic-number="86"]{grid-column:18;grid-row:6}
+[data-atomic-number="87"]{grid-column:1;grid-row:7}
+[data-atomic-number="88"]{grid-column:2;grid-row:7}
+[data-atomic-number="89"]{grid-column:3;grid-row:9}
+[data-atomic-number="90"]{grid-column:4;grid-row:9}
+[data-atomic-number="91"]{grid-column:5;grid-row:9}
+[data-atomic-number="92"]{grid-column:6;grid-row:9}
+[data-atomic-number="93"]{grid-column:7;grid-row:9}
+[data-atomic-number="94"]{grid-column:8;grid-row:9}
+[data-atomic-number="95"]{grid-column:9;grid-row:9}
+[data-atomic-number="96"]{grid-column:10;grid-row:9}
+[data-atomic-number="97"]{grid-column:11;grid-row:9}
+[data-atomic-number="98"]{grid-column:12;grid-row:9}
+[data-atomic-number="99"]{grid-column:13;grid-row:9}
+[data-atomic-number="100"]{grid-column:14;grid-row:9}
+[data-atomic-number="101"]{grid-column:15;grid-row:9}
+[data-atomic-number="102"]{grid-column:16;grid-row:9}
+[data-atomic-number="103"]{grid-column:17;grid-row:9}
+[data-atomic-number="104"]{grid-column:4;grid-row:7}
+[data-atomic-number="105"]{grid-column:5;grid-row:7}
+[data-atomic-number="106"]{grid-column:6;grid-row:7}
+[data-atomic-number="107"]{grid-column:7;grid-row:7}
+[data-atomic-number="108"]{grid-column:8;grid-row:7}
+[data-atomic-number="109"]{grid-column:9;grid-row:7}
+[data-atomic-number="110"]{grid-column:10;grid-row:7}
+[data-atomic-number="111"]{grid-column:11;grid-row:7}
+[data-atomic-number="112"]{grid-column:12;grid-row:7}
+[data-atomic-number="113"]{grid-column:13;grid-row:7}
+[data-atomic-number="114"]{grid-column:14;grid-row:7}
+[data-atomic-number="115"]{grid-column:15;grid-row:7}
+[data-atomic-number="116"]{grid-column:16;grid-row:7}
+[data-atomic-number="117"]{grid-column:17;grid-row:7}
+[data-atomic-number="118"]{grid-column:18;grid-row:7}
+
+/* رنگ‌بندی */
+[data-atomic-number="1"],[data-atomic-number="5"],[data-atomic-number="6"],[data-atomic-number="7"],[data-atomic-number="8"],[data-atomic-number="9"],[data-atomic-number="14"],[data-atomic-number="15"],[data-atomic-number="16"],[data-atomic-number="32"],[data-atomic-number="33"],[data-atomic-number="34"],[data-atomic-number="51"],[data-atomic-number="52"],[data-atomic-number="84"]{background:#fff0b2}
+[data-atomic-number="2"],[data-atomic-number="10"],[data-atomic-number="18"],[data-atomic-number="36"],[data-atomic-number="54"],[data-atomic-number="86"],[data-atomic-number="118"]{background:#f6d9ae}
+[data-atomic-number="3"],[data-atomic-number="11"],[data-atomic-number="19"],[data-atomic-number="37"],[data-atomic-number="55"],[data-atomic-number="87"]{background:#f5b9c0}
+[data-atomic-number="4"],[data-atomic-number="12"],[data-atomic-number="20"],[data-atomic-number="38"],[data-atomic-number="56"],[data-atomic-number="88"]{background:#d8d5ef}
+[data-atomic-number="21"],[data-atomic-number="22"],[data-atomic-number="23"],[data-atomic-number="24"],[data-atomic-number="25"],[data-atomic-number="26"],[data-atomic-number="27"],[data-atomic-number="28"],[data-atomic-number="29"],[data-atomic-number="30"],[data-atomic-number="39"],[data-atomic-number="40"],[data-atomic-number="41"],[data-atomic-number="42"],[data-atomic-number="43"],[data-atomic-number="44"],[data-atomic-number="45"],[data-atomic-number="46"],[data-atomic-number="47"],[data-atomic-number="48"],[data-atomic-number="72"],[data-atomic-number="73"],[data-atomic-number="74"],[data-atomic-number="75"],[data-atomic-number="76"],[data-atomic-number="77"],[data-atomic-number="78"],[data-atomic-number="79"],[data-atomic-number="80"],[data-atomic-number="104"],[data-atomic-number="105"],[data-atomic-number="106"],[data-atomic-number="107"],[data-atomic-number="108"],[data-atomic-number="109"],[data-atomic-number="110"],[data-atomic-number="111"],[data-atomic-number="112"]{background:#b9d8f5}
+[data-atomic-number="31"],[data-atomic-number="49"],[data-atomic-number="50"],[data-atomic-number="81"],[data-atomic-number="82"],[data-atomic-number="83"],[data-atomic-number="113"],[data-atomic-number="114"],[data-atomic-number="115"],[data-atomic-number="116"]{background:#b8efae}
+[data-atomic-number="35"],[data-atomic-number="53"],[data-atomic-number="85"],[data-atomic-number="117"]{background:#f0dfb0}
+[data-atomic-number="57"],[data-atomic-number="58"],[data-atomic-number="59"],[data-atomic-number="60"],[data-atomic-number="61"],[data-atomic-number="62"],[data-atomic-number="63"],[data-atomic-number="64"],[data-atomic-number="65"],[data-atomic-number="66"],[data-atomic-number="67"],[data-atomic-number="68"],[data-atomic-number="69"],[data-atomic-number="70"],[data-atomic-number="71"],[data-atomic-number="89"],[data-atomic-number="90"],[data-atomic-number="91"],[data-atomic-number="92"],[data-atomic-number="93"],[data-atomic-number="94"],[data-atomic-number="95"],[data-atomic-number="96"],[data-atomic-number="97"],[data-atomic-number="98"],[data-atomic-number="99"],[data-atomic-number="100"],[data-atomic-number="101"],[data-atomic-number="102"],[data-atomic-number="103"]{background:#b4eee8}
+
+/* چشمک دو مرحله‌ای هنگام کلیک */
 @keyframes element-blink {
-0%,100%{opacity:1;
-transform:scale(1);
-box-shadow:var(--card-shadow)
+  0%, 100% { opacity: 1; transform: scale(1); box-shadow: var(--card-shadow); }
+  25% { opacity: .48; transform: scale(.985); box-shadow: 0 0 0 4px rgba(59,130,246,.14); }
+  50% { opacity: 1; transform: scale(1.025); box-shadow: 0 0 16px rgba(59,130,246,.28); }
 }
-25%{opacity:.48;
-transform:scale(.985);
-box-shadow:0 0 0 4px rgba(59,130,246,.14)
-}
-50%{opacity:1;
-transform:scale(1.025);
-box-shadow:0 0 16px rgba(59,130,246,.28)
-}
-}
-.element.is-blinking {
-animation:element-blink .42s ease-in-out 2
-}
-/* تنظیمات موبایل */
+
+.element.is-blinking { animation: element-blink .42s ease-in-out 2; }
+
+/* =========================================================
+   موبایل — جدول افقی اسکرول می‌شود تا کارت‌ها فشرده نشوند.
+   ========================================================= */
 @media (max-width: 700px) {
-/* محدوده کلی صفحه */
-.periodic-table-page {
-padding:6px
+  :root {
+    --cell-width: 42px;
+    --cell-height: 74px;
+    --table-width: 856px;
+  }
+
+  .periodic-table-page { padding: 6px; }
+
+  .site-intro {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 14px;
+    border-radius: 16px;
+  }
+
+  .site-intro h1 { font-size: 21px; }
+  .site-intro p { font-size: 13px; line-height: 1.85; }
+  .site-intro .site-credit { font-size: 11px; }
+
+  .periodic-table {
+    padding: 10px;
+    border-radius: 18px;
+  }
+
+  .element {
+    padding: 15px 2px 4px;
+    border-radius: 10px;
+  }
+
+  .element-number {
+    top: 4px;
+    left: 4px;
+    font-size: 9px;
+  }
+
+  .element-symbol {
+    font-size: 22px;
+    letter-spacing: -.25px;
+  }
+
+  .element-name-fa {
+    margin-top: 6px;
+    font-size: 8.5px;
+    line-height: 1.1;
+  }
+
+  .element-name-en {
+    margin-top: 2px;
+    font-size: 6.5px;
+    line-height: 1;
+  }
 }
-/* کادر معرفی سایت */
-.site-intro {
-width:100%;
-margin-bottom:10px;
-padding:15px 14px;
-border-radius:16px
-}
-.site-intro p {
-font-size:13px;
-line-height:1.85
-}
-.site-intro .site-credit {
-font-size:11px
-}
-/* ساختار اصلی جدول */
-.periodic-table {
-width:793px;
-min-width:793px;
-grid-template-columns:repeat(18,40px);
-grid-template-rows:repeat(9,56px);
-gap:3px;
-padding:10px;
-border-radius:18px
-}
-/* کارت هر عنصر */
-.element {
-min-height:56px;
-border-radius:10px
-}
-/* نماد عنصر */
-.element-symbol {
-font-size:17px
-}
-/* نام فارسی عنصر */
-.element-name-fa {
-font-size:10px
-}
-/* نام انگلیسی عنصر */
-.element-name-en {
-font-size:7px
-}
-}
-/* کاهش حرکت */
+
 @media (prefers-reduced-motion: reduce) {
-.element,.element::after {
-transition:none
-}
-.element.is-blinking {
-animation:none
-}
+  .element,
+  .element::after { transition: none; }
+  .element.is-blinking { animation: none; }
 }
