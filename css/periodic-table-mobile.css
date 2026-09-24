@@ -1,20 +1,59 @@
-/* Mobile responsive overrides for the periodic table and site intro. */
+/* =========================================================
+   Mobile View — periodic table responsive overrides
+   ========================================================= */
+
 @media (max-width: 700px) {
-  :root { --cell-width: 42px; --cell-height: 74px; --table-width: 846px; }
-  .periodic-table-page { padding: 6px; }
-  .periodic-table { padding: 10px; border-radius: 18px; }
-  .element { padding: 15px 2px 4px; border-radius: 10px; }
-  .element-number { top: 4px; left: 4px; font-size: 9px; }
-  .element-symbol { font-size: 22px; letter-spacing: -.25px; }
-  .element-name-fa { margin-top: 6px; font-size: 8.5px; line-height: 1.1; }
-  .element-name-en { margin-top: 2px; font-size: 6.5px; line-height: 1; }
-  .site-intro { width: 100%; margin-bottom: 10px; padding: 15px 14px; border-radius: 16px; }
-  .site-intro h1 { font-size: 21px; }
-  .site-intro p { font-size: 13px; line-height: 1.85; }
-  .site-intro .site-credit { font-size: 11px; }
+  :root {
+    --cell-width: 42px;
+    --cell-height: 74px;
+    --table-width: 846px;
+  }
+
+  .periodic-table-page {
+    padding: 6px;
+  }
+
+  .periodic-table {
+    padding: 10px;
+    border-radius: 18px;
+  }
+
+  .element {
+    padding: 15px 2px 4px;
+    border-radius: 10px;
+  }
+
+  .element-number {
+    top: 4px;
+    left: 4px;
+    font-size: 9px;
+  }
+
+  .element-symbol {
+    font-size: 22px;
+    letter-spacing: -.25px;
+  }
+
+  .element-name-fa {
+    margin-top: 6px;
+    font-size: 8.5px;
+    line-height: 1.1;
+  }
+
+  .element-name-en {
+    margin-top: 2px;
+    font-size: 6.5px;
+    line-height: 1;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .element, .element::after { transition: none; }
-  .element.is-blinking { animation: none; }
+  .element,
+  .element::after {
+    transition: none;
+  }
+
+  .element.is-blinking {
+    animation: none;
+  }
 }
