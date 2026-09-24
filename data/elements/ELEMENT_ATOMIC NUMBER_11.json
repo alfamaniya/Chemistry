@@ -1,0 +1,2673 @@
+{
+  "Record": {
+    "RecordType": "AtomicNumber",
+    "RecordNumber": 11,
+    "RecordTitle": "Sodium",
+    "Section": [
+      {
+        "TOCHeading": "Identifiers",
+        "Description": "Identifiers for this element, including element name, element symbol, InChI string, and InChIKey.",
+        "Section": [
+          {
+            "TOCHeading": "Element Name",
+            "Description": "The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Sodium"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Sodium"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Symbol",
+            "Description": "Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Na"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Na"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChI",
+            "Description": "The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChI",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "InChI=1S/Na"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChIKey",
+            "Description": "An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChIKey",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "KEAYESYHFKHZAL-UHFFFAOYSA-N"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Properties",
+        "Description": "Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on.",
+        "Section": [
+          {
+            "TOCHeading": "Atomic Weight",
+            "Description": "Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u).",
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "22.989 769 28(2)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "22.98976928"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "22.99"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "22.98976928(2)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Configuration",
+            "Description": "The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result.",
+            "URL": "https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Ne]3s1",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Radius",
+            "Description": "The atomic radius of a chemical element is a measure of the size of its atom, usually, the distance from the center of the nucleus to the outermost isolated electron.  Because an atom does not have a discrete boundary, there are various non-equivalent definitions of atomic radius, such as Van der Waals radius and covalent radius.",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Name": "Van der Waals Atomic Radius",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "227 pm (Van der Waals)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Empirical Atomic Radius",
+                "Reference": [
+                  "J.C. Slater, J Chem Phys, 1964, 41(10), 3199-3205. DOI:10.1063/1.1725697"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "J.C. Slater, J Chem Phys, 1964, 41(10), 3199-3205. DOI:10.1063/1.1725697"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    180
+                  ],
+                  "Unit": "pm (Empirical)"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Covalent Atomic Radius",
+                "Reference": [
+                  "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "166(9) pm (Covalent)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Oxidation States",
+            "Description": "The oxidation state(s) that this element commonly has in a compound.  The oxidation state of an atom is defined as the hypothetical charge that would be held by that atom if all of its bonds to other atoms were completely ionic in nature. For example, the oxidation state of carbon in CO2 would be +4 since the hypothetical charge held by the carbon atom if both of the carbon-oxygen double bonds were completely ionic would be equal to +4 (each oxygen atom would hold a charge of -2 since oxygen is more electronegative than carbon).",
+            "URL": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/20%3A_Electrochemistry/20.01%3A_Oxidation_States_and_Redox_Reactions",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "+1"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ground Level",
+            "Description": "Also called ground-state level. The ground state electron configuration is the arrangement of electrons around the nucleus of an atom with lower energy levels.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2S1/2",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 2,
+                          "Length": 3,
+                          "Type": "Subscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ionization Energy",
+            "Description": "Ionization energy, also called ionization potential, is the amount of energy required to remove an electron from an isolated atom or molecule.",
+            "URL": "https://www.britannica.com/science/ionization-energy",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "5.139 eV"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Reference": [
+                  "Precision Stark Spectroscopy of Sodium: Improved Values for the Ionization Limit and Bound States, M. Ciocca, C. E. Burkhardt, J. J. Leventhal, and T. Bergeman, Phys. Rev. A 45, 4720–4730 (1992) DOI:10.1103/PhysRevA.45.4720",
+                  "Precision Stark Spectroscopy of Sodium 2P and 2D States, J. F. Baugh, C. E. Burkhardt, and J. J. Leventhal, Phys. Rev. A 58, 1585–1588 (1998) DOI:10.1103/PhysRevA.58.1585"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Precision Stark Spectroscopy of Sodium: Improved Values for the Ionization Limit and Bound States, M. Ciocca, C. E. Burkhardt, J. J. Leventhal, and T. Bergeman, Phys. Rev. A 45, 4720–4730 (1992) DOI:10.1103/PhysRevA.45.4720"
+                  },
+                  {
+                    "Citation": "Precision Stark Spectroscopy of Sodium 2P and 2D States, J. F. Baugh, C. E. Burkhardt, and J. J. Leventhal, Phys. Rev. A 58, 1585–1588 (1998) DOI:10.1103/PhysRevA.58.1585"
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "5.13907696 ± 0.00000025 eV"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electronegativity",
+            "Description": "Electronegativity is a measure of the tendency of an atom to attract a bonding pair of electrons.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electronegativity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Name": "Pauling Scale Electronegativity",
+                "Reference": [
+                  "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    0.93
+                  ],
+                  "Unit": "(Pauling Scale)"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Allen Scale Electronegativity",
+                "Reference": [
+                  "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003",
+                  "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e",
+                  "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    0.869
+                  ],
+                  "Unit": "(Allen Scale)"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Affinity",
+            "Description": "Electron affinity refers to the energy released when an additional electron is attached to a neutral atom to form a singly charged negative ion.  Alternatively, it can also be defined as the energy required to detach an electron from the singly charged negative ion.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electron_Affinity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    0.548
+                  ],
+                  "Unit": "eV"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    0.54
+                  ],
+                  "Unit": "eV"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Spectra",
+            "Description": "The spectrum of the electromagnetic radiation emitted or absorbed by an electron during transitions between different energy levels within an atom.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/lines_hold.pl?el=Na",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Lines Holdings"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/levels_hold.pl?el=Na",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Levels Holdings"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Physical Description",
+            "Description": "The appearance or features of this element, including color, odor, state, taste and more in general.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Solid"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Classification",
+            "Description": "Classification according to the element's chemical and physical properties, and location within the periodic table.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Metal"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Period Number",
+            "Description": "The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "3"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Group Number",
+            "Description": "Element group refers to a set of chemical elements in the same vertical column of the periodic table",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1 - Alkali Metal"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Density",
+            "Description": "This section provides information on the density of an element. It is the mass of a unit volume of the element and commonly expressed in units of kg/m3 or g/cm3.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Map%3A_Fundamentals_of_General_Organic_and_Biological_Chemistry_(McMurry_et_al.)/01%3A_Matter_and_Measurements/1.12%3A_Density_and_Specific_Gravity",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "0.97 grams per cubic centimeter"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Melting Point",
+            "Description": "This section provides the melting point and/or freezing point. The melting point is the temperature at which a substance changes state from solid to liquid at atmospheric pressure. When considered as the temperature of the reverse change (from liquid to solid), it is referred to as the freezing point.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.01%3A_Melting_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "370.95 K (97.80°C or 208.04°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "97.8°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Boiling Point",
+            "Description": "The temperature at which this element changes state from liquid to gas at a given atmospheric pressure.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.02%3A_Boiling_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1156 K (883°C or 1621°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "883°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Crustal Abundance",
+            "Description": "The estimated element abundance in the earth's crust.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2.36×104 milligrams per kilogram",
+                      "Markup": [
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Oceanic Abundance",
+            "Description": "The estimated element abundance in the earth's oceans.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1.08×104 milligrams per liter",
+                      "Markup": [
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "History",
+        "Description": "The history of the discovery and use of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 3,
+            "Name": "History",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The name derives from the English soda and Latin sodanum for \"headache remedy\". The symbol Na derives from the Latin natrium for \"natron\" (soda in English). Sodium was discovered in 1807 by the English chemist Humphry Davy from electrolysis of caustic soda (NaOH).",
+                  "Markup": [
+                    {
+                      "Start": 34,
+                      "Length": 4,
+                      "Type": "Italics"
+                    },
+                    {
+                      "Start": 49,
+                      "Length": 7,
+                      "Type": "Italics"
+                    },
+                    {
+                      "Start": 117,
+                      "Length": 7,
+                      "Type": "Italics"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Although sodium is the sixth most abundant element on earth and comprises about 2.6% of the earth's crust, it is a very reactive element and is never found free in nature. Pure sodium was first isolated by Sir Humphry Davy in 1807 through the electrolysis of caustic soda (NaOH). Since sodium can ignite on contact with water, it must be stored in a moisture free environment."
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "From the English word, soda; Medieval Latin, sodanum: a headache remedy. Long recognized in compounds, sodium was first isolated by Davy in 1807 by electrolysis of caustic soda."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Historical Atomic Weights",
+            "Description": "This section provides the historical atomic weights. The atomic weight shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Atomic Weight (uncertainty) [u]",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2005"
+                    },
+                    {
+                      "String": "1995"
+                    },
+                    {
+                      "String": "1985"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1961"
+                    },
+                    {
+                      "String": "1953"
+                    },
+                    {
+                      "String": "1925"
+                    },
+                    {
+                      "String": "1909"
+                    },
+                    {
+                      "String": "1902"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "22.989 769 28(2)"
+                    },
+                    {
+                      "String": "22.989 770(2)"
+                    },
+                    {
+                      "String": "22.989 768(6)"
+                    },
+                    {
+                      "String": "22.989 77(1)"
+                    },
+                    {
+                      "String": "22.9898(1)"
+                    },
+                    {
+                      "String": "22.9898"
+                    },
+                    {
+                      "String": "22.991"
+                    },
+                    {
+                      "String": "22.997"
+                    },
+                    {
+                      "String": "23.00"
+                    },
+                    {
+                      "String": "23.05"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1351/pac200678112051",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac200678112051"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199668122339",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199668122339"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198658121677",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198658121677"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197230030637",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197230030637"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197021010091",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197021010091"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja00881a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja00881a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/JR9540004713",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/JR9540004713"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/CT9252700913",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/CT9252700913"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja01931a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja01931a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1007/BF01370337",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 22,
+                          "URL": "https://doi.org/10.1007/BF01370337"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Historical Isotopic Abundances",
+            "Description": "This section provides the historical isotopic abundance information. The abundance value shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 4,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Isotope",
+                    "Abundance (uncertainty)",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1975"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "23Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Description",
+        "Description": "A short description of this element, provided by authoritative sources.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Sodium, like every reactive element, is never found free in nature. Sodium is a soft, bright, silvery metal which floats on water. Decomposition in water results in the evolution of hydrogen and the formation of the hydroxide. It may or may not ignite spontaneously on water, depending on the amount of oxide and metal exposed to the water. It normally does not ignite in air at temperatures below 115°C."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Uses",
+        "Description": "Uses of this element in industry and other fields.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Sodium is used in the production of titanium, sodamide, sodium cyanide, sodium peroxide, and sodium hydride. Liquid sodium has been used as a coolant for nuclear reactors. Sodium vapor is used in streetlights and produces a brilliant yellow light."
+                },
+                {
+                  "String": "Sodium also forms many useful compounds. Some of the most common are: table salt (NaCl), soda ash (Na2CO3), baking soda (NaHCO3), caustic soda (NaOH), Chile saltpeter (NaNO3) and borax (Na2B4O7·10H2O).",
+                  "Markup": [
+                    {
+                      "Start": 101,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 104,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 126,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 172,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 188,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 190,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 192,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 197,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Metallic sodium is vital in the manufacture of esters and in the preparation of organic compounds. The metal may be used to improve the structure of certain alloys, descale metal, and purify molten metals."
+                },
+                {
+                  "String": "An alloy of sodium with potassium, NaK, is an important heat transfer agent."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Sources",
+        "Description": "Sources of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Sodium is present in fair abundance in the sun and stars. The D lines of sodium are among the most prominent in the solar spectrum. Sodium is the fourth most abundant element on earth, comprising about 2.6% of the earth's crust; it is the most abundant of the alkali group of metals."
+                },
+                {
+                  "String": "It is now obtained commercially by the electrolysis of absolutely dry fused sodium chloride. This method is much cheaper than that of electrolyzing sodium hydroxide, as was used several years ago."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Compounds",
+        "Description": "Compound records related to this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The most common compound is sodium chloride (table salt), but it occurs in many other minerals, such as soda niter, cryolite, amphibole, zeolite, etc."
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Sodium compounds are important to the paper, glass, soap, textile, petroleum, chemical, and metal industries. Soap is generally a sodium salt of certain fatty acids. The importance of common salt to animal nutrition has been recognized since prehistoric times."
+                },
+                {
+                  "String": "Among the many compounds that are of the greatest industrial importance are common salt (NaCl), soda ash (Na2CO3), baking soda (NaHCO3), caustic soda (NaOH), Chile saltpeter (NaNO3), di- and tri-sodium phosphates, sodium thiosulfate (hypo, Na2S2O3 • 5H2O), and borax (Na2B4O7 • 10H2O).",
+                  "Markup": [
+                    {
+                      "Start": 108,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 111,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 133,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 179,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 242,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 244,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 246,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 252,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 270,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 272,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 274,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 281,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 8,
+            "Name": "Compounds",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=Sodium",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "See more information at the Sodium compound page."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Element Forms",
+            "Description": "Other forms of this element, including ions, isotopes, etc.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "CID",
+                    "Name",
+                    "Formula",
+                    "SMILES",
+                    "Molecular Weight"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 8,
+                "Name": "CID",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "5360545",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/5360545"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "923",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/923"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6328543",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6328543"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6335498",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6335498"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "10313037",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/10313037"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "71587008",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/71587008"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "71587009",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/71587009"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "156022693",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/156022693"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "sodium"
+                    },
+                    {
+                      "String": "sodium(1+)"
+                    },
+                    {
+                      "String": "sodium-22"
+                    },
+                    {
+                      "String": "sodium-24"
+                    },
+                    {
+                      "String": "sodium-23"
+                    },
+                    {
+                      "String": "sodium-24(1+)"
+                    },
+                    {
+                      "String": "sodium-22(1+)"
+                    },
+                    {
+                      "String": "sodium-23(1+)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Formula",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Na"
+                    },
+                    {
+                      "String": "Na+"
+                    },
+                    {
+                      "String": "Na"
+                    },
+                    {
+                      "String": "Na"
+                    },
+                    {
+                      "String": "Na"
+                    },
+                    {
+                      "String": "Na+"
+                    },
+                    {
+                      "String": "Na+"
+                    },
+                    {
+                      "String": "Na+"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "SMILES",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Na]"
+                    },
+                    {
+                      "String": "[Na+]"
+                    },
+                    {
+                      "String": "[22Na]"
+                    },
+                    {
+                      "String": "[24Na]"
+                    },
+                    {
+                      "String": "[23Na]"
+                    },
+                    {
+                      "String": "[24Na+]"
+                    },
+                    {
+                      "String": "[22Na+]"
+                    },
+                    {
+                      "String": "[23Na+]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Molecular Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "22.9897693"
+                    },
+                    {
+                      "String": "22.9897693"
+                    },
+                    {
+                      "String": "21.994438"
+                    },
+                    {
+                      "String": "23.9909630"
+                    },
+                    {
+                      "String": "22.98976928"
+                    },
+                    {
+                      "String": "23.9909630"
+                    },
+                    {
+                      "String": "21.994438"
+                    },
+                    {
+                      "String": "22.98976928"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Handling and Storage",
+        "Description": "This section provides guidance on the safe handling practices and storage conditions for this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Sodium metal should be handled with great care. It cannot be maintained in an inert atmosphere and contact with water and other substances with which sodium reacts should be avoided."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Isotopes",
+        "Description": "Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.",
+        "URL": "https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Name": "Stable Isotope Count",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "1"
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Name": "Summary",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Thirteen isotopes of sodium are recognized."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Isotopes in Biology",
+            "Description": "Information on the use of this element's isotopes in biology.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[108]  World Nuclear Association. Radioisotopes in Industry: Industrial Uses of Radioisotopes, World Nuclear Association (2014), Feb. 24; http://www.world-nuclear.org/info/inf56.html.",
+                  "[109]  Australian Government, Australian Nuclear Science and Technology Organisation (Ansto). [Radioisotopes]:/their Role in Society Today/, Australian Government, Australian Nuclear Science and Technology Organisation (Ansto) (2014), Feb. 24; http://www.ansto.gov.au/__data/assets/pdf_file/0018/3564/Radioisotopes.pdf.",
+                  "[110]  AUS-e-TUTE for Astute Science Students. Chemistry Tutorial: Summary of Radioactive Particles, Isotopes, Properties and Uses, AUS-e-TUTE for Astute Science Students (2014), Feb. 24; http://www.ausetute.com.au/nuclesum.html."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[108]  World Nuclear Association. Radioisotopes in Industry: Industrial Uses of Radioisotopes, World Nuclear Association (2014), Feb. 24; http://www.world-nuclear.org/info/inf56.html."
+                  },
+                  {
+                    "Citation": "[109]  Australian Government, Australian Nuclear Science and Technology Organisation (Ansto). [Radioisotopes]:/their Role in Society Today/, Australian Government, Australian Nuclear Science and Technology Organisation (Ansto) (2014), Feb. 24; http://www.ansto.gov.au/__data/assets/pdf_file/0018/3564/Radioisotopes.pdf."
+                  },
+                  {
+                    "Citation": "[110]  AUS-e-TUTE for Astute Science Students. Chemistry Tutorial: Summary of Radioactive Particles, Isotopes, Properties and Uses, AUS-e-TUTE for Astute Science Students (2014), Feb. 24; http://www.ausetute.com.au/nuclesum.html."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Both 22Na and 24Na have been used as radioactive tracers to study electrolytes in the human body [108], [109], [110].",
+                      "Markup": [
+                        {
+                          "Start": 5,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 14,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes in Geochronology",
+            "Description": "Information on the use of this element's isotopes in geochronology.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[111]  D. G. Fleishman. J. Environ. Radioact.99, 1203 (2008)."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[111]  D. G. Fleishman. J. Environ. Radioact.99, 1203 (2008)."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "22Na is a cosmogenic isotope with a half-life of 2.6 years that has been used to study the residence time of water in freshwater basins. It has been used for dating of young (up to a few decades old) surface water and groundwater (Fig. IUPAC.11.1) [111].",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_023.jpg",
+                          "Type": "Image",
+                          "Size": "774x727",
+                          "Caption": "Fig. IUPAC.11.1: Variation of ²²Na atmospheric fallout rate at St. Petersburg, Russia (modified from [111]); note that an abbreviation “yr” is used instead of the unit symbol “a” for year. This variation makes ²²Na useful for determining residence time of lakes and other surface water bodies. "
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes in Medicine",
+            "Description": "Information on the use of this element's isotopes in medicine.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[112]  T. Hasegawa, K. Oda, Y. Wada, Y. Sato, T. Yamada, M. Matsumoto, H. Murayama, T. Takeda, T. Sasaki, K. Kikuchi, Y. Abe, H. Miyatake, K. Miwa, K. Akimoto, K. Wagatsuma. “Application of novel calibration scheme based on traceable point-like 22Na sources to various types of PET scanners”, in Nuclear Science Symposium and Medical Imaging Conference (NSS/MIC), 2012 IEEE."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[112]  T. Hasegawa, K. Oda, Y. Wada, Y. Sato, T. Yamada, M. Matsumoto, H. Murayama, T. Takeda, T. Sasaki, K. Kikuchi, Y. Abe, H. Miyatake, K. Miwa, K. Akimoto, K. Wagatsuma. “Application of novel calibration scheme based on traceable point-like 22Na sources to various types of PET scanners”, in Nuclear Science Symposium and Medical Imaging Conference (NSS/MIC), 2012 IEEE."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "22Na is used as a source to calibrate positron emission tomography (PET) imaging scanners to check that the instruments are functioning properly [112].",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotope Mass and Abundance",
+            "Description": "Atomic mass and abundance (composition) information for a given isotope/nuclide. The number in the parenthesis refers to an uncertainty when exist. The unit of atomic weight is the unified atomic mass unit (u) or dalton (Da). ",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Isotope",
+                    "Atomic Mass (uncertainty) [u]",
+                    "Abundance (uncertainty)"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": " 23Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Mass (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "22.989 769 28(2)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "23Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Atomic Mass (uncertainty) [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "22.9897692820(19)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Mass, Half Life, and Decay",
+            "Description": "Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Nuclide",
+                    "Atomic Mass and Uncertainty [u]",
+                    "Half Life and Uncertainty",
+                    "Discovery Year",
+                    "Decay Modes, Intensities and Uncertainties [%]"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 2,
+                "Name": "Nuclide",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "17Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "18Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "19Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "20Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "21Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "22Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "22Nam",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "23Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "24Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "24Nam",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "25Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "26Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "26Nam",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "27Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "28Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "29Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "30Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "31Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "32Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "33Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "34Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "35Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "36Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "37Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "38Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "39Na",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Atomic Mass and Uncertainty [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "17.037273000 ± 0.000064"
+                    },
+                    {
+                      "String": "18.026879388 ± 0.000100785"
+                    },
+                    {
+                      "String": "19.013880264 ± 0.000011309"
+                    },
+                    {
+                      "String": "20.007354301 ± 0.00000119"
+                    },
+                    {
+                      "String": "20.997654459 ± 0.000000045"
+                    },
+                    {
+                      "String": "21.994437547 ± 0.000000141"
+                    },
+                    {
+                      "String": "21.994437547 ± 0.000000141"
+                    },
+                    {
+                      "String": "22.98976928195 ± 0.00000000194"
+                    },
+                    {
+                      "String": "23.990963012 ± 0.000000017"
+                    },
+                    {
+                      "String": "23.990963012 ± 0.000000017"
+                    },
+                    {
+                      "String": "24.989953974 ± 0.000001288"
+                    },
+                    {
+                      "String": "25.992634649 ± 0.000003759"
+                    },
+                    {
+                      "String": "25.992634649 ± 0.000003759"
+                    },
+                    {
+                      "String": "26.994076408 ± 0.000004"
+                    },
+                    {
+                      "String": "27.998939000 ± 0.000011"
+                    },
+                    {
+                      "String": "29.002877091 ± 0.000007876"
+                    },
+                    {
+                      "String": "30.009097931 ± 0.000005074"
+                    },
+                    {
+                      "String": "31.013146654 ± 0.000015"
+                    },
+                    {
+                      "String": "32.020011024 ± 0.00004"
+                    },
+                    {
+                      "String": "33.025529000 ± 0.000483"
+                    },
+                    {
+                      "String": "34.034010000 ± 0.0006435"
+                    },
+                    {
+                      "String": "35.040614 ± 0.00072 [Estimated]"
+                    },
+                    {
+                      "String": "36.049279 ± 0.000737 [Estimated]"
+                    },
+                    {
+                      "String": "37.057042 ± 0.000737 [Estimated]"
+                    },
+                    {
+                      "String": "38.066458 ± 0.000768 [Estimated]"
+                    },
+                    {
+                      "String": "39.075123 ± 0.000797 [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Half Life and Uncertainty",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Not-specified"
+                    },
+                    {
+                      "String": "1.3 zs ± 0.4"
+                    },
+                    {
+                      "String": ">1 as"
+                    },
+                    {
+                      "String": "447.9 ms ± 2.3"
+                    },
+                    {
+                      "String": "22.4550 s ± 0.0054"
+                    },
+                    {
+                      "String": "2.6019 y ± 0.0006"
+                    },
+                    {
+                      "String": "243 ns ± 2"
+                    },
+                    {
+                      "String": "Stable"
+                    },
+                    {
+                      "String": "14.9560 h ± 0.0015"
+                    },
+                    {
+                      "String": "20.18 ms ± 0.10"
+                    },
+                    {
+                      "String": "59.1 s ± 0.6"
+                    },
+                    {
+                      "String": "1071.28 ms ± 0.25"
+                    },
+                    {
+                      "String": "4.35 us ± 0.16"
+                    },
+                    {
+                      "String": "301 ms ± 6"
+                    },
+                    {
+                      "String": "33.1 ms ± 1.3"
+                    },
+                    {
+                      "String": "43.2 ms ± 0.4"
+                    },
+                    {
+                      "String": "45.9 ms ± 0.7"
+                    },
+                    {
+                      "String": "16.8 ms ± 0.3"
+                    },
+                    {
+                      "String": "12.9 ms ± 0.3"
+                    },
+                    {
+                      "String": "8.2 ms ± 0.4"
+                    },
+                    {
+                      "String": "5.5 ms ± 1.0"
+                    },
+                    {
+                      "String": "1.5 ms ± 0.5"
+                    },
+                    {
+                      "String": "Not-specified <180ns"
+                    },
+                    {
+                      "String": "1 ms >1.5us [Estimated]"
+                    },
+                    {
+                      "String": "Not-specified <400 n"
+                    },
+                    {
+                      "String": "1 ms >400ns [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Discovery Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2017"
+                    },
+                    {
+                      "String": "2004"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1940"
+                    },
+                    {
+                      "String": "1935"
+                    },
+                    {
+                      "String": "1958"
+                    },
+                    {
+                      "String": "1921"
+                    },
+                    {
+                      "String": "1934"
+                    },
+                    {
+                      "String": "1961"
+                    },
+                    {
+                      "String": "1943"
+                    },
+                    {
+                      "String": "1958"
+                    },
+                    {
+                      "String": "1987"
+                    },
+                    {
+                      "String": "1968"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1972"
+                    },
+                    {
+                      "String": "1972"
+                    },
+                    {
+                      "String": "1983"
+                    },
+                    {
+                      "String": "1983"
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": "2002"
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": "2019"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Decay Modes, Intensities and Uncertainties [%]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "p=100%"
+                    },
+                    {
+                      "String": "p=?"
+                    },
+                    {
+                      "String": "p=100%"
+                    },
+                    {
+                      "String": "β+=100%; β+α=25.0±0.4%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%; e+=90.57±0.8%; ε=9.43±0.6%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IS=100%"
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT≈100%; β-=0.05%",
+                      "Markup": [
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β-=100%; β-n=0.098±2.4%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=0.58±1.2%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=22±0.3%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=28.6±2.2%; β-2n=1.24±1.9%; β-α=5.5e-5±0.2%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 25,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 41,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=36.0±3.5%; β-2n=0.73±0.9%; β-3n<0.05%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 25,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 41,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=26±0.6%; β-2n=7.6±1.5%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=47±0.6%; β-2n=13±0.3%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-2n≈50%; β-n≈15%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 20,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 17,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "n ?"
+                    },
+                    {
+                      "String": "β- ?; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "n ?"
+                    },
+                    {
+                      "String": "β- ?; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 1,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      },
+      {
+        "ReferenceNumber": 2,
+        "SourceName": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+        "SourceID": "e11",
+        "Name": "Na",
+        "Description": "The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.",
+        "URL": "https://www-nds.iaea.org/amdc/",
+        "LicenseURL": "https://www-nds.iaea.org/disclaimer.html",
+        "ANID": 6590238
+      },
+      {
+        "ReferenceNumber": 3,
+        "SourceName": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+        "SourceID": "a11",
+        "Name": "Sodium",
+        "Description": "Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.",
+        "URL": "https://www.ciaaw.org/sodium.htm",
+        "LicenseURL": "http://www.ciaaw.org/bylaws.htm",
+        "ANID": 2292392
+      },
+      {
+        "ReferenceNumber": 5,
+        "SourceName": "Jefferson Lab, U.S. Department of Energy",
+        "SourceID": "jlab11",
+        "Name": "Sodium",
+        "Description": "Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/",
+        "URL": "https://education.jlab.org/itselemental/ele011.html",
+        "LicenseNote": "Please see citation and linking information: https://education.jlab.org/faq/index.html",
+        "LicenseURL": "https://www.jlab.org/privacy-and-security-notice",
+        "ANID": 507073
+      },
+      {
+        "ReferenceNumber": 6,
+        "SourceName": "Los Alamos National Laboratory, U.S. Department of Energy",
+        "SourceID": "lanl11",
+        "Name": "Sodium",
+        "Description": "The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name.",
+        "URL": "https://periodic.lanl.gov/11.shtml",
+        "ANID": 507191
+      },
+      {
+        "ReferenceNumber": 7,
+        "SourceName": "NIST Physical Measurement Laboratory",
+        "SourceID": "e11",
+        "Name": "Sodium",
+        "Description": "The periodic table contains NIST's critically-evaluated data on atomic properties of the elements. The provenance data that include data for atomic spectroscopy, X-ray and gamma ray, radiation dosimetry, nuclear physics, and condensed matter physics may be found from the link under the source name. Ref: https://www.nist.gov/pml/atomic-spectra-database",
+        "URL": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=11",
+        "LicenseURL": "https://www.nist.gov/pml/database-disclaimer",
+        "ANID": 2292628
+      },
+      {
+        "ReferenceNumber": 4,
+        "SourceName": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+        "SourceID": "p11",
+        "Description": "The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703.",
+        "URL": "https://doi.org/10.1515/pac-2015-0703",
+        "LicenseNote": "Copyright (c) 2020 International Union of Pure and Applied Chemistry.\u000A\u000AThe International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated.",
+        "LicenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "ANID": 13296416
+      },
+      {
+        "ReferenceNumber": 9,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ep_11",
+        "Name": "Sodium",
+        "Description": "The element property data was retrieved from publications.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24834058
+      },
+      {
+        "ReferenceNumber": 8,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ef_11",
+        "Name": "Sodium",
+        "Description": "This section provides all form of data related to element Sodium.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24833939
+      }
+    ]
+  }
+}

@@ -1,0 +1,3120 @@
+{
+  "Record": {
+    "RecordType": "AtomicNumber",
+    "RecordNumber": 25,
+    "RecordTitle": "Manganese",
+    "Section": [
+      {
+        "TOCHeading": "Identifiers",
+        "Description": "Identifiers for this element, including element name, element symbol, InChI string, and InChIKey.",
+        "Section": [
+          {
+            "TOCHeading": "Element Name",
+            "Description": "The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Manganese"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Manganese"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Symbol",
+            "Description": "Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Mn"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Mn"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChI",
+            "Description": "The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChI",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "InChI=1S/Mn"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChIKey",
+            "Description": "An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChIKey",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "PWHULOQIROXLJO-UHFFFAOYSA-N"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Properties",
+        "Description": "Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on.",
+        "Section": [
+          {
+            "TOCHeading": "Atomic Weight",
+            "Description": "Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u).",
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "54.938 043(2)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "54.938044"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "54.94"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "54.938044(3)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Configuration",
+            "Description": "The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result.",
+            "URL": "https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Ar]4s23d5",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Radius",
+            "Description": "The atomic radius of a chemical element is a measure of the size of its atom, usually, the distance from the center of the nucleus to the outermost isolated electron.  Because an atom does not have a discrete boundary, there are various non-equivalent definitions of atomic radius, such as Van der Waals radius and covalent radius.",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Name": "Van der Waals Atomic Radius",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "197 pm (Van der Waals)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Empirical Atomic Radius",
+                "Reference": [
+                  "J.C. Slater, J Chem Phys, 1964, 41(10), 3199-3205. DOI:10.1063/1.1725697"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "J.C. Slater, J Chem Phys, 1964, 41(10), 3199-3205. DOI:10.1063/1.1725697"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    140
+                  ],
+                  "Unit": "pm (Empirical)"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Covalent Atomic Radius",
+                "Reference": [
+                  "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "139(5)[l.s.], 161(8)[h.s.] pm (Covalent)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Oxidation States",
+            "Description": "The oxidation state(s) that this element commonly has in a compound.  The oxidation state of an atom is defined as the hypothetical charge that would be held by that atom if all of its bonds to other atoms were completely ionic in nature. For example, the oxidation state of carbon in CO2 would be +4 since the hypothetical charge held by the carbon atom if both of the carbon-oxygen double bonds were completely ionic would be equal to +4 (each oxygen atom would hold a charge of -2 since oxygen is more electronegative than carbon).",
+            "URL": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/20%3A_Electrochemistry/20.01%3A_Oxidation_States_and_Redox_Reactions",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "+7, +4, +3, +2"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "7, 6, 5, 4, 3, 2, 1, -1, -2, -3 ​acidic, basic or amphoteric; depending on the oxidation state"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ground Level",
+            "Description": "Also called ground-state level. The ground state electron configuration is the arrangement of electrons around the nucleus of an atom with lower energy levels.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "6S5/2",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 2,
+                          "Length": 3,
+                          "Type": "Subscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ionization Energy",
+            "Description": "Ionization energy, also called ionization potential, is the amount of energy required to remove an electron from an isolated atom or molecule.",
+            "URL": "https://www.britannica.com/science/ionization-energy",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "7.434 eV"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Reference": [
+                  "Three-Photon Resonance Ionization of Atomic Mn in a Hot-Cavity Laser Ion Source Using Ti:Sapphire Lasers, Y. Liu, T. Gottwald, C. Mattolat, and K. Wendt, J. Phys. B 48, 115006 (2015) DOI:10.1088/0953-4075/48/11/115006"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Three-Photon Resonance Ionization of Atomic Mn in a Hot-Cavity Laser Ion Source Using Ti:Sapphire Lasers, Y. Liu, T. Gottwald, C. Mattolat, and K. Wendt, J. Phys. B 48, 115006 (2015) DOI:10.1088/0953-4075/48/11/115006"
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "7.4340380 ± 0.0000012 eV"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electronegativity",
+            "Description": "Electronegativity is a measure of the tendency of an atom to attract a bonding pair of electrons.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electronegativity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Name": "Pauling Scale Electronegativity",
+                "Reference": [
+                  "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    1.55
+                  ],
+                  "Unit": "(Pauling Scale)"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Allen Scale Electronegativity",
+                "Reference": [
+                  "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003",
+                  "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e",
+                  "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    1.75
+                  ],
+                  "Unit": "(Allen Scale)"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Affinity",
+            "Description": "Electron affinity refers to the energy released when an additional electron is attached to a neutral atom to form a singly charged negative ion.  Alternatively, it can also be defined as the energy required to detach an electron from the singly charged negative ion.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electron_Affinity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    0
+                  ],
+                  "Unit": "eV"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    0.97
+                  ],
+                  "Unit": "eV"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Spectra",
+            "Description": "The spectrum of the electromagnetic radiation emitted or absorbed by an electron during transitions between different energy levels within an atom.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/lines_hold.pl?el=Mn",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Lines Holdings"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/levels_hold.pl?el=Mn",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Levels Holdings"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Physical Description",
+            "Description": "The appearance or features of this element, including color, odor, state, taste and more in general.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Solid"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Classification",
+            "Description": "Classification according to the element's chemical and physical properties, and location within the periodic table.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Metal"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Period Number",
+            "Description": "The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "4"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Group Number",
+            "Description": "Element group refers to a set of chemical elements in the same vertical column of the periodic table",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "7"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Density",
+            "Description": "This section provides information on the density of an element. It is the mass of a unit volume of the element and commonly expressed in units of kg/m3 or g/cm3.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Map%3A_Fundamentals_of_General_Organic_and_Biological_Chemistry_(McMurry_et_al.)/01%3A_Matter_and_Measurements/1.12%3A_Density_and_Specific_Gravity",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "7.3 grams per cubic centimeter"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Melting Point",
+            "Description": "This section provides the melting point and/or freezing point. The melting point is the temperature at which a substance changes state from solid to liquid at atmospheric pressure. When considered as the temperature of the reverse change (from liquid to solid), it is referred to as the freezing point.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.01%3A_Melting_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1519 K (1246°C or 2275°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1246°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Boiling Point",
+            "Description": "The temperature at which this element changes state from liquid to gas at a given atmospheric pressure.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.02%3A_Boiling_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2334 K (2061°C or 3742°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2061°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Crustal Abundance",
+            "Description": "The estimated element abundance in the earth's crust.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "9.50×102 milligrams per kilogram",
+                      "Markup": [
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Oceanic Abundance",
+            "Description": "The estimated element abundance in the earth's oceans.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2×10-4 milligrams per liter",
+                      "Markup": [
+                        {
+                          "Start": 4,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "History",
+        "Description": "The history of the discovery and use of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 3,
+            "Name": "History",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The name derives from the Latin magnes for \"magnet\" since pyrolusite (MnO2) has magnetic properties. It was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774. In the same year, the Swedish chemist Johan Gottlieb Gahn first isolated the metal.",
+                  "Markup": [
+                    {
+                      "Start": 32,
+                      "Length": 6,
+                      "Type": "Italics"
+                    },
+                    {
+                      "Start": 73,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Proposed to be an element by Carl Wilhelm Scheele in 1774, manganese was discovered by Johan Gottlieb Gahn, a Swedish chemist, by heating the mineral pyrolusite (MnO2) in the presence of charcoal later that year. Today, most manganese is still obtained from pyrolusite, although it is usually burned in a furnace with powdered aluminum or is treated with sulfuric acid (H2SO4) to form manganese sulfate (MnSO4), which is then electrolyzed.",
+                  "Markup": [
+                    {
+                      "Start": 165,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 371,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 374,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 408,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "From the Latin word magnes, magnet, from magnetic properties of pyrolusite. Recognized by Carl Wilhelm Scheele, Torbern Olof Bergman, and others as an element and isolated by Gahn in 1774 by reduction of the dioxide with carbon."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Historical Atomic Weights",
+            "Description": "This section provides the historical atomic weights. The atomic weight shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Atomic Weight (uncertainty) [u]",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2017"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "2005"
+                    },
+                    {
+                      "String": "1995"
+                    },
+                    {
+                      "String": "1985"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1961"
+                    },
+                    {
+                      "String": "1953"
+                    },
+                    {
+                      "String": "1909"
+                    },
+                    {
+                      "String": "1902"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "54.938 043(2)"
+                    },
+                    {
+                      "String": "54.938 044(3)"
+                    },
+                    {
+                      "String": "54.938 045(5)"
+                    },
+                    {
+                      "String": "54.938 049(9)"
+                    },
+                    {
+                      "String": "54.938 05(1)"
+                    },
+                    {
+                      "String": "54.9380(1)"
+                    },
+                    {
+                      "String": "54.9380"
+                    },
+                    {
+                      "String": "54.94"
+                    },
+                    {
+                      "String": "54.93"
+                    },
+                    {
+                      "String": "55.0"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1515/pac-2019-0603",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2019-0603"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1515/pac-2015-0305",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0305"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac200678112051",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac200678112051"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199668122339",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199668122339"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198658121677",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198658121677"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197021010091",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197021010091"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja00881a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja00881a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/JR9540004713",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/JR9540004713"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja01931a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja01931a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1007/BF01370337",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 22,
+                          "URL": "https://doi.org/10.1007/BF01370337"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Historical Isotopic Abundances",
+            "Description": "This section provides the historical isotopic abundance information. The abundance value shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 4,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Isotope",
+                    "Abundance (uncertainty)",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1975"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "55Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Description",
+        "Description": "A short description of this element, provided by authoritative sources.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "It is gray-white, resembling iron, but is harder and very brittle. The metal is reactive chemically and decomposes slowly in cold water. Manganese is used to form many important alloys. Manganese improves rolling and forging qualities in steel, along with adding strength, stiffness, wear resistance, hardness."
+                },
+                {
+                  "String": "With aluminum and antimony, and especially with small amounts of copper, it forms highly ferromagnetic alloys."
+                },
+                {
+                  "String": "Manganese metal is ferromagnetic only after special treatment. The pure metal exists in four allotropic forms. The alpha form is stable at ordinary temperature; gamma manganese, which changes to alpha at ordinary temperatures, is said to be flexible, soft, easily cut, and capable of being bent."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Uses",
+        "Description": "Uses of this element in industry and other fields.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Nearly 90% of all of the manganese produced each year is used in the production of steel. Manganese is added to molten steel to remove oxygen and sulfur and is alloyed with steel to make it easier to form and work with and to increase steel's strength and resistance to impact. Railroad tracks, for example, are made with steel that contains as much as 1.2% manganese. Manganese is also used to give glass an amethyst color and is responsible for the color of amethyst gemstones."
+                },
+                {
+                  "String": "Manganese dioxide (MnO2), the most common compound of manganese, makes up about 0.14% of the Earth's crust. It is used in dry cell batteries to prevent the formation of hydrogen, to remove the green color in glass that is caused by the presence of iron contaminants, and as a drying agent in black paints.",
+                  "Markup": [
+                    {
+                      "Start": 22,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The dioxide (pyrolusite) is used as a depolarizer in dry cells and is used to \"decolorize\" glass that is colored green by impurities of iron. Manganese by itself colors glass an amethyst color and is responsible for the color of true amethyst. The dioxide is also used in the preparation of oxygen and chlorine and in drying black paints. The permanganate is a powerful oxidizing agent and is used in quantitative analysis and in medicine."
+                },
+                {
+                  "String": "Manganese is widely distributed throughout the animal kingdom. It is an important trace element and may be essential for utilization of vitamin B1."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Sources",
+        "Description": "Sources of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Manganese minerals are widely distributed, with oxides, silicates, and carbonates being the most common. Large quantities of manganese nodules are found on the ocean floor and may become a source of manganese. These nodules contain about 24% manganese, together with many other elements in lesser abundance."
+                },
+                {
+                  "String": "Most manganese today is obtained from ores found in Russia, Brazil, Australia, South Africa, Gabon, and India. Pyrolusite and rhodochrosite are among the most common manganese minerals. The metal is obtained by reduction of the oxide with sodium, magnesium, aluminum, or by electrolysis."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Compounds",
+        "Description": "Compound records related to this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 8,
+            "Name": "Compounds",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=Manganese",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "See more information at the Manganese compound page."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Element Forms",
+            "Description": "Other forms of this element, including ions, isotopes, etc.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "CID",
+                    "Name",
+                    "Formula",
+                    "SMILES",
+                    "Molecular Weight"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 8,
+                "Name": "CID",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "23930",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 5,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/23930"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "27854",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 5,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/27854"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "105130",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/105130"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "104743",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/104743"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "114694",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/114694"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "115131",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/115131"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "167227",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/167227"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "177439",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/177439"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "155926123",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/155926123"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "10329240",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/10329240"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "11665392",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/11665392"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "manganese"
+                    },
+                    {
+                      "String": "manganese(2+)"
+                    },
+                    {
+                      "String": "manganese(3+)"
+                    },
+                    {
+                      "String": "manganese-54"
+                    },
+                    {
+                      "String": "manganese-56"
+                    },
+                    {
+                      "String": "manganese-52"
+                    },
+                    {
+                      "String": "manganese-53"
+                    },
+                    {
+                      "String": "manganese-51"
+                    },
+                    {
+                      "String": "manganese-55"
+                    },
+                    {
+                      "String": "manganese-57"
+                    },
+                    {
+                      "String": "manganese-52(2+)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Formula",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Mn"
+                    },
+                    {
+                      "String": "Mn+2"
+                    },
+                    {
+                      "String": "Mn+3"
+                    },
+                    {
+                      "String": "Mn"
+                    },
+                    {
+                      "String": "Mn"
+                    },
+                    {
+                      "String": "Mn"
+                    },
+                    {
+                      "String": "Mn"
+                    },
+                    {
+                      "String": "Mn"
+                    },
+                    {
+                      "String": "Mn"
+                    },
+                    {
+                      "String": "Mn"
+                    },
+                    {
+                      "String": "Mn+2"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "SMILES",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Mn]"
+                    },
+                    {
+                      "String": "[Mn+2]"
+                    },
+                    {
+                      "String": "[Mn+3]"
+                    },
+                    {
+                      "String": "[54Mn]"
+                    },
+                    {
+                      "String": "[56Mn]"
+                    },
+                    {
+                      "String": "[52Mn]"
+                    },
+                    {
+                      "String": "[53Mn]"
+                    },
+                    {
+                      "String": "[51Mn]"
+                    },
+                    {
+                      "String": "[55Mn]"
+                    },
+                    {
+                      "String": "[57Mn]"
+                    },
+                    {
+                      "String": "[52Mn+2]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Molecular Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "54.93804"
+                    },
+                    {
+                      "String": "54.93804"
+                    },
+                    {
+                      "String": "54.93804"
+                    },
+                    {
+                      "String": "53.94036"
+                    },
+                    {
+                      "String": "55.938903"
+                    },
+                    {
+                      "String": "51.945559"
+                    },
+                    {
+                      "String": "52.941287"
+                    },
+                    {
+                      "String": "50.948209"
+                    },
+                    {
+                      "String": "54.938043"
+                    },
+                    {
+                      "String": "56.93829"
+                    },
+                    {
+                      "String": "51.945559"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Handling and Storage",
+        "Description": "This section provides guidance on the safe handling practices and storage conditions for this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Exposure to manganese dusts, fume, and compounds should not exceed the ceiling value of 5 mg/m3 for even short periods because of the element's toxicity level.",
+                  "Markup": [
+                    {
+                      "Start": 94,
+                      "Length": 1,
+                      "Type": "Superscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Isotopes",
+        "Description": "Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.",
+        "URL": "https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Name": "Stable Isotope Count",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "1"
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Isotopes in Earth/Planetary Science",
+            "Description": "Information on the use of this element's isotopes in earth/planetary science.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[109]  Australian Government, Australian Nuclear Science and Technology Organisation (Ansto). [Radioisotopes]:/their Role in Society Today/, Australian Government, Australian Nuclear Science and Technology Organisation (Ansto) (2014), Feb. 24; http://www.ansto.gov.au/__data/assets/pdf_file/0018/3564/Radioisotopes.pdf.",
+                  "[110]  AUS-e-TUTE for Astute Science Students. Chemistry Tutorial: Summary of Radioactive Particles, Isotopes, Properties and Uses, AUS-e-TUTE for Astute Science Students (2014), Feb. 24; http://www.ausetute.com.au/nuclesum.html."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[109]  Australian Government, Australian Nuclear Science and Technology Organisation (Ansto). [Radioisotopes]:/their Role in Society Today/, Australian Government, Australian Nuclear Science and Technology Organisation (Ansto) (2014), Feb. 24; http://www.ansto.gov.au/__data/assets/pdf_file/0018/3564/Radioisotopes.pdf."
+                  },
+                  {
+                    "Citation": "[110]  AUS-e-TUTE for Astute Science Students. Chemistry Tutorial: Summary of Radioactive Particles, Isotopes, Properties and Uses, AUS-e-TUTE for Astute Science Students (2014), Feb. 24; http://www.ausetute.com.au/nuclesum.html."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Radioactive 54Mn (half-life of 312 days) has been used as a tracer to study migration of heavy metals in effluents (flowing out) from mining waste [109], [110].",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes in Geochronology",
+            "Description": "Information on the use of this element's isotopes in geochronology.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[211]  J. M. Schaefer, T. Faestermann, G. F. Herzog, K. Knie, G. Korschinek, J. Masarik, A. Meier, M. Poutivtsev, G. Rugel, C. Schlüchter, F. Serifiddin, G. Winckler. Earth Planet. Sci. Lett.251, 334 (2006)."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[211]  J. M. Schaefer, T. Faestermann, G. F. Herzog, K. Knie, G. Korschinek, J. Masarik, A. Meier, M. Poutivtsev, G. Rugel, C. Schlüchter, F. Serifiddin, G. Winckler. Earth Planet. Sci. Lett.251, 334 (2006)."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "The radioactive isotope 53Mn is formed by the interaction of protons, produced by cosmic rays, on iron in rocks. The accumulation of 53Mn, having a half-life of 3.7×106 years, at the Earth’s surface enables determination of exposure ages of landforms to cosmic rays and quantification of erosion rates. For example, Schaefer et al. [211] measured 13 samples from nine dolerite (igneous rock containing plagioclase, pyroxene, and olivine) surfaces in the Dry Valleys, Antarctica. They found that the terrestrial 53Mn concentrations correlate well with cosmic-ray-produced 3He and 21Ne concentrations in the same samples (Fig. IUPAC.25.1), which suggests that 53Mn is produced continuously in place and retained over millions of years without loss. Their results suggest that 53Mn concentrations in rocks can be used to monitor Earth-surface processes on time scales exceeding 10×106 years.",
+                      "Markup": [
+                        {
+                          "Start": 24,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 133,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 167,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 511,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 571,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 579,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 658,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 774,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 880,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_041.jpg",
+                          "Type": "Image",
+                          "Size": "709x824",
+                          "Caption": "Fig. IUPAC.25.1: Cross plot of cosmic-ray produced radioactive ⁵³Mn and ³He from 13 igneous-rock samples collected from land surface at the Dry Valleys, Antarctica (modified from [211]). The correlation between ⁵³Mn and ³He indicates that ⁵³Mn is produced continuously in place and has been used to monitor Earth-surface processes. "
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes in Medicine",
+            "Description": "Information on the use of this element's isotopes in medicine.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[212]  G. J. Topping, P. Schaffer, C. Hoehr, T. J. Ruth, V. Sossi. Med. Phys.40, 042502 (2013). https://doi.org/10.1118/1.4793756.",
+                  "[213]  C. W. Olanow, P. F. Good, H. Shinotoh, K. A. Hewitt, F. Vingerhoets, B. J. Snow, M. F. Beal, D. B. Calne, D. P. Perl. Neurology46, 492 (1996)."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[212]  G. J. Topping, P. Schaffer, C. Hoehr, T. J. Ruth, V. Sossi. Med. Phys.40, 042502 (2013). https://doi.org/10.1118/1.4793756."
+                  },
+                  {
+                    "Citation": "[213]  C. W. Olanow, P. F. Good, H. Shinotoh, K. A. Hewitt, F. Vingerhoets, B. J. Snow, M. F. Beal, D. B. Calne, D. P. Perl. Neurology46, 492 (1996)."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "51Mn, 52Mn and 52mMn (with half-lives of 46 min, 5.6 days, and 21 min, respectively) are radioactive isotopes that emit positrons that are used in positron emission tomography (PET) imaging [212], [213]. The m in the superscript of 52mMn indicates a metastable state of the isotope.",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 6,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 15,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 232,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotope Mass and Abundance",
+            "Description": "Atomic mass and abundance (composition) information for a given isotope/nuclide. The number in the parenthesis refers to an uncertainty when exist. The unit of atomic weight is the unified atomic mass unit (u) or dalton (Da). ",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Isotope",
+                    "Atomic Mass (uncertainty) [u]",
+                    "Abundance (uncertainty)"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": " 55Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Mass (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "54.938 043(2)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "55Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Atomic Mass (uncertainty) [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "54.93804391(48)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Mass, Half Life, and Decay",
+            "Description": "Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Nuclide",
+                    "Atomic Mass and Uncertainty [u]",
+                    "Half Life and Uncertainty",
+                    "Discovery Year",
+                    "Decay Modes, Intensities and Uncertainties [%]"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 2,
+                "Name": "Nuclide",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "43Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "44Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "45Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "46Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "46Mnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "47Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "48Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "49Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "50Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "50Mnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "51Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "52Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "52Mnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "53Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "54Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "55Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "56Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "57Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "58Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "58Mnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "59Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "60Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "60Mnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "61Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "62Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "62Mnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "63Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "64Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "64Mnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "65Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "66Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "66Mnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "67Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "68Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "69Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "70Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "71Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "72Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "73Mn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Atomic Mass and Uncertainty [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "43.018647 ± 0.000429 [Estimated]"
+                    },
+                    {
+                      "String": "44.008009 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "44.994654 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "45.986669000 ± 0.000093"
+                    },
+                    {
+                      "String": "45.986669000 ± 0.000093"
+                    },
+                    {
+                      "String": "46.975774000 ± 0.000034"
+                    },
+                    {
+                      "String": "47.968548760 ± 0.000007191"
+                    },
+                    {
+                      "String": "48.959613350 ± 0.000002377"
+                    },
+                    {
+                      "String": "49.954238157 ± 0.000000123"
+                    },
+                    {
+                      "String": "49.954238157 ± 0.000000123"
+                    },
+                    {
+                      "String": "50.948208770 ± 0.000000326"
+                    },
+                    {
+                      "String": "51.945559090 ± 0.000000138"
+                    },
+                    {
+                      "String": "51.945559090 ± 0.000000138"
+                    },
+                    {
+                      "String": "52.941287497 ± 0.000000371"
+                    },
+                    {
+                      "String": "53.940355772 ± 0.00000108"
+                    },
+                    {
+                      "String": "54.938043040 ± 0.000000279"
+                    },
+                    {
+                      "String": "55.938902816 ± 0.000000314"
+                    },
+                    {
+                      "String": "56.938285944 ± 0.000001615"
+                    },
+                    {
+                      "String": "57.940066643 ± 0.0000029"
+                    },
+                    {
+                      "String": "57.940066643 ± 0.0000029"
+                    },
+                    {
+                      "String": "58.940391111 ± 0.0000025"
+                    },
+                    {
+                      "String": "59.943136574 ± 0.0000025"
+                    },
+                    {
+                      "String": "59.943136574 ± 0.0000025"
+                    },
+                    {
+                      "String": "60.944452541 ± 0.0000025"
+                    },
+                    {
+                      "String": "61.947907384 ± 0.000007023"
+                    },
+                    {
+                      "String": "61.947907384 ± 0.000007023"
+                    },
+                    {
+                      "String": "62.949664672 ± 0.000004"
+                    },
+                    {
+                      "String": "63.953849369 ± 0.0000038"
+                    },
+                    {
+                      "String": "63.953849369 ± 0.0000038"
+                    },
+                    {
+                      "String": "64.956019749 ± 0.000004"
+                    },
+                    {
+                      "String": "65.960546833 ± 0.000012"
+                    },
+                    {
+                      "String": "65.960546833 ± 0.000012"
+                    },
+                    {
+                      "String": "66.963950 ± 0.000215 [Estimated]"
+                    },
+                    {
+                      "String": "67.968953 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "68.972775 ± 0.000429 [Estimated]"
+                    },
+                    {
+                      "String": "69.978046 ± 0.000537 [Estimated]"
+                    },
+                    {
+                      "String": "70.982158 ± 0.000537 [Estimated]"
+                    },
+                    {
+                      "String": "71.988009 ± 0.000644 [Estimated]"
+                    },
+                    {
+                      "String": "72.992807 ± 0.000644 [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Half Life and Uncertainty",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Not-specified"
+                    },
+                    {
+                      "String": "Not-specified <105ns"
+                    },
+                    {
+                      "String": "Not-specified <70ns"
+                    },
+                    {
+                      "String": "36.2 ms ± 0.4"
+                    },
+                    {
+                      "String": "1 ms [Estimated]"
+                    },
+                    {
+                      "String": "88.0 ms ± 1.3"
+                    },
+                    {
+                      "String": "158.1 ms ± 2.2"
+                    },
+                    {
+                      "String": "382 ms ± 7"
+                    },
+                    {
+                      "String": "283.21 ms ± 0.07"
+                    },
+                    {
+                      "String": "1.75 m ± 0.03"
+                    },
+                    {
+                      "String": "45.81 m ± 0.21"
+                    },
+                    {
+                      "String": "5.591 d ± 0.003"
+                    },
+                    {
+                      "String": "21.1 m ± 0.2"
+                    },
+                    {
+                      "String": "3.7 My ± 0.4"
+                    },
+                    {
+                      "String": "312.081 d ± 0.032"
+                    },
+                    {
+                      "String": "Stable"
+                    },
+                    {
+                      "String": "2.5789 h ± 0.0001"
+                    },
+                    {
+                      "String": "85.4 s ± 1.8"
+                    },
+                    {
+                      "String": "3.0 s ± 0.1"
+                    },
+                    {
+                      "String": "65.4 s ± 0.5"
+                    },
+                    {
+                      "String": "4.59 s ± 0.05"
+                    },
+                    {
+                      "String": "280 ms ± 20"
+                    },
+                    {
+                      "String": "1.77 s ± 0.02"
+                    },
+                    {
+                      "String": "709 ms ± 8"
+                    },
+                    {
+                      "String": "92 ms ± 13"
+                    },
+                    {
+                      "String": "671 ms ± 5"
+                    },
+                    {
+                      "String": "275 ms ± 4"
+                    },
+                    {
+                      "String": "88.8 ms ± 2.4"
+                    },
+                    {
+                      "String": "439 us ± 31"
+                    },
+                    {
+                      "String": "91.9 ms ± 0.7"
+                    },
+                    {
+                      "String": "63.8 ms ± 0.9"
+                    },
+                    {
+                      "String": "780 us ± 40"
+                    },
+                    {
+                      "String": "46.7 ms ± 2.3"
+                    },
+                    {
+                      "String": "33.7 ms ± 1.5"
+                    },
+                    {
+                      "String": "22.1 ms ± 1.6"
+                    },
+                    {
+                      "String": "19.9 ms ± 1.7"
+                    },
+                    {
+                      "String": "16 ms >400ns [Estimated]"
+                    },
+                    {
+                      "String": "12 ms >620ns [Estimated]"
+                    },
+                    {
+                      "String": "12 ms >410ns [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Discovery Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": "1987"
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": "1987"
+                    },
+                    {
+                      "String": "1987"
+                    },
+                    {
+                      "String": "1970"
+                    },
+                    {
+                      "String": "1952"
+                    },
+                    {
+                      "String": "1962"
+                    },
+                    {
+                      "String": "1938"
+                    },
+                    {
+                      "String": "1938"
+                    },
+                    {
+                      "String": "1937"
+                    },
+                    {
+                      "String": "1955"
+                    },
+                    {
+                      "String": "1938"
+                    },
+                    {
+                      "String": "1923"
+                    },
+                    {
+                      "String": "1934"
+                    },
+                    {
+                      "String": "1954"
+                    },
+                    {
+                      "String": "1961"
+                    },
+                    {
+                      "String": "1961"
+                    },
+                    {
+                      "String": "1976"
+                    },
+                    {
+                      "String": "1978"
+                    },
+                    {
+                      "String": "1978"
+                    },
+                    {
+                      "String": "1980"
+                    },
+                    {
+                      "String": "1983"
+                    },
+                    {
+                      "String": "1983"
+                    },
+                    {
+                      "String": "1985"
+                    },
+                    {
+                      "String": "1985"
+                    },
+                    {
+                      "String": "1998"
+                    },
+                    {
+                      "String": "1985"
+                    },
+                    {
+                      "String": "1992"
+                    },
+                    {
+                      "String": "2005"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1995"
+                    },
+                    {
+                      "String": "1995"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "2010"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "2017"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Decay Modes, Intensities and Uncertainties [%]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "p ?"
+                    },
+                    {
+                      "String": "p ?"
+                    },
+                    {
+                      "String": "p ?"
+                    },
+                    {
+                      "String": "β+=100%; β+p=57.0±0.8%; β+2p≈18%; β+α ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 25,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 35,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%; β+p<1.7%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%; β+p=0.28±0.4%; β+α=6e-4%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 25,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=98.22±0.5%; IT=1.78±0.5%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "ε=100%"
+                    },
+                    {
+                      "String": "ε=100%; β-=0.93e-4%; e+=1.28e-7±2.5%",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 22,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IS=100%"
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-≈100%; IT ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=88.5±0.8%; IT=11.5±0.8%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n ?; IT ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n= ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=2.7±0.6%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β-=100%; β-n=7.9±1.2%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=7.4±1.4%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 24,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT≈100%; β- ?",
+                      "Markup": [
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=10±0.5%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=18±1%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 21,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=40±2%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 21,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 17,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 1,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      },
+      {
+        "ReferenceNumber": 2,
+        "SourceName": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+        "SourceID": "e25",
+        "Name": "Mn",
+        "Description": "The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.",
+        "URL": "https://www-nds.iaea.org/amdc/",
+        "LicenseURL": "https://www-nds.iaea.org/disclaimer.html",
+        "ANID": 6590252
+      },
+      {
+        "ReferenceNumber": 3,
+        "SourceName": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+        "SourceID": "a25",
+        "Name": "Manganese",
+        "Description": "Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.",
+        "URL": "https://www.ciaaw.org/manganese.htm",
+        "LicenseURL": "http://www.ciaaw.org/bylaws.htm",
+        "ANID": 2292406
+      },
+      {
+        "ReferenceNumber": 5,
+        "SourceName": "Jefferson Lab, U.S. Department of Energy",
+        "SourceID": "jlab25",
+        "Name": "Manganese",
+        "Description": "Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/",
+        "URL": "https://education.jlab.org/itselemental/ele025.html",
+        "LicenseNote": "Please see citation and linking information: https://education.jlab.org/faq/index.html",
+        "LicenseURL": "https://www.jlab.org/privacy-and-security-notice",
+        "ANID": 507087
+      },
+      {
+        "ReferenceNumber": 6,
+        "SourceName": "Los Alamos National Laboratory, U.S. Department of Energy",
+        "SourceID": "lanl25",
+        "Name": "Manganese",
+        "Description": "The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name.",
+        "URL": "https://periodic.lanl.gov/25.shtml",
+        "ANID": 507205
+      },
+      {
+        "ReferenceNumber": 7,
+        "SourceName": "NIST Physical Measurement Laboratory",
+        "SourceID": "e25",
+        "Name": "Manganese",
+        "Description": "The periodic table contains NIST's critically-evaluated data on atomic properties of the elements. The provenance data that include data for atomic spectroscopy, X-ray and gamma ray, radiation dosimetry, nuclear physics, and condensed matter physics may be found from the link under the source name. Ref: https://www.nist.gov/pml/atomic-spectra-database",
+        "URL": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=25",
+        "LicenseURL": "https://www.nist.gov/pml/database-disclaimer",
+        "ANID": 2292642
+      },
+      {
+        "ReferenceNumber": 4,
+        "SourceName": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+        "SourceID": "p25",
+        "Description": "The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703.",
+        "URL": "https://doi.org/10.1515/pac-2015-0703",
+        "LicenseNote": "Copyright (c) 2020 International Union of Pure and Applied Chemistry.\u000A\u000AThe International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated.",
+        "LicenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "ANID": 13296430
+      },
+      {
+        "ReferenceNumber": 9,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ep_25",
+        "Name": "Manganese",
+        "Description": "The element property data was retrieved from publications.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24834086
+      },
+      {
+        "ReferenceNumber": 8,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ef_25",
+        "Name": "Manganese",
+        "Description": "This section provides all form of data related to element Manganese.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24833953
+      }
+    ]
+  }
+}

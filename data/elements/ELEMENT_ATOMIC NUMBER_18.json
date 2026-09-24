@@ -1,0 +1,3255 @@
+{
+  "Record": {
+    "RecordType": "AtomicNumber",
+    "RecordNumber": 18,
+    "RecordTitle": "Argon",
+    "Section": [
+      {
+        "TOCHeading": "Identifiers",
+        "Description": "Identifiers for this element, including element name, element symbol, InChI string, and InChIKey.",
+        "Section": [
+          {
+            "TOCHeading": "Element Name",
+            "Description": "The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Argon"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Argon"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Symbol",
+            "Description": "Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Ar"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Ar"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChI",
+            "Description": "The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChI",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "InChI=1S/Ar"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChIKey",
+            "Description": "An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChIKey",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "XKRFYHLGVUSROY-UHFFFAOYSA-N"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Properties",
+        "Description": "Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on.",
+        "Section": [
+          {
+            "TOCHeading": "Atomic Weight",
+            "Description": "Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u).",
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[39.792, 39.963]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "39.948"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "39.95"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "39.948(1)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Configuration",
+            "Description": "The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result.",
+            "URL": "https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Ne]3s23p6",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Radius",
+            "Description": "The atomic radius of a chemical element is a measure of the size of its atom, usually, the distance from the center of the nucleus to the outermost isolated electron.  Because an atom does not have a discrete boundary, there are various non-equivalent definitions of atomic radius, such as Van der Waals radius and covalent radius.",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Name": "Van der Waals Atomic Radius",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "188 pm (Van der Waals)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Covalent Atomic Radius",
+                "Reference": [
+                  "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "106(10) pm (Covalent)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Oxidation States",
+            "Description": "The oxidation state(s) that this element commonly has in a compound.  The oxidation state of an atom is defined as the hypothetical charge that would be held by that atom if all of its bonds to other atoms were completely ionic in nature. For example, the oxidation state of carbon in CO2 would be +4 since the hypothetical charge held by the carbon atom if both of the carbon-oxygen double bonds were completely ionic would be equal to +4 (each oxygen atom would hold a charge of -2 since oxygen is more electronegative than carbon).",
+            "URL": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/20%3A_Electrochemistry/20.01%3A_Oxidation_States_and_Redox_Reactions",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "0"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "0"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ground Level",
+            "Description": "Also called ground-state level. The ground state electron configuration is the arrangement of electrons around the nucleus of an atom with lower energy levels.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1S0",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 2,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ionization Energy",
+            "Description": "Ionization energy, also called ionization potential, is the amount of energy required to remove an electron from an isolated atom or molecule.",
+            "URL": "https://www.britannica.com/science/ionization-energy",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "15.760 eV"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Reference": [
+                  "Precision VUV Spectroscopy of Ar I at 105 nm, I. Velchev, W. Hogervorst, and W. Ubachs, J. Phys. B 32, L511–L516 (1999) DOI:10.1088/0953-4075/32/17/105"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Precision VUV Spectroscopy of Ar I at 105 nm, I. Velchev, W. Hogervorst, and W. Ubachs, J. Phys. B 32, L511–L516 (1999) DOI:10.1088/0953-4075/32/17/105"
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "15.7596119 ± 0.0000005 eV"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electronegativity",
+            "Description": "Electronegativity is a measure of the tendency of an atom to attract a bonding pair of electrons.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electronegativity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Name": "Allen Scale Electronegativity",
+                "Reference": [
+                  "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003",
+                  "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e",
+                  "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    3.242
+                  ],
+                  "Unit": "(Allen Scale)"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Affinity",
+            "Description": "Electron affinity refers to the energy released when an additional electron is attached to a neutral atom to form a singly charged negative ion.  Alternatively, it can also be defined as the energy required to detach an electron from the singly charged negative ion.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electron_Affinity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    0
+                  ],
+                  "Unit": "eV"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    -0.37
+                  ],
+                  "Unit": "eV"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Spectra",
+            "Description": "The spectrum of the electromagnetic radiation emitted or absorbed by an electron during transitions between different energy levels within an atom.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/lines_hold.pl?el=Ar",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Lines Holdings"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/levels_hold.pl?el=Ar",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Levels Holdings"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Physical Description",
+            "Description": "The appearance or features of this element, including color, odor, state, taste and more in general.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Gas"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Classification",
+            "Description": "Classification according to the element's chemical and physical properties, and location within the periodic table.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Non-metal"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Period Number",
+            "Description": "The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "3"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Group Number",
+            "Description": "Element group refers to a set of chemical elements in the same vertical column of the periodic table",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "18 - Noble Gas"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Density",
+            "Description": "This section provides information on the density of an element. It is the mass of a unit volume of the element and commonly expressed in units of kg/m3 or g/cm3.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Map%3A_Fundamentals_of_General_Organic_and_Biological_Chemistry_(McMurry_et_al.)/01%3A_Matter_and_Measurements/1.12%3A_Density_and_Specific_Gravity",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "0.0017837 grams per cubic centimeter"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Melting Point",
+            "Description": "This section provides the melting point and/or freezing point. The melting point is the temperature at which a substance changes state from solid to liquid at atmospheric pressure. When considered as the temperature of the reverse change (from liquid to solid), it is referred to as the freezing point.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.01%3A_Melting_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "83.80 K (-189.35°C or -308.83°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "-189.34°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Boiling Point",
+            "Description": "The temperature at which this element changes state from liquid to gas at a given atmospheric pressure.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.02%3A_Boiling_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "87.30 K (-185.85°C or -302.53°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "-185.85°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Crustal Abundance",
+            "Description": "The estimated element abundance in the earth's crust.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "3.5 milligrams per kilogram"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Oceanic Abundance",
+            "Description": "The estimated element abundance in the earth's oceans.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "4.5×10-1 milligrams per liter",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "History",
+        "Description": "The history of the discovery and use of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 3,
+            "Name": "History",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The name derives from the Greek argos for \"lazy\" or \"inactive\" because it does not combine with other elements. It was discovered in 1894 by the Scottish chemist William Ramsay and the English physicist Robert John Strutt (Lord Rayleigh) in liquefied air. Rayleigh's initial interest derived from a problem posed by the English physicist Henry Cavendish in 1785, i.e., when oxygen and nitrogen were removed from air, there was an unknown residual gas remaining.",
+                  "Markup": [
+                    {
+                      "Start": 32,
+                      "Length": 5,
+                      "Type": "Italics"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Argon was discovered by Sir William Ramsay, a Scottish chemist, and Lord Rayleigh, an English chemist, in 1894. Argon makes up 0.93% of the earth's atmosphere, making it the third most abundant gas. Argon is obtained from the air as a byproduct of the production of oxygen and nitrogen."
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "From the Greek argos, inactive. Its presence in air was suspected by Cavendish in 1785, discovered by Lord Raleigh and Sir William Ramsay in 1894."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Historical Atomic Weights",
+            "Description": "This section provides the historical atomic weights. The atomic weight shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Atomic Weight (uncertainty) [u]",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2017"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1961"
+                    },
+                    {
+                      "String": "1931"
+                    },
+                    {
+                      "String": "1925"
+                    },
+                    {
+                      "String": "1920"
+                    },
+                    {
+                      "String": "1911"
+                    },
+                    {
+                      "String": "1902"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[39.792, 39.963]"
+                    },
+                    {
+                      "String": "39.948(1)"
+                    },
+                    {
+                      "String": "39.948(3)"
+                    },
+                    {
+                      "String": "39.948"
+                    },
+                    {
+                      "String": "39.944"
+                    },
+                    {
+                      "String": "39.91"
+                    },
+                    {
+                      "String": "39.9"
+                    },
+                    {
+                      "String": "39.88"
+                    },
+                    {
+                      "String": "39.9"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1515/pac-2019-0603",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2019-0603"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198052102349",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198052102349"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197021010091",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197021010091"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja00881a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja00881a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/JR9310001617",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/JR9310001617"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/CT9252700913",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/CT9252700913"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja02233a600",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja02233a600"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja01928a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja01928a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1007/BF01370337",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 22,
+                          "URL": "https://doi.org/10.1007/BF01370337"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Historical Isotopic Abundances",
+            "Description": "This section provides the historical isotopic abundance information. The abundance value shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 4,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Isotope",
+                    "Abundance (uncertainty)",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2017"
+                    },
+                    {
+                      "String": "2017"
+                    },
+                    {
+                      "String": "2017"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1981"
+                    },
+                    {
+                      "String": "1981"
+                    },
+                    {
+                      "String": "1981"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1975"
+                    },
+                    {
+                      "String": "1975"
+                    },
+                    {
+                      "String": "1975"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "36Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "38Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "40Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "36Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "38Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "40Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "36Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "38Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "40Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "36Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "38Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "40Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "36Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "38Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "40Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "36Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "38Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "40Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "36Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "38Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "40Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[0.0000, 0.0207]"
+                    },
+                    {
+                      "String": "[0.000, 0.043]"
+                    },
+                    {
+                      "String": "[0.936, 1.000]"
+                    },
+                    {
+                      "String": "0.003 336(210)"
+                    },
+                    {
+                      "String": "0.000 629(70)"
+                    },
+                    {
+                      "String": "0.996 035(250)"
+                    },
+                    {
+                      "String": "0.003 336(21)"
+                    },
+                    {
+                      "String": "0.000 629(7)"
+                    },
+                    {
+                      "String": "0.996 035(25)"
+                    },
+                    {
+                      "String": "0.003 365(30)"
+                    },
+                    {
+                      "String": "0.000 632(5)"
+                    },
+                    {
+                      "String": "0.996 003(30)"
+                    },
+                    {
+                      "String": "0.003 37(3)"
+                    },
+                    {
+                      "String": "0.000 63(1)"
+                    },
+                    {
+                      "String": "0.996 00(3)"
+                    },
+                    {
+                      "String": "0.003 37(2)"
+                    },
+                    {
+                      "String": "0.000 63(2)"
+                    },
+                    {
+                      "String": "0.996 00(3)"
+                    },
+                    {
+                      "String": "0.0034"
+                    },
+                    {
+                      "String": "0.0007"
+                    },
+                    {
+                      "String": "0.9959"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": "doi:10.1515/pac-2015-0503",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0503"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1515/pac-2015-0503",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0503"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1515/pac-2015-0503",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0503"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/PAC-REP-10-06-02",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 28,
+                          "URL": "https://doi.org/10.1351/PAC-REP-10-06-02"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/PAC-REP-10-06-02",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 28,
+                          "URL": "https://doi.org/10.1351/PAC-REP-10-06-02"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/PAC-REP-10-06-02",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 28,
+                          "URL": "https://doi.org/10.1351/PAC-REP-10-06-02"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199870010217",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199870010217"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199870010217",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199870010217"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199870010217",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199870010217"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198355071119",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198355071119"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198355071119",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198355071119"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198355071119",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198355071119"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198052102349",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198052102349"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198052102349",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198052102349"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198052102349",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198052102349"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Description",
+        "Description": "A short description of this element, provided by authoritative sources.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Argon is two and one half times as soluble in water as nitrogen, having about the same solubility as oxygen. Argon is colorless and odorless, both as a gas and liquid. Argon is considered to be a very inert gas and is not known to form true chemical compounds, as do krypton, xenon, and radon."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Uses",
+        "Description": "Uses of this element in industry and other fields.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Argon is frequently used when an inert atmosphere is needed. It is used to fill incandescent and fluorescent light bulbs to prevent oxygen from corroding the hot filament. Argon is also used to form inert atmospheres for arc welding, growing semiconductor crystals and processes that require shielding from other atmospheric gases."
+                },
+                {
+                  "String": "Once thought to be completely inert, argon is known to form at least one compound. The synthesis of argon fluorohydride (HArF) was reported by Leonid Khriachtchev, Mika Pettersson, Nino Runeberg, Jan Lundell and Markku Räsänen in August of 2000. Stable only at very low temperatures, argon fluorohydride begins to decompose once it warms above -246°C (-411°F). Because of this limitation, argon fluorohydride has no uses outside of basic scientific research."
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "It is used in electric light bulbs and in fluorescent tubes at a pressure of about 400 Pa. and in filling photo tubes, glow tubes, etc. Argon is also used as an inert gas shield for arc welding and cutting, as blanket for the production of titanium and other reactive elements, and as a protective atmosphere for growing silicon and germanium crystals."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Sources",
+        "Description": "Sources of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The gas is prepared by fractionation of liquid air because the atmosphere contains 0.94% argon. The atmosphere of Mars contains 1.6% of 40Ar and 5 ppm of 36Ar.",
+                  "Markup": [
+                    {
+                      "Start": 136,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 154,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Compounds",
+        "Description": "Compound records related to this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 8,
+            "Name": "Compounds",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=Argon",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "See more information at the Argon compound page."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Element Forms",
+            "Description": "Other forms of this element, including ions, isotopes, etc.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "CID",
+                    "Name",
+                    "Formula",
+                    "SMILES",
+                    "Molecular Weight"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 8,
+                "Name": "CID",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "23968",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 5,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/23968"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "114788",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/114788"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "25085695",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/25085695"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "10129880",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/10129880"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "71309519",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/71309519"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "44154977",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/44154977"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "71309520",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/71309520"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "argon"
+                    },
+                    {
+                      "String": "argon-41"
+                    },
+                    {
+                      "String": "argon-39"
+                    },
+                    {
+                      "String": "argon-40"
+                    },
+                    {
+                      "String": "argon-36"
+                    },
+                    {
+                      "String": "argon-37"
+                    },
+                    {
+                      "String": "argon-38"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Formula",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Ar"
+                    },
+                    {
+                      "String": "Ar"
+                    },
+                    {
+                      "String": "Ar"
+                    },
+                    {
+                      "String": "Ar"
+                    },
+                    {
+                      "String": "Ar"
+                    },
+                    {
+                      "String": "Ar"
+                    },
+                    {
+                      "String": "Ar"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "SMILES",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Ar]"
+                    },
+                    {
+                      "String": "[41Ar]"
+                    },
+                    {
+                      "String": "[39Ar]"
+                    },
+                    {
+                      "String": "[40Ar]"
+                    },
+                    {
+                      "String": "[36Ar]"
+                    },
+                    {
+                      "String": "[37Ar]"
+                    },
+                    {
+                      "String": "[38Ar]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Molecular Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "39.9"
+                    },
+                    {
+                      "String": "40.964501"
+                    },
+                    {
+                      "String": "38.96431"
+                    },
+                    {
+                      "String": "39.96238312"
+                    },
+                    {
+                      "String": "35.9675451"
+                    },
+                    {
+                      "String": "36.966776"
+                    },
+                    {
+                      "String": "37.962732"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Isotopes",
+        "Description": "Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.",
+        "URL": "https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Name": "Stable Isotope Count",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "3"
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Name": "Summary",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Naturally occurring argon is a mixture of three isotopes. Twelve other radioactive isotopes are known to exist."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Isotopes in Earth/Planetary Science",
+            "Description": "Information on the use of this element's isotopes in earth/planetary science.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[101]  Noble Gases in Geochemistry and Cosmochemistry: Reviews in Mineralogy and Geochemistry, D. Porcelli, C. J. Ballentine, and R. Wieler (Eds.), p. 844, Mineralogical Society of America and the Geochemical Society, Washington, DC (2002).",
+                  "[157]  SAHRA – Sustainability of Semi-Arid Hydrology and Riparian Areas. Argon, SAHRA – Sustainability of Semi-Arid Hydrology and Riparian Areas (2014), Feb. 24; http://web.sahra.arizona.edu/programs/isotopes/argon.html.",
+                  "[158]  J. K. W. Lee. Chem. Geol.266, 104 (2009).",
+                  "[159]  F. M. Phillips, M. C. Castro. “Groundwater dating and residence-time measurements”, in Treatise on Geochemistry, J. I. Drever, H. D. Holland, and K. K. Turekian (Eds.), Pergamon Press, Oxford, New York (2003).",
+                  "[160]  T. Kobashi, J. P. Severinghaus, K. Kawamura. Geochim. Cosmochim. Acta.72, 4675 (2008).",
+                  "[161]  H. Sumino, K. Ikehata, A. Shimizu, K. Nagao, S. Nakada. J. Volcanol. Geotherm. Res.175, 189 (2008).",
+                  "[162]  D. R. Hilton, K. Hammerschmidt, G. Loock, H. Friedrichsen. Geochim. Cosmochim. Acta.57, 2819 (1993).",
+                  "[163]  B. P. Christensen, P. M. Holm, A. Jambon, J. R. Wilson. Chem. Geol.178, 127 (2001).",
+                  "[164]  H. H. Loosli, B. E. Lehmann, W. Balderer. Geochim. Cosmochim. Acta53, 1825 (1989).",
+                  "[165]  T. Torgersen, B. M. Kennedy, H. Hiyagon, K. Y. Chiou, J. H. Reynolds, W. B. Clarke. Earth Planet. Sci. Lett.92, 43 (1989).",
+                  "[166]  J. K. Böhlke. Pure Appl. Chem.86, 1421 (2014).",
+                  "[167]  P. R. Renne, K. A. Farley, T. A. Becker, W. D. Sharp. Earth Planet. Sci. Lett.188, 435 (2001)."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[101]  Noble Gases in Geochemistry and Cosmochemistry: Reviews in Mineralogy and Geochemistry, D. Porcelli, C. J. Ballentine, and R. Wieler (Eds.), p. 844, Mineralogical Society of America and the Geochemical Society, Washington, DC (2002)."
+                  },
+                  {
+                    "Citation": "[157]  SAHRA – Sustainability of Semi-Arid Hydrology and Riparian Areas. Argon, SAHRA – Sustainability of Semi-Arid Hydrology and Riparian Areas (2014), Feb. 24; http://web.sahra.arizona.edu/programs/isotopes/argon.html."
+                  },
+                  {
+                    "Citation": "[158]  J. K. W. Lee. Chem. Geol.266, 104 (2009)."
+                  },
+                  {
+                    "Citation": "[159]  F. M. Phillips, M. C. Castro. “Groundwater dating and residence-time measurements”, in Treatise on Geochemistry, J. I. Drever, H. D. Holland, and K. K. Turekian (Eds.), Pergamon Press, Oxford, New York (2003)."
+                  },
+                  {
+                    "Citation": "[160]  T. Kobashi, J. P. Severinghaus, K. Kawamura. Geochim. Cosmochim. Acta.72, 4675 (2008)."
+                  },
+                  {
+                    "Citation": "[161]  H. Sumino, K. Ikehata, A. Shimizu, K. Nagao, S. Nakada. J. Volcanol. Geotherm. Res.175, 189 (2008)."
+                  },
+                  {
+                    "Citation": "[162]  D. R. Hilton, K. Hammerschmidt, G. Loock, H. Friedrichsen. Geochim. Cosmochim. Acta.57, 2819 (1993)."
+                  },
+                  {
+                    "Citation": "[163]  B. P. Christensen, P. M. Holm, A. Jambon, J. R. Wilson. Chem. Geol.178, 127 (2001)."
+                  },
+                  {
+                    "Citation": "[164]  H. H. Loosli, B. E. Lehmann, W. Balderer. Geochim. Cosmochim. Acta53, 1825 (1989)."
+                  },
+                  {
+                    "Citation": "[165]  T. Torgersen, B. M. Kennedy, H. Hiyagon, K. Y. Chiou, J. H. Reynolds, W. B. Clarke. Earth Planet. Sci. Lett.92, 43 (1989)."
+                  },
+                  {
+                    "Citation": "[166]  J. K. Böhlke. Pure Appl. Chem.86, 1421 (2014)."
+                  },
+                  {
+                    "Citation": "[167]  P. R. Renne, K. A. Farley, T. A. Becker, W. D. Sharp. Earth Planet. Sci. Lett.188, 435 (2001)."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Argon’s chemically inert properties and three stable isotopes make it an ideal tracer of Earth processes [101], [157], [158], [159], [160], [161], [162], [163], [164], [165], [166], [167]. Measurements and models of the isotope-amount ratio n(40Ar)/n(36Ar) can provide insights about the evolution of the atmosphere and orogenic (mountain-building) history of the Earth. The comparison of results from potassium-argon and n(40Ar)/n(39Ar) isotope-amount-ratio dating methods with results from other dating methods has been used to study temperature histories of rocks through differences in apparent ages caused by excess argon or partial argon gas loss. The isotope-amount ratio n(40Ar)/n(36Ar) of dissolved argon in groundwater can provide hydrologic information, such as rates of crustal degassing and relative groundwater age. 38Ar produced by cosmic-ray bombardment of rocks and soils at Earth’s surface can provide information about surface exposure history and erosion rate.",
+                      "Markup": [
+                        {
+                          "Start": 243,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 251,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 424,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 432,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 681,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 689,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 830,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes in Geochronology",
+            "Description": "Information on the use of this element's isotopes in geochronology.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[101]  Noble Gases in Geochemistry and Cosmochemistry: Reviews in Mineralogy and Geochemistry, D. Porcelli, C. J. Ballentine, and R. Wieler (Eds.), p. 844, Mineralogical Society of America and the Geochemical Society, Washington, DC (2002).",
+                  "[159]  F. M. Phillips, M. C. Castro. “Groundwater dating and residence-time measurements”, in Treatise on Geochemistry, J. I. Drever, H. D. Holland, and K. K. Turekian (Eds.), Pergamon Press, Oxford, New York (2003).",
+                  "[164]  H. H. Loosli, B. E. Lehmann, W. Balderer. Geochim. Cosmochim. Acta53, 1825 (1989).",
+                  "[165]  T. Torgersen, B. M. Kennedy, H. Hiyagon, K. Y. Chiou, J. H. Reynolds, W. B. Clarke. Earth Planet. Sci. Lett.92, 43 (1989).",
+                  "[168]  G. B. Dalrymple, M. A. Lanphere. Potassium-Argon Dating: Principles, Techniques and Applications to Geochronology, p. 258, Freeman, San Francisco (1969).",
+                  "[169]  I. McDougall, T. M. Harrison. Geochronology and Thermochronology by the 40Ar/39Ar Method, p. 212, Oxford University Press, Oxford (1999).",
+                  "[170]  United States Geological Survey. Periodic Table-Argon, U.S. Geological Survey (2014), Feb. 25; http://wwwrcamnl.wr.usgs.gov/isoig/period/ar_iig.html.",
+                  "[171]  B. E. Lehmann, R. Purtschert. Appl. Geochem.12, 727 (1997).",
+                  "[172]  H. Z. Loosli, B. E. Lehmann, W. M. Smethie, Jr. “Noble gas radioisotopes: 37Ar, 85Kr, 39Ar, 81Kr”, in Environmental Tracers in Subsurface Hydrology, P. G. Cook and A. L. Herczeg (Eds.), Kluwer, Boston (2000).",
+                  "[173]  R. Yokochi, N. C. Sturchio, R. Purtschert. Geochim. Cosmochim. Acta88, 19 (2012).",
+                  "[174]  U.S. Geological Survey Hawaiian Volcano Observatory (HVO). Kilauea-3 May 2003, Saturday Morning at the Lava, U.S. Geological Survey Hawaiian Volcano Observatory (HVO) (2014), Feb. 26; http://hvo.wr.usgs.gov/kilauea/update/archive/2003/May/main.html.",
+                  "[175]  USGS 40Ar/39Ar Geochronology Laboratory. USGS 40Ar/39Ar Laboratory, USGS 40Ar/39Ar Geochronology Laboratory (2017), Feb. 25; http://minerals.cr.usgs.gov/argon_lab/index.html."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[101]  Noble Gases in Geochemistry and Cosmochemistry: Reviews in Mineralogy and Geochemistry, D. Porcelli, C. J. Ballentine, and R. Wieler (Eds.), p. 844, Mineralogical Society of America and the Geochemical Society, Washington, DC (2002)."
+                  },
+                  {
+                    "Citation": "[159]  F. M. Phillips, M. C. Castro. “Groundwater dating and residence-time measurements”, in Treatise on Geochemistry, J. I. Drever, H. D. Holland, and K. K. Turekian (Eds.), Pergamon Press, Oxford, New York (2003)."
+                  },
+                  {
+                    "Citation": "[164]  H. H. Loosli, B. E. Lehmann, W. Balderer. Geochim. Cosmochim. Acta53, 1825 (1989)."
+                  },
+                  {
+                    "Citation": "[165]  T. Torgersen, B. M. Kennedy, H. Hiyagon, K. Y. Chiou, J. H. Reynolds, W. B. Clarke. Earth Planet. Sci. Lett.92, 43 (1989)."
+                  },
+                  {
+                    "Citation": "[168]  G. B. Dalrymple, M. A. Lanphere. Potassium-Argon Dating: Principles, Techniques and Applications to Geochronology, p. 258, Freeman, San Francisco (1969)."
+                  },
+                  {
+                    "Citation": "[169]  I. McDougall, T. M. Harrison. Geochronology and Thermochronology by the 40Ar/39Ar Method, p. 212, Oxford University Press, Oxford (1999)."
+                  },
+                  {
+                    "Citation": "[170]  United States Geological Survey. Periodic Table-Argon, U.S. Geological Survey (2014), Feb. 25; http://wwwrcamnl.wr.usgs.gov/isoig/period/ar_iig.html."
+                  },
+                  {
+                    "Citation": "[171]  B. E. Lehmann, R. Purtschert. Appl. Geochem.12, 727 (1997)."
+                  },
+                  {
+                    "Citation": "[172]  H. Z. Loosli, B. E. Lehmann, W. M. Smethie, Jr. “Noble gas radioisotopes: 37Ar, 85Kr, 39Ar, 81Kr”, in Environmental Tracers in Subsurface Hydrology, P. G. Cook and A. L. Herczeg (Eds.), Kluwer, Boston (2000)."
+                  },
+                  {
+                    "Citation": "[173]  R. Yokochi, N. C. Sturchio, R. Purtschert. Geochim. Cosmochim. Acta88, 19 (2012)."
+                  },
+                  {
+                    "Citation": "[174]  U.S. Geological Survey Hawaiian Volcano Observatory (HVO). Kilauea-3 May 2003, Saturday Morning at the Lava, U.S. Geological Survey Hawaiian Volcano Observatory (HVO) (2014), Feb. 26; http://hvo.wr.usgs.gov/kilauea/update/archive/2003/May/main.html."
+                  },
+                  {
+                    "Citation": "[175]  USGS 40Ar/39Ar Geochronology Laboratory. USGS 40Ar/39Ar Laboratory, USGS 40Ar/39Ar Geochronology Laboratory (2017), Feb. 25; http://minerals.cr.usgs.gov/argon_lab/index.html."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Argon isotopes are used to date rock samples, especially volcanic rocks, using two related techniques (Fig. IUPAC.18.1) [101], [168], [169], [170]."
+                    },
+                    {
+                      "String": "–The first technique is potassium-argon dating (K-Ar), which is based on the decay of radioactive 40K to stable 40Ar. By comparing the concentrations of potassium and 40Ar in a sample, it is possible to determine how long the sample has been accumulating radiogenic 40Ar to determine the “age” of the sample. The half-life of 40K is approximately 1.25×109 years, making this a useful tool for dating rocks range in age from about 106 to 109 years.",
+                      "Markup": [
+                        {
+                          "Start": 98,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 112,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 167,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 266,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 326,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 354,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 432,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 439,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "–A modification of the potassium-argon dating technique is the n(40Ar)/n(39Ar) isotope-amount-ratio technique, in which a sample is irradiated in a nuclear reactor to produce 39Ar from 39K. The isotope-amount ratio n(40Ar)/n(39Ar) is then determined, and from this, the approximate age of the rock can be calculated (Fig. IUPAC.18.2).",
+                      "Markup": [
+                        {
+                          "Start": 65,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 73,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 175,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 185,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 217,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 225,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "The study of 37Ar (half-life of 35 days), 39Ar (half-life of 268 years), and 40Ar concentrations in groundwater can provide information about the production and release of these isotopes from rocks and other sources into groundwater and the relative ages of different groundwaters [159], [164], [165], [171], [172], [173].",
+                      "Markup": [
+                        {
+                          "Start": 13,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 42,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 77,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_033.jpg",
+                          "Type": "Image",
+                          "Size": "945x588",
+                          "Caption": "Fig. IUPAC.18.1: Studying the ratios of argon isotopes can provide insight into the origins and movement of magma and the ages of volcanic rock. ⁴⁰Ar begins increasing in concentration once lava has solidified. (Image Source: U.S. Geological Survey Hawaiian Volcano Observatory, Kilauea) [174]. "
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_034.jpg",
+                          "Type": "Image",
+                          "Size": "945x711",
+                          "Caption": "Fig. IUPAC.18.2: The U.S. Geological Survey ⁴⁰Ar/ ³⁹Ar geochronology laboratory in Denver, Colorado uses a custom-built argon extraction line connected to a Mass Analyzer Products (MAP) 215-50 mass spectrometer with a differentially pumped dual laser setup. (U.S. Geological Survey ⁴⁰Ar/ ³⁹Ar Geochronology Laboratory) [175]. "
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes in Industry",
+            "Description": "Information on the use of this element's isotopes in industry.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[176]  K. Nagatsu, A. Kubodera, K. Suzuki. Appl. Radiat. Isot.49, 1505 (1998).",
+                  "[177]  J. R. Mercer, M. J. M. Duke, S. A. McQuarrie. Appl. Radiat. Isot.52, 1413 (2000)."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[176]  K. Nagatsu, A. Kubodera, K. Suzuki. Appl. Radiat. Isot.49, 1505 (1998)."
+                  },
+                  {
+                    "Citation": "[177]  J. R. Mercer, M. J. M. Duke, S. A. McQuarrie. Appl. Radiat. Isot.52, 1413 (2000)."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "38K (half-life of 7.6 min), which is produced by the reactions 38Ar (p, n) 38K and 40Ar (n, 3n) 38K, is a widely used blood-flow tracer. Because 38Ar is more expensive, 40Ar, which also offers many additional advantages as a target, is more commonly used to produce 38K for medical purposes [176], [177]. 41Ar (half-life of 1.82 h) is used as an industrial gas-flow tracer to help track the movement of gases because its inert properties, half-life, and gamma radiation make it well suited for this purpose [177].",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 63,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 75,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 83,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 96,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 145,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 169,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 266,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 305,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotope Mass and Abundance",
+            "Description": "Atomic mass and abundance (composition) information for a given isotope/nuclide. The number in the parenthesis refers to an uncertainty when exist. The unit of atomic weight is the unified atomic mass unit (u) or dalton (Da). ",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Isotope",
+                    "Atomic Mass (uncertainty) [u]",
+                    "Abundance (uncertainty)"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": " 36Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": " 38Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": " 40Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Mass (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "35.967 5451(2)"
+                    },
+                    {
+                      "String": "37.962 732(2)"
+                    },
+                    {
+                      "String": "39.962 383 12(2)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[0.0000, 0.0207]"
+                    },
+                    {
+                      "String": "[0.000, 0.043]"
+                    },
+                    {
+                      "String": "[0.936, 1.000]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "36Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "38Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "40Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Atomic Mass (uncertainty) [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "35.967545105(28)"
+                    },
+                    {
+                      "String": "37.96273211(21)"
+                    },
+                    {
+                      "String": "39.9623831237(24)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "0.003336(21)"
+                    },
+                    {
+                      "String": "0.000629(7)"
+                    },
+                    {
+                      "String": "0.996035(25)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Mass, Half Life, and Decay",
+            "Description": "Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Nuclide",
+                    "Atomic Mass and Uncertainty [u]",
+                    "Half Life and Uncertainty",
+                    "Discovery Year",
+                    "Decay Modes, Intensities and Uncertainties [%]"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 2,
+                "Name": "Nuclide",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "29Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "30Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "31Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "32Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "33Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "34Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "35Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "36Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "37Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "38Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "39Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "40Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "41Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "42Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "43Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "44Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "45Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "46Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "47Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "48Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "49Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "50Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "51Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "52Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "53Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "54Ar",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Atomic Mass and Uncertainty [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "29.040761 ± 0.000471 [Estimated]"
+                    },
+                    {
+                      "String": "30.023694 ± 0.000192 [Estimated]"
+                    },
+                    {
+                      "String": "31.012158 ± 0.000215 [Estimated]"
+                    },
+                    {
+                      "String": "31.997637824 ± 0.0000019"
+                    },
+                    {
+                      "String": "32.989925545 ± 0.00000043"
+                    },
+                    {
+                      "String": "33.980270092 ± 0.000000083"
+                    },
+                    {
+                      "String": "34.975257719 ± 0.00000073"
+                    },
+                    {
+                      "String": "35.967545106 ± 0.000000028"
+                    },
+                    {
+                      "String": "36.966776301 ± 0.000000221"
+                    },
+                    {
+                      "String": "37.962732102 ± 0.000000209"
+                    },
+                    {
+                      "String": "38.964313037 ± 0.000005367"
+                    },
+                    {
+                      "String": "39.96238312204 ± 0.00000000234"
+                    },
+                    {
+                      "String": "40.964500570 ± 0.000000372"
+                    },
+                    {
+                      "String": "41.963045737 ± 0.0000062"
+                    },
+                    {
+                      "String": "42.965636056 ± 0.0000057"
+                    },
+                    {
+                      "String": "43.964923814 ± 0.0000017"
+                    },
+                    {
+                      "String": "44.968039731 ± 0.00000055"
+                    },
+                    {
+                      "String": "45.968039244 ± 0.0000025"
+                    },
+                    {
+                      "String": "46.972767112 ± 0.0000013"
+                    },
+                    {
+                      "String": "47.976001000 ± 0.000018"
+                    },
+                    {
+                      "String": "48.981685 ± 0.000429 [Estimated]"
+                    },
+                    {
+                      "String": "49.985797 ± 0.000537 [Estimated]"
+                    },
+                    {
+                      "String": "50.993033 ± 0.000429 [Estimated]"
+                    },
+                    {
+                      "String": "51.998519 ± 0.000644 [Estimated]"
+                    },
+                    {
+                      "String": "53.007290 ± 0.00075 [Estimated]"
+                    },
+                    {
+                      "String": "54.013484 ± 0.000859 [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Half Life and Uncertainty",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Not-specified >100ns"
+                    },
+                    {
+                      "String": "<10 ps"
+                    },
+                    {
+                      "String": "15.0 ms ± 0.3"
+                    },
+                    {
+                      "String": "98 ms ± 2"
+                    },
+                    {
+                      "String": "173.0 ms ± 2.0"
+                    },
+                    {
+                      "String": "846.46 ms ± 0.35"
+                    },
+                    {
+                      "String": "1.7756 s ± 0.0010"
+                    },
+                    {
+                      "String": "Stable"
+                    },
+                    {
+                      "String": "35.011 d ± 0.019"
+                    },
+                    {
+                      "String": "Stable"
+                    },
+                    {
+                      "String": "268 y ± 8"
+                    },
+                    {
+                      "String": "Stable"
+                    },
+                    {
+                      "String": "109.61 m ± 0.04"
+                    },
+                    {
+                      "String": "32.9 y ± 1.1"
+                    },
+                    {
+                      "String": "5.37 m ± 0.06"
+                    },
+                    {
+                      "String": "11.87 m ± 0.05"
+                    },
+                    {
+                      "String": "21.48 s ± 0.15"
+                    },
+                    {
+                      "String": "8.4 s ± 0.6"
+                    },
+                    {
+                      "String": "1.23 s ± 0.03"
+                    },
+                    {
+                      "String": "415 ms ± 15"
+                    },
+                    {
+                      "String": "236 ms ± 8"
+                    },
+                    {
+                      "String": "106 ms ± 6"
+                    },
+                    {
+                      "String": "30 ms >200ns [Estimated]"
+                    },
+                    {
+                      "String": "40 ms >620ns [Estimated]"
+                    },
+                    {
+                      "String": "20 ms >620ns [Estimated]"
+                    },
+                    {
+                      "String": "5 ms >400ns [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Discovery Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2018"
+                    },
+                    {
+                      "String": "2015"
+                    },
+                    {
+                      "String": "1986"
+                    },
+                    {
+                      "String": "1977"
+                    },
+                    {
+                      "String": "1964"
+                    },
+                    {
+                      "String": "1966"
+                    },
+                    {
+                      "String": "1940"
+                    },
+                    {
+                      "String": "1920"
+                    },
+                    {
+                      "String": "1941"
+                    },
+                    {
+                      "String": "1934"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1920"
+                    },
+                    {
+                      "String": "1936"
+                    },
+                    {
+                      "String": "1952"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1974"
+                    },
+                    {
+                      "String": "1974"
+                    },
+                    {
+                      "String": "1985"
+                    },
+                    {
+                      "String": "2004"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "2018"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Decay Modes, Intensities and Uncertainties [%]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2p=100%"
+                    },
+                    {
+                      "String": "2p=100%"
+                    },
+                    {
+                      "String": "β+=100%; β+p=68.3±0.3%; β+2p=9.0±0.2%; β+pα<0.38%; β+3p=0.07±0.2%; β+α<0.03%; 2p<0.0006%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 25,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 40,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 52,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 68,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%; β+p=35.58±2.2%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%; β+p=38.7±0.8%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IS=0.3336±21%; 2β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 17,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "ε=100%"
+                    },
+                    {
+                      "String": "IS=0.0629±7%"
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IS=99.6035±25%"
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n<0.2%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=38±0.6%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=29±0.6%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=37±0.7%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 1,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      },
+      {
+        "ReferenceNumber": 2,
+        "SourceName": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+        "SourceID": "e18",
+        "Name": "Ar",
+        "Description": "The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.",
+        "URL": "https://www-nds.iaea.org/amdc/",
+        "LicenseURL": "https://www-nds.iaea.org/disclaimer.html",
+        "ANID": 6590245
+      },
+      {
+        "ReferenceNumber": 3,
+        "SourceName": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+        "SourceID": "a18",
+        "Name": "Argon",
+        "Description": "Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.",
+        "URL": "https://www.ciaaw.org/argon.htm",
+        "LicenseURL": "http://www.ciaaw.org/bylaws.htm",
+        "ANID": 2292399
+      },
+      {
+        "ReferenceNumber": 5,
+        "SourceName": "Jefferson Lab, U.S. Department of Energy",
+        "SourceID": "jlab18",
+        "Name": "Argon",
+        "Description": "Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/",
+        "URL": "https://education.jlab.org/itselemental/ele018.html",
+        "LicenseNote": "Please see citation and linking information: https://education.jlab.org/faq/index.html",
+        "LicenseURL": "https://www.jlab.org/privacy-and-security-notice",
+        "ANID": 507080
+      },
+      {
+        "ReferenceNumber": 6,
+        "SourceName": "Los Alamos National Laboratory, U.S. Department of Energy",
+        "SourceID": "lanl18",
+        "Name": "Argon",
+        "Description": "The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name.",
+        "URL": "https://periodic.lanl.gov/18.shtml",
+        "ANID": 507198
+      },
+      {
+        "ReferenceNumber": 7,
+        "SourceName": "NIST Physical Measurement Laboratory",
+        "SourceID": "e18",
+        "Name": "Argon",
+        "Description": "The periodic table contains NIST's critically-evaluated data on atomic properties of the elements. The provenance data that include data for atomic spectroscopy, X-ray and gamma ray, radiation dosimetry, nuclear physics, and condensed matter physics may be found from the link under the source name. Ref: https://www.nist.gov/pml/atomic-spectra-database",
+        "URL": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=18",
+        "LicenseURL": "https://www.nist.gov/pml/database-disclaimer",
+        "ANID": 2292635
+      },
+      {
+        "ReferenceNumber": 4,
+        "SourceName": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+        "SourceID": "p18",
+        "Description": "The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703.",
+        "URL": "https://doi.org/10.1515/pac-2015-0703",
+        "LicenseNote": "Copyright (c) 2020 International Union of Pure and Applied Chemistry.\u000A\u000AThe International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated.",
+        "LicenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "ANID": 13296423
+      },
+      {
+        "ReferenceNumber": 9,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ep_18",
+        "Name": "Argon",
+        "Description": "The element property data was retrieved from publications.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24834072
+      },
+      {
+        "ReferenceNumber": 8,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ef_18",
+        "Name": "Argon",
+        "Description": "This section provides all form of data related to element Argon.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24833946
+      }
+    ]
+  }
+}
