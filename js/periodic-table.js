@@ -52,11 +52,6 @@ function parseCSV(text) {
   );
 }
 
-function setText(element, selector, value, fallback = "—") {
-  const node = element.querySelector(selector);
-  node.textContent = value || fallback;
-}
-
 function fillCard(card, element) {
   card.replaceChildren();
 
@@ -101,7 +96,6 @@ async function load() {
 
   const data = parseCSV(await response.text());
   const elements = new Map(data.map((element) => [String(element.AtomicNumber), element]));
-
   let populated = 0;
 
   cards.forEach((card) => {
@@ -109,7 +103,7 @@ async function load() {
     if (!element) return;
 
     fillCard(card, element);
-    card.addEventListener("click", () => blink(card), { passive: true });
+    card.addEventListener("click", () => blink(card));
     populated += 1;
   });
 
