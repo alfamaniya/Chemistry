@@ -6,10 +6,12 @@
     --table-width: 878px;
   }
   .periodic-table-page { padding: 6px; }
-  .periodic-table { padding: 10px; border-radius: 18px; }
-  .element { padding: 5px 2px 3px; border-radius: 10px; }
+  .periodic-table { padding: 10px; border-radius: 18px; grid-auto-rows: var(--cell-width); }
+  .element { width: var(--cell-width); height: var(--cell-width); min-width: 0; min-height: 0; aspect-ratio: 1 / 1; padding: 5px 2px 3px; border-radius: 10px; }
   .element-number { top: 4px; left: 4px; font-size: 8px; }
-  .element-symbol { font-size: 20px; letter-spacing: -.25px; }
+  .element-symbol { font-size: 20px; letter-spacing: -.25px; flex: 0 0 auto; }
+  .element-name-fa,
+  .element-name-en { width: 100%; min-width: 0; white-space: normal; overflow-wrap: anywhere; word-break: break-word; text-align: center; }
   .element-name-fa { margin-top: 3px; font-size: 6.8px; line-height: 1; }
   .element-name-en { margin-top: 1px; font-size: 5.5px; line-height: 1; }
 }
