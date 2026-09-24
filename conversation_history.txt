@@ -1,0 +1,23 @@
+===== Conversation 014 =====
+Date: 2026-09-24
+
+هدف:
+- اصلاح README.md بر اساس وضعیت واقعی مخزن main.
+
+بررسی انجام‌شده:
+- ریشه مخزن فعلی فقط README.md و data/ را دارد.
+- data/ شامل .gitkeep، PubChemElements_all.json و پوشه data/elements/ است.
+- data/elements/ شامل فایل‌های اختصاصی عناصر با الگوی نام ELEMENT_ATOMIC NUMBER_*.json است.
+- در وضعیت واقعی فعلی مخزن، index.html، فایل‌های CSS و JavaScript وجود ندارند؛ بنابراین README نباید آن‌ها را به‌عنوان فایل موجود معرفی کند.
+- PubChemElements_all.json شامل فیلدهایی مانند AtomicNumber، Symbol، Name، AtomicMass، CPKHexColor، ElectronConfiguration و سایر مشخصات عناصر است.
+
+تغییرات انجام‌شده:
+- README.md به‌طور کامل با ساختار واقعی فعلی مخزن هماهنگ شد.
+- تفاوت بین فایل‌های موجود و معماری موردنظر آینده در README صریحاً مشخص شد.
+- ساختار data/ و data/elements/ مستند شد.
+- اصل تفکیک HTML، CSS، DATA و JS برای ادامه معماری پروژه ثبت شد.
+- قانون نام‌گذاری انگلیسی فایل‌ها و پوشه‌های جدید ثبت شد.
+
+کارهای باقی‌مانده:
+- ادامه توسعه رابط کاربری پس از تثبیت ساختار داده‌ها.
+- ایجاد مجدد فایل‌های HTML/CSS/JS در صورت نیاز طبق معماری ثبت‌شده.
