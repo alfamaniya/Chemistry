@@ -1,0 +1,3217 @@
+{
+  "Record": {
+    "RecordType": "AtomicNumber",
+    "RecordNumber": 86,
+    "RecordTitle": "Radon",
+    "Section": [
+      {
+        "TOCHeading": "Identifiers",
+        "Description": "Identifiers for this element, including element name, element symbol, InChI string, and InChIKey.",
+        "Section": [
+          {
+            "TOCHeading": "Element Name",
+            "Description": "The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Radon"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Radon"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Symbol",
+            "Description": "Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Rn"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Rn"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChI",
+            "Description": "The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChI",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "InChI=1S/Rn"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChIKey",
+            "Description": "An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChIKey",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "SYUHGPGVQRZVTB-UHFFFAOYSA-N"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Properties",
+        "Description": "Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on.",
+        "Section": [
+          {
+            "TOCHeading": "Atomic Weight",
+            "Description": "Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u).",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "222"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "222"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[222]"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Configuration",
+            "Description": "The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result.",
+            "URL": "https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Xe]6s24f145d106p6",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 9,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 13,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 17,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Radius",
+            "Description": "The atomic radius of a chemical element is a measure of the size of its atom, usually, the distance from the center of the nucleus to the outermost isolated electron.  Because an atom does not have a discrete boundary, there are various non-equivalent definitions of atomic radius, such as Van der Waals radius and covalent radius.",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Name": "Van der Waals Atomic Radius",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "220 pm (Van der Waals)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Covalent Atomic Radius",
+                "Reference": [
+                  "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "150 pm (Covalent)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Oxidation States",
+            "Description": "The oxidation state(s) that this element commonly has in a compound.  The oxidation state of an atom is defined as the hypothetical charge that would be held by that atom if all of its bonds to other atoms were completely ionic in nature. For example, the oxidation state of carbon in CO2 would be +4 since the hypothetical charge held by the carbon atom if both of the carbon-oxygen double bonds were completely ionic would be equal to +4 (each oxygen atom would hold a charge of -2 since oxygen is more electronegative than carbon).",
+            "URL": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/20%3A_Electrochemistry/20.01%3A_Oxidation_States_and_Redox_Reactions",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "0"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "6, 2, 0"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ground Level",
+            "Description": "Also called ground-state level. The ground state electron configuration is the arrangement of electrons around the nucleus of an atom with lower energy levels.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1S0",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 2,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ionization Energy",
+            "Description": "Ionization energy, also called ionization potential, is the amount of energy required to remove an electron from an isolated atom or molecule.",
+            "URL": "https://www.britannica.com/science/ionization-energy",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "10.745 eV"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Reference": [
+                  "Ionization Potentials and Ionization Limits Derived from the Analysis of Optical Spectra, C. E. Moore, in Nat. Stand. Ref. Data Ser., NSRDS-NBS 34, 22 pp. (Nat. Bur. Stand., U.S., 1970) DOI:10.6028/NBS.NSRDS.34",
+                  "Über das Bogenspektrum der Radiumemanation, E. Rasmussen, Z. Phys. 80, 726–734 (1933) (Ger.) DOI:10.1007/BF01342588"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Ionization Potentials and Ionization Limits Derived from the Analysis of Optical Spectra, C. E. Moore, in Nat. Stand. Ref. Data Ser., NSRDS-NBS 34, 22 pp. (Nat. Bur. Stand., U.S., 1970) DOI:10.6028/NBS.NSRDS.34"
+                  },
+                  {
+                    "Citation": "Über das Bogenspektrum der Radiumemanation, E. Rasmussen, Z. Phys. 80, 726–734 (1933) (Ger.) DOI:10.1007/BF01342588"
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "10.74850 eV"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electronegativity",
+            "Description": "Electronegativity is a measure of the tendency of an atom to attract a bonding pair of electrons.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electronegativity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Name": "Allen Scale Electronegativity",
+                "Reference": [
+                  "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003",
+                  "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e",
+                  "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    2.6
+                  ],
+                  "Unit": "(Allen Scale)"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Affinity",
+            "Description": "Electron affinity refers to the energy released when an additional electron is attached to a neutral atom to form a singly charged negative ion.  Alternatively, it can also be defined as the energy required to detach an electron from the singly charged negative ion.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electron_Affinity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    0
+                  ],
+                  "Unit": "eV"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Spectra",
+            "Description": "The spectrum of the electromagnetic radiation emitted or absorbed by an electron during transitions between different energy levels within an atom.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/lines_hold.pl?el=Rn",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Lines Holdings"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/levels_hold.pl?el=Rn",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Levels Holdings"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Physical Description",
+            "Description": "The appearance or features of this element, including color, odor, state, taste and more in general.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Gas"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Classification",
+            "Description": "Classification according to the element's chemical and physical properties, and location within the periodic table.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Non-metal"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Period Number",
+            "Description": "The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "6"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Group Number",
+            "Description": "Element group refers to a set of chemical elements in the same vertical column of the periodic table",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "18 - Noble Gas"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Density",
+            "Description": "This section provides information on the density of an element. It is the mass of a unit volume of the element and commonly expressed in units of kg/m3 or g/cm3.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Map%3A_Fundamentals_of_General_Organic_and_Biological_Chemistry_(McMurry_et_al.)/01%3A_Matter_and_Measurements/1.12%3A_Density_and_Specific_Gravity",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "0.00973 grams per cubic centimeter"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Melting Point",
+            "Description": "This section provides the melting point and/or freezing point. The melting point is the temperature at which a substance changes state from solid to liquid at atmospheric pressure. When considered as the temperature of the reverse change (from liquid to solid), it is referred to as the freezing point.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.01%3A_Melting_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "202 K (-71°C or -96°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "-71°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Boiling Point",
+            "Description": "The temperature at which this element changes state from liquid to gas at a given atmospheric pressure.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.02%3A_Boiling_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "211.45 K (-61.7°C or -79.1°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "-61.7°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Crustal Abundance",
+            "Description": "The estimated element abundance in the earth's crust.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "4×10-13 milligrams per kilogram",
+                      "Markup": [
+                        {
+                          "Start": 4,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Oceanic Abundance",
+            "Description": "The estimated element abundance in the earth's oceans.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "6×10-16 milligrams per liter",
+                      "Markup": [
+                        {
+                          "Start": 4,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "History",
+        "Description": "The history of the discovery and use of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Radon was discovered by Friedrich Ernst Dorn, a German chemist, in 1900 while studying radium's decay chain. Originally named niton after the Latin word for shining, nitens, radon has been known as radon since 1923. Today, radon is still primarily obtained through the decay of radium. At normal room temperatures, radon is a colorless, odorless, radioactive gas. The most common forms of radon decay through alpha decay. Alpha decay usually isn't considered to be a great radiological hazard since the alpha particles produced by the decay are easily stopped. However, since radon is a gas, it is easily inhaled and living tissue is directly exposed to the radiation. Although it has a relatively short half-life, radon decays into longer lived, solid, radioactive elements which can collect on dust particles and be inhaled as well. For these reasons, there is some concern as to the amount of radon present within homes. Radon seeps into houses as a result of the decay of radium, thorium or uranium ores underground and varies greatly from location to location. On average, the earth's atmosphere is 0.0000000000000000001% radon."
+                },
+                {
+                  "String": "When cooled to its solid state, radon glows yellow. The glow becomes orange-red as the temperature is lowered."
+                },
+                {
+                  "String": "Radon's most stable isotope, radon-222, has a half-life of about 3.8 days. It decays into polonium-218 through alpha decay."
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The name was derived from radium; called niton at first, from the Latin word nitens meaning shining.The element was discovered in 1900 by Dorn, who called it radium emanation. In 1908 Ramsay and Gray, who named it niton, isolated the element and determined its density, finding it to be the heaviest known gas. It is essentially inert and occupies the last place in the zero group of gases in the Periodic Table. Since 1923, it has been called radon.",
+                  "Markup": [
+                    {
+                      "Start": 397,
+                      "Length": 14,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/ptable"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Historical Atomic Weights",
+            "Description": "This section provides the historical atomic weights. The atomic weight shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Atomic Weight (uncertainty) [u]",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1925"
+                    },
+                    {
+                      "String": "1912"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "222"
+                    },
+                    {
+                      "String": "222.4"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1039/CT9252700913",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/CT9252700913"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja02224a601",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja02224a601"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Description",
+        "Description": "A short description of this element, provided by authoritative sources.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Radon is present in the atomosphere at very low concentrations. See Wikipedia for discussion of concentration. At ordinary temperatures radon is a colorless gas; when cooled below the freezing point, radon exhibits a brilliant phosphorescence which becomes yellow as the temperature is lowered and orange-red at the temperature of liquid air. It has been reported that fluorine reacts with radon, forming a fluoride. Radon clathrates have also been reported."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Uses",
+        "Description": "Uses of this element in industry and other fields.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Small amounts of radon are sometimes used by hospitals to treat some forms of cancer. Radon fluoride (RnF) is the only confirmed compound of radon."
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Radon is still produced for therapeutic use by a few hospitals by pumping it from a radium source and sealing it in minute tubes, called seeds or needles, for application to patient. This practice has been largely discontinued as hospitals can get the seeds directly from suppliers, who make up the seeds with the desired activity for the day of use."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Compounds",
+        "Description": "Compound records related to this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 8,
+            "Name": "Compounds",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=Radon",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "See more information at the Radon compound page."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Element Forms",
+            "Description": "Other forms of this element, including ions, isotopes, etc.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "CID",
+                    "Name",
+                    "Formula",
+                    "SMILES",
+                    "Molecular Weight"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 8,
+                "Name": "CID",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "24857",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 5,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/24857"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "61773",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 5,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/61773"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "62761",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 5,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/62761"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "115137",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/115137"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "104971",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/104971"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "177599",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/177599"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "133065652",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/133065652"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "180030",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/180030"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "185641",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/185641"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "9815712",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/9815712"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "radon"
+                    },
+                    {
+                      "String": "radon-222"
+                    },
+                    {
+                      "String": "radon-220"
+                    },
+                    {
+                      "String": "radon-219"
+                    },
+                    {
+                      "String": "radon-226"
+                    },
+                    {
+                      "String": "radon-218"
+                    },
+                    {
+                      "String": "radon-229"
+                    },
+                    {
+                      "String": "radon-228"
+                    },
+                    {
+                      "String": "radon-224"
+                    },
+                    {
+                      "String": "radon-211"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Formula",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Rn"
+                    },
+                    {
+                      "String": "Rn"
+                    },
+                    {
+                      "String": "Rn"
+                    },
+                    {
+                      "String": "Rn"
+                    },
+                    {
+                      "String": "Rn"
+                    },
+                    {
+                      "String": "Rn"
+                    },
+                    {
+                      "String": "Rn"
+                    },
+                    {
+                      "String": "Rn"
+                    },
+                    {
+                      "String": "Rn"
+                    },
+                    {
+                      "String": "Rn"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "SMILES",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Rn]"
+                    },
+                    {
+                      "String": "[222Rn]"
+                    },
+                    {
+                      "String": "[220Rn]"
+                    },
+                    {
+                      "String": "[219Rn]"
+                    },
+                    {
+                      "String": "[226Rn]"
+                    },
+                    {
+                      "String": "[218Rn]"
+                    },
+                    {
+                      "String": "[229Rn]"
+                    },
+                    {
+                      "String": "[228Rn]"
+                    },
+                    {
+                      "String": "[224Rn]"
+                    },
+                    {
+                      "String": "[211Rn]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Molecular Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "222.01758"
+                    },
+                    {
+                      "String": "222.01758"
+                    },
+                    {
+                      "String": "220.01139"
+                    },
+                    {
+                      "String": "219.00948"
+                    },
+                    {
+                      "String": "226.0309"
+                    },
+                    {
+                      "String": "218.00560"
+                    },
+                    {
+                      "String": "229.0423"
+                    },
+                    {
+                      "String": "228.0378"
+                    },
+                    {
+                      "String": "224.0241"
+                    },
+                    {
+                      "String": "210.99060"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Handling and Storage",
+        "Description": "This section provides guidance on the safe handling practices and storage conditions for this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Care must be taken in handling radon, as with other radioactive materials. The main hazard is from inhalation of the element and its solid daughters which are collected on dust in the air. Good ventilation should be provided where radium, thorium, or actinium is stored to prevent build-up of the element. Radon build-up is a health consideration in uranium mines. Recently radon build-up in homes has been a concern. Many deaths from lung cancer are caused by radon exposure. In the U.S. it is recommended that remedial action be taken if the air in homes exceeds 4 pCi/l."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Isotopes",
+        "Description": "Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.",
+        "URL": "https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Name": "Stable Isotope Count",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "0"
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Name": "Summary",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Thirty-nine isotopes are known. Radon-222 is the most common. It has a half-life of 3.823 days and is an alpha emitter. It is estimated that every square mile of soil to a depth of 6 inches contains about 1 g of radium, which releases radon in tiny amounts into the atmosphere. Radon gas can collect in buildings, creating a health risk. The Environmental Protection Agency estimates that responsible for an estimated 20,000 lung cancer deaths each year. More on radon and health. Radon is present in some spring waters, such as those at Hot Springs, Arkansas."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Isotopes in Earth/Planetary Science",
+            "Description": "Information on the use of this element's isotopes in earth/planetary science.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[568]  United States Geological Survey. Resources on Isotopes-Periodic Table-Radon, U.S. Geological Survey (2014), Feb. 25; http://wwwrcamnl.wr.usgs.gov/isoig/period/rn_iig.html.",
+                  "[569]  State of California Department of Conservation. Indoor Radon, State of California Department of Conservation (2017), April 8; http://www.consrv.ca.gov/CGS/minerals/hazardous_minerals/radon/Pages/index.aspx.",
+                  "[570]  L. S. Quindos Poncela, C. Sainz Fernandez, I. Fuente Merino, J. L. Gutierrez Villanueva, A. Gonzalez Diez. Acta Geophysica.61, 848 (2013).",
+                  "[571]  M. Schubert, M. Balcazar, A. Lopez, P. Peña, J. H. Flores, K. Knöller. Isot. Environ. Health Stud.43, 215 (2007).",
+                  "[572]  R. N. Peterson, W. C. Burnett, M. Taniguchi, J. Chen, I. R. Santos, T. Ishitobi. J. Geophys. Res.113, C09021 (2008).",
+                  "[573]  J. Crusius. Putting Radon to Work: Identifying Coastal Ground-Water Discharge Sites, U.S. Geological Survey (2004)."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[568]  United States Geological Survey. Resources on Isotopes-Periodic Table-Radon, U.S. Geological Survey (2014), Feb. 25; http://wwwrcamnl.wr.usgs.gov/isoig/period/rn_iig.html."
+                  },
+                  {
+                    "Citation": "[569]  State of California Department of Conservation. Indoor Radon, State of California Department of Conservation (2017), April 8; http://www.consrv.ca.gov/CGS/minerals/hazardous_minerals/radon/Pages/index.aspx."
+                  },
+                  {
+                    "Citation": "[570]  L. S. Quindos Poncela, C. Sainz Fernandez, I. Fuente Merino, J. L. Gutierrez Villanueva, A. Gonzalez Diez. Acta Geophysica.61, 848 (2013)."
+                  },
+                  {
+                    "Citation": "[571]  M. Schubert, M. Balcazar, A. Lopez, P. Peña, J. H. Flores, K. Knöller. Isot. Environ. Health Stud.43, 215 (2007)."
+                  },
+                  {
+                    "Citation": "[572]  R. N. Peterson, W. C. Burnett, M. Taniguchi, J. Chen, I. R. Santos, T. Ishitobi. J. Geophys. Res.113, C09021 (2008)."
+                  },
+                  {
+                    "Citation": "[573]  J. Crusius. Putting Radon to Work: Identifying Coastal Ground-Water Discharge Sites, U.S. Geological Survey (2004)."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Both 220Rn and 222Rn (with half-lives of 56 s and 3.8 days, respectively) are used to study underground environmental and atmospheric gaseous-transport processes [568], [569], [570]. The interaction of radon with streams and rivers enables it to be used as a tracer in groundwater studies (Fig. IUPAC.86.1). 222Rn has a short residence time in streams and river channels, which leads to radon loss. As a result, if an area of a stream or river has a high concentration of radon, it suggests that there are local groundwater inputs [568], [569], [570]. In a deep (100 m) contaminated aquifer at a refinery site in Mexico, where the contaminated source was too deep to be directly accessible for sampling, Schubert et al. [571] collected groundwater samples from a few wells available at the site. They used the partitioning of the natural tracer 222Rn between uncontaminated groundwater and the NAPL (non-aqueous phase-liquid, such as oil, gasoline, and petroleum) source zone, and they were able to approximately identify the location of the NAPL source zone. As noted in Section 4.88.1, 222Rn has been used to quantify submarine groundwater discharge [572].",
+                      "Markup": [
+                        {
+                          "Start": 5,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 15,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 308,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 845,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 1088,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_118.jpg",
+                          "Type": "Image",
+                          "Size": "959x723",
+                          "Caption": "Fig. IUPAC.86.1: Air-water equilibrator, which strips radon out of water and into the gas phase so it can be used as a groundwater tracer. (Photo Source: John Crusius, U.S. Geological Survey) [573]. "
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes in Geochronology",
+            "Description": "Information on the use of this element's isotopes in geochronology.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[568]  United States Geological Survey. Resources on Isotopes-Periodic Table-Radon, U.S. Geological Survey (2014), Feb. 25; http://wwwrcamnl.wr.usgs.gov/isoig/period/rn_iig.html.",
+                  "[574]  T. F. Kraemer, D. P. Genereux. “Applications of uranium- and thorium-series radionuclides in catchment hydrology studies”, in Isotope Tracers in Catchment Hydrology, C. Kendall, J. J. McDonnell (Eds.), Elsevier, Amsterdam (1998)."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[568]  United States Geological Survey. Resources on Isotopes-Periodic Table-Radon, U.S. Geological Survey (2014), Feb. 25; http://wwwrcamnl.wr.usgs.gov/isoig/period/rn_iig.html."
+                  },
+                  {
+                    "Citation": "[574]  T. F. Kraemer, D. P. Genereux. “Applications of uranium- and thorium-series radionuclides in catchment hydrology studies”, in Isotope Tracers in Catchment Hydrology, C. Kendall, J. J. McDonnell (Eds.), Elsevier, Amsterdam (1998)."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "222Rn has been used as a tool to date groundwater in combination with other isotopes or elemental ratios (i.e. helium/radon and xenon/radon amount ratios) [568], [574].",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotope Mass and Abundance",
+            "Description": "Atomic mass and abundance (composition) information for a given isotope/nuclide. The number in the parenthesis refers to an uncertainty when exist. The unit of atomic weight is the unified atomic mass unit (u) or dalton (Da). ",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Isotope",
+                    "Atomic Mass (uncertainty) [u]",
+                    "Abundance (uncertainty)"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "211Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "220Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "222Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Atomic Mass (uncertainty) [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "210.9906011(73)"
+                    },
+                    {
+                      "String": "220.0113941(23)"
+                    },
+                    {
+                      "String": "222.0175782(25)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": ""
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Mass, Half Life, and Decay",
+            "Description": "Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Nuclide",
+                    "Atomic Mass and Uncertainty [u]",
+                    "Half Life and Uncertainty",
+                    "Discovery Year",
+                    "Decay Modes, Intensities and Uncertainties [%]"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 2,
+                "Name": "Nuclide",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "193Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "194Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "195Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "195Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "196Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "197Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "197Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "198Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "199Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "199Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "200Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "200Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "201Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "201Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "202Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "202Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "203Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "203Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "204Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "205Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "205Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "206Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "207Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "207Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "208Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "208Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "209Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "209Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "209Rnn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "210Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "210Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "210Rnn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "210Rnp",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "211Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "211Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "211Rnn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "212Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "212Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "212Rnn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "212Rnp",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "212Rnq",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "213Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "213Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "213Rnn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "213Rnp",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "214Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "214Rnm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "215Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "216Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "217Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "218Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "219Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "220Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "221Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "222Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "223Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "224Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "225Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "226Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "227Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "228Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "229Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "230Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "231Rn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Atomic Mass and Uncertainty [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "193.009707973 ± 0.000026958"
+                    },
+                    {
+                      "String": "194.006145636 ± 0.000017884"
+                    },
+                    {
+                      "String": "195.005421703 ± 0.000055487"
+                    },
+                    {
+                      "String": "195.005421703 ± 0.000055487"
+                    },
+                    {
+                      "String": "196.002120431 ± 0.000015087"
+                    },
+                    {
+                      "String": "197.001621446 ± 0.000017383"
+                    },
+                    {
+                      "String": "197.001621446 ± 0.000017383"
+                    },
+                    {
+                      "String": "197.998679197 ± 0.000014406"
+                    },
+                    {
+                      "String": "198.998325436 ± 0.000007833"
+                    },
+                    {
+                      "String": "198.998325436 ± 0.000007833"
+                    },
+                    {
+                      "String": "199.995705335 ± 0.000006217"
+                    },
+                    {
+                      "String": "199.995705335 ± 0.000006217"
+                    },
+                    {
+                      "String": "200.995590511 ± 0.000010865"
+                    },
+                    {
+                      "String": "200.995590511 ± 0.000010865"
+                    },
+                    {
+                      "String": "201.993263982 ± 0.000018808"
+                    },
+                    {
+                      "String": "201.993263982 ± 0.000018808"
+                    },
+                    {
+                      "String": "202.993361155 ± 0.000006242"
+                    },
+                    {
+                      "String": "202.993361155 ± 0.000006242"
+                    },
+                    {
+                      "String": "203.991443729 ± 0.000007991"
+                    },
+                    {
+                      "String": "204.991723228 ± 0.000005453"
+                    },
+                    {
+                      "String": "204.991723228 ± 0.000005453"
+                    },
+                    {
+                      "String": "205.990195409 ± 0.000009223"
+                    },
+                    {
+                      "String": "206.990730224 ± 0.00000509"
+                    },
+                    {
+                      "String": "206.990730224 ± 0.00000509"
+                    },
+                    {
+                      "String": "207.989634513 ± 0.00001091"
+                    },
+                    {
+                      "String": "207.989634513 ± 0.00001091"
+                    },
+                    {
+                      "String": "208.990401389 ± 0.000010692"
+                    },
+                    {
+                      "String": "208.990401389 ± 0.000010692"
+                    },
+                    {
+                      "String": "208.990401389 ± 0.000010692"
+                    },
+                    {
+                      "String": "209.989688862 ± 0.000004892"
+                    },
+                    {
+                      "String": "209.989688862 ± 0.000004892"
+                    },
+                    {
+                      "String": "209.989688862 ± 0.000004892"
+                    },
+                    {
+                      "String": "209.989688862 ± 0.000004892"
+                    },
+                    {
+                      "String": "210.990600767 ± 0.000007314"
+                    },
+                    {
+                      "String": "210.990600767 ± 0.000007314"
+                    },
+                    {
+                      "String": "210.990600767 ± 0.000007314"
+                    },
+                    {
+                      "String": "211.990703946 ± 0.000003338"
+                    },
+                    {
+                      "String": "211.990703946 ± 0.000003338"
+                    },
+                    {
+                      "String": "211.990703946 ± 0.000003338"
+                    },
+                    {
+                      "String": "211.990703946 ± 0.000003338"
+                    },
+                    {
+                      "String": "211.990703946 ± 0.000003338"
+                    },
+                    {
+                      "String": "212.993885147 ± 0.000003618"
+                    },
+                    {
+                      "String": "212.993885147 ± 0.000003618"
+                    },
+                    {
+                      "String": "212.993885147 ± 0.000003618"
+                    },
+                    {
+                      "String": "212.993885147 ± 0.000003618"
+                    },
+                    {
+                      "String": "213.995362650 ± 0.000009862"
+                    },
+                    {
+                      "String": "213.995362650 ± 0.000009862"
+                    },
+                    {
+                      "String": "214.998745037 ± 0.000006538"
+                    },
+                    {
+                      "String": "216.000271942 ± 0.000006192"
+                    },
+                    {
+                      "String": "217.003927632 ± 0.000004506"
+                    },
+                    {
+                      "String": "218.005601123 ± 0.000002486"
+                    },
+                    {
+                      "String": "219.009478683 ± 0.000002254"
+                    },
+                    {
+                      "String": "220.011392443 ± 0.000001947"
+                    },
+                    {
+                      "String": "221.015535637 ± 0.000006134"
+                    },
+                    {
+                      "String": "222.017576017 ± 0.000002086"
+                    },
+                    {
+                      "String": "223.021889283 ± 0.000008397"
+                    },
+                    {
+                      "String": "224.024095803 ± 0.000010536"
+                    },
+                    {
+                      "String": "225.028485572 ± 0.000011958"
+                    },
+                    {
+                      "String": "226.030861380 ± 0.000011247"
+                    },
+                    {
+                      "String": "227.035304393 ± 0.000015127"
+                    },
+                    {
+                      "String": "228.037835415 ± 0.000018977"
+                    },
+                    {
+                      "String": "229.042257272 ± 0.000014"
+                    },
+                    {
+                      "String": "230.045271 ± 0.000215 [Estimated]"
+                    },
+                    {
+                      "String": "231.049973 ± 0.000322 [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Half Life and Uncertainty",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1.15 ms ± 0.27"
+                    },
+                    {
+                      "String": "780 us ± 160"
+                    },
+                    {
+                      "String": "7 ms ± 3"
+                    },
+                    {
+                      "String": "6 ms ± 3"
+                    },
+                    {
+                      "String": "4.7 ms ± 1.1"
+                    },
+                    {
+                      "String": "54 ms ± 6"
+                    },
+                    {
+                      "String": "25.6 ms ± 2.5"
+                    },
+                    {
+                      "String": "64.4 ms ± 1.6"
+                    },
+                    {
+                      "String": "590 ms ± 30"
+                    },
+                    {
+                      "String": "310 ms ± 20"
+                    },
+                    {
+                      "String": "1.09 s ± 0.16"
+                    },
+                    {
+                      "String": "28 us ± 9"
+                    },
+                    {
+                      "String": "7.0 s ± 0.4"
+                    },
+                    {
+                      "String": "3.8 s ± 0.1"
+                    },
+                    {
+                      "String": "9.7 s ± 0.1"
+                    },
+                    {
+                      "String": "2.22 us ± 0.07"
+                    },
+                    {
+                      "String": "44.2 s ± 1.6"
+                    },
+                    {
+                      "String": "26.9 s ± 0.5"
+                    },
+                    {
+                      "String": "1.242 m ± 0.023"
+                    },
+                    {
+                      "String": "170 s ± 4"
+                    },
+                    {
+                      "String": ">10 s"
+                    },
+                    {
+                      "String": "5.67 m ± 0.17"
+                    },
+                    {
+                      "String": "9.25 m ± 0.17"
+                    },
+                    {
+                      "String": "184.5 us ± 0.9"
+                    },
+                    {
+                      "String": "24.35 m ± 0.14"
+                    },
+                    {
+                      "String": "487 ns ± 12"
+                    },
+                    {
+                      "String": "28.8 m ± 1.0"
+                    },
+                    {
+                      "String": "13.4 us ± 1.3"
+                    },
+                    {
+                      "String": "3.0 us ± 0.3"
+                    },
+                    {
+                      "String": "2.4 h ± 0.1"
+                    },
+                    {
+                      "String": "644 ns ± 40"
+                    },
+                    {
+                      "String": "1.06 us ± 0.05"
+                    },
+                    {
+                      "String": "1.04 us ± 0.07"
+                    },
+                    {
+                      "String": "14.6 h ± 0.2"
+                    },
+                    {
+                      "String": "596 ns ± 28"
+                    },
+                    {
+                      "String": "201 ns ± 4"
+                    },
+                    {
+                      "String": "23.9 m ± 1.2"
+                    },
+                    {
+                      "String": "118 ns ± 14"
+                    },
+                    {
+                      "String": "910 ns ± 30"
+                    },
+                    {
+                      "String": "102 ns ± 4"
+                    },
+                    {
+                      "String": "154 ns ± 14"
+                    },
+                    {
+                      "String": "19.5 ms ± 0.1"
+                    },
+                    {
+                      "String": "1.00 us ± 0.21"
+                    },
+                    {
+                      "String": "1.36 us ± 0.07"
+                    },
+                    {
+                      "String": "164 ns ± 11"
+                    },
+                    {
+                      "String": "259 ns ± 3"
+                    },
+                    {
+                      "String": "245 ns ± 30"
+                    },
+                    {
+                      "String": "2.30 us ± 0.10"
+                    },
+                    {
+                      "String": "29 us ± 4"
+                    },
+                    {
+                      "String": "593 us ± 38"
+                    },
+                    {
+                      "String": "33.75 ms ± 0.15"
+                    },
+                    {
+                      "String": "3.96 s ± 0.01"
+                    },
+                    {
+                      "String": "55.6 s ± 0.1"
+                    },
+                    {
+                      "String": "25.7 m ± 0.5"
+                    },
+                    {
+                      "String": "3.8215 d ± 0.0002"
+                    },
+                    {
+                      "String": "24.3 m ± 0.4"
+                    },
+                    {
+                      "String": "107 m ± 3"
+                    },
+                    {
+                      "String": "4.66 m ± 0.04"
+                    },
+                    {
+                      "String": "7.4 m ± 0.1"
+                    },
+                    {
+                      "String": "20.2 s ± 0.4"
+                    },
+                    {
+                      "String": "65 s ± 2"
+                    },
+                    {
+                      "String": "11.9 s ± 1.3"
+                    },
+                    {
+                      "String": "24 s >300ns [Estimated]"
+                    },
+                    {
+                      "String": "2 s >300ns [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Discovery Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2006"
+                    },
+                    {
+                      "String": "2006"
+                    },
+                    {
+                      "String": "2001"
+                    },
+                    {
+                      "String": "2001"
+                    },
+                    {
+                      "String": "1995"
+                    },
+                    {
+                      "String": "1995"
+                    },
+                    {
+                      "String": "1996"
+                    },
+                    {
+                      "String": "1984"
+                    },
+                    {
+                      "String": "1980"
+                    },
+                    {
+                      "String": "1981"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "2002"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "2002"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "2010"
+                    },
+                    {
+                      "String": "1954"
+                    },
+                    {
+                      "String": "1954"
+                    },
+                    {
+                      "String": "1974"
+                    },
+                    {
+                      "String": "1955"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1952"
+                    },
+                    {
+                      "String": "1985"
+                    },
+                    {
+                      "String": "1985"
+                    },
+                    {
+                      "String": "1952"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1986"
+                    },
+                    {
+                      "String": "1952"
+                    },
+                    {
+                      "String": "1981"
+                    },
+                    {
+                      "String": "1981"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1977"
+                    },
+                    {
+                      "String": "1977"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "1988"
+                    },
+                    {
+                      "String": "1988"
+                    },
+                    {
+                      "String": "1988"
+                    },
+                    {
+                      "String": "1970"
+                    },
+                    {
+                      "String": "1983"
+                    },
+                    {
+                      "String": "1952"
+                    },
+                    {
+                      "String": "1949"
+                    },
+                    {
+                      "String": "1949"
+                    },
+                    {
+                      "String": "1948"
+                    },
+                    {
+                      "String": "1903"
+                    },
+                    {
+                      "String": "1900"
+                    },
+                    {
+                      "String": "1956"
+                    },
+                    {
+                      "String": "1899"
+                    },
+                    {
+                      "String": "1964"
+                    },
+                    {
+                      "String": "1964"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1986"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "2010"
+                    },
+                    {
+                      "String": "2010"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Decay Modes, Intensities and Uncertainties [%]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "α≈100%"
+                    },
+                    {
+                      "String": "α≈100%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α≈100%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α≈100%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α≈100%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=93±0.7%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α≈100%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α≈100%; β+ ?; IT ?",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=92±0.8%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "α=?; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=?; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=78±0.8%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "α=66±0.9%; β+=34±0.9%",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=75±1%; β+=25±1%",
+                      "Markup": [
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=72.4±0.9%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=75.4±0.9%; α=24.6±0.9%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT≈100%; α ?; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 15,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=62±0.3%; β+=38±0.3%",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=79±0.3%; α=21±0.3%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "α=62±0.7%; β+=38±0.7%",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=83±0.2%; α=17±0.2%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "α=96±0.1%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=72.6±1.7%; α=27.4±1.7%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α=100%; 2β- ?",
+                      "Markup": [
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=78±0.1%; α=22±0.1%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "β-=100%; α ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 1,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      },
+      {
+        "ReferenceNumber": 2,
+        "SourceName": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+        "SourceID": "e86",
+        "Name": "Rn",
+        "Description": "The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.",
+        "URL": "https://www-nds.iaea.org/amdc/",
+        "LicenseURL": "https://www-nds.iaea.org/disclaimer.html",
+        "ANID": 6590313
+      },
+      {
+        "ReferenceNumber": 3,
+        "SourceName": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+        "SourceID": "a86",
+        "Name": "Radon",
+        "Description": "Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.",
+        "URL": "https://www.ciaaw.org/",
+        "LicenseURL": "http://www.ciaaw.org/bylaws.htm",
+        "ANID": 2292467
+      },
+      {
+        "ReferenceNumber": 4,
+        "SourceName": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+        "SourceID": "p86",
+        "Description": "The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703.",
+        "URL": "https://doi.org/10.1515/pac-2015-0703",
+        "LicenseNote": "Copyright (c) 2020 International Union of Pure and Applied Chemistry.\u000A\u000AThe International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated.",
+        "LicenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "ANID": 13296491
+      },
+      {
+        "ReferenceNumber": 5,
+        "SourceName": "Jefferson Lab, U.S. Department of Energy",
+        "SourceID": "jlab86",
+        "Name": "Radon",
+        "Description": "Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/",
+        "URL": "https://education.jlab.org/itselemental/ele086.html",
+        "LicenseNote": "Please see citation and linking information: https://education.jlab.org/faq/index.html",
+        "LicenseURL": "https://www.jlab.org/privacy-and-security-notice",
+        "ANID": 507148
+      },
+      {
+        "ReferenceNumber": 6,
+        "SourceName": "Los Alamos National Laboratory, U.S. Department of Energy",
+        "SourceID": "lanl86",
+        "Name": "Radon",
+        "Description": "The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name.",
+        "URL": "https://periodic.lanl.gov/86.shtml",
+        "ANID": 507266
+      },
+      {
+        "ReferenceNumber": 7,
+        "SourceName": "NIST Physical Measurement Laboratory",
+        "SourceID": "e86",
+        "Name": "Radon",
+        "Description": "The periodic table contains NIST's critically-evaluated data on atomic properties of the elements. The provenance data that include data for atomic spectroscopy, X-ray and gamma ray, radiation dosimetry, nuclear physics, and condensed matter physics may be found from the link under the source name. Ref: https://www.nist.gov/pml/atomic-spectra-database",
+        "URL": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=86",
+        "LicenseURL": "https://www.nist.gov/pml/database-disclaimer",
+        "ANID": 2292703
+      },
+      {
+        "ReferenceNumber": 9,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ep_86",
+        "Name": "Radon",
+        "Description": "The element property data was retrieved from publications.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24834208
+      },
+      {
+        "ReferenceNumber": 8,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ef_86",
+        "Name": "Radon",
+        "Description": "This section provides all form of data related to element Radon.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24834014
+      }
+    ]
+  }
+}
