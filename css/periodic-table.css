@@ -70,7 +70,6 @@ body {
     filter 180ms ease;
 }
 
-/* Soft inner highlight for a more distinctive card surface */
 .element::before {
   content: "";
   position: absolute;
@@ -86,7 +85,6 @@ body {
   pointer-events: none;
 }
 
-/* Small diagonal shine, kept subtle so the data remains the focus */
 .element::after {
   content: "";
   position: absolute;
@@ -207,7 +205,6 @@ body {
 [data-atomic-number="57"], [data-atomic-number="58"], [data-atomic-number="59"], [data-atomic-number="60"], [data-atomic-number="61"], [data-atomic-number="62"], [data-atomic-number="63"], [data-atomic-number="64"], [data-atomic-number="65"], [data-atomic-number="66"], [data-atomic-number="67"], [data-atomic-number="68"], [data-atomic-number="69"], [data-atomic-number="70"], [data-atomic-number="71"] { grid-row: 8; }
 [data-atomic-number="89"], [data-atomic-number="90"], [data-atomic-number="91"], [data-atomic-number="92"], [data-atomic-number="93"], [data-atomic-number="94"], [data-atomic-number="95"], [data-atomic-number="96"], [data-atomic-number="97"], [data-atomic-number="98"], [data-atomic-number="99"], [data-atomic-number="100"], [data-atomic-number="101"], [data-atomic-number="102"], [data-atomic-number="103"] { grid-row: 9; }
 
-/* Reference-image palette */
 [data-atomic-number="1"], [data-atomic-number="5"], [data-atomic-number="6"], [data-atomic-number="7"], [data-atomic-number="8"], [data-atomic-number="9"], [data-atomic-number="14"], [data-atomic-number="15"], [data-atomic-number="16"], [data-atomic-number="32"], [data-atomic-number="33"], [data-atomic-number="34"], [data-atomic-number="51"], [data-atomic-number="52"], [data-atomic-number="84"] { background: #fff0b2; }
 [data-atomic-number="2"], [data-atomic-number="10"], [data-atomic-number="18"], [data-atomic-number="36"], [data-atomic-number="54"], [data-atomic-number="86"], [data-atomic-number="118"] { background: #f6d9ae; }
 [data-atomic-number="3"], [data-atomic-number="11"], [data-atomic-number="19"], [data-atomic-number="37"], [data-atomic-number="55"], [data-atomic-number="87"] { background: #f5b9c0; }
@@ -233,7 +230,9 @@ body {
   }
 
   .periodic-table {
-    min-width: 760px;
+    /* 18 columns × 40px + 17 gaps × 3px + 20px horizontal padding + 2px border */
+    width: 793px;
+    min-width: 793px;
     grid-template-columns: repeat(18, 40px);
     grid-template-rows: repeat(9, 56px);
     gap: 3px;
