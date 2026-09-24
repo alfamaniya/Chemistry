@@ -2,6 +2,9 @@
   --gap: 4px;
   --text: #17202a;
   --border: rgba(65, 75, 90, 0.28);
+  --table-bg: #f3f4f5;
+  --table-border: rgba(120, 128, 138, 0.24);
+  --table-shadow: 0 10px 28px rgba(55, 65, 75, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.72);
   --card-shadow: 0 4px 10px rgba(30, 45, 65, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.65);
   --card-shadow-hover: 0 8px 18px rgba(30, 45, 65, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.78);
 }
@@ -31,6 +34,11 @@ body {
   width: min(1180px, 100%);
   min-width: 820px;
   margin: auto;
+  padding: 14px;
+  background: var(--table-bg);
+  border: 1px solid var(--table-border);
+  border-radius: 22px;
+  box-shadow: var(--table-shadow);
 }
 
 /* Element Card */
@@ -52,12 +60,10 @@ body {
   line-height: 1;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-
   border: 1px solid var(--border);
   border-radius: 12px;
   background-clip: padding-box;
   box-shadow: var(--card-shadow);
-
   transition:
     transform 180ms cubic-bezier(.2,.75,.25,1),
     box-shadow 180ms ease,
@@ -231,6 +237,8 @@ body {
     grid-template-columns: repeat(18, 40px);
     grid-template-rows: repeat(9, 56px);
     gap: 3px;
+    padding: 10px;
+    border-radius: 18px;
   }
 
   .element {
