@@ -1,40 +1,60 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Interactive periodic table with educational property maps based on PubChem Elements data.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Interactive periodic table with educational element data based on PubChem Elements data.">
 <title>Periodic Table of Elements</title>
-<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="css/orbit-menus.css">
+<link rel="stylesheet" href="style.css">
 </head>
-<body><main class="page-shell">
-<header class="page-header"><div><p class="kicker">CHEMISTRY · PUBCHEM ELEMENTS</p><h1>Periodic Table of Elements</h1><p class="subtitle">Explore periodic properties and element data (خواص تناوبی و داده‌های عناصر).</p></div><div class="source-mark">PubChem</div></header>
-<section class="table-card" aria-label="Interactive periodic table"><div class="table-topline"><span>118 Elements (۱۱۸ عنصر)</span><span class="hint">Select an element for details (برای جزئیات روی عنصر کلیک کنید)</span></div><div id="periodic-table" class="periodic-table"></div></section>
-<section class="selector-stage" aria-label="Periodic table controls"><div class="selector-intro">Choose a view (انتخاب نوع نمایش)</div>
-<section class="orbit-selector property-selector" aria-label="Periodic properties"><button class="orbit-center" type="button" aria-expanded="false"><span class="orbit-center-icon">✦</span><strong>Properties</strong><small>(خواص)</small></button><div class="orbit-items" id="property-orbit">
-<button class="property-card orbit-item" data-key="atomic-mass"><span class="card-index">01</span><strong>Atomic Mass</strong><small>(جرم اتمی)</small></button><button class="property-card orbit-item" data-key="density"><span class="card-index">02</span><strong>Density</strong><small>(چگالی)</small></button><button class="property-card orbit-item" data-key="standard-state"><span class="card-index">03</span><strong>Standard State</strong><small>(حالت استاندارد)</small></button><button class="property-card orbit-item" data-key="electronegativity"><span class="card-index">04</span><strong>Electronegativity</strong><small>(الکترونگاتیوی)</small></button><button class="property-card orbit-item" data-key="ionization-energy"><span class="card-index">05</span><strong>Ionization Energy</strong><small>(انرژی یونش)</small></button><button class="property-card orbit-item" data-key="electron-configuration"><span class="card-index">06</span><strong>Electron Configuration</strong><small>(آرایش الکترونی)</small></button><button class="property-card orbit-item" data-key="atomic-radius"><span class="card-index">07</span><strong>Atomic Radius</strong><small>(شعاع اتمی)</small></button><button class="property-card orbit-item" data-key="oxidation-states"><span class="card-index">08</span><strong>Oxidation States</strong><small>(حالت‌های اکسایش)</small></button><button class="property-card orbit-item" data-key="electron-affinity"><span class="card-index">09</span><strong>Electron Affinity</strong><small>(میل الکترونی)</small></button><button class="property-card orbit-item" data-key="melting-point"><span class="card-index">10</span><strong>Melting Point</strong><small>(نقطه ذوب)</small></button><button class="property-card orbit-item" data-key="boiling-point"><span class="card-index">11</span><strong>Boiling Point</strong><small>(نقطه جوش)</small></button><button class="property-card orbit-item" data-key="year-discovered"><span class="card-index">12</span><strong>Year Discovered</strong><small>(سال کشف)</small></button><button class="property-card orbit-item" data-key="metal-metalloid-nonmetal"><span class="card-index">13</span><strong>Metal / Metalloid / Nonmetal</strong><small>(فلز / شبه‌فلز / نافلز)</small></button><button class="property-card orbit-item" data-key="base-periodic-table"><span class="card-index">14</span><strong>Base Periodic Table</strong><small>(جدول تناوبی پایه)</small></button><button class="property-card orbit-item" data-key="chemical-group-family"><span class="card-index">15</span><strong>Chemical Group / Family</strong><small>(گروه / خانواده شیمیایی)</small></button>
-</div></section>
-<section class="orbit-selector category-selector" aria-label="Element classifications"><button class="orbit-center" type="button" aria-expanded="false"><span class="orbit-center-icon">◈</span><strong>Classification</strong><small>(دسته‌بندی)</small></button><div class="orbit-items category-items" id="category-orbit"></div></section>
+<body>
+<main class="page-shell">
+<header class="page-header">
+  <div>
+    <p class="kicker">CHEMISTRY · PUBCHEM ELEMENTS</p>
+    <h1>Periodic Table of Elements</h1>
+    <p class="subtitle">Explore element data (داده‌های عناصر).</p>
+  </div>
+  <div class="source-mark">PubChem</div>
+</header>
+<section class="table-card" aria-label="Interactive periodic table">
+  <div class="table-topline">
+    <span>118 Elements (۱۱۸ عنصر)</span>
+    <span class="hint">Select an element for details (برای جزئیات روی عنصر کلیک کنید)</span>
+  </div>
+  <div id="periodic-table" class="periodic-table"></div>
 </section>
-<section id="legend" class="legend" aria-label="Element families"><div class="legend-title">Element Families (خانواده‌های عناصر)</div><div id="legend-items" class="legend-items"></div></section>
+<section id="legend" class="legend" aria-label="Element families">
+  <div class="legend-title">Element Families (خانواده‌های عناصر)</div>
+  <div id="legend-items" class="legend-items"></div>
+</section>
 </main>
-<dialog id="element-dialog" class="element-dialog"><button id="close-dialog" class="dialog-close" type="button" aria-label="Close">×</button><div class="dialog-header"><div><div class="dialog-number" id="dialog-number"></div><div class="dialog-symbol" id="dialog-symbol"></div></div><div class="dialog-title"><h2 id="dialog-name"></h2><p id="dialog-persian-name"></p><p class="dialog-family" id="dialog-family"></p></div></div><div class="property-grid" id="property-grid"></div></dialog>
+<dialog id="element-dialog" class="element-dialog">
+  <button id="close-dialog" class="dialog-close" type="button" aria-label="Close">×</button>
+  <div class="dialog-header">
+    <div>
+      <div class="dialog-number" id="dialog-number"></div>
+      <div class="dialog-symbol" id="dialog-symbol"></div>
+    </div>
+    <div class="dialog-title">
+      <h2 id="dialog-name"></h2>
+      <p id="dialog-persian-name"></p>
+      <p class="dialog-family" id="dialog-family"></p>
+    </div>
+  </div>
+  <div class="property-grid" id="property-grid"></div>
+</dialog>
 <script>
-const table=document.getElementById('periodic-table'),legend=document.getElementById('legend'),legendItems=document.getElementById('legend-items'),dialog=document.getElementById('element-dialog');
-const metricDefinitions={'atomic-mass':['numeric','atomic-mass.json','atomic-mass.css'],'density':['numeric','density.json','density.css'],'standard-state':['categorical','standard-state.json','standard-state.css'],'electronegativity':['numeric','electronegativity.json','electronegativity.css'],'ionization-energy':['numeric','ionization-energy.json','ionization-energy.css'],'electron-configuration':['categorical','electron-configuration.json','electron-configuration.css'],'atomic-radius':['numeric','atomic-radius.json','atomic-radius.css'],'oxidation-states':['categorical','oxidation-states.json','oxidation-states.css'],'electron-affinity':['numeric','electron-affinity.json','electron-affinity.css'],'melting-point':['numeric','melting-point.json','melting-point.css'],'boiling-point':['numeric','boiling-point.json','boiling-point.css'],'year-discovered':['numeric','year-discovered.json','year-discovered.css'],'metal-metalloid-nonmetal':['categorical','metal-metalloid-nonmetal.json','metal-metalloid-nonmetal.css'],'base-periodic-table':['categorical','base-periodic-table.json','base-periodic-table.css'],'chemical-group-family':['categorical','chemical-group-family.json','chemical-group-family.css']};
-const metricCache=new Map(),cssCache=new Map(),familyStyles={'Alkali metal':['#f6b7c8','#7d2746'],'Alkaline earth metal':['#f4c1cf','#7b3048'],'Transition metal':['#b8dce9','#24566b'],'Post-transition metal':['#bfe4d0','#24624a'],'Metalloid':['#f4e7a5','#6b5a12'],'Nonmetal':['#f7edbd','#6b5a12'],'Halogen':['#f6d69d','#80551b'],'Noble gas':['#dcebb1','#4d6320'],'Lanthanide':['#b9e4df','#256b68'],'Actinide':['#9fd8dd','#235e65']};
-Promise.all([fetch('data/table.json').then(r=>r.json()),fetch('database/elements.json').then(r=>r.json()),fetch('database/categories/categories.json').then(r=>r.json()),...Object.entries(metricDefinitions).flatMap(([k,d])=>[fetch(`data/${d[1]}`).then(r=>r.json()).then(x=>metricCache.set(k,x)),fetch(`css/${d[2]}`).then(r=>r.text()).then(x=>cssCache.set(k,palette(x)))])]).then(([td,names,cats])=>{const persian=new Map(names.map(x=>[x.atomicNumber,x.persianName]));renderTable(td.elements,persian);renderLegend();renderCategories(cats.categories);bindCenters();bindProperties()}).catch(console.error);
+const table=document.getElementById('periodic-table'),legendItems=document.getElementById('legend-items'),dialog=document.getElementById('element-dialog');
+const familyStyles={'Alkali metal':['#f6b7c8','#7d2746'],'Alkaline earth metal':['#f4c1cf','#7b3048'],'Transition metal':['#b8dce9','#24566b'],'Post-transition metal':['#bfe4d0','#24624a'],'Metalloid':['#f4e7a5','#6b5a12'],'Nonmetal':['#f7edbd','#6b5a12'],'Halogen':['#f6d69d','#80551b'],'Noble gas':['#dcebb1','#4d6320'],'Lanthanide':['#b9e4df','#256b68'],'Actinide':['#9fd8dd','#235e65']};
+Promise.all([fetch('data/table.json').then(r=>r.json()),fetch('database/elements.json').then(r=>r.json())]).then(([td,names])=>{const persian=new Map(names.map(x=>[x.atomicNumber,x.persianName]));renderTable(td.elements,persian);renderLegend()}).catch(console.error);
 function renderTable(elements,persian){table.innerHTML='';elements.forEach(e=>{const b=document.createElement('button');b.type='button';b.className='element-tile';b.style.gridRow=e.r;b.style.gridColumn=e.c;b.dataset.atomicNumber=e.n;const f=familyFor(e.n),c=familyStyles[f]||['#e2e8f0','#334155'];b.style.setProperty('--tile-bg',c[0]);b.style.setProperty('--tile-accent',c[1]);const pn=persian.get(e.n)||'';b.innerHTML=`<span class="atomic-number">${e.n}</span><strong class="symbol">${esc(e.s)}</strong><span class="element-name">${esc(e.name)}</span><span class="element-persian">${esc(pn)}</span><span class="atomic-mass">${esc(String(e.mass))} u</span>`;b.addEventListener('click',()=>showElement(e,pn));table.appendChild(b)})}
-function renderCategories(categories){const o=document.getElementById('category-orbit');o.innerHTML='';categories.forEach((c,i)=>{const b=document.createElement('button');b.type='button';b.className='category-card orbit-item';b.innerHTML=`<span class="card-index">${String(i+1).padStart(2,'0')}</span><strong>${esc(c.name)}</strong><small>(${esc(c.persian_name)})</small>`;b.title=c.description||'';b.onclick=()=>{o.querySelectorAll('.category-card').forEach(x=>x.classList.remove('active'));b.classList.add('active')};o.appendChild(b)})}
-function closeOtherOrbits(current){document.querySelectorAll('.orbit-selector.is-open').forEach(s=>{if(s!==current){s.classList.remove('is-open');const center=s.querySelector('.orbit-center');if(center)center.setAttribute('aria-expanded','false')}})}
-function bindCenters(){document.querySelectorAll('.orbit-center').forEach(b=>b.onclick=()=>{const s=b.closest('.orbit-selector'),open=!s.classList.contains('is-open');closeOtherOrbits(s);s.classList.toggle('is-open',open);b.setAttribute('aria-expanded',open)})}
-function bindProperties(){document.querySelectorAll('.property-card').forEach(b=>b.onclick=()=>{closeOtherOrbits(b.closest('.orbit-selector'));selectMetric(b.dataset.key)})}
-function selectMetric(k){const d=metricDefinitions[k],data=metricCache.get(k),pal=cssCache.get(k)||['#e8eef2','#cbd5e1','#94a3b8','#64748b','#334155'];if(!d||!data)return;document.querySelectorAll('.property-card').forEach(x=>x.classList.toggle('active',x.dataset.key===k));legend.classList.add('is-hidden');const vals=valueMap(data),nums=d[0]==='numeric'?[...vals.values()].map(num).filter(Number.isFinite):[];document.querySelectorAll('.element-tile').forEach(t=>{const raw=vals.get(+t.dataset.atomicNumber),color=d[0]==='numeric'?numericColor(raw,nums,pal):categoryColor(raw,pal);t.style.setProperty('--tile-bg',color);t.style.setProperty('--tile-accent',contrast(color))})}
-function valueMap(d){const m=new Map();if(Array.isArray(d.elements))d.elements.forEach(x=>m.set(+x.atomic_number,x.value?.value??x.value??null));else if(d.values)Object.entries(d.values).forEach(([n,x])=>m.set(+n,x?.value??x??null));return m}
-function numericColor(raw,vals,pal){const v=num(raw);if(!Number.isFinite(v)||!vals.length)return'#edf2f4';const min=Math.min(...vals),max=Math.max(...vals);if(min===max)return pal[Math.floor(pal.length/2)];return pal[Math.min(pal.length-1,Math.floor(Math.max(0,Math.min(1,(v-min)/(max-min)))*pal.length))]}
-function categoryColor(raw,pal){if(raw==null||raw==='')return'#edf2f4';let h=0;for(const c of String(raw))h=((h<<5)-h+c.charCodeAt(0))|0;return pal[Math.abs(h)%pal.length]||'#edf2f4'}function num(v){if(v==null)return NaN;const m=String(v).replace(/,/g,'').match(/-?\d+(?:\.\d+)?/);return m?+m[0]:NaN}function palette(css){const a=[];for(const m of css.matchAll(/#[0-9a-fA-F]{6}\b/g)){const c=m[0].toLowerCase();if(!a.includes(c))a.push(c)}return a}
 function renderLegend(){legendItems.innerHTML=Object.entries(familyStyles).map(([f,c])=>`<span class="legend-item"><i style="--legend-bg:${c[0]};--legend-accent:${c[1]}"></i><span>${f} (${familyPersian(f)})</span></span>`).join('')}
 function showElement(e,pn){const f=familyFor(e.n),c=familyStyles[f]||['#e2e8f0','#334155'];document.documentElement.style.setProperty('--dialog-accent',c[1]);document.documentElement.style.setProperty('--dialog-bg',c[0]);document.getElementById('dialog-number').textContent=`Atomic Number (عدد اتمی): ${e.n}`;document.getElementById('dialog-symbol').textContent=e.s;document.getElementById('dialog-name').textContent=e.name;document.getElementById('dialog-persian-name').textContent=pn||'—';document.getElementById('dialog-family').textContent=`${f} (${familyPersian(f)})`;document.getElementById('property-grid').innerHTML=[['Symbol (نماد)',e.s],['Atomic Mass (جرم اتمی)',`${e.mass} u`],['Period (دوره)',e.r<=7?e.r:'—'],['Group / Column (گروه / ستون)',e.c]].map(([l,v])=>`<div class="property"><span>${l}</span><strong>${esc(v)}</strong></div>`).join('');dialog.showModal()}
-function familyFor(n){if([3,11,19,37,55,87].includes(n))return'Alkali metal';if([4,12,20,38,56,88].includes(n))return'Alkaline earth metal';if(n>=21&&n<=30||n>=39&&n<=48||n>=72&&n<=80||n>=104&&n<=112)return'Transition metal';if([13,31,49,50,81,82,83,113,114,115,116].includes(n))return'Post-transition metal';if([5,14,32,33,51,52,84].includes(n))return'Metalloid';if([1,6,7,8,15,16,34].includes(n))return'Nonmetal';if([9,17,35,53,85,117].includes(n))return'Halogen';if([2,10,18,36,54,86,118].includes(n))return'Noble gas';if(n>=57&&n<=71)return'Lanthanide';if(n>=89&&n<=103)return'Actinide';return'Transition metal'}function familyPersian(f){return({'Alkali metal':'فلز قلیایی','Alkaline earth metal':'فلز قلیایی خاکی','Transition metal':'فلز واسطه','Post-transition metal':'فلز پس‌واسطه','Metalloid':'شبه‌فلز','Nonmetal':'نافلز','Halogen':'هالوژن','Noble gas':'گاز نجیب','Lanthanide':'لانتانوئید','Actinide':'اکتینوئید'})[f]||f}function contrast(h){const v=h.replace('#','');if(v.length!==6)return'#334155';const r=parseInt(v.slice(0,2),16),g=parseInt(v.slice(2,4),16),b=parseInt(v.slice(4),16);return((r*299+g*587+b*114)/1000)>160?'#334155':'#fff'}function esc(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function familyFor(n){if([3,11,19,37,55,87].includes(n))return'Alkali metal';if([4,12,20,38,56,88].includes(n))return'Alkaline earth metal';if(n>=21&&n<=30||n>=39&&n<=48||n>=72&&n<=80||n>=104&&n<=112)return'Transition metal';if([13,31,49,50,81,82,83,113,114,115,116].includes(n))return'Post-transition metal';if([5,14,32,33,51,52,84].includes(n))return'Metalloid';if([1,6,7,8,15,16,34].includes(n))return'Nonmetal';if([9,17,35,53,85,117].includes(n))return'Halogen';if([2,10,18,36,54,86,118].includes(n))return'Noble gas';if(n>=57&&n<=71)return'Lanthanide';if(n>=89&&n<=103)return'Actinide';return'Transition metal'}
+function familyPersian(f){return({'Alkali metal':'فلز قلیایی','Alkaline earth metal':'فلز قلیایی خاکی','Transition metal':'فلز واسطه','Post-transition metal':'فلز پس‌واسطه','Metalloid':'شبه‌فلز','Nonmetal':'نافلز','Halogen':'هالوژن','Noble gas':'گاز نجیب','Lanthanide':'لانتانوئید','Actinide':'اکتینوئید'})[f]||f}
+function esc(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 document.getElementById('close-dialog').onclick=()=>dialog.close();dialog.onclick=e=>{const r=dialog.getBoundingClientRect();if(!(e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom))dialog.close()};
-document.addEventListener('click',e=>{const property=document.querySelector('.property-selector');if(property?.classList.contains('is-open')&&!e.target.closest('.property-selector')){property.classList.remove('is-open');property.querySelector('.orbit-center')?.setAttribute('aria-expanded','false')}});
-</script></body></html>
+</script>
+</body>
+</html>
