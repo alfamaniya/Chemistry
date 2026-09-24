@@ -2,6 +2,42 @@ const DATA_URL = "data/PubChemElements_all.csv";
 const cards = [...document.querySelectorAll(".element")];
 const loadStatus = document.querySelector("#load-status");
 
+let selectedCard = null;
+let selectionTimer = null;
+
+function installSelectionStyles() {
+  const style = document.createElement("style");
+  style.textContent = `
+    @keyframes element-selection-blink {
+      0%, 8% { opacity: 1; transform: scale(1); box-shadow: var(--card-shadow); filter: saturate(1); }
+      12% { opacity: .42; transform: scale(.992); box-shadow: 0 0 0 3px rgba(59,130,246,.12); filter: saturate(.92); }
+      18%, 28% { opacity: 1; transform: scale(1.012); box-shadow: 0 0 12px rgba(59,130,246,.22); filter: saturate(1.03); }
+      33% { opacity: .48; transform: scale(.994); box-shadow: 0 0 0 4px rgba(59,130,246,.13); filter: saturate(.94); }
+      43%, 53% { opacity: 1; transform: scale(1.018); box-shadow: 0 0 15px rgba(59,130,246,.25); filter: saturate(1.05); }
+      60% { opacity: .56; transform: scale(.996); box-shadow: 0 0 0 4px rgba(59,130,246,.14); filter: saturate(.96); }
+      72%, 100% { opacity: 1; transform: scale(1.04); box-shadow: 0 10px 24px rgba(59,130,246,.22), 0 0 0 2px rgba(59,130,246,.30); filter: saturate(1.08); }
+    }
+
+    .element.is-blinking {
+      animation: element-selection-blink 2.6s ease-in-out 1 forwards !important;
+    }
+
+    .element.is-selected {
+      z-index: 10;
+      transform: scale(1.04);
+      box-shadow: 0 10px 24px rgba(59,130,246,.22), 0 0 0 2px rgba(59,130,246,.30);
+      filter: saturate(1.08);
+      transition: transform .35s ease, box-shadow .35s ease, filter .35s ease;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .element.is-blinking { animation: none !important; }
+      .element.is-selected { transform: scale(1.02); }
+    }
+  `;
+  document.head.appendChild(style);
+}
+
 function parseCSV(text) {
   const rows = [];
   let row = [];
@@ -79,19 +115,31 @@ function fillCard(card, element) {
 }
 
 function clearSelectedCard() {
-  document.querySelectorAll(".element.is-selected").forEach((card) => {
+  if (selectionTimer) {
+    window.clearTimeout(selectionTimer);
+    selectionTimer = null;
+  }
+
+  document.querySelectorAll(".element.is-selected, .element.is-blinking").forEach((card) => {
     card.classList.remove("is-selected", "is-blinking");
   });
+
+  selectedCard = null;
 }
 
 function selectCard(card) {
   clearSelectedCard();
-  card.classList.remove("is-blinking");
+  selectedCard = card;
+
+  card.classList.remove("is-blinking", "is-selected");
   void card.offsetWidth;
   card.classList.add("is-blinking");
 
-  window.setTimeout(() => {
+  selectionTimer = window.setTimeout(() => {
+    if (selectedCard !== card) return;
+    card.classList.remove("is-blinking");
     card.classList.add("is-selected");
+    selectionTimer = null;
   }, 2600);
 }
 
@@ -101,6 +149,7 @@ function setStatus(message) {
 
 async function load() {
   setStatus("در حال بارگذاری اطلاعات عناصر…");
+  installSelectionStyles();
 
   const response = await fetch(DATA_URL);
   if (!response.ok) throw new Error(`Unable to load ${DATA_URL}: ${response.status}`);
