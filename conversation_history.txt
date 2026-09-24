@@ -208,3 +208,52 @@ Commit:
 
 کار باقی‌مانده:
 - بررسی بصری نهایی در GitHub Pages برای اطمینان از خوانایی جدول روی تصویر پس‌زمینه.
+
+===== Conversation 025 =====
+Date: 2026-09-24
+
+هدف:
+- ممیزی کامل پروژه از نظر production-readiness، باگ، performance، responsive، accessibility، SEO، امنیت و maintainability و اصلاح موارد کم‌ریسک.
+
+بررسی انجام‌شده:
+- repository واقعی `alfamaniya/Chemistry` روی branch `main` و سپس branch کاری `audit/production-readiness` بررسی شد.
+- ساختار پروژه مشخص شد: static HTML/CSS/JS، بدون framework و dependency package، داده اصلی در CSV و ۱۱۸ فایل JSON عنصر، و یک تصویر PNG پس‌زمینه.
+- `index.html` شامل ۱۱۸ دکمه عنصر است و `js/periodic-table.js` داده‌ها را از `data/PubChemElements_all.csv` بارگذاری می‌کند.
+- `css/periodic-table.css` مسئول layout، رنگ‌بندی، responsive و animation است.
+- backend، database و API سمت سرور در مخزن فعلی وجود ندارد.
+- `.github/workflows` وجود ندارد؛ بنابراین CI برای lint/build/type-check خودکار موجود نیست.
+
+یافته‌های مهم:
+- High: فایل پس‌زمینه PNG حدود 1.86MB است و می‌تواند روی LCP و مصرف داده موبایل اثر محسوس داشته باشد؛ در این مرحله به دلیل ریسک تغییر asset باینری، فشرده‌سازی/تبدیل آن انجام نشد.
+- High: جدول روی موبایل عمداً با حداقل عرض بزرگ و horizontal scrolling نمایش داده می‌شود؛ این برای حفظ خوانایی ۱۸ ستون قابل قبول است، اما هنوز responsive واقعی به معنای fit شدن کل جدول در عرض viewport نیست و نیاز به بررسی بصری دارد.
+- Medium: `fetch(..., {cache: "no-store"})` باعث جلوگیری از caching مرورگر می‌شد؛ اصلاح شد و از رفتار cache پیش‌فرض مرورگر استفاده می‌شود.
+- Medium: محتوای کارت‌ها قبلاً با `innerHTML` ساخته می‌شد؛ به `textContent` و `createElement` تغییر کرد تا داده‌های CSV مستقیماً به HTML تزریق نشوند.
+- Medium: خطای بارگذاری CSV فقط به console گزارش می‌شد؛ وضعیت قابل مشاهده و `aria-live` به صفحه اضافه شد.
+- Medium: SEO اولیه محدود بود؛ description، theme-color و title دقیق‌تر اضافه شدند.
+- Low: برای JavaScript غیرفعال، پیام `noscript` اضافه شد.
+
+تغییرات انجام‌شده:
+- `index.html`: meta description، theme-color، title دقیق‌تر، وضعیت بارگذاری accessible و noscript اضافه شد.
+- `js/periodic-table.js`: parser و منطق موجود حفظ شد، ساخت کارت‌ها امن‌تر شد، caching پیش‌فرض فعال شد، کنترل تعداد ۱۱۸ عنصر تقویت شد و خطا/وضعیت بارگذاری به UI منتقل شد.
+- هیچ داده‌ای در CSV یا JSON حذف یا بازنویسی نشد.
+- هیچ dependency یا framework جدیدی اضافه نشد.
+- هیچ تغییر اساسی در ظاهر، رنگ‌بندی، layout یا animation موجود انجام نشد.
+
+تست و اعتبارسنجی:
+- branch کاری از commit واقعی main ساخته شد.
+- `compare_commits` نشان می‌دهد branch کاری ۳ commit جلوتر از main است و فقط `index.html` و `js/periodic-table.js` تغییر کرده‌اند.
+- وجود `.github/workflows` بررسی شد و workflowای برای اجرای خودکار تست پیدا نشد.
+- به دلیل نبود browser runner در ابزار GitHub و نبود CI، تست واقعی cross-browser و Core Web Vitals انجام نشده است و نباید موفقیت آن‌ها فرض شود.
+
+کارهای باقی‌مانده:
+- اجرای تست بصری واقعی روی موبایل کوچک، موبایل معمولی، tablet، laptop، desktop و نمایشگر بزرگ.
+- اجرای Lighthouse و اندازه‌گیری LCP، INP و CLS.
+- بهینه‌سازی asset پس‌زمینه 1.86MB با WebP/AVIF و اندازه مناسب، پس از تهیه نسخه بهینه و بررسی بصری.
+- بررسی اضافه کردن sitemap/robots و canonical در صورت نیاز به SEO عمومی‌تر.
+- در صورت ادامه توسعه، افزودن CI سبک برای validation HTML/CSS/JS.
+
+Branch:
+- `audit/production-readiness`
+
+Head commit:
+- `9adeb4a03a6a4b299393e1e32c9ed814f2776afb`
