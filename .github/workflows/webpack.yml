@@ -23,15 +23,26 @@ jobs:
         test -f index.html
         test -f assets/css/main.css
         test -f assets/js/main.js
-        test -f assets/js/main-legacy.js
+        test -f assets/js/app.js
+        test -f assets/js/core/i18n.js
+        test -f assets/js/core/data.js
+        test -f assets/js/components/header/header.js
+        test -f assets/js/components/hero/hero.js
+        test -f assets/js/components/periodic-table/periodic-table.js
+        test -f assets/js/components/element-details/element-details.js
+        test -f assets/js/components/footer/footer.js
+        test -f assets/css/components/header.css
+        test -f assets/css/components/hero.css
+        test -f assets/css/components/periodic-table.css
+        test -f assets/css/components/element-details.css
+        test -f assets/css/components/footer.css
         test -f data/PubChemElements_all.csv
         test -f data/ELEMENTS_118_ADVANCED.csv
         test -f data/ELEMENTS_118_VERY_ADVANCED.csv
 
     - name: Check JavaScript syntax
       run: |
-        node --check assets/js/main.js
-        node --check assets/js/main-legacy.js
+        find assets/js -type f -name '*.js' -print0 | xargs -0 -n1 node --check
 
     - name: Validate runtime CSV headers and row widths
       run: |
@@ -54,6 +65,12 @@ jobs:
             print(f"validated {path}: {len(rows) - 1} data rows")
         PY
 
+    - name: Validate orphan data inventory
+      run: |
+        count=$(find data/Elements -maxdepth 1 -type f -name '*.csv' | wc -l)
+        test "$count" -eq 118
+        echo "validated data/Elements inventory: $count CSV files retained as non-runtime data"
+
     - name: Smoke test local site
       run: |
         python3 -m http.server 8000 >/tmp/chemistry-http.log 2>&1 &
@@ -62,7 +79,10 @@ jobs:
         sleep 2
         curl --fail --silent --show-error http://127.0.0.1:8000/index.html >/dev/null
         curl --fail --silent --show-error http://127.0.0.1:8000/assets/js/main.js >/dev/null
-        curl --fail --silent --show-error http://127.0.0.1:8000/assets/js/main-legacy.js >/dev/null
+        curl --fail --silent --show-error http://127.0.0.1:8000/assets/js/app.js >/dev/null
+        curl --fail --silent --show-error http://127.0.0.1:8000/assets/js/core/i18n.js >/dev/null
+        curl --fail --silent --show-error http://127.0.0.1:8000/assets/js/core/data.js >/dev/null
+        curl --fail --silent --show-error http://127.0.0.1:8000/assets/js/components/periodic-table/periodic-table.js >/dev/null
         curl --fail --silent --show-error http://127.0.0.1:8000/data/PubChemElements_all.csv >/dev/null
         curl --fail --silent --show-error http://127.0.0.1:8000/data/ELEMENTS_118_ADVANCED.csv >/dev/null
         curl --fail --silent --show-error http://127.0.0.1:8000/data/ELEMENTS_118_VERY_ADVANCED.csv >/dev/null
