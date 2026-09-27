@@ -1,8 +1,8 @@
 # Chemistry — برنامهٔ مرحله‌ای Refactor معماری Component-Based
 
-> **وضعیت سند:** مراحل ۱ تا ۹ تکمیل شده‌اند.
+> **وضعیت سند:** مراحل ۱ تا ۱۲ تکمیل شده‌اند.
 > **هدف:** تبدیل تدریجی پروژه به معماری Component-Based با حفظ رفتار، داده‌ها، ظاهر، accessibility و قراردادهای runtime.
-> **قانون:** هر مرحله جداگانه اجرا و گزارش می‌شود؛ طبق درخواست فعلی، مراحل ۷ تا ۹ به‌صورت یک بسته انجام شدند.
+> **قانون:** هر مرحله جداگانه اجرا و گزارش می‌شود؛ مراحل ۱۰ تا ۱۲ در این بسته انجام شدند.
 
 ---
 
@@ -18,15 +18,15 @@
 8. accessibility و keyboard interaction حفظ می‌شوند.
 9. پروژه static client-side باقی می‌ماند.
 10. `data/Elements/` بدون تصمیم مستقل حذف نمی‌شود.
-11. مالکیت CSS و JS باید به Component مربوطه نزدیک باشد، اما انتقال تدریجی است تا runtime نشکند.
+11. مالکیت CSS و JS باید به Component مربوطه نزدیک باشد.
 
 ---
 
-# 2. معماری هدف
+# 2. معماری فعلی
 
 ```text
 index.html
-   └── Page Composition
+   └── Page Composition / component slots
 
 assets/
 ├── css/
@@ -38,8 +38,8 @@ assets/
 │       ├── element-details.css
 │       └── footer.css
 └── js/
-    ├── main.js
-    ├── main-legacy.js           # orchestration during migration
+    ├── main.js                  # bootstrap + Theme System
+    ├── app.js                   # application orchestrator
     ├── core/
     │   ├── i18n.js
     │   └── data.js
@@ -51,7 +51,7 @@ assets/
         └── footer/footer.js
 ```
 
-Core مالک منطق مشترک است و Componentها مصرف‌کننده Core هستند؛ Core نباید به implementation داخلی Componentها وابسته شود.
+Core مالک منطق مشترک است و Componentها مصرف‌کننده Core هستند؛ Core به implementation داخلی Componentها وابسته نیست.
 
 ---
 
@@ -79,13 +79,13 @@ Repository، runtime، CSVها، CI، IDها، selectorها، eventها، state�
 
 **وضعیت: ✓ تکمیل‌شده**
 
-`assets/js/components/header/header.js` ساخته شد. کنترل زبان از طریق قرارداد `chemistry:language-change` به runtime متصل است.
+`assets/js/components/header/header.js` ساخته شد و اکنون markup و eventهای Header را نیز مالک است. کنترل زبان از طریق قرارداد `chemistry:language-change` به orchestrator متصل است.
 
 ## مرحله 5 — جداسازی Hero
 
 **وضعیت: ✓ تکمیل‌شده**
 
-`assets/js/components/hero/hero.js` ساخته شد و قرارداد لینک اصلی `#periodic-table` را کنترل می‌کند.
+`assets/js/components/hero/hero.js` markup و قرارداد لینک اصلی `#periodic-table` را کنترل می‌کند.
 
 ## مرحله 6 — جداسازی Periodic Table
 
@@ -93,131 +93,112 @@ Repository، runtime، CSVها، CI، IDها، selectorها، eventها، state�
 
 `assets/js/components/periodic-table/periodic-table.js` مالک mapping هجده‌گروهی، کارت‌ها، f-block، render، status و selection شد. انتخاب عنصر از طریق `onElementSelected(AtomicNumber)` به orchestrator داده می‌شود.
 
----
-
 ## مرحله 7 — جداسازی Element Details
 
 **وضعیت: ✓ تکمیل‌شده**
 
-فایل جدید:
-
-```text
-assets/js/components/element-details/element-details.js
-```
-
-مسئولیت‌های منتقل‌شده:
-
-- نگهداری قرارداد داده سه سطح جزئیات.
-- `getRowByAtomicNumber()`.
-- `isUsable()` و `formatValue()`.
-- ساخت `data-grid`.
-- rendering کارت هویت عنصر.
-- rendering سه سطح `beginner`، `advanced` و `very-advanced`.
-
-Component از طریق `setData()` داده‌های Core را دریافت می‌کند و با `render(AtomicNumber)` عنصر انتخاب‌شده را نمایش می‌دهد.
-
-ارتباط نهایی:
-
-```text
-Periodic Table
-   ↓ onElementSelected(AtomicNumber)
-main-legacy.js
-   ↓ elementDetails.render(AtomicNumber)
-Element Details
-```
-
-هیچ CSV یا dictionary داخل Component کپی نشده است.
-
----
+`assets/js/components/element-details/element-details.js` مالک دادهٔ سه سطح جزئیات، lookup، formatting، data-grid و rendering شد و با `setData()` داده‌های Core را دریافت می‌کند.
 
 ## مرحله 8 — جداسازی Footer
 
 **وضعیت: ✓ تکمیل‌شده**
 
-فایل جدید:
-
-```text
-assets/js/components/footer/footer.js
-```
-
-Footer اکنون mount مستقل دارد و قرارداد لینک `#top` را بررسی می‌کند. متن‌های Footer همچنان از i18n عمومی مصرف می‌شوند و منطق علمی یا داده‌ای وارد Component نشده است.
-
-`main.js` اکنون Header، Hero و Footer را در bootstrap mount می‌کند.
-
----
+`assets/js/components/footer/footer.js` markup و قرارداد لینک `#top` را کنترل می‌کند.
 
 ## مرحله 9 — تفکیک CSS
 
 **وضعیت: ✓ تکمیل‌شده — انتقال تدریجی**
 
-فایل‌های CSS Componentها ایجاد شدند:
-
-```text
-assets/css/components/
-├── header.css
-├── hero.css
-├── periodic-table.css
-├── element-details.css
-└── footer.css
-```
-
-مالکیت CSS به همان Componentهای JS نزدیک شده است. `main.js` این stylesheetها را با شناسه `data-component-css` فقط یک‌بار load می‌کند.
-
-### نکته مهم درباره روش انتقال
-
-در این مرحله CSS اختصاصی Componentها **به‌صورت canonical جداگانه ایجاد و load شده است، اما تعریف‌های legacy متناظر هنوز در `main.css` باقی مانده‌اند**. این تصمیم عمدی است تا حذف همزمان selectorهای قدیمی و themeهای جدول باعث تغییر ناخواسته ظاهر نشود.
-
-بنابراین مرحله ۹ یک **تفکیک ایمن و غیرمخرب** است، نه حذف کامل CSS قدیمی. حذف selectorهای تکراری و تعیین مالک نهایی animation/theme در مراحل بعدی انجام می‌شود.
-
-CSS مربوط به Themeهای ۱۵گانه فعلاً در `main.css` باقی می‌ماند چون مالک آن Theme System است و نه Component پایهٔ جدول.
+CSS اختصاصی Componentها در `assets/css/components/` ایجاد و load شد. Themeهای ۱۵گانه همچنان در `main.css` باقی می‌مانند چون مالک آن‌ها Theme System است.
 
 ---
 
-# 4. وضعیت فعلی معماری
+## مرحله 10 — تعیین مالک نهایی Theme و Selection Animation
+
+**وضعیت: ✓ تکمیل‌شده**
+
+مالکیت رفتاری selection animation به Component جدول منتقل شد:
 
 ```text
-main.js
- ├── mountHeader()
- ├── mountHero()
- ├── mountFooter()
- ├── load component CSS
- └── import main-legacy.js
+Periodic Table Component
+   └── .element.selected-flash
+       └── chemistry-element-selection
+```
 
-main-legacy.js
- ├── Core i18n
- ├── Core data
- ├── Periodic Table Component
- └── Element Details Component
+انیمیشن canonical اکنون در `assets/css/components/periodic-table.css` قرار دارد و رفتار مطلوب حفظ شده است:
 
-Component CSS
- ├── Header
- ├── Hero
- ├── Periodic Table
- ├── Element Details
- └── Footer
+- دو flash نرم: آبی و سپس سبز.
+- پس از پایان animation، `selected` باقی می‌ماند.
+- سایهٔ ثابت نارنجی تیره باقی می‌ماند.
+- `prefers-reduced-motion` به حالت ثابت نارنجی تیره برمی‌گردد.
+- animation دیگر توسط `main.js` تزریق نمی‌شود.
+
+Theme System همچنان مالک `theme-1` تا `theme-15` و localStorage مربوط به Theme است.
+
+> **یادداشت migration:** تعریف قدیمی `selected-flash` در `main.css` هنوز به‌عنوان legacy CSS باقی مانده است؛ تعریف Component با stylesheet جداگانه canonical و loadشده است. حذف کامل legacy CSS در مرحلهٔ نهایی validation/cleanup قابل انجام است.
+
+## مرحله 11 — تبدیل `index.html` به Composition Layer
+
+**وضعیت: ✓ تکمیل‌شده**
+
+`index.html` از markup داخلی Componentها خالی شد و اکنون فقط shell، slotهای Component و metadata سند را نگه می‌دارد:
+
+```html
+<header data-component="header"></header>
+<section data-component="hero"></section>
+<section data-component="periodic-table"></section>
+<section data-component="element-details"></section>
+<footer data-component="footer"></footer>
+```
+
+Markup اختصاصی هر Component اکنون در mount function همان Component ساخته می‌شود. IDهای runtime مانند `periodic-table-grid`, `f-block`, `table-theme-select`, `selected-element`, `beginner-info`, `advanced-info` و `very-advanced-info` حفظ شده‌اند.
+
+## مرحله 12 — پاک‌سازی `main.js` و runtime legacy
+
+**وضعیت: ✓ تکمیل‌شده**
+
+`main.js` به bootstrap و Theme System محدود شد و دیگر `main-legacy.js` را dynamic-load نمی‌کند.
+
+`main-legacy.js` به `assets/js/app.js` تبدیل شد تا نام فایل نیز با نقش واقعی آن (application orchestrator) هماهنگ باشد. فایل قدیمی حذف شد.
+
+مسئولیت `app.js` اکنون فقط orchestration است:
+
+```text
+Core Data + Core i18n
+        ↓
+      app.js
+      ├── Periodic Table
+      └── Element Details
+```
+
+کدهای rendering، parser و component markup در orchestrator کپی نشده‌اند.
+
+---
+
+# 4. مسیر اجرای فعلی
+
+```text
+index.html
+   ↓
+assets/js/main.js
+   ├── mount Header
+   ├── mount Hero
+   ├── mount Periodic Table shell
+   ├── mount Element Details shell
+   ├── mount Footer
+   ├── load Component CSS
+   └── initialize Theme System
+            ↓
+       assets/js/app.js
+            ├── core/i18n.js
+            ├── core/data.js
+            ├── Periodic Table Component
+            └── Element Details Component
 ```
 
 ---
 
 # 5. مراحل باقی‌مانده
-
-## مرحله 10 — تعیین مالک نهایی Theme و Selection Animation
-
-**اولویت: بسیار بالا**
-
-برای `.element.selected-flash` یک مالک نهایی تعیین می‌شود. تعریف‌های متناقض CSS/runtime بررسی و فقط موارد زائد حذف می‌شوند؛ رفتار مطلوب فعلی (دو flash آبی/سبز و glow نارنجی تیره) نباید بدون دلیل تغییر کند.
-
-## مرحله 11 — تبدیل `index.html` به Composition Layer
-
-**اولویت: بالا**
-
-Markup اختصاصی Componentها از shell اصلی جدا و `index.html` به لایهٔ Composition نزدیک می‌شود؛ IDهای runtime باید حفظ شوند.
-
-## مرحله 12 — پاک‌سازی `main.js` و `main-legacy.js`
-
-**اولویت: بالا**
-
-کدهای منتقل‌شده حذف، orchestration ساده و dependency graph نهایی می‌شود.
 
 ## مرحله 13 — بررسی `data/Elements/`
 
@@ -233,17 +214,17 @@ CI، syntax، data flow، runtime، responsive، accessibility، dependencyها 
 
 ---
 
-# 6. قانون گزارش‌دهی
+# 6. Validation مراحل ۱۰ تا ۱۲
 
-بعد از هر مرحله گزارش شامل این موارد است:
-
-1. شماره و عنوان مرحله.
-2. فایل‌های ایجاد/تغییر/حذف‌شده.
-3. مسئولیت‌های منتقل‌شده.
-4. تست‌ها و validationهای انجام‌شده.
-5. اختلاف با baseline.
-6. commit مربوط به مرحله.
-7. وضعیت مرحله بعد.
+- ساختار جدید importها و مسیر Componentها بررسی شد.
+- `index.html` به Composition Layer تبدیل شد.
+- IDهای runtime موردنیاز حفظ شدند.
+- animation انتخاب عنصر به CSS Component منتقل شد.
+- injection مربوط به selection animation از `main.js` حذف شد.
+- `main-legacy.js` به `app.js` منتقل و فایل legacy حذف شد.
+- CSVهای علمی و داده‌های عنصر در این مراحل تغییر نکردند.
+- Themeهای ۱۵گانه و کلیدهای `localStorage` حفظ شدند.
+- به دلیل نبود اجرای browser در این مرحله، تست بصری end-to-end ادعا نمی‌شود؛ validation نهایی در مرحله ۱۴ انجام خواهد شد.
 
 ---
 
@@ -259,9 +240,23 @@ CI، syntax، data flow، runtime، responsive، accessibility، dependencyها 
 [✓] 7 — Element Details
 [✓] 8 — Footer
 [✓] 9 — CSS separation (safe migration)
-[ ] 10 — Theme / Selection ownership
-[ ] 11 — index composition
-[ ] 12 — main cleanup
+[✓] 10 — Theme / Selection ownership
+[✓] 11 — index composition
+[✓] 12 — main cleanup + app orchestrator
 [ ] 13 — orphan data review
 [ ] 14 — final validation
 ```
+
+---
+
+# 8. قانون گزارش‌دهی
+
+بعد از هر مرحله گزارش شامل این موارد است:
+
+1. شماره و عنوان مرحله.
+2. فایل‌های ایجاد/تغییر/حذف‌شده.
+3. مسئولیت‌های منتقل‌شده.
+4. تست‌ها و validationهای انجام‌شده.
+5. اختلاف با baseline.
+6. commit مربوط به مرحله.
+7. وضعیت مرحله بعد.
