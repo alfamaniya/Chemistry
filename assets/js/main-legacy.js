@@ -13,16 +13,6 @@
   const advancedInfo = document.getElementById("advanced-info");
   const veryAdvancedInfo = document.getElementById("very-advanced-info");
   const languageButtons = document.querySelectorAll(".language-button");
-  const themeSelect = document.getElementById("table-theme-select");
-  const tableShell = document.querySelector(".table-shell");
-
-  function applyPdfTheme(themeId) {
-    if (!tableShell) return;
-    for (let i = 1; i <= 15; i++) tableShell.classList.remove("theme-" + i);
-    const normalizedTheme = Number(themeId) >= 1 && Number(themeId) <= 15 ? Number(themeId) : 15;
-    tableShell.classList.add("theme-pdf", "theme-" + normalizedTheme);
-    localStorage.setItem("chemistry-pdf-theme", String(normalizedTheme));
-  }
 
   const translations = {
     fa: {
@@ -169,9 +159,7 @@
     if (cell || row.length) { row.push(cell); rows.push(row); }
 
     const headers = (rows.shift() || []).map(header => header.trim());
-    if (!headers.length || headers.some(header => !header)) {
-      throw new Error("Malformed CSV: missing or empty header");
-    }
+    if (!headers.length || headers.some(header => !header)) throw new Error("Malformed CSV: missing or empty header");
 
     const validRows = [];
     let malformedRows = 0;
@@ -264,9 +252,7 @@
       card.classList.remove("selected-flash");
       void card.offsetWidth;
       card.classList.add("selected", "selected-flash");
-      card.addEventListener("animationend", () => {
-        card.classList.remove("selected-flash");
-      }, { once: true });
+      card.addEventListener("animationend", () => card.classList.remove("selected-flash"), { once: true });
     });
     return card;
   }
@@ -306,10 +292,7 @@
       grid.appendChild(card);
     });
 
-    fBlock.append(
-      createFRow(elements, 57, 71),
-      createFRow(elements, 89, 103)
-    );
+    fBlock.append(createFRow(elements, 57, 71), createFRow(elements, 89, 103));
   }
 
   function getRowByAtomicNumber(source, atomicNumber) {
@@ -323,9 +306,7 @@
   function formatValue(value, key) {
     if (!isUsable(value)) return "—";
     const dictionary = valueTranslations[key];
-    if (dictionary && dictionary[currentLanguage] && dictionary[currentLanguage][String(value)] !== undefined) {
-      return dictionary[currentLanguage][String(value)];
-    }
+    if (dictionary && dictionary[currentLanguage] && dictionary[currentLanguage][String(value)] !== undefined) return dictionary[currentLanguage][String(value)];
     return String(value);
   }
 
@@ -338,16 +319,12 @@
       if (!isUsable(data?.[key])) return;
       const item = document.createElement("div");
       item.className = "data-item";
-
       const label = document.createElement("span");
       label.className = "data-label";
-      const labelKey = fieldLabels[key];
-      label.textContent = t[labelKey] || key;
-
+      label.textContent = t[fieldLabels[key]] || key;
       const value = document.createElement("span");
       value.className = "data-value";
       value.textContent = formatValue(data[key], key);
-
       item.append(label, value);
       gridNode.appendChild(item);
     });
@@ -372,11 +349,9 @@
     selectedElementBox.innerHTML = "";
     const identity = document.createElement("div");
     identity.className = "selected-identity";
-
     const symbol = document.createElement("span");
     symbol.className = "selected-symbol";
     symbol.textContent = beginner.Symbol;
-
     const names = document.createElement("div");
     names.className = "selected-names";
     const title = document.createElement("strong");
@@ -384,33 +359,16 @@
     const subtitle = document.createElement("small");
     subtitle.textContent = currentLanguage === "fa" ? beginner.Name : beginner.NameFa;
     names.append(title, subtitle);
-
     identity.append(symbol, names);
     selectedElementBox.appendChild(identity);
-
-    selectedElementBox.appendChild(createDataGrid(beginner, [
-      "AtomicNumber", "AtomicMass", "GroupBlock", "StandardState", "ElectronConfiguration", "OxidationStates"
-    ]));
+    selectedElementBox.appendChild(createDataGrid(beginner, ["AtomicNumber", "AtomicMass", "GroupBlock", "StandardState", "ElectronConfiguration", "OxidationStates"]));
 
     beginnerInfo.innerHTML = "";
-    beginnerInfo.appendChild(createDataGrid(beginner, [
-      "AtomicNumber", "Symbol", "AtomicMass", "StandardState", "GroupBlock", "YearDiscovered"
-    ]));
-
+    beginnerInfo.appendChild(createDataGrid(beginner, ["AtomicNumber", "Symbol", "AtomicMass", "StandardState", "GroupBlock", "YearDiscovered"]));
     advancedInfo.innerHTML = "";
-    advancedInfo.appendChild(createDataGrid(advanced, [
-      "AtomicNumber", "Symbol", "AtomicMass", "GroupBlock", "StandardState",
-      "ElectronConfiguration", "OxidationStates", "Electronegativity", "AtomicRadius",
-      "IonizationEnergy", "ElectronAffinity", "MeltingPoint", "BoilingPoint", "Density"
-    ]));
-
+    advancedInfo.appendChild(createDataGrid(advanced, ["AtomicNumber", "Symbol", "AtomicMass", "GroupBlock", "StandardState", "ElectronConfiguration", "OxidationStates", "Electronegativity", "AtomicRadius", "IonizationEnergy", "ElectronAffinity", "MeltingPoint", "BoilingPoint", "Density"]));
     veryAdvancedInfo.innerHTML = "";
-    veryAdvancedInfo.appendChild(createDataGrid(veryAdvanced, [
-      "AtomicNumber", "Symbol", "AtomicMass", "GroupBlock", "StandardState",
-      "ElectronConfiguration", "OxidationStates", "Electronegativity", "AtomicRadius",
-      "IonizationEnergy", "ElectronAffinity", "MeltingPoint", "BoilingPoint", "Density",
-      "YearDiscovered", "data_status"
-    ]));
+    veryAdvancedInfo.appendChild(createDataGrid(veryAdvanced, ["AtomicNumber", "Symbol", "AtomicMass", "GroupBlock", "StandardState", "ElectronConfiguration", "OxidationStates", "Electronegativity", "AtomicRadius", "IonizationEnergy", "ElectronAffinity", "MeltingPoint", "BoilingPoint", "Density", "YearDiscovered", "data_status"]));
   }
 
   async function fetchCsv(url) {
@@ -444,16 +402,10 @@
 
   async function loadElements() {
     try {
-      const [pubchem, advanced, veryAdvanced] = await Promise.all([
-        fetchCsv(DATA_URL),
-        fetchCsv(ADVANCED_URL),
-        fetchCsv(VERY_ADVANCED_URL)
-      ]);
-
+      const [pubchem, advanced, veryAdvanced] = await Promise.all([fetchCsv(DATA_URL), fetchCsv(ADVANCED_URL), fetchCsv(VERY_ADVANCED_URL)]);
       elements = pubchem.filter(element => element.AtomicNumber);
       advancedElements = advanced.filter(element => element.atomic_number || element.AtomicNumber).map(normalizeDetailRow);
       veryAdvancedElements = veryAdvanced.filter(element => element.atomic_number || element.AtomicNumber).map(normalizeDetailRow);
-
       renderPeriodicTable();
       updateStatus();
     } catch (error) {
@@ -469,12 +421,7 @@
     }
   }
 
-  if (themeSelect) themeSelect.addEventListener("change", event => applyPdfTheme(event.target.value));
-
-  languageButtons.forEach(button => {
-    button.addEventListener("click", () => setLanguage(button.dataset.language));
-  });
-
+  languageButtons.forEach(button => button.addEventListener("click", () => setLanguage(button.dataset.language)));
   setLanguage(currentLanguage);
   loadElements();
 })();
