@@ -1,12 +1,6 @@
 export function mountElementDetailsShell(root) {
   if (!root || root.children.length) return;
   root.innerHTML = `
-    <div class="section-heading detail-heading">
-      <div>
-        <h2 id="selected-element-title" data-i18n="selectedElementTitle">اطلاعات مختصر عنصر</h2>
-        <p data-i18n="selectedElementSubtitle">برای دیدن اطلاعات، یکی از عناصر جدول را انتخاب کنید.</p>
-      </div>
-    </div>
     <div id="selected-element" class="selected-element-card">
       <div class="empty-state" data-i18n="selectElement">یک عنصر را از جدول انتخاب کنید.</div>
     </div>
