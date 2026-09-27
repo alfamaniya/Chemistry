@@ -1,0 +1,755 @@
+path,type,value
+/Record/RecordType,string,AtomicNumber
+/Record/RecordNumber,number,98
+/Record/RecordTitle,string,Californium
+/Record/Section/0/TOCHeading,string,Identifiers
+/Record/Section/0/Description,string,"Identifiers for this element, including element name, element symbol, InChI string, and InChIKey."
+/Record/Section/0/Section/0/TOCHeading,string,Element Name
+/Record/Section/0/Section/0/Description,string,"The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element."
+/Record/Section/0/Section/0/Information/0/ReferenceNumber,number,1
+/Record/Section/0/Section/0/Information/0/Name,string,Element Name
+/Record/Section/0/Section/0/Information/0/Value/StringWithMarkup/0/String,string,Californium
+/Record/Section/0/Section/0/Information/1/ReferenceNumber,number,3
+/Record/Section/0/Section/0/Information/1/Name,string,Element Name
+/Record/Section/0/Section/0/Information/1/Value/StringWithMarkup/0/String,string,Californium
+/Record/Section/0/Section/1/TOCHeading,string,Element Symbol
+/Record/Section/0/Section/1/Description,string,"Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages."
+/Record/Section/0/Section/1/Information/0/ReferenceNumber,number,1
+/Record/Section/0/Section/1/Information/0/Name,string,Element Symbol
+/Record/Section/0/Section/1/Information/0/Value/StringWithMarkup/0/String,string,Cf
+/Record/Section/0/Section/1/Information/1/ReferenceNumber,number,3
+/Record/Section/0/Section/1/Information/1/Name,string,Element Symbol
+/Record/Section/0/Section/1/Information/1/Value/StringWithMarkup/0/String,string,Cf
+/Record/Section/0/Section/2/TOCHeading,string,InChI
+/Record/Section/0/Section/2/Description,string,"The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard."
+/Record/Section/0/Section/2/URL,string,https://iupac.org/who-we-are/divisions/division-details/inchi/
+/Record/Section/0/Section/2/Information/0/ReferenceNumber,number,1
+/Record/Section/0/Section/2/Information/0/Name,string,InChI
+/Record/Section/0/Section/2/Information/0/Value/StringWithMarkup/0/String,string,InChI=1S/Cf
+/Record/Section/0/Section/3/TOCHeading,string,InChIKey
+/Record/Section/0/Section/3/Description,string,"An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard."
+/Record/Section/0/Section/3/URL,string,https://iupac.org/who-we-are/divisions/division-details/inchi/
+/Record/Section/0/Section/3/Information/0/ReferenceNumber,number,1
+/Record/Section/0/Section/3/Information/0/Name,string,InChIKey
+/Record/Section/0/Section/3/Information/0/Value/StringWithMarkup/0/String,string,HGLDOAKPQXAFKI-UHFFFAOYSA-N
+/Record/Section/1/TOCHeading,string,Properties
+/Record/Section/1/Description,string,"Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on."
+/Record/Section/1/Section/0/TOCHeading,string,Atomic Weight
+/Record/Section/1/Section/0/Description,string,"Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u)."
+/Record/Section/1/Section/0/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/0/Information/0/Value/StringWithMarkup/0/String,string,251
+/Record/Section/1/Section/0/Information/1/ReferenceNumber,number,6
+/Record/Section/1/Section/0/Information/1/Value/StringWithMarkup/0/String,string,251
+/Record/Section/1/Section/0/Information/2/ReferenceNumber,number,7
+/Record/Section/1/Section/0/Information/2/Value/StringWithMarkup/0/String,string,Relative Mass: 249.0748539(23)
+/Record/Section/1/Section/1/TOCHeading,string,Electron Configuration
+/Record/Section/1/Section/1/Description,string,"The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result."
+/Record/Section/1/Section/1/URL,string,https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations
+/Record/Section/1/Section/1/Information/0/ReferenceNumber,number,6
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/String,string,[Rn]7s25f10
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,6
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,1
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/1/Start,number,9
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/1/Length,number,2
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/1/Type,string,Superscript
+/Record/Section/1/Section/2/TOCHeading,string,Atomic Radius
+/Record/Section/1/Section/2/Description,string,"The atomic radius of a chemical element is a measure of the size of its atom, usually, the distance from the center of the nucleus to the outermost isolated electron.  Because an atom does not have a discrete boundary, there are various non-equivalent definitions of atomic radius, such as Van der Waals radius and covalent radius."
+/Record/Section/1/Section/2/Information/0/ReferenceNumber,number,6
+/Record/Section/1/Section/2/Information/0/Name,string,Van der Waals Atomic Radius
+/Record/Section/1/Section/2/Information/0/Value/StringWithMarkup/0/String,string,245 pm (Van der Waals)
+/Record/Section/1/Section/3/TOCHeading,string,Oxidation States
+/Record/Section/1/Section/3/Description,string,"The oxidation state(s) that this element commonly has in a compound.  The oxidation state of an atom is defined as the hypothetical charge that would be held by that atom if all of its bonds to other atoms were completely ionic in nature. For example, the oxidation state of carbon in CO2 would be +4 since the hypothetical charge held by the carbon atom if both of the carbon-oxygen double bonds were completely ionic would be equal to +4 (each oxygen atom would hold a charge of -2 since oxygen is more electronegative than carbon)."
+/Record/Section/1/Section/3/URL,string,https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/20%3A_Electrochemistry/20.01%3A_Oxidation_States_and_Redox_Reactions
+/Record/Section/1/Section/3/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/3/Information/0/Value/StringWithMarkup/0/String,string,+3
+/Record/Section/1/Section/3/Information/1/ReferenceNumber,number,6
+/Record/Section/1/Section/3/Information/1/Value/StringWithMarkup/0/String,string,"2, 3, 4"
+/Record/Section/1/Section/4/TOCHeading,string,Ground Level
+/Record/Section/1/Section/4/Description,string,Also called ground-state level. The ground state electron configuration is the arrangement of electrons around the nucleus of an atom with lower energy levels.
+/Record/Section/1/Section/4/Information/0/ReferenceNumber,number,7
+/Record/Section/1/Section/4/Information/0/Value/StringWithMarkup/0/String,string,5I8
+/Record/Section/1/Section/4/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,0
+/Record/Section/1/Section/4/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,1
+/Record/Section/1/Section/4/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/1/Section/4/Information/0/Value/StringWithMarkup/0/Markup/1/Start,number,2
+/Record/Section/1/Section/4/Information/0/Value/StringWithMarkup/0/Markup/1/Length,number,1
+/Record/Section/1/Section/4/Information/0/Value/StringWithMarkup/0/Markup/1/Type,string,Subscript
+/Record/Section/1/Section/5/TOCHeading,string,Ionization Energy
+/Record/Section/1/Section/5/Description,string,"Ionization energy, also called ionization potential, is the amount of energy required to remove an electron from an isolated atom or molecule."
+/Record/Section/1/Section/5/URL,string,https://www.britannica.com/science/ionization-energy
+/Record/Section/1/Section/5/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/5/Information/0/Value/StringWithMarkup/0/String,string,6.30 eV
+/Record/Section/1/Section/5/Information/1/ReferenceNumber,number,7
+/Record/Section/1/Section/5/Information/1/Reference/0,string,"Probing the Atomic Structure of Californium by Resonance Ionization Spectroscopy, F. Weber, Ch. E. Düllmann, V. Gadelshin, N. Kneip, S. Oberstedt, S. Raeder, J. Runke, Ch. Mokry, P. Thörle-Pospiech, D. Studer, N. Trautmann, and K. Wendt, Atoms 10, 51 (2022) DOI:10.3390/atoms10020051"
+/Record/Section/1/Section/5/Information/1/ExtendedReference/0/Citation,string,"Probing the Atomic Structure of Californium by Resonance Ionization Spectroscopy, F. Weber, Ch. E. Düllmann, V. Gadelshin, N. Kneip, S. Oberstedt, S. Raeder, J. Runke, Ch. Mokry, P. Thörle-Pospiech, D. Studer, N. Trautmann, and K. Wendt, Atoms 10, 51 (2022) DOI:10.3390/atoms10020051"
+/Record/Section/1/Section/5/Information/1/Value/StringWithMarkup/0/String,string,6.281878 ± 0.000006 eV
+/Record/Section/1/Section/6/TOCHeading,string,Electronegativity
+/Record/Section/1/Section/6/Description,string,Electronegativity is a measure of the tendency of an atom to attract a bonding pair of electrons.
+/Record/Section/1/Section/6/URL,string,https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electronegativity
+/Record/Section/1/Section/6/Information/0/ReferenceNumber,number,9
+/Record/Section/1/Section/6/Information/0/Name,string,Pauling Scale Electronegativity
+/Record/Section/1/Section/6/Information/0/Reference/0,string,"A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+/Record/Section/1/Section/6/Information/0/ExtendedReference/0/Citation,string,"A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+/Record/Section/1/Section/6/Information/0/Value/Number/0,number,1.3
+/Record/Section/1/Section/6/Information/0/Value/Unit,string,(Pauling Scale)
+/Record/Section/1/Section/7/TOCHeading,string,Atomic Spectra
+/Record/Section/1/Section/7/Description,string,The spectrum of the electromagnetic radiation emitted or absorbed by an electron during transitions between different energy levels within an atom.
+/Record/Section/1/Section/7/Information/0/ReferenceNumber,number,7
+/Record/Section/1/Section/7/Information/0/URL,string,https://physics.nist.gov/cgi-bin/ASD/lines_hold.pl?el=Cf
+/Record/Section/1/Section/7/Information/0/Value/StringWithMarkup/0/String,string,Lines Holdings
+/Record/Section/1/Section/7/Information/1/ReferenceNumber,number,7
+/Record/Section/1/Section/7/Information/1/URL,string,https://physics.nist.gov/cgi-bin/ASD/levels_hold.pl?el=Cf
+/Record/Section/1/Section/7/Information/1/Value/StringWithMarkup/0/String,string,Levels Holdings
+/Record/Section/1/Section/8/TOCHeading,string,Physical Description
+/Record/Section/1/Section/8/Description,string,"The appearance or features of this element, including color, odor, state, taste and more in general."
+/Record/Section/1/Section/8/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/8/Information/0/Value/StringWithMarkup/0/String,string,Solid
+/Record/Section/1/Section/9/TOCHeading,string,Element Classification
+/Record/Section/1/Section/9/Description,string,"Classification according to the element's chemical and physical properties, and location within the periodic table."
+/Record/Section/1/Section/9/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/9/Information/0/Value/StringWithMarkup/0/String,string,Metal
+/Record/Section/1/Section/10/TOCHeading,string,Element Period Number
+/Record/Section/1/Section/10/Description,string,The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.
+/Record/Section/1/Section/10/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/10/Information/0/Value/StringWithMarkup/0/String,string,7
+/Record/Section/1/Section/11/TOCHeading,string,Element Group Number
+/Record/Section/1/Section/11/Description,string,Element group refers to a set of chemical elements in the same vertical column of the periodic table
+/Record/Section/1/Section/11/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/11/Information/0/Value/StringWithMarkup/0/String,string,- Actinide
+/Record/Section/1/Section/12/TOCHeading,string,Melting Point
+/Record/Section/1/Section/12/Description,string,"This section provides the melting point and/or freezing point. The melting point is the temperature at which a substance changes state from solid to liquid at atmospheric pressure. When considered as the temperature of the reverse change (from liquid to solid), it is referred to as the freezing point."
+/Record/Section/1/Section/12/URL,string,https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.01%3A_Melting_Point
+/Record/Section/1/Section/12/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/12/Information/0/Value/StringWithMarkup/0/String,string,1173 K (900°C or 1652°F)
+/Record/Section/1/Section/12/Information/1/ReferenceNumber,number,6
+/Record/Section/1/Section/12/Information/1/Value/StringWithMarkup/0/String,string,900°C
+/Record/Section/1/Section/13/TOCHeading,string,Boiling Point
+/Record/Section/1/Section/13/Description,string,The temperature at which this element changes state from liquid to gas at a given atmospheric pressure.
+/Record/Section/1/Section/13/URL,string,https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.02%3A_Boiling_Point
+/Record/Section/1/Section/13/Information/0/ReferenceNumber,number,6
+/Record/Section/1/Section/13/Information/0/Value/StringWithMarkup/0/String,string,1470°C
+/Record/Section/1/Section/14/TOCHeading,string,Estimated Crustal Abundance
+/Record/Section/1/Section/14/Description,string,The estimated element abundance in the earth's crust.
+/Record/Section/1/Section/14/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/14/Information/0/Value/StringWithMarkup/0/String,string,Not Applicable
+/Record/Section/1/Section/15/TOCHeading,string,Estimated Oceanic Abundance
+/Record/Section/1/Section/15/Description,string,The estimated element abundance in the earth's oceans.
+/Record/Section/1/Section/15/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/15/Information/0/Value/StringWithMarkup/0/String,string,Not Applicable
+/Record/Section/2/TOCHeading,string,History
+/Record/Section/2/Description,string,The history of the discovery and use of this element.
+/Record/Section/2/Information/0/ReferenceNumber,number,5
+/Record/Section/2/Information/0/Value/StringWithMarkup/0/String,string,"Californium was first produced by Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso working at the University of California, Berkeley, in 1950. They bombarded atoms of curium-242 with helium ions using a device known as a cyclotron. This produced atoms of californium-245, an isotope with a half-life of about 45 minutes, and a free neutron."
+/Record/Section/2/Information/1/ReferenceNumber,number,6
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/String,string,"Californium, the sixth transuranium element to be discovered, was produced by Thompson, Street, Ghioirso, and Seaborg in 1950 by bombarding microgram quantities of 242Cm with 35 MeV helium ions in the Berkeley 60-inch cyclotronproducing 244Cf. Since the lanthanide homologue of californium (dysprosium) has a stable trivalent state in aqueous solution it was anticipated that californium would exhibit a stable trivalent state as well. This accurate prediction allowed for the successful chromatographic separation of californium from other actinides and for its unequivocal identification."
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/0/Start,number,164
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/1/Start,number,237
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/1/Length,number,3
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/1/Type,string,Superscript
+/Record/Section/3/TOCHeading,string,Description
+/Record/Section/3/Description,string,"A short description of this element, provided by authoritative sources."
+/Record/Section/3/Information/0/ReferenceNumber,number,4
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/String,string,"Californium does not occur naturally in the Earth’s crust. It was first synthesized in 1950 by Glenn T. Seaborg and his team at the University of California using the reaction 242Cm (4He, n) 245Cf. The element was named for the state where it was first synthesized."
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,176
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/1/Start,number,183
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/1/Length,number,1
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/1/Type,string,Superscript
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/2/Start,number,191
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/2/Length,number,3
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/2/Type,string,Superscript
+/Record/Section/3/Information/1/ReferenceNumber,number,6
+/Record/Section/3/Information/1/Value/StringWithMarkup/0/String,string,"Californium is the second half of the actinide series where its f electrons are further removed or shielded from the valence electrons that those of the lighter actinides. Thus californium resembles the behavior of the lanthanide elements exhibiting divalent, trivalent, and tetravalent oxidation states in solid-state compounds. In solution, the trivalent state is the most stable however the divalent, tetravalent and a possible pentavalent state have been reported. The existence of Cf(V) is questionable."
+/Record/Section/3/Information/1/Value/StringWithMarkup/1/String,string,"Californium metal is fairly reactive. On standing in air or moisture, small pieces or foils of Cf metal quickly form an oxide but not in a violent reaction. Two methods have been successful for preparation of Cf metal: reduction of californium trifluoride with lithium metal at elevated temperature and using thorium or lanthanum metal to reduce californium oxide (R. G. Haire, 1982). The largest amount of metal prepared at one time was about 10 milligrams. The metal was eventually determined to be trivalent with a room-temperature double hexagonal close-packed structure. A face centered cubic structure has also been observed for californium metal at high temperature."
+/Record/Section/3/Information/1/Value/StringWithMarkup/2/String,string,"Some alloys and numerous solid-state compounds have been prepared with californium in spite of the fact that only small amounts of the element are available at any one time. Californium compounds include oxides, halides, oxyhalides, pnictides, chacogenides hydrides, tellurides, oxysulfate and oxysulfide to name a few. Some organo-californium coumpounds have also been prepared."
+/Record/Section/3/Information/1/Value/StringWithMarkup/3/String,string,"Because californium is a very efficient source of neutrons, many new uses are expected for it. It has already found use in neutron moisture gauges and in well-logging (the determination of water and oil-bearing layers). It is also being used as a portable neutron source for discovery of metals such as gold or silver by on-the-spot activation analysis. 252Cf is now being offered for sale by the Oak Ridge National Laboratory at a cost of $10/mg. As of May, 1975, more than 63 mg have been produced and sold. It has been suggested that californium may be produced in certain stellar explosions, called supernovae, for the radioactive decay of 254Cf (55-day half-life) agrees with the characteristics of the light curves of such explosions observed through telescopes. This suggestion, however, is questioned."
+/Record/Section/3/Information/1/Value/StringWithMarkup/3/Markup/0/Start,number,354
+/Record/Section/3/Information/1/Value/StringWithMarkup/3/Markup/0/Length,number,3
+/Record/Section/3/Information/1/Value/StringWithMarkup/3/Markup/0/Type,string,Superscript
+/Record/Section/3/Information/1/Value/StringWithMarkup/3/Markup/1/Start,number,644
+/Record/Section/3/Information/1/Value/StringWithMarkup/3/Markup/1/Length,number,3
+/Record/Section/3/Information/1/Value/StringWithMarkup/3/Markup/1/Type,string,Superscript
+/Record/Section/3/Information/1/Value/StringWithMarkup/4/String,string,"Further reading: Richard G. Haire (2006) Chapter 11, ""The Chemistry of the Actinide and Transactinide Element,"" Third Edition, L. R. Morss, J. Fuger, and N. M. Edelstein, Eds, Springer Publishers."
+/Record/Section/3/Information/1/Value/StringWithMarkup/5/String,string,"This element reviewed and Updated by Dr. David Hobart, 2011"
+/Record/Section/4/TOCHeading,string,Uses
+/Record/Section/4/Description,string,Uses of this element in industry and other fields.
+/Record/Section/4/Information/0/ReferenceNumber,number,5
+/Record/Section/4/Information/0/Value/StringWithMarkup/0/String,string,"Californium-252, an isotope with a half-life of about 2.6 years, is a very strong neutron source. One microgram (0.000001 grams) of californium-252 produces 170,000,000 neutrons per minute. It is being used as a neutron source to identify gold and silver ores through a technique known as neutron activation. It is also being used in devices known as neutron moisture gauges that are used to find water and oil bearing layers in oil wells."
+/Record/Section/4/Information/0/Value/StringWithMarkup/1/String,string,"A few compounds of californium have been produced and studied. They include: californium oxide (CfO3), californium trichloride (CfCl3) and californium oxychloride (CfOCl)."
+/Record/Section/4/Information/0/Value/StringWithMarkup/1/Markup/0/Start,number,99
+/Record/Section/4/Information/0/Value/StringWithMarkup/1/Markup/0/Length,number,1
+/Record/Section/4/Information/0/Value/StringWithMarkup/1/Markup/0/Type,string,Subscript
+/Record/Section/4/Information/0/Value/StringWithMarkup/1/Markup/1/Start,number,132
+/Record/Section/4/Information/0/Value/StringWithMarkup/1/Markup/1/Length,number,1
+/Record/Section/4/Information/0/Value/StringWithMarkup/1/Markup/1/Type,string,Subscript
+/Record/Section/4/Information/0/Value/StringWithMarkup/2/String,string,"Californium's most stable isotope, californium-251, has a half-life of about 898 years. It decays into curium-247 through alpha decay or decays through spontaneous fission."
+/Record/Section/5/TOCHeading,string,Compounds
+/Record/Section/5/Description,string,Compound records related to this element.
+/Record/Section/5/Information/0/ReferenceNumber,number,8
+/Record/Section/5/Information/0/Name,string,Compounds
+/Record/Section/5/Information/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/#query=Californium
+/Record/Section/5/Information/0/Value/StringWithMarkup/0/String,string,See more information at the Californium compound page.
+/Record/Section/5/Section/0/TOCHeading,string,Element Forms
+/Record/Section/5/Section/0/Description,string,"Other forms of this element, including ions, isotopes, etc."
+/Record/Section/5/Section/0/DisplayControls/CreateTable/FromInformationIn,string,ThisSection
+/Record/Section/5/Section/0/DisplayControls/CreateTable/NumberOfColumns,number,5
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/0,string,CID
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/1,string,Name
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/2,string,Formula
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/3,string,SMILES
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/4,string,Molecular Weight
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/UseNamesAsColumnHeadings,boolean,true
+/Record/Section/5/Section/0/Information/0/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/0/Name,string,CID
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/0/String,string,23997
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,5
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/23997
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/1/String,string,105176
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/Length,number,6
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/105176
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/2/String,string,104846
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/2/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/2/Markup/0/Length,number,6
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/2/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/104846
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/3/String,string,166965
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/3/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/3/Markup/0/Length,number,6
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/3/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/166965
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/4/String,string,167242
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/4/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/4/Markup/0/Length,number,6
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/4/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/167242
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/5/String,string,167400
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/5/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/5/Markup/0/Length,number,6
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/5/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/167400
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/6/String,string,167416
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/6/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/6/Markup/0/Length,number,6
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/6/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/167416
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/7/String,string,168021
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/7/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/7/Markup/0/Length,number,6
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/7/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/168021
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/8/String,string,167345
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/8/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/8/Markup/0/Length,number,6
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/8/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/167345
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/9/String,string,167507
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/9/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/9/Markup/0/Length,number,6
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/9/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/167507
+/Record/Section/5/Section/0/Information/1/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/1/Name,string,Name
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/0/String,string,californium
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/1/String,string,californium-249
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/2/String,string,californium-252
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/3/String,string,californium-250
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/4/String,string,californium-246
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/5/String,string,californium-248
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/6/String,string,californium-251
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/7/String,string,californium-254
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/8/String,string,californium-253
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/9/String,string,californium-244
+/Record/Section/5/Section/0/Information/2/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/2/Name,string,Formula
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/0/String,string,Cf
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/1/String,string,Cf
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/2/String,string,Cf
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/3/String,string,Cf
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/4/String,string,Cf
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/5/String,string,Cf
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/6/String,string,Cf
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/7/String,string,Cf
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/8/String,string,Cf
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/9/String,string,Cf
+/Record/Section/5/Section/0/Information/3/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/3/Name,string,SMILES
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/0/String,string,[Cf]
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/1/String,string,[249Cf]
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/2/String,string,[252Cf]
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/3/String,string,[250Cf]
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/4/String,string,[246Cf]
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/5/String,string,[248Cf]
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/6/String,string,[251Cf]
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/7/String,string,[254Cf]
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/8/String,string,[253Cf]
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/9/String,string,[244Cf]
+/Record/Section/5/Section/0/Information/4/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/4/Name,string,Molecular Weight
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/0/String,string,251.07959
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/1/String,string,249.07485
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/2/String,string,252.08163
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/3/String,string,250.07640
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/4/String,string,246.06880
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/5/String,string,248.07218
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/6/String,string,251.07959
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/7/String,string,254.0873
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/8/String,string,253.08513
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/9/String,string,244.06600
+/Record/Section/6/TOCHeading,string,Isotopes
+/Record/Section/6/Description,string,Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.
+/Record/Section/6/URL,string,https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes
+/Record/Section/6/Information/0/ReferenceNumber,number,5
+/Record/Section/6/Information/0/Name,string,Stable Isotope Count
+/Record/Section/6/Information/0/Value/StringWithMarkup/0/String,string,0
+/Record/Section/6/Information/1/ReferenceNumber,number,6
+/Record/Section/6/Information/1/Name,string,Summary
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/String,string,"Twenty isotopes ranging in atomic mass from 237 to 256 have been reported for californium however the existence of the isotopes with mass of 237 and 238 has not yet been confirmed. The isotope 249Cf results from the beta decay of 249Bk while the heavier isotopes are produced by intense neutron irradiation by nuclear reactors or in thermonuclear explosions. The existence of the isotopes 249Cf, 250Cf, 251Cf, and 252Cf makes it feasible to isolate californium in weighable amounts so that its physicochemical properties can be investigated with macroscopic quantities. The first well-defined structure of a californium compound was the oxychloride by Cunningham and Wallmann a decade after discovery of the element. Microgram quantities of californium have been produced in the High Flux Isotope Reactor (HFIR) at Oak Ridge National Laboratory (ORNL) in Tennessee and in Dimitrovgrad high-flux reactors in Russia. Californium-252 is a very strong neutron emitter. One microgram releases 170 million neutrons per minute, which presents biological hazards. Cf-252 also decays by energetic alpha emission (half-life 2.65 years, 6.1 MeV). Proper safeguards should be used when handling californium isotopes."
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/0/Start,number,193
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/1/Start,number,230
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/1/Length,number,3
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/1/Type,string,Superscript
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/2/Start,number,389
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/2/Length,number,3
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/2/Type,string,Superscript
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/3/Start,number,396
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/3/Length,number,3
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/3/Type,string,Superscript
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/4/Start,number,403
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/4/Length,number,3
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/4/Type,string,Superscript
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/5/Start,number,414
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/5/Length,number,3
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/5/Type,string,Superscript
+/Record/Section/6/Section/0/TOCHeading,string,Isotopes in Industry
+/Record/Section/6/Section/0/Description,string,Information on the use of this element's isotopes in industry.
+/Record/Section/6/Section/0/Information/0/ReferenceNumber,number,4
+/Record/Section/6/Section/0/Information/0/Reference/0,string,"[75]  J. Peterson, M. McDonell, L. Haroun, F. Monette, R. D. Hildebrand, A. Taboas. Radiological and Chemical Fact Sheets to Support Health Risk Analyses for Contaminated Areas, Prepared by Argonne National Laboratory Environmental Science Division in collaboration with U.S. Department of Energy, Richland Operations Office and Chicago Operations Office (2014), Feb. 22; http://www.remm.nlm.gov/ANL_ContaminantFactSheets_All_070418.pdf."
+/Record/Section/6/Section/0/Information/0/Reference/1,string,"[625]  I. W. Osborne-Lee, C. W. Alexander. Californium-252 A Remarkably Versatile Radioisotope, ORNL/TM-12706, Oak Ridge National Laboratory, Oak Ridge, TN (1995)."
+/Record/Section/6/Section/0/Information/0/Reference/2,string,"[626]  R. C. Martin, J. B. Knauer, P. A. Balo. Appl. Radiat. Isot.53, 785 (2000)."
+/Record/Section/6/Section/0/Information/0/Reference/3,string,"[627]  NIST. Prompt Gamma-Ray Activation Analysis, NIST (2015), Jan. 20. http://www.nist.gov/mml/csd/inorganic/pgaa.cfm."
+/Record/Section/6/Section/0/Information/0/Reference/4,string,"[628]  Los Alamos National Laboratory. Periodic Table of Elements: LANL-Californium, Los Alamos National Laboratory (2014), Feb. 25; http://periodic.lanl.gov/98.shtml."
+/Record/Section/6/Section/0/Information/0/Reference/5,string,"[629]  L. J. Bond, R. V. Harris, K. M. Denslow, T. L. Moran, J. W. Griffin, D. M. Sheen, G. E. Dale, T. Schenkel. Evaluation of Non-Nuclear Techniques for Well Logging: Technology Evaluation, PNNL-19867, Pacific Northwest National Laboratory (2010)."
+/Record/Section/6/Section/0/Information/0/ExtendedReference/0/Citation,string,"[75]  J. Peterson, M. McDonell, L. Haroun, F. Monette, R. D. Hildebrand, A. Taboas. Radiological and Chemical Fact Sheets to Support Health Risk Analyses for Contaminated Areas, Prepared by Argonne National Laboratory Environmental Science Division in collaboration with U.S. Department of Energy, Richland Operations Office and Chicago Operations Office (2014), Feb. 22; http://www.remm.nlm.gov/ANL_ContaminantFactSheets_All_070418.pdf."
+/Record/Section/6/Section/0/Information/0/ExtendedReference/1/Citation,string,"[625]  I. W. Osborne-Lee, C. W. Alexander. Californium-252 A Remarkably Versatile Radioisotope, ORNL/TM-12706, Oak Ridge National Laboratory, Oak Ridge, TN (1995)."
+/Record/Section/6/Section/0/Information/0/ExtendedReference/2/Citation,string,"[626]  R. C. Martin, J. B. Knauer, P. A. Balo. Appl. Radiat. Isot.53, 785 (2000)."
+/Record/Section/6/Section/0/Information/0/ExtendedReference/3/Citation,string,"[627]  NIST. Prompt Gamma-Ray Activation Analysis, NIST (2015), Jan. 20. http://www.nist.gov/mml/csd/inorganic/pgaa.cfm."
+/Record/Section/6/Section/0/Information/0/ExtendedReference/4/Citation,string,"[628]  Los Alamos National Laboratory. Periodic Table of Elements: LANL-Californium, Los Alamos National Laboratory (2014), Feb. 25; http://periodic.lanl.gov/98.shtml."
+/Record/Section/6/Section/0/Information/0/ExtendedReference/5/Citation,string,"[629]  L. J. Bond, R. V. Harris, K. M. Denslow, T. L. Moran, J. W. Griffin, D. M. Sheen, G. E. Dale, T. Schenkel. Evaluation of Non-Nuclear Techniques for Well Logging: Technology Evaluation, PNNL-19867, Pacific Northwest National Laboratory (2010)."
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/String,string,"252Cf is a very active source of neutrons (2.3×106 neutrons per second per microgram) with a half-life of 2.65 years. The energy spectrum of the neutrons is very similar to that of a fission reactor and small amounts of 252Cf provide an ideal portable source for low neutron flux applications [75], [625], [626]. 252Cf is used for PGNAA (prompt gamma neutron activation analysis, a method for detecting many chemical elements in samples simultaneously) in the analysis of coal, cement, minerals, weapon components, and chemical munitions [627]. This method provides a quick and non-destructive elemental analysis of a sample. For example, 252Cf, as the neutron source for PGNAA, is used to detect the presence of antitank mines [625]."
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/1/Start,number,49
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/1/Length,number,1
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/2/Start,number,220
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/2/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/2/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/3/Start,number,313
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/3/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/3/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/4/Start,number,639
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/4/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/4/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/String,string,Neutron activation analysis (NAA) uses 252Cf as a portable neutron source to bombard a small sample from the area of interest with neutrons and analyze the radioactive emissions from that bombardment to help identify silver or gold ore [75]. 252Cf has been used in neutron moisture gauges to locate water [628]. 252Cf is used in borehole geophysical logging for subsurface PGNAA investigation of waste (Fig. IUPAC.98.1) [629].
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/Start,number,39
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/1/Start,number,242
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/1/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/2/Start,number,312
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/2/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/2/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/2/String,string,Formation fluid identification uses 252Cf as a chemical neutron source for elastic/inelastic neutron backscattering and/or neutron activation methods in well-logging to determine water- and oil-bearing layers and other downhole properties of the well bore [629].
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/2/Markup/0/Start,number,36
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/2/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/2/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/3/String,string,          
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/3/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/3/Markup/0/Length,number,1
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/3/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_133.jpg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/3/Markup/0/Type,string,Image
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/3/Markup/0/Size,string,1772x1625
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/3/Markup/0/Caption,string,"Fig. IUPAC.98.1: Simplified diagram of a well logging operation. The geoprobe (black and silver probe in the borehole/well) contains the ²⁵²Cf neutron source with supporting electronics, and it relays information about the physical properties of the surrounding rock to the control computer at the surface as the probe is lowered or raised. The example graphs next to the cross-section of the rock and borehole could indicate the presence of fluids, porosity, and/or type of rock (Photo Source: Frontier Technology Corporation). "
+/Record/Section/6/Section/1/TOCHeading,string,Isotopes in Medicine
+/Record/Section/6/Section/1/Description,string,Information on the use of this element's isotopes in medicine.
+/Record/Section/6/Section/1/Information/0/ReferenceNumber,number,4
+/Record/Section/6/Section/1/Information/0/Reference/0,string,"[75]  J. Peterson, M. McDonell, L. Haroun, F. Monette, R. D. Hildebrand, A. Taboas. Radiological and Chemical Fact Sheets to Support Health Risk Analyses for Contaminated Areas, Prepared by Argonne National Laboratory Environmental Science Division in collaboration with U.S. Department of Energy, Richland Operations Office and Chicago Operations Office (2014), Feb. 22; http://www.remm.nlm.gov/ANL_ContaminantFactSheets_All_070418.pdf."
+/Record/Section/6/Section/1/Information/0/Reference/1,string,"[625]  I. W. Osborne-Lee, C. W. Alexander. Californium-252 A Remarkably Versatile Radioisotope, ORNL/TM-12706, Oak Ridge National Laboratory, Oak Ridge, TN (1995)."
+/Record/Section/6/Section/1/Information/0/Reference/2,string,"[626]  R. C. Martin, J. B. Knauer, P. A. Balo. Appl. Radiat. Isot.53, 785 (2000)."
+/Record/Section/6/Section/1/Information/0/ExtendedReference/0/Citation,string,"[75]  J. Peterson, M. McDonell, L. Haroun, F. Monette, R. D. Hildebrand, A. Taboas. Radiological and Chemical Fact Sheets to Support Health Risk Analyses for Contaminated Areas, Prepared by Argonne National Laboratory Environmental Science Division in collaboration with U.S. Department of Energy, Richland Operations Office and Chicago Operations Office (2014), Feb. 22; http://www.remm.nlm.gov/ANL_ContaminantFactSheets_All_070418.pdf."
+/Record/Section/6/Section/1/Information/0/ExtendedReference/1/Citation,string,"[625]  I. W. Osborne-Lee, C. W. Alexander. Californium-252 A Remarkably Versatile Radioisotope, ORNL/TM-12706, Oak Ridge National Laboratory, Oak Ridge, TN (1995)."
+/Record/Section/6/Section/1/Information/0/ExtendedReference/2/Citation,string,"[626]  R. C. Martin, J. B. Knauer, P. A. Balo. Appl. Radiat. Isot.53, 785 (2000)."
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/0/String,string,"252Cf is sometimes used in boron neutron capture therapy (BNCT) as a source of neutrons that can be delivered close to the region of a tumor [75], [625], [626]. Brachytherapy can use 252Cf to treat many types of cancer [75], [625], [626]."
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/0/Markup/1/Start,number,183
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/0/Markup/1/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/0/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/2/TOCHeading,string,Isotope Mass and Abundance
+/Record/Section/6/Section/2/Description,string,Atomic mass and abundance (composition) information for a given isotope/nuclide. The number in the parenthesis refers to an uncertainty when exist. The unit of atomic weight is the unified atomic mass unit (u) or dalton (Da). 
+/Record/Section/6/Section/2/DisplayControls/CreateTable/FromInformationIn,string,ThisSection
+/Record/Section/6/Section/2/DisplayControls/CreateTable/NumberOfColumns,number,3
+/Record/Section/6/Section/2/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/0,string,Isotope
+/Record/Section/6/Section/2/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/1,string,Atomic Mass (uncertainty) [u]
+/Record/Section/6/Section/2/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/2,string,Abundance (uncertainty)
+/Record/Section/6/Section/2/DisplayControls/CreateTable/ColumnsFromNamedLists/UseNamesAsColumnHeadings,boolean,true
+/Record/Section/6/Section/2/Information/0/ReferenceNumber,number,7
+/Record/Section/6/Section/2/Information/0/Name,string,Isotope
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/0/String,string,249Cf
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,0
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/1/String,string,250Cf
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/1/Markup/0/Start,number,0
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/1/Markup/0/Length,number,3
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/1/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/2/String,string,251Cf
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/2/Markup/0/Start,number,0
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/2/Markup/0/Length,number,3
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/2/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/3/String,string,252Cf
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/3/Markup/0/Start,number,0
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/3/Markup/0/Length,number,3
+/Record/Section/6/Section/2/Information/0/Value/StringWithMarkup/3/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/2/Information/1/ReferenceNumber,number,7
+/Record/Section/6/Section/2/Information/1/Name,string,Atomic Mass (uncertainty) [u]
+/Record/Section/6/Section/2/Information/1/Value/StringWithMarkup/0/String,string,249.0748539(23)
+/Record/Section/6/Section/2/Information/1/Value/StringWithMarkup/1/String,string,250.0764062(22)
+/Record/Section/6/Section/2/Information/1/Value/StringWithMarkup/2/String,string,251.0795886(48)
+/Record/Section/6/Section/2/Information/1/Value/StringWithMarkup/3/String,string,252.0816272(56)
+/Record/Section/6/Section/2/Information/2/ReferenceNumber,number,7
+/Record/Section/6/Section/2/Information/2/Name,string,Abundance (uncertainty)
+/Record/Section/6/Section/2/Information/2/Value/StringWithMarkup/0/String,string,
+/Record/Section/6/Section/2/Information/2/Value/StringWithMarkup/1/String,string,
+/Record/Section/6/Section/2/Information/2/Value/StringWithMarkup/2/String,string,
+/Record/Section/6/Section/2/Information/2/Value/StringWithMarkup/3/String,string,
+/Record/Section/6/Section/3/TOCHeading,string,"Atomic Mass, Half Life, and Decay"
+/Record/Section/6/Section/3/Description,string,"Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists."
+/Record/Section/6/Section/3/URL,string,https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/
+/Record/Section/6/Section/3/DisplayControls/CreateTable/FromInformationIn,string,ThisSection
+/Record/Section/6/Section/3/DisplayControls/CreateTable/NumberOfColumns,number,5
+/Record/Section/6/Section/3/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/0,string,Nuclide
+/Record/Section/6/Section/3/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/1,string,Atomic Mass and Uncertainty [u]
+/Record/Section/6/Section/3/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/2,string,Half Life and Uncertainty
+/Record/Section/6/Section/3/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/3,string,Discovery Year
+/Record/Section/6/Section/3/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/4,string,"Decay Modes, Intensities and Uncertainties [%]"
+/Record/Section/6/Section/3/DisplayControls/CreateTable/ColumnsFromNamedLists/UseNamesAsColumnHeadings,boolean,true
+/Record/Section/6/Section/3/Information/0/ReferenceNumber,number,2
+/Record/Section/6/Section/3/Information/0/Name,string,Nuclide
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/0/String,string,237Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/1/String,string,238Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/2/String,string,239Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/2/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/2/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/2/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/3/String,string,240Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/3/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/3/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/3/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/4/String,string,241Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/4/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/4/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/4/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/5/String,string,241Cfp
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/5/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/5/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/5/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/5/Markup/1/Start,number,5
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/5/Markup/1/Length,number,1
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/5/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/6/String,string,242Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/6/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/6/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/6/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/7/String,string,243Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/7/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/7/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/7/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/8/String,string,244Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/8/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/8/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/8/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/9/String,string,245Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/9/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/9/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/9/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/10/String,string,245Cfp
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/10/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/10/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/10/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/10/Markup/1/Start,number,5
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/10/Markup/1/Length,number,1
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/10/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/11/String,string,246Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/11/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/11/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/11/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/12/String,string,247Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/12/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/12/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/12/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/13/String,string,248Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/13/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/13/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/13/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/14/String,string,249Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/14/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/14/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/14/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/15/String,string,249Cfm
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/15/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/15/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/15/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/15/Markup/1/Start,number,5
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/15/Markup/1/Length,number,1
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/15/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/16/String,string,250Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/16/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/16/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/16/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/17/String,string,251Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/17/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/17/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/17/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/18/String,string,251Cfm
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/18/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/18/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/18/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/18/Markup/1/Start,number,5
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/18/Markup/1/Length,number,1
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/18/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/19/String,string,252Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/19/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/19/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/19/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/20/String,string,253Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/20/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/20/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/20/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/21/String,string,254Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/21/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/21/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/21/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/22/String,string,255Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/22/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/22/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/22/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/23/String,string,256Cf
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/23/Markup/0/Start,number,0
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/23/Markup/0/Length,number,3
+/Record/Section/6/Section/3/Information/0/Value/StringWithMarkup/23/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/1/ReferenceNumber,number,2
+/Record/Section/6/Section/3/Information/1/Name,string,Atomic Mass and Uncertainty [u]
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/0/String,string,237.062199272 ± 0.000104506
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/1/String,string,238.061490 ± 0.00032 [Estimated]
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/2/String,string,239.062482 ± 0.000129 [Estimated]
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/3/String,string,240.062253447 ± 0.00001936
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/4/String,string,241.063690 ± 0.00018 [Estimated]
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/5/String,string,241.063690 ± 0.00018 [Estimated]
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/6/String,string,242.063754544 ± 0.00001384
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/7/String,string,243.065475 ± 0.000194 [Estimated]
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/8/String,string,244.065999447 ± 0.000002809
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/9/String,string,245.068046755 ± 0.000002606
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/10/String,string,245.068046755 ± 0.000002606
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/11/String,string,246.068803685 ± 0.000001625
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/12/String,string,247.070971348 ± 0.00001538
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/13/String,string,248.072182905 ± 0.000005497
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/14/String,string,249.074850428 ± 0.000001269
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/15/String,string,249.074850428 ± 0.000001269
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/16/String,string,250.076404494 ± 0.00000165
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/17/String,string,251.079587171 ± 0.000004187
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/18/String,string,251.079587171 ± 0.000004187
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/19/String,string,252.081626507 ± 0.000002531
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/20/String,string,253.085133723 ± 0.00000457
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/21/String,string,254.087323575 ± 0.000012304
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/22/String,string,255.091046 ± 0.000215 [Estimated]
+/Record/Section/6/Section/3/Information/1/Value/StringWithMarkup/23/String,string,256.093442 ± 0.000338 [Estimated]
+/Record/Section/6/Section/3/Information/2/ReferenceNumber,number,2
+/Record/Section/6/Section/3/Information/2/Name,string,Half Life and Uncertainty
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/0/String,string,0.8 s ± 0.2
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/1/String,string,21.1 ms ± 1.3
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/2/String,string,28 s ± 2
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/3/String,string,40.3 s ± 0.9
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/4/String,string,2.35 m ± 0.18
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/5/String,string,Not-specified
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/6/String,string,3.49 m ± 0.15
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/7/String,string,10.8 m ± 0.3
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/8/String,string,19.5 m ± 0.5
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/9/String,string,45.0 m ± 1.5
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/10/String,string,>100 ns [Estimated]
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/11/String,string,35.7 h ± 0.5
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/12/String,string,3.11 h ± 0.03
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/13/String,string,333.5 d ± 2.8
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/14/String,string,351 y ± 2
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/15/String,string,45 us ± 5
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/16/String,string,13.08 y ± 0.09
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/17/String,string,898 y ± 44
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/18/String,string,1.3 us ± 0.1
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/19/String,string,2.645 y ± 0.008
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/20/String,string,17.81 d ± 0.08
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/21/String,string,60.5 d ± 0.2
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/22/String,string,85 m ± 18
+/Record/Section/6/Section/3/Information/2/Value/StringWithMarkup/23/String,string,12.3 m ± 1.2
+/Record/Section/6/Section/3/Information/3/ReferenceNumber,number,2
+/Record/Section/6/Section/3/Information/3/Name,string,Discovery Year
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/0/String,string,1995
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/1/String,string,1995
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/2/String,string,1981
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/3/String,string,1970
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/4/String,string,1970
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/5/String,string,
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/6/String,string,1967
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/7/String,string,1967
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/8/String,string,1956
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/9/String,string,1956
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/10/String,string,2004
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/11/String,string,1951
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/12/String,string,1954
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/13/String,string,1954
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/14/String,string,1954
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/15/String,string,1967
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/16/String,string,1954
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/17/String,string,1954
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/18/String,string,1971
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/19/String,string,1954
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/20/String,string,1954
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/21/String,string,1955
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/22/String,string,1981
+/Record/Section/6/Section/3/Information/3/Value/StringWithMarkup/23/String,string,1980
+/Record/Section/6/Section/3/Information/4/ReferenceNumber,number,2
+/Record/Section/6/Section/3/Information/4/Name,string,"Decay Modes, Intensities and Uncertainties [%]"
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/0/String,string,α=70±1%; SF=30±1%; β+ ?
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/0/Markup/0/Start,number,20
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/0/Markup/0/Length,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/1/String,string,SF=97.5±1.4%; α=2.5±1.4%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/2/String,string,α=65±0.3%; β+ ?
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/2/Markup/0/Start,number,12
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/2/Markup/0/Length,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/2/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/3/String,string,α=98.5±0.2%; SF=1.5±0.2%; β+ ?
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/3/Markup/0/Start,number,27
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/3/Markup/0/Length,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/3/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/4/String,string,β+ ?; α=15±0.1%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/4/Markup/0/Start,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/4/Markup/0/Length,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/4/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/5/String,string,
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/6/String,string,α=61±0.3%; β+=39±0.3%; SF<0.014%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/6/Markup/0/Start,number,12
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/6/Markup/0/Length,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/6/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/7/String,string,β+≈86±0.3%; α≈14±0.3%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/7/Markup/0/Start,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/7/Markup/0/Length,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/7/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/8/String,string,α=75±0.6%; ε=25±0.6%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/9/String,string,β+=64.7±2.5%; α=35.3±2.5%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/9/Markup/0/Start,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/9/Markup/0/Length,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/9/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/10/String,string,IT=100%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/11/String,string,α=100%; SF=2.4e-4±0.4%; ε ?
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/12/String,string,ε=99.965±0.5%; α=0.035±0.5%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/13/String,string,α≈100%; SF=0.0029±0.3%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/14/String,string,α=100%; SF=5.0e-7±0.4%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/15/String,string,IT=100%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/16/String,string,α=99.923±0.3%; SF=0.077±0.3%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/17/String,string,α≈100%; SF ?
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/18/String,string,IT=100%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/19/String,string,α=96.8972±2.7%; SF=3.1028±2.7%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/20/String,string,β-=99.69±0.4%; α=0.31±0.4%
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/20/Markup/0/Start,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/20/Markup/0/Length,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/20/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/21/String,string,SF=99.69±0.2%; α=0.31±0.2%; 2β- ?
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/21/Markup/0/Start,number,30
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/21/Markup/0/Length,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/21/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/22/String,string,β-=100%; SF ?; α ?
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/22/Markup/0/Start,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/22/Markup/0/Length,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/22/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/23/String,string,SF=100%; α ?; 2β- ?
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/23/Markup/0/Start,number,16
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/23/Markup/0/Length,number,1
+/Record/Section/6/Section/3/Information/4/Value/StringWithMarkup/23/Markup/0/Type,string,Superscript
+/Record/Reference/0/ReferenceNumber,number,1
+/Record/Reference/0/SourceName,string,PubChem
+/Record/Reference/0/SourceID,string,PubChem
+/Record/Reference/0/Description,string,Data deposited in or computed by PubChem
+/Record/Reference/0/URL,string,https://pubchem.ncbi.nlm.nih.gov
+/Record/Reference/1/ReferenceNumber,number,2
+/Record/Reference/1/SourceName,string,"Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)"
+/Record/Reference/1/SourceID,string,e98
+/Record/Reference/1/Name,string,Cf
+/Record/Reference/1/Description,string,The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.
+/Record/Reference/1/URL,string,https://www-nds.iaea.org/amdc/
+/Record/Reference/1/LicenseURL,string,https://www-nds.iaea.org/disclaimer.html
+/Record/Reference/1/ANID,number,6590325
+/Record/Reference/2/ReferenceNumber,number,3
+/Record/Reference/2/SourceName,string,IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)
+/Record/Reference/2/SourceID,string,a98
+/Record/Reference/2/Name,string,Californium
+/Record/Reference/2/Description,string,Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.
+/Record/Reference/2/URL,string,https://www.ciaaw.org/
+/Record/Reference/2/LicenseURL,string,http://www.ciaaw.org/bylaws.htm
+/Record/Reference/2/ANID,number,2292479
+/Record/Reference/3/ReferenceNumber,number,4
+/Record/Reference/3/SourceName,string,IUPAC Periodic Table of the Elements and Isotopes (IPTEI)
+/Record/Reference/3/SourceID,string,p98
+/Record/Reference/3/Description,string,"The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703."
+/Record/Reference/3/URL,string,https://doi.org/10.1515/pac-2015-0703
+/Record/Reference/3/LicenseNote,string,"Copyright (c) 2020 International Union of Pure and Applied Chemistry.
+
+The International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated."
+/Record/Reference/3/LicenseURL,string,https://creativecommons.org/licenses/by-nc-nd/4.0/
+/Record/Reference/3/ANID,number,13296503
+/Record/Reference/4/ReferenceNumber,number,6
+/Record/Reference/4/SourceName,string,"Los Alamos National Laboratory, U.S. Department of Energy"
+/Record/Reference/4/SourceID,string,lanl98
+/Record/Reference/4/Name,string,Californium
+/Record/Reference/4/Description,string,"The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name."
+/Record/Reference/4/URL,string,https://periodic.lanl.gov/98.shtml
+/Record/Reference/4/ANID,number,507278
+/Record/Reference/5/ReferenceNumber,number,5
+/Record/Reference/5/SourceName,string,"Jefferson Lab, U.S. Department of Energy"
+/Record/Reference/5/SourceID,string,jlab98
+/Record/Reference/5/Name,string,Californium
+/Record/Reference/5/Description,string,"Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/"
+/Record/Reference/5/URL,string,https://education.jlab.org/itselemental/ele098.html
+/Record/Reference/5/LicenseNote,string,Please see citation and linking information: https://education.jlab.org/faq/index.html
+/Record/Reference/5/LicenseURL,string,https://www.jlab.org/privacy-and-security-notice
+/Record/Reference/5/ANID,number,507160
+/Record/Reference/6/ReferenceNumber,number,7
+/Record/Reference/6/SourceName,string,NIST Physical Measurement Laboratory
+/Record/Reference/6/SourceID,string,e98
+/Record/Reference/6/Name,string,Californium
+/Record/Reference/6/Description,string,"The periodic table contains NIST's critically-evaluated data on atomic properties of the elements. The provenance data that include data for atomic spectroscopy, X-ray and gamma ray, radiation dosimetry, nuclear physics, and condensed matter physics may be found from the link under the source name. Ref: https://www.nist.gov/pml/atomic-spectra-database"
+/Record/Reference/6/URL,string,https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=98
+/Record/Reference/6/LicenseURL,string,https://www.nist.gov/pml/database-disclaimer
+/Record/Reference/6/ANID,number,2292715
+/Record/Reference/7/ReferenceNumber,number,8
+/Record/Reference/7/SourceName,string,PubChem Elements
+/Record/Reference/7/SourceID,string,ef_98
+/Record/Reference/7/Name,string,Californium
+/Record/Reference/7/Description,string,This section provides all form of data related to element Californium.
+/Record/Reference/7/LicenseURL,string,https://www.nlm.nih.gov/copyright.html
+/Record/Reference/7/ANID,number,24834026
+/Record/Reference/8/ReferenceNumber,number,9
+/Record/Reference/8/SourceName,string,PubChem Elements
+/Record/Reference/8/SourceID,string,ep_98
+/Record/Reference/8/Name,string,Californium
+/Record/Reference/8/Description,string,The element property data was retrieved from publications.
+/Record/Reference/8/LicenseURL,string,https://www.nlm.nih.gov/copyright.html
+/Record/Reference/8/ANID,number,24834232
