@@ -1,33 +1,62 @@
 # Code Audit / بررسی خط‌به‌خط کد
 
-> **تاریخ بررسی:** 2026-09-27  
+> **تاریخ بررسی اولیه:** 2026-09-27  
+> **تاریخ اصلاح و بازبینی مجدد:** 2026-09-27  
 > **Branch:** `main`  
 > **دامنه بررسی:** ساختار repository، `README.md`، HTML، JavaScript، CSS، CSVهای runtime و GitHub Actions.  
-> **نتیجه کلی:** چند مورد نیازمند اصلاح و چند بخش تکراری/بلااستفاده شناسایی شد. در این مرحله فقط همین جدول به README اضافه شده و کد اجرایی دستکاری نشده است.
+> **وضعیت:** ایرادهای اجرایی و CI شناسایی‌شده در audit اولیه اصلاح شدند و سپس repository دوباره بررسی شد.
 
-| # | فایل / خط | نوع | ایراد / کد اضافه / مورد نیازمند اصلاح | شدت | پیشنهاد اصلاح |
-|---|---|---|---|---|---|
-| 1 | `assets/js/main.js:60` | کد اضافه / رفتار ناخواسته | عنصر `periodicSubtitle` مستقیماً از DOM حذف می‌شود، در حالی که در `index.html` وجود دارد و `data-i18n` دارد. این کار باعث می‌شود متن توضیحی بخش جدول عملاً حذف شود و ترجمه‌پذیری آن بی‌اثر شود. | **زیاد** | این خط حذف شود؛ اگر subtitle واقعاً لازم نیست، خود عنصر HTML نیز به‌صورت آگاهانه حذف و README هم هماهنگ شود. |
-| 2 | `assets/js/main.js:4-6` + `assets/js/main-legacy.js` | معماری / تکرار | `main.js`، فایل `main-legacy.js` را به‌صورت پویا inject می‌کند و هم‌زمان منطق theme و initialization جدید را نیز اجرا می‌کند. در نتیجه دو entry-point و دو مسیر initialization وجود دارد. | **متوسط** | یک entry-point مشخص نگه داشته شود و منطق legacy به توابع مشترک/ماژول داخلی منتقل شود. |
-| 3 | `assets/js/main.js:10-22` و `assets/js/main-legacy.js:18-22` | کد تکراری | فهرست ۱۵ theme در دو محل مستقل (`themes` و `pdfThemes`) نگهداری می‌شود. | **متوسط** | یک منبع واحد برای تعریف themeها استفاده شود تا تغییر نام/ID باعث ناسازگاری نشود. |
-| 4 | `assets/js/main.js:62-69` | کد پیچیده / observer اضافه | دو مسیر برای همگام‌سازی selector وجود دارد: `MutationObserver` روی خود selector و observer جداگانه روی `documentElement.lang`. بخش زیادی از این synchronization ناشی از تکرار منطق theme است. | **متوسط** | synchronization به یک مسیر مشخص و event-driven محدود شود؛ observer مربوط به تغییرات غیرضروری selector حذف شود. |
-| 5 | `assets/js/main-legacy.js:18-50` | کد تکراری / state management | `pdfThemes` و `populateThemeSelect()` علاوه بر منطق جدید `main.js` هنوز فعال هستند و `localStorage` مربوط به theme را نیز مدیریت می‌کنند. | **متوسط** | مدیریت theme از legacy حذف و فقط در یک لایه نگهداری شود. |
-| 6 | `assets/js/main-legacy.js:37-42` | migration مشکوک | migration نسخه `chemistry-pdf-theme-version` در صورت نبود نسخه، مقدارهای `14` و `15` را جابه‌جا می‌کند؛ سپس `main.js` بلافاصله theme `15` را به‌عنوان default تحمیل می‌کند. این دو منطق یکدیگر را بی‌دلیل خنثی می‌کنند. | **متوسط** | migration فقط برای نسخه‌های واقعاً قدیمی نگه داشته شود؛ در غیر این صورت حذف شود. default نیز فقط یک‌بار و در یک محل تعیین شود. |
-| 7 | `assets/js/main-legacy.js:180-198` | نیازمند اصلاح robustness | `parseCsv()` parser دستی و حداقلی است؛ BOM، عدم تطابق تعداد ستون‌ها و برخی CSV edge-caseها اعتبارسنجی نمی‌شوند. | **متوسط** | حداقل BOM header حذف، تعداد ستون‌ها validate و خطاهای malformed row مدیریت شوند؛ در صورت امکان parser استاندارد/سبک استفاده شود. |
-| 8 | `assets/js/main-legacy.js:440-458` | نیازمند اصلاح | `normalizeDetailRow()` در fallbackها از `||` استفاده می‌کند. در صورت وجود مقدار معتبر ولی falsy مثل `0`، fallback اشتباه فعال می‌شود. | **کم** | برای fallback داده‌ها از `??` استفاده شود. |
-| 9 | `.github/workflows/npm-publish-github-packages.yml` | کد/فایل اضافه | workflow انتشار npm با معماری اعلام‌شده پروژه سازگار نیست؛ README صراحتاً پروژه را بدون `package.json` و build system معرفی می‌کند. آخرین اجرای این workflow در GitHub Actions نیز `failure` بوده است. | **زیاد** | اگر package publishing واقعاً مورد نیاز نیست، workflow حذف شود. در غیر این صورت باید `package.json` و فرایند انتشار واقعی به پروژه اضافه و README اصلاح شود. |
-| 10 | `.github/workflows/webpack.yml` | تست ناقص | workflow با عنوان validation فقط `node --check assets/js/main.js` را اجرا می‌کند، در حالی که `main-legacy.js` نیز بخش اصلی runtime است و README بررسی syntax هر دو فایل را توصیه می‌کند. | **متوسط** | `node --check assets/js/main-legacy.js` نیز به CI اضافه شود و smoke test دست‌کم وجود/دسترسی هر دو فایل و CSVهای runtime را بررسی کند. |
-| 11 | `assets/css/main.css` | CSS اضافه | selector `.level-card` در responsive CSS وجود دارد، اما در HTML فعلی کلاس `.level-card` استفاده نشده و کلاس واقعی `.detail-level-card` است. | **کم** | selector بلااستفاده حذف یا با کلاس واقعی هماهنگ شود. |
-| 12 | `assets/css/main.css` | CSS تکراری/بلااستفاده | selectorهای `.section-number` و `.level-icon` در ساختار HTML فعلی مصرف مشخصی ندارند؛ همچنین قوانین `.professional .level-icon` و `.advanced .level-icon` دوباره تکرار شده‌اند. | **کم** | پس از یک جستجوی نهایی در DOM، CSSهای بدون مصرف حذف و قوانین تکراری merge شوند. |
-| 13 | `assets/js/main-legacy.js` | کد/داده اضافه | چند translation key مانند `quickInfoAria`، `elementsCount`، `levelsCount` و `dataFormat` در مسیر فعلی rendering مصرف مشخصی ندارند. | **کم** | کلیدهای واقعاً بدون مصرف پس از audit نهایی DOM حذف شوند تا فایل translation کوچک‌تر و قابل نگهداری‌تر شود. |
+| # | فایل / خط | نوع | نتیجه بازبینی و اصلاح | وضعیت |
+|---|---|---|---|---|
+| 1 | `assets/js/main.js` | رفتار ناخواسته | حذف مستقیم `periodicSubtitle` از DOM برداشته شد؛ عنصر HTML و `data-i18n` آن اکنون حفظ می‌شوند. | **اصلاح شد** |
+| 2 | `assets/js/main.js` + `assets/js/main-legacy.js` | معماری / initialization | مالکیت‌ها تفکیک شد: `main.js` فقط bootstrap و مدیریت selector/theme را انجام می‌دهد و `main-legacy.js` منطق runtime، زبان، داده و rendering را نگه می‌دارد. مسیرهای initialization تکراری theme حذف شدند. | **اصلاح شد** |
+| 3 | `assets/js/main.js` + `assets/js/main-legacy.js` | کد تکراری | تعریف ۱۵ theme فقط در `main.js` باقی ماند؛ `pdfThemes` از legacy حذف شد. | **اصلاح شد** |
+| 4 | `assets/js/main.js` | observer اضافه | `MutationObserver` روی خود selector حذف شد. فقط synchronization لازم با تغییر `documentElement.lang` باقی مانده است. | **اصلاح شد** |
+| 5 | `assets/js/main-legacy.js` | state management تکراری | `populateThemeSelect()` و state مربوط به ساخت گزینه‌های theme از legacy حذف شد. legacy فقط اعمال theme انتخاب‌شده را انجام می‌دهد. | **اصلاح شد** |
+| 6 | `assets/js/main-legacy.js` | migration مشکوک | migration جابه‌جاکنندهٔ themeهای `14` و `15` حذف شد. مقدار پیش‌فرض و ساخت selector اکنون فقط از مسیر `main.js` کنترل می‌شود. | **اصلاح شد** |
+| 7 | `assets/js/main-legacy.js` | robustness | `parseCsv()` اکنون BOM را حذف می‌کند، header را اعتبارسنجی می‌کند، quote بازمانده را خطا می‌داند و ردیف‌های دارای تعداد ستون نامعتبر را نادیده می‌گیرد و گزارش می‌کند. CI نیز header و طول ردیف‌های سه CSV runtime را بررسی می‌کند. | **اصلاح شد** |
+| 8 | `assets/js/main-legacy.js` | fallback داده | fallbackهای `normalizeDetailRow()` از `||` به `??` تغییر کردند تا مقدارهای معتبر ولی falsy مانند `0` از بین نروند. | **اصلاح شد** |
+| 9 | `.github/workflows/npm-publish-github-packages.yml` | workflow اضافه | workflow انتشار npm حذف شد؛ repository فاقد `package.json` و npm package است و این workflow با معماری static site هم‌راستا نبود. | **اصلاح شد** |
+| 10 | `.github/workflows/webpack.yml` | validation ناقص | syntax هر دو فایل JavaScript بررسی می‌شود؛ وجود فایل‌های runtime و دسترسی HTTP به هر دو JS و سه CSV نیز به smoke test اضافه شد. اعتبارسنجی ساختار CSVها هم اضافه شد. | **اصلاح شد** |
+| 11 | `assets/css/main.css` | CSS اضافه | selector بلااستفاده `.level-card` حذف شد؛ responsive CSS اکنون فقط ساختار واقعی `.detail-level-card` را هدف می‌گیرد. | **اصلاح شد** |
+| 12 | `assets/css/main.css` | CSS تکراری/بلااستفاده | `.section-number` و قوانین بلااستفاده `.level-icon` حذف شدند و قوانین تکراری theme مربوط به level icon نیز حذف شد. | **اصلاح شد** |
+| 13 | `assets/js/main-legacy.js` | translation schema | کلیدهای `quickInfoAria`، `elementsCount`، `levelsCount` و `dataFormat` در DOM/runtime فعلی مصرف نمی‌شوند. این مورد پس از بازبینی به‌عنوان **دادهٔ ترجمهٔ بدون اثر اجرایی** طبقه‌بندی شد و حذف آن برای رفع باگ لازم نیست؛ بنابراین به‌عنوان cleanup اختیاری باقی می‌ماند. | **بازبینی شد / بدون باگ** |
 
-### وضعیت اعتبارسنجی فعلی
+## گزارش تغییرات
 
-- ساختار repository بررسی شد و پروژه یک **static client-side web app** بدون Backend، Database، `package.json` و build system است.
-- runtime اصلی شامل `index.html`، `assets/css/main.css`، `assets/js/main.js`، `assets/js/main-legacy.js` و سه CSV اصلی است.
-- CSV پایه دارای داده‌های ۱۱۸ عنصر است و فایل‌های advanced و very advanced نیز تا عنصر ۱۱۸ ادامه دارند.
-- آخرین اجرای workflow `Static site validation` در commit فعلی موفق بوده است؛ در مقابل workflow مربوط به npm publishing در همان commit ناموفق بوده و با معماری فعلی پروژه هم‌راستا نیست.
-- این audit در این commit فقط مستندسازی شده و **هیچ‌یک از موارد بالا به‌صورت خودکار در کد اصلاح نشده‌اند** تا معماری فعلی بدون درخواست مستقیم برای refactor تغییر نکند.
+### JavaScript
+
+- `main.js` اکنون تنها منبع تعریف themeها و ساخت selector است.
+- حذف ناخواستهٔ `periodicSubtitle` متوقف شد.
+- observer اضافی selector حذف شد.
+- `main-legacy.js` دیگر selector را populate نمی‌کند و migration قدیمی theme را اجرا نمی‌کند.
+- اعمال CSS theme و ذخیرهٔ انتخاب کاربر همچنان در legacy انجام می‌شود تا رفتار runtime فعلی حفظ شود.
+- parser CSV مقاوم‌تر شد و malformed rowها دیگر silently به object ناقص تبدیل نمی‌شوند.
+- fallbackهای داده با nullish coalescing اصلاح شدند.
+
+### CSS
+
+- selectorهای بدون مصرف واقعی از DOM حذف شدند.
+- قوانین تکراری مربوط به `.level-icon` حذف شدند.
+- responsive rule مربوط به `.level-card` که با DOM فعلی همخوانی نداشت حذف شد.
+
+### GitHub Actions
+
+- workflow قدیمی npm publishing حذف شد.
+- workflow `Static site validation` حفظ شد و تقویت شد.
+- syntax هر دو JavaScript با `node --check` بررسی می‌شود.
+- وجود `main-legacy.js` و دسترسی HTTP به آن بررسی می‌شود.
+- هر سه CSV runtime از نظر header و تعداد ستون‌های هر ردیف validate می‌شوند.
+- smoke test دسترسی به HTML، JavaScript و CSVهای runtime را بررسی می‌کند.
+
+## وضعیت اعتبارسنجی نهایی
+
+- repository روی branch `main` دوباره بررسی شد.
+- workflow npm publishing دیگر در tree پروژه وجود ندارد.
+- ساختار runtime همچنان static client-side است و Backend، Database، `package.json` یا build system به آن اضافه نشده است.
+- سه منبع اصلی CSV و مسیرهای runtime حفظ شده‌اند.
+- آخرین commit repository پس از اصلاحات شامل `README.md`، `main.js`، `main-legacy.js`، `main.css` و workflow validation به‌روزشده است.
+- اجرای مستقیم GitHub Actions برای commit نهایی از طریق اتصال فعلی در لحظهٔ بازبینی هنوز run قابل مشاهده‌ای برنگرداند؛ بنابراین وضعیت CI نهایی را **تأییدشده توسط ساختار workflow، اما فاقد run قابل مشاهده در connector** ثبت می‌کنیم و ادعای موفقیت اجرای remote CI نمی‌کنیم.
 
 ---
 
@@ -50,8 +79,8 @@ Browser
 
 - `index.html` ساختار رابط را فراهم می‌کند.
 - `assets/css/main.css` ظاهر، responsive design و themeهای جدول را مدیریت می‌کند.
-- `assets/js/main.js` نقطهٔ ورود JavaScript است و تنظیمات جدید selector theme را روی منطق موجود اعمال می‌کند.
-- `assets/js/main-legacy.js` منطق اصلی قبلی پروژه را حفظ می‌کند: زبان، بارگذاری CSV، ساخت جدول و نمایش اطلاعات عناصر.
+- `assets/js/main.js` نقطهٔ ورود JavaScript است و تنظیمات selector theme را مدیریت می‌کند.
+- `assets/js/main-legacy.js` منطق runtime پروژه را نگه می‌دارد: زبان، بارگذاری CSV، ساخت جدول و نمایش اطلاعات عناصر و اعمال theme انتخاب‌شده.
 - داده‌ها مستقیماً از CSVها با `fetch()` بارگذاری می‌شوند.
 
 ## داده‌ها
@@ -170,6 +199,8 @@ data/ELEMENTS_118_ADVANCED.csv
 data/ELEMENTS_118_VERY_ADVANCED.csv
 ```
 
+برای اعتبارسنجی کامل‌تر همان checks در `.github/workflows/webpack.yml` اجرا می‌شوند.
+
 ## قراردادهای مهم
 
 - `AtomicNumber` شناسهٔ اصلی عنصر است.
@@ -192,3 +223,5 @@ data/ELEMENTS_118_VERY_ADVANCED.csv
 - عنوان کنترل selector اکنون گروه‌های مفهومی دسته‌بندی‌ها را نیز توضیح می‌دهد.
 - یک selector واحد حفظ شده و منوی چندگانه‌ای به سایت اضافه نشده است.
 - شناسه‌های theme و رنگ‌بندی CSS موجود حفظ شده‌اند.
+- مدیریت selector و theme از منطق runtime legacy جدا شده تا یک منبع واحد برای تعریف themeها وجود داشته باشد.
+- validation مربوط به JavaScript و CSVها در CI تقویت شده است.
