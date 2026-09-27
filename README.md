@@ -1,72 +1,13 @@
-# Code Audit / بررسی خط‌به‌خط کد
+# Chemistry Reference — Code Audit & Project Documentation
 
-> **تاریخ بررسی اولیه:** 2026-09-27  
-> **تاریخ اصلاح و بازبینی مجدد:** 2026-09-27  
+> **تاریخ بازبینی:** 2026-09-27  
 > **Branch:** `main`  
-> **دامنه بررسی:** ساختار repository، `README.md`، HTML، JavaScript، CSS، CSVهای runtime و GitHub Actions.  
-> **وضعیت:** ایرادهای اجرایی و CI شناسایی‌شده در audit اولیه اصلاح شدند و سپس repository دوباره بررسی شد.
+> **آخرین commit بررسی‌شده:** `e4067bc297f6791945acfeb3a99981a938874bd7`  
+> **وضعیت:** repository، READMEها، HTML، JavaScript، CSS، CSVهای runtime و GitHub Actions بررسی شدند و مستندات با وضعیت واقعی کد همگام شده‌اند.
 
-| # | فایل / خط | نوع | نتیجه بازبینی و اصلاح | وضعیت |
-|---|---|---|---|---|
-| 1 | `assets/js/main.js` | رفتار ناخواسته | حذف مستقیم `periodicSubtitle` از DOM برداشته شد؛ عنصر HTML و `data-i18n` آن اکنون حفظ می‌شوند. | **اصلاح شد** |
-| 2 | `assets/js/main.js` + `assets/js/main-legacy.js` | معماری / initialization | مالکیت‌ها تفکیک شد: `main.js` فقط bootstrap و مدیریت selector/theme را انجام می‌دهد و `main-legacy.js` منطق runtime، زبان، داده و rendering را نگه می‌دارد. مسیرهای initialization تکراری theme حذف شدند. | **اصلاح شد** |
-| 3 | `assets/js/main.js` + `assets/js/main-legacy.js` | کد تکراری | تعریف ۱۵ theme فقط در `main.js` باقی ماند؛ `pdfThemes` از legacy حذف شد. | **اصلاح شد** |
-| 4 | `assets/js/main.js` | observer اضافه | `MutationObserver` روی خود selector حذف شد. فقط synchronization لازم با تغییر `documentElement.lang` باقی مانده است. | **اصلاح شد** |
-| 5 | `assets/js/main-legacy.js` | state management تکراری | `populateThemeSelect()` و state مربوط به ساخت گزینه‌های theme از legacy حذف شد. legacy فقط اعمال theme انتخاب‌شده را انجام می‌دهد. | **اصلاح شد** |
-| 6 | `assets/js/main-legacy.js` | migration مشکوک | migration جابه‌جاکنندهٔ themeهای `14` و `15` حذف شد. مقدار پیش‌فرض و ساخت selector اکنون فقط از مسیر `main.js` کنترل می‌شود. | **اصلاح شد** |
-| 7 | `assets/js/main-legacy.js` | robustness | `parseCsv()` اکنون BOM را حذف می‌کند، header را اعتبارسنجی می‌کند، quote بازمانده را خطا می‌داند و ردیف‌های دارای تعداد ستون نامعتبر را نادیده می‌گیرد و گزارش می‌کند. CI نیز header و طول ردیف‌های سه CSV runtime را بررسی می‌کند. | **اصلاح شد** |
-| 8 | `assets/js/main-legacy.js` | fallback داده | fallbackهای `normalizeDetailRow()` از `||` به `??` تغییر کردند تا مقدارهای معتبر ولی falsy مانند `0` از بین نروند. | **اصلاح شد** |
-| 9 | `.github/workflows/npm-publish-github-packages.yml` | workflow اضافه | workflow انتشار npm حذف شد؛ repository فاقد `package.json` و npm package است و این workflow با معماری static site هم‌راستا نبود. | **اصلاح شد** |
-| 10 | `.github/workflows/webpack.yml` | validation ناقص | syntax هر دو فایل JavaScript بررسی می‌شود؛ وجود فایل‌های runtime و دسترسی HTTP به هر دو JS و سه CSV نیز به smoke test اضافه شد. اعتبارسنجی ساختار CSVها هم اضافه شد. | **اصلاح شد** |
-| 11 | `assets/css/main.css` | CSS اضافه | selector بلااستفاده `.level-card` حذف شد؛ responsive CSS اکنون فقط ساختار واقعی `.detail-level-card` را هدف می‌گیرد. | **اصلاح شد** |
-| 12 | `assets/css/main.css` | CSS تکراری/بلااستفاده | `.section-number` و قوانین بلااستفاده `.level-icon` حذف شدند و قوانین تکراری theme مربوط به level icon نیز حذف شد. | **اصلاح شد** |
-| 13 | `assets/js/main-legacy.js` | translation schema | کلیدهای `quickInfoAria`، `elementsCount`، `levelsCount` و `dataFormat` در DOM/runtime فعلی مصرف نمی‌شوند. این مورد پس از بازبینی به‌عنوان **دادهٔ ترجمهٔ بدون اثر اجرایی** طبقه‌بندی شد و حذف آن برای رفع باگ لازم نیست؛ بنابراین به‌عنوان cleanup اختیاری باقی می‌ماند. | **بازبینی شد / بدون باگ** |
+## خلاصهٔ معماری
 
-## گزارش تغییرات
-
-### JavaScript
-
-- `main.js` اکنون تنها منبع تعریف themeها و ساخت selector است.
-- حذف ناخواستهٔ `periodicSubtitle` متوقف شد.
-- observer اضافی selector حذف شد.
-- `main-legacy.js` دیگر selector را populate نمی‌کند و migration قدیمی theme را اجرا نمی‌کند.
-- اعمال CSS theme و ذخیرهٔ انتخاب کاربر همچنان در legacy انجام می‌شود تا رفتار runtime فعلی حفظ شود.
-- parser CSV مقاوم‌تر شد و malformed rowها دیگر silently به object ناقص تبدیل نمی‌شوند.
-- fallbackهای داده با nullish coalescing اصلاح شدند.
-
-### CSS
-
-- selectorهای بدون مصرف واقعی از DOM حذف شدند.
-- قوانین تکراری مربوط به `.level-icon` حذف شدند.
-- responsive rule مربوط به `.level-card` که با DOM فعلی همخوانی نداشت حذف شد.
-
-### GitHub Actions
-
-- workflow قدیمی npm publishing حذف شد.
-- workflow `Static site validation` حفظ شد و تقویت شد.
-- syntax هر دو JavaScript با `node --check` بررسی می‌شود.
-- وجود `main-legacy.js` و دسترسی HTTP به آن بررسی می‌شود.
-- هر سه CSV runtime از نظر header و تعداد ستون‌های هر ردیف validate می‌شوند.
-- smoke test دسترسی به HTML، JavaScript و CSVهای runtime را بررسی می‌کند.
-
-## وضعیت اعتبارسنجی نهایی
-
-- repository روی branch `main` دوباره بررسی شد.
-- workflow npm publishing دیگر در tree پروژه وجود ندارد.
-- ساختار runtime همچنان static client-side است و Backend، Database، `package.json` یا build system به آن اضافه نشده است.
-- سه منبع اصلی CSV و مسیرهای runtime حفظ شده‌اند.
-- آخرین commit repository پس از اصلاحات شامل `README.md`، `main.js`، `main-legacy.js`، `main.css` و workflow validation به‌روزشده است.
-- اجرای مستقیم GitHub Actions برای commit نهایی از طریق اتصال فعلی در لحظهٔ بازبینی هنوز run قابل مشاهده‌ای برنگرداند؛ بنابراین وضعیت CI نهایی را **تأییدشده توسط ساختار workflow، اما فاقد run قابل مشاهده در connector** ثبت می‌کنیم و ادعای موفقیت اجرای remote CI نمی‌کنیم.
-
----
-
-# Chemistry Reference
-
-مرجع آموزشی و تعاملی شیمی برای مشاهدهٔ جدول تناوبی ۱۱۸ عنصر و دسترسی مرحله‌ای به داده‌های عناصر.
-
-## معماری
-
-این پروژه یک **static client-side web app** است و Backend، دیتابیس، `package.json` یا build system ندارد.
+این پروژه یک **static client-side web app** است و Backend، Database، `package.json` یا build system ندارد.
 
 ```text
 Browser
@@ -78,14 +19,14 @@ Browser
 ```
 
 - `index.html` ساختار رابط را فراهم می‌کند.
-- `assets/css/main.css` ظاهر، responsive design و themeهای جدول را مدیریت می‌کند.
-- `assets/js/main.js` نقطهٔ ورود JavaScript است و تنظیمات selector theme را مدیریت می‌کند.
-- `assets/js/main-legacy.js` منطق runtime پروژه را نگه می‌دارد: زبان، بارگذاری CSV، ساخت جدول و نمایش اطلاعات عناصر و اعمال theme انتخاب‌شده.
-- داده‌ها مستقیماً از CSVها با `fetch()` بارگذاری می‌شوند.
+- `assets/css/main.css` ظاهر، responsive design، شمارهٔ عناصر و Themeهای جدول را مدیریت می‌کند.
+- `assets/js/main.js` bootstrap، ساخت selector و اعمال/نگهداری Theme و background متحرک صفحه را مدیریت می‌کند.
+- `assets/js/main-legacy.js` منطق runtime را نگه می‌دارد: زبان، بارگذاری CSV، ساخت جدول، شماره‌گذاری کارت‌های عناصر و نمایش اطلاعات انتخاب‌شده.
+- داده‌ها مستقیماً با `fetch()` از CSVهای runtime بارگذاری می‌شوند.
 
-## داده‌ها
+## داده‌های runtime
 
-منابع اصلی runtime:
+منابع اصلی:
 
 ```text
 data/PubChemElements_all.csv
@@ -93,19 +34,73 @@ data/ELEMENTS_118_ADVANCED.csv
 data/ELEMENTS_118_VERY_ADVANCED.csv
 ```
 
-کلید اتصال داده‌های یک عنصر `AtomicNumber` است. داده‌های advanced و very advanced پیش از نمایش با `normalizeDetailRow()` به نام‌گذاری مشترک تبدیل می‌شوند.
+کلید اصلی اتصال داده‌های عنصر `AtomicNumber` است. داده‌های advanced و very advanced پیش از نمایش با `normalizeDetailRow()` به نام‌گذاری مشترک تبدیل می‌شوند.
 
-## زبان
+### وضعیت داده
 
-رابط فارسی و انگلیسی دارد و جهت صفحه بین `RTL` و `LTR` تغییر می‌کند. انتخاب زبان در `localStorage` با کلید `chemistry-language` نگهداری می‌شود.
+- CSV پایه شامل ۱۱۸ عنصر و فیلدهای `AtomicNumber`, `Symbol`, `Name`, `NameFa` و مشخصات اصلی است.
+- CSV پیشرفته با `atomic_number` به دادهٔ مشترک متصل می‌شود.
+- CSV فوق‌پیشرفته علاوه بر مشخصات اصلی، `year_discovered` و `data_status` را نیز فراهم می‌کند.
+- برای قابلیت شماره‌گذاری، هیچ دادهٔ علمی جدیدی به CSVها اضافه نشده است.
+
+## زبان و جهت صفحه
+
+رابط فارسی و انگلیسی دارد و با تغییر زبان، `lang` و `dir` سند بین `fa/rtl` و `en/ltr` تغییر می‌کند.
+
+انتخاب زبان در `localStorage` با کلید زیر نگهداری می‌شود:
+
+```text
+chemistry-language
+```
+
+## شماره‌گذاری ۱۱۸ عنصر
+
+قابلیت شماره‌گذاری عناصر اکنون در runtime پیاده‌سازی شده است.
+
+مسیر اجرا:
+
+```text
+Element data
+    ↓
+AtomicNumber
+    ↓
+createElementCard(element)
+    ↓
+.element-number
+```
+
+هر کارت عنصر در `assets/js/main-legacy.js` شامل سه جزء اصلی است:
+
+```text
+Number → Symbol → Name
+```
+
+شماره مستقیماً از `element.AtomicNumber` گرفته می‌شود و به index آرایه وابسته نیست. جدول اصلی و f-block هر دو از همین مسیر مشترک استفاده می‌کنند؛ بنابراین هر ۱۱۸ عنصر منبع واحدی برای شماره دارد.
+
+نمونه:
+
+```text
+1   — H   — Hydrogen / هیدروژن
+26  — Fe  — Iron / آهن
+79  — Au  — Gold / طلا
+118 — Og  — Oganesson / اوگانسون
+```
+
+CSS مستقل این قابلیت:
+
+```css
+.element-number
+```
+
+است و در mobile نیز با اندازهٔ مناسب باقی می‌ماند.
+
+> **نکته:** `README2.md` specification و وضعیت جزئیات شماره‌گذاری را به‌صورت مستقل مستند می‌کند. شماره‌های ۱ تا ۲۴ مربوط به اشیای عمومی صفحه در README2 در حال حاضر فقط شناسه‌های مستنداتی هستند؛ شمارهٔ قابل مشاهده برای خود این اشیای UI هنوز اجرا نشده است.
 
 ## selector دسته‌بندی PDF
 
-جدول دارای ۱۵ حالت رنگی مطابق PDF مرجع است. برای جلوگیری از شلوغ شدن رابط، فقط **یک selector** وجود دارد و نوع هر دسته‌بندی داخل پرانتز کنار عنوان آن نمایش داده می‌شود.
+جدول ۱۵ حالت رنگی دارد و فقط **یک selector** برای کنترل آن وجود دارد. گزینه‌ها در `main.js` تعریف می‌شوند و هنگام تغییر زبان، برچسب آن‌ها همگام می‌شود.
 
-عنوان کنترل selector نیز به‌جای عبارت عمومی «دسته‌بندی رنگ جدول»، ماهیت دسته‌بندی‌ها را توضیح می‌دهد و به پنج گروه **Physical، Atomic، Chemical، Classification و History** اشاره می‌کند.
-
-ترتیب فعلی selector:
+ترتیب فعلی:
 
 1. **بدون دسته‌بندی / Uncategorized** — حالت پیش‌فرض
 2. **جرم اتمی / Atomic Mass** *(Physical)*
@@ -123,105 +118,130 @@ data/ELEMENTS_118_VERY_ADVANCED.csv
 14. **گروه / خانواده شیمیایی / Chemical Group / Family** *(Classification)*
 15. **سال کشف / Year Discovered** *(History)*
 
-### رفتار پیش‌فرض
+در هر load یا refresh حالت **بدون دسته‌بندی** فعال می‌شود. شناسه‌های CSS `theme-pdf` و `theme-1 ... theme-15` حفظ شده‌اند.
 
-در هر بار load یا refresh صفحه، حالت **بدون دسته‌بندی** فعال می‌شود. بنابراین انتخاب theme قبلی باعث نمی‌شود سایت با همان theme باز شود.
+## مسئولیت فایل‌های JavaScript
 
-پس از بارگذاری، کاربر همچنان می‌تواند هر یک از ۱۴ دسته‌بندی دیگر را انتخاب کند و رنگ جدول تغییر می‌کند.
+### `assets/js/main.js`
 
-شناسه‌های داخلی themeها عمداً حفظ شده‌اند:
+- منبع واحد تعریف ۱۵ Theme.
+- ساخت و labelگذاری selector.
+- اعمال Theme و نگهداری انتخاب در `localStorage`.
+- همگام‌سازی labelهای selector با `documentElement.lang`.
+- افزودن background متحرک orange-red با پشتیبانی از `prefers-reduced-motion`.
+- بارگذاری `main-legacy.js`.
 
-```text
-theme-pdf
-theme-1 ... theme-15
-```
+### `assets/js/main-legacy.js`
 
-این موضوع باعث می‌شود رنگ‌بندی موجود در `assets/css/main.css` بدون بازنویسی حفظ شود.
+- ترجمهٔ فارسی/انگلیسی.
+- بارگذاری سه CSV.
+- parser مقاوم CSV با حذف BOM، اعتبارسنجی header و نادیده‌گرفتن ردیف‌های malformed.
+- normalize کردن schema داده‌های advanced.
+- mapping موقعیت ۱۸ گروه جدول.
+- ساخت کارت عناصر و f-block.
+- شماره‌گذاری کارت با `AtomicNumber`.
+- نمایش اطلاعات عنصر در سه سطح دانشی.
 
-## دسته‌بندی مفهومی themeها
+`main-legacy.js` مالک ساخت selector یا تعریف Themeها نیست؛ این مسئولیت در `main.js` متمرکز شده است.
 
-برای نمایش کنار عنوان‌ها از پنج گروه مفهومی استفاده شده است:
+## CSS و responsive behavior
 
-- **Physical** — جرم اتمی، چگالی، حالت استاندارد، نقطه ذوب، نقطه جوش
-- **Atomic** — شعاع اتمی، آرایش الکترونی، انرژی یونش، الکترون‌خواهی
-- **Chemical** — الکترونگاتیویته، حالت‌های اکسایش
-- **Classification** — فلز/شبه‌فلز/نافلز، گروه/خانواده شیمیایی
-- **History** — سال کشف
+`assets/css/main.css` مسئول:
 
-این گروه‌ها فقط برچسب رابط کاربری هستند و منوی چندسطحی یا دسته‌بندی جدیدی به ساختار سایت اضافه نمی‌کنند.
+- layout اصلی و header/hero/footer؛
+- جدول ۱۸ گروهی و f-block؛
+- کارت عناصر و `.element-number`؛
+- بخش جزئیات سه‌سطحی؛
+- ۱۵ Theme جدول؛
+- responsive behavior برای موبایل؛
+- پشتیبانی از `prefers-reduced-motion` در قواعد transition/scroll.
 
-## جدول تناوبی
+برای mobile، جدول با حداقل عرض داخلی و horizontal scrolling حفظ می‌شود تا ساختار ۱۸ ستونهٔ جدول خراب نشود.
 
-جدول با CSS Grid و mapping موقعیت عناصر ساخته می‌شود. عناصر ۱ تا ۱۱۸ نمایش داده می‌شوند و لانتانیدها و اکتینیدها در f-block قرار دارند.
+## Accessibility و UX
 
-## اطلاعات عنصر
-
-برای عنصر انتخاب‌شده سه لایهٔ اطلاعاتی نمایش داده می‌شود:
-
-1. **شناخت بنیادین / Foundational Insight**
-2. **تحلیل تخصصی / Specialized Analysis**
-3. **ژرف‌کاوی علمی / Scientific Deep Dive**
-
-منطق این سه سطح و schema داده‌ها در `assets/js/main-legacy.js` حفظ شده است.
+- کارت عنصر `button` است و keyboard interaction را حفظ می‌کند.
+- `aria-label` کارت شامل نام عنصر و عدد اتمی است.
+- `table-status` با `role="status"` برای اعلام وضعیت استفاده می‌شود.
+- شمارهٔ عنصر، Symbol و Name عناصر جداگانهٔ DOM هستند.
+- RTL/LTR و زبان در runtime تغییر می‌کنند.
+- `prefers-reduced-motion` برای جلوگیری از انیمیشن‌های غیرضروری رعایت شده است.
 
 ## اجرای محلی
 
-چون CSVها با `fetch()` بارگذاری می‌شوند، پروژه را مستقیماً با `file://` اجرا نکنید. از ریشهٔ repository یک HTTP server ساده اجرا کنید:
+چون CSVها با `fetch()` بارگذاری می‌شوند، پروژه را با `file://` اجرا نکنید. از ریشهٔ repository اجرا کنید:
 
 ```bash
 python -m http.server 8000
 ```
 
-سپس در مرورگر باز کنید:
+سپس:
 
 ```text
 http://localhost:8000
 ```
 
-## اعتبارسنجی
+## اعتبارسنجی و CI
 
-حداقل بررسی syntax برای فایل‌های JavaScript:
+Workflow اصلی در `.github/workflows/webpack.yml` با عنوان `Static site validation` اجرا می‌شود و این موارد را بررسی می‌کند:
 
-```bash
-node --check assets/js/main.js
-node --check assets/js/main-legacy.js
-```
+1. وجود فایل‌های runtime.
+2. syntax هر دو JavaScript با `node --check`.
+3. header و تعداد ستون‌های هر سه CSV.
+4. دسترسی HTTP به HTML، JavaScript و CSVهای runtime با smoke test.
 
-همچنین وجود فایل‌های زیر باید بررسی شود:
+آخرین اجرای workflow برای commit `e4067bc297f6791945acfeb3a99981a938874bd7` در GitHub Actions با وضعیت `completed / success` ثبت شده است.
 
-```text
-index.html
-assets/css/main.css
-assets/js/main.js
-assets/js/main-legacy.js
-data/PubChemElements_all.csv
-data/ELEMENTS_118_ADVANCED.csv
-data/ELEMENTS_118_VERY_ADVANCED.csv
-```
+## تغییرات و auditهای انجام‌شده
 
-برای اعتبارسنجی کامل‌تر همان checks در `.github/workflows/webpack.yml` اجرا می‌شوند.
+### JavaScript
 
-## قراردادهای مهم
+- حذف ناخواستهٔ `periodicSubtitle` از DOM متوقف شد.
+- مالکیت Theme و selector در `main.js` متمرکز شد.
+- initializationهای تکراری Theme حذف شدند.
+- migration قدیمی Themeهای `14/15` حذف شد.
+- parser CSV مقاوم‌تر شد.
+- fallbackهای داده با nullish coalescing اصلاح شدند.
+- شمارهٔ واقعی عناصر با `AtomicNumber` در مسیر ساخت کارت اضافه/تأیید شد.
 
-- `AtomicNumber` شناسهٔ اصلی عنصر است.
-- `NameFa` نام فارسی عنصر در منبع پایه است.
-- مسیر CSVها نسبت به ریشهٔ سایت تعریف شده‌اند.
-- CSVها منبع runtime هستند و حذف یا جابه‌جایی آن‌ها بدون تغییر JavaScript باعث خطا می‌شود.
+### CSS
+
+- selectorهای بلااستفاده حذف شدند.
+- قوانین تکراری level icon حذف شدند.
+- `.element-number` به‌عنوان selector مستقل برای شمارهٔ عناصر حفظ و responsive شد.
+- Themeهای PDF حفظ شدند.
+
+### GitHub Actions
+
+- workflow قدیمی npm publishing حذف شده است؛ repository npm package نیست.
+- validation استاتیک و smoke test تقویت شده‌اند.
+- آخرین run قابل مشاهدهٔ CI موفق بوده است.
+
+## قراردادهای مهم برای تغییرات آینده
+
+- `AtomicNumber` تنها منبع شمارهٔ عنصر است.
+- اطلاعات علمی عناصر نباید در HTML hard-code شوند.
+- مسیر CSVها نسبت به ریشهٔ سایت تعریف شده است.
+- CSVها منبع runtime هستند و تغییر schema آن‌ها نیازمند بازبینی `normalizeDetailRow()` است.
 - پروژه عمداً بدون Backend، Database و build step نگه داشته شده است.
-- تغییرات UI باید فارسی/انگلیسی و RTL/LTR را حفظ کنند.
-- تغییرات جدول باید رفتار responsive موبایل را حفظ کنند.
+- تغییرات UI باید فارسی/انگلیسی، RTL/LTR و responsive behavior را حفظ کنند.
 - برای تغییرات غیرمرتبط، معماری موجود نباید دستکاری شود.
+- اگر شماره‌گذاری اشیای عمومی UI در آینده اجرا شود، نباید با `AtomicNumber` عناصر مخلوط شود و باید accessibility/i18n/responsive behavior آن جداگانه بررسی شود.
 
-## آخرین تغییر
+## وضعیت نهایی بازبینی
 
-در selector مربوط به PDF:
+- [x] Repository و ساختار فایل‌ها بررسی شد.
+- [x] README.md و README2.md بررسی و با وضعیت واقعی هماهنگ شدند.
+- [x] ارتباط HTML، JS، CSS و CSVها بررسی شد.
+- [x] نبود Backend/Database و static بودن معماری تأیید شد.
+- [x] شماره‌گذاری ۱۱۸ عنصر از `AtomicNumber` تأیید شد.
+- [x] f-block از همان مسیر ساخت کارت عنصر استفاده می‌کند.
+- [x] CSVها برای شماره‌گذاری تغییر غیرضروری نکرده‌اند.
+- [x] workflow validation بررسی شد.
+- [x] آخرین اجرای CI موفق (`success`) مشاهده شد.
 
-- «بدون دسته‌بندی» به ابتدای لیست منتقل شده است.
-- «بدون دسته‌بندی» حالت پیش‌فرض هنگام load و refresh است.
-- دسته‌بندی‌ها بر اساس Physical، Atomic، Chemical، Classification و History مرتب شده‌اند.
-- نوع دسته‌بندی داخل پرانتز کنار عنوان نمایش داده می‌شود.
-- عنوان کنترل selector اکنون گروه‌های مفهومی دسته‌بندی‌ها را نیز توضیح می‌دهد.
-- یک selector واحد حفظ شده و منوی چندگانه‌ای به سایت اضافه نشده است.
-- شناسه‌های theme و رنگ‌بندی CSS موجود حفظ شده‌اند.
-- مدیریت selector و theme از منطق runtime legacy جدا شده تا یک منبع واحد برای تعریف themeها وجود داشته باشد.
-- validation مربوط به JavaScript و CSVها در CI تقویت شده است.
+---
+
+## فایل مرجع دوم
+
+برای specification و جزئیات قابلیت شماره‌گذاری، به `README2.md` مراجعه کنید. این فایل عمداً وضعیت واقعی پیاده‌سازی را از specification اولیه تفکیک می‌کند.
