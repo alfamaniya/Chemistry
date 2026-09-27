@@ -39,7 +39,6 @@ import { createElementDetailsController } from "./components/element-details/ele
         currentLanguage = languageValue;
         if (elements.length) periodicTable.render(elements);
         if (selectedAtomicNumber) elementDetails.render(selectedAtomicNumber);
-        periodicTable.updateStatus();
       }
     });
   }
@@ -59,7 +58,6 @@ import { createElementDetailsController } from "./components/element-details/ele
       beginnerInfo.innerHTML = "";
       advancedInfo.innerHTML = "";
       veryAdvancedInfo.innerHTML = "";
-      document.getElementById("table-status").textContent = t.loadError;
     }
   }
 
