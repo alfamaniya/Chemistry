@@ -7,6 +7,31 @@
   legacyScript.defer = false;
   document.head.appendChild(legacyScript);
 
+  // Dynamic orange-red page background. The reduced-motion media query keeps
+  // the page static for users who request reduced motion at OS/browser level.
+  const backgroundStyle = document.createElement("style");
+  backgroundStyle.textContent = `
+    body {
+      background: linear-gradient(120deg, #ff6a00, #ff3d00, #e11d48, #ff7a00, #ef4444);
+      background-size: 500% 500%;
+      animation: chemistry-orange-red-background 18s ease-in-out infinite;
+    }
+    @keyframes chemistry-orange-red-background {
+      0% { background-position: 0% 50%; }
+      25% { background-position: 100% 20%; }
+      50% { background-position: 100% 80%; }
+      75% { background-position: 0% 100%; }
+      100% { background-position: 0% 50%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      body {
+        animation: none;
+        background: #f45a24;
+      }
+    }
+  `;
+  document.head.appendChild(backgroundStyle);
+
   const themeSelect = document.getElementById("table-theme-select");
   const tableShell = document.querySelector(".table-shell");
 
