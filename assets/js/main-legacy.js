@@ -51,12 +51,10 @@ import { loadElementData } from "./core/data.js";
     card.dataset.type = element.GroupBlock || "";
     card.dataset.atomicNumber = element.AtomicNumber;
     card.setAttribute("aria-label", getName(element, currentLanguage) + ", " + translations[currentLanguage].elementDetails + " " + element.AtomicNumber);
-
     const number = document.createElement("span"); number.className = "element-number"; number.textContent = element.AtomicNumber;
     const symbol = document.createElement("span"); symbol.className = "element-symbol"; symbol.textContent = element.Symbol;
     const name = document.createElement("span"); name.className = "element-name"; name.textContent = getName(element, currentLanguage);
     card.append(number, symbol, name);
-
     card.addEventListener("click", () => {
       selectedAtomicNumber = Number(element.AtomicNumber);
       renderElementDetails(selectedAtomicNumber);
@@ -94,16 +92,13 @@ import { loadElementData } from "./core/data.js";
   function getRowByAtomicNumber(source, atomicNumber) {
     return source.find(row => Number(row.AtomicNumber || row.atomic_number || row.atomicNumber) === Number(atomicNumber));
   }
-
   function isUsable(value) { return value !== undefined && value !== null && String(value).trim() !== ""; }
-
   function formatValue(value, key) {
     if (!isUsable(value)) return "—";
     const dictionary = valueTranslations[key];
     if (dictionary && dictionary[currentLanguage] && dictionary[currentLanguage][String(value)] !== undefined) return dictionary[currentLanguage][String(value)];
     return String(value);
   }
-
   function createDataGrid(data, keys) {
     const t = translations[currentLanguage];
     const gridNode = document.createElement("div"); gridNode.className = "data-grid";
@@ -117,7 +112,6 @@ import { loadElementData } from "./core/data.js";
     if (!gridNode.children.length) gridNode.innerHTML = '<div class="empty-state">—</div>';
     return gridNode;
   }
-
   function renderElementDetails(atomicNumber) {
     const beginner = getRowByAtomicNumber(elements, atomicNumber);
     const advanced = getRowByAtomicNumber(advancedElements, atomicNumber);
@@ -126,7 +120,6 @@ import { loadElementData } from "./core/data.js";
       selectedElementBox.innerHTML = '<div class="empty-state">' + translations[currentLanguage].selectElement + '</div>';
       beginnerInfo.innerHTML = '<div class="empty-state">—</div>'; advancedInfo.innerHTML = '<div class="empty-state">—</div>'; veryAdvancedInfo.innerHTML = '<div class="empty-state">—</div>'; return;
     }
-
     selectedElementBox.innerHTML = "";
     const identity = document.createElement("div"); identity.className = "selected-identity";
     const symbol = document.createElement("span"); symbol.className = "selected-symbol"; symbol.textContent = beginner.Symbol;
@@ -139,7 +132,6 @@ import { loadElementData } from "./core/data.js";
     advancedInfo.innerHTML = ""; advancedInfo.appendChild(createDataGrid(advanced, ["AtomicNumber", "Symbol", "AtomicMass", "GroupBlock", "StandardState", "ElectronConfiguration", "OxidationStates", "Electronegativity", "AtomicRadius", "IonizationEnergy", "ElectronAffinity", "MeltingPoint", "BoilingPoint", "Density"]));
     veryAdvancedInfo.innerHTML = ""; veryAdvancedInfo.appendChild(createDataGrid(veryAdvanced, ["AtomicNumber", "Symbol", "AtomicMass", "GroupBlock", "StandardState", "ElectronConfiguration", "OxidationStates", "Electronegativity", "AtomicRadius", "IonizationEnergy", "ElectronAffinity", "MeltingPoint", "BoilingPoint", "Density", "YearDiscovered", "data_status"]));
   }
-
   function applyLanguage(language) {
     currentLanguage = setLanguage(language, {
       fBlock,
@@ -152,7 +144,6 @@ import { loadElementData } from "./core/data.js";
       }
     });
   }
-
   async function loadElements() {
     try {
       const data = await loadElementData();
@@ -167,7 +158,7 @@ import { loadElementData } from "./core/data.js";
     }
   }
 
-  languageButtons.forEach(button => button.addEventListener("click", () => applyLanguage(button.dataset.language)));
+  document.addEventListener("chemistry:language-change", event => applyLanguage(event.detail?.language || currentLanguage));
   applyLanguage(currentLanguage);
   loadElements();
 })();
