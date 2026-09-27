@@ -1,8 +1,17 @@
-(() => {
+(async () => {
   "use strict";
 
-  // Bootstrap the application as an ES module so shared Core modules can be
-  // imported explicitly instead of relying on a dynamically inserted classic script.
+  // Component bootstrap runs before the data-driven runtime so that shared
+  // DOM contracts exist before i18n and table logic attach to them.
+  const [{ mountHeader }, { mountHero }] = await Promise.all([
+    import("./components/header/header.js"),
+    import("./components/hero/hero.js")
+  ]);
+
+  mountHeader(document.querySelector(".site-header"));
+  mountHero(document.querySelector(".hero"));
+
+  // Bootstrap the data-driven application as an ES module.
   import("./main-legacy.js").catch(error => console.error("Failed to load application module", error));
 
   // Dynamic orange-red page background. The reduced-motion media query keeps
@@ -22,17 +31,13 @@
       100% { background-position: 0% 50%; }
     }
     @media (prefers-reduced-motion: reduce) {
-      body {
-        animation: none;
-        background: #f45a24;
-      }
+      body { animation: none; background: #f45a24; }
     }
   `;
   document.head.appendChild(backgroundStyle);
 
   // Element selection: exactly two soft flashes (blue, then green), followed
-  // by a stable dark-orange glow. The final state is deliberately independent
-  // of animation fill state so the selected element remains orange afterward.
+  // by a stable dark-orange glow.
   const selectionStyle = document.createElement("style");
   selectionStyle.textContent = `
     .element.selected-flash {
@@ -82,10 +87,7 @@
     {id:"12", fa:"سال کشف", en:"Year Discovered", faGroup:"تاریخی", enGroup:"History"}
   ];
 
-  function currentLanguage() {
-    return document.documentElement.lang === "en" ? "en" : "fa";
-  }
-
+  function currentLanguage() { return document.documentElement.lang === "en" ? "en" : "fa"; }
   function applyTheme(themeId) {
     if (!tableShell) return;
     for (let i = 1; i <= 15; i++) tableShell.classList.remove("theme-" + i);
@@ -93,7 +95,6 @@
     tableShell.classList.add("theme-pdf", "theme-" + normalizedTheme);
     localStorage.setItem("chemistry-pdf-theme", String(normalizedTheme));
   }
-
   function syncThemeSelect(forceDefault = false) {
     if (!themeSelect) return;
     const lang = currentLanguage();
@@ -112,20 +113,12 @@
     themeSelect.value = themes.some(theme => theme.id === current) ? current : "15";
     applyTheme(themeSelect.value);
   }
-
   function install() {
     if (!themeSelect) return;
     syncThemeSelect(true);
     themeSelect.addEventListener("change", event => applyTheme(event.target.value));
-    new MutationObserver(() => syncThemeSelect(false)).observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["lang"]
-    });
+    new MutationObserver(() => syncThemeSelect(false)).observe(document.documentElement, {attributes: true, attributeFilter: ["lang"]});
   }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", install, {once: true});
-  } else {
-    install();
-  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", install, {once: true});
+  else install();
 })();
