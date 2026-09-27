@@ -1,8 +1,75 @@
 (() => {
   "use strict";
+
   const DATA_URL = "data/PubChemElements_all.csv";
   const grid = document.getElementById("periodic-table-grid");
   const status = document.getElementById("table-status");
+  const languageButtons = document.querySelectorAll(".language-button");
+
+  const translations = {
+    fa: {
+      brand: "مرجع شیمی",
+      brandTagline: "یادگیری ساده، دقیق و مرحله‌ای",
+      navPeriodic: "جدول تناوبی",
+      navLevels: "سطوح آموزشی",
+      navAbout: "درباره",
+      heroTitle: "مرجع شیمی و جدول تناوبی",
+      heroText: "یک نقطهٔ شروع ساده برای مشاهدهٔ جدول تناوبی و دسترسی سریع به اطلاعات عناصر، از سطح مبتدی تا پیشرفته.",
+      heroButton: "مشاهده جدول تناوبی",
+      periodicTitle: "جدول تناوبی",
+      periodicSubtitle: "آجرهای مربعی با گوشه‌های نرم‌شده",
+      levelsTitle: "سطوح آموزشی",
+      levelsSubtitle: "اطلاعات دسته‌بندی‌شده برای مسیرهای مختلف یادگیری",
+      beginnerTitle: "اطلاعات دسته‌بندی شده مبتدی",
+      beginnerDescription: "مفاهیم پایه و مشخصات اصلی ۱۱۸ عنصر",
+      professionalTitle: "اطلاعات دسته‌بندی شده حرفه‌ای",
+      professionalDescription: "ویژگی‌های عددی و شیمیایی گسترده‌تر",
+      advancedTitle: "اطلاعات دسته‌بندی شده پیشرفته",
+      advancedDescription: "جزئیات تکمیلی برای مطالعهٔ عمیق‌تر",
+      elementsCount: "عنصر در مجموعه",
+      levelsCount: "سطح آموزشی",
+      dataFormat: "منبع دادهٔ ساختاریافته",
+      footerTitle: "مرجع شیمی",
+      footerText: "پروژه‌ای برای دسترسی ساده‌تر به داده‌های عناصر شیمیایی.",
+      backTop: "بازگشت به بالا ↑",
+      loading: "در حال بارگذاری عناصر…",
+      loaded: "عنصر از منبع داده بارگذاری شد.",
+      elementDetails: "عدد اتمی",
+      categoryUnknown: "دسته‌بندی نامشخص",
+      loadError: "بارگذاری داده‌ها انجام نشد. صفحه را از طریق یک وب‌سرور محلی اجرا کنید."
+    },
+    en: {
+      brand: "Chemistry Reference",
+      brandTagline: "Simple, accurate, step-by-step learning",
+      navPeriodic: "Periodic Table",
+      navLevels: "Learning Levels",
+      navAbout: "About",
+      heroTitle: "Chemistry Reference & Periodic Table",
+      heroText: "A simple starting point for exploring the periodic table and accessing element information from beginner to advanced levels.",
+      heroButton: "View Periodic Table",
+      periodicTitle: "Periodic Table",
+      periodicSubtitle: "Soft-cornered element tiles",
+      levelsTitle: "Learning Levels",
+      levelsSubtitle: "Organized information for different learning paths",
+      beginnerTitle: "Beginner Information",
+      beginnerDescription: "Core concepts and key facts for all 118 elements",
+      professionalTitle: "Professional Information",
+      professionalDescription: "Broader numerical and chemical properties",
+      advancedTitle: "Advanced Information",
+      advancedDescription: "Additional details for deeper study",
+      elementsCount: "elements in the collection",
+      levelsCount: "learning levels",
+      dataFormat: "structured data source",
+      footerTitle: "Chemistry Reference",
+      footerText: "A project for easier access to chemical element data.",
+      backTop: "Back to top ↑",
+      loading: "Loading elements…",
+      loaded: "elements loaded from the data source.",
+      elementDetails: "Atomic number",
+      categoryUnknown: "Unknown category",
+      loadError: "The data could not be loaded. Please run the page through a local web server."
+    }
+  };
 
   const positions = new Map([
     [1,[1,1]],[2,[1,18]],[3,[2,1]],[4,[2,2]],[5,[2,13]],[6,[2,14]],[7,[2,15]],[8,[2,16]],[9,[2,17]],[10,[2,18]],
@@ -13,64 +80,144 @@
     [87,[7,1]],[88,[7,2]],[104,[7,4]],[105,[7,5]],[106,[7,6]],[107,[7,7]],[108,[7,8]],[109,[7,9]],[110,[7,10]],[111,[7,11]],[112,[7,12]],[113,[7,13]],[114,[7,14]],[115,[7,15]],[116,[7,16]],[117,[7,17]],[118,[7,18]]
   ]);
 
+  let currentLanguage = localStorage.getItem("chemistry-language") || "fa";
+
   function parseCsv(text) {
-    const rows=[]; let row=[], cell="", quoted=false;
-    for(let i=0;i<text.length;i++){
-      const ch=text[i], next=text[i+1];
-      if(ch===""" && quoted && next==="""){cell+=""";i++;continue}
-      if(ch==="""){quoted=!quoted;continue}
-      if(ch==="," && !quoted){row.push(cell);cell="";continue}
-      if((ch==="\n" || ch==="\r") && !quoted){
-        if(ch==="\r" && next==="\n")i++;
-        row.push(cell);cell="";
-        if(row.some(v=>v!==""))rows.push(row);
-        row=[];continue;
+    const rows = [];
+    let row = [], cell = "", quoted = false;
+    for (let i = 0; i < text.length; i++) {
+      const ch = text[i];
+      const next = text[i + 1];
+      if (ch === '"' && quoted && next === '"') { cell += '"'; i++; continue; }
+      if (ch === '"') { quoted = !quoted; continue; }
+      if (ch === "," && !quoted) { row.push(cell); cell = ""; continue; }
+      if ((ch === "\n" || ch === "\r") && !quoted) {
+        if (ch === "\r" && next === "\n") i++;
+        row.push(cell); cell = "";
+        if (row.some(value => value !== "")) rows.push(row);
+        row = [];
+        continue;
       }
-      cell+=ch;
+      cell += ch;
     }
-    if(cell || row.length){row.push(cell);rows.push(row)}
-    const headers=rows.shift();
-    return rows.map(values=>Object.fromEntries(headers.map((h,i)=>[h,values[i]??""])));
+    if (cell || row.length) { row.push(cell); rows.push(row); }
+    const headers = rows.shift() || [];
+    return rows.map(values => Object.fromEntries(headers.map((h, i) => [h, values[i] ?? ""])));
   }
 
-  function card(element){
-    const el=document.createElement("button");
-    el.className="element"; el.type="button"; el.dataset.type=element.GroupBlock||"";
-    el.setAttribute("aria-label", element.Name+"، عدد اتمی "+element.AtomicNumber);
-    const n=document.createElement("span"); n.className="element-number"; n.textContent=element.AtomicNumber;
-    const s=document.createElement("span"); s.className="element-symbol"; s.textContent=element.Symbol;
-    const name=document.createElement("span"); name.className="element-name"; name.textContent=element.Name;
-    el.append(n,s,name);
-    el.addEventListener("click",()=>{status.textContent=element.Name+" ("+element.Symbol+") — عدد اتمی "+element.AtomicNumber+" — "+(element.GroupBlock||"دسته‌بندی نامشخص")});
-    return el;
+  function setLanguage(language) {
+    currentLanguage = language === "en" ? "en" : "fa";
+    const t = translations[currentLanguage];
+
+    document.documentElement.lang = currentLanguage;
+    document.documentElement.dir = currentLanguage === "fa" ? "rtl" : "ltr";
+    document.body.classList.toggle("lang-en", currentLanguage === "en");
+
+    document.querySelectorAll("[data-i18n]").forEach(node => {
+      const key = node.dataset.i18n;
+      if (t[key]) node.textContent = t[key];
+    });
+
+    languageButtons.forEach(button => {
+      const active = button.dataset.language === currentLanguage;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
+
+    localStorage.setItem("chemistry-language", currentLanguage);
+    updateStatus();
   }
 
-  function fRow(elements,label,start,end){
-    const row=document.createElement("div"); row.className="f-row";
-    const title=document.createElement("span"); title.className="f-label"; title.textContent=label; row.appendChild(title);
-    elements.filter(e=>{const n=Number(e.AtomicNumber);return n>=start&&n<=end}).forEach(e=>row.appendChild(card(e)));
+  function updateStatus() {
+    const t = translations[currentLanguage];
+    const count = grid.querySelectorAll(".element").length;
+    if (count) status.textContent = count + " " + t.loaded;
+  }
+
+  function createElementCard(element) {
+    const card = document.createElement("button");
+    card.className = "element";
+    card.type = "button";
+    card.dataset.type = element.GroupBlock || "";
+    card.setAttribute("aria-label", element.Name + ", " + translations[currentLanguage].elementDetails + " " + element.AtomicNumber);
+
+    const number = document.createElement("span");
+    number.className = "element-number";
+    number.textContent = element.AtomicNumber;
+
+    const symbol = document.createElement("span");
+    symbol.className = "element-symbol";
+    symbol.textContent = element.Symbol;
+
+    const name = document.createElement("span");
+    name.className = "element-name";
+    name.textContent = element.Name;
+
+    card.append(number, symbol, name);
+
+    card.addEventListener("click", () => {
+      const t = translations[currentLanguage];
+      status.textContent = element.Name + " (" + element.Symbol + ") — " + t.elementDetails + " " + element.AtomicNumber + " — " + (element.GroupBlock || t.categoryUnknown);
+    });
+
+    return card;
+  }
+
+  function createFBlock(elements, label, start, end) {
+    const row = document.createElement("div");
+    row.className = "f-row";
+
+    const title = document.createElement("span");
+    title.className = "f-label";
+    title.textContent = label;
+    row.appendChild(title);
+
+    elements.filter(element => {
+      const number = Number(element.AtomicNumber);
+      return number >= start && number <= end;
+    }).forEach(element => row.appendChild(createElementCard(element)));
+
     return row;
   }
 
-  async function load(){
-    try{
-      const response=await fetch(DATA_URL);
-      if(!response.ok)throw new Error("fetch failed");
-      const elements=parseCsv(await response.text()).filter(e=>e.AtomicNumber);
-      grid.innerHTML="";
-      elements.forEach(e=>{
-        const p=positions.get(Number(e.AtomicNumber)); if(!p)return;
-        e._row=p[0];e._col=p[1];
-        const el=card(e);el.style.gridColumn=e._col;el.style.gridRow=e._row;grid.appendChild(el);
+  async function loadElements() {
+    try {
+      const response = await fetch(DATA_URL);
+      if (!response.ok) throw new Error("fetch failed");
+
+      const elements = parseCsv(await response.text()).filter(element => element.AtomicNumber);
+      grid.innerHTML = "";
+
+      elements.forEach(element => {
+        const position = positions.get(Number(element.AtomicNumber));
+        if (!position) return;
+
+        const card = createElementCard(element);
+        card.style.gridColumn = position[1];
+        card.style.gridRow = position[0];
+        grid.appendChild(card);
       });
-      const f=document.createElement("div");f.className="f-block";
-      f.append(fRow(elements,"لانتانیدها",57,71),fRow(elements,"اکتینیدها",89,103));
-      grid.parentElement.appendChild(f);
-      status.textContent=elements.length+" عنصر از منبع داده بارگذاری شد.";
-    }catch(e){
-      grid.innerHTML='<div class="loading">بارگذاری داده‌ها انجام نشد. صفحه را از طریق یک وب‌سرور محلی اجرا کنید.</div>';
-      status.textContent="منبع داده: "+DATA_URL;
+
+      const fBlock = document.createElement("div");
+      fBlock.className = "f-block";
+      fBlock.append(
+        createFBlock(elements, currentLanguage === "fa" ? "لانتانیدها" : "Lanthanides", 57, 71),
+        createFBlock(elements, currentLanguage === "fa" ? "اکتینیدها" : "Actinides", 89, 103)
+      );
+      grid.parentElement.appendChild(fBlock);
+
+      updateStatus();
+    } catch (error) {
+      const t = translations[currentLanguage];
+      grid.innerHTML = '<div class="loading">' + t.loadError + '</div>';
+      status.textContent = DATA_URL;
     }
   }
-  load();
+
+  languageButtons.forEach(button => {
+    button.addEventListener("click", () => setLanguage(button.dataset.language));
+  });
+
+  setLanguage(currentLanguage);
+  loadElements();
 })();
