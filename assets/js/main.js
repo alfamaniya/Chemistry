@@ -13,6 +13,38 @@
   const advancedInfo = document.getElementById("advanced-info");
   const veryAdvancedInfo = document.getElementById("very-advanced-info");
   const languageButtons = document.querySelectorAll(".language-button");
+  const themeSelect = document.getElementById("table-theme-select");
+  const tableShell = document.querySelector(".table-shell");
+  const pdfThemes = [
+    {id:1, fa:"جرم اتمی", en:"Atomic Mass"},{id:2, fa:"چگالی", en:"Density"},{id:3, fa:"حالت استاندارد", en:"Standard State"},
+    {id:4, fa:"الکترونگاتیویته", en:"Electronegativity"},{id:5, fa:"انرژی یونش", en:"Ionization Energy"},{id:6, fa:"آرایش الکترونی", en:"Electron Configuration"},
+    {id:7, fa:"شعاع اتمی", en:"Atomic Radius"},{id:8, fa:"حالت‌های اکسایش", en:"Oxidation States"},{id:9, fa:"الکترون‌خواهی", en:"Electron Affinity"},
+    {id:10, fa:"نقطه ذوب", en:"Melting Point"},{id:11, fa:"نقطه جوش", en:"Boiling Point"},{id:12, fa:"اشغال اوربیتال", en:"Orbital Occupancy"},
+    {id:13, fa:"فلز / شبه‌فلز / نافلز", en:"Metal / Metalloid / Nonmetal"},{id:14, fa:"پایداری شیمیایی", en:"Chemical Stability"},
+    {id:15, fa:"گروه / خانواده شیمیایی", en:"Chemical Group / Family"}
+  ];
+
+  function applyPdfTheme(themeId) {
+    if (!tableShell) return;
+    for (let i = 1; i <= 15; i++) tableShell.classList.remove("theme-" + i);
+    tableShell.classList.add("theme-pdf", "theme-" + Number(themeId));
+    localStorage.setItem("chemistry-pdf-theme", String(themeId));
+  }
+
+  function populateThemeSelect() {
+    if (!themeSelect) return;
+    themeSelect.innerHTML = "";
+    pdfThemes.forEach(theme => {
+      const option = document.createElement("option");
+      option.value = String(theme.id);
+      option.textContent = currentLanguage === "fa" ? theme.fa : theme.en;
+      themeSelect.appendChild(option);
+    });
+    const saved = localStorage.getItem("chemistry-pdf-theme") || "1";
+    themeSelect.value = saved;
+    applyPdfTheme(saved);
+  }
+
 
   const translations = {
     fa: {
@@ -32,6 +64,7 @@
       backTop: "بازگشت به بالا ↑", loading: "در حال بارگذاری عناصر…",
       loaded: "عنصر از منبع داده بارگذاری شد.", elementDetails: "عدد اتمی",
       categoryUnknown: "دسته‌بندی نامشخص", loadError: "بارگذاری داده‌ها انجام نشد. صفحه را از طریق یک وب‌سرور محلی اجرا کنید.",
+      themeSelectLabel: "رنگ جدول بر اساس PDF", themeSelectDescription: "یکی از ۱۵ جدول تصویری PDF را انتخاب کنید تا رنگ‌های جدول تغییر کند.",
       selectedElementTitle: "اطلاعات مختصر عنصر",
       selectedElementSubtitle: "برای دیدن اطلاعات، یکی از عناصر جدول را انتخاب کنید.",
       selectElement: "یک عنصر را از جدول انتخاب کنید.",
@@ -59,6 +92,7 @@
       backTop: "Back to top ↑", loading: "Loading elements…",
       loaded: "elements loaded from the data source.", elementDetails: "Atomic number",
       categoryUnknown: "Unknown category", loadError: "The data could not be loaded. Please run the page through a local web server.",
+      themeSelectLabel: "Table colors from PDF", themeSelectDescription: "Choose one of the 15 PDF table images to change the table colors.",
       selectedElementTitle: "Selected Element — Quick Information",
       selectedElementSubtitle: "Select an element from the table to view its information.",
       selectElement: "Select an element from the table.",
@@ -146,6 +180,7 @@
 
     if (elements.length) renderPeriodicTable();
     if (selectedAtomicNumber) renderElementDetails(selectedAtomicNumber);
+    populateThemeSelect();
     updateStatus();
   }
 
@@ -382,10 +417,13 @@
     }
   }
 
+  if (themeSelect) themeSelect.addEventListener("change", event => applyPdfTheme(event.target.value));
+
   languageButtons.forEach(button => {
     button.addEventListener("click", () => setLanguage(button.dataset.language));
   });
 
   setLanguage(currentLanguage);
+  populateThemeSelect();
   loadElements();
 })();
