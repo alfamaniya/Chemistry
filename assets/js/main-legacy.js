@@ -19,9 +19,6 @@ import { createElementDetailsController } from "./components/element-details/ele
   let selectedAtomicNumber = null;
 
   const elementDetails = createElementDetailsController({
-    elements,
-    advancedElements,
-    veryAdvancedElements,
     getLanguage: () => currentLanguage,
     translations,
     valueTranslations,
@@ -55,12 +52,7 @@ import { createElementDetailsController } from "./components/element-details/ele
       elements = data.elements;
       advancedElements = data.advancedElements;
       veryAdvancedElements = data.veryAdvancedElements;
-
-      // The controller keeps references to these arrays, so refresh them after
-      // the asynchronous data load without duplicating the data layer.
-      elementDetails.elements = elements;
-      elementDetails.advancedElements = advancedElements;
-      elementDetails.veryAdvancedElements = veryAdvancedElements;
+      elementDetails.setData(data);
       periodicTable.render(elements);
     } catch (error) {
       console.error(error);
