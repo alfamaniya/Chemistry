@@ -59,45 +59,51 @@
         <div id="f-block" class="f-block" aria-label="Lanthanides and Actinides"></div>
       </div>
       <p id="table-status" class="table-status" role="status"></p>
-    </section>
 
-    <section id="levels" class="section container">
-      <div class="section-heading">
-        <span class="section-number">۰۲</span>
-        <div>
-          <h2 data-i18n="levelsTitle">سطوح آموزشی</h2>
-          <p data-i18n="levelsSubtitle">اطلاعات دسته‌بندی‌شده برای مسیرهای مختلف یادگیری</p>
+      <section class="element-details" aria-labelledby="selected-element-title">
+        <div class="section-heading detail-heading">
+          <span class="section-number">۰۲</span>
+          <div>
+            <h2 id="selected-element-title" data-i18n="selectedElementTitle">اطلاعات مختصر عنصر</h2>
+            <p data-i18n="selectedElementSubtitle">برای دیدن اطلاعات، یکی از عناصر جدول را انتخاب کنید.</p>
+          </div>
         </div>
-      </div>
+        <div id="selected-element" class="selected-element-card">
+          <div class="empty-state" data-i18n="selectElement">یک عنصر را از جدول انتخاب کنید.</div>
+        </div>
 
-      <div class="level-grid">
-        <a class="level-card beginner" href="data/ELEMENTS_118_BEGINNER.csv">
-          <span class="level-icon">۱</span>
-          <span>
-            <strong data-i18n="beginnerTitle">اطلاعات دسته‌بندی شده مبتدی</strong>
-            <small data-i18n="beginnerDescription">مفاهیم پایه و مشخصات اصلی ۱۱۸ عنصر</small>
-          </span>
-          <span class="arrow" aria-hidden="true">←</span>
-        </a>
+        <div id="levels" class="element-levels">
+          <article class="detail-level-card beginner">
+            <div class="detail-level-header">
+              <span class="level-icon">۱</span>
+              <h3 data-i18n="beginnerTitle">اطلاعات مبتدی</h3>
+            </div>
+            <div id="beginner-info" class="detail-content">
+              <div class="empty-state">—</div>
+            </div>
+          </article>
 
-        <a class="level-card professional" href="data/ELEMENTS_118_ADVANCED.csv">
-          <span class="level-icon">۲</span>
-          <span>
-            <strong data-i18n="professionalTitle">اطلاعات دسته‌بندی شده حرفه‌ای</strong>
-            <small data-i18n="professionalDescription">ویژگی‌های عددی و شیمیایی گسترده‌تر</small>
-          </span>
-          <span class="arrow" aria-hidden="true">←</span>
-        </a>
+          <article class="detail-level-card professional">
+            <div class="detail-level-header">
+              <span class="level-icon">۲</span>
+              <h3 data-i18n="professionalTitle">اطلاعات پیشرفته</h3>
+            </div>
+            <div id="advanced-info" class="detail-content">
+              <div class="empty-state">—</div>
+            </div>
+          </article>
 
-        <a class="level-card advanced" href="data/ELEMENTS_118_VERY_ADVANCED.csv">
-          <span class="level-icon">۳</span>
-          <span>
-            <strong data-i18n="advancedTitle">اطلاعات دسته‌بندی شده پیشرفته</strong>
-            <small data-i18n="advancedDescription">جزئیات تکمیلی برای مطالعهٔ عمیق‌تر</small>
-          </span>
-          <span class="arrow" aria-hidden="true">←</span>
-        </a>
-      </div>
+          <article class="detail-level-card advanced">
+            <div class="detail-level-header">
+              <span class="level-icon">۳</span>
+              <h3 data-i18n="veryAdvancedTitle">اطلاعات فوق پیشرفته</h3>
+            </div>
+            <div id="very-advanced-info" class="detail-content">
+              <div class="empty-state">—</div>
+            </div>
+          </article>
+        </div>
+      </section>
     </section>
 
     <section class="section container quick-info" aria-label="راهنمای سریع / Quick facts">
