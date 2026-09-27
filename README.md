@@ -702,7 +702,7 @@ text
 - RTL/LTR بررسی شود.
 - جدول روی موبایل بررسی شود.
 - انتخاب عنصر بررسی شود.
-- سه سطح اطلاعات بررسی شوند.
+- سه لایهٔ اطلاعات بررسی شوند.
 - selector مربوط به ۱۵ theme بررسی شود.
 - refresh صفحه و localStorage بررسی شود.
 - خطای نبودن یا قابل‌بارگذاری نبودن CSV بررسی شود.
@@ -735,7 +735,7 @@ text
 
 - تبدیل validation به static-site validation
 - مستندسازی وابستگی نداشتن پروژه به package.json و Webpack
-- مستندسازی سه سطح داده
+- مستندسازی سه لایهٔ دانشی
 - مستندسازی سیستم فارسی/انگلیسی
 - مستندسازی ۱۵ PDF theme
 - مستندسازی قراردادهای داده و راهنمای کار برای AI agents
@@ -761,7 +761,7 @@ Primary data key: AtomicNumber
 Languages: Persian + English
 Directions: RTL + LTR
 Element count: 118
-Detail levels: Beginner + Advanced + Very Advanced
+Detail levels: Foundational Insight + Specialized Analysis + Scientific Deep Dive
 Runtime requirement: HTTP server because CSVs are loaded with fetch()
 CI: GitHub Actions validates files, JS syntax and HTTP smoke tests
 Main rule: Preserve the existing HTML/CSS/JS/CSV architecture unless a real requirement justifies an architectural change.
@@ -836,3 +836,14 @@ data/...
 - شماره‌های تزئینی روی سه کارت سطح اطلاعات حذف شده‌اند و محتوای اصلی کارت‌ها بدون تغییر باقی مانده است.
 - در بخش راهنمای سریع فقط کارت «۱۱۸ عنصر در مجموعه» باقی مانده و دو کارت اضافی حذف شده‌اند.
 - ساختار داده، CSVها، منطق JavaScript و معماری سمت‌کاربر تغییر نکرده‌اند.
+
+
+### نام‌گذاری جدید لایه‌های اطلاعات
+
+برای لحن حرفه‌ای‌تر رابط کاربری، نام سه سطح اطلاعات به این صورت تعیین شده است:
+
+- **شناخت بنیادین** — Foundational Insight
+- **تحلیل تخصصی** — Specialized Analysis
+- **ژرف‌کاوی علمی** — Scientific Deep Dive
+
+این تغییر فقط نام‌گذاری و متن رابط کاربری را تغییر می‌دهد و ساختار داده و فایل‌های CSV دست‌نخورده باقی می‌مانند.
