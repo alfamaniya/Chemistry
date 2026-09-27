@@ -3,74 +3,49 @@
 
   const DATA_URL = "data/PubChemElements_all.csv";
   const grid = document.getElementById("periodic-table-grid");
+  const fBlock = document.getElementById("f-block");
   const status = document.getElementById("table-status");
   const languageButtons = document.querySelectorAll(".language-button");
 
   const translations = {
     fa: {
-      brand: "مرجع شیمی",
-      brandTagline: "یادگیری ساده، دقیق و مرحله‌ای",
-      navPeriodic: "جدول تناوبی",
-      navLevels: "سطوح آموزشی",
-      navAbout: "درباره",
+      brand: "مرجع شیمی", brandTagline: "یادگیری ساده، دقیق و مرحله‌ای",
+      navPeriodic: "جدول تناوبی", navLevels: "سطوح آموزشی", navAbout: "درباره",
       heroTitle: "مرجع شیمی و جدول تناوبی",
       heroText: "یک نقطهٔ شروع ساده برای مشاهدهٔ جدول تناوبی و دسترسی سریع به اطلاعات عناصر، از سطح مبتدی تا پیشرفته.",
-      heroButton: "مشاهده جدول تناوبی",
-      periodicTitle: "جدول تناوبی",
-      periodicSubtitle: "آجرهای مربعی با گوشه‌های نرم‌شده",
-      levelsTitle: "سطوح آموزشی",
-      levelsSubtitle: "اطلاعات دسته‌بندی‌شده برای مسیرهای مختلف یادگیری",
-      beginnerTitle: "اطلاعات دسته‌بندی شده مبتدی",
-      beginnerDescription: "مفاهیم پایه و مشخصات اصلی ۱۱۸ عنصر",
-      professionalTitle: "اطلاعات دسته‌بندی شده حرفه‌ای",
-      professionalDescription: "ویژگی‌های عددی و شیمیایی گسترده‌تر",
-      advancedTitle: "اطلاعات دسته‌بندی شده پیشرفته",
-      advancedDescription: "جزئیات تکمیلی برای مطالعهٔ عمیق‌تر",
-      elementsCount: "عنصر در مجموعه",
-      levelsCount: "سطح آموزشی",
-      dataFormat: "منبع دادهٔ ساختاریافته",
-      footerTitle: "مرجع شیمی",
-      footerText: "پروژه‌ای برای دسترسی ساده‌تر به داده‌های عناصر شیمیایی.",
-      backTop: "بازگشت به بالا ↑",
-      loading: "در حال بارگذاری عناصر…",
-      loaded: "عنصر از منبع داده بارگذاری شد.",
-      elementDetails: "عدد اتمی",
-      categoryUnknown: "دسته‌بندی نامشخص",
-      loadError: "بارگذاری داده‌ها انجام نشد. صفحه را از طریق یک وب‌سرور محلی اجرا کنید."
+      heroButton: "مشاهده جدول تناوبی", periodicTitle: "جدول تناوبی",
+      periodicSubtitle: "چیدمان ۱۸ گروهی بر اساس مرجع جدول تناوبی",
+      levelsTitle: "سطوح آموزشی", levelsSubtitle: "اطلاعات دسته‌بندی‌شده برای مسیرهای مختلف یادگیری",
+      beginnerTitle: "اطلاعات دسته‌بندی شده مبتدی", beginnerDescription: "مفاهیم پایه و مشخصات اصلی ۱۱۸ عنصر",
+      professionalTitle: "اطلاعات دسته‌بندی شده حرفه‌ای", professionalDescription: "ویژگی‌های عددی و شیمیایی گسترده‌تر",
+      advancedTitle: "اطلاعات دسته‌بندی شده پیشرفته", advancedDescription: "جزئیات تکمیلی برای مطالعهٔ عمیق‌تر",
+      elementsCount: "عنصر در مجموعه", levelsCount: "سطح آموزشی", dataFormat: "منبع دادهٔ ساختاریافته",
+      footerTitle: "مرجع شیمی", footerText: "پروژه‌ای برای دسترسی ساده‌تر به داده‌های عناصر شیمیایی.",
+      backTop: "بازگشت به بالا ↑", loading: "در حال بارگذاری عناصر…",
+      loaded: "عنصر از منبع داده بارگذاری شد.", elementDetails: "عدد اتمی",
+      categoryUnknown: "دسته‌بندی نامشخص", loadError: "بارگذاری داده‌ها انجام نشد. صفحه را از طریق یک وب‌سرور محلی اجرا کنید."
     },
     en: {
-      brand: "Chemistry Reference",
-      brandTagline: "Simple, accurate, step-by-step learning",
-      navPeriodic: "Periodic Table",
-      navLevels: "Learning Levels",
-      navAbout: "About",
+      brand: "Chemistry Reference", brandTagline: "Simple, accurate, step-by-step learning",
+      navPeriodic: "Periodic Table", navLevels: "Learning Levels", navAbout: "About",
       heroTitle: "Chemistry Reference & Periodic Table",
       heroText: "A simple starting point for exploring the periodic table and accessing element information from beginner to advanced levels.",
-      heroButton: "View Periodic Table",
-      periodicTitle: "Periodic Table",
-      periodicSubtitle: "Soft-cornered element tiles",
-      levelsTitle: "Learning Levels",
-      levelsSubtitle: "Organized information for different learning paths",
-      beginnerTitle: "Beginner Information",
-      beginnerDescription: "Core concepts and key facts for all 118 elements",
-      professionalTitle: "Professional Information",
-      professionalDescription: "Broader numerical and chemical properties",
-      advancedTitle: "Advanced Information",
-      advancedDescription: "Additional details for deeper study",
-      elementsCount: "elements in the collection",
-      levelsCount: "learning levels",
-      dataFormat: "structured data source",
-      footerTitle: "Chemistry Reference",
-      footerText: "A project for easier access to chemical element data.",
-      backTop: "Back to top ↑",
-      loading: "Loading elements…",
-      loaded: "elements loaded from the data source.",
-      elementDetails: "Atomic number",
-      categoryUnknown: "Unknown category",
-      loadError: "The data could not be loaded. Please run the page through a local web server."
+      heroButton: "View Periodic Table", periodicTitle: "Periodic Table",
+      periodicSubtitle: "18-group layout based on the reference periodic table",
+      levelsTitle: "Learning Levels", levelsSubtitle: "Organized information for different learning paths",
+      beginnerTitle: "Beginner Information", beginnerDescription: "Core concepts and key facts for all 118 elements",
+      professionalTitle: "Professional Information", professionalDescription: "Broader numerical and chemical properties",
+      advancedTitle: "Advanced Information", advancedDescription: "Additional details for deeper study",
+      elementsCount: "elements in the collection", levelsCount: "learning levels", dataFormat: "structured data source",
+      footerTitle: "Chemistry Reference", footerText: "A project for easier access to chemical element data.",
+      backTop: "Back to top ↑", loading: "Loading elements…",
+      loaded: "elements loaded from the data source.", elementDetails: "Atomic number",
+      categoryUnknown: "Unknown category", loadError: "The data could not be loaded. Please run the page through a local web server."
     }
   };
 
+  // Main table positions: period -> group. F-block is rendered separately below group 3,
+  // matching the reference PDF.
   const positions = new Map([
     [1,[1,1]],[2,[1,18]],[3,[2,1]],[4,[2,2]],[5,[2,13]],[6,[2,14]],[7,[2,15]],[8,[2,16]],[9,[2,17]],[10,[2,18]],
     [11,[3,1]],[12,[3,2]],[13,[3,13]],[14,[3,14]],[15,[3,15]],[16,[3,16]],[17,[3,17]],[18,[3,18]],
@@ -86,8 +61,7 @@
     const rows = [];
     let row = [], cell = "", quoted = false;
     for (let i = 0; i < text.length; i++) {
-      const ch = text[i];
-      const next = text[i + 1];
+      const ch = text[i], next = text[i + 1];
       if (ch === '"' && quoted && next === '"') { cell += '"'; i++; continue; }
       if (ch === '"') { quoted = !quoted; continue; }
       if (ch === "," && !quoted) { row.push(cell); cell = ""; continue; }
@@ -108,29 +82,25 @@
   function setLanguage(language) {
     currentLanguage = language === "en" ? "en" : "fa";
     const t = translations[currentLanguage];
-
     document.documentElement.lang = currentLanguage;
     document.documentElement.dir = currentLanguage === "fa" ? "rtl" : "ltr";
-    document.body.classList.toggle("lang-en", currentLanguage === "en");
-
+    document.body.classList.toggle("lang-en", currentLanguage);
     document.querySelectorAll("[data-i18n]").forEach(node => {
       const key = node.dataset.i18n;
       if (t[key]) node.textContent = t[key];
     });
-
     languageButtons.forEach(button => {
       const active = button.dataset.language === currentLanguage;
       button.classList.toggle("active", active);
       button.setAttribute("aria-pressed", String(active));
     });
-
     localStorage.setItem("chemistry-language", currentLanguage);
     updateStatus();
   }
 
   function updateStatus() {
     const t = translations[currentLanguage];
-    const count = grid.querySelectorAll(".element").length;
+    const count = grid.querySelectorAll(".element").length + fBlock.querySelectorAll(".element").length;
     if (count) status.textContent = count + " " + t.loaded;
   }
 
@@ -154,29 +124,31 @@
     name.textContent = element.Name;
 
     card.append(number, symbol, name);
-
     card.addEventListener("click", () => {
       const t = translations[currentLanguage];
       status.textContent = element.Name + " (" + element.Symbol + ") — " + t.elementDetails + " " + element.AtomicNumber + " — " + (element.GroupBlock || t.categoryUnknown);
     });
-
     return card;
   }
 
-  function createFBlock(elements, label, start, end) {
+  function createFRow(elements, start, end) {
     const row = document.createElement("div");
     row.className = "f-row";
 
-    const title = document.createElement("span");
-    title.className = "f-label";
-    title.textContent = label;
-    row.appendChild(title);
+    for (let i = 0; i < 2; i++) {
+      const spacer = document.createElement("span");
+      spacer.className = "f-spacer";
+      row.appendChild(spacer);
+    }
 
     elements.filter(element => {
       const number = Number(element.AtomicNumber);
       return number >= start && number <= end;
     }).forEach(element => row.appendChild(createElementCard(element)));
 
+    const finalSpacer = document.createElement("span");
+    finalSpacer.className = "f-spacer";
+    row.appendChild(finalSpacer);
     return row;
   }
 
@@ -187,29 +159,27 @@
 
       const elements = parseCsv(await response.text()).filter(element => element.AtomicNumber);
       grid.innerHTML = "";
+      fBlock.innerHTML = "";
 
       elements.forEach(element => {
         const position = positions.get(Number(element.AtomicNumber));
         if (!position) return;
-
         const card = createElementCard(element);
         card.style.gridColumn = position[1];
         card.style.gridRow = position[0];
         grid.appendChild(card);
       });
 
-      const fBlock = document.createElement("div");
-      fBlock.className = "f-block";
       fBlock.append(
-        createFBlock(elements, currentLanguage === "fa" ? "لانتانیدها" : "Lanthanides", 57, 71),
-        createFBlock(elements, currentLanguage === "fa" ? "اکتینیدها" : "Actinides", 89, 103)
+        createFRow(elements, 57, 71),
+        createFRow(elements, 89, 103)
       );
-      grid.parentElement.appendChild(fBlock);
 
       updateStatus();
     } catch (error) {
       const t = translations[currentLanguage];
       grid.innerHTML = '<div class="loading">' + t.loadError + '</div>';
+      fBlock.innerHTML = "";
       status.textContent = DATA_URL;
     }
   }
