@@ -1,5 +1,28 @@
 import { getName, translations } from "../../core/i18n.js";
 
+export function mountPeriodicTableShell(root) {
+  if (!root || root.children.length) return;
+  root.innerHTML = `
+    <div class="section-heading">
+      <div>
+        <h2 data-i18n="periodicTitle">جدول تناوبی</h2>
+        <p data-i18n="periodicSubtitle">آجرهای مربعی با گوشه‌های نرم‌شده</p>
+      </div>
+    </div>
+    <div class="table-theme-control">
+      <label for="table-theme-select" data-i18n="themeSelectLabel">رنگ جدول بر اساس PDF</label>
+      <select id="table-theme-select" aria-describedby="table-theme-description"></select>
+      <p id="table-theme-description" class="table-theme-description" data-i18n="themeSelectDescription">یکی از ۱۵ جدول تصویری PDF را انتخاب کنید تا رنگ‌های جدول تغییر کند.</p>
+    </div>
+    <div class="table-shell">
+      <div id="periodic-table-grid" class="periodic-grid" aria-label="جدول تناوبی عناصر / Periodic table">
+        <div class="loading" data-i18n="loading">در حال بارگذاری عناصر…</div>
+      </div>
+      <div id="f-block" class="f-block" aria-label="لانتانیدها و اکتینیدها / Lanthanides and Actinides"></div>
+    </div>
+    <p id="table-status" class="table-status" role="status"></p>`;
+}
+
 const positions = new Map([
   [1,[1,1]],[2,[1,18]],[3,[2,1]],[4,[2,2]],[5,[2,13]],[6,[2,14]],[7,[2,15]],[8,[2,16]],[9,[2,17]],[10,[2,18]],
   [11,[3,1]],[12,[3,2]],[13,[3,13]],[14,[3,14]],[15,[3,15]],[16,[3,16]],[17,[3,17]],[18,[3,18]],
@@ -10,80 +33,22 @@ const positions = new Map([
 ]);
 
 export function mountPeriodicTable({
-  grid = document.getElementById("periodic-table-grid"),
-  fBlock = document.getElementById("f-block"),
-  status = document.getElementById("table-status"),
-  getLanguage = () => document.documentElement.lang === "en" ? "en" : "fa",
-  onElementSelected = () => {}
+  grid = document.getElementById("periodic-table-grid"), fBlock = document.getElementById("f-block"), status = document.getElementById("table-status"),
+  getLanguage = () => document.documentElement.lang === "en" ? "en" : "fa", onElementSelected = () => {}
 } = {}) {
   let elements = [];
   let selectedAtomicNumber = null;
-
-  function updateStatus(message) {
-    const language = getLanguage();
-    const t = translations[language];
-    if (message) { status.textContent = message; return; }
-    const count = grid.querySelectorAll(".element").length + fBlock.querySelectorAll(".element").length;
-    if (count) status.textContent = count + " " + t.loaded;
-  }
-
+  function updateStatus(message) { const language=getLanguage(), t=translations[language]; if(message){status.textContent=message;return;} const count=grid.querySelectorAll(".element").length+fBlock.querySelectorAll(".element").length; if(count) status.textContent=count+" "+t.loaded; }
   function createElementCard(element) {
-    const language = getLanguage();
-    const card = document.createElement("button");
-    card.className = "element";
-    card.type = "button";
-    card.dataset.type = element.GroupBlock || "";
-    card.dataset.atomicNumber = element.AtomicNumber;
-    card.setAttribute("aria-label", getName(element, language) + ", " + translations[language].elementDetails + " " + element.AtomicNumber);
-
-    const number = document.createElement("span"); number.className = "element-number"; number.textContent = element.AtomicNumber;
-    const symbol = document.createElement("span"); symbol.className = "element-symbol"; symbol.textContent = element.Symbol;
-    const name = document.createElement("span"); name.className = "element-name"; name.textContent = getName(element, language);
-    card.append(number, symbol, name);
-
-    card.addEventListener("click", () => {
-      selectedAtomicNumber = Number(element.AtomicNumber);
-      onElementSelected(selectedAtomicNumber);
-      const currentLanguage = getLanguage();
-      const t = translations[currentLanguage];
-      updateStatus(getName(element, currentLanguage) + " (" + element.Symbol + ") — " + t.elementDetails + " " + element.AtomicNumber);
-      document.querySelectorAll(".element.selected").forEach(node => node.classList.remove("selected"));
-      card.classList.remove("selected-flash");
-      void card.offsetWidth;
-      card.classList.add("selected", "selected-flash");
-      card.addEventListener("animationend", () => card.classList.remove("selected-flash"), { once: true });
-    });
+    const language=getLanguage(), card=document.createElement("button"); card.className="element"; card.type="button"; card.dataset.type=element.GroupBlock||""; card.dataset.atomicNumber=element.AtomicNumber; card.setAttribute("aria-label",getName(element,language)+", "+translations[language].elementDetails+" "+element.AtomicNumber);
+    const number=document.createElement("span"); number.className="element-number"; number.textContent=element.AtomicNumber;
+    const symbol=document.createElement("span"); symbol.className="element-symbol"; symbol.textContent=element.Symbol;
+    const name=document.createElement("span"); name.className="element-name"; name.textContent=getName(element,language); card.append(number,symbol,name);
+    card.addEventListener("click",()=>{selectedAtomicNumber=Number(element.AtomicNumber); onElementSelected(selectedAtomicNumber); const currentLanguage=getLanguage(),t=translations[currentLanguage]; updateStatus(getName(element,currentLanguage)+" ("+element.Symbol+") — "+t.elementDetails+" "+element.AtomicNumber); document.querySelectorAll(".element.selected").forEach(node=>node.classList.remove("selected")); card.classList.remove("selected-flash"); void card.offsetWidth; card.classList.add("selected","selected-flash"); card.addEventListener("animationend",()=>card.classList.remove("selected-flash"),{once:true});});
     return card;
   }
-
-  function createFRow(source, start, end) {
-    const row = document.createElement("div"); row.className = "f-row";
-    for (let i = 0; i < 2; i++) { const spacer = document.createElement("span"); spacer.className = "f-spacer"; row.appendChild(spacer); }
-    source.filter(element => { const number = Number(element.AtomicNumber); return number >= start && number <= end; }).forEach(element => row.appendChild(createElementCard(element)));
-    const finalSpacer = document.createElement("span"); finalSpacer.className = "f-spacer"; row.appendChild(finalSpacer);
-    return row;
-  }
-
-  function render(nextElements = elements) {
-    elements = nextElements;
-    grid.innerHTML = "";
-    fBlock.innerHTML = "";
-    elements.forEach(element => {
-      const position = positions.get(Number(element.AtomicNumber));
-      if (!position) return;
-      const card = createElementCard(element);
-      if (selectedAtomicNumber === Number(element.AtomicNumber)) card.classList.add("selected");
-      card.style.gridColumn = position[1];
-      card.style.gridRow = position[0];
-      grid.appendChild(card);
-    });
-    fBlock.append(createFRow(elements, 57, 71), createFRow(elements, 89, 103));
-    updateStatus();
-  }
-
-  function setSelectedAtomicNumber(atomicNumber) {
-    selectedAtomicNumber = atomicNumber === null ? null : Number(atomicNumber);
-  }
-
-  return { render, updateStatus, setSelectedAtomicNumber };
+  function createFRow(source,start,end){const row=document.createElement("div");row.className="f-row";for(let i=0;i<2;i++){const spacer=document.createElement("span");spacer.className="f-spacer";row.appendChild(spacer);}source.filter(element=>{const number=Number(element.AtomicNumber);return number>=start&&number<=end;}).forEach(element=>row.appendChild(createElementCard(element)));const finalSpacer=document.createElement("span");finalSpacer.className="f-spacer";row.appendChild(finalSpacer);return row;}
+  function render(nextElements=elements){elements=nextElements;grid.innerHTML="";fBlock.innerHTML="";elements.forEach(element=>{const position=positions.get(Number(element.AtomicNumber));if(!position)return;const card=createElementCard(element);if(selectedAtomicNumber===Number(element.AtomicNumber))card.classList.add("selected");card.style.gridColumn=position[1];card.style.gridRow=position[0];grid.appendChild(card);});fBlock.append(createFRow(elements,57,71),createFRow(elements,89,103));updateStatus();}
+  function setSelectedAtomicNumber(atomicNumber){selectedAtomicNumber=atomicNumber===null?null:Number(atomicNumber);}
+  return {render,updateStatus,setSelectedAtomicNumber};
 }
