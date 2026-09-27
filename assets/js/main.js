@@ -333,6 +333,29 @@
     return parseCsv(await response.text());
   }
 
+  function normalizeDetailRow(row) {
+    return {
+      ...row,
+      AtomicNumber: row.AtomicNumber || row.atomic_number,
+      Symbol: row.Symbol || row.symbol,
+      Name: row.Name || row.name,
+      AtomicMass: row.AtomicMass || row.atomic_mass,
+      GroupBlock: row.GroupBlock || row.group_block,
+      StandardState: row.StandardState || row.standard_state,
+      ElectronConfiguration: row.ElectronConfiguration || row.electron_configuration,
+      OxidationStates: row.OxidationStates || row.oxidation_states,
+      Electronegativity: row.Electronegativity || row.electronegativity,
+      AtomicRadius: row.AtomicRadius || row.atomic_radius_pm,
+      IonizationEnergy: row.IonizationEnergy || row.ionization_energy_eV,
+      ElectronAffinity: row.ElectronAffinity || row.electron_affinity_eV,
+      MeltingPoint: row.MeltingPoint || row.melting_point_K,
+      BoilingPoint: row.BoilingPoint || row.boiling_point_K,
+      Density: row.Density || row.density_g_cm3,
+      YearDiscovered: row.YearDiscovered || row.year_discovered,
+      data_status: row.data_status || row.dataStatus
+    };
+  }
+
   async function loadElements() {
     try {
       const [pubchem, advanced, veryAdvanced] = await Promise.all([
@@ -342,8 +365,8 @@
       ]);
 
       elements = pubchem.filter(element => element.AtomicNumber);
-      advancedElements = advanced.filter(element => element.atomic_number || element.AtomicNumber);
-      veryAdvancedElements = veryAdvanced.filter(element => element.atomic_number || element.AtomicNumber);
+      advancedElements = advanced.filter(element => element.atomic_number || element.AtomicNumber).map(normalizeDetailRow);
+      veryAdvancedElements = veryAdvanced.filter(element => element.atomic_number || element.AtomicNumber).map(normalizeDetailRow);
 
       renderPeriodicTable();
       updateStatus();
