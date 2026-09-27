@@ -1,6 +1,7 @@
 (() => {
   "use strict";
 
+  // main.js is the single owner of PDF theme selector state and presentation.
   const legacyScript = document.createElement("script");
   legacyScript.src = "assets/js/main-legacy.js";
   legacyScript.defer = false;
@@ -57,17 +58,7 @@
     if (!themeSelect) return;
     syncThemeSelect(true);
 
-    document.querySelector('[data-i18n="periodicSubtitle"]')?.remove();
-
-    const observer = new MutationObserver(() => {
-      if (themeSelect.options.length !== themes.length || themeSelect.options[0]?.value !== "15") {
-        const current = themeSelect.value;
-        syncThemeSelect(false);
-        if (current && themes.some(theme => theme.id === current)) themeSelect.value = current;
-      }
-    });
-    observer.observe(themeSelect, {childList: true});
-
+    // The selector is owned by this module; no selector MutationObserver is needed.
     new MutationObserver(() => syncThemeSelect(false)).observe(document.documentElement, {
       attributes: true,
       attributeFilter: ["lang"]
