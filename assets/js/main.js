@@ -55,8 +55,8 @@
       heroButton: "مشاهده جدول تناوبی", periodicTitle: "جدول تناوبی",
       periodicSubtitle: "چیدمان ۱۸ گروهی بر اساس مرجع جدول تناوبی",
       levelsTitle: "لایه‌های دانش", levelsSubtitle: "اطلاعات عنصر انتخاب‌شده در سه لایهٔ دانشی",
-      beginnerTitle: "شناخت بنیادین", beginnerDescription: "داده‌های پایه و ضروری برای درک عنصر"
-      professionalTitle: "تحلیل تخصصی", professionalDescription: "ویژگی‌ها و روابط گسترده‌تر برای بررسی دقیق‌تر"
+      beginnerTitle: "شناخت بنیادین", beginnerDescription: "داده‌های پایه و ضروری برای درک عنصر",
+      professionalTitle: "تحلیل تخصصی", professionalDescription: "ویژگی‌ها و روابط گسترده‌تر برای بررسی دقیق‌تر",
       veryAdvancedTitle: "ژرف‌کاوی علمی",
       advancedDescription: "جزئیات عمیق‌تر برای بررسی جامع عنصر",
       elementsCount: "عنصر در مجموعه", levelsCount: "سطح آموزشی", dataFormat: "منبع دادهٔ ساختاریافته",
@@ -84,8 +84,8 @@
       heroButton: "View Periodic Table", periodicTitle: "Periodic Table",
       periodicSubtitle: "18-group layout based on the reference periodic table",
       levelsTitle: "Knowledge Layers", levelsSubtitle: "Information for the selected element across three knowledge layers",
-      beginnerTitle: "Foundational Insight", beginnerDescription: "Essential data for understanding the element"
-      professionalTitle: "Specialized Analysis", professionalDescription: "Broader properties for deeper examination"
+      beginnerTitle: "Foundational Insight", beginnerDescription: "Essential data for understanding the element",
+      professionalTitle: "Specialized Analysis", professionalDescription: "Broader properties for deeper examination",
       veryAdvancedTitle: "Scientific Deep Dive", advancedDescription: "In-depth details for comprehensive exploration"
       elementsCount: "elements in the collection", levelsCount: "learning levels", dataFormat: "structured data source",
       footerTitle: "Chemistry Reference", footerText: "A project for easier access to chemical element data.",
