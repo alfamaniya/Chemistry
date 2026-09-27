@@ -19,16 +19,17 @@
     {id:1, fa:"جرم اتمی", en:"Atomic Mass"},{id:2, fa:"چگالی", en:"Density"},{id:3, fa:"حالت استاندارد", en:"Standard State"},
     {id:4, fa:"الکترونگاتیویته", en:"Electronegativity"},{id:5, fa:"انرژی یونش", en:"Ionization Energy"},{id:6, fa:"آرایش الکترونی", en:"Electron Configuration"},
     {id:7, fa:"شعاع اتمی", en:"Atomic Radius"},{id:8, fa:"حالت‌های اکسایش", en:"Oxidation States"},{id:9, fa:"الکترون‌خواهی", en:"Electron Affinity"},
-    {id:10, fa:"نقطه ذوب", en:"Melting Point"},{id:11, fa:"نقطه جوش", en:"Boiling Point"},{id:12, fa:"اشغال اوربیتال", en:"Orbital Occupancy"},
-    {id:13, fa:"فلز / شبه‌فلز / نافلز", en:"Metal / Metalloid / Nonmetal"},{id:14, fa:"پایداری شیمیایی", en:"Chemical Stability"},
-    {id:15, fa:"گروه / خانواده شیمیایی", en:"Chemical Group / Family"}
+    {id:10, fa:"نقطه ذوب", en:"Melting Point"},{id:11, fa:"نقطه جوش", en:"Boiling Point"},{id:12, fa:"سال کشف", en:"Year Discovered"},
+    {id:13, fa:"فلز / شبه‌فلز / نافلز", en:"Metal / Metalloid / Nonmetal"},{id:14, fa:"گروه / خانواده شیمیایی", en:"Chemical Group / Family"},
+    {id:15, fa:"بدون دسته‌بندی", en:"Uncategorized"}
   ];
 
   function applyPdfTheme(themeId) {
     if (!tableShell) return;
     for (let i = 1; i <= 15; i++) tableShell.classList.remove("theme-" + i);
-    tableShell.classList.add("theme-pdf", "theme-" + Number(themeId));
-    localStorage.setItem("chemistry-pdf-theme", String(themeId));
+    const normalizedTheme = Number(themeId) >= 1 && Number(themeId) <= 15 ? Number(themeId) : 15;
+    tableShell.classList.add("theme-pdf", "theme-" + normalizedTheme);
+    localStorage.setItem("chemistry-pdf-theme", String(normalizedTheme));
   }
 
   function populateThemeSelect() {
@@ -40,9 +41,18 @@
       option.textContent = currentLanguage === "fa" ? theme.fa : theme.en;
       themeSelect.appendChild(option);
     });
-    const saved = localStorage.getItem("chemistry-pdf-theme") || "1";
-    themeSelect.value = saved;
-    applyPdfTheme(saved);
+
+    let saved = localStorage.getItem("chemistry-pdf-theme");
+    const themeVersion = localStorage.getItem("chemistry-pdf-theme-version");
+    if (themeVersion !== "2") {
+      if (saved === "14") saved = "15";
+      else if (saved === "15") saved = "14";
+      localStorage.setItem("chemistry-pdf-theme-version", "2");
+    }
+    saved = saved || "15";
+    const validSaved = pdfThemes.some(theme => String(theme.id) === String(saved)) ? String(saved) : "15";
+    themeSelect.value = validSaved;
+    applyPdfTheme(validSaved);
   }
 
 
