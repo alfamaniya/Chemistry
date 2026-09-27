@@ -1,8 +1,8 @@
 # Chemistry — برنامهٔ مرحله‌ای Refactor معماری Component-Based
 
-> **وضعیت سند:** مراحل ۱ تا ۱۲ تکمیل شده‌اند.
+> **وضعیت سند:** مراحل ۱ تا ۱۴ تکمیل شده‌اند.
 > **هدف:** تبدیل تدریجی پروژه به معماری Component-Based با حفظ رفتار، داده‌ها، ظاهر، accessibility و قراردادهای runtime.
-> **قانون:** هر مرحله جداگانه اجرا و گزارش می‌شود؛ مراحل ۱۰ تا ۱۲ در این بسته انجام شدند.
+> **وضعیت نهایی:** migration معماری انجام شد؛ `data/Elements/` عمداً به‌عنوان دادهٔ غیر-runtime نگه داشته شد و CI با معماری جدید همگام شد.
 
 ---
 
@@ -22,7 +22,7 @@
 
 ---
 
-# 2. معماری فعلی
+# 2. معماری نهایی
 
 ```text
 index.html
@@ -30,7 +30,7 @@ index.html
 
 assets/
 ├── css/
-│   ├── main.css                 # global + legacy theme styles during migration
+│   ├── main.css                 # global + legacy theme styles
 │   └── components/
 │       ├── header.css
 │       ├── hero.css
@@ -79,7 +79,7 @@ Repository، runtime، CSVها، CI، IDها، selectorها، eventها، state�
 
 **وضعیت: ✓ تکمیل‌شده**
 
-`assets/js/components/header/header.js` ساخته شد و اکنون markup و eventهای Header را نیز مالک است. کنترل زبان از طریق قرارداد `chemistry:language-change` به orchestrator متصل است.
+`assets/js/components/header/header.js` ساخته شد و markup و eventهای Header را مالک است. کنترل زبان از طریق قرارداد `chemistry:language-change` به orchestrator متصل است.
 
 ## مرحله 5 — جداسازی Hero
 
@@ -109,21 +109,13 @@ Repository، runtime، CSVها، CI، IDها، selectorها، eventها، state�
 
 **وضعیت: ✓ تکمیل‌شده — انتقال تدریجی**
 
-CSS اختصاصی Componentها در `assets/css/components/` ایجاد و load شد. Themeهای ۱۵گانه همچنان در `main.css` باقی می‌مانند چون مالک آن‌ها Theme System است.
+CSS اختصاصی Componentها در `assets/css/components/` ایجاد و load شد. Themeهای ۱۵گانه همچنان در `main.css` باقی مانده‌اند چون مالک آن‌ها Theme System است.
 
 ## مرحله 10 — تعیین مالک نهایی Theme و Selection Animation
 
 **وضعیت: ✓ تکمیل‌شده**
 
-مالکیت رفتاری selection animation به Component جدول منتقل شد:
-
-```text
-Periodic Table Component
-   └── .element.selected-flash
-       └── chemistry-element-selection
-```
-
-انیمیشن canonical اکنون در `assets/css/components/periodic-table.css` قرار دارد و رفتار مطلوب حفظ شده است:
+مالکیت رفتاری selection animation به Component جدول منتقل شد. انیمیشن canonical در `assets/css/components/periodic-table.css` قرار دارد و رفتار مطلوب حفظ شده است:
 
 - دو flash نرم: آبی و سپس سبز.
 - پس از پایان animation، `selected` باقی می‌ماند.
@@ -133,47 +125,48 @@ Periodic Table Component
 
 Theme System همچنان مالک `theme-1` تا `theme-15` و localStorage مربوط به Theme است.
 
-> **یادداشت migration:** تعریف قدیمی `selected-flash` در `main.css` هنوز به‌عنوان legacy CSS باقی مانده است؛ تعریف Component با stylesheet جداگانه canonical و loadشده است. حذف کامل legacy CSS در مرحلهٔ نهایی validation/cleanup قابل انجام است.
+> تعریف قدیمی `selected-flash` در `main.css` به‌عنوان legacy CSS باقی مانده و تعریف Component نسخهٔ canonical است؛ این legacy تعریف در این refactor حذف نشده تا migration محافظه‌کارانه باقی بماند.
 
 ## مرحله 11 — تبدیل `index.html` به Composition Layer
 
 **وضعیت: ✓ تکمیل‌شده**
 
-`index.html` از markup داخلی Componentها خالی شد و اکنون فقط shell، slotهای Component و metadata سند را نگه می‌دارد:
-
-```html
-<header data-component="header"></header>
-<section data-component="hero"></section>
-<section data-component="periodic-table"></section>
-<section data-component="element-details"></section>
-<footer data-component="footer"></footer>
-```
-
-Markup اختصاصی هر Component اکنون در mount function همان Component ساخته می‌شود. IDهای runtime مانند `periodic-table-grid`, `f-block`, `table-theme-select`, `selected-element`, `beginner-info`, `advanced-info` و `very-advanced-info` حفظ شده‌اند.
+`index.html` از markup داخلی Componentها خالی شد و اکنون shell، slotهای Component و metadata سند را نگه می‌دارد. IDهای runtime مانند `periodic-table-grid`, `f-block`, `table-theme-select`, `selected-element`, `beginner-info`, `advanced-info` و `very-advanced-info` حفظ شده‌اند.
 
 ## مرحله 12 — پاک‌سازی `main.js` و runtime legacy
 
 **وضعیت: ✓ تکمیل‌شده**
 
-`main.js` به bootstrap و Theme System محدود شد و دیگر `main-legacy.js` را dynamic-load نمی‌کند.
+`main.js` به bootstrap و Theme System محدود شد. `main-legacy.js` به `assets/js/app.js` تبدیل شد و فایل legacy حذف شد. `app.js` فقط orchestration بین Core، Periodic Table و Element Details را انجام می‌دهد.
 
-`main-legacy.js` به `assets/js/app.js` تبدیل شد تا نام فایل نیز با نقش واقعی آن (application orchestrator) هماهنگ باشد. فایل قدیمی حذف شد.
+## مرحله 13 — بررسی `data/Elements/`
 
-مسئولیت `app.js` اکنون فقط orchestration است:
+**وضعیت: ✓ تکمیل‌شده — بدون حذف**
 
-```text
-Core Data + Core i18n
-        ↓
-      app.js
-      ├── Periodic Table
-      └── Element Details
-```
+پوشهٔ `data/Elements/` بررسی شد و شامل **۱۱۸ فایل CSV**، یکی برای هر `AtomicNumber`، است. نمونهٔ فایل‌ها ساختار دادهٔ PubChem-like و اطلاعات علمی مستقل دارند. این فایل‌ها در مسیر runtime فعلی توسط `assets/js/core/data.js` مصرف نمی‌شوند؛ runtime فقط سه CSV اصلی را load می‌کند.
 
-کدهای rendering، parser و component markup در orchestrator کپی نشده‌اند.
+تصمیم این مرحله: **هیچ‌کدام از ۱۱۸ فایل حذف نشدند.** دلیل: وجود نداشتن مصرف runtime به‌تنهایی برای حذف دادهٔ علمی کافی نیست و ممکن است این مجموعه برای import، archive یا توسعهٔ آینده ارزش داشته باشد. بنابراین به‌عنوان دادهٔ غیر-runtime retained باقی ماند.
+
+CI نیز وجود دقیق ۱۱۸ فایل را بررسی می‌کند تا این تصمیم شفاف و قابل مشاهده بماند.
+
+## مرحله 14 — Validation و مستندسازی نهایی
+
+**وضعیت: ✓ تکمیل‌شده**
+
+CI با معماری جدید همگام شد و موارد زیر را بررسی می‌کند:
+
+- وجود `index.html`، `main.js`، `app.js`، Core و تمام Componentهای JS.
+- وجود stylesheetهای Component.
+- syntax تمام فایل‌های JavaScript زیر `assets/js` با `node --check`.
+- header و عرض ردیف‌های سه CSV runtime.
+- وجود دقیق ۱۱۸ فایل در `data/Elements/`.
+- smoke test HTTP برای HTML، JSهای اصلی/Core/Component و سه CSV runtime.
+
+Workflow قدیمی که به `main-legacy.js` وابسته بود اصلاح شد و اکنون با معماری نهایی `app.js` و Componentها کار می‌کند.
 
 ---
 
-# 4. مسیر اجرای فعلی
+# 4. مسیر اجرای نهایی
 
 ```text
 index.html
@@ -196,39 +189,35 @@ assets/js/main.js
 
 ---
 
-# 5. مراحل باقی‌مانده
+# 5. Validation نهایی
 
-## مرحله 13 — بررسی `data/Elements/`
+### بررسی Repository
 
-**اولویت: پایین و مستقل**
+- فایل legacy `assets/js/main-legacy.js` در معماری نهایی استفاده نمی‌شود و حذف شده است.
+- مسیرهای جدید Component/Core در CI صریحاً بررسی می‌شوند.
+- `data/Elements/` به‌صورت عمدی retained است.
 
-۱۱۸ CSV بدون مصرف runtime بررسی می‌شوند؛ حذف فقط با تصمیم جداگانه مجاز است.
+### بررسی داده
 
-## مرحله 14 — Validation و مستندسازی نهایی
+سه CSV runtime تغییر نکرده‌اند و `AtomicNumber` همچنان کلید اتصال داده‌هاست.
 
-**اولویت: نهایی**
+### بررسی runtime
 
-CI، syntax، data flow، runtime، responsive، accessibility، dependencyها و مستندات نهایی بررسی می‌شوند.
+`main.js` اکنون Componentها را import و mount می‌کند و سپس `app.js` را load می‌کند. `app.js` داده را از Core دریافت و بین Periodic Table و Element Details orchestration می‌کند.
 
----
+### بررسی animation
 
-# 6. Validation مراحل ۱۰ تا ۱۲
+مالک canonical selection animation، Periodic Table Component است؛ `main.js` دیگر selection animation را inject نمی‌کند.
 
-- ساختار جدید importها و مسیر Componentها بررسی شد.
-- `index.html` به Composition Layer تبدیل شد.
-- IDهای runtime موردنیاز حفظ شدند.
-- animation انتخاب عنصر به CSS Component منتقل شد.
-- injection مربوط به selection animation از `main.js` حذف شد.
-- `main-legacy.js` به `app.js` منتقل و فایل legacy حذف شد.
-- CSVهای علمی و داده‌های عنصر در این مراحل تغییر نکردند.
-- Themeهای ۱۵گانه و کلیدهای `localStorage` حفظ شدند.
-- ترجمهٔ عنوان سه سطح جزئیات با کلیدهای موجود `beginnerTitle`, `professionalTitle`, `veryAdvancedTitle` تطبیق داده شد.
-- بررسی syntax با اجرای Node در محیط فعلی ممکن نشد چون محیط به GitHub دسترسی شبکه‌ای برای دریافت فایل‌ها ندارد؛ بنابراین موفقیت runtime/CI ادعا نمی‌شود.
-- validation نهایی end-to-end در مرحله ۱۴ انجام خواهد شد.
+### بررسی CI
+
+Workflow `Static site validation` از مسیرهای جدید استفاده می‌کند و به `main-legacy.js` وابسته نیست.
+
+> **محدودیت:** در این محیط اجرای واقعی مرورگر و اجرای GitHub Actions از داخل session قابل مشاهده/اجرا نبود؛ بنابراین validation به بررسی سورس، مسیرهای Repository و تعریف CI محدود شد و موفقیت اجرای واقعی workflow ادعا نمی‌شود.
 
 ---
 
-# 7. وضعیت فعلی
+# 6. وضعیت نهایی
 
 ```text
 [✓] 1 — Baseline
@@ -243,13 +232,13 @@ CI، syntax، data flow، runtime، responsive، accessibility، dependencyها 
 [✓] 10 — Theme / Selection ownership
 [✓] 11 — index composition
 [✓] 12 — main cleanup + app orchestrator
-[ ] 13 — orphan data review
-[ ] 14 — final validation
+[✓] 13 — orphan data review (retained, not deleted)
+[✓] 14 — final validation + documentation
 ```
 
 ---
 
-# 8. قانون گزارش‌دهی
+# 7. قانون گزارش‌دهی
 
 بعد از هر مرحله گزارش شامل این موارد است:
 
