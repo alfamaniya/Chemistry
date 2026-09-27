@@ -8,6 +8,7 @@
   document.head.appendChild(legacyScript);
 
   const themeSelect = document.getElementById("table-theme-select");
+  const tableShell = document.querySelector(".table-shell");
 
   const themes = [
     {id:"15", fa:"بدون دسته‌بندی", en:"Uncategorized", faGroup:"", enGroup:""},
@@ -31,10 +32,19 @@
     return document.documentElement.lang === "en" ? "en" : "fa";
   }
 
+  function applyTheme(themeId) {
+    if (!tableShell) return;
+    for (let i = 1; i <= 15; i++) tableShell.classList.remove("theme-" + i);
+    const normalizedTheme = Number(themeId) >= 1 && Number(themeId) <= 15 ? Number(themeId) : 15;
+    tableShell.classList.add("theme-pdf", "theme-" + normalizedTheme);
+    localStorage.setItem("chemistry-pdf-theme", String(normalizedTheme));
+  }
+
   function syncThemeSelect(forceDefault = false) {
     if (!themeSelect) return;
     const lang = currentLanguage();
-    const current = forceDefault ? "15" : themeSelect.value;
+    const saved = localStorage.getItem("chemistry-pdf-theme");
+    const current = forceDefault ? "15" : (themeSelect.value || saved || "15");
     const fragment = document.createDocumentFragment();
 
     themes.forEach(theme => {
@@ -48,17 +58,15 @@
 
     themeSelect.replaceChildren(fragment);
     themeSelect.value = themes.some(theme => theme.id === current) ? current : "15";
-    if (forceDefault) {
-      themeSelect.value = "15";
-      themeSelect.dispatchEvent(new Event("change", {bubbles: true}));
-    }
+    applyTheme(themeSelect.value);
   }
 
   function install() {
     if (!themeSelect) return;
     syncThemeSelect(true);
+    themeSelect.addEventListener("change", event => applyTheme(event.target.value));
 
-    // The selector is owned by this module; no selector MutationObserver is needed.
+    // Language is the only external state that requires selector relabeling.
     new MutationObserver(() => syncThemeSelect(false)).observe(document.documentElement, {
       attributes: true,
       attributeFilter: ["lang"]
