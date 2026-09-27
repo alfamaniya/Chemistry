@@ -36,7 +36,7 @@
   <main id="top">
     <section class="hero container">
       <div>
-        <p class="eyebrow">CHEMISTRY • ELEMENTS</p>
+        <p class="eyebrow" data-i18n="eyebrow">CHEMISTRY • ELEMENTS</p>
         <h1 data-i18n="heroTitle">مرجع شیمی و جدول تناوبی</h1>
         <p class="hero-text" data-i18n="heroText">یک نقطهٔ شروع ساده برای مشاهدهٔ جدول تناوبی و دسترسی سریع به اطلاعات عناصر، از سطح مبتدی تا پیشرفته.</p>
         <a class="primary-button" href="#periodic-table" data-i18n="heroButton">مشاهده جدول تناوبی</a>
@@ -62,7 +62,7 @@
         <div id="periodic-table-grid" class="periodic-grid" aria-label="جدول تناوبی عناصر / Periodic table">
           <div class="loading" data-i18n="loading">در حال بارگذاری عناصر…</div>
         </div>
-        <div id="f-block" class="f-block" aria-label="Lanthanides and Actinides"></div>
+        <div id="f-block" class="f-block" aria-label="لانتانیدها و اکتینیدها / Lanthanides and Actinides"></div>
       </div>
       <p id="table-status" class="table-status" role="status"></p>
 
@@ -112,7 +112,7 @@
       </section>
     </section>
 
-    <section class="section container quick-info" aria-label="راهنمای سریع / Quick facts">
+    <section class="section container quick-info" aria-label="راهنمای سریع / Quick facts" data-i18n-aria="quickInfoAria">
       <div class="info-card"><span>۱۱۸</span><p data-i18n="elementsCount">عنصر در مجموعه</p></div>
       <div class="info-card"><span>۳</span><p data-i18n="levelsCount">سطح آموزشی</p></div>
       <div class="info-card"><span>CSV</span><p data-i18n="dataFormat">منبع دادهٔ ساختاریافته</p></div>
@@ -130,5 +130,7 @@
   </footer>
 
   <script src="assets/js/main.js" defer></script>
-</body>
+  <script>
+    // Accessibility labels are updated by the language system in main.js.
+  </script>\n</body>
 </html>
