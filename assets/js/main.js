@@ -9,6 +9,19 @@
     import("./components/footer/footer.js")
   ]);
 
+  function loadComponentStyles() {
+    ["header", "hero", "periodic-table", "element-details", "footer"].forEach(name => {
+      const href = `assets/css/components/${name}.css`;
+      if (document.querySelector(`link[data-component-css="${name}"]`)) return;
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = href;
+      link.dataset.componentCss = name;
+      document.head.appendChild(link);
+    });
+  }
+
+  loadComponentStyles();
   mountHeader(document.querySelector(".site-header"));
   mountHero(document.querySelector(".hero"));
   mountFooter(document.querySelector(".site-footer"));
