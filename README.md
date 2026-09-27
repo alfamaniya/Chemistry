@@ -113,13 +113,15 @@ IDهای حساس runtime:
 periodic-table-grid
 f-block
 table-theme-select
-table-status
+table-theme-description
 selected-element
 beginner-info
 advanced-info
 very-advanced-info
 levels
 ```
+
+`table-status` و عنوان/زیرعنوان قدیمی بخش Element Details دیگر در DOM وجود ندارند.
 
 ---
 
@@ -179,15 +181,7 @@ Element Details
 - نام فارسی/انگلیسی عناصر؛
 - ترجمهٔ مقادیر علمی مانند GroupBlock و StandardState.
 
-کلیدها:
-
-```text
-chemistry-language
-fa → rtl
-en → ltr
-```
-
-کلیدهای ترجمه‌ای که دیگر توسط UI یا runtime مصرف نمی‌شدند حذف شدند؛ dictionary فقط شامل قراردادهای فعال است.
+کلیدهای UI حذف‌شده مانند عنوان/زیرعنوان قبلی Periodic Table، عنوان/زیرعنوان قبلی Element Details و پیام شمارش عناصر دیگر در dictionary نگهداری نمی‌شوند؛ dictionary فقط قراردادهای فعال را نگه می‌دارد.
 
 ### `assets/js/core/data.js`
 
@@ -252,10 +246,11 @@ assets/css/components/periodic-table.css
 - mapping جدول ۱۸ گروهی؛
 - ۱۱۸ کارت عنصر؛
 - f-block؛
-- status؛
 - selection؛
 - شمارهٔ عنصر؛
 - قرارداد `onElementSelected(AtomicNumber)`.
+
+عنوان «جدول تناوبی»، زیرعنوان آن و پیام `elements loaded` از این Component حذف شده‌اند. Theme selector همچنان در ابتدای این Component قرار دارد.
 
 شمارهٔ کارت فقط از داده می‌آید:
 
@@ -279,7 +274,9 @@ assets/js/components/element-details/element-details.js
 assets/css/components/element-details.css
 ```
 
-سه سطح را نمایش می‌دهد:
+عنوان و زیرعنوان معرفی این بخش حذف شده‌اند تا بعد از جدول مستقیماً کارت عنصر انتخاب‌شده/پیام انتخاب عنصر و سپس سه سطح اطلاعات نمایش داده شوند.
+
+سه سطح:
 
 ```text
 Beginner
@@ -486,7 +483,7 @@ chemistry-pdf-theme
 
 - کارت‌های عنصر `button` هستند و با keyboard قابل تعامل‌اند.
 - `aria-label` کارت شامل نام عنصر و Atomic Number است.
-- `table-status` برای اعلام وضعیت جدول استفاده می‌شود.
+- وضعیت شمارندهٔ `table-status` دیگر در UI وجود ندارد و به‌عنوان قرارداد runtime استفاده نمی‌شود.
 - زبان فارسی با `rtl` و انگلیسی با `ltr` مدیریت می‌شود.
 - focus state نباید در refactorهای آینده حذف شود.
 - `prefers-reduced-motion` برای selection و background رعایت می‌شود.
@@ -509,6 +506,8 @@ assets/css/components/
 ├── element-details.css
 └── footer.css
 ```
+
+استایل‌های اختصاصی عنوان/زیرعنوان حذف‌شده Element Details و `.table-status` نیز از stylesheetهای Component پاک شده‌اند.
 
 در حال حاضر بعضی selectorهای legacy مربوط به Componentها هنوز در `main.css` نیز باقی مانده‌اند تا migration محافظه‌کارانه بماند. stylesheetهای Component بعد از `main.css` بارگذاری می‌شوند و source جدید Component را اعمال می‌کنند.
 
@@ -541,7 +540,7 @@ Static site validation
 - وجود دقیق ۱۱۸ فایل در `data/Elements/`؛
 - smoke test HTTP برای HTML، JSهای اصلی/Core/Periodic Table و سه CSV runtime.
 
-CI دیگر نباید به `main-legacy.js` ارجاع دهد.
+CI دیگر نباید به `main-legacy.js` یا `table-status` ارجاع دهد.
 
 نکته: workflow فعلی browser automation ندارد؛ smoke test دسترسی HTTP و syntax/data validation انجام می‌دهد، نه اجرای کامل UI در مرورگر.
 
@@ -607,6 +606,7 @@ find assets/js -type f -name '*.js' -print0 | xargs -0 -n1 node --check
 12 حذف runtime legacy و ایجاد app.js
 13 بررسی و حفظ data/Elements
 14 validation و مستندسازی نهایی
+15 حذف عنوان/زیرعنوان‌های اضافی UI و وضعیت شمارندهٔ جدول
 ```
 
 وضعیت فعلی:
@@ -638,9 +638,19 @@ app.js
 
 ### Translation cleanup
 
-کلیدهایی که در UI/runtime فعلی مصرف نمی‌شدند از dictionary حذف شدند؛ از جمله کلیدهای مربوط به quick facts، شمارنده‌ها، توضیحات قدیمی levelها و category نامشخص.
+کلیدهایی که در UI/runtime فعلی مصرف نمی‌شدند حذف شده‌اند؛ از جمله کلیدهای مربوط به quick facts، شمارنده‌ها، توضیحات قدیمی levelها و عنوان/زیرعنوان‌هایی که در UI جدید دیگر وجود ندارند.
 
 کلید `fBlockAria` حفظ شده چون هنوز مستقیماً توسط `setLanguage()` مصرف می‌شود.
+
+### UI cleanup — آخرین تغییر
+
+سه بخش متنی اضافی که در نسخهٔ قبلی روی صفحه دیده می‌شدند حذف شده‌اند:
+
+1. عنوان «جدول تناوبی» و زیرعنوان آن در ابتدای Component جدول؛
+2. پیام شمارندهٔ «118 elements loaded from the data source» زیر جدول؛
+3. عنوان «اطلاعات مختصر عنصر» و زیرعنوان آن در ابتدای Element Details.
+
+Theme selector، خود جدول، f-block و تمام سه سطح اطلاعات عنصر حفظ شده‌اند.
 
 ### Selection animation
 
@@ -657,5 +667,7 @@ app.js
 ## 19. وضعیت نهایی
 
 Repository فعلی یک Static Vanilla Web Application با معماری Component-Based است. دادهٔ runtime از سه CSV اصلی می‌آید، دادهٔ `data/Elements/` عمداً retained است، `main-legacy.js` دیگر وجود ندارد، و Core/Component/Application boundaries مشخص شده‌اند.
+
+در وضعیت فعلی UI، بعد از Hero مستقیماً Theme selector و جدول نمایش داده می‌شوند و عنوان/زیرعنوان اضافی جدول یا پیام شمارندهٔ بارگذاری نمایش داده نمی‌شود. بعد از جدول نیز Element Details بدون heading معرفی اضافی آغاز می‌شود و سه سطح اطلاعات همچنان فعال هستند.
 
 هر تغییر بعدی باید ابتدا Repository و این README را بررسی کند، سپس با کمترین دستکاری لازم انجام شود و در پایان همین README متناسب با رفتار واقعی کد به‌روزرسانی شود.
