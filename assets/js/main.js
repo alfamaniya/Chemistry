@@ -48,7 +48,7 @@
 
   const translations = {
     fa: {
-      brand: "مرجع شیمی", brandTagline: "یادگیری ساده، دقیق و مرحله‌ای",
+      eyebrow: "شیمی • عناصر", quickInfoAria: "راهنمای سریع", fBlockAria: "لانتانیدها و اکتینیدها", brand: "مرجع شیمی", brandTagline: "یادگیری ساده، دقیق و مرحله‌ای",
       navPeriodic: "جدول تناوبی", navLevels: "سطوح آموزشی", navAbout: "درباره",
       heroTitle: "مرجع شیمی و جدول تناوبی",
       heroText: "یک نقطهٔ شروع ساده برای مشاهدهٔ جدول تناوبی و دسترسی سریع به اطلاعات عناصر، از سطح مبتدی تا فوق پیشرفته.",
@@ -77,7 +77,7 @@
       dataStatus: "وضعیت داده", cpkColor: "رنگ CPK"
     },
     en: {
-      brand: "Chemistry Reference", brandTagline: "Simple, accurate, step-by-step learning",
+      eyebrow: "CHEMISTRY • ELEMENTS", quickInfoAria: "Quick facts", fBlockAria: "Lanthanides and Actinides", brand: "Chemistry Reference", brandTagline: "Simple, accurate, step-by-step learning",
       navPeriodic: "Periodic Table", navLevels: "Learning Levels", navAbout: "About",
       heroTitle: "Chemistry Reference & Periodic Table",
       heroText: "A simple starting point for exploring the periodic table and accessing element information from beginner to very advanced levels.",
@@ -115,6 +115,41 @@
     MeltingPoint: "meltingPoint", BoilingPoint: "boilingPoint", Density: "density",
     GroupBlock: "groupBlock", YearDiscovered: "yearDiscovered", data_status: "dataStatus",
     dataStatus: "dataStatus"
+  };
+
+  const valueTranslations = {
+    GroupBlock: {
+      fa: {
+        "Nonmetal": "نافلز", "Noble gas": "گاز نجیب", "Alkali metal": "فلز قلیایی",
+        "Alkaline earth metal": "فلز قلیایی خاکی", "Metalloid": "شبه‌فلز",
+        "Transition metal": "فلز واسطه", "Post-transition metal": "فلز پس‌واسطه",
+        "Lanthanide": "لانتانید", "Actinide": "اکتینید", "Halogen": "هالوژن"
+      },
+      en: {
+        "Nonmetal": "Nonmetal", "Noble gas": "Noble gas", "Alkali metal": "Alkali metal",
+        "Alkaline earth metal": "Alkaline earth metal", "Metalloid": "Metalloid",
+        "Transition metal": "Transition metal", "Post-transition metal": "Post-transition metal",
+        "Lanthanide": "Lanthanide", "Actinide": "Actinide", "Halogen": "Halogen"
+      }
+    },
+    StandardState: {
+      fa: {
+        "Gas": "گاز", "Solid": "جامد", "Liquid": "مایع",
+        "Expected to be a Solid": "احتمالاً جامد", "Expected to be a Gas": "احتمالاً گاز"
+      },
+      en: {
+        "Gas": "Gas", "Solid": "Solid", "Liquid": "Liquid",
+        "Expected to be a Solid": "Expected to be a Solid", "Expected to be a Gas": "Expected to be a Gas"
+      }
+    },
+    data_status: {
+      fa: { "predicted_or_estimated": "پیش‌بینی‌شده / برآوردشده" },
+      en: { "predicted_or_estimated": "predicted / estimated" }
+    },
+    YearDiscovered: {
+      fa: { "Ancient": "باستانی" },
+      en: { "Ancient": "Ancient" }
+    }
   };
 
   const positions = new Map([
@@ -413,7 +448,7 @@
       beginnerInfo.innerHTML = "";
       advancedInfo.innerHTML = "";
       veryAdvancedInfo.innerHTML = "";
-      status.textContent = error.message;
+      status.textContent = t.loadError;
     }
   }
 
