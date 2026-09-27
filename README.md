@@ -1,32 +1,181 @@
-# Chemistry Reference — Code Audit & Project Documentation
+# Chemistry — مرجع کامل پروژه، معماری و قراردادهای توسعه
 
-> **تاریخ بازبینی:** 2026-09-27  
-> **Branch:** `main`  
-> **آخرین commit بررسی‌شده:** `4f40a8e20f6e1416367e94d536166fd753c8ec8c`  
-> **وضعیت:** repository، READMEها، HTML، JavaScript، CSS، CSVهای runtime و GitHub Actions بررسی شدند و مستندات با وضعیت واقعی کد همگام شده‌اند.
+> این فایل مرجع اصلی پروژه است. هدف آن این است که یک مهندس یا هوش مصنوعی بتواند فقط با خواندن Repository و این README، معماری، داده‌ها، runtime، رفتار UI، قراردادهای مهم، validation و نقاطی که باید قبل از تغییر بررسی شوند را درک کند.
+>
+> **نوع پروژه:** Static client-side web application  
+> **Backend:** ندارد  
+> **Database:** ندارد  
+> **Build system / package.json:** ندارد  
+> **Branch مرجع:** `main`
 
-## خلاصهٔ معماری
+---
 
-این پروژه یک **static client-side web app** است و Backend، Database، `package.json` یا build system ندارد.
+## 1. هدف سایت
+
+Chemistry یک وب‌سایت مرجع تعاملی برای مشاهده و مطالعهٔ **۱۱۸ عنصر جدول تناوبی** است. سایت باید اطلاعات عناصر را از CSVهای داده دریافت کند و آن‌ها را در یک جدول تناوبی ۱۸ ستونه، شامل f-block، نمایش دهد.
+
+کاربر می‌تواند:
+
+- بین فارسی و انگلیسی جابه‌جا شود؛
+- جدول تناوبی و ۱۱۸ عنصر را مشاهده کند؛
+- با کلیک روی هر عنصر، اطلاعات آن را در سه سطح آموزشی ببیند؛
+- از Theme Selector برای تغییر حالت دسته‌بندی/رنگ‌بندی جدول استفاده کند؛
+- در desktop و mobile از جدول responsive استفاده کند؛
+- از keyboard interaction و قابلیت‌های accessibility موجود استفاده کند.
+
+اطلاعات علمی نباید به‌صورت دستی در HTML برای هر عنصر تکرار شوند؛ منبع runtime داده‌ها CSV است.
+
+---
+
+# 2. ساختار فعلی Repository
 
 ```text
-Browser
-  ├── index.html
-  ├── assets/css/main.css
-  ├── assets/js/main.js
-  │     └── assets/js/main-legacy.js
-  └── data/*.csv
+Repository
+├── .github/
+│   └── workflows/
+│       └── webpack.yml
+├── assets/
+│   ├── css/
+│   │   ├── main.css
+│   │   └── components/
+│   │       ├── header.css
+│   │       ├── hero.css
+│   │       ├── periodic-table.css
+│   │       ├── element-details.css
+│   │       └── footer.css
+│   └── js/
+│       ├── main.js
+│       ├── app.js
+│       ├── core/
+│       │   ├── i18n.js
+│       │   └── data.js
+│       └── components/
+│           ├── header/header.js
+│           ├── hero/hero.js
+│           ├── periodic-table/periodic-table.js
+│           ├── element-details/element-details.js
+│           └── footer/footer.js
+├── data/
+│   ├── PubChemElements_all.csv
+│   ├── ELEMENTS_118_ADVANCED.csv
+│   ├── ELEMENTS_118_VERY_ADVANCED.csv
+│   └── Elements/
+│       └── 118 CSV files — non-runtime / retained data
+├── index.html
+└── README.md
 ```
 
-- `index.html` ساختار رابط را فراهم می‌کند.
-- `assets/css/main.css` ظاهر، responsive design، شمارهٔ عناصر، ظاهر Header/Footer و Themeهای جدول را مدیریت می‌کند.
-- `assets/js/main.js` bootstrap، ساخت selector و اعمال/نگهداری Theme و background متحرک صفحه را مدیریت می‌کند.
-- `assets/js/main-legacy.js` منطق runtime را نگه می‌دارد: زبان، بارگذاری CSV، ساخت جدول، شماره‌گذاری کارت‌های عناصر و نمایش اطلاعات انتخاب‌شده.
-- داده‌ها مستقیماً با `fetch()` از CSVهای runtime بارگذاری می‌شوند.
+`README2.md` و `README3.md` دیگر بخشی از پروژه نیستند؛ تمام مستندات آن‌ها در این فایل ادغام شده است.
 
-## داده‌های runtime
+---
 
-منابع اصلی:
+# 3. معماری نهایی
+
+پروژه پس از refactor به معماری Component-Based تقسیم شده است، اما همچنان **Vanilla JavaScript / CSS / HTML** و بدون framework باقی مانده است.
+
+```text
+index.html
+    ↓
+main.js
+    ├── global/component CSS
+    ├── mount Header
+    ├── mount Hero
+    ├── mount Periodic Table
+    ├── mount Element Details
+    ├── mount Footer
+    └── Theme System
+            ↓
+          app.js
+            ├── core/i18n.js
+            ├── core/data.js
+            ├── Periodic Table Component
+            └── Element Details Component
+```
+
+اصل مهم معماری:
+
+> **Core مالک منطق مشترک است و Componentها مصرف‌کنندهٔ Core هستند؛ Core نباید به implementation داخلی Componentها وابسته شود.**
+
+---
+
+# 4. مسئولیت فایل‌ها
+
+## `index.html`
+
+Composition Layer است: metadata، shell، slotهای Component و IDهای قراردادی runtime را نگه می‌دارد. اطلاعات علمی ۱۱۸ عنصر نباید داخل آن hard-code شوند.
+
+IDهای حساس:
+
+```text
+periodic-table-grid
+f-block
+table-theme-select
+table-status
+selected-element
+beginner-info
+advanced-info
+very-advanced-info
+```
+
+## `assets/js/main.js`
+
+Bootstrap و Theme System اصلی:
+
+- راه‌اندازی Componentها؛
+- بارگذاری stylesheetهای Component؛
+- تعریف ۱۵ Theme؛
+- ساخت و labelگذاری Theme selector؛
+- اعمال Theme روی `.table-shell`؛
+- نگهداری انتخاب Theme در `localStorage`؛
+- همگام‌سازی labelهای selector با زبان سند؛
+- مدیریت background متحرک صفحه؛
+- رعایت `prefers-reduced-motion` در بخش‌های مربوط به خود.
+
+`main.js` نباید مالک parser CSV، منطق علمی یا rendering جزئیات عنصر باشد و نباید selection animation را دوباره inject کند.
+
+## `assets/js/app.js`
+
+Application Orchestrator است و اتصال Core و Componentها را انجام می‌دهد:
+
+- دریافت داده از Data Core؛
+- انتقال داده به Periodic Table و Element Details؛
+- هماهنگ‌کردن انتخاب عنصر؛
+- هماهنگ‌کردن قراردادهای Componentها.
+
+این فایل جایگزین `main-legacy.js` شده است و `main-legacy.js` نباید dependency runtime باشد.
+
+---
+
+# 5. Shared Core
+
+## `assets/js/core/i18n.js`
+
+مسئول dictionary فارسی/انگلیسی، ترجمهٔ `data-i18n`، ترجمهٔ مقادیر، `lang` و `dir`، language buttonها و localStorage زبان است.
+
+```text
+chemistry-language
+```
+
+```text
+fa → rtl
+en → ltr
+```
+
+## `assets/js/core/data.js`
+
+مسئول:
+
+- مسیر CSVهای runtime؛
+- `fetch()`؛
+- parser CSV؛
+- حذف BOM؛
+- اعتبارسنجی header؛
+- رد ردیف‌های malformed؛
+- `normalizeDetailRow()`؛
+- بارگذاری موازی سه CSV؛
+- آماده‌سازی داده برای Componentها.
+
+منابع:
 
 ```text
 data/PubChemElements_all.csv
@@ -34,163 +183,271 @@ data/ELEMENTS_118_ADVANCED.csv
 data/ELEMENTS_118_VERY_ADVANCED.csv
 ```
 
-کلید اصلی اتصال داده‌های عنصر `AtomicNumber` است. داده‌های advanced و very advanced پیش از نمایش با `normalizeDetailRow()` به نام‌گذاری مشترک تبدیل می‌شوند.
-
-### وضعیت داده
-
-- CSV پایه شامل ۱۱۸ عنصر و فیلدهای `AtomicNumber`, `Symbol`, `Name`, `NameFa` و مشخصات اصلی است.
-- CSV پیشرفته با `atomic_number` به دادهٔ مشترک متصل می‌شود.
-- CSV فوق‌پیشرفته علاوه بر مشخصات اصلی، `year_discovered` و `data_status` را نیز فراهم می‌کند.
-- برای قابلیت شماره‌گذاری، هیچ دادهٔ علمی جدیدی به CSVها اضافه نشده است.
-
-## زبان و جهت صفحه
-
-رابط فارسی و انگلیسی دارد و با تغییر زبان، `lang` و `dir` سند بین `fa/rtl` و `en/ltr` تغییر می‌کند.
-
-انتخاب زبان در `localStorage` با کلید زیر نگهداری می‌شود:
+کلید اتصال:
 
 ```text
-chemistry-language
-```
-
-## شماره‌گذاری ۱۱۸ عنصر
-
-قابلیت شماره‌گذاری عناصر اکنون در runtime پیاده‌سازی شده است.
-
-مسیر اجرا:
-
-```text
-Element data
-    ↓
 AtomicNumber
-    ↓
-createElementCard(element)
-    ↓
-.element-number
 ```
 
-هر کارت عنصر در `assets/js/main-legacy.js` شامل سه جزء اصلی است:
+در advanced و very-advanced، `atomic_number` باید به `AtomicNumber` normalize شود.
+
+---
+
+# 6. Componentها
+
+## Header
 
 ```text
-Number → Symbol → Name
+assets/js/components/header/header.js
+assets/css/components/header.css
 ```
 
-شماره مستقیماً از `element.AtomicNumber` گرفته می‌شود و به index آرایه وابسته نیست. جدول اصلی و f-block هر دو از همین مسیر مشترک استفاده می‌کنند؛ بنابراین هر ۱۱۸ عنصر منبع واحدی برای شماره دارد.
+مسئول brand، navigation و language switcher است و از i18n استفاده می‌کند.
+
+قرارداد رنگی Header/Footer:
+
+```text
+#182033  background
+#e9ecf5  primary text
+#aeb6c8  secondary/navigation text
+#3346a8  active language state
+#3b455c  separator/border
+```
+
+## Hero
+
+```text
+assets/js/components/hero/hero.js
+assets/css/components/hero.css
+```
+
+مسئول معرفی سایت و CTA اصلی به `#periodic-table` است و منطق دادهٔ عنصر ندارد.
+
+## Periodic Table
+
+```text
+assets/js/components/periodic-table/periodic-table.js
+assets/css/components/periodic-table.css
+```
+
+مسئول جدول ۱۸ گروهی، mapping، کارت‌ها، f-block، status، selection و شمارهٔ عنصر است.
+
+شماره دقیقاً از `AtomicNumber` می‌آید:
+
+```text
+CSV → AtomicNumber → createElementCard(element) → .element-number
+```
 
 نمونه:
 
 ```text
-1   — H   — Hydrogen / هیدروژن
-26  — Fe  — Iron / آهن
-79  — Au  — Gold / طلا
-118 — Og  — Oganesson / اوگانسون
+1 — H — Hydrogen / هیدروژن
+26 — Fe — Iron / آهن
+79 — Au — Gold / طلا
+118 — Og — Oganesson / اوگانسون
 ```
 
-CSS مستقل این قابلیت:
+ارتباط با جزئیات:
 
-```css
-.element-number
+```text
+Periodic Table
+      ↓
+onElementSelected(AtomicNumber)
+      ↓
+app.js
+      ↓
+Element Details
 ```
 
-است و در mobile نیز با اندازهٔ مناسب باقی می‌ماند.
+Selection animation باید فقط یک مالک canonical داشته باشد. رفتار مطلوب فعلی: دو flash نرم آبی و سپس سبز، باقی‌ماندن state انتخاب و سایهٔ نارنجی تیره، و حالت بدون animation در `prefers-reduced-motion`.
 
-> **نکته:** `README2.md` specification و وضعیت جزئیات شماره‌گذاری را به‌صورت مستقل مستند می‌کند. شماره‌های ۱ تا ۲۴ مربوط به اشیای عمومی صفحه در README2 در حال حاضر فقط شناسه‌های مستنداتی هستند؛ شمارهٔ قابل مشاهده برای خود این اشیای UI هنوز اجرا نشده است.
+## Element Details
 
-## selector دسته‌بندی PDF
+```text
+assets/js/components/element-details/element-details.js
+assets/css/components/element-details.css
+```
 
-جدول ۱۵ حالت رنگی دارد و فقط **یک selector** برای کنترل آن وجود دارد. گزینه‌ها در `main.js` تعریف می‌شوند و هنگام تغییر زبان، برچسب آن‌ها همگام می‌شود.
+سه سطح:
 
-ترتیب فعلی:
+```text
+Beginner
+Advanced
+Very Advanced
+```
 
-1. **بدون دسته‌بندی / Uncategorized** — حالت پیش‌فرض
-2. **جرم اتمی / Atomic Mass** *(Physical)*
-3. **چگالی / Density** *(Physical)*
-4. **حالت استاندارد / Standard State** *(Physical)*
-5. **نقطه ذوب / Melting Point** *(Physical)*
-6. **نقطه جوش / Boiling Point** *(Physical)*
-7. **شعاع اتمی / Atomic Radius** *(Atomic)*
-8. **آرایش الکترونی / Electron Configuration** *(Atomic)*
-9. **انرژی یونش / Ionization Energy** *(Atomic)*
-10. **الکترون‌خواهی / Electron Affinity** *(Atomic)*
-11. **الکترونگاتیویته / Electronegativity** *(Chemical)*
-12. **حالت‌های اکسایش / Oxidation States** *(Chemical)*
-13. **فلز / شبه‌فلز / نافلز / Metal / Metalloid / Nonmetal** *(Classification)*
-14. **گروه / خانواده شیمیایی / Chemical Group / Family** *(Classification)*
-15. **سال کشف / Year Discovered** *(History)*
+مسئول lookup، formatting، data-grid و پرکردن:
 
-در هر load یا refresh حالت **بدون دسته‌بندی** فعال می‌شود. شناسه‌های CSS `theme-pdf` و `theme-1 ... theme-15` حفظ شده‌اند.
+```text
+selected-element
+beginner-info
+advanced-info
+very-advanced-info
+```
 
-## مسئولیت فایل‌های JavaScript
+## Footer
 
-### `assets/js/main.js`
+```text
+assets/js/components/footer/footer.js
+assets/css/components/footer.css
+```
 
-- منبع واحد تعریف ۱۵ Theme.
-- ساخت و labelگذاری selector.
-- اعمال Theme و نگهداری انتخاب در `localStorage`.
-- همگام‌سازی labelهای selector با `documentElement.lang`.
-- افزودن background متحرک orange-red با پشتیبانی از `prefers-reduced-motion`.
-- بارگذاری `main-legacy.js`.
+مسئول اطلاعات کوتاه پروژه، ترجمه و back-to-top/anchor قراردادی است.
 
-### `assets/js/main-legacy.js`
+---
 
-- ترجمهٔ فارسی/انگلیسی.
-- بارگذاری سه CSV.
-- parser مقاوم CSV با حذف BOM، اعتبارسنجی header و نادیده‌گرفتن ردیف‌های malformed.
-- normalize کردن schema داده‌های advanced.
-- mapping موقعیت ۱۸ گروه جدول.
-- ساخت کارت عناصر و f-block.
-- شماره‌گذاری کارت با `AtomicNumber`.
-- نمایش اطلاعات عنصر در سه سطح دانشی.
+# 7. CSS Architecture
 
-`main-legacy.js` مالک ساخت selector یا تعریف Themeها نیست؛ این مسئولیت در `main.js` متمرکز شده است.
+```text
+assets/css/main.css
+assets/css/components/
+├── header.css
+├── hero.css
+├── periodic-table.css
+├── element-details.css
+└── footer.css
+```
 
-## CSS و responsive behavior
+`main.css` برای global styles و بخش‌های مشترک/Theme System باقی می‌ماند و CSS اختصاصی تا حد امکان در Component خود قرار دارد.
 
-`assets/css/main.css` مسئول:
+Responsive جدول ۱۸ ستونه باید در mobile با horizontal scrolling / حداقل عرض داخلی قابل استفاده باقی بماند.
 
-- layout اصلی و header/hero/footer؛
-- ظاهر Header هماهنگ با Footer؛
-- جدول ۱۸ گروهی و f-block؛
-- کارت عناصر و `.element-number`؛
-- بخش جزئیات سه‌سطحی؛
-- ۱۵ Theme جدول؛
-- responsive behavior برای موبایل؛
-- پشتیبانی از `prefers-reduced-motion` در قواعد transition/scroll.
+---
 
-### قرارداد ظاهری Header
+# 8. Theme System
 
-Header و Footer اکنون از رنگ زمینهٔ مشترک `#182033` استفاده می‌کنند تا در ظاهر سایت یکپارچگی ایجاد شود. برای حفظ خوانایی روی زمینهٔ تیره:
+۱۵ حالت:
 
-- متن اصلی Header از `#e9ecf5` استفاده می‌کند.
-- متن ثانویه و ناوبری از `#aeb6c8` استفاده می‌کنند.
-- حالت فعال انتخاب زبان با `#3346a8` مشخص می‌شود.
-- خط جداکنندهٔ پایین Header با `#3b455c` با ساختار Footer هماهنگ است.
-- این تغییر فقط در CSS انجام شده و ساختار HTML، منطق JavaScript و responsive behavior تغییر نکرده‌اند.
+1. Uncategorized / بدون دسته‌بندی
+2. Atomic Mass / جرم اتمی
+3. Density / چگالی
+4. Standard State / حالت استاندارد
+5. Melting Point / نقطه ذوب
+6. Boiling Point / نقطه جوش
+7. Atomic Radius / شعاع اتمی
+8. Electron Configuration / آرایش الکترونی
+9. Ionization Energy / انرژی یونش
+10. Electron Affinity / الکترون‌خواهی
+11. Electronegativity / الکترونگاتیویته
+12. Oxidation States / حالت‌های اکسایش
+13. Metal / Metalloid / Nonmetal / فلز / شبه‌فلز / نافلز
+14. Chemical Group / Family / گروه / خانواده شیمیایی
+15. Year Discovered / سال کشف
 
-### افکت انتخاب و چشمک کارت عنصر
+کلاس‌های قراردادی:
 
-برای انتخاب عنصر، کلاس `.element.selected-flash` انیمیشن `element-selection-flash` را اجرا می‌کند. افکت به‌صورت نرم بین دو وضعیت سایه حرکت می‌کند:
+```text
+theme-pdf
+theme-1 ... theme-15
+```
 
-- هنگام چشمک، سایهٔ اصلی با طیف **قرمز** و glow ظریف نمایش داده می‌شود.
-- پس از پایان چشمک، سایه به **نارنجی تیره** `rgba(194,65,12,.34)` برمی‌گردد و همان حالت انتخاب‌شده را حفظ می‌کند.
-- انیمیشن با `ease-in-out` و سه چرخهٔ ۱٫۳۵ ثانیه‌ای اجرا می‌شود تا تغییرات بصری تند و ناگهانی نباشند.
-- ساختار DOM، منطق انتخاب عنصر و داده‌های علمی در این تغییر دست‌کاری نشده‌اند.
+Theme روی `.table-shell` اعمال می‌شود.
 
-برای mobile، جدول با حداقل عرض داخلی و horizontal scrolling حفظ می‌شود تا ساختار ۱۸ ستونهٔ جدول خراب نشود.
+کلید localStorage:
 
-## Accessibility و UX
+```text
+chemistry-pdf-theme
+```
 
-- کارت عنصر `button` است و keyboard interaction را حفظ می‌کند.
-- `aria-label` کارت شامل نام عنصر و عدد اتمی است.
-- `table-status` با `role="status"` برای اعلام وضعیت استفاده می‌شود.
-- شمارهٔ عنصر، Symbol و Name عناصر جداگانهٔ DOM هستند.
-- RTL/LTR و زبان در runtime تغییر می‌کنند.
-- Header تیره با متن روشن، لینک‌های ناوبری و کنترل زبان را با کنتراست مناسب از Footer هم‌راستا نگه می‌دارد.
-- `prefers-reduced-motion` برای جلوگیری از انیمیشن‌های غیرضروری رعایت شده است.
+رفتار واقعی refresh باید از سورس بررسی شود و README صرفاً intended behavior را مبنا قرار ندهد.
 
-## اجرای محلی
+---
 
-چون CSVها با `fetch()` بارگذاری می‌شوند، پروژه را با `file://` اجرا نکنید. از ریشهٔ repository اجرا کنید:
+# 9. Data Flow
+
+```text
+PubChemElements_all.csv ─────┐
+ELEMENTS_118_ADVANCED.csv ───┼→ core/data.js
+ELEMENTS_118_VERY_ADVANCED ──┘          ↓
+                                  normalized data
+                                         ↓
+                                      app.js
+                                      /    \
+                                     /      \
+                         Periodic Table   Element Details
+                                ↓
+                         selected AtomicNumber
+                                ↓
+                         Element Details
+```
+
+Base dataset شامل ۱۱۸ عنصر و فیلدهای اصلی مانند `AtomicNumber`, `Symbol`, `Name`, `NameFa` است. Advanced با `atomic_number` و Very Advanced نیز با normalization به قرارداد `AtomicNumber` متصل می‌شوند و Very Advanced فیلدهایی مانند `year_discovered` و `data_status` دارد.
+
+---
+
+# 10. State و Storage
+
+| State | محل | توضیح |
+|---|---|---|
+| Language | i18n + document + localStorage | زبان و جهت |
+| Theme | Theme System + `.table-shell` + localStorage | Theme جدول |
+| Selected Element | Periodic Table / app | AtomicNumber انتخاب‌شده |
+| Element Data | data.js | سه dataset |
+| Selection Animation | DOM class | state بصری موقت |
+
+کلیدها:
+
+```text
+chemistry-language
+chemistry-pdf-theme
+```
+
+اطلاعات علمی نباید منبع اصلی خود را از localStorage بگیرد.
+
+---
+
+# 11. Accessibility و UX
+
+- کارت عنصر control قابل تعامل با keyboard است.
+- `aria-label` کارت باید اطلاعات کافی دربارهٔ عنصر داشته باشد.
+- `table-status` برای وضعیت جدول استفاده می‌شود.
+- Symbol، Name و Atomic Number در DOM قابل تفکیک‌اند.
+- فارسی/انگلیسی و RTL/LTR حفظ می‌شوند.
+- mobile layout نباید ۱۸ ستون را به layout نامعتبر تبدیل کند.
+- `prefers-reduced-motion` باید رعایت شود.
+- focus state و keyboard interaction نباید در تغییرات CSS حذف شوند.
+
+---
+
+# 12. `data/Elements/` — دادهٔ غیر-runtime
+
+`data/Elements/` شامل ۱۱۸ CSV، یکی برای هر `AtomicNumber` است. بررسی معماری نشان داده که runtime اصلی سه CSV دیگر را مصرف می‌کند و این ۱۱۸ فایل در مسیر runtime فعلی مصرف نمی‌شوند.
+
+تصمیم فعلی: **حذف نشوند مگر با تصمیم مستقل.** صرفاً unused بودن runtime دلیل کافی برای حذف دادهٔ علمی نیست. قبل از هر حذف باید usage کل Repository، CI و documentation بررسی شود.
+
+---
+
+# 13. GitHub Actions و Validation
+
+Workflow:
+
+```text
+.github/workflows/webpack.yml
+```
+
+نام:
+
+```text
+Static site validation
+```
+
+موارد مورد انتظار validation:
+
+- وجود runtime files؛
+- syntax JavaScript؛
+- header و ساختار CSVهای runtime؛
+- smoke test HTTP برای HTML/JS/CSV؛
+- بررسی مسیرهای Component/Core؛
+- عدم dependency به `main-legacy.js` حذف‌شده؛
+- در صورت حفظ قرارداد فعلی، وجود ۱۱۸ فایل `data/Elements`.
+
+نتیجهٔ واقعی آخرین CI باید از GitHub Actions خوانده شود و نباید فقط از روی README فرض شود.
+
+---
+
+# 14. اجرای محلی
+
+از `file://` استفاده نشود، چون CSV با `fetch()` خوانده می‌شود.
 
 ```bash
 python -m http.server 8000
@@ -202,73 +459,180 @@ python -m http.server 8000
 http://localhost:8000
 ```
 
-## اعتبارسنجی و CI
+Syntax check نمونه:
 
-Workflow اصلی در `.github/workflows/webpack.yml` با عنوان `Static site validation` اجرا می‌شود و این موارد را بررسی می‌کند:
+```bash
+node --check assets/js/main.js
+node --check assets/js/app.js
+```
 
-1. وجود فایل‌های runtime.
-2. syntax هر دو JavaScript با `node --check`.
-3. header و تعداد ستون‌های هر سه CSV.
-4. دسترسی HTTP به HTML، JavaScript و CSVهای runtime با smoke test.
-
-آخرین اجرای workflow برای commit `e4067bc297f6791945acfeb3a99981a938874bd7` در GitHub Actions با وضعیت `completed / success` ثبت شده است.
-
-## تغییرات و auditهای انجام‌شده
-
-### JavaScript
-
-- حذف ناخواستهٔ `periodicSubtitle` از DOM متوقف شد.
-- مالکیت Theme و selector در `main.js` متمرکز شد.
-- initializationهای تکراری Theme حذف شدند.
-- migration قدیمی Themeهای `14/15` حذف شد.
-- parser CSV مقاوم‌تر شد.
-- fallbackهای داده با nullish coalescing اصلاح شدند.
-- شمارهٔ واقعی عناصر با `AtomicNumber` در مسیر ساخت کارت اضافه/تأیید شد.
-
-### CSS
-
-- selectorهای بلااستفاده حذف شدند.
-- قوانین تکراری level icon حذف شدند.
-- `.element-number` به‌عنوان selector مستقل برای شمارهٔ عناصر حفظ و responsive شد.
-- Themeهای PDF حفظ شدند.
-- Header به رنگ و زبان بصری Footer هماهنگ شد، بدون تغییر ساختار DOM یا منطق runtime.
-- سایهٔ چشمک انتخاب عنصر به قرمز تغییر کرد و حالت نهایی پس از توقف چشمک به نارنجی تیره تغییر یافت؛ transition و animation با `ease-in-out` نرم نگه داشته شدند.
-
-### GitHub Actions
-
-- workflow قدیمی npm publishing حذف شده است؛ repository npm package نیست.
-- validation استاتیک و smoke test تقویت شده‌اند.
-- آخرین run قابل مشاهدهٔ CI موفق بوده است.
-
-## قراردادهای مهم برای تغییرات آینده
-
-- `AtomicNumber` تنها منبع شمارهٔ عنصر است.
-- اطلاعات علمی عناصر نباید در HTML hard-code شوند.
-- مسیر CSVها نسبت به ریشهٔ سایت تعریف شده است.
-- CSVها منبع runtime هستند و تغییر schema آن‌ها نیازمند بازبینی `normalizeDetailRow()` است.
-- پروژه عمداً بدون Backend، Database و build step نگه داشته شده است.
-- تغییرات UI باید فارسی/انگلیسی، RTL/LTR و responsive behavior را حفظ کنند.
-- برای تغییرات غیرمرتبط، معماری موجود نباید دستکاری شود.
-- اگر شماره‌گذاری اشیای عمومی UI در آینده اجرا شود، نباید با `AtomicNumber` عناصر مخلوط شود و باید accessibility/i18n/responsive behavior آن جداگانه بررسی شود.
-- Header و Footer باید در تغییرات آینده از قرارداد رنگی مشترک خود خارج نشوند، مگر با تصمیم طراحی جدید.
-
-## وضعیت نهایی بازبینی
-
-- [x] Repository و ساختار فایل‌ها بررسی شد.
-- [x] README.md و README2.md بررسی و با وضعیت واقعی هماهنگ شدند.
-- [x] ارتباط HTML، JS، CSS و CSVها بررسی شد.
-- [x] نبود Backend/Database و static بودن معماری تأیید شد.
-- [x] شماره‌گذاری ۱۱۸ عنصر از `AtomicNumber` تأیید شد.
-- [x] f-block از همان مسیر ساخت کارت عنصر استفاده می‌کند.
-- [x] CSVها برای شماره‌گذاری تغییر غیرضروری نکرده‌اند.
-- [x] Header از نظر رنگ و ظاهر با Footer هماهنگ شد.
-- [x] responsive behavior موجود حفظ شد.
-- [x] افکت چشمک و سایهٔ نهایی کارت عنصر با رنگ‌های قرمز و نارنجی تیره تنظیم شد.
-- [x] workflow validation بررسی شد.
-- [x] آخرین اجرای CI موفق (`success`) مشاهده شد.
+تمام JSهای زیر `assets/js` نیز باید در validation بررسی شوند.
 
 ---
 
-## فایل مرجع دوم
+# 15. قراردادهای مهم توسعه آینده
 
-برای specification و جزئیات قابلیت شماره‌گذاری، به `README2.md` مراجعه کنید. این فایل عمداً وضعیت واقعی پیاده‌سازی را از specification اولیه تفکیک می‌کند.
+1. `AtomicNumber` تنها منبع شمارهٔ عنصر است.
+2. اطلاعات علمی در HTML hard-code نشود.
+3. تغییر schema CSV بدون بررسی Data Core انجام نشود.
+4. IDهای runtime بدون بررسی dependencyها تغییر نکنند.
+5. Header و Footer قرارداد رنگی مشترک خود را حفظ کنند مگر تصمیم طراحی جدید وجود داشته باشد.
+6. Theme System از Data Layer جدا بماند.
+7. Selection animation فقط یک مالک canonical داشته باشد.
+8. Componentها implementation داخلی یکدیگر را مستقیماً مصرف نکنند.
+9. i18n در Core بماند.
+10. پروژه بدون Backend/Database/build system باقی بماند مگر تصمیم معماری صریح گرفته شود.
+11. تغییرات غیرمرتبط با درخواست انجام نشوند.
+12. قبل از refactor جدید، Repository واقعی بررسی شود و README تنها source of truth فرض نشود.
+13. بعد از تغییر معماری، dependency graph و CI دوباره بررسی شوند.
+14. اگر code و documentation اختلاف داشتند، رفتار واقعی code مبناست و README باید اصلاح شود.
+
+---
+
+# 16. تاریخچهٔ Refactor
+
+```text
+1  Baseline
+2  Component/Core boundaries
+3  Shared Core
+4  Header
+5  Hero
+6  Periodic Table
+7  Element Details
+8  Footer
+9  CSS separation
+10 Theme / Selection ownership
+11 index composition
+12 main cleanup + app orchestrator
+13 orphan data review
+14 final validation + documentation
+```
+
+نتیجهٔ معماری:
+
+```text
+index.html
+   ↓
+main.js
+   ↓
+app.js
+   ├── core/i18n.js
+   ├── core/data.js
+   ├── components/header
+   ├── components/hero
+   ├── components/periodic-table
+   ├── components/element-details
+   └── components/footer
+```
+
+---
+
+# 17. موارد تاریخی که نباید با وضعیت فعلی اشتباه شوند
+
+در نسخه‌های قدیمی پروژه `main-legacy.js`، markup داخلی Componentها در `index.html`، و تعریف‌های قدیمی selection flash وجود داشته‌اند. این موارد تاریخی‌اند. source of truth برای وضعیت فعلی Repository است.
+
+---
+
+# 18. پرسش‌هایی برای هوش مصنوعی بررسی‌کننده Repository
+
+**دستور:**
+
+```text
+Repository را کامل بررسی کن. README.md را بخوان، اما آن را تنها منبع حقیقت ندان. HTML، تمام JavaScriptها، CSSها، CSVها و GitHub Actions را با README تطبیق بده. هیچ تغییری در کد ایجاد نکن؛ فقط audit و گزارش بده.
+```
+
+### 1 — معماری
+آیا معماری واقعاً Component-Based است؟ برای هر Component فایل JS، CSS، markup، dependency و coupling مستقیم را مشخص کن. آیا `app.js` واقعاً orchestrator است؟
+
+### 2 — Core
+آیا `core/i18n.js` و `core/data.js` واقعاً Shared Core هستند یا logic مشترک هنوز تکرار شده؟ parser، normalization، language state، translation و utilities را بررسی کن.
+
+### 3 — Dependency Graph
+از روی importها، DOM selectors، eventها و data flow یک dependency graph واقعی بساز و cycleها را مشخص کن.
+
+### 4 — main.js / app.js
+مرز مسئولیت این دو فایل منطقی است؟ آیا Theme System از data/application layer جداست؟
+
+### 5 — Periodic Table
+آیا تمام ۱۱۸ عنصر و f-block یک مسیر صحیح rendering دارند و `AtomicNumber` تنها منبع شماره است؟
+
+### 6 — Selection Animation
+کد واقعی را بررسی کن و دقیقاً بگو چند flash، چه رنگ‌هایی، چه مدت، چه shadow نهایی و چه reduced-motion behavior دارد. duplicate یا conflict را هم پیدا کن. اگر README و code اختلاف دارند، code واقعی را گزارش کن.
+
+### 7 — Theme
+۱۵ Theme را بررسی کن: mapping، selector، classها، localStorage، refresh و تغییر زبان labelها را دقیق گزارش کن.
+
+### 8 — Element Details
+مسیر انتخاب عنصر تا Beginner/Advanced/Very Advanced را بررسی کن و mismatch احتمالی datasetها را پیدا کن.
+
+### 9 — CSV Schema
+header و schema هر سه CSV را بررسی کن. کلید مشترک، normalization، missing fields و robustness parser در برابر quote/comma/newline/BOM را گزارش کن.
+
+### 10 — data/Elements
+تمام ۱۱۸ فایل را بررسی کن: dependency پنهان، duplicate بودن، دادهٔ اضافی، و منطقی‌بودن retained ماندن را تعیین کن.
+
+### 11 — DOM Contract
+تمام ID/classهایی را که JS query می‌کند استخراج کن و بررسی کن `index.html` همه را دارد. selectorهای شکننده را مشخص کن.
+
+### 12 — Accessibility
+keyboard، focus، button semantics، aria، RTL/LTR، language switching، reduced motion، contrast و mobile usability را audit کن و هر مشکل را با فایل/function/selector مشخص کن.
+
+### 13 — Responsive
+breakpointها، جدول ۱۸ ستونه، f-block، Header/Hero/Footer، Element Details و Theme selector را بررسی کن.
+
+### 14 — Performance
+تعداد requestها، module loading، fetch سه CSV، rendering ۱۱۸ کارت، re-render زبان، animation و دادهٔ غیر-runtime را بررسی کن و فقط مشکلات واقعی را گزارش کن.
+
+### 15 — Security / Robustness
+`innerHTML`، CSV content، `fetch()`، localStorage و dynamic module loading را از نظر امنیت و robustness بررسی کن.
+
+### 16 — CI
+workflow را با Repository تطبیق بده: مسیرها، references به فایل حذف‌شده، syntax checks، smoke tests و نبود/وجود browser test را مشخص کن.
+
+### 17 — Dead Code
+فایل‌ها و کدهای مشکوک به legacy/dead code را فهرست کن، اما چیزی را حذف نکن. dependencyهایی که قبل از حذف باید بررسی شوند را بنویس.
+
+### 18 — Documentation vs Code
+هر اختلاف را با این قالب گزارش کن:
+
+```text
+Documentation says:
+Code does:
+Recommended documentation correction:
+```
+
+### 19 — آیندهٔ Vanilla
+اگر پروژه همچنان Vanilla JS بماند، آیا معماری فعلی مناسب است؟ اگر نه، فقط تغییرات محدود و ضروری را پیشنهاد کن.
+
+### 20 — نتیجه
+در پایان جدول زیر را ارائه کن:
+
+| Area | Status | Risk | Evidence | Recommendation |
+|---|---|---|---|---|
+
+و سپس فقط این سه دسته را بده:
+
+```text
+Must Fix
+Should Fix
+Do Not Touch
+```
+
+---
+
+# 19. قانون نهایی برای AI بررسی‌کننده
+
+هوش مصنوعی بررسی‌کننده باید ابتدا Repository را باز و کد واقعی را بررسی کند. اگر README و code اختلاف داشتند:
+
+1. code واقعی مبنا باشد؛
+2. اختلاف صریح گزارش شود؛
+3. حدس بدون evidence ارائه نشود؛
+4. بدون درخواست صریح هیچ فایلی تغییر نکند.
+
+---
+
+# 20. وضعیت مستندات
+
+این `README.md` تنها README رسمی پروژه است و مرجع اصلی هدف سایت، معماری، Repository، Componentها، Core، Data Model، Theme، Selection، Accessibility، Responsive behavior، CI، قراردادهای توسعه و audit آینده است.
+
+هر تغییر معماری یا رفتار واقعی باید همراه با همان تغییر در این فایل مستند شود.
