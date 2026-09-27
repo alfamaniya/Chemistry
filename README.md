@@ -268,3 +268,7 @@ Workflow اصلی در `.github/workflows/webpack.yml` با عنوان `Static s
 - [x] آخرین اجرای CI موفق (`success`) مشاهده شد.
 
 ---
+
+## فایل مرجع دوم
+
+برای specification و جزئیات قابلیت شماره‌گذاری، به `README2.md` مراجعه کنید. این فایل عمداً وضعیت واقعی پیاده‌سازی را از specification اولیه تفکیک می‌کند.
