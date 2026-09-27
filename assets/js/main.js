@@ -59,6 +59,7 @@
     {id:"15", fa:"بدون دسته‌بندی", en:"Uncategorized", faGroup:"", enGroup:""},
     {id:"1", fa:"جرم اتمی", en:"Atomic Mass", faGroup:"فیزیکی", enGroup:"Physical"},
     {id:"2", fa:"چگالی", en:"Density", faGroup:"فیزیکی", enGroup:"Physical"},
+    {id:"3", fa:"حالت استاندارد", en:"Standard State", faGroup:"فیزیکی", enGroup:"Physical"},
     {id:"10", fa:"نقطه ذوب", en:"Melting Point", faGroup:"فیزیکی", enGroup:"Physical"},
     {id:"11", fa:"نقطه جوش", en:"Boiling Point", faGroup:"فیزیکی", enGroup:"Physical"},
     {id:"7", fa:"شعاع اتمی", en:"Atomic Radius", faGroup:"اتمی", enGroup:"Atomic"},
