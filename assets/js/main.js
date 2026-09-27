@@ -3,13 +3,15 @@
 
   // Component bootstrap runs before the data-driven runtime so that shared
   // DOM contracts exist before i18n and table logic attach to them.
-  const [{ mountHeader }, { mountHero }] = await Promise.all([
+  const [{ mountHeader }, { mountHero }, { mountFooter }] = await Promise.all([
     import("./components/header/header.js"),
-    import("./components/hero/hero.js")
+    import("./components/hero/hero.js"),
+    import("./components/footer/footer.js")
   ]);
 
   mountHeader(document.querySelector(".site-header"));
   mountHero(document.querySelector(".hero"));
+  mountFooter(document.querySelector(".site-footer"));
 
   // Bootstrap the data-driven application as an ES module.
   import("./main-legacy.js").catch(error => console.error("Failed to load application module", error));
