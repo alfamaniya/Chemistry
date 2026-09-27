@@ -177,8 +177,7 @@ parseCsv() یک parser داخلی ساده برای CSV است که:
 - symbol → Symbol
 - name → Name
 - atomic_mass → AtomicMass
-- group_block → GroupBlock
-- standard_state → StandardState
+- group_block → GroupBlock- standard_state → StandardState
 - electron_configuration → ElectronConfiguration
 - oxidation_states → OxidationStates
 - electronegativity → Electronegativity
@@ -357,8 +356,7 @@ assets/css/main.css مسئول:
 
 - layout کلی
 - header
-- hero
-- جدول
+- hero- جدول
 - کارت عناصر
 - پنل‌های اطلاعات
 - footer
@@ -538,7 +536,6 @@ package.json
 ```
 
 و فاقد Webpack configuration واقعی بود.
-
 در چنین ساختاری npm install نمی‌تواند package metadata پروژه را پیدا کند و خطای ENOENT برای package.json طبیعی است.
 
 راه‌حل فعلی، تغییر CI به validation مخصوص سایت استاتیک بوده است؛ نه اضافه‌کردن فایل‌های npm غیرضروری.
@@ -717,8 +714,7 @@ text
 
 هر تغییر آینده باید با این سؤال شروع شود:
 
-```
-text
+```text
 آیا این تغییر واقعاً به تغییر معماری نیاز دارد،
 یا می‌توان آن را با ساختار فعلی HTML + CSS + JS + CSV انجام داد؟
 ```
@@ -833,8 +829,8 @@ data/...
 
 در این تغییر رابط کاربری ساده‌تر شده است:
 
-- شماره‌های تزئینی روی سه کارت سطح اطلاعات حذف شده‌اند و محتوای اصلی کارت‌ها بدون تغییر باقی مانده است.
-- در بخش راهنمای سریع فقط کارت «۱۱۸ عنصر در مجموعه» باقی مانده و دو کارت اضافی حذف شده‌اند.
+- شماره‌های تزئینی قرمز کنار عنوان بخش‌های «جدول تناوبی» و «اطلاعات مختصر عنصر» حذف شده‌اند و عنوان‌ها و محتوای اصلی بدون تغییر باقی مانده‌اند.
+- بخش راهنمای سریع و کادر «۱۱۸ عنصر در مجموعه» از پایین صفحه حذف شده‌اند.
 - ساختار داده، CSVها، منطق JavaScript و معماری سمت‌کاربر تغییر نکرده‌اند.
 
 
