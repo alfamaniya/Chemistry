@@ -205,6 +205,13 @@
       if (t[key]) node.textContent = t[key];
     });
 
+    document.querySelectorAll("[data-i18n-aria]").forEach(node => {
+      const key = node.dataset.i18nAria;
+      if (t[key]) node.setAttribute("aria-label", t[key]);
+    });
+
+    if (fBlock) fBlock.setAttribute("aria-label", t.fBlockAria);
+
     languageButtons.forEach(button => {
       const active = button.dataset.language === currentLanguage;
       button.classList.toggle("active", active);
@@ -307,8 +314,13 @@
     return value !== undefined && value !== null && String(value).trim() !== "";
   }
 
-  function formatValue(value) {
-    return isUsable(value) ? String(value) : "—";
+  function formatValue(value, key) {
+    if (!isUsable(value)) return "—";
+    const dictionary = valueTranslations[key];
+    if (dictionary && dictionary[currentLanguage] && dictionary[currentLanguage][String(value)] !== undefined) {
+      return dictionary[currentLanguage][String(value)];
+    }
+    return String(value);
   }
 
   function createDataGrid(data, keys) {
@@ -328,7 +340,7 @@
 
       const value = document.createElement("span");
       value.className = "data-value";
-      value.textContent = formatValue(data[key]);
+      value.textContent = formatValue(data[key], key);
 
       item.append(label, value);
       gridNode.appendChild(item);
