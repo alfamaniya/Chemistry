@@ -272,6 +272,14 @@
       renderElementDetails(selectedAtomicNumber);
       const t = translations[currentLanguage];
       updateStatus(getName(element) + " (" + element.Symbol + ") — " + t.elementDetails + " " + element.AtomicNumber);
+
+      document.querySelectorAll(".element.selected").forEach(node => node.classList.remove("selected"));
+      card.classList.remove("selected-flash");
+      void card.offsetWidth;
+      card.classList.add("selected", "selected-flash");
+      card.addEventListener("animationend", () => {
+        card.classList.remove("selected-flash");
+      }, { once: true });
     });
     return card;
   }
@@ -305,6 +313,9 @@
       const position = positions.get(Number(element.AtomicNumber));
       if (!position) return;
       const card = createElementCard(element);
+      if (selectedAtomicNumber === Number(element.AtomicNumber)) {
+        card.classList.add("selected");
+      }
       card.style.gridColumn = position[1];
       card.style.gridRow = position[0];
       grid.appendChild(card);
