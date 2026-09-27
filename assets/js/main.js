@@ -86,7 +86,7 @@
       levelsTitle: "Knowledge Layers", levelsSubtitle: "Information for the selected element across three knowledge layers",
       beginnerTitle: "Foundational Insight", beginnerDescription: "Essential data for understanding the element",
       professionalTitle: "Specialized Analysis", professionalDescription: "Broader properties for deeper examination",
-      veryAdvancedTitle: "Scientific Deep Dive", advancedDescription: "In-depth details for comprehensive exploration"
+      veryAdvancedTitle: "Scientific Deep Dive", advancedDescription: "In-depth details for comprehensive exploration",
       elementsCount: "elements in the collection", levelsCount: "learning levels", dataFormat: "structured data source",
       footerTitle: "Chemistry Reference", footerText: "A project for easier access to chemical element data.",
       backTop: "Back to top ↑", loading: "Loading elements…",
