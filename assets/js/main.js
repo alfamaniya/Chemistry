@@ -2,9 +2,16 @@
   "use strict";
 
   const DATA_URL = "data/PubChemElements_all.csv";
+  const ADVANCED_URL = "data/ELEMENTS_118_ADVANCED.csv";
+  const VERY_ADVANCED_URL = "data/ELEMENTS_118_VERY_ADVANCED.csv";
+
   const grid = document.getElementById("periodic-table-grid");
   const fBlock = document.getElementById("f-block");
   const status = document.getElementById("table-status");
+  const selectedElementBox = document.getElementById("selected-element");
+  const beginnerInfo = document.getElementById("beginner-info");
+  const advancedInfo = document.getElementById("advanced-info");
+  const veryAdvancedInfo = document.getElementById("very-advanced-info");
   const languageButtons = document.querySelectorAll(".language-button");
 
   const translations = {
@@ -12,40 +19,70 @@
       brand: "مرجع شیمی", brandTagline: "یادگیری ساده، دقیق و مرحله‌ای",
       navPeriodic: "جدول تناوبی", navLevels: "سطوح آموزشی", navAbout: "درباره",
       heroTitle: "مرجع شیمی و جدول تناوبی",
-      heroText: "یک نقطهٔ شروع ساده برای مشاهدهٔ جدول تناوبی و دسترسی سریع به اطلاعات عناصر، از سطح مبتدی تا پیشرفته.",
+      heroText: "یک نقطهٔ شروع ساده برای مشاهدهٔ جدول تناوبی و دسترسی سریع به اطلاعات عناصر، از سطح مبتدی تا فوق پیشرفته.",
       heroButton: "مشاهده جدول تناوبی", periodicTitle: "جدول تناوبی",
       periodicSubtitle: "چیدمان ۱۸ گروهی بر اساس مرجع جدول تناوبی",
-      levelsTitle: "سطوح آموزشی", levelsSubtitle: "اطلاعات دسته‌بندی‌شده برای مسیرهای مختلف یادگیری",
-      beginnerTitle: "اطلاعات دسته‌بندی شده مبتدی", beginnerDescription: "مفاهیم پایه و مشخصات اصلی ۱۱۸ عنصر",
-      professionalTitle: "اطلاعات دسته‌بندی شده حرفه‌ای", professionalDescription: "ویژگی‌های عددی و شیمیایی گسترده‌تر",
-      advancedTitle: "اطلاعات دسته‌بندی شده پیشرفته", advancedDescription: "جزئیات تکمیلی برای مطالعهٔ عمیق‌تر",
+      levelsTitle: "سطوح آموزشی", levelsSubtitle: "اطلاعات عنصر انتخاب‌شده در سه سطح",
+      beginnerTitle: "اطلاعات مبتدی", beginnerDescription: "داده‌های پایه از PubChem",
+      professionalTitle: "اطلاعات پیشرفته", professionalDescription: "ویژگی‌های گسترده‌تر از فایل پیشرفته",
+      veryAdvancedTitle: "اطلاعات فوق پیشرفته",
+      advancedDescription: "جزئیات تکمیلی از فایل فوق پیشرفته",
       elementsCount: "عنصر در مجموعه", levelsCount: "سطح آموزشی", dataFormat: "منبع دادهٔ ساختاریافته",
       footerTitle: "مرجع شیمی", footerText: "پروژه‌ای برای دسترسی ساده‌تر به داده‌های عناصر شیمیایی.",
       backTop: "بازگشت به بالا ↑", loading: "در حال بارگذاری عناصر…",
       loaded: "عنصر از منبع داده بارگذاری شد.", elementDetails: "عدد اتمی",
-      categoryUnknown: "دسته‌بندی نامشخص", loadError: "بارگذاری داده‌ها انجام نشد. صفحه را از طریق یک وب‌سرور محلی اجرا کنید."
+      categoryUnknown: "دسته‌بندی نامشخص", loadError: "بارگذاری داده‌ها انجام نشد. صفحه را از طریق یک وب‌سرور محلی اجرا کنید.",
+      selectedElementTitle: "اطلاعات مختصر عنصر",
+      selectedElementSubtitle: "برای دیدن اطلاعات، یکی از عناصر جدول را انتخاب کنید.",
+      selectElement: "یک عنصر را از جدول انتخاب کنید.",
+      atomicNumber: "عدد اتمی", symbol: "نماد", name: "نام", atomicMass: "جرم اتمی",
+      groupBlock: "دسته", standardState: "حالت استاندارد", electronConfiguration: "آرایش الکترونی",
+      oxidationStates: "حالت‌های اکسایش", electronegativity: "الکترونگاتیویته",
+      atomicRadius: "شعاع اتمی (pm)", ionizationEnergy: "انرژی یونش (eV)",
+      electronAffinity: "الکترون‌خواهی (eV)", meltingPoint: "نقطه ذوب (K)",
+      boilingPoint: "نقطه جوش (K)", density: "چگالی (g/cm³)", yearDiscovered: "سال کشف",
+      dataStatus: "وضعیت داده", cpkColor: "رنگ CPK"
     },
     en: {
       brand: "Chemistry Reference", brandTagline: "Simple, accurate, step-by-step learning",
       navPeriodic: "Periodic Table", navLevels: "Learning Levels", navAbout: "About",
       heroTitle: "Chemistry Reference & Periodic Table",
-      heroText: "A simple starting point for exploring the periodic table and accessing element information from beginner to advanced levels.",
+      heroText: "A simple starting point for exploring the periodic table and accessing element information from beginner to very advanced levels.",
       heroButton: "View Periodic Table", periodicTitle: "Periodic Table",
       periodicSubtitle: "18-group layout based on the reference periodic table",
-      levelsTitle: "Learning Levels", levelsSubtitle: "Organized information for different learning paths",
-      beginnerTitle: "Beginner Information", beginnerDescription: "Core concepts and key facts for all 118 elements",
-      professionalTitle: "Professional Information", professionalDescription: "Broader numerical and chemical properties",
-      advancedTitle: "Advanced Information", advancedDescription: "Additional details for deeper study",
+      levelsTitle: "Learning Levels", levelsSubtitle: "Information for the selected element in three levels",
+      beginnerTitle: "Beginner Information", beginnerDescription: "Core data from PubChem",
+      professionalTitle: "Advanced Information", professionalDescription: "Broader properties from the advanced file",
+      veryAdvancedTitle: "Very Advanced Information", advancedDescription: "Additional details from the very advanced file",
       elementsCount: "elements in the collection", levelsCount: "learning levels", dataFormat: "structured data source",
       footerTitle: "Chemistry Reference", footerText: "A project for easier access to chemical element data.",
       backTop: "Back to top ↑", loading: "Loading elements…",
       loaded: "elements loaded from the data source.", elementDetails: "Atomic number",
-      categoryUnknown: "Unknown category", loadError: "The data could not be loaded. Please run the page through a local web server."
+      categoryUnknown: "Unknown category", loadError: "The data could not be loaded. Please run the page through a local web server.",
+      selectedElementTitle: "Selected Element — Quick Information",
+      selectedElementSubtitle: "Select an element from the table to view its information.",
+      selectElement: "Select an element from the table.",
+      atomicNumber: "Atomic number", symbol: "Symbol", name: "Name", atomicMass: "Atomic mass",
+      groupBlock: "Group / block", standardState: "Standard state", electronConfiguration: "Electron configuration",
+      oxidationStates: "Oxidation states", electronegativity: "Electronegativity",
+      atomicRadius: "Atomic radius (pm)", ionizationEnergy: "Ionization energy (eV)",
+      electronAffinity: "Electron affinity (eV)", meltingPoint: "Melting point (K)",
+      boilingPoint: "Boiling point (K)", density: "Density (g/cm³)", yearDiscovered: "Year discovered",
+      dataStatus: "Data status", cpkColor: "CPK color"
     }
   };
 
-  // Main table positions: period -> group. F-block is rendered separately below group 3,
-  // matching the reference PDF.
+  const fieldLabels = {
+    AtomicNumber: "atomicNumber", Symbol: "symbol", Name: "name", NameFa: "name",
+    AtomicMass: "atomicMass", CPKHexColor: "cpkColor", ElectronConfiguration: "electronConfiguration",
+    Electronegativity: "electronegativity", AtomicRadius: "atomicRadius",
+    IonizationEnergy: "ionizationEnergy", ElectronAffinity: "electronAffinity",
+    OxidationStates: "oxidationStates", StandardState: "standardState",
+    MeltingPoint: "meltingPoint", BoilingPoint: "boilingPoint", Density: "density",
+    GroupBlock: "groupBlock", YearDiscovered: "yearDiscovered", data_status: "dataStatus",
+    dataStatus: "dataStatus"
+  };
+
   const positions = new Map([
     [1,[1,1]],[2,[1,18]],[3,[2,1]],[4,[2,2]],[5,[2,13]],[6,[2,14]],[7,[2,15]],[8,[2,16]],[9,[2,17]],[10,[2,18]],
     [11,[3,1]],[12,[3,2]],[13,[3,13]],[14,[3,14]],[15,[3,15]],[16,[3,16]],[17,[3,17]],[18,[3,18]],
@@ -56,6 +93,10 @@
   ]);
 
   let currentLanguage = localStorage.getItem("chemistry-language") || "fa";
+  let elements = [];
+  let advancedElements = [];
+  let veryAdvancedElements = [];
+  let selectedAtomicNumber = null;
 
   function parseCsv(text) {
     const rows = [];
@@ -64,7 +105,7 @@
       const ch = text[i], next = text[i + 1];
       if (ch === '"' && quoted && next === '"') { cell += '"'; i++; continue; }
       if (ch === '"') { quoted = !quoted; continue; }
-      if (ch === "," && !quoted) { row.push(cell); cell = ""; continue; }
+      if (ch === ',' && !quoted) { row.push(cell); cell = ""; continue; }
       if ((ch === "\n" || ch === "\r") && !quoted) {
         if (ch === "\r" && next === "\n") i++;
         row.push(cell); cell = "";
@@ -79,27 +120,41 @@
     return rows.map(values => Object.fromEntries(headers.map((h, i) => [h, values[i] ?? ""])));
   }
 
+  function getName(element) {
+    return currentLanguage === "fa" ? (element.NameFa || element.Name) : element.Name;
+  }
+
   function setLanguage(language) {
     currentLanguage = language === "en" ? "en" : "fa";
     const t = translations[currentLanguage];
     document.documentElement.lang = currentLanguage;
     document.documentElement.dir = currentLanguage === "fa" ? "rtl" : "ltr";
     document.body.classList.toggle("lang-en", currentLanguage);
+
     document.querySelectorAll("[data-i18n]").forEach(node => {
       const key = node.dataset.i18n;
       if (t[key]) node.textContent = t[key];
     });
+
     languageButtons.forEach(button => {
       const active = button.dataset.language === currentLanguage;
       button.classList.toggle("active", active);
       button.setAttribute("aria-pressed", String(active));
     });
+
     localStorage.setItem("chemistry-language", currentLanguage);
+
+    if (elements.length) renderPeriodicTable();
+    if (selectedAtomicNumber) renderElementDetails(selectedAtomicNumber);
     updateStatus();
   }
 
-  function updateStatus() {
+  function updateStatus(message) {
     const t = translations[currentLanguage];
+    if (message) {
+      status.textContent = message;
+      return;
+    }
     const count = grid.querySelectorAll(".element").length + fBlock.querySelectorAll(".element").length;
     if (count) status.textContent = count + " " + t.loaded;
   }
@@ -109,7 +164,8 @@
     card.className = "element";
     card.type = "button";
     card.dataset.type = element.GroupBlock || "";
-    card.setAttribute("aria-label", element.Name + ", " + translations[currentLanguage].elementDetails + " " + element.AtomicNumber);
+    card.dataset.atomicNumber = element.AtomicNumber;
+    card.setAttribute("aria-label", getName(element) + ", " + translations[currentLanguage].elementDetails + " " + element.AtomicNumber);
 
     const number = document.createElement("span");
     number.className = "element-number";
@@ -121,17 +177,19 @@
 
     const name = document.createElement("span");
     name.className = "element-name";
-    name.textContent = element.Name;
+    name.textContent = getName(element);
 
     card.append(number, symbol, name);
     card.addEventListener("click", () => {
+      selectedAtomicNumber = Number(element.AtomicNumber);
+      renderElementDetails(selectedAtomicNumber);
       const t = translations[currentLanguage];
-      status.textContent = element.Name + " (" + element.Symbol + ") — " + t.elementDetails + " " + element.AtomicNumber + " — " + (element.GroupBlock || t.categoryUnknown);
+      updateStatus(getName(element) + " (" + element.Symbol + ") — " + t.elementDetails + " " + element.AtomicNumber);
     });
     return card;
   }
 
-  function createFRow(elements, start, end) {
+  function createFRow(source, start, end) {
     const row = document.createElement("div");
     row.className = "f-row";
 
@@ -141,7 +199,7 @@
       row.appendChild(spacer);
     }
 
-    elements.filter(element => {
+    source.filter(element => {
       const number = Number(element.AtomicNumber);
       return number >= start && number <= end;
     }).forEach(element => row.appendChild(createElementCard(element)));
@@ -152,35 +210,152 @@
     return row;
   }
 
+  function renderPeriodicTable() {
+    grid.innerHTML = "";
+    fBlock.innerHTML = "";
+
+    elements.forEach(element => {
+      const position = positions.get(Number(element.AtomicNumber));
+      if (!position) return;
+      const card = createElementCard(element);
+      card.style.gridColumn = position[1];
+      card.style.gridRow = position[0];
+      grid.appendChild(card);
+    });
+
+    fBlock.append(
+      createFRow(elements, 57, 71),
+      createFRow(elements, 89, 103)
+    );
+  }
+
+  function getRowByAtomicNumber(source, atomicNumber) {
+    return source.find(row => Number(row.AtomicNumber || row.atomic_number || row.atomicNumber) === Number(atomicNumber));
+  }
+
+  function isUsable(value) {
+    return value !== undefined && value !== null && String(value).trim() !== "";
+  }
+
+  function formatValue(value) {
+    return isUsable(value) ? String(value) : "—";
+  }
+
+  function createDataGrid(data, keys) {
+    const t = translations[currentLanguage];
+    const gridNode = document.createElement("div");
+    gridNode.className = "data-grid";
+
+    keys.forEach(key => {
+      if (!isUsable(data[key])) return;
+      const item = document.createElement("div");
+      item.className = "data-item";
+
+      const label = document.createElement("span");
+      label.className = "data-label";
+      const labelKey = fieldLabels[key];
+      label.textContent = t[labelKey] || key;
+
+      const value = document.createElement("span");
+      value.className = "data-value";
+      value.textContent = formatValue(data[key]);
+
+      item.append(label, value);
+      gridNode.appendChild(item);
+    });
+
+    if (!gridNode.children.length) {
+      gridNode.innerHTML = '<div class="empty-state">—</div>';
+    }
+    return gridNode;
+  }
+
+  function renderElementDetails(atomicNumber) {
+    const beginner = getRowByAtomicNumber(elements, atomicNumber);
+    const advanced = getRowByAtomicNumber(advancedElements, atomicNumber);
+    const veryAdvanced = getRowByAtomicNumber(veryAdvancedElements, atomicNumber);
+
+    if (!beginner) {
+      selectedElementBox.innerHTML = '<div class="empty-state">' + translations[currentLanguage].selectElement + '</div>';
+      beginnerInfo.innerHTML = '<div class="empty-state">—</div>';
+      advancedInfo.innerHTML = '<div class="empty-state">—</div>';
+      veryAdvancedInfo.innerHTML = '<div class="empty-state">—</div>';
+      return;
+    }
+
+    selectedElementBox.innerHTML = "";
+    const identity = document.createElement("div");
+    identity.className = "selected-identity";
+
+    const symbol = document.createElement("span");
+    symbol.className = "selected-symbol";
+    symbol.textContent = beginner.Symbol;
+
+    const names = document.createElement("div");
+    names.className = "selected-names";
+    const title = document.createElement("strong");
+    title.textContent = getName(beginner);
+    const subtitle = document.createElement("small");
+    subtitle.textContent = currentLanguage === "fa" ? beginner.Name : beginner.NameFa;
+    names.append(title, subtitle);
+
+    identity.append(symbol, names);
+    selectedElementBox.appendChild(identity);
+
+    selectedElementBox.appendChild(createDataGrid(beginner, [
+      "AtomicNumber", "AtomicMass", "GroupBlock", "StandardState", "ElectronConfiguration", "OxidationStates"
+    ]));
+
+    beginnerInfo.innerHTML = "";
+    beginnerInfo.appendChild(createDataGrid(beginner, [
+      "AtomicNumber", "Symbol", "AtomicMass", "StandardState", "GroupBlock", "YearDiscovered"
+    ]));
+
+    advancedInfo.innerHTML = "";
+    advancedInfo.appendChild(createDataGrid(advanced, [
+      "AtomicNumber", "Symbol", "AtomicMass", "GroupBlock", "StandardState",
+      "ElectronConfiguration", "OxidationStates", "Electronegativity", "AtomicRadius",
+      "IonizationEnergy", "ElectronAffinity", "MeltingPoint", "BoilingPoint", "Density"
+    ]));
+
+    veryAdvancedInfo.innerHTML = "";
+    veryAdvancedInfo.appendChild(createDataGrid(veryAdvanced, [
+      "AtomicNumber", "Symbol", "AtomicMass", "GroupBlock", "StandardState",
+      "ElectronConfiguration", "OxidationStates", "Electronegativity", "AtomicRadius",
+      "IonizationEnergy", "ElectronAffinity", "MeltingPoint", "BoilingPoint", "Density",
+      "YearDiscovered", "data_status"
+    ]));
+  }
+
+  async function fetchCsv(url) {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error("Failed to fetch " + url);
+    return parseCsv(await response.text());
+  }
+
   async function loadElements() {
     try {
-      const response = await fetch(DATA_URL);
-      if (!response.ok) throw new Error("fetch failed");
+      const [pubchem, advanced, veryAdvanced] = await Promise.all([
+        fetchCsv(DATA_URL),
+        fetchCsv(ADVANCED_URL),
+        fetchCsv(VERY_ADVANCED_URL)
+      ]);
 
-      const elements = parseCsv(await response.text()).filter(element => element.AtomicNumber);
-      grid.innerHTML = "";
-      fBlock.innerHTML = "";
+      elements = pubchem.filter(element => element.AtomicNumber);
+      advancedElements = advanced.filter(element => element.atomic_number || element.AtomicNumber);
+      veryAdvancedElements = veryAdvanced.filter(element => element.atomic_number || element.AtomicNumber);
 
-      elements.forEach(element => {
-        const position = positions.get(Number(element.AtomicNumber));
-        if (!position) return;
-        const card = createElementCard(element);
-        card.style.gridColumn = position[1];
-        card.style.gridRow = position[0];
-        grid.appendChild(card);
-      });
-
-      fBlock.append(
-        createFRow(elements, 57, 71),
-        createFRow(elements, 89, 103)
-      );
-
+      renderPeriodicTable();
       updateStatus();
     } catch (error) {
       const t = translations[currentLanguage];
       grid.innerHTML = '<div class="loading">' + t.loadError + '</div>';
       fBlock.innerHTML = "";
-      status.textContent = DATA_URL;
+      selectedElementBox.innerHTML = '<div class="empty-state">' + t.loadError + '</div>';
+      beginnerInfo.innerHTML = "";
+      advancedInfo.innerHTML = "";
+      veryAdvancedInfo.innerHTML = "";
+      status.textContent = error.message;
     }
   }
 
