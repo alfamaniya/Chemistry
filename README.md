@@ -11,7 +11,7 @@
 - `assets/css/main.css` — استایل موبایل‌محور و واکنش‌گرا
 - `assets/js/main.js` — منطق زبان، بارگذاری CSV و ساخت جدول تناوبی مطابق چیدمان مرجع PDF
 
-## اجرای محلی
+## بررسی خودکار (GitHub Actions)\n\nفایل `.github/workflows/webpack.yml` برای این پروژه به‌صورت یک سایت استاتیک بررسی می‌شود و به `package.json` یا Webpack وابسته نیست. این workflow وجود فایل‌های اصلی، صحت نحوی JavaScript و دسترسی HTTP به صفحه و فایل JavaScript را بررسی می‌کند.\n\n## اجرای محلی
 به دلیل استفاده از `fetch` برای خواندن CSV، فایل `index.html` را مستقیماً با `file://` باز نکنید. یک وب‌سرور ساده اجرا کنید:
 ```bash
 python -m http.server 8000
