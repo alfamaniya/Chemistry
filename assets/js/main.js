@@ -26,11 +26,6 @@
     {id:"12", fa:"سال کشف", en:"Year Discovered", faGroup:"تاریخی", enGroup:"History"}
   ];
 
-  const categoryLabel = {
-    fa: "دسته‌بندی بر اساس خواص فیزیکی، خواص اتمی، خواص شیمیایی، طبقه‌بندی و اطلاعات تاریخی",
-    en: "Categorization by Physical, Atomic, Chemical, Classification, and Historical Properties"
-  };
-
   function currentLanguage() {
     return document.documentElement.lang === "en" ? "en" : "fa";
   }
@@ -56,9 +51,6 @@
       themeSelect.value = "15";
       themeSelect.dispatchEvent(new Event("change", {bubbles: true}));
     }
-
-    const label = document.querySelector('[data-i18n="themeSelectLabel"]');
-    if (label) label.textContent = categoryLabel[lang];
   }
 
   function install() {
