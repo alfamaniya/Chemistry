@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="مرجع آموزشی شیمی؛ جدول تناوبی و اطلاعات عناصر در سطوح مختلف">
+  <meta name="theme-color" content="#0f172a">
+  <title>مرجع شیمی | جدول تناوبی و اطلاعات عناصر</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="صفحه اصلی مرجع شیمی">
+        <span class="brand-mark">ش</span>
+        <span><strong>مرجع شیمی</strong><small>یادگیری ساده، دقیق و مرحله‌ای</small></span>
+      </a>
+      <nav class="main-nav" aria-label="ناوبری اصلی">
+        <a href="#periodic-table">جدول تناوبی</a>
+        <a href="#levels">سطوح آموزشی</a>
+        <a href="#footer">درباره</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div>
+        <p class="eyebrow">CHEMISTRY • ELEMENTS</p>
+        <h1>هدر و توضیحات</h1>
+        <p class="hero-text">یک نقطهٔ شروع ساده برای مشاهدهٔ جدول تناوبی و دسترسی سریع به اطلاعات عناصر، از سطح مبتدی تا پیشرفته.</p>
+        <a class="primary-button" href="#periodic-table">مشاهده جدول تناوبی</a>
+      </div>
+    </section>
+
+    <section id="periodic-table" class="section container">
+      <div class="section-heading">
+        <span class="section-number">۰۱</span>
+        <div><h2>جدول تناوبی</h2><p>آجرهای مربعی با گوشه‌های نرم‌شده</p></div>
+      </div>
+      <div class="table-shell">
+        <div id="periodic-table-grid" class="periodic-grid" aria-label="جدول تناوبی عناصر">
+          <div class="loading">در حال بارگذاری عناصر…</div>
+        </div>
+      </div>
+      <p id="table-status" class="table-status" role="status"></p>
+    </section>
+
+    <section id="levels" class="section container">
+      <div class="section-heading">
+        <span class="section-number">۰۲</span>
+        <div><h2>سطوح آموزشی</h2><p>اطلاعات دسته‌بندی‌شده برای مسیرهای مختلف یادگیری</p></div>
+      </div>
+      <div class="level-grid">
+        <a class="level-card beginner" href="data/ELEMENTS_118_BEGINNER.csv">
+          <span class="level-icon">۱</span>
+          <span><strong>اطلاعات دسته‌بندی شده مبتدی</strong><small>مفاهیم پایه و مشخصات اصلی ۱۱۸ عنصر</small></span>
+          <span class="arrow">←</span>
+        </a>
+        <a class="level-card professional" href="data/ELEMENTS_118_ADVANCED.csv">
+          <span class="level-icon">۲</span>
+          <span><strong>اطلاعات دسته‌بندی شده حرفه‌ای</strong><small>ویژگی‌های عددی و شیمیایی گسترده‌تر</small></span>
+          <span class="arrow">←</span>
+        </a>
+        <a class="level-card advanced" href="data/ELEMENTS_118_VERY_ADVANCED.csv">
+          <span class="level-icon">۳</span>
+          <span><strong>اطلاعات دسته‌بندی شده پیشرفته</strong><small>جزئیات تکمیلی برای مطالعهٔ عمیق‌تر</small></span>
+          <span class="arrow">←</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section container quick-info" aria-label="راهنمای سریع">
+      <div class="info-card"><span>۱۱۸</span><p>عنصر در مجموعه</p></div>
+      <div class="info-card"><span>۳</span><p>سطح آموزشی</p></div>
+      <div class="info-card"><span>CSV</span><p>منبع دادهٔ ساختاریافته</p></div>
+    </section>
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>مرجع شیمی</strong><p>پروژه‌ای برای دسترسی ساده‌تر به داده‌های عناصر شیمیایی.</p></div>
+      <a href="#top" class="back-top">بازگشت به بالا ↑</a>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
