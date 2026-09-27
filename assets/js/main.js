@@ -170,9 +170,7 @@
       if (t[key]) node.textContent = t[key];
     });
 
-    if (themeSelect) themeSelect.addEventListener("change", event => applyPdfTheme(event.target.value));
-
-  languageButtons.forEach(button => {
+    languageButtons.forEach(button => {
       const active = button.dataset.language === currentLanguage;
       button.classList.toggle("active", active);
       button.setAttribute("aria-pressed", String(active));
@@ -418,6 +416,8 @@
       status.textContent = error.message;
     }
   }
+
+  if (themeSelect) themeSelect.addEventListener("change", event => applyPdfTheme(event.target.value));
 
   languageButtons.forEach(button => {
     button.addEventListener("click", () => setLanguage(button.dataset.language));
