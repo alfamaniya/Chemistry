@@ -1,6 +1,6 @@
 # Chemistry — برنامهٔ مرحله‌ای Refactor معماری Component-Based
 
-> **وضعیت سند:** مراحل ۱ تا ۵ تکمیل شده‌اند؛ مرحله ۶ منتظر تأیید کاربر است.
+> **وضعیت سند:** مراحل ۱ تا ۶ تکمیل شده‌اند؛ مرحله ۷ منتظر تأیید کاربر است.
 > **هدف:** تبدیل تدریجی پروژه به معماری Component-Based با حفظ رفتار، داده‌ها، ظاهر، accessibility و قراردادهای runtime.
 > **قانون:** هر مرحله جداگانه اجرا و گزارش می‌شود و مرحله بعد فقط با تأیید کاربر شروع می‌شود.
 
@@ -40,6 +40,7 @@ assets/js/
     ├── hero/
     │   └── hero.js
     ├── periodic-table/
+    │   └── periodic-table.js
     ├── element-details/
     └── footer/
 ```
@@ -128,43 +129,58 @@ Markup Hero فعلاً در `index.html` به‌عنوان Composition Layer ب�
 
 ---
 
-# 4. تغییرات فنی مراحل ۴ و ۵
+## مرحله 6 — جداسازی Periodic Table
 
-### `main.js`
+**وضعیت: ✓ تکمیل‌شده**
 
-Bootstrap اکنون ابتدا Componentهای Header و Hero را load/mount می‌کند و سپس runtime داده‌ای را اجرا می‌کند:
+فایل جدید:
 
 ```text
-main.js
-   ↓
-header.js + hero.js
-   ↓
+assets/js/components/periodic-table/periodic-table.js
+```
+
+مسئولیت‌های منتقل‌شده از `main-legacy.js`:
+
+- mapping ثابت موقعیت عناصر در ۱۸ گروه.
+- ساخت کارت عنصر (`createElementCard`).
+- ساخت ردیف‌های f-block (`createFRow`).
+- render جدول و f-block (`render`).
+- وضعیت جدول (`updateStatus`).
+- state انتخاب عنصر در محدوده Component.
+- اجرای click selection و animation classهای موجود.
+
+Component برای داده و زبان به Core وابستگی مستقیم دارد، اما CSV یا dictionary را داخل خودش کپی نمی‌کند.
+
+ارتباط جدول با Element Details از طریق callback مشخص `onElementSelected` انجام می‌شود:
+
+```text
+Periodic Table
+   ↓ onElementSelected(AtomicNumber)
 main-legacy.js
+   ↓
+Element Details
 ```
 
-### `main-legacy.js`
+در نتیجه Component جدول دیگر مسئول rendering جزئیات سه‌سطحی نیست.
 
-اتصال مستقیم click به دکمه‌های زبان حذف شد و به event زیر منتقل شد:
+### تغییر `main-legacy.js`
 
-```text
-chemistry:language-change
-```
-
-منطق اصلی `setLanguage()` همچنان در Core i18n باقی مانده است.
+کدهای مربوط به layout و rendering جدول، f-block و کارت عنصر از `main-legacy.js` خارج شدند. این فایل اکنون داده را از Core می‌گیرد، Component جدول را mount می‌کند و فقط در callback انتخاب عنصر، `renderElementDetails()` را فراخوانی می‌کند.
 
 ### عمداً تغییر نکرد
 
-- CSVها و داده‌های علمی
-- Themeها
-- animation انتخاب عنصر
-- layout جدول
+- CSVهای علمی
+- layout و mapping ۱۸ گروه
+- f-block
+- keyboard-accessible button بودن کارت‌ها
+- animation و کلاس‌های انتخاب موجود
+- Theme System
 - Element Details
-- Footer
-- کلیدهای localStorage
+- CSS
 
 ---
 
-# 5. ساختار فعلی
+# 4. ساختار فعلی
 
 ```text
 assets/js/
@@ -176,27 +192,21 @@ assets/js/
 └── components/
     ├── header/
     │   └── header.js
-    └── hero/
-        └── hero.js
+    ├── hero/
+    │   └── hero.js
+    └── periodic-table/
+        └── periodic-table.js
 ```
 
 ---
 
-# 6. مراحل باقی‌مانده
-
-## مرحله 6 — جداسازی Periodic Table
-
-**اولویت: بسیار بالا — منتظر تأیید**
-
-انتقال `renderPeriodicTable()`، `createElementCard()`، `createFRow()`، mapping موقعیت‌ها، status و selection behavior به Component اختصاصی جدول.
-
-Data Layer و i18n داخل Component کپی نمی‌شوند و فقط از Core مصرف می‌شوند.
+# 5. مراحل باقی‌مانده
 
 ## مرحله 7 — جداسازی Element Details
 
-**اولویت: بسیار بالا**
+**اولویت: بسیار بالا — منتظر تأیید**
 
-انتقال rendering سه سطح جزئیات و تبدیل ارتباط مستقیم جدول → جزئیات به قرارداد مشخص selected element.
+انتقال rendering سه سطح جزئیات و قرارداد دریافت `AtomicNumber` به Component مستقل Element Details.
 
 ## مرحله 8 — جداسازی Footer
 
@@ -242,7 +252,7 @@ CI، syntax، data flow، runtime، responsive، accessibility، dependencyها 
 
 ---
 
-# 7. قانون گزارش‌دهی
+# 6. قانون گزارش‌دهی
 
 بعد از هر مرحله گزارش شامل این موارد است:
 
@@ -256,7 +266,7 @@ CI، syntax، data flow، runtime، responsive، accessibility، dependencyها 
 
 ---
 
-# 8. وضعیت فعلی
+# 7. وضعیت فعلی
 
 ```text
 [✓] 1 — Baseline
@@ -264,8 +274,8 @@ CI، syntax، data flow، runtime، responsive، accessibility، dependencyها 
 [✓] 3 — Shared Core
 [✓] 4 — Header
 [✓] 5 — Hero
-[ ] 6 — Periodic Table — منتظر تأیید
-[ ] 7 — Element Details
+[✓] 6 — Periodic Table
+[ ] 7 — Element Details — منتظر تأیید
 [ ] 8 — Footer
 [ ] 9 — CSS separation
 [ ] 10 — Theme / Selection ownership
