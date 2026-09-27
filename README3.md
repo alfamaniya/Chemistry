@@ -111,8 +111,6 @@ Repository، runtime، CSVها، CI، IDها، selectorها، eventها، state�
 
 CSS اختصاصی Componentها در `assets/css/components/` ایجاد و load شد. Themeهای ۱۵گانه همچنان در `main.css` باقی می‌مانند چون مالک آن‌ها Theme System است.
 
----
-
 ## مرحله 10 — تعیین مالک نهایی Theme و Selection Animation
 
 **وضعیت: ✓ تکمیل‌شده**
@@ -224,7 +222,9 @@ CI، syntax، data flow، runtime، responsive، accessibility، dependencyها 
 - `main-legacy.js` به `app.js` منتقل و فایل legacy حذف شد.
 - CSVهای علمی و داده‌های عنصر در این مراحل تغییر نکردند.
 - Themeهای ۱۵گانه و کلیدهای `localStorage` حفظ شدند.
-- به دلیل نبود اجرای browser در این مرحله، تست بصری end-to-end ادعا نمی‌شود؛ validation نهایی در مرحله ۱۴ انجام خواهد شد.
+- ترجمهٔ عنوان سه سطح جزئیات با کلیدهای موجود `beginnerTitle`, `professionalTitle`, `veryAdvancedTitle` تطبیق داده شد.
+- بررسی syntax با اجرای Node در محیط فعلی ممکن نشد چون محیط به GitHub دسترسی شبکه‌ای برای دریافت فایل‌ها ندارد؛ بنابراین موفقیت runtime/CI ادعا نمی‌شود.
+- validation نهایی end-to-end در مرحله ۱۴ انجام خواهد شد.
 
 ---
 
