@@ -1,8 +1,8 @@
 # Chemistry — برنامهٔ مرحله‌ای Refactor معماری Component-Based
 
-> **وضعیت سند:** مراحل ۱ تا ۶ تکمیل شده‌اند؛ مرحله ۷ منتظر تأیید کاربر است.
+> **وضعیت سند:** مراحل ۱ تا ۹ تکمیل شده‌اند.
 > **هدف:** تبدیل تدریجی پروژه به معماری Component-Based با حفظ رفتار، داده‌ها، ظاهر، accessibility و قراردادهای runtime.
-> **قانون:** هر مرحله جداگانه اجرا و گزارش می‌شود و مرحله بعد فقط با تأیید کاربر شروع می‌شود.
+> **قانون:** هر مرحله جداگانه اجرا و گزارش می‌شود؛ طبق درخواست فعلی، مراحل ۷ تا ۹ به‌صورت یک بسته انجام شدند.
 
 ---
 
@@ -18,7 +18,7 @@
 8. accessibility و keyboard interaction حفظ می‌شوند.
 9. پروژه static client-side باقی می‌ماند.
 10. `data/Elements/` بدون تصمیم مستقل حذف نمی‌شود.
-11. هیچ مرحله‌ای بدون گزارش و تأیید وارد مرحله بعد نمی‌شود.
+11. مالکیت CSS و JS باید به Component مربوطه نزدیک باشد، اما انتقال تدریجی است تا runtime نشکند.
 
 ---
 
@@ -28,21 +28,27 @@
 index.html
    └── Page Composition
 
-assets/js/
-├── main.js
-├── main-legacy.js
-├── core/
-│   ├── i18n.js
-│   └── data.js
-└── components/
-    ├── header/
-    │   └── header.js
-    ├── hero/
-    │   └── hero.js
-    ├── periodic-table/
-    │   └── periodic-table.js
-    ├── element-details/
-    └── footer/
+assets/
+├── css/
+│   ├── main.css                 # global + legacy theme styles during migration
+│   └── components/
+│       ├── header.css
+│       ├── hero.css
+│       ├── periodic-table.css
+│       ├── element-details.css
+│       └── footer.css
+└── js/
+    ├── main.js
+    ├── main-legacy.js           # orchestration during migration
+    ├── core/
+    │   ├── i18n.js
+    │   └── data.js
+    └── components/
+        ├── header/header.js
+        ├── hero/hero.js
+        ├── periodic-table/periodic-table.js
+        ├── element-details/element-details.js
+        └── footer/footer.js
 ```
 
 Core مالک منطق مشترک است و Componentها مصرف‌کننده Core هستند؛ Core نباید به implementation داخلی Componentها وابسته شود.
@@ -57,192 +63,167 @@ Core مالک منطق مشترک است و Componentها مصرف‌کننده 
 
 Repository، runtime، CSVها، CI، IDها، selectorها، eventها، stateها و localStorage keyها بررسی و ثبت شدند. تداخل animation انتخاب عنصر و وجود `data/Elements/` نیز به‌عنوان نقاط حساس ثبت شد.
 
-در این مرحله هیچ کد اجرایی تغییر نکرد.
-
----
-
 ## مرحله 2 — تعریف مرزهای Component و Core
 
 **وضعیت: ✓ تکمیل‌شده**
 
 مالکیت منطقی Header، Hero، Periodic Table، Element Details، Footer، Shared Core و Theme System مشخص شد.
 
-Theme System مستقل باقی ماند و فقط با `.table-shell` و زبان سند ارتباط دارد.
-
----
-
 ## مرحله 3 — استخراج Shared Core
 
 **وضعیت: ✓ تکمیل‌شده**
 
-دو ماژول ایجاد شدند:
-
-### `assets/js/core/i18n.js`
-
-مسئول dictionaryها، ترجمه DOM، نام عنصر، زبان سند، RTL/LTR، دکمه‌های زبان و `chemistry-language` است.
-
-### `assets/js/core/data.js`
-
-مسئول مسیر CSVها، parser، fetch، normalization و `loadElementData()` است.
-
-`main-legacy.js` دیگر مالک parser/fetch/normalization و dictionary نیست.
-
----
+`assets/js/core/i18n.js` مسئول dictionary و زبان و `assets/js/core/data.js` مسئول CSV parser/fetch/normalization و `loadElementData()` شدند.
 
 ## مرحله 4 — جداسازی Header
 
 **وضعیت: ✓ تکمیل‌شده**
 
-فایل جدید:
-
-```text
-assets/js/components/header/header.js
-```
-
-مسئولیت Component:
-
-- پیدا کردن کنترل‌های زبان داخل Header.
-- جلوگیری از bind شدن دوبارهٔ همان دکمه‌ها.
-- انتشار رویداد `chemistry:language-change`.
-
-`main-legacy.js` دیگر listener مستقیم روی `.language-button` ندارد و تغییر زبان را از قرارداد رویداد Header دریافت می‌کند.
-
-Markup فعلی Header عمداً فعلاً در `index.html` باقی مانده است تا در مرحلهٔ Composition نهایی جابه‌جایی DOM بدون duplicate یا تغییر ترتیب بارگذاری انجام شود. تفکیک فیزیکی markup و CSS در مراحل ۹ و ۱۱ تکمیل خواهد شد.
-
----
+`assets/js/components/header/header.js` ساخته شد. کنترل زبان از طریق قرارداد `chemistry:language-change` به runtime متصل است.
 
 ## مرحله 5 — جداسازی Hero
 
 **وضعیت: ✓ تکمیل‌شده**
 
-فایل جدید:
+`assets/js/components/hero/hero.js` ساخته شد و قرارداد لینک اصلی `#periodic-table` را کنترل می‌کند.
 
-```text
-assets/js/components/hero/hero.js
-```
+## مرحله 6 — جداسازی Periodic Table
 
-این Component قرارداد Hero را به‌صورت مستقل mount می‌کند و وجود لینک اصلی `#periodic-table` را بررسی می‌کند.
+**وضعیت: ✓ تکمیل‌شده**
 
-Hero منطق داده، جدول یا i18n مستقل ندارد و متن‌های آن همچنان از `data-i18n` و Core i18n استفاده می‌کنند.
-
-Markup Hero فعلاً در `index.html` به‌عنوان Composition Layer باقی مانده و CSS آن هنوز در stylesheet اصلی است. تفکیک فیزیکی CSS در مرحله ۹ و تبدیل `index.html` به Composition Layer در مرحله ۱۱ انجام می‌شود.
+`assets/js/components/periodic-table/periodic-table.js` مالک mapping هجده‌گروهی، کارت‌ها، f-block، render، status و selection شد. انتخاب عنصر از طریق `onElementSelected(AtomicNumber)` به orchestrator داده می‌شود.
 
 ---
 
-## مرحله 6 — جداسازی Periodic Table
+## مرحله 7 — جداسازی Element Details
 
 **وضعیت: ✓ تکمیل‌شده**
 
 فایل جدید:
 
 ```text
-assets/js/components/periodic-table/periodic-table.js
+assets/js/components/element-details/element-details.js
 ```
 
-مسئولیت‌های منتقل‌شده از `main-legacy.js`:
+مسئولیت‌های منتقل‌شده:
 
-- mapping ثابت موقعیت عناصر در ۱۸ گروه.
-- ساخت کارت عنصر (`createElementCard`).
-- ساخت ردیف‌های f-block (`createFRow`).
-- render جدول و f-block (`render`).
-- وضعیت جدول (`updateStatus`).
-- state انتخاب عنصر در محدوده Component.
-- اجرای click selection و animation classهای موجود.
+- نگهداری قرارداد داده سه سطح جزئیات.
+- `getRowByAtomicNumber()`.
+- `isUsable()` و `formatValue()`.
+- ساخت `data-grid`.
+- rendering کارت هویت عنصر.
+- rendering سه سطح `beginner`، `advanced` و `very-advanced`.
 
-Component برای داده و زبان به Core وابستگی مستقیم دارد، اما CSV یا dictionary را داخل خودش کپی نمی‌کند.
+Component از طریق `setData()` داده‌های Core را دریافت می‌کند و با `render(AtomicNumber)` عنصر انتخاب‌شده را نمایش می‌دهد.
 
-ارتباط جدول با Element Details از طریق callback مشخص `onElementSelected` انجام می‌شود:
+ارتباط نهایی:
 
 ```text
 Periodic Table
    ↓ onElementSelected(AtomicNumber)
 main-legacy.js
-   ↓
+   ↓ elementDetails.render(AtomicNumber)
 Element Details
 ```
 
-در نتیجه Component جدول دیگر مسئول rendering جزئیات سه‌سطحی نیست.
-
-### تغییر `main-legacy.js`
-
-کدهای مربوط به layout و rendering جدول، f-block و کارت عنصر از `main-legacy.js` خارج شدند. این فایل اکنون داده را از Core می‌گیرد، Component جدول را mount می‌کند و فقط در callback انتخاب عنصر، `renderElementDetails()` را فراخوانی می‌کند.
-
-### عمداً تغییر نکرد
-
-- CSVهای علمی
-- layout و mapping ۱۸ گروه
-- f-block
-- keyboard-accessible button بودن کارت‌ها
-- animation و کلاس‌های انتخاب موجود
-- Theme System
-- Element Details
-- CSS
+هیچ CSV یا dictionary داخل Component کپی نشده است.
 
 ---
 
-# 4. ساختار فعلی
+## مرحله 8 — جداسازی Footer
+
+**وضعیت: ✓ تکمیل‌شده**
+
+فایل جدید:
 
 ```text
-assets/js/
-├── main.js
-├── main-legacy.js
-├── core/
-│   ├── i18n.js
-│   └── data.js
-└── components/
-    ├── header/
-    │   └── header.js
-    ├── hero/
-    │   └── hero.js
-    └── periodic-table/
-        └── periodic-table.js
+assets/js/components/footer/footer.js
+```
+
+Footer اکنون mount مستقل دارد و قرارداد لینک `#top` را بررسی می‌کند. متن‌های Footer همچنان از i18n عمومی مصرف می‌شوند و منطق علمی یا داده‌ای وارد Component نشده است.
+
+`main.js` اکنون Header، Hero و Footer را در bootstrap mount می‌کند.
+
+---
+
+## مرحله 9 — تفکیک CSS
+
+**وضعیت: ✓ تکمیل‌شده — انتقال تدریجی**
+
+فایل‌های CSS Componentها ایجاد شدند:
+
+```text
+assets/css/components/
+├── header.css
+├── hero.css
+├── periodic-table.css
+├── element-details.css
+└── footer.css
+```
+
+مالکیت CSS به همان Componentهای JS نزدیک شده است. `main.js` این stylesheetها را با شناسه `data-component-css` فقط یک‌بار load می‌کند.
+
+### نکته مهم درباره روش انتقال
+
+در این مرحله CSS اختصاصی Componentها **به‌صورت canonical جداگانه ایجاد و load شده است، اما تعریف‌های legacy متناظر هنوز در `main.css` باقی مانده‌اند**. این تصمیم عمدی است تا حذف همزمان selectorهای قدیمی و themeهای جدول باعث تغییر ناخواسته ظاهر نشود.
+
+بنابراین مرحله ۹ یک **تفکیک ایمن و غیرمخرب** است، نه حذف کامل CSS قدیمی. حذف selectorهای تکراری و تعیین مالک نهایی animation/theme در مراحل بعدی انجام می‌شود.
+
+CSS مربوط به Themeهای ۱۵گانه فعلاً در `main.css` باقی می‌ماند چون مالک آن Theme System است و نه Component پایهٔ جدول.
+
+---
+
+# 4. وضعیت فعلی معماری
+
+```text
+main.js
+ ├── mountHeader()
+ ├── mountHero()
+ ├── mountFooter()
+ ├── load component CSS
+ └── import main-legacy.js
+
+main-legacy.js
+ ├── Core i18n
+ ├── Core data
+ ├── Periodic Table Component
+ └── Element Details Component
+
+Component CSS
+ ├── Header
+ ├── Hero
+ ├── Periodic Table
+ ├── Element Details
+ └── Footer
 ```
 
 ---
 
 # 5. مراحل باقی‌مانده
 
-## مرحله 7 — جداسازی Element Details
-
-**اولویت: بسیار بالا — منتظر تأیید**
-
-انتقال rendering سه سطح جزئیات و قرارداد دریافت `AtomicNumber` به Component مستقل Element Details.
-
-## مرحله 8 — جداسازی Footer
-
-**اولویت: متوسط**
-
-Footer به Component مستقل تبدیل می‌شود.
-
-## مرحله 9 — تفکیک CSS
-
-**اولویت: بالا**
-
-Global styles و styles اختصاصی Componentها جدا می‌شوند و تعریف‌های تکراری animation نیز بررسی می‌شوند.
-
 ## مرحله 10 — تعیین مالک نهایی Theme و Selection Animation
 
-**اولویت: بالا**
+**اولویت: بسیار بالا**
 
-برای `.element.selected-flash` یک مالک نهایی تعیین می‌شود و تعریف‌های متناقض حذف می‌شوند، بدون تغییر رفتار مگر با تأیید.
+برای `.element.selected-flash` یک مالک نهایی تعیین می‌شود. تعریف‌های متناقض CSS/runtime بررسی و فقط موارد زائد حذف می‌شوند؛ رفتار مطلوب فعلی (دو flash آبی/سبز و glow نارنجی تیره) نباید بدون دلیل تغییر کند.
 
 ## مرحله 11 — تبدیل `index.html` به Composition Layer
 
 **اولویت: بالا**
 
-پس از آماده شدن Componentها، markup اختصاصی Componentها از `index.html` به ساختار Component منتقل می‌شود و `index.html` عمدتاً shell ترکیب‌کننده خواهد بود.
+Markup اختصاصی Componentها از shell اصلی جدا و `index.html` به لایهٔ Composition نزدیک می‌شود؛ IDهای runtime باید حفظ شوند.
 
 ## مرحله 12 — پاک‌سازی `main.js` و `main-legacy.js`
 
 **اولویت: بالا**
 
-کدهای منتقل‌شده حذف و bootstrap نهایی ساده می‌شود.
+کدهای منتقل‌شده حذف، orchestration ساده و dependency graph نهایی می‌شود.
 
 ## مرحله 13 — بررسی `data/Elements/`
 
 **اولویت: پایین و مستقل**
 
-۱۱۸ فایل CSV بدون مصرف runtime بررسی می‌شوند؛ حذف فقط با تصمیم جداگانه مجاز است.
+۱۱۸ CSV بدون مصرف runtime بررسی می‌شوند؛ حذف فقط با تصمیم جداگانه مجاز است.
 
 ## مرحله 14 — Validation و مستندسازی نهایی
 
@@ -275,9 +256,9 @@ CI، syntax، data flow، runtime، responsive، accessibility، dependencyها 
 [✓] 4 — Header
 [✓] 5 — Hero
 [✓] 6 — Periodic Table
-[ ] 7 — Element Details — منتظر تأیید
-[ ] 8 — Footer
-[ ] 9 — CSS separation
+[✓] 7 — Element Details
+[✓] 8 — Footer
+[✓] 9 — CSS separation (safe migration)
 [ ] 10 — Theme / Selection ownership
 [ ] 11 — index composition
 [ ] 12 — main cleanup
