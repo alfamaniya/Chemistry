@@ -30,7 +30,7 @@
 
 ### معماری فعلی
 
-`
+```
 text
 Browser
   │
@@ -53,7 +53,7 @@ Browser
               ├── data/PubChemElements_all.csv
               ├── data/ELEMENTS_118_ADVANCED.csv
               └── data/ELEMENTS_118_VERY_ADVANCED.csv
-`
+```
 
 هیچ لایهٔ Backend، API اختصاصی، دیتابیس یا build system در کد فعلی وجود ندارد.
 
@@ -71,7 +71,7 @@ Browser
 
 ساختار اصلی فعلی:
 
-`
+```
 text
 .
 ├── .github/
@@ -94,7 +94,7 @@ text
 │
 ├── index.html
 └── README.md
-`
+```
 
 پوشهٔ data/Elements/ شامل فایل‌های جداگانه برای عناصر است و در منطق فعلی main.js مستقیماً برای ساخت رابط اصلی استفاده نمی‌شود؛ رابط فعلی سه CSV سطحی را که در بخش داده‌ها معرفی شده‌اند، بارگذاری می‌کند.
 
@@ -129,18 +129,18 @@ text
 
 در ابتدای فایل سه مسیر اصلی تعریف شده‌اند:
 
-`
+```
 text
 data/PubChemElements_all.csv
 data/ELEMENTS_118_ADVANCED.csv
 data/ELEMENTS_118_VERY_ADVANCED.csv
-`
+```
 
 #### جریان بارگذاری داده
 
 تابع loadElements() هر سه CSV را به‌صورت هم‌زمان با Promise.all() بارگذاری می‌کند:
 
-`
+```
 text
 fetch CSVs
    ↓
@@ -153,7 +153,7 @@ normalizeDetailRow() برای داده‌های advanced
 renderPeriodicTable()
    ↓
 updateStatus()
-`
+```
 
 اگر یکی از منابع قابل بارگذاری نباشد، رابط وضعیت خطا را نمایش می‌دهد.
 
@@ -203,11 +203,11 @@ positions عدد اتمی را به [row, column] نگاشت می‌کند و چ
 
 دو بخش f-block جداگانه وجود دارد:
 
-`
+```
 text
 Lanthanides: 57–71
 Actinides:   89–103
-`
+```
 
 این عناصر در زیر جدول اصلی نمایش داده می‌شوند.
 
@@ -276,11 +276,11 @@ Actinides:   89–103
 
 پروژه در حال حاضر دو زبان دارد:
 
-`
+```
 text
 fa
 en
-`
+```
 
 ترجمه‌های رابط در object translations داخل main.js قرار دارند.
 
@@ -293,10 +293,10 @@ en
 5. نام عنصرها نیز از NameFa یا Name انتخاب می‌شود.
 6. وضعیت انتخاب زبان در این کلید ذخیره می‌شود:
 
-`
+```
 text
 chemistry-language
-`
+```
 
 اگر متن جدیدی به رابط اضافه می‌شود و باید دوزبانه باشد، ترجیحاً باید:
 
@@ -329,23 +329,23 @@ chemistry-language
 
 theme با کلاس‌هایی مانند زیر روی .table-shell اعمال می‌شود:
 
-`
+```
 text
 theme-pdf
 theme-1
 theme-2
 ...
 theme-15
-`
+```
 
 تعریف رنگ‌ها در assets/css/main.css انجام شده است.
 
 انتخاب theme در این کلید ذخیره می‌شود:
 
-`
+```
 text
 chemistry-pdf-theme
-`
+```
 
 نکته: این themeها **رنگ‌بندی رابط** هستند و نباید بدون بررسی منطق داده، به‌عنوان محاسبه یا منبع علمی جدید تلقی شوند.
 
@@ -380,7 +380,7 @@ assets/css/main.css مسئول:
 
 schema مشاهده‌شده:
 
-`
+```
 text
 AtomicNumber
 Symbol
@@ -400,7 +400,7 @@ Density
 GroupBlock
 YearDiscovered
 NameFa
-`
+```
 
 وجود NameFa برای نمایش نام فارسی عناصر مهم است.
 
@@ -412,7 +412,7 @@ NameFa
 
 schema فعلی شامل:
 
-`
+```
 text
 level
 atomic_number
@@ -430,7 +430,7 @@ electron_affinity_eV
 melting_point_K
 boiling_point_K
 density_g_cm3
-`
+```
 
 ---
 
@@ -438,11 +438,11 @@ density_g_cm3
 
 نسخهٔ گسترده‌تر دادهٔ پیشرفته است و علاوه بر فیلدهای بالا شامل:
 
-`
+```
 text
 year_discovered
 data_status
-`
+```
 
 نیز هست.
 
@@ -454,17 +454,17 @@ data_status
 
 از ریشهٔ repository یک وب‌سرور ساده اجرا کنید:
 
-`
+```
 bash
 python -m http.server 8000
-`
+```
 
 سپس:
 
-`
+```
 text
 http://localhost:8000
-`
+```
 
 را در مرورگر باز کنید.
 
@@ -476,10 +476,10 @@ http://localhost:8000
 
 فایل:
 
-`
+```
 text
 .github/workflows/webpack.yml
-`
+```
 
 در وضعیت فعلی دیگر Webpack را build نمی‌کند. نام فایل قدیمی باقی مانده است، اما workflow به‌عنوان **Static site validation** تعریف شده است.
 
@@ -494,12 +494,12 @@ text
 
 بنابراین برای workflow فعلی:
 
-`
+```
 text
 npm install
 npm ci
 npx webpack
-`
+```
 
 لازم نیست.
 
@@ -507,10 +507,10 @@ npx webpack
 
 فایل:
 
-`
+```
 text
 .github/workflows/npm-publish-github-packages.yml
-`
+```
 
 یک workflow عمومی برای انتشار npm package است و هنوز شامل npm ci و npm publish است.
 
@@ -524,18 +524,18 @@ text
 
 علت مستقیم خطای قبلی این بود که workflow قدیمی Webpack دستورهایی مانند:
 
-`
+```
 bash
 npm install
 npx webpack
-`
+```
 
 را اجرا می‌کرد، در حالی که repository فاقد:
 
-`
+```
 text
 package.json
-`
+```
 
 و فاقد Webpack configuration واقعی بود.
 
@@ -561,7 +561,7 @@ README قراردادهای معماری و وابستگی‌های اصلی پ�
 
 قبل از تغییر UI مربوط به عنصرها، این زنجیره را بررسی کن:
 
-`
+```
 text
 CSV schema
    ↓
@@ -572,7 +572,7 @@ normalizeDetailRow()
 getRowByAtomicNumber()
    ↓
 renderElementDetails()
-`
+```
 
 اگر schema تغییر کند، ممکن است چند بخش هم‌زمان نیاز به اصلاح داشته باشند.
 
@@ -603,11 +603,11 @@ renderElementDetails()
 
 حداقل این موارد را بررسی کن:
 
-`
+```
 bash
 node --check assets/js/main.js
 python -m http.server 8000
-`
+```
 
 سپس دسترسی HTTP به index.html و فایل JavaScript را بررسی کن.
 
@@ -627,10 +627,10 @@ AtomicNumber شناسهٔ اصلی اتصال اطلاعات یک عنصر بی�
 
 مسیرهای CSV نسبت به ریشهٔ سایت تعریف شده‌اند:
 
-`
+```
 text
 data/...
-`
+```
 
 اجرای پروژه از یک subdirectory بدون تنظیم base path جدید ممکن است این مسیرها را بشکند.
 
@@ -648,7 +648,7 @@ CSVها در زمان اجرای مرورگر fetch می‌شوند؛ بنابر
 
 CI فعلی تست‌های زیر را پوشش می‌دهد:
 
-`
+```
 text
 [✓] index.html exists
 [✓] main.css exists
@@ -657,7 +657,7 @@ text
 [✓] main.js syntax is valid
 [✓] index.html is served over HTTP
 [✓] main.js is served over HTTP
-`
+```
 
 این تست‌ها عمدتاً **ساختاری و smoke test** هستند و صحت علمی مقادیر CSV، ظاهر بصری یا رفتار تک‌تک تعاملات مرورگر را اثبات نمی‌کنند.
 
@@ -717,11 +717,11 @@ text
 
 هر تغییر آینده باید با این سؤال شروع شود:
 
-`
+```
 text
 آیا این تغییر واقعاً به تغییر معماری نیاز دارد،
 یا می‌توان آن را با ساختار فعلی HTML + CSS + JS + CSV انجام داد؟
-`
+```
 
 تا زمانی که نیاز واقعی به build system، backend، database یا package management وجود ندارد، ساختار فعلی نباید صرفاً برای استانداردهای یک پروژهٔ Node تغییر داده شود.
 
@@ -746,7 +746,7 @@ text
 
 اگر فقط چند خط اول context را لازم داری:
 
-`
+```
 text
 Project type: Static client-side web app
 Entry point: index.html
@@ -765,4 +765,4 @@ Detail levels: Beginner + Advanced + Very Advanced
 Runtime requirement: HTTP server because CSVs are loaded with fetch()
 CI: GitHub Actions validates files, JS syntax and HTTP smoke tests
 Main rule: Preserve the existing HTML/CSS/JS/CSV architecture unless a real requirement justifies an architectural change.
-`
+```
