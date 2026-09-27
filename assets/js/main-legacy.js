@@ -15,14 +15,6 @@
   const languageButtons = document.querySelectorAll(".language-button");
   const themeSelect = document.getElementById("table-theme-select");
   const tableShell = document.querySelector(".table-shell");
-  const pdfThemes = [
-    {id:1, fa:"جرم اتمی", en:"Atomic Mass"},{id:2, fa:"چگالی", en:"Density"},{id:3, fa:"حالت استاندارد", en:"Standard State"},
-    {id:4, fa:"الکترونگاتیویته", en:"Electronegativity"},{id:5, fa:"انرژی یونش", en:"Ionization Energy"},{id:6, fa:"آرایش الکترونی", en:"Electron Configuration"},
-    {id:7, fa:"شعاع اتمی", en:"Atomic Radius"},{id:8, fa:"حالت‌های اکسایش", en:"Oxidation States"},{id:9, fa:"الکترون‌خواهی", en:"Electron Affinity"},
-    {id:10, fa:"نقطه ذوب", en:"Melting Point"},{id:11, fa:"نقطه جوش", en:"Boiling Point"},{id:12, fa:"سال کشف", en:"Year Discovered"},
-    {id:13, fa:"فلز / شبه‌فلز / نافلز", en:"Metal / Metalloid / Nonmetal"},{id:14, fa:"گروه / خانواده شیمیایی", en:"Chemical Group / Family"},
-    {id:15, fa:"بدون دسته‌بندی", en:"Uncategorized"}
-  ];
 
   function applyPdfTheme(themeId) {
     if (!tableShell) return;
@@ -31,30 +23,6 @@
     tableShell.classList.add("theme-pdf", "theme-" + normalizedTheme);
     localStorage.setItem("chemistry-pdf-theme", String(normalizedTheme));
   }
-
-  function populateThemeSelect() {
-    if (!themeSelect) return;
-    themeSelect.innerHTML = "";
-    pdfThemes.forEach(theme => {
-      const option = document.createElement("option");
-      option.value = String(theme.id);
-      option.textContent = currentLanguage === "fa" ? theme.fa : theme.en;
-      themeSelect.appendChild(option);
-    });
-
-    let saved = localStorage.getItem("chemistry-pdf-theme");
-    const themeVersion = localStorage.getItem("chemistry-pdf-theme-version");
-    if (themeVersion !== "2") {
-      if (saved === "14") saved = "15";
-      else if (saved === "15") saved = "14";
-      localStorage.setItem("chemistry-pdf-theme-version", "2");
-    }
-    saved = saved || "15";
-    const validSaved = pdfThemes.some(theme => String(theme.id) === String(saved)) ? String(saved) : "15";
-    themeSelect.value = validSaved;
-    applyPdfTheme(validSaved);
-  }
-
 
   const translations = {
     fa: {
@@ -180,8 +148,10 @@
   function parseCsv(text) {
     const rows = [];
     let row = [], cell = "", quoted = false;
-    for (let i = 0; i < text.length; i++) {
-      const ch = text[i], next = text[i + 1];
+    const source = String(text).replace(/^\uFEFF/, "");
+
+    for (let i = 0; i < source.length; i++) {
+      const ch = source[i], next = source[i + 1];
       if (ch === '"' && quoted && next === '"') { cell += '"'; i++; continue; }
       if (ch === '"') { quoted = !quoted; continue; }
       if (ch === ',' && !quoted) { row.push(cell); cell = ""; continue; }
@@ -194,9 +164,27 @@
       }
       cell += ch;
     }
+
+    if (quoted) throw new Error("Malformed CSV: unclosed quoted field");
     if (cell || row.length) { row.push(cell); rows.push(row); }
-    const headers = rows.shift() || [];
-    return rows.map(values => Object.fromEntries(headers.map((h, i) => [h, values[i] ?? ""])));
+
+    const headers = (rows.shift() || []).map(header => header.trim());
+    if (!headers.length || headers.some(header => !header)) {
+      throw new Error("Malformed CSV: missing or empty header");
+    }
+
+    const validRows = [];
+    let malformedRows = 0;
+    rows.forEach(values => {
+      if (values.length !== headers.length) {
+        malformedRows++;
+        return;
+      }
+      validRows.push(Object.fromEntries(headers.map((header, i) => [header, values[i]])));
+    });
+
+    if (malformedRows) console.warn(`Ignored ${malformedRows} malformed CSV row(s)`);
+    return validRows;
   }
 
   function getName(element) {
@@ -232,7 +220,6 @@
 
     if (elements.length) renderPeriodicTable();
     if (selectedAtomicNumber) renderElementDetails(selectedAtomicNumber);
-    populateThemeSelect();
     updateStatus();
   }
 
@@ -313,9 +300,7 @@
       const position = positions.get(Number(element.AtomicNumber));
       if (!position) return;
       const card = createElementCard(element);
-      if (selectedAtomicNumber === Number(element.AtomicNumber)) {
-        card.classList.add("selected");
-      }
+      if (selectedAtomicNumber === Number(element.AtomicNumber)) card.classList.add("selected");
       card.style.gridColumn = position[1];
       card.style.gridRow = position[0];
       grid.appendChild(card);
@@ -350,7 +335,7 @@
     gridNode.className = "data-grid";
 
     keys.forEach(key => {
-      if (!isUsable(data[key])) return;
+      if (!isUsable(data?.[key])) return;
       const item = document.createElement("div");
       item.className = "data-item";
 
@@ -367,9 +352,7 @@
       gridNode.appendChild(item);
     });
 
-    if (!gridNode.children.length) {
-      gridNode.innerHTML = '<div class="empty-state">—</div>';
-    }
+    if (!gridNode.children.length) gridNode.innerHTML = '<div class="empty-state">—</div>';
     return gridNode;
   }
 
@@ -439,23 +422,23 @@
   function normalizeDetailRow(row) {
     return {
       ...row,
-      AtomicNumber: row.AtomicNumber || row.atomic_number,
-      Symbol: row.Symbol || row.symbol,
-      Name: row.Name || row.name,
-      AtomicMass: row.AtomicMass || row.atomic_mass,
-      GroupBlock: row.GroupBlock || row.group_block,
-      StandardState: row.StandardState || row.standard_state,
-      ElectronConfiguration: row.ElectronConfiguration || row.electron_configuration,
-      OxidationStates: row.OxidationStates || row.oxidation_states,
-      Electronegativity: row.Electronegativity || row.electronegativity,
-      AtomicRadius: row.AtomicRadius || row.atomic_radius_pm,
-      IonizationEnergy: row.IonizationEnergy || row.ionization_energy_eV,
-      ElectronAffinity: row.ElectronAffinity || row.electron_affinity_eV,
-      MeltingPoint: row.MeltingPoint || row.melting_point_K,
-      BoilingPoint: row.BoilingPoint || row.boiling_point_K,
-      Density: row.Density || row.density_g_cm3,
-      YearDiscovered: row.YearDiscovered || row.year_discovered,
-      data_status: row.data_status || row.dataStatus
+      AtomicNumber: row.AtomicNumber ?? row.atomic_number,
+      Symbol: row.Symbol ?? row.symbol,
+      Name: row.Name ?? row.name,
+      AtomicMass: row.AtomicMass ?? row.atomic_mass,
+      GroupBlock: row.GroupBlock ?? row.group_block,
+      StandardState: row.StandardState ?? row.standard_state,
+      ElectronConfiguration: row.ElectronConfiguration ?? row.electron_configuration,
+      OxidationStates: row.OxidationStates ?? row.oxidation_states,
+      Electronegativity: row.Electronegativity ?? row.electronegativity,
+      AtomicRadius: row.AtomicRadius ?? row.atomic_radius_pm,
+      IonizationEnergy: row.IonizationEnergy ?? row.ionization_energy_eV,
+      ElectronAffinity: row.ElectronAffinity ?? row.electron_affinity_eV,
+      MeltingPoint: row.MeltingPoint ?? row.melting_point_K,
+      BoilingPoint: row.BoilingPoint ?? row.boiling_point_K,
+      Density: row.Density ?? row.density_g_cm3,
+      YearDiscovered: row.YearDiscovered ?? row.year_discovered,
+      data_status: row.data_status ?? row.dataStatus
     };
   }
 
@@ -474,6 +457,7 @@
       renderPeriodicTable();
       updateStatus();
     } catch (error) {
+      console.error(error);
       const t = translations[currentLanguage];
       grid.innerHTML = '<div class="loading">' + t.loadError + '</div>';
       fBlock.innerHTML = "";
@@ -492,6 +476,5 @@
   });
 
   setLanguage(currentLanguage);
-  populateThemeSelect();
   loadElements();
 })();
