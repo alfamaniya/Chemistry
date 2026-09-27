@@ -57,6 +57,8 @@
     if (!themeSelect) return;
     syncThemeSelect(true);
 
+    document.querySelector('[data-i18n="periodicSubtitle"]')?.remove();
+
     const observer = new MutationObserver(() => {
       if (themeSelect.options.length !== themes.length || themeSelect.options[0]?.value !== "15") {
         const current = themeSelect.value;
