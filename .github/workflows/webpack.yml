@@ -23,12 +23,36 @@ jobs:
         test -f index.html
         test -f assets/css/main.css
         test -f assets/js/main.js
+        test -f assets/js/main-legacy.js
         test -f data/PubChemElements_all.csv
         test -f data/ELEMENTS_118_ADVANCED.csv
         test -f data/ELEMENTS_118_VERY_ADVANCED.csv
 
     - name: Check JavaScript syntax
-      run: node --check assets/js/main.js
+      run: |
+        node --check assets/js/main.js
+        node --check assets/js/main-legacy.js
+
+    - name: Validate runtime CSV headers and row widths
+      run: |
+        python3 - <<'PY'
+        import csv
+        from pathlib import Path
+
+        files = [
+            Path("data/PubChemElements_all.csv"),
+            Path("data/ELEMENTS_118_ADVANCED.csv"),
+            Path("data/ELEMENTS_118_VERY_ADVANCED.csv"),
+        ]
+        for path in files:
+            with path.open("r", encoding="utf-8-sig", newline="") as handle:
+                rows = list(csv.reader(handle))
+            assert rows and all(rows[0]), f"Invalid header: {path}"
+            width = len(rows[0])
+            malformed = [i + 2 for i, row in enumerate(rows[1:]) if len(row) != width]
+            assert not malformed, f"Malformed rows in {path}: {malformed[:5]}"
+            print(f"validated {path}: {len(rows) - 1} data rows")
+        PY
 
     - name: Smoke test local site
       run: |
@@ -38,3 +62,7 @@ jobs:
         sleep 2
         curl --fail --silent --show-error http://127.0.0.1:8000/index.html >/dev/null
         curl --fail --silent --show-error http://127.0.0.1:8000/assets/js/main.js >/dev/null
+        curl --fail --silent --show-error http://127.0.0.1:8000/assets/js/main-legacy.js >/dev/null
+        curl --fail --silent --show-error http://127.0.0.1:8000/data/PubChemElements_all.csv >/dev/null
+        curl --fail --silent --show-error http://127.0.0.1:8000/data/ELEMENTS_118_ADVANCED.csv >/dev/null
+        curl --fail --silent --show-error http://127.0.0.1:8000/data/ELEMENTS_118_VERY_ADVANCED.csv >/dev/null
