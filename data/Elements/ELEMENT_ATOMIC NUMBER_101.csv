@@ -1,0 +1,747 @@
+path,type,value
+/Record/RecordType,string,AtomicNumber
+/Record/RecordNumber,number,101
+/Record/RecordTitle,string,Mendelevium
+/Record/Section/0/TOCHeading,string,Identifiers
+/Record/Section/0/Description,string,"Identifiers for this element, including element name, element symbol, InChI string, and InChIKey."
+/Record/Section/0/Section/0/TOCHeading,string,Element Name
+/Record/Section/0/Section/0/Description,string,"The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element."
+/Record/Section/0/Section/0/Information/0/ReferenceNumber,number,1
+/Record/Section/0/Section/0/Information/0/Name,string,Element Name
+/Record/Section/0/Section/0/Information/0/Value/StringWithMarkup/0/String,string,Mendelevium
+/Record/Section/0/Section/0/Information/1/ReferenceNumber,number,3
+/Record/Section/0/Section/0/Information/1/Name,string,Element Name
+/Record/Section/0/Section/0/Information/1/Value/StringWithMarkup/0/String,string,Mendelevium
+/Record/Section/0/Section/1/TOCHeading,string,Element Symbol
+/Record/Section/0/Section/1/Description,string,"Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages."
+/Record/Section/0/Section/1/Information/0/ReferenceNumber,number,1
+/Record/Section/0/Section/1/Information/0/Name,string,Element Symbol
+/Record/Section/0/Section/1/Information/0/Value/StringWithMarkup/0/String,string,Md
+/Record/Section/0/Section/1/Information/1/ReferenceNumber,number,3
+/Record/Section/0/Section/1/Information/1/Name,string,Element Symbol
+/Record/Section/0/Section/1/Information/1/Value/StringWithMarkup/0/String,string,Md
+/Record/Section/0/Section/2/TOCHeading,string,InChI
+/Record/Section/0/Section/2/Description,string,"The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard."
+/Record/Section/0/Section/2/URL,string,https://iupac.org/who-we-are/divisions/division-details/inchi/
+/Record/Section/0/Section/2/Information/0/ReferenceNumber,number,1
+/Record/Section/0/Section/2/Information/0/Name,string,InChI
+/Record/Section/0/Section/2/Information/0/Value/StringWithMarkup/0/String,string,InChI=1S/Md
+/Record/Section/0/Section/3/TOCHeading,string,InChIKey
+/Record/Section/0/Section/3/Description,string,"An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard."
+/Record/Section/0/Section/3/URL,string,https://iupac.org/who-we-are/divisions/division-details/inchi/
+/Record/Section/0/Section/3/Information/0/ReferenceNumber,number,1
+/Record/Section/0/Section/3/Information/0/Name,string,InChIKey
+/Record/Section/0/Section/3/Information/0/Value/StringWithMarkup/0/String,string,MQVSLOYRCXQRPM-UHFFFAOYSA-N
+/Record/Section/1/TOCHeading,string,Properties
+/Record/Section/1/Description,string,"Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on."
+/Record/Section/1/Section/0/TOCHeading,string,Atomic Weight
+/Record/Section/1/Section/0/Description,string,"Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u)."
+/Record/Section/1/Section/0/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/0/Information/0/Value/StringWithMarkup/0/String,string,258
+/Record/Section/1/Section/0/Information/1/ReferenceNumber,number,6
+/Record/Section/1/Section/0/Information/1/Value/StringWithMarkup/0/String,string,258
+/Record/Section/1/Section/0/Information/2/ReferenceNumber,number,7
+/Record/Section/1/Section/0/Information/2/Value/StringWithMarkup/0/String,string,Relative Mass: 258.0984315(50)
+/Record/Section/1/Section/1/TOCHeading,string,Electron Configuration
+/Record/Section/1/Section/1/Description,string,"The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result."
+/Record/Section/1/Section/1/URL,string,https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations
+/Record/Section/1/Section/1/Information/0/ReferenceNumber,number,6
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/String,string,[Rn]7s25f13
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,6
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,1
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/1/Start,number,9
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/1/Length,number,2
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/1/Type,string,Superscript
+/Record/Section/1/Section/2/TOCHeading,string,Oxidation States
+/Record/Section/1/Section/2/Description,string,"The oxidation state(s) that this element commonly has in a compound.  The oxidation state of an atom is defined as the hypothetical charge that would be held by that atom if all of its bonds to other atoms were completely ionic in nature. For example, the oxidation state of carbon in CO2 would be +4 since the hypothetical charge held by the carbon atom if both of the carbon-oxygen double bonds were completely ionic would be equal to +4 (each oxygen atom would hold a charge of -2 since oxygen is more electronegative than carbon)."
+/Record/Section/1/Section/2/URL,string,https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/20%3A_Electrochemistry/20.01%3A_Oxidation_States_and_Redox_Reactions
+/Record/Section/1/Section/2/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/2/Information/0/Value/StringWithMarkup/0/String,string,"+3, +2"
+/Record/Section/1/Section/2/Information/1/ReferenceNumber,number,6
+/Record/Section/1/Section/2/Information/1/Value/StringWithMarkup/0/String,string,"2, 3"
+/Record/Section/1/Section/3/TOCHeading,string,Ground Level
+/Record/Section/1/Section/3/Description,string,Also called ground-state level. The ground state electron configuration is the arrangement of electrons around the nucleus of an atom with lower energy levels.
+/Record/Section/1/Section/3/Information/0/ReferenceNumber,number,7
+/Record/Section/1/Section/3/Information/0/Value/StringWithMarkup/0/String,string,2F°7/2
+/Record/Section/1/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,0
+/Record/Section/1/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,1
+/Record/Section/1/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/1/Section/3/Information/0/Value/StringWithMarkup/0/Markup/1/Start,number,3
+/Record/Section/1/Section/3/Information/0/Value/StringWithMarkup/0/Markup/1/Length,number,3
+/Record/Section/1/Section/3/Information/0/Value/StringWithMarkup/0/Markup/1/Type,string,Subscript
+/Record/Section/1/Section/4/TOCHeading,string,Ionization Energy
+/Record/Section/1/Section/4/Description,string,"Ionization energy, also called ionization potential, is the amount of energy required to remove an electron from an isolated atom or molecule."
+/Record/Section/1/Section/4/URL,string,https://www.britannica.com/science/ionization-energy
+/Record/Section/1/Section/4/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/4/Information/0/Value/StringWithMarkup/0/String,string,6.58 eV
+/Record/Section/1/Section/4/Information/1/ReferenceNumber,number,7
+/Record/Section/1/Section/4/Information/1/Reference/0,string,"Revised Ionization Energies of the Neutral Actinides, J. Sugar, J. Chem. Phys. 60, 4103 (1974) DOI:10.1063/1.1680874"
+/Record/Section/1/Section/4/Information/1/ExtendedReference/0/Citation,string,"Revised Ionization Energies of the Neutral Actinides, J. Sugar, J. Chem. Phys. 60, 4103 (1974) DOI:10.1063/1.1680874"
+/Record/Section/1/Section/4/Information/1/Value/StringWithMarkup/0/String,string,6.58 ± 0.07 eV  (The level was determined by interpolation or extrapolation of known experimental values or by semiempirical calculation; its absolutre accuracy is reflected in the number of significant figures assigned to it.)
+/Record/Section/1/Section/5/TOCHeading,string,Electronegativity
+/Record/Section/1/Section/5/Description,string,Electronegativity is a measure of the tendency of an atom to attract a bonding pair of electrons.
+/Record/Section/1/Section/5/URL,string,https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electronegativity
+/Record/Section/1/Section/5/Information/0/ReferenceNumber,number,9
+/Record/Section/1/Section/5/Information/0/Name,string,Pauling Scale Electronegativity
+/Record/Section/1/Section/5/Information/0/Reference/0,string,"A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+/Record/Section/1/Section/5/Information/0/ExtendedReference/0/Citation,string,"A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+/Record/Section/1/Section/5/Information/0/Value/Number/0,number,1.3
+/Record/Section/1/Section/5/Information/0/Value/Unit,string,(Pauling Scale)
+/Record/Section/1/Section/6/TOCHeading,string,Atomic Spectra
+/Record/Section/1/Section/6/Description,string,The spectrum of the electromagnetic radiation emitted or absorbed by an electron during transitions between different energy levels within an atom.
+/Record/Section/1/Section/6/Information/0/ReferenceNumber,number,7
+/Record/Section/1/Section/6/Information/0/URL,string,https://physics.nist.gov/cgi-bin/ASD/levels_hold.pl?el=Md
+/Record/Section/1/Section/6/Information/0/Value/StringWithMarkup/0/String,string,Levels Holdings
+/Record/Section/1/Section/7/TOCHeading,string,Physical Description
+/Record/Section/1/Section/7/Description,string,"The appearance or features of this element, including color, odor, state, taste and more in general."
+/Record/Section/1/Section/7/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/7/Information/0/Value/StringWithMarkup/0/String,string,Solid
+/Record/Section/1/Section/8/TOCHeading,string,Element Classification
+/Record/Section/1/Section/8/Description,string,"Classification according to the element's chemical and physical properties, and location within the periodic table."
+/Record/Section/1/Section/8/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/8/Information/0/Value/StringWithMarkup/0/String,string,Metal
+/Record/Section/1/Section/9/TOCHeading,string,Element Period Number
+/Record/Section/1/Section/9/Description,string,The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.
+/Record/Section/1/Section/9/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/9/Information/0/Value/StringWithMarkup/0/String,string,7
+/Record/Section/1/Section/10/TOCHeading,string,Element Group Number
+/Record/Section/1/Section/10/Description,string,Element group refers to a set of chemical elements in the same vertical column of the periodic table
+/Record/Section/1/Section/10/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/10/Information/0/Value/StringWithMarkup/0/String,string,- Actinide
+/Record/Section/1/Section/11/TOCHeading,string,Melting Point
+/Record/Section/1/Section/11/Description,string,"This section provides the melting point and/or freezing point. The melting point is the temperature at which a substance changes state from solid to liquid at atmospheric pressure. When considered as the temperature of the reverse change (from liquid to solid), it is referred to as the freezing point."
+/Record/Section/1/Section/11/URL,string,https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.01%3A_Melting_Point
+/Record/Section/1/Section/11/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/11/Information/0/Value/StringWithMarkup/0/String,string,1100 K (827°C or 1521°F)
+/Record/Section/1/Section/11/Information/1/ReferenceNumber,number,6
+/Record/Section/1/Section/11/Information/1/Value/StringWithMarkup/0/String,string,827°C
+/Record/Section/1/Section/12/TOCHeading,string,Estimated Crustal Abundance
+/Record/Section/1/Section/12/Description,string,The estimated element abundance in the earth's crust.
+/Record/Section/1/Section/12/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/12/Information/0/Value/StringWithMarkup/0/String,string,Not Applicable
+/Record/Section/1/Section/13/TOCHeading,string,Estimated Oceanic Abundance
+/Record/Section/1/Section/13/Description,string,The estimated element abundance in the earth's oceans.
+/Record/Section/1/Section/13/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/13/Information/0/Value/StringWithMarkup/0/String,string,Not Applicable
+/Record/Section/2/TOCHeading,string,History
+/Record/Section/2/Description,string,The history of the discovery and use of this element.
+/Record/Section/2/Information/0/ReferenceNumber,number,5
+/Record/Section/2/Information/0/Value/StringWithMarkup/0/String,string,"Mendelevium was first produced by Stanley G. Thompson, Glenn T. Seaborg, Bernard G. Harvey, Gregory R. Choppin and Albert Ghiorso working at the University of California, Berkeley, in 1955. They bombarded atoms of einsteinium-253 with helium ions using a device known as a cyclotron. This produced atoms of mendelevium-256, an isotope with a half-life of about 77 minutes, and a free neutron. Mendelevium's most stable isotope, mendelevium-258, has a half-life of about 51.5 days. It decays into einsteinium-254 through alpha decay or decays through spontaneous fission."
+/Record/Section/2/Information/1/ReferenceNumber,number,6
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/String,string,"Mendelevium is named after Dmitri Mendeleev. It is the ninth transuranium element of the actinide series discovered. It was first identified by Ghiorso, Harvey, Choppin, Thompson, and Seaborg in early in 1955 during the bombardment of the isotope 253Es with helium ions in the Berkeley 60-inch cyclotron. The isotope produced was 256Md, which has a half-life of 76 min. This first identification was notable in that 256Md was synthesized on a one-atom-at-a-time basis."
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/0/Start,number,247
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/1/Start,number,330
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/1/Length,number,3
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/1/Type,string,Superscript
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/2/Start,number,416
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/2/Length,number,3
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/Markup/2/Type,string,Superscript
+/Record/Section/3/TOCHeading,string,Description
+/Record/Section/3/Description,string,"A short description of this element, provided by authoritative sources."
+/Record/Section/3/Information/0/ReferenceNumber,number,4
+/Record/Section/3/Information/0/Reference/0,string,"[636]  R. J. Silva. “Fermium, Mendelevium, Nobelium, and Lawrencium”, in The Chemistry of the Actinide and Transactinide Elements, L. R. Morss, N. M. Edelstein, J. Fuger (Eds.), Springer, Berlin, Germany (2006)."
+/Record/Section/3/Information/0/Reference/1,string,"[637]  Los Alamos National Laboratory. Periodic Table of Elements: LANL-Mendelevium, Los Alamos National Laboratory (2014), Feb. 25; http://periodic.lanl.gov/101.shtml."
+/Record/Section/3/Information/0/ExtendedReference/0/Citation,string,"[636]  R. J. Silva. “Fermium, Mendelevium, Nobelium, and Lawrencium”, in The Chemistry of the Actinide and Transactinide Elements, L. R. Morss, N. M. Edelstein, J. Fuger (Eds.), Springer, Berlin, Germany (2006)."
+/Record/Section/3/Information/0/ExtendedReference/1/Citation,string,"[637]  Los Alamos National Laboratory. Periodic Table of Elements: LANL-Mendelevium, Los Alamos National Laboratory (2014), Feb. 25; http://periodic.lanl.gov/101.shtml."
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/String,string,"Mendelevium does not occur naturally in the Earth’s crust. It was first synthesized in 1955 by Glenn T. Seaborg and his team at the University of California using the reactions 253Es (4He, n) 256Md and 253Es (4He, 2n) 255Md. Mendelevium is named for the Russian scientist, Dmitri Mendeleev (Fig. IUPAC.101.1), who developed the Periodic Table of the chemical elements [636], [637]. There are no applications for isotopes of mendelevium aside from scientific research."
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,177
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/1/Start,number,184
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/1/Length,number,1
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/1/Type,string,Superscript
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/2/Start,number,192
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/2/Length,number,3
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/2/Type,string,Superscript
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/3/Start,number,202
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/3/Length,number,3
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/3/Type,string,Superscript
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/4/Start,number,209
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/4/Length,number,1
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/4/Type,string,Superscript
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/5/Start,number,218
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/5/Length,number,3
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/5/Type,string,Superscript
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/6/Start,number,328
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/6/Length,number,14
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/6/URL,string,https://pubchem.ncbi.nlm.nih.gov/ptable
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/String,string,          
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/Start,number,0
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/Length,number,1
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_136.jpg
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/Type,string,Image
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/Size,string,709x876
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/Caption,string,"Fig. IUPAC.101.1: Mendelevium is named after Dmitri Mendeleev to honor his contributions to the development of the periodic table of the elements. (Photo Source: © 2010 The Regents of the University of California, Lawrence Berkeley National Laboratory). "
+/Record/Section/3/Information/1/ReferenceNumber,number,6
+/Record/Section/3/Information/1/Value/StringWithMarkup/0/String,string,"Experiments seem to show that the element possesses a moderately stable dipositive (II) oxidation state in addition to the tripositive (III) oxidation state, which is characteristic of the actinide elements."
+/Record/Section/4/TOCHeading,string,Uses
+/Record/Section/4/Description,string,Uses of this element in industry and other fields.
+/Record/Section/4/Information/0/ReferenceNumber,number,5
+/Record/Section/4/Information/0/Value/StringWithMarkup/0/String,string,"Since only small amounts of mendelevium have ever been produced, it currently has no uses outside of basic scientific research."
+/Record/Section/4/Information/1/ReferenceNumber,number,6
+/Record/Section/4/Information/1/Value/StringWithMarkup/0/String,string,256Md has been used to elucidate some of the chemical properties of mendelevium in aqueous solution.
+/Record/Section/4/Information/1/Value/StringWithMarkup/0/Markup/0/Start,number,0
+/Record/Section/4/Information/1/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/4/Information/1/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/5/TOCHeading,string,Compounds
+/Record/Section/5/Description,string,Compound records related to this element.
+/Record/Section/5/Information/0/ReferenceNumber,number,8
+/Record/Section/5/Information/0/Name,string,Compounds
+/Record/Section/5/Information/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/#query=Mendelevium
+/Record/Section/5/Information/0/Value/StringWithMarkup/0/String,string,See more information at the Mendelevium compound page.
+/Record/Section/5/Section/0/TOCHeading,string,Element Forms
+/Record/Section/5/Section/0/Description,string,"Other forms of this element, including ions, isotopes, etc."
+/Record/Section/5/Section/0/DisplayControls/CreateTable/FromInformationIn,string,ThisSection
+/Record/Section/5/Section/0/DisplayControls/CreateTable/NumberOfColumns,number,5
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/0,string,CID
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/1,string,Name
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/2,string,Formula
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/3,string,SMILES
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/4,string,Molecular Weight
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/UseNamesAsColumnHeadings,boolean,true
+/Record/Section/5/Section/0/Information/0/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/0/Name,string,CID
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/0/String,string,23943
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,5
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/23943
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/1/String,string,169070
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/Length,number,6
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/169070
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/2/String,string,167367
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/2/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/2/Markup/0/Length,number,6
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/2/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/167367
+/Record/Section/5/Section/0/Information/1/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/1/Name,string,Name
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/0/String,string,mendelevium
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/1/String,string,mendelevium-258
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/2/String,string,mendelevium-257
+/Record/Section/5/Section/0/Information/2/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/2/Name,string,Formula
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/0/String,string,Md
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/1/String,string,Md
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/2/String,string,Md
+/Record/Section/5/Section/0/Information/3/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/3/Name,string,SMILES
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/0/String,string,[Md]
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/1/String,string,[258Md]
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/2/String,string,[257Md]
+/Record/Section/5/Section/0/Information/4/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/4/Name,string,Molecular Weight
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/0/String,string,258.09843
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/1/String,string,258.09843
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/2/String,string,257.09554
+/Record/Section/6/TOCHeading,string,Isotopes
+/Record/Section/6/Description,string,Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.
+/Record/Section/6/URL,string,https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes
+/Record/Section/6/Information/0/ReferenceNumber,number,5
+/Record/Section/6/Information/0/Name,string,Stable Isotope Count
+/Record/Section/6/Information/0/Value/StringWithMarkup/0/String,string,0
+/Record/Section/6/Information/1/ReferenceNumber,number,6
+/Record/Section/6/Information/1/Name,string,Summary
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/String,string,Fourteen isotopes are now recognized. 258Md has a half-life of 2 months. This isotope has been produced by the bombardment of an isotope of einsteinium with ions of helium. Eventually enough 258Md should be made to determine its physical properties.
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/0/Start,number,38
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/1/Start,number,191
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/1/Length,number,3
+/Record/Section/6/Information/1/Value/StringWithMarkup/0/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/0/TOCHeading,string,Isotope Mass and Abundance
+/Record/Section/6/Section/0/Description,string,Atomic mass and abundance (composition) information for a given isotope/nuclide. The number in the parenthesis refers to an uncertainty when exist. The unit of atomic weight is the unified atomic mass unit (u) or dalton (Da). 
+/Record/Section/6/Section/0/DisplayControls/CreateTable/FromInformationIn,string,ThisSection
+/Record/Section/6/Section/0/DisplayControls/CreateTable/NumberOfColumns,number,3
+/Record/Section/6/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/0,string,Isotope
+/Record/Section/6/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/1,string,Atomic Mass (uncertainty) [u]
+/Record/Section/6/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/2,string,Abundance (uncertainty)
+/Record/Section/6/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/UseNamesAsColumnHeadings,boolean,true
+/Record/Section/6/Section/0/Information/0/ReferenceNumber,number,7
+/Record/Section/6/Section/0/Information/0/Name,string,Isotope
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/String,string,258Md
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/String,string,260Md
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/1/ReferenceNumber,number,7
+/Record/Section/6/Section/0/Information/1/Name,string,Atomic Mass (uncertainty) [u]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/0/String,string,258.0984315(50)
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/1/String,string,260.10365(34#)
+/Record/Section/6/Section/0/Information/2/ReferenceNumber,number,7
+/Record/Section/6/Section/0/Information/2/Name,string,Abundance (uncertainty)
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/0/String,string,
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/1/String,string,
+/Record/Section/6/Section/1/TOCHeading,string,"Atomic Mass, Half Life, and Decay"
+/Record/Section/6/Section/1/Description,string,"Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists."
+/Record/Section/6/Section/1/URL,string,https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/
+/Record/Section/6/Section/1/DisplayControls/CreateTable/FromInformationIn,string,ThisSection
+/Record/Section/6/Section/1/DisplayControls/CreateTable/NumberOfColumns,number,5
+/Record/Section/6/Section/1/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/0,string,Nuclide
+/Record/Section/6/Section/1/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/1,string,Atomic Mass and Uncertainty [u]
+/Record/Section/6/Section/1/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/2,string,Half Life and Uncertainty
+/Record/Section/6/Section/1/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/3,string,Discovery Year
+/Record/Section/6/Section/1/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/4,string,"Decay Modes, Intensities and Uncertainties [%]"
+/Record/Section/6/Section/1/DisplayControls/CreateTable/ColumnsFromNamedLists/UseNamesAsColumnHeadings,boolean,true
+/Record/Section/6/Section/1/Information/0/ReferenceNumber,number,2
+/Record/Section/6/Section/1/Information/0/Name,string,Nuclide
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/0/String,string,244Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/1/String,string,244Mdm
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/1/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/1/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/1/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/1/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/1/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/1/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/2/String,string,245Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/2/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/2/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/2/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/3/String,string,245Mdm
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/3/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/3/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/3/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/3/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/3/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/3/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/4/String,string,246Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/4/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/4/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/4/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/5/String,string,246Mdm
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/5/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/5/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/5/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/5/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/5/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/5/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/6/String,string,247Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/6/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/6/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/6/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/7/String,string,247Mdm
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/7/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/7/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/7/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/7/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/7/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/7/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/8/String,string,248Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/8/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/8/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/8/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/9/String,string,249Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/9/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/9/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/9/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/10/String,string,249Mdm
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/10/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/10/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/10/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/10/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/10/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/10/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/11/String,string,250Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/11/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/11/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/11/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/12/String,string,250Mdm
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/12/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/12/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/12/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/12/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/12/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/12/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/13/String,string,251Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/13/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/13/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/13/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/14/String,string,251Mdp
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/14/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/14/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/14/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/14/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/14/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/14/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/15/String,string,252Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/15/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/15/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/15/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/16/String,string,252Mdp
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/16/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/16/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/16/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/16/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/16/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/16/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/17/String,string,253Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/17/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/17/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/17/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/18/String,string,253Mdp
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/18/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/18/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/18/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/18/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/18/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/18/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/19/String,string,254Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/19/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/19/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/19/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/20/String,string,254Mdm
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/20/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/20/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/20/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/20/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/20/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/20/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/21/String,string,255Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/21/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/21/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/21/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/22/String,string,255Mdp
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/22/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/22/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/22/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/22/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/22/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/22/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/23/String,string,256Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/23/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/23/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/23/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/24/String,string,256Mdm
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/24/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/24/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/24/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/24/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/24/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/24/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/25/String,string,256Mdp
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/25/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/25/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/25/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/25/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/25/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/25/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/26/String,string,257Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/26/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/26/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/26/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/27/String,string,258Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/27/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/27/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/27/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/28/String,string,258Mdm
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/28/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/28/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/28/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/28/Markup/1/Start,number,5
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/28/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/28/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/29/String,string,259Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/29/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/29/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/29/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/30/String,string,260Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/30/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/30/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/30/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/31/String,string,261Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/31/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/31/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/31/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/32/String,string,262Md
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/32/Markup/0/Start,number,0
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/32/Markup/0/Length,number,3
+/Record/Section/6/Section/1/Information/0/Value/StringWithMarkup/32/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/1/ReferenceNumber,number,2
+/Record/Section/6/Section/1/Information/1/Name,string,Atomic Mass and Uncertainty [u]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/0/String,string,244.081157 ± 0.000402 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/1/String,string,244.081157 ± 0.000402 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/2/String,string,245.080864 ± 0.000279 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/3/String,string,245.080864 ± 0.000279 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/4/String,string,246.081713 ± 0.000279 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/5/String,string,246.081713 ± 0.000279 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/6/String,string,247.081520 ± 0.000223 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/7/String,string,247.081520 ± 0.000223 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/8/String,string,248.082607 ± 0.000198 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/9/String,string,249.082857155 ± 0.000176516
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/10/String,string,249.082857155 ± 0.000176516
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/11/String,string,250.084164934 ± 0.000097606
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/12/String,string,250.084164934 ± 0.000097606
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/13/String,string,251.084774287 ± 0.00002031
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/14/String,string,251.084774287 ± 0.00002031
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/15/String,string,252.086385000 ± 0.000098
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/16/String,string,252.086385000 ± 0.000098
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/17/String,string,253.087143 ± 0.000034 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/18/String,string,253.087143 ± 0.000034 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/19/String,string,254.089590 ± 0.000107 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/20/String,string,254.089590 ± 0.000107 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/21/String,string,255.091081702 ± 0.000005976
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/22/String,string,255.091081702 ± 0.000005976
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/23/String,string,256.093888 ± 0.000133 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/24/String,string,256.093888 ± 0.000133 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/25/String,string,256.093888 ± 0.000133 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/26/String,string,257.095537343 ± 0.000001683
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/27/String,string,258.098433634 ± 0.000003729
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/28/String,string,258.098433634 ± 0.000003729
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/29/String,string,259.100445 ± 0.000108 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/30/String,string,260.103650 ± 0.000339 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/31/String,string,261.105828 ± 0.000546 [Estimated]
+/Record/Section/6/Section/1/Information/1/Value/StringWithMarkup/32/String,string,262.109144 ± 0.000481 [Estimated]
+/Record/Section/6/Section/1/Information/2/ReferenceNumber,number,2
+/Record/Section/6/Section/1/Information/2/Name,string,Half Life and Uncertainty
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/0/String,string,0.36 s ± 0.14
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/1/String,string,~9 us
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/2/String,string,0.38 s ± 0.10
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/3/String,string,0.90 ms ± 0.25
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/4/String,string,0.92 s ± 0.18
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/5/String,string,4.4 s ± 0.8
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/6/String,string,1.19 s ± 0.09
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/7/String,string,250 ms ± 40
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/8/String,string,7 s ± 3
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/9/String,string,25.6 s ± 0.9
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/10/String,string,1.9 s ± 0.9
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/11/String,string,54 s ± 4
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/12/String,string,42.4 s ± 4.5
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/13/String,string,4.21 m ± 0.23
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/14/String,string,20 s [Estimated]
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/15/String,string,2.3 m ± 0.8
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/16/String,string,Not-specified
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/17/String,string,12 m ± 8
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/18/String,string,1 m [Estimated]
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/19/String,string,10 m ± 3
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/20/String,string,28 m ± 8
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/21/String,string,27 m ± 2
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/22/String,string,2 m [Estimated]
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/23/String,string,77.7 m ± 1.8
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/24/String,string,100 m [Estimated]
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/25/String,string,Not-specified
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/26/String,string,5.52 h ± 0.05
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/27/String,string,51.59 d ± 0.29
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/28/String,string,57.0 m ± 0.9
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/29/String,string,1.60 h ± 0.06
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/30/String,string,27.8 d ± 0.8
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/31/String,string,40 m [Estimated]
+/Record/Section/6/Section/1/Information/2/Value/StringWithMarkup/32/String,string,3 m [Estimated]
+/Record/Section/6/Section/1/Information/3/ReferenceNumber,number,2
+/Record/Section/6/Section/1/Information/3/Name,string,Discovery Year
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/0/String,string,2020
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/1/String,string,2020
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/2/String,string,1996
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/3/String,string,1996
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/4/String,string,1996
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/5/String,string,2010
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/6/String,string,1981
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/7/String,string,1993
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/8/String,string,1973
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/9/String,string,1973
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/10/String,string,2001
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/11/String,string,1973
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/12/String,string,2019
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/13/String,string,1973
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/14/String,string,2006
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/15/String,string,1973
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/16/String,string,
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/17/String,string,1992
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/18/String,string,1971
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/19/String,string,1970
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/20/String,string,1970
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/21/String,string,1958
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/22/String,string,
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/23/String,string,1955
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/24/String,string,
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/25/String,string,
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/26/String,string,1965
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/27/String,string,1970
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/28/String,string,1980
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/29/String,string,1982
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/30/String,string,1989
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/31/String,string,
+/Record/Section/6/Section/1/Information/3/Value/StringWithMarkup/32/String,string,
+/Record/Section/6/Section/1/Information/4/ReferenceNumber,number,2
+/Record/Section/6/Section/1/Information/4/Name,string,"Decay Modes, Intensities and Uncertainties [%]"
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/0/String,string,α≈100%; β+ ?; β+SF<14%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/0/Markup/0/Start,number,9
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/0/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/0/Markup/1/Start,number,15
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/0/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/0/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/1/String,string,IT=?; β+ ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/1/Markup/0/Start,number,7
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/1/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/1/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/2/String,string,α≈100%; β+ ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/2/Markup/0/Start,number,9
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/2/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/2/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/3/String,string,SF≈100%; α ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/4/String,string,α=100%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/5/String,string,α=57±0.3%; β+>77%; β+SF>10%; α<23%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/5/Markup/0/Start,number,12
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/5/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/5/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/5/Markup/1/Start,number,20
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/5/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/5/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/6/String,string,α≈100%; SF<0.1%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/7/String,string,α=79±0.5%; SF=21±0.5%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/8/String,string,β+=80±1%; α=20±1%; β+SF<0.05%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/8/Markup/0/Start,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/8/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/8/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/8/Markup/1/Start,number,20
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/8/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/8/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/9/String,string,α=75±0.5%; β+ ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/9/Markup/0/Start,number,12
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/9/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/9/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/10/String,string,α=100%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/11/String,string,β+=93.0±0.8%; α=7.0±0.8%; β+SF=0.026±1.5%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/11/Markup/0/Start,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/11/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/11/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/11/Markup/1/Start,number,27
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/11/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/11/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/12/String,string,α= ?; β+ ?; IT ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/12/Markup/0/Start,number,7
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/12/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/12/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/13/String,string,β+ ?; α=10±0.1%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/13/Markup/0/Start,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/13/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/13/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/14/String,string,α ?; IT ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/15/String,string,β+≈100%; α ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/15/Markup/0/Start,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/15/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/15/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/16/String,string,
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/17/String,string,β+≈100%; α≈0.7%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/17/Markup/0/Start,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/17/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/17/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/18/String,string,α ?; IT ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/19/String,string,β+≈100%; α ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/19/Markup/0/Start,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/19/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/19/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/20/String,string,β+≈100%; α ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/20/Markup/0/Start,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/20/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/20/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/21/String,string,β+=93±0.1%; α=7±0.1%; SF ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/21/Markup/0/Start,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/21/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/21/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/22/String,string,α ?; IT ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/23/String,string,β+=90.8±0.7%; α=9.2±0.7%; SF<3%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/23/Markup/0/Start,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/23/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/23/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/24/String,string,β+ ?; α ?; SF ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/24/Markup/0/Start,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/24/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/24/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/25/String,string,
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/26/String,string,ε=85±0.3%; α=15±0.3%; SF ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/27/String,string,α≈100%; β+<0.0015%; β-<0.0015%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/27/Markup/0/Start,number,9
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/27/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/27/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/27/Markup/1/Start,number,21
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/27/Markup/1/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/27/Markup/1/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/28/String,string,ε=85±1.5%; SF<15%; β- ?; α<1.2%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/28/Markup/0/Start,number,20
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/28/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/28/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/29/String,string,SF≈100%; α ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/30/String,string,SF≈100%; α<5%; ε<5%; β-<3.5%
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/30/Markup/0/Start,number,22
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/30/Markup/0/Length,number,1
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/30/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/31/String,string,α ?
+/Record/Section/6/Section/1/Information/4/Value/StringWithMarkup/32/String,string,SF ?; α ?
+/Record/Reference/0/ReferenceNumber,number,1
+/Record/Reference/0/SourceName,string,PubChem
+/Record/Reference/0/SourceID,string,PubChem
+/Record/Reference/0/Description,string,Data deposited in or computed by PubChem
+/Record/Reference/0/URL,string,https://pubchem.ncbi.nlm.nih.gov
+/Record/Reference/1/ReferenceNumber,number,2
+/Record/Reference/1/SourceName,string,"Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)"
+/Record/Reference/1/SourceID,string,e101
+/Record/Reference/1/Name,string,Md
+/Record/Reference/1/Description,string,The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.
+/Record/Reference/1/URL,string,https://www-nds.iaea.org/amdc/
+/Record/Reference/1/LicenseURL,string,https://www-nds.iaea.org/disclaimer.html
+/Record/Reference/1/ANID,number,6590328
+/Record/Reference/2/ReferenceNumber,number,3
+/Record/Reference/2/SourceName,string,IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)
+/Record/Reference/2/SourceID,string,a101
+/Record/Reference/2/Name,string,Mendelevium
+/Record/Reference/2/Description,string,Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.
+/Record/Reference/2/URL,string,https://www.ciaaw.org/
+/Record/Reference/2/LicenseURL,string,http://www.ciaaw.org/bylaws.htm
+/Record/Reference/2/ANID,number,2292482
+/Record/Reference/3/ReferenceNumber,number,4
+/Record/Reference/3/SourceName,string,IUPAC Periodic Table of the Elements and Isotopes (IPTEI)
+/Record/Reference/3/SourceID,string,p101
+/Record/Reference/3/Description,string,"The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703."
+/Record/Reference/3/URL,string,https://doi.org/10.1515/pac-2015-0703
+/Record/Reference/3/LicenseNote,string,"Copyright (c) 2020 International Union of Pure and Applied Chemistry.
+
+The International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated."
+/Record/Reference/3/LicenseURL,string,https://creativecommons.org/licenses/by-nc-nd/4.0/
+/Record/Reference/3/ANID,number,13296506
+/Record/Reference/4/ReferenceNumber,number,6
+/Record/Reference/4/SourceName,string,"Los Alamos National Laboratory, U.S. Department of Energy"
+/Record/Reference/4/SourceID,string,lanl101
+/Record/Reference/4/Name,string,Mendelevium
+/Record/Reference/4/Description,string,"The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name."
+/Record/Reference/4/URL,string,https://periodic.lanl.gov/101.shtml
+/Record/Reference/4/ANID,number,507281
+/Record/Reference/5/ReferenceNumber,number,5
+/Record/Reference/5/SourceName,string,"Jefferson Lab, U.S. Department of Energy"
+/Record/Reference/5/SourceID,string,jlab101
+/Record/Reference/5/Name,string,Mendelevium
+/Record/Reference/5/Description,string,"Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/"
+/Record/Reference/5/URL,string,https://education.jlab.org/itselemental/ele101.html
+/Record/Reference/5/LicenseNote,string,Please see citation and linking information: https://education.jlab.org/faq/index.html
+/Record/Reference/5/LicenseURL,string,https://www.jlab.org/privacy-and-security-notice
+/Record/Reference/5/ANID,number,507163
+/Record/Reference/6/ReferenceNumber,number,7
+/Record/Reference/6/SourceName,string,NIST Physical Measurement Laboratory
+/Record/Reference/6/SourceID,string,e101
+/Record/Reference/6/Name,string,Mendelevium
+/Record/Reference/6/Description,string,"The periodic table contains NIST's critically-evaluated data on atomic properties of the elements. The provenance data that include data for atomic spectroscopy, X-ray and gamma ray, radiation dosimetry, nuclear physics, and condensed matter physics may be found from the link under the source name. Ref: https://www.nist.gov/pml/atomic-spectra-database"
+/Record/Reference/6/URL,string,https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=101
+/Record/Reference/6/LicenseURL,string,https://www.nist.gov/pml/database-disclaimer
+/Record/Reference/6/ANID,number,2292718
+/Record/Reference/7/ReferenceNumber,number,8
+/Record/Reference/7/SourceName,string,PubChem Elements
+/Record/Reference/7/SourceID,string,ef_101
+/Record/Reference/7/Name,string,Mendelevium
+/Record/Reference/7/Description,string,This section provides all form of data related to element Mendelevium.
+/Record/Reference/7/LicenseURL,string,https://www.nlm.nih.gov/copyright.html
+/Record/Reference/7/ANID,number,24834029
+/Record/Reference/8/ReferenceNumber,number,9
+/Record/Reference/8/SourceName,string,PubChem Elements
+/Record/Reference/8/SourceID,string,ep_101
+/Record/Reference/8/Name,string,Mendelevium
+/Record/Reference/8/Description,string,The element property data was retrieved from publications.
+/Record/Reference/8/LicenseURL,string,https://www.nlm.nih.gov/copyright.html
+/Record/Reference/8/ANID,number,24834238

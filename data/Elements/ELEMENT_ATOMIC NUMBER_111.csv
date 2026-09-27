@@ -1,0 +1,373 @@
+path,type,value
+/Record/RecordType,string,AtomicNumber
+/Record/RecordNumber,number,111
+/Record/RecordTitle,string,Roentgenium
+/Record/Section/0/TOCHeading,string,Identifiers
+/Record/Section/0/Description,string,"Identifiers for this element, including element name, element symbol, InChI string, and InChIKey."
+/Record/Section/0/Section/0/TOCHeading,string,Element Name
+/Record/Section/0/Section/0/Description,string,"The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element."
+/Record/Section/0/Section/0/Information/0/ReferenceNumber,number,1
+/Record/Section/0/Section/0/Information/0/Name,string,Element Name
+/Record/Section/0/Section/0/Information/0/Value/StringWithMarkup/0/String,string,Roentgenium
+/Record/Section/0/Section/0/Information/1/ReferenceNumber,number,3
+/Record/Section/0/Section/0/Information/1/Name,string,Element Name
+/Record/Section/0/Section/0/Information/1/Value/StringWithMarkup/0/String,string,Roentgenium
+/Record/Section/0/Section/1/TOCHeading,string,Element Symbol
+/Record/Section/0/Section/1/Description,string,"Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages."
+/Record/Section/0/Section/1/Information/0/ReferenceNumber,number,1
+/Record/Section/0/Section/1/Information/0/Name,string,Element Symbol
+/Record/Section/0/Section/1/Information/0/Value/StringWithMarkup/0/String,string,Rg
+/Record/Section/0/Section/1/Information/1/ReferenceNumber,number,3
+/Record/Section/0/Section/1/Information/1/Name,string,Element Symbol
+/Record/Section/0/Section/1/Information/1/Value/StringWithMarkup/0/String,string,Rg
+/Record/Section/0/Section/2/TOCHeading,string,InChI
+/Record/Section/0/Section/2/Description,string,"The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard."
+/Record/Section/0/Section/2/URL,string,https://iupac.org/who-we-are/divisions/division-details/inchi/
+/Record/Section/0/Section/2/Information/0/ReferenceNumber,number,1
+/Record/Section/0/Section/2/Information/0/Name,string,InChI
+/Record/Section/0/Section/2/Information/0/Value/StringWithMarkup/0/String,string,InChI=1S/Rg
+/Record/Section/0/Section/3/TOCHeading,string,InChIKey
+/Record/Section/0/Section/3/Description,string,"An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard."
+/Record/Section/0/Section/3/URL,string,https://iupac.org/who-we-are/divisions/division-details/inchi/
+/Record/Section/0/Section/3/Information/0/ReferenceNumber,number,1
+/Record/Section/0/Section/3/Information/0/Name,string,InChIKey
+/Record/Section/0/Section/3/Information/0/Value/StringWithMarkup/0/String,string,LJROPTGWFUZRDB-UHFFFAOYSA-N
+/Record/Section/1/TOCHeading,string,Properties
+/Record/Section/1/Description,string,"Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on."
+/Record/Section/1/Section/0/TOCHeading,string,Atomic Weight
+/Record/Section/1/Section/0/Description,string,"Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u)."
+/Record/Section/1/Section/0/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/0/Information/0/Value/StringWithMarkup/0/String,string,281
+/Record/Section/1/Section/0/Information/1/ReferenceNumber,number,6
+/Record/Section/1/Section/0/Information/1/Value/StringWithMarkup/0/String,string,282
+/Record/Section/1/Section/0/Information/2/ReferenceNumber,number,7
+/Record/Section/1/Section/0/Information/2/Value/StringWithMarkup/0/String,string,Relative Mass: 280.16514(61#)
+/Record/Section/1/Section/1/TOCHeading,string,Electron Configuration
+/Record/Section/1/Section/1/Description,string,"The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result."
+/Record/Section/1/Section/1/URL,string,https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations
+/Record/Section/1/Section/1/Information/0/ReferenceNumber,number,6
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/String,string,[Rn] 7s2 5f14 6d9(predicted)
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,7
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,1
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/1/Start,number,11
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/1/Length,number,2
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/1/Type,string,Superscript
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/2/Start,number,16
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/2/Length,number,1
+/Record/Section/1/Section/1/Information/0/Value/StringWithMarkup/0/Markup/2/Type,string,Superscript
+/Record/Section/1/Section/2/TOCHeading,string,Atomic Radius
+/Record/Section/1/Section/2/Description,string,"The atomic radius of a chemical element is a measure of the size of its atom, usually, the distance from the center of the nucleus to the outermost isolated electron.  Because an atom does not have a discrete boundary, there are various non-equivalent definitions of atomic radius, such as Van der Waals radius and covalent radius."
+/Record/Section/1/Section/2/Information/0/ReferenceNumber,number,6
+/Record/Section/1/Section/2/Information/0/Name,string,Empirical Atomic Radius
+/Record/Section/1/Section/2/Information/0/Value/StringWithMarkup/0/String,string,empirical: 138 pm (predicted)
+/Record/Section/1/Section/3/TOCHeading,string,Oxidation States
+/Record/Section/1/Section/3/Description,string,"The oxidation state(s) that this element commonly has in a compound.  The oxidation state of an atom is defined as the hypothetical charge that would be held by that atom if all of its bonds to other atoms were completely ionic in nature. For example, the oxidation state of carbon in CO2 would be +4 since the hypothetical charge held by the carbon atom if both of the carbon-oxygen double bonds were completely ionic would be equal to +4 (each oxygen atom would hold a charge of -2 since oxygen is more electronegative than carbon)."
+/Record/Section/1/Section/3/URL,string,https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/20%3A_Electrochemistry/20.01%3A_Oxidation_States_and_Redox_Reactions
+/Record/Section/1/Section/3/Information/0/ReferenceNumber,number,6
+/Record/Section/1/Section/3/Information/0/Value/StringWithMarkup/0/String,string,"5, 3, 1, -1 ​(predicted)"
+/Record/Section/1/Section/4/TOCHeading,string,Physical Description
+/Record/Section/1/Section/4/Description,string,"The appearance or features of this element, including color, odor, state, taste and more in general."
+/Record/Section/1/Section/4/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/4/Information/0/Value/StringWithMarkup/0/String,string,Expected to be a Solid
+/Record/Section/1/Section/5/TOCHeading,string,Element Classification
+/Record/Section/1/Section/5/Description,string,"Classification according to the element's chemical and physical properties, and location within the periodic table."
+/Record/Section/1/Section/5/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/5/Information/0/Value/StringWithMarkup/0/String,string,Metal
+/Record/Section/1/Section/6/TOCHeading,string,Element Period Number
+/Record/Section/1/Section/6/Description,string,The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.
+/Record/Section/1/Section/6/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/6/Information/0/Value/StringWithMarkup/0/String,string,7
+/Record/Section/1/Section/7/TOCHeading,string,Element Group Number
+/Record/Section/1/Section/7/Description,string,Element group refers to a set of chemical elements in the same vertical column of the periodic table
+/Record/Section/1/Section/7/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/7/Information/0/Value/StringWithMarkup/0/String,string,11
+/Record/Section/1/Section/8/TOCHeading,string,Estimated Crustal Abundance
+/Record/Section/1/Section/8/Description,string,The estimated element abundance in the earth's crust.
+/Record/Section/1/Section/8/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/8/Information/0/Value/StringWithMarkup/0/String,string,Not Applicable
+/Record/Section/1/Section/9/TOCHeading,string,Estimated Oceanic Abundance
+/Record/Section/1/Section/9/Description,string,The estimated element abundance in the earth's oceans.
+/Record/Section/1/Section/9/Information/0/ReferenceNumber,number,5
+/Record/Section/1/Section/9/Information/0/Value/StringWithMarkup/0/String,string,Not Applicable
+/Record/Section/2/TOCHeading,string,History
+/Record/Section/2/Description,string,The history of the discovery and use of this element.
+/Record/Section/2/Information/0/ReferenceNumber,number,5
+/Record/Section/2/Information/0/Value/StringWithMarkup/0/String,string,"Roentgenium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in late 1994. They bombarded atoms of bismuth-209 with ions of nickel-64 with a device known as a linear accelerator. This produced three atoms of roentgenium-272, an isotope with a half-life of about 1.5 milliseconds (0.0015 seconds), and a free neutron. Roentgenium's most stable isotope, roentgenium-281, has a half-life of about 26 seconds and decays through spontaneous fission."
+/Record/Section/2/Information/1/ReferenceNumber,number,6
+/Record/Section/2/Information/1/Value/StringWithMarkup/0/String,string,"Discovered by Gesellschaft Schwerionenforschung (GSI) in Darmstadt, in 1994. Reasearch group of S. Hofmann, V. Ninov, F.P. Hessberger, P. Armbruster, H. Folger, G. Munzenberg, H.J. Schott, and others."
+/Record/Section/3/TOCHeading,string,Description
+/Record/Section/3/Description,string,"A short description of this element, provided by authoritative sources."
+/Record/Section/3/Information/0/ReferenceNumber,number,4
+/Record/Section/3/Information/0/Reference/0,string,"[660]  IUPAC Press Release. Element 111 is Named Roentgenium, International Union of Pure and Applied Chemistry (2017), August 28; http://old.iupac.org/news/archives/2004/naming111.html."
+/Record/Section/3/Information/0/Reference/1,string,"[661]  Science Education at Jefferson Lab. It’s Elemental – The Element Roentgenium, Science Education at Jefferson Lab (2014), Feb. 25; http://education.jlab.org/itselemental/ele111.html."
+/Record/Section/3/Information/0/Reference/2,string,"[662]  “CRC Handbook of Chemistry and Physics”, in CRC Handbook of Chemistry and Physics, W. M. Haynes (Ed.), Taylor & Francis Group, Milton Park, Didcot, UK (2014)."
+/Record/Section/3/Information/0/ExtendedReference/0/Citation,string,"[660]  IUPAC Press Release. Element 111 is Named Roentgenium, International Union of Pure and Applied Chemistry (2017), August 28; http://old.iupac.org/news/archives/2004/naming111.html."
+/Record/Section/3/Information/0/ExtendedReference/1/Citation,string,"[661]  Science Education at Jefferson Lab. It’s Elemental – The Element Roentgenium, Science Education at Jefferson Lab (2014), Feb. 25; http://education.jlab.org/itselemental/ele111.html."
+/Record/Section/3/Information/0/ExtendedReference/2/Citation,string,"[662]  “CRC Handbook of Chemistry and Physics”, in CRC Handbook of Chemistry and Physics, W. M. Haynes (Ed.), Taylor & Francis Group, Milton Park, Didcot, UK (2014)."
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/String,string,"Roentgenium does not occur naturally in the Earth’s crust. Roentgenium was first synthesized by an international team of scientists from the GSI in Darmstadt, Germany, the Joint Institute for Nuclear Research (JINR) in Dubna, Russia, the Comenius University in Bratislava, Slovakia, and the University of Jyväskylä, Finland at the GSI Helmholtz Center for Heavy Ion Research in Darmstadt, Germany in 1994, using the nuclear reaction 209Bi (64Ni, n) 272Rg. The credit for the first synthesis was confirmed in 2003. The element was named after Wilhelm Conrad Roentgen (Fig. IUPAC.111.1), who discovered X-rays in 1895 [660], [661], [662]. Roentgenium has no known isotopic applications aside from scientific research."
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,433
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/1/Start,number,440
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/1/Length,number,2
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/1/Type,string,Superscript
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/2/Start,number,449
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/2/Length,number,3
+/Record/Section/3/Information/0/Value/StringWithMarkup/0/Markup/2/Type,string,Superscript
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/String,string,          
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/Start,number,0
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/Length,number,1
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_147.jpg
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/Type,string,Image
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/Size,string,709x869
+/Record/Section/3/Information/0/Value/StringWithMarkup/1/Markup/0/Caption,string,"Fig. IUPAC.111.1: Wilhelm Conrad Roentgen, discoverer of X-rays, after whom roentgenium was named. (Photo Source: NASA Goddard Space Flight Center). "
+/Record/Section/3/Information/1/ReferenceNumber,number,6
+/Record/Section/3/Information/1/Value/StringWithMarkup/0/String,string,Roentgenium is named after Wilhelm Conrad Röntgen.
+/Record/Section/4/TOCHeading,string,Uses
+/Record/Section/4/Description,string,Uses of this element in industry and other fields.
+/Record/Section/4/Information/0/ReferenceNumber,number,5
+/Record/Section/4/Information/0/Value/StringWithMarkup/0/String,string,"Since only a few atoms of roentgenium have ever been produced, it currently has no uses outside of basic scientific research."
+/Record/Section/5/TOCHeading,string,Compounds
+/Record/Section/5/Description,string,Compound records related to this element.
+/Record/Section/5/Information/0/ReferenceNumber,number,8
+/Record/Section/5/Information/0/Name,string,Compounds
+/Record/Section/5/Information/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/#query=Roentgenium
+/Record/Section/5/Information/0/Value/StringWithMarkup/0/String,string,See more information at the Roentgenium compound page.
+/Record/Section/5/Section/0/TOCHeading,string,Element Forms
+/Record/Section/5/Section/0/Description,string,"Other forms of this element, including ions, isotopes, etc."
+/Record/Section/5/Section/0/DisplayControls/CreateTable/FromInformationIn,string,ThisSection
+/Record/Section/5/Section/0/DisplayControls/CreateTable/NumberOfColumns,number,5
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/0,string,CID
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/1,string,Name
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/2,string,Formula
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/3,string,SMILES
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/4,string,Molecular Weight
+/Record/Section/5/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/UseNamesAsColumnHeadings,boolean,true
+/Record/Section/5/Section/0/Information/0/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/0/Name,string,CID
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/0/String,string,135476786
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,0
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,9
+/Record/Section/5/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/compound/135476786
+/Record/Section/5/Section/0/Information/1/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/1/Name,string,Name
+/Record/Section/5/Section/0/Information/1/Value/StringWithMarkup/0/String,string,
+/Record/Section/5/Section/0/Information/2/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/2/Name,string,Formula
+/Record/Section/5/Section/0/Information/2/Value/StringWithMarkup/0/String,string,Rg
+/Record/Section/5/Section/0/Information/3/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/3/Name,string,SMILES
+/Record/Section/5/Section/0/Information/3/Value/StringWithMarkup/0/String,string,*
+/Record/Section/5/Section/0/Information/4/ReferenceNumber,number,8
+/Record/Section/5/Section/0/Information/4/Name,string,Molecular Weight
+/Record/Section/5/Section/0/Information/4/Value/StringWithMarkup/0/String,string,282.169
+/Record/Section/6/TOCHeading,string,Isotopes
+/Record/Section/6/Description,string,Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.
+/Record/Section/6/URL,string,https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes
+/Record/Section/6/Information/0/ReferenceNumber,number,5
+/Record/Section/6/Information/0/Name,string,Stable Isotope Count
+/Record/Section/6/Information/0/Value/StringWithMarkup/0/String,string,0
+/Record/Section/6/Section/0/TOCHeading,string,"Atomic Mass, Half Life, and Decay"
+/Record/Section/6/Section/0/Description,string,"Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists."
+/Record/Section/6/Section/0/URL,string,https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/
+/Record/Section/6/Section/0/DisplayControls/CreateTable/FromInformationIn,string,ThisSection
+/Record/Section/6/Section/0/DisplayControls/CreateTable/NumberOfColumns,number,5
+/Record/Section/6/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/0,string,Nuclide
+/Record/Section/6/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/1,string,Atomic Mass and Uncertainty [u]
+/Record/Section/6/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/2,string,Half Life and Uncertainty
+/Record/Section/6/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/3,string,Discovery Year
+/Record/Section/6/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/Name/4,string,"Decay Modes, Intensities and Uncertainties [%]"
+/Record/Section/6/Section/0/DisplayControls/CreateTable/ColumnsFromNamedLists/UseNamesAsColumnHeadings,boolean,true
+/Record/Section/6/Section/0/Information/0/ReferenceNumber,number,2
+/Record/Section/6/Section/0/Information/0/Name,string,Nuclide
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/String,string,272Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/0/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/String,string,273Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/1/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/2/String,string,274Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/2/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/2/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/2/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/3/String,string,275Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/3/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/3/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/3/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/4/String,string,276Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/4/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/4/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/4/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/5/String,string,277Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/5/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/5/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/5/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/6/String,string,278Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/6/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/6/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/6/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/7/String,string,279Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/7/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/7/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/7/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/8/String,string,280Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/8/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/8/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/8/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/9/String,string,281Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/9/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/9/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/9/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/10/String,string,282Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/10/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/10/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/10/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/11/String,string,283Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/11/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/11/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/11/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/12/String,string,284Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/12/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/12/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/12/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/13/String,string,285Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/13/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/13/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/13/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/14/String,string,286Rg
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/14/Markup/0/Start,number,0
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/14/Markup/0/Length,number,3
+/Record/Section/6/Section/0/Information/0/Value/StringWithMarkup/14/Markup/0/Type,string,Superscript
+/Record/Section/6/Section/0/Information/1/ReferenceNumber,number,2
+/Record/Section/6/Section/0/Information/1/Name,string,Atomic Mass and Uncertainty [u]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/0/String,string,272.153273 ± 0.000251 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/1/String,string,273.153393 ± 0.000429 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/2/String,string,274.155247 ± 0.000225 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/3/String,string,275.156088 ± 0.000479 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/4/String,string,276.158226 ± 0.000675 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/5/String,string,277.159322 ± 0.000504 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/6/String,string,278.161590 ± 0.000417 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/7/String,string,279.162880 ± 0.000453 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/8/String,string,280.165204 ± 0.000571 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/9/String,string,281.166757 ± 0.000831 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/10/String,string,282.169343 ± 0.000631 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/11/String,string,283.171101 ± 0.000728 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/12/String,string,284.173882 ± 0.000537 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/13/String,string,285.175771 ± 0.000644 [Estimated]
+/Record/Section/6/Section/0/Information/1/Value/StringWithMarkup/14/String,string,286.178756 ± 0.000492 [Estimated]
+/Record/Section/6/Section/0/Information/2/ReferenceNumber,number,2
+/Record/Section/6/Section/0/Information/2/Name,string,Half Life and Uncertainty
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/0/String,string,4.2 ms ± 1.1
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/1/String,string,2 ms [Estimated]
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/2/String,string,20 ms ± 11
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/3/String,string,5 ms [Estimated]
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/4/String,string,10 ms [Estimated]
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/5/String,string,4 ms [Estimated]
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/6/String,string,8 ms ± 5
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/7/String,string,170 ms ± 110
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/8/String,string,4.3 s ± 0.5
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/9/String,string,19 s ± 5
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/10/String,string,130 s ± 50
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/11/String,string,2 m [Estimated]
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/12/String,string,1 m [Estimated]
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/13/String,string,30 s [Estimated]
+/Record/Section/6/Section/0/Information/2/Value/StringWithMarkup/14/String,string,10 s [Estimated]
+/Record/Section/6/Section/0/Information/3/ReferenceNumber,number,2
+/Record/Section/6/Section/0/Information/3/Name,string,Discovery Year
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/0/String,string,1995
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/1/String,string,
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/2/String,string,2004
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/3/String,string,
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/4/String,string,
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/5/String,string,
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/6/String,string,2007
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/7/String,string,2004
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/8/String,string,2004
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/9/String,string,2010
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/10/String,string,2010
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/11/String,string,
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/12/String,string,
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/13/String,string,
+/Record/Section/6/Section/0/Information/3/Value/StringWithMarkup/14/String,string,2016
+/Record/Section/6/Section/0/Information/4/ReferenceNumber,number,2
+/Record/Section/6/Section/0/Information/4/Name,string,"Decay Modes, Intensities and Uncertainties [%]"
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/0/String,string,α=100%
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/1/String,string,α ?
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/2/String,string,α≈100%
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/3/String,string,α ?
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/4/String,string,α ?; SF ?
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/5/String,string,α ?; SF ?
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/6/String,string,α=100%
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/7/String,string,α=100%
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/8/String,string,α=100%
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/9/String,string,SF=87±0.8%; α=13±0.8%
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/10/String,string,α=100%
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/11/String,string,α ?; SF ?
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/12/String,string,α ?; SF ?
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/13/String,string,α ?; SF ?
+/Record/Section/6/Section/0/Information/4/Value/StringWithMarkup/14/String,string,α≈100%; SF ?
+/Record/Reference/0/ReferenceNumber,number,1
+/Record/Reference/0/SourceName,string,PubChem
+/Record/Reference/0/SourceID,string,PubChem
+/Record/Reference/0/Description,string,Data deposited in or computed by PubChem
+/Record/Reference/0/URL,string,https://pubchem.ncbi.nlm.nih.gov
+/Record/Reference/1/ReferenceNumber,number,2
+/Record/Reference/1/SourceName,string,"Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)"
+/Record/Reference/1/SourceID,string,e111
+/Record/Reference/1/Name,string,Rg
+/Record/Reference/1/Description,string,The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.
+/Record/Reference/1/URL,string,https://www-nds.iaea.org/amdc/
+/Record/Reference/1/LicenseURL,string,https://www-nds.iaea.org/disclaimer.html
+/Record/Reference/1/ANID,number,6590338
+/Record/Reference/2/ReferenceNumber,number,3
+/Record/Reference/2/SourceName,string,IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)
+/Record/Reference/2/SourceID,string,a111
+/Record/Reference/2/Name,string,Roentgenium
+/Record/Reference/2/Description,string,Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.
+/Record/Reference/2/URL,string,https://www.ciaaw.org/
+/Record/Reference/2/LicenseURL,string,http://www.ciaaw.org/bylaws.htm
+/Record/Reference/2/ANID,number,2292492
+/Record/Reference/3/ReferenceNumber,number,4
+/Record/Reference/3/SourceName,string,IUPAC Periodic Table of the Elements and Isotopes (IPTEI)
+/Record/Reference/3/SourceID,string,p111
+/Record/Reference/3/Description,string,"The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703."
+/Record/Reference/3/URL,string,https://doi.org/10.1515/pac-2015-0703
+/Record/Reference/3/LicenseNote,string,"Copyright (c) 2020 International Union of Pure and Applied Chemistry.
+
+The International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated."
+/Record/Reference/3/LicenseURL,string,https://creativecommons.org/licenses/by-nc-nd/4.0/
+/Record/Reference/3/ANID,number,13296516
+/Record/Reference/4/ReferenceNumber,number,6
+/Record/Reference/4/SourceName,string,"Los Alamos National Laboratory, U.S. Department of Energy"
+/Record/Reference/4/SourceID,string,lanl111
+/Record/Reference/4/Name,string,Roentgenium
+/Record/Reference/4/Description,string,"The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name."
+/Record/Reference/4/URL,string,https://periodic.lanl.gov/111.shtml
+/Record/Reference/4/ANID,number,507291
+/Record/Reference/5/ReferenceNumber,number,5
+/Record/Reference/5/SourceName,string,"Jefferson Lab, U.S. Department of Energy"
+/Record/Reference/5/SourceID,string,jlab111
+/Record/Reference/5/Name,string,Roentgenium
+/Record/Reference/5/Description,string,"Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/"
+/Record/Reference/5/URL,string,https://education.jlab.org/itselemental/ele111.html
+/Record/Reference/5/LicenseNote,string,Please see citation and linking information: https://education.jlab.org/faq/index.html
+/Record/Reference/5/LicenseURL,string,https://www.jlab.org/privacy-and-security-notice
+/Record/Reference/5/ANID,number,507173
+/Record/Reference/6/ReferenceNumber,number,7
+/Record/Reference/6/SourceName,string,NIST Physical Measurement Laboratory
+/Record/Reference/6/SourceID,string,e111
+/Record/Reference/6/Name,string,Roentgenium
+/Record/Reference/6/Description,string,The periodic table contains NIST's critically-evaluated data on atomic properties of the elements.
+/Record/Reference/6/URL,string,https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=111
+/Record/Reference/6/LicenseURL,string,https://www.nist.gov/pml/database-disclaimer
+/Record/Reference/6/ANID,number,2292728
+/Record/Reference/7/ReferenceNumber,number,8
+/Record/Reference/7/SourceName,string,PubChem Elements
+/Record/Reference/7/SourceID,string,ef_111
+/Record/Reference/7/Name,string,Roentgenium
+/Record/Reference/7/Description,string,This section provides all form of data related to element Roentgenium.
+/Record/Reference/7/LicenseURL,string,https://www.nlm.nih.gov/copyright.html
+/Record/Reference/7/ANID,number,24839424
