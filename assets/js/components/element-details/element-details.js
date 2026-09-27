@@ -12,15 +12,15 @@ export function mountElementDetailsShell(root) {
     </div>
     <div id="levels" class="element-levels">
       <article class="detail-level-card">
-        <div class="detail-level-header"><h3 data-i18n="beginner">مبتدی</h3></div>
+        <div class="detail-level-header"><h3 data-i18n="beginnerTitle">شناخت بنیادین</h3></div>
         <div id="beginner-info" class="detail-content"><div class="empty-state">—</div></div>
       </article>
       <article class="detail-level-card">
-        <div class="detail-level-header"><h3 data-i18n="advanced">پیشرفته</h3></div>
+        <div class="detail-level-header"><h3 data-i18n="professionalTitle">تحلیل تخصصی</h3></div>
         <div id="advanced-info" class="detail-content"><div class="empty-state">—</div></div>
       </article>
       <article class="detail-level-card">
-        <div class="detail-level-header"><h3 data-i18n="veryAdvanced">فوق پیشرفته</h3></div>
+        <div class="detail-level-header"><h3 data-i18n="veryAdvancedTitle">ژرف‌کاوی علمی</h3></div>
         <div id="very-advanced-info" class="detail-content"><div class="empty-state">—</div></div>
       </article>
     </div>`;
