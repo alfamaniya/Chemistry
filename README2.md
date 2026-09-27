@@ -142,6 +142,24 @@ selector مستقل شمارهٔ عنصر در `assets/css/main.css` وجود د
 - با Symbol و Name هم‌پوشانی ندارد؛
 - در Themeهای جدول باقی می‌ماند.
 
+### 8.1 — هماهنگی ظاهری Header با Footer
+
+ظاهر Header در CSS با Footer هم‌راستا شده است:
+
+```text
+Header background = #182033
+Footer background = #182033
+```
+
+برای Header:
+
+- متن اصلی از `#e9ecf5` استفاده می‌کند.
+- متن ثانویه و ناوبری از `#aeb6c8` استفاده می‌کنند.
+- زبان فعال با زمینهٔ `#3346a8` مشخص می‌شود.
+- خط پایینی Header از `#3b455c` استفاده می‌کند.
+
+این تغییر صرفاً styling است و شناسه‌های HTML، منطق ترجمه، selector جدول و rendering عناصر را تغییر نمی‌دهد.
+
 ## 9. Accessibility و UX
 
 - کارت عنصر یک `button` واقعی است و keyboard interaction را حفظ می‌کند.
@@ -149,6 +167,7 @@ selector مستقل شمارهٔ عنصر در `assets/css/main.css` وجود د
 - شماره با hover/focus پنهان نمی‌شود.
 - شماره در mobile باقی می‌ماند.
 - شماره، Symbol و Name عناصر جداگانهٔ DOM هستند.
+- Header تیره با متن روشن و کنترل زبان همچنان برای RTL/LTR و mobile قابل استفاده است.
 
 ## 10. کنترل نهایی پس از پیاده‌سازی
 
@@ -159,11 +178,12 @@ selector مستقل شمارهٔ عنصر در `assets/css/main.css` وجود د
 - [x] شماره‌ها با تغییر زبان حفظ می‌شوند.
 - [x] شماره‌ها با Themeهای موجود حفظ می‌شوند.
 - [x] responsive CSS برای mobile وجود دارد.
+- [x] Header و Footer از رنگ زمینهٔ مشترک استفاده می‌کنند.
 - [x] انتخاب عنصر و بخش جزئیات حفظ شده است.
 - [x] CSVها برای این قابلیت تغییر غیرضروری نکرده‌اند.
 - [x] دادهٔ علمی جدید به‌صورت hard-code وارد HTML نشده است.
 - [x] workflow پروژه syntax JavaScript و ساختار CSVهای runtime را validate می‌کند.
-- [x] آخرین اجرای workflow `Static site validation` برای commit فعلی `e4067bc297f6791945acfeb3a99981a938874bd7` با نتیجه `success` ثبت شده است.
+- [x] آخرین اجرای workflow قبلی `Static site validation` برای commit `e4067bc297f6791945acfeb3a99981a938874bd7` با نتیجه `success` ثبت شده است.
 
 ## 11. موارد باقی‌مانده
 
@@ -172,4 +192,4 @@ selector مستقل شمارهٔ عنصر در `assets/css/main.css` وجود د
 
 ## 12. محدودیت تغییرات
 
-قابلیت شماره‌گذاری عناصر با کمترین تغییر در معماری فعلی پیاده‌سازی شده است. داده‌های CSV، مسیر بارگذاری، rendering فعلی و معماری static client-side حفظ شده‌اند. Backend، Database یا build system جدیدی اضافه نشده است.
+هماهنگ‌سازی ظاهر Header با Footer با کمترین تغییر در معماری فعلی انجام شده است. تغییر فقط در `assets/css/main.css` اعمال شده و داده‌های CSV، مسیر بارگذاری، rendering فعلی، منطق JavaScript و معماری static client-side حفظ شده‌اند. Backend، Database یا build system جدیدی اضافه نشده است.

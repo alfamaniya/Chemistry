@@ -2,7 +2,7 @@
 
 > **تاریخ بازبینی:** 2026-09-27  
 > **Branch:** `main`  
-> **آخرین commit بررسی‌شده:** `e4067bc297f6791945acfeb3a99981a938874bd7`  
+> **آخرین commit بررسی‌شده:** `7848517221e09392cdae1c2dc83099f183ed2f8d`  
 > **وضعیت:** repository، READMEها، HTML، JavaScript، CSS، CSVهای runtime و GitHub Actions بررسی شدند و مستندات با وضعیت واقعی کد همگام شده‌اند.
 
 ## خلاصهٔ معماری
@@ -19,7 +19,7 @@ Browser
 ```
 
 - `index.html` ساختار رابط را فراهم می‌کند.
-- `assets/css/main.css` ظاهر، responsive design، شمارهٔ عناصر و Themeهای جدول را مدیریت می‌کند.
+- `assets/css/main.css` ظاهر، responsive design، شمارهٔ عناصر، ظاهر Header/Footer و Themeهای جدول را مدیریت می‌کند.
 - `assets/js/main.js` bootstrap، ساخت selector و اعمال/نگهداری Theme و background متحرک صفحه را مدیریت می‌کند.
 - `assets/js/main-legacy.js` منطق runtime را نگه می‌دارد: زبان، بارگذاری CSV، ساخت جدول، شماره‌گذاری کارت‌های عناصر و نمایش اطلاعات انتخاب‌شده.
 - داده‌ها مستقیماً با `fetch()` از CSVهای runtime بارگذاری می‌شوند.
@@ -149,12 +149,23 @@ CSS مستقل این قابلیت:
 `assets/css/main.css` مسئول:
 
 - layout اصلی و header/hero/footer؛
+- ظاهر Header هماهنگ با Footer؛
 - جدول ۱۸ گروهی و f-block؛
 - کارت عناصر و `.element-number`؛
 - بخش جزئیات سه‌سطحی؛
 - ۱۵ Theme جدول؛
 - responsive behavior برای موبایل؛
 - پشتیبانی از `prefers-reduced-motion` در قواعد transition/scroll.
+
+### قرارداد ظاهری Header
+
+Header و Footer اکنون از رنگ زمینهٔ مشترک `#182033` استفاده می‌کنند تا در ظاهر سایت یکپارچگی ایجاد شود. برای حفظ خوانایی روی زمینهٔ تیره:
+
+- متن اصلی Header از `#e9ecf5` استفاده می‌کند.
+- متن ثانویه و ناوبری از `#aeb6c8` استفاده می‌کنند.
+- حالت فعال انتخاب زبان با `#3346a8` مشخص می‌شود.
+- خط جداکنندهٔ پایین Header با `#3b455c` با ساختار Footer هماهنگ است.
+- این تغییر فقط در CSS انجام شده و ساختار HTML، منطق JavaScript و responsive behavior تغییر نکرده‌اند.
 
 برای mobile، جدول با حداقل عرض داخلی و horizontal scrolling حفظ می‌شود تا ساختار ۱۸ ستونهٔ جدول خراب نشود.
 
@@ -165,6 +176,7 @@ CSS مستقل این قابلیت:
 - `table-status` با `role="status"` برای اعلام وضعیت استفاده می‌شود.
 - شمارهٔ عنصر، Symbol و Name عناصر جداگانهٔ DOM هستند.
 - RTL/LTR و زبان در runtime تغییر می‌کنند.
+- Header تیره با متن روشن، لینک‌های ناوبری و کنترل زبان را با کنتراست مناسب از Footer هم‌راستا نگه می‌دارد.
 - `prefers-reduced-motion` برای جلوگیری از انیمیشن‌های غیرضروری رعایت شده است.
 
 ## اجرای محلی
@@ -210,6 +222,7 @@ Workflow اصلی در `.github/workflows/webpack.yml` با عنوان `Static s
 - قوانین تکراری level icon حذف شدند.
 - `.element-number` به‌عنوان selector مستقل برای شمارهٔ عناصر حفظ و responsive شد.
 - Themeهای PDF حفظ شدند.
+- Header به رنگ و زبان بصری Footer هماهنگ شد، بدون تغییر ساختار DOM یا منطق runtime.
 
 ### GitHub Actions
 
@@ -227,6 +240,7 @@ Workflow اصلی در `.github/workflows/webpack.yml` با عنوان `Static s
 - تغییرات UI باید فارسی/انگلیسی، RTL/LTR و responsive behavior را حفظ کنند.
 - برای تغییرات غیرمرتبط، معماری موجود نباید دستکاری شود.
 - اگر شماره‌گذاری اشیای عمومی UI در آینده اجرا شود، نباید با `AtomicNumber` عناصر مخلوط شود و باید accessibility/i18n/responsive behavior آن جداگانه بررسی شود.
+- Header و Footer باید در تغییرات آینده از قرارداد رنگی مشترک خود خارج نشوند، مگر با تصمیم طراحی جدید.
 
 ## وضعیت نهایی بازبینی
 
@@ -237,6 +251,8 @@ Workflow اصلی در `.github/workflows/webpack.yml` با عنوان `Static s
 - [x] شماره‌گذاری ۱۱۸ عنصر از `AtomicNumber` تأیید شد.
 - [x] f-block از همان مسیر ساخت کارت عنصر استفاده می‌کند.
 - [x] CSVها برای شماره‌گذاری تغییر غیرضروری نکرده‌اند.
+- [x] Header از نظر رنگ و ظاهر با Footer هماهنگ شد.
+- [x] responsive behavior موجود حفظ شد.
 - [x] workflow validation بررسی شد.
 - [x] آخرین اجرای CI موفق (`success`) مشاهده شد.
 
