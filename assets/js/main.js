@@ -1,11 +1,9 @@
 (() => {
   "use strict";
 
-  // main.js is the single owner of PDF theme selector state and presentation.
-  const legacyScript = document.createElement("script");
-  legacyScript.src = "assets/js/main-legacy.js";
-  legacyScript.defer = false;
-  document.head.appendChild(legacyScript);
+  // Bootstrap the application as an ES module so shared Core modules can be
+  // imported explicitly instead of relying on a dynamically inserted classic script.
+  import("./main-legacy.js").catch(error => console.error("Failed to load application module", error));
 
   // Dynamic orange-red page background. The reduced-motion media query keeps
   // the page static for users who request reduced motion at OS/browser level.
@@ -102,7 +100,6 @@
     const saved = localStorage.getItem("chemistry-pdf-theme");
     const current = forceDefault ? "15" : (themeSelect.value || saved || "15");
     const fragment = document.createDocumentFragment();
-
     themes.forEach(theme => {
       const option = document.createElement("option");
       option.value = theme.id;
@@ -111,7 +108,6 @@
       option.textContent = group ? `${label} (${group})` : label;
       fragment.appendChild(option);
     });
-
     themeSelect.replaceChildren(fragment);
     themeSelect.value = themes.some(theme => theme.id === current) ? current : "15";
     applyTheme(themeSelect.value);
@@ -121,8 +117,6 @@
     if (!themeSelect) return;
     syncThemeSelect(true);
     themeSelect.addEventListener("change", event => applyTheme(event.target.value));
-
-    // Language is the only external state that requires selector relabeling.
     new MutationObserver(() => syncThemeSelect(false)).observe(document.documentElement, {
       attributes: true,
       attributeFilter: ["lang"]
