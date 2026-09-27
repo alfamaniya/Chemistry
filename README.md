@@ -766,3 +766,62 @@ Runtime requirement: HTTP server because CSVs are loaded with fetch()
 CI: GitHub Actions validates files, JS syntax and HTTP smoke tests
 Main rule: Preserve the existing HTML/CSS/JS/CSV architecture unless a real requirement justifies an architectural change.
 ```
+
+## 15. قراردادهای مهم پروژه
+
+### قرارداد شماره ۱: کلید اتصال داده‌ها
+
+AtomicNumber شناسهٔ اصلی اتصال اطلاعات یک عنصر بین منابع داده است.
+
+### قرارداد شماره ۲: نام فارسی
+
+در دادهٔ پایه، NameFa برای نام فارسی استفاده می‌شود.
+
+### قرارداد شماره ۳: مسیرهای نسبی
+
+مسیرهای CSV نسبت به ریشهٔ سایت تعریف شده‌اند:
+
+```
+text
+data/...
+```
+
+اجرای پروژه از یک subdirectory بدون تنظیم مسیرهای جدید ممکن است باعث خطای fetch شود.
+
+---
+
+## 16. قرارداد دوزبانگی و دسته‌بندی داده‌ها
+
+از این نسخه، بررسی متن‌های قابل‌مشاهده و برچسب‌های دسترس‌پذیری با هدف جلوگیری از باقی‌ماندن واژهٔ تک‌زبانه انجام شده است.
+
+### رابط کاربری
+
+- متن‌های کاربرمحور در `translations.fa` و `translations.en` نگهداری می‌شوند.
+- متن‌های ثابت HTML که باید با زبان تغییر کنند از `data-i18n` استفاده می‌کنند.
+- برچسب‌های ARIA قابل‌تغییر از `data-i18n-aria` یا به‌روزرسانی مستقیم در `setLanguage()` استفاده می‌کنند.
+- نام عناصر از `NameFa` در فارسی و `Name` در انگلیسی نمایش داده می‌شود.
+
+### دسته‌بندی‌های علمی
+
+مقادیر خام CSV عمداً انگلیسی باقی می‌مانند تا schema و منطق CSS تغییر نکند؛ اما هنگام نمایش در رابط، دسته‌بندی‌های زیر به‌صورت دوزبانه ترجمه می‌شوند:
+
+- Group / Block: Nonmetal، Noble gas، Alkali metal، Alkaline earth metal، Metalloid، Transition metal، Post-transition metal، Lanthanide، Actinide، Halogen
+- Standard State: Gas، Solid، Liquid، Expected to be a Solid، Expected to be a Gas
+- Data Status: predicted_or_estimated
+- Year Discovered: Ancient
+
+این تفکیک باعث می‌شود دادهٔ منبع و selectorهای CSS دست‌نخورده بمانند، در حالی که کاربر در هر دو زبان مقدار خوانا و متناسب با زبان انتخاب‌شده می‌بیند.
+
+### موارد بررسی‌شده
+
+- نام برند، tagline، navigation، hero، دکمه‌ها، عنوان بخش‌ها و footer
+- برچسب‌های جدول و اطلاعات عنصر
+- ۱۵ عنوان theme
+- وضعیت بارگذاری و خطا
+- نام‌های فارسی/انگلیسی ۱۱۸ عنصر
+- دسته‌بندی‌های گروه/بلوک
+- حالت استاندارد
+- وضعیت داده
+- مقدار Ancient در سال کشف
+- برچسب‌های ARIA برای جدول، f-block و بخش اطلاعات سریع
+
