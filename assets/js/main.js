@@ -32,6 +32,37 @@
   `;
   document.head.appendChild(backgroundStyle);
 
+  // Element selection: exactly two soft flashes (blue, then green), followed
+  // by a stable dark-orange glow. The final state is deliberately independent
+  // of animation fill state so the selected element remains orange afterward.
+  const selectionStyle = document.createElement("style");
+  selectionStyle.textContent = `
+    .element.selected-flash {
+      animation: chemistry-element-selection 2.7s ease-in-out 1 both !important;
+    }
+    @keyframes chemistry-element-selection {
+      0%, 15%, 45%, 75%, 100% {
+        filter: brightness(1);
+        box-shadow: 0 9px 22px rgba(194,65,12,.34);
+      }
+      30% {
+        filter: brightness(1.12);
+        box-shadow: 0 0 0 4px rgba(37,99,235,.28), 0 12px 26px rgba(37,99,235,.48);
+      }
+      60% {
+        filter: brightness(1.12);
+        box-shadow: 0 0 0 4px rgba(22,163,74,.28), 0 12px 26px rgba(22,163,74,.48);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .element.selected-flash {
+        animation: none !important;
+        box-shadow: 0 9px 22px rgba(194,65,12,.34) !important;
+      }
+    }
+  `;
+  document.head.appendChild(selectionStyle);
+
   const themeSelect = document.getElementById("table-theme-select");
   const tableShell = document.querySelector(".table-shell");
 
