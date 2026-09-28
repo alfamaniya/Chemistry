@@ -3,16 +3,23 @@ import { getName, translations } from "../../core/i18n.js";
 export function mountPeriodicTableShell(root) {
   if (!root || root.children.length) return;
   root.innerHTML = `
+    <div class="section-heading">
+      <div>
+        <h2 data-i18n="periodicTitle">جدول تناوبی</h2>
+        <p data-i18n="periodicSubtitle">چیدمان ۱۸ گروهی بر اساس مرجع جدول تناوبی</p>
+      </div>
+    </div>
     <div class="table-theme-control">
-      <label for="table-theme-select" data-i18n="themeSelectLabel">رنگ جدول بر اساس PDF</label>
+      <label for="table-theme-select" data-i18n="themeSelectLabel">دسته‌بندی رنگ جدول</label>
       <select id="table-theme-select" aria-describedby="table-theme-description"></select>
-      <p id="table-theme-description" class="table-theme-description" data-i18n="themeSelectDescription">یکی از ۱۵ جدول تصویری PDF را انتخاب کنید تا رنگ‌های جدول تغییر کند.</p>
+      <p id="table-theme-description" class="table-theme-description" data-i18n="themeSelectDescription">یکی از ۱۴ دسته‌بندی PDF یا حالت «بدون دسته‌بندی» را انتخاب کنید.</p>
     </div>
     <div class="table-shell">
       <div id="periodic-table-grid" class="periodic-grid" aria-label="جدول تناوبی عناصر / Periodic table">
         <div class="loading" data-i18n="loading">در حال بارگذاری عناصر…</div>
       </div>
       <div id="f-block" class="f-block" aria-label="لانتانیدها و اکتینیدها / Lanthanides and Actinides"></div>
+      <div id="table-status" class="table-status" aria-live="polite"></div>
     </div>`;
 }
 
@@ -26,21 +33,95 @@ const positions = new Map([
 ]);
 
 export function mountPeriodicTable({
-  grid = document.getElementById("periodic-table-grid"), fBlock = document.getElementById("f-block"),
-  getLanguage = () => document.documentElement.lang === "en" ? "en" : "fa", onElementSelected = () => {}
+  grid = document.getElementById("periodic-table-grid"),
+  fBlock = document.getElementById("f-block"),
+  status = document.getElementById("table-status"),
+  getLanguage = () => document.documentElement.lang === "en" ? "en" : "fa",
+  onElementSelected = () => {}
 } = {}) {
   let elements = [];
   let selectedAtomicNumber = null;
+
   function createElementCard(element) {
-    const language=getLanguage(), card=document.createElement("button"); card.className="element"; card.type="button"; card.dataset.type=element.GroupBlock||""; card.dataset.atomicNumber=element.AtomicNumber; card.setAttribute("aria-label",getName(element,language)+", "+translations[language].elementDetails+" "+element.AtomicNumber);
-    const number=document.createElement("span"); number.className="element-number"; number.textContent=element.AtomicNumber;
-    const symbol=document.createElement("span"); symbol.className="element-symbol"; symbol.textContent=element.Symbol;
-    const name=document.createElement("span"); name.className="element-name"; name.textContent=getName(element,language); card.append(number,symbol,name);
-    card.addEventListener("click",()=>{selectedAtomicNumber=Number(element.AtomicNumber); onElementSelected(selectedAtomicNumber); document.querySelectorAll(".element.selected, .element.selected-flash").forEach(node=>{node.classList.remove("selected","selected-flash");}); card.classList.add("selected","selected-flash"); card.addEventListener("animationend",()=>card.classList.remove("selected-flash"),{once:true});});
+    const language = getLanguage();
+    const card = document.createElement("button");
+    card.className = "element";
+    card.type = "button";
+    card.dataset.type = element.GroupBlock || "";
+    card.dataset.atomicNumber = element.AtomicNumber;
+    card.setAttribute("aria-label", getName(element, language) + ", " + translations[language].elementDetails + " " + element.AtomicNumber);
+
+    const number = document.createElement("span");
+    number.className = "element-number";
+    number.textContent = element.AtomicNumber;
+    const symbol = document.createElement("span");
+    symbol.className = "element-symbol";
+    symbol.textContent = element.Symbol;
+    const name = document.createElement("span");
+    name.className = "element-name";
+    name.textContent = getName(element, language);
+    card.append(number, symbol, name);
+
+    card.addEventListener("animationend", event => {
+      if (event.animationName === "chemistry-element-selection") card.classList.remove("selected-flash");
+    });
+
+    card.addEventListener("click", () => {
+      selectedAtomicNumber = Number(element.AtomicNumber);
+      document.querySelectorAll(".element.selected, .element.selected-flash").forEach(node => {
+        node.classList.remove("selected", "selected-flash");
+      });
+      card.classList.add("selected", "selected-flash");
+      onElementSelected(selectedAtomicNumber);
+    });
+
     return card;
   }
-  function createFRow(source,start,end){const row=document.createElement("div");row.className="f-row";for(let i=0;i<2;i++){const spacer=document.createElement("span");spacer.className="f-spacer";row.appendChild(spacer);}source.filter(element=>{const number=Number(element.AtomicNumber);return number>=start&&number<=end;}).forEach(element=>row.appendChild(createElementCard(element)));const finalSpacer=document.createElement("span");finalSpacer.className="f-spacer";row.appendChild(finalSpacer);return row;}
-  function render(nextElements=elements){elements=nextElements;grid.innerHTML="";fBlock.innerHTML="";elements.forEach(element=>{const position=positions.get(Number(element.AtomicNumber));if(!position)return;const card=createElementCard(element);if(selectedAtomicNumber===Number(element.AtomicNumber))card.classList.add("selected");card.style.gridColumn=position[1];card.style.gridRow=position[0];grid.appendChild(card);});fBlock.append(createFRow(elements,57,71),createFRow(elements,89,103));}
-  function setSelectedAtomicNumber(atomicNumber){selectedAtomicNumber=atomicNumber===null?null:Number(atomicNumber);}
-  return {render,setSelectedAtomicNumber};
+
+  function createFRow(source, start, end) {
+    const row = document.createElement("div");
+    row.className = "f-row";
+    for (let i = 0; i < 2; i++) {
+      const spacer = document.createElement("span");
+      spacer.className = "f-spacer";
+      row.appendChild(spacer);
+    }
+    source.filter(element => {
+      const number = Number(element.AtomicNumber);
+      return number >= start && number <= end;
+    }).forEach(element => row.appendChild(createElementCard(element)));
+    const finalSpacer = document.createElement("span");
+    finalSpacer.className = "f-spacer";
+    row.appendChild(finalSpacer);
+    return row;
+  }
+
+  function updateStatus() {
+    if (!status) return;
+    const t = translations[getLanguage()];
+    status.textContent = elements.length ? t.elementsLoaded.replace("{count}", String(elements.length)) : t.noElementsLoaded;
+  }
+
+  function render(nextElements = elements) {
+    elements = nextElements;
+    grid.innerHTML = "";
+    fBlock.innerHTML = "";
+    elements.forEach(element => {
+      const position = positions.get(Number(element.AtomicNumber));
+      if (!position) return;
+      const card = createElementCard(element);
+      if (selectedAtomicNumber === Number(element.AtomicNumber)) card.classList.add("selected");
+      card.style.gridColumn = position[1];
+      card.style.gridRow = position[0];
+      grid.appendChild(card);
+    });
+    fBlock.append(createFRow(elements, 57, 71), createFRow(elements, 89, 103));
+    updateStatus();
+  }
+
+  function setSelectedAtomicNumber(atomicNumber) {
+    selectedAtomicNumber = atomicNumber === null ? null : Number(atomicNumber);
+  }
+
+  return { render, setSelectedAtomicNumber };
 }
