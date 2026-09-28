@@ -4,6 +4,8 @@
   z-index: 1000;
   width: 100%;
   box-sizing: border-box;
+  direction: rtl;
+  text-align: right;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -23,4 +25,5 @@
   font-size: 1.25rem;
   font-weight: 700;
   text-decoration: none;
+  text-align: right;
 }
