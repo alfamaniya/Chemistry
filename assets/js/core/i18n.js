@@ -4,9 +4,12 @@ export const translations = {
     navPeriodic: "جدول تناوبی", navLevels: "سطوح آموزشی", navAbout: "درباره",
     heroTitle: "مرجع شیمی و جدول تناوبی", heroText: "یک مسیر روشن برای شناخت عناصر شیمیایی؛ از شناخت بنیادین تا ژرف‌کاوی علمی.",
     heroButton: "مشاهده جدول تناوبی",
+    periodicTitle: "جدول تناوبی", periodicSubtitle: "چیدمان ۱۸ گروهی بر اساس مرجع جدول تناوبی",
+    selectedElementTitle: "اطلاعات عنصر", selectedElementSubtitle: "اطلاعات علمی عنصر انتخاب‌شده در سه سطح آموزشی",
     beginnerTitle: "شناخت بنیادین", professionalTitle: "تحلیل تخصصی", veryAdvancedTitle: "ژرف‌کاوی علمی",
     footerTitle: "مرجع شیمی", footerText: "پروژه‌ای برای دسترسی ساده‌تر به داده‌های عناصر شیمیایی.",
     backTop: "بازگشت به بالا ↑", loading: "در حال بارگذاری عناصر…", elementDetails: "عدد اتمی",
+    elementsLoaded: "{count} عنصر بارگذاری شد.", noElementsLoaded: "هیچ عنصری بارگذاری نشد.",
     loadError: "بارگذاری داده‌ها انجام نشد. صفحه را از طریق یک وب‌سرور محلی اجرا کنید.",
     themeSelectLabel: "دسته‌بندی رنگ جدول", themeSelectDescription: "یکی از ۱۴ دسته‌بندی PDF یا حالت «بدون دسته‌بندی» را انتخاب کنید.",
     selectElement: "یک عنصر را از جدول انتخاب کنید.",
@@ -18,9 +21,11 @@ export const translations = {
     eyebrow: "CHEMISTRY • ELEMENTS", fBlockAria: "Lanthanides and Actinides", brand: "Chemistry Reference", brandTagline: "Simple, accurate, step-by-step learning",
     navPeriodic: "Periodic Table", navLevels: "Learning Levels", navAbout: "About", heroTitle: "Chemistry Reference & Periodic Table",
     heroText: "A clear path to understanding chemical elements — from foundational knowledge to deep scientific exploration.", heroButton: "View Periodic Table",
+    periodicTitle: "Periodic Table", periodicSubtitle: "18-group layout based on the standard periodic table",
+    selectedElementTitle: "Element Information", selectedElementSubtitle: "Scientific information for the selected element across three learning levels",
     beginnerTitle: "Foundational Insight", professionalTitle: "Specialized Analysis", veryAdvancedTitle: "Scientific Deep Dive",
     footerTitle: "Chemistry Reference", footerText: "A project for easier access to chemical element data.", backTop: "Back to top ↑", loading: "Loading elements…",
-    elementDetails: "Atomic number",
+    elementDetails: "Atomic number", elementsLoaded: "{count} elements loaded.", noElementsLoaded: "No elements were loaded.",
     loadError: "The data could not be loaded. Please run the page through a local web server.", themeSelectLabel: "Table Color Category",
     themeSelectDescription: "Choose one of the 14 PDF categories or the “Uncategorized” default mode.", selectElement: "Select an element from the table.", atomicNumber: "Atomic number", symbol: "Symbol", name: "Name", atomicMass: "Atomic mass",
     groupBlock: "Group / block", standardState: "Standard state", electronConfiguration: "Electron configuration", oxidationStates: "Oxidation states", electronegativity: "Electronegativity",
@@ -56,10 +61,7 @@ export function setLanguage(language, { fBlock, languageButtons, onLanguageChang
     const key = node.dataset.i18n;
     if (t[key]) node.textContent = t[key];
   });
-  document.querySelectorAll("[data-i18n-aria]").forEach(node => {
-    const key = node.dataset.i18nAria;
-    if (t[key]) node.setAttribute("aria-label", t[key]);
-  });
+
   if (fBlock) fBlock.setAttribute("aria-label", t.fBlockAria);
 
   if (languageButtons) languageButtons.forEach(button => {
