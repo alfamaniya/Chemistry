@@ -1,0 +1,2753 @@
+{
+  "Record": {
+    "RecordType": "AtomicNumber",
+    "RecordNumber": 13,
+    "RecordTitle": "Aluminum",
+    "Section": [
+      {
+        "TOCHeading": "Identifiers",
+        "Description": "Identifiers for this element, including element name, element symbol, InChI string, and InChIKey.",
+        "Section": [
+          {
+            "TOCHeading": "Element Name",
+            "Description": "The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Aluminum"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Aluminium"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Symbol",
+            "Description": "Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Al"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Al"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChI",
+            "Description": "The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChI",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "InChI=1S/Al"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChIKey",
+            "Description": "An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChIKey",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "XAGFODPZIPBFFR-UHFFFAOYSA-N"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Properties",
+        "Description": "Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on.",
+        "Section": [
+          {
+            "TOCHeading": "Atomic Weight",
+            "Description": "Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u).",
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "26.981 5384(3)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "26.9815385"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "26.98"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "26.9815385(7)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Configuration",
+            "Description": "The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result.",
+            "URL": "https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Ne]3s23p1",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Radius",
+            "Description": "The atomic radius of a chemical element is a measure of the size of its atom, usually, the distance from the center of the nucleus to the outermost isolated electron.  Because an atom does not have a discrete boundary, there are various non-equivalent definitions of atomic radius, such as Van der Waals radius and covalent radius.",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Name": "Van der Waals Atomic Radius",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "184 pm (Van der Waals)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Empirical Atomic Radius",
+                "Reference": [
+                  "J.C. Slater, J Chem Phys, 1964, 41(10), 3199-3205. DOI:10.1063/1.1725697"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "J.C. Slater, J Chem Phys, 1964, 41(10), 3199-3205. DOI:10.1063/1.1725697"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    125
+                  ],
+                  "Unit": "pm (Empirical)"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Covalent Atomic Radius",
+                "Reference": [
+                  "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "121(4) pm (Covalent)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Oxidation States",
+            "Description": "The oxidation state(s) that this element commonly has in a compound.  The oxidation state of an atom is defined as the hypothetical charge that would be held by that atom if all of its bonds to other atoms were completely ionic in nature. For example, the oxidation state of carbon in CO2 would be +4 since the hypothetical charge held by the carbon atom if both of the carbon-oxygen double bonds were completely ionic would be equal to +4 (each oxygen atom would hold a charge of -2 since oxygen is more electronegative than carbon).",
+            "URL": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/20%3A_Electrochemistry/20.01%3A_Oxidation_States_and_Redox_Reactions",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "+3"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "+3, +2, +1, -1, -2 ​(an amphoteric oxide)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ground Level",
+            "Description": "Also called ground-state level. The ground state electron configuration is the arrangement of electrons around the nucleus of an atom with lower energy levels.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2P°1/2",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 3,
+                          "Length": 3,
+                          "Type": "Subscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ionization Energy",
+            "Description": "Ionization energy, also called ionization potential, is the amount of energy required to remove an electron from an isolated atom or molecule.",
+            "URL": "https://www.britannica.com/science/ionization-energy",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "5.986 eV"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Reference": [
+                  "Wavelength and Energy Level Classifications for the Spectra of Aluminum (Al I through Al XIII), V. Kaufman and W. C. Martin, J. Phys. Chem. Ref. Data 20, 775–858 (1991) DOI:10.1063/1.555895",
+                  "Energy Levels of Atomic Aluminum with Hyperfine Structure, E. S. Chang, J. Phys. Chem. Ref. Data 19, 119–125 (1990)"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Wavelength and Energy Level Classifications for the Spectra of Aluminum (Al I through Al XIII), V. Kaufman and W. C. Martin, J. Phys. Chem. Ref. Data 20, 775–858 (1991) DOI:10.1063/1.555895"
+                  },
+                  {
+                    "Citation": "Energy Levels of Atomic Aluminum with Hyperfine Structure, E. S. Chang, J. Phys. Chem. Ref. Data 19, 119–125 (1990)"
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "5.985769 ± 0.000003 eV"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electronegativity",
+            "Description": "Electronegativity is a measure of the tendency of an atom to attract a bonding pair of electrons.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electronegativity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Name": "Pauling Scale Electronegativity",
+                "Reference": [
+                  "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    1.61
+                  ],
+                  "Unit": "(Pauling Scale)"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Allen Scale Electronegativity",
+                "Reference": [
+                  "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003",
+                  "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e",
+                  "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    1.613
+                  ],
+                  "Unit": "(Allen Scale)"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Affinity",
+            "Description": "Electron affinity refers to the energy released when an additional electron is attached to a neutral atom to form a singly charged negative ion.  Alternatively, it can also be defined as the energy required to detach an electron from the singly charged negative ion.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electron_Affinity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    0.441
+                  ],
+                  "Unit": "eV"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    0.2
+                  ],
+                  "Unit": "eV"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Spectra",
+            "Description": "The spectrum of the electromagnetic radiation emitted or absorbed by an electron during transitions between different energy levels within an atom.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/lines_hold.pl?el=Al",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Lines Holdings"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/levels_hold.pl?el=Al",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Levels Holdings"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Physical Description",
+            "Description": "The appearance or features of this element, including color, odor, state, taste and more in general.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Solid"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Classification",
+            "Description": "Classification according to the element's chemical and physical properties, and location within the periodic table.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Metal"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Period Number",
+            "Description": "The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "3"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Group Number",
+            "Description": "Element group refers to a set of chemical elements in the same vertical column of the periodic table",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "13"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Density",
+            "Description": "This section provides information on the density of an element. It is the mass of a unit volume of the element and commonly expressed in units of kg/m3 or g/cm3.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Map%3A_Fundamentals_of_General_Organic_and_Biological_Chemistry_(McMurry_et_al.)/01%3A_Matter_and_Measurements/1.12%3A_Density_and_Specific_Gravity",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2.70 grams per cubic centimeter"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Melting Point",
+            "Description": "This section provides the melting point and/or freezing point. The melting point is the temperature at which a substance changes state from solid to liquid at atmospheric pressure. When considered as the temperature of the reverse change (from liquid to solid), it is referred to as the freezing point.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.01%3A_Melting_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "933.437 K (660.323°C or 1220.581°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "660.32°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Boiling Point",
+            "Description": "The temperature at which this element changes state from liquid to gas at a given atmospheric pressure.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.02%3A_Boiling_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2792 K (2519°C or 4566°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2470°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Crustal Abundance",
+            "Description": "The estimated element abundance in the earth's crust.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "8.23×104 milligrams per kilogram",
+                      "Markup": [
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Oceanic Abundance",
+            "Description": "The estimated element abundance in the earth's oceans.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2×10-3 milligrams per liter",
+                      "Markup": [
+                        {
+                          "Start": 4,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "History",
+        "Description": "The history of the discovery and use of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 3,
+            "Name": "History",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The name derives from the Latin, alum and alumen for \"stringent\" because the early Romans called any substance with a stringent taste alum. The element was known in prehistoric times. In 1825, the Danish physicist, Hans Christian Oersted, isolated impure aluminium. The pure metal was first isolated by the German chemist Friedrich Wöhler in 1827.",
+                  "Markup": [
+                    {
+                      "Start": 33,
+                      "Length": 4,
+                      "Type": "Italics"
+                    },
+                    {
+                      "Start": 42,
+                      "Length": 6,
+                      "Type": "Italics"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Although aluminum is the most abundant metal in the earth's crust, it is never found free in nature. All of the earth's aluminum has combined with other elements to form compounds. Two of the most common compounds are alum, such as potassium aluminum sulfate (KAl(SO4)2·12H2O), and aluminum oxide (Al2O3). About 8.2% of the earth's crust is composed of aluminum. Scientists suspected than an unknown metal existed in alum as early as 1787, but they did not have a way to extract it until 1825. Hans Christian Oersted, a Danish chemist, was the first to produce tiny amounts of aluminum. Two years later, Friedrich Wöhler, a German chemist, developed a different way to obtain aluminum. By 1845, he was able to produce samples large enough to determine some of aluminum's basic properties. Wöhler's method was improved in 1854 by Henri Étienne Sainte-Claire Deville, a French chemist. Deville's process allowed for the commercial production of aluminum. As a result, the price of aluminum dropped from around $1200 per kilogram in 1852 to around $40 per kilogram in 1859. Unfortunately, aluminum remained too expensive to be widely used.",
+                  "Markup": [
+                    {
+                      "Start": 266,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 268,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 273,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 300,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 302,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "From the Latin word alumen, alum. The ancient Greeks and Romans used alum as an astringent and as a mordant in dyeing. In 1761 de Morveau proposed the name alumine for the base in alum, and Lavoisier, in 1787, thought this to be the oxide of a still undiscovered metal."
+                },
+                {
+                  "String": "Friedrich Wohler is generally credited with having isolated the metal in 1827, although an impure form was prepared by Oersted two years earlier. In 1807, Davy proposed the name aluminium for the metal, undiscovered at that time, and later agreed to change it to aluminum. Shortly thereafter, the name aluminum was adopted to conform with the \"ium\" ending of most elements."
+                },
+                {
+                  "String": "Aluminium was also the accepted spelling in the U.S. until 1925, at which time the American Chemical Society decided to use the name aluminum thereafter in their publications. See the Wikipedia entry on Aluminium for additional discussion on the spelling of this element."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Historical Atomic Weights",
+            "Description": "This section provides the historical atomic weights. The atomic weight shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Atomic Weight (uncertainty) [u]",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2017"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "2005"
+                    },
+                    {
+                      "String": "1995"
+                    },
+                    {
+                      "String": "1985"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1961"
+                    },
+                    {
+                      "String": "1951"
+                    },
+                    {
+                      "String": "1925"
+                    },
+                    {
+                      "String": "1922"
+                    },
+                    {
+                      "String": "1902"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "26.981 5384(3)"
+                    },
+                    {
+                      "String": "26.981 5385(7)"
+                    },
+                    {
+                      "String": "26.981 5386(8)"
+                    },
+                    {
+                      "String": "26.981 538(2)"
+                    },
+                    {
+                      "String": "26.981 539(5)"
+                    },
+                    {
+                      "String": "26.981 54(1)"
+                    },
+                    {
+                      "String": "28.9815(1)"
+                    },
+                    {
+                      "String": "26.9815"
+                    },
+                    {
+                      "String": "26.98"
+                    },
+                    {
+                      "String": "26.97"
+                    },
+                    {
+                      "String": "27.0"
+                    },
+                    {
+                      "String": "27.1"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1515/pac-2019-0603",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2019-0603"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1515/pac-2015-0305",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0305"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac200678112051",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac200678112051"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199668122339",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199668122339"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198658121677",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198658121677"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197230030637",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197230030637"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197021010091",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197021010091"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja00881a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja00881a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/JR9530000001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/JR9530000001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/CT9252700913",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/CT9252700913"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja01441a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja01441a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1007/BF01370337",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 22,
+                          "URL": "https://doi.org/10.1007/BF01370337"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Historical Isotopic Abundances",
+            "Description": "This section provides the historical isotopic abundance information. The abundance value shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 4,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Isotope",
+                    "Abundance (uncertainty)",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1975"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "27Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Description",
+        "Description": "A short description of this element, provided by authoritative sources.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Pure aluminum, a silvery-white metal, possesses many desirable characteristics. It is light, it is nonmagnetic and nonsparking, stands second among metals in the scale of malleability, and sixth in ductility."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Uses",
+        "Description": "Uses of this element in industry and other fields.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Two important developments in the 1880s greatly increased the availability of aluminum. The first was the invention of a new process for obtaining aluminum from aluminum oxide. Charles Martin Hall, an American chemist, and Paul L. T. Héroult, a French chemist, each invented this process independently in 1886. The second was the invention of a new process that could cheaply obtain aluminum oxide from bauxite. Bauxite is an ore that contains a large amount of aluminum hydroxide (Al2O3·3H2O), along with other compounds. Karl Joseph Bayer, an Austrian chemist, developed this process in 1888. The Hall-Héroult and Bayer processes are still used today to produce nearly all of the world's aluminum.",
+                  "Markup": [
+                    {
+                      "Start": 484,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 486,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 490,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                },
+                {
+                  "String": "With an easy way to extract aluminum from aluminum oxide and an easy way to extract large amounts of aluminum oxide from bauxite, the era of inexpensive aluminum had begun. In 1888, Hall formed the Pittsburgh Reduction Company, which is now known as the Aluminum Company of America, or Alcoa. When it opened, his company could produce about 25 kilograms of aluminum a day. By 1909, his company was producing about 41,000 kilograms of aluminum a day. As a result of this huge increase of supply, the price of aluminum fell rapidly to about $0.60 per kilogram."
+                },
+                {
+                  "String": "Today, aluminum and aluminum alloys are used in a wide variety of products: cans, foils and kitchen utensils, as well as parts of airplanes, rockets and other items that require a strong, light material. Although it doesn't conduct electricity as well as copper, it is used in electrical transmission lines because of its light weight. It can be deposited on the surface of glass to make mirrors, where a thin layer of aluminum oxide quickly forms that acts as a protective coating. Aluminum oxide is also used to make synthetic rubies and sapphires for lasers."
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "It is extensively used for kitchen utensils, outside building decoration, and in thousands of industrial applications where a strong, light, easily constructed material is needed."
+                },
+                {
+                  "String": "Although its electrical conductivity is only about 60% that of copper, it is used in electrical transmission lines because of its light weight. Pure aluminum is soft and lacks strength, but alloyed with small amounts of copper, magnesium, silicon, manganese, or other elements impart a variety of useful properties."
+                },
+                {
+                  "String": "These alloys are of vital importance in the construction of modern aircraft and rockets. Aluminum, evaporated in a vacuum, forms a highly reflective coating for both visible light and radiant heat. These coatings soon form a thin layer of the protective oxide and do not deteriorate as do silver coatings. They are used to coat telescope mirrors and to make decorative paper, packages, and toys."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Sources",
+        "Description": "Sources of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The method of obtaining aluminum metal by the electrolysis of alumina dissolved in cryolite was discovered in 1886 by Hall in the U.S. and at about the same time by Heroult in France. Cryolite, a natural ore found in Greenland, is no longer widely used in commercial production, but has been replaced by an artificial mixture of sodium, aluminum, and calcium fluorides."
+                },
+                {
+                  "String": "Aluminum can now be produced from clay, but the process is not economically feasible at present. Aluminum is the most abundant metal to be found in the earth's crust (8.1%), but is never found free in nature. In addition to the minerals mentioned above, it is also found in granite and in many other common minerals."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Compounds",
+        "Description": "Compound records related to this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The compounds of greatest importance are aluminum oxide, the sulfate, and the soluble sulfate with potassium (alum). The oxide, alumina, occurs naturally as ruby (Al2O3), sapphire, corundum, and emery, and is used in glassmaking and refractories. Synthetic ruby and sapphire are used in lasers for producing coherent light.",
+                  "Markup": [
+                    {
+                      "Start": 165,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 167,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 8,
+            "Name": "Compounds",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=Aluminum",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "See more information at the Aluminum compound page."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Element Forms",
+            "Description": "Other forms of this element, including ions, isotopes, etc.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "CID",
+                    "Name",
+                    "Formula",
+                    "SMILES",
+                    "Molecular Weight"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 8,
+                "Name": "CID",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "5359268",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/5359268"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "104727",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/104727"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6335837",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6335837"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6337560",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6337560"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "11542767",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/11542767"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "16048637",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/16048637"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "156022695",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/156022695"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "aluminum"
+                    },
+                    {
+                      "String": "aluminum(3+)"
+                    },
+                    {
+                      "String": "aluminum-26"
+                    },
+                    {
+                      "String": "aluminum-29"
+                    },
+                    {
+                      "String": "aluminum-27"
+                    },
+                    {
+                      "String": "aluminum-28"
+                    },
+                    {
+                      "String": "aluminum-27(3+)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Formula",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Al"
+                    },
+                    {
+                      "String": "Al+3"
+                    },
+                    {
+                      "String": "Al"
+                    },
+                    {
+                      "String": "Al"
+                    },
+                    {
+                      "String": "Al"
+                    },
+                    {
+                      "String": "Al"
+                    },
+                    {
+                      "String": "Al+3"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "SMILES",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Al]"
+                    },
+                    {
+                      "String": "[Al+3]"
+                    },
+                    {
+                      "String": "[26Al]"
+                    },
+                    {
+                      "String": "[29Al]"
+                    },
+                    {
+                      "String": "[27Al]"
+                    },
+                    {
+                      "String": "[28Al]"
+                    },
+                    {
+                      "String": "[27Al+3]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Molecular Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "26.981538"
+                    },
+                    {
+                      "String": "26.981538"
+                    },
+                    {
+                      "String": "25.9868919"
+                    },
+                    {
+                      "String": "28.980453"
+                    },
+                    {
+                      "String": "26.9815384"
+                    },
+                    {
+                      "String": "27.9819100"
+                    },
+                    {
+                      "String": "26.9815384"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Isotopes",
+        "Description": "Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.",
+        "URL": "https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Name": "Stable Isotope Count",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "1"
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Isotopes in Biology",
+            "Description": "Information on the use of this element's isotopes in biology.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[117]  C. Steinhausen, G. Kislinger, C. Winklhofer, E. Beck, C. Hohl, E. Nolte, T. H. Ittel, M. J. Alvarez-Brückmann. Food Chem. Toxicol.42, 363 (2004).",
+                  "[118]  B. Kleja, W. Standring, D. H. Oughton, J. P. Gustafsson, K. Fifield, A. R. Fraser. Geochim. Cosmochim. Acta.69, 5263 (2005)."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[117]  C. Steinhausen, G. Kislinger, C. Winklhofer, E. Beck, C. Hohl, E. Nolte, T. H. Ittel, M. J. Alvarez-Brückmann. Food Chem. Toxicol.42, 363 (2004)."
+                  },
+                  {
+                    "Citation": "[118]  B. Kleja, W. Standring, D. H. Oughton, J. P. Gustafsson, K. Fifield, A. R. Fraser. Geochim. Cosmochim. Acta.69, 5263 (2005)."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "26Al is a radioactive isotope (half-life of 7.1×105 years) that can be detected at the ultra-trace level (attogram range; 10−18 g levels) using accelerator mass spectrometry. 26Al is used as a tracer to study the uptake, distribution, and retention of aluminium in plants, animals, and humans under different physiological conditions [117], [118].",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 50,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 124,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 175,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes in Geochronology",
+            "Description": "Information on the use of this element's isotopes in geochronology.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[119]  United States Geological Survey. Resources on Isotopes-Periodic Table-Aluminum, United States Geological Survey (2014), Feb. 24; http://wwwrcamnl.wr.usgs.gov/isoig/period/al_iig.html.",
+                  "[120]  D. E. Granger. Geol. Soc. Spec. Pap.415, 1 (2006).",
+                  "[121]  K. K. Nichols, P. R. Bierman, R. L. Hooke, E. M. Clapp, M. Caffee. Geomorphology45, 105 (2002).",
+                  "[122]  D. Lal. Annu. Rev. Earth Planet. Sci.16, 355 (1988)."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[119]  United States Geological Survey. Resources on Isotopes-Periodic Table-Aluminum, United States Geological Survey (2014), Feb. 24; http://wwwrcamnl.wr.usgs.gov/isoig/period/al_iig.html."
+                  },
+                  {
+                    "Citation": "[120]  D. E. Granger. Geol. Soc. Spec. Pap.415, 1 (2006)."
+                  },
+                  {
+                    "Citation": "[121]  K. K. Nichols, P. R. Bierman, R. L. Hooke, E. M. Clapp, M. Caffee. Geomorphology45, 105 (2002)."
+                  },
+                  {
+                    "Citation": "[122]  D. Lal. Annu. Rev. Earth Planet. Sci.16, 355 (1988)."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "26Al is produced from spallation reactions of protons, produced by cosmic rays, on argon. 26Al has been used for dating geological samples, such as marine sediments, manganese nodules, rocks, and meteorites [119], [120]. The abundances of 26Al to 10Be have been used to study erosion and transport of soil and sediments on a thousand- to million-year time scale, because production rates of 26Al to 10Be are greatest at the surface and decrease exponentially with depth (Fig. IUPAC.13.1) [121], [122].",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 90,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 239,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 247,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 391,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 399,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Intense cosmic-ray bombardment in space produces 26Al in meteorites and other bodies, such as the Moon. After a meteorite falls to Earth, 26Al production ceases due to atmospheric shielding; the decay of 26Al to 26Mg has been used to determine the terrestrial age of a meteorite (i.e. the time elapsed since the meteorite fell to Earth) [119].",
+                      "Markup": [
+                        {
+                          "Start": 49,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 138,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 204,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 212,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_025.jpg",
+                          "Type": "Image",
+                          "Size": "709x693",
+                          "Caption": "Fig. IUPAC.13.1: ²⁶Al and ¹⁰Be content in forty sediment samples from eastern Mojave Desert, California (modified from [121]). These results enabled investigators to determine that sediment moves down the piedmont in an active transport layer, which is 20 to 30 cm thick. "
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotope Mass and Abundance",
+            "Description": "Atomic mass and abundance (composition) information for a given isotope/nuclide. The number in the parenthesis refers to an uncertainty when exist. The unit of atomic weight is the unified atomic mass unit (u) or dalton (Da). ",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Isotope",
+                    "Atomic Mass (uncertainty) [u]",
+                    "Abundance (uncertainty)"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": " 27Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Mass (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "26.981 5384(3)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "27Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Atomic Mass (uncertainty) [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "26.98153853(11)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Mass, Half Life, and Decay",
+            "Description": "Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Nuclide",
+                    "Atomic Mass and Uncertainty [u]",
+                    "Half Life and Uncertainty",
+                    "Discovery Year",
+                    "Decay Modes, Intensities and Uncertainties [%]"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 2,
+                "Name": "Nuclide",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "21Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "22Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "23Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "24Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "24Alm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "25Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "26Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "26Alm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "27Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "28Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "29Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "30Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "31Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "32Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "32Alm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "33Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "34Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "34Alm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 4,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "35Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "36Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "37Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "38Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "39Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "40Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "41Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "42Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "43Al",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Atomic Mass and Uncertainty [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "21.029082 ± 0.000644 [Estimated]"
+                    },
+                    {
+                      "String": "22.019540 ± 0.00043 [Estimated]"
+                    },
+                    {
+                      "String": "23.007244351 ± 0.00000037"
+                    },
+                    {
+                      "String": "23.999947598 ± 0.000000244"
+                    },
+                    {
+                      "String": "23.999947598 ± 0.000000244"
+                    },
+                    {
+                      "String": "24.990428308 ± 0.000000069"
+                    },
+                    {
+                      "String": "25.986891876 ± 0.000000071"
+                    },
+                    {
+                      "String": "25.986891876 ± 0.000000071"
+                    },
+                    {
+                      "String": "26.981538408 ± 0.00000005"
+                    },
+                    {
+                      "String": "27.981910009 ± 0.000000052"
+                    },
+                    {
+                      "String": "28.980453164 ± 0.00000037"
+                    },
+                    {
+                      "String": "29.982969171 ± 0.000002077"
+                    },
+                    {
+                      "String": "30.983949754 ± 0.0000024"
+                    },
+                    {
+                      "String": "31.988084338 ± 0.0000077"
+                    },
+                    {
+                      "String": "31.988084338 ± 0.0000077"
+                    },
+                    {
+                      "String": "32.990877685 ± 0.0000075"
+                    },
+                    {
+                      "String": "33.996781924 ± 0.000002259"
+                    },
+                    {
+                      "String": "33.996781924 ± 0.000002259"
+                    },
+                    {
+                      "String": "34.999759816 ± 0.0000079"
+                    },
+                    {
+                      "String": "36.006388000 ± 0.0001605"
+                    },
+                    {
+                      "String": "37.010531000 ± 0.0001935"
+                    },
+                    {
+                      "String": "38.017681 ± 0.000161 [Estimated]"
+                    },
+                    {
+                      "String": "39.023070 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "40.030940 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "41.037134 ± 0.000429 [Estimated]"
+                    },
+                    {
+                      "String": "42.045078 ± 0.000537 [Estimated]"
+                    },
+                    {
+                      "String": "43.051820 ± 0.000644 [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Half Life and Uncertainty",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Not-specified <35ns"
+                    },
+                    {
+                      "String": "91.1 ms ± 0.5"
+                    },
+                    {
+                      "String": "446 ms ± 6"
+                    },
+                    {
+                      "String": "2.053 s ± 0.004"
+                    },
+                    {
+                      "String": "130 ms ± 3"
+                    },
+                    {
+                      "String": "7.1666 s ± 0.0023"
+                    },
+                    {
+                      "String": "717 ky ± 24"
+                    },
+                    {
+                      "String": "6346.0 ms ± 0.5"
+                    },
+                    {
+                      "String": "Stable"
+                    },
+                    {
+                      "String": "2.245 m ± 0.005"
+                    },
+                    {
+                      "String": "6.56 m ± 0.06"
+                    },
+                    {
+                      "String": "3.62 s ± 0.06"
+                    },
+                    {
+                      "String": "644 ms ± 25"
+                    },
+                    {
+                      "String": "32.6 ms ± 0.5"
+                    },
+                    {
+                      "String": "200 ns ± 20"
+                    },
+                    {
+                      "String": "41.46 ms ± 0.09"
+                    },
+                    {
+                      "String": "53.73 ms ± 0.13"
+                    },
+                    {
+                      "String": "22.1 ms ± 0.2"
+                    },
+                    {
+                      "String": "38.16 ms ± 0.21"
+                    },
+                    {
+                      "String": "90 ms ± 40"
+                    },
+                    {
+                      "String": "11.4 ms ± 0.3"
+                    },
+                    {
+                      "String": "9.0 ms ± 0.7"
+                    },
+                    {
+                      "String": "7.6 ms ± 1.6"
+                    },
+                    {
+                      "String": "10 ms >260ns [Estimated]"
+                    },
+                    {
+                      "String": "6 ms >260ns [Estimated]"
+                    },
+                    {
+                      "String": "3 ms >170ns [Estimated]"
+                    },
+                    {
+                      "String": "4 ms >170ns [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Discovery Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": "1982"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1953"
+                    },
+                    {
+                      "String": "1968"
+                    },
+                    {
+                      "String": "1953"
+                    },
+                    {
+                      "String": "1934"
+                    },
+                    {
+                      "String": "1934"
+                    },
+                    {
+                      "String": "1922"
+                    },
+                    {
+                      "String": "1934"
+                    },
+                    {
+                      "String": "1939"
+                    },
+                    {
+                      "String": "1961"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1996"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1977"
+                    },
+                    {
+                      "String": "2012"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1996"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "2007"
+                    },
+                    {
+                      "String": "2007"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Decay Modes, Intensities and Uncertainties [%]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "p ?"
+                    },
+                    {
+                      "String": "β+=100%; β+p=55±0.3%; β+2p=1.10±1.1%; β+α=0.038±1.7%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 39,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%; β+p=1.22±0.5%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%; β+α=0.035±0.6%; β+p=0.0016±0.3%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 26,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=82.5±3%; β+=17.5±3%; β+α=0.028±0.6%",
+                      "Markup": [
+                        {
+                          "Start": 13,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 25,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IS=100%"
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n<1.6%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=0.7±0.5%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β-=100%; β-n=8.5±0.7%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=26±0.4%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-≈100%; β-n=11±0.4%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=35.8±1.7%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 25,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n<31%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 19,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=52±0.5%; β-2n>1%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=84±1.9%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=97±2.2%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 1,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      },
+      {
+        "ReferenceNumber": 2,
+        "SourceName": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+        "SourceID": "e13",
+        "Name": "Al",
+        "Description": "The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.",
+        "URL": "https://www-nds.iaea.org/amdc/",
+        "LicenseURL": "https://www-nds.iaea.org/disclaimer.html",
+        "ANID": 6590240
+      },
+      {
+        "ReferenceNumber": 3,
+        "SourceName": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+        "SourceID": "a13",
+        "Name": "Aluminium",
+        "Description": "Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.",
+        "URL": "https://www.ciaaw.org/aluminium.htm",
+        "LicenseURL": "http://www.ciaaw.org/bylaws.htm",
+        "ANID": 2292394
+      },
+      {
+        "ReferenceNumber": 5,
+        "SourceName": "Jefferson Lab, U.S. Department of Energy",
+        "SourceID": "jlab13",
+        "Name": "Aluminum",
+        "Description": "Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/",
+        "URL": "https://education.jlab.org/itselemental/ele013.html",
+        "LicenseNote": "Please see citation and linking information: https://education.jlab.org/faq/index.html",
+        "LicenseURL": "https://www.jlab.org/privacy-and-security-notice",
+        "ANID": 507075
+      },
+      {
+        "ReferenceNumber": 6,
+        "SourceName": "Los Alamos National Laboratory, U.S. Department of Energy",
+        "SourceID": "lanl13",
+        "Name": "Aluminum",
+        "Description": "The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name.",
+        "URL": "https://periodic.lanl.gov/13.shtml",
+        "ANID": 507193
+      },
+      {
+        "ReferenceNumber": 7,
+        "SourceName": "NIST Physical Measurement Laboratory",
+        "SourceID": "e13",
+        "Name": "Aluminum",
+        "Description": "The periodic table contains NIST's critically-evaluated data on atomic properties of the elements. The provenance data that include data for atomic spectroscopy, X-ray and gamma ray, radiation dosimetry, nuclear physics, and condensed matter physics may be found from the link under the source name. Ref: https://www.nist.gov/pml/atomic-spectra-database",
+        "URL": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=13",
+        "LicenseURL": "https://www.nist.gov/pml/database-disclaimer",
+        "ANID": 2292630
+      },
+      {
+        "ReferenceNumber": 4,
+        "SourceName": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+        "SourceID": "p13",
+        "Description": "The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703.",
+        "URL": "https://doi.org/10.1515/pac-2015-0703",
+        "LicenseNote": "Copyright (c) 2020 International Union of Pure and Applied Chemistry.\u000A\u000AThe International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated.",
+        "LicenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "ANID": 13296418
+      },
+      {
+        "ReferenceNumber": 9,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ep_13",
+        "Name": "Aluminum",
+        "Description": "The element property data was retrieved from publications.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24834062
+      },
+      {
+        "ReferenceNumber": 8,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ef_13",
+        "Name": "Aluminum",
+        "Description": "This section provides all form of data related to element Aluminum.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24833941
+      }
+    ]
+  }
+}

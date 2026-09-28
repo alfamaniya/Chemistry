@@ -1,0 +1,4901 @@
+{
+  "Record": {
+    "RecordType": "AtomicNumber",
+    "RecordNumber": 76,
+    "RecordTitle": "Osmium",
+    "Section": [
+      {
+        "TOCHeading": "Identifiers",
+        "Description": "Identifiers for this element, including element name, element symbol, InChI string, and InChIKey.",
+        "Section": [
+          {
+            "TOCHeading": "Element Name",
+            "Description": "The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Osmium"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Osmium"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Symbol",
+            "Description": "Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Os"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Os"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChI",
+            "Description": "The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChI",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "InChI=1S/Os"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChIKey",
+            "Description": "An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChIKey",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "SYQBFIAQOQZEGI-UHFFFAOYSA-N"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Properties",
+        "Description": "Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on.",
+        "Section": [
+          {
+            "TOCHeading": "Atomic Weight",
+            "Description": "Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u).",
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "190.23(3)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "190.23"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "190.2"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "190.23(3)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Configuration",
+            "Description": "The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result.",
+            "URL": "https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Xe]6s24f145d6",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 9,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 13,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Radius",
+            "Description": "The atomic radius of a chemical element is a measure of the size of its atom, usually, the distance from the center of the nucleus to the outermost isolated electron.  Because an atom does not have a discrete boundary, there are various non-equivalent definitions of atomic radius, such as Van der Waals radius and covalent radius.",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Name": "Van der Waals Atomic Radius",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "216 pm (Van der Waals)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Empirical Atomic Radius",
+                "Reference": [
+                  "J.C. Slater, J Chem Phys, 1964, 41(10), 3199-3205. DOI:10.1063/1.1725697"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "J.C. Slater, J Chem Phys, 1964, 41(10), 3199-3205. DOI:10.1063/1.1725697"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    130
+                  ],
+                  "Unit": "pm (Empirical)"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Covalent Atomic Radius",
+                "Reference": [
+                  "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "144(4) pm (Covalent)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Oxidation States",
+            "Description": "The oxidation state(s) that this element commonly has in a compound.  The oxidation state of an atom is defined as the hypothetical charge that would be held by that atom if all of its bonds to other atoms were completely ionic in nature. For example, the oxidation state of carbon in CO2 would be +4 since the hypothetical charge held by the carbon atom if both of the carbon-oxygen double bonds were completely ionic would be equal to +4 (each oxygen atom would hold a charge of -2 since oxygen is more electronegative than carbon).",
+            "URL": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/20%3A_Electrochemistry/20.01%3A_Oxidation_States_and_Redox_Reactions",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "+4, +3"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2, -4 ​(a mildly acidic oxide)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ground Level",
+            "Description": "Also called ground-state level. The ground state electron configuration is the arrangement of electrons around the nucleus of an atom with lower energy levels.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "5D4",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 2,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ionization Energy",
+            "Description": "Ionization energy, also called ionization potential, is the amount of energy required to remove an electron from an isolated atom or molecule.",
+            "URL": "https://www.britannica.com/science/ionization-energy",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "8.7 eV"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Reference": [
+                  "First Ionization Potentials of Osmium and Iridium Determined by Mass-Analyzed Double-Resonance Field-Ionization Spectroscopy, P. Colarusso, M.-A. Lebeault-Dorget, and B. Simard, Phys. Rev. A 55, 1526–1529 (1997) DOI:10.1103/PhysRevA.55.1526"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "First Ionization Potentials of Osmium and Iridium Determined by Mass-Analyzed Double-Resonance Field-Ionization Spectroscopy, P. Colarusso, M.-A. Lebeault-Dorget, and B. Simard, Phys. Rev. A 55, 1526–1529 (1997) DOI:10.1103/PhysRevA.55.1526"
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "8.43823 ± 0.00020 eV"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electronegativity",
+            "Description": "Electronegativity is a measure of the tendency of an atom to attract a bonding pair of electrons.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electronegativity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Name": "Pauling Scale Electronegativity",
+                "Reference": [
+                  "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    2.2
+                  ],
+                  "Unit": "(Pauling Scale)"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Allen Scale Electronegativity",
+                "Reference": [
+                  "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003",
+                  "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e",
+                  "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    1.65
+                  ],
+                  "Unit": "(Allen Scale)"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Affinity",
+            "Description": "Electron affinity refers to the energy released when an additional electron is attached to a neutral atom to form a singly charged negative ion.  Alternatively, it can also be defined as the energy required to detach an electron from the singly charged negative ion.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electron_Affinity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    1.1
+                  ],
+                  "Unit": "eV"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    1.44
+                  ],
+                  "Unit": "eV"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Spectra",
+            "Description": "The spectrum of the electromagnetic radiation emitted or absorbed by an electron during transitions between different energy levels within an atom.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/lines_hold.pl?el=Os",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Lines Holdings"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/levels_hold.pl?el=Os",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Levels Holdings"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Physical Description",
+            "Description": "The appearance or features of this element, including color, odor, state, taste and more in general.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Solid"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Classification",
+            "Description": "Classification according to the element's chemical and physical properties, and location within the periodic table.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Metal"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Period Number",
+            "Description": "The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "6"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Group Number",
+            "Description": "Element group refers to a set of chemical elements in the same vertical column of the periodic table",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "8"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Density",
+            "Description": "This section provides information on the density of an element. It is the mass of a unit volume of the element and commonly expressed in units of kg/m3 or g/cm3.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Map%3A_Fundamentals_of_General_Organic_and_Biological_Chemistry_(McMurry_et_al.)/01%3A_Matter_and_Measurements/1.12%3A_Density_and_Specific_Gravity",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "22.57 grams per cubic centimeter"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Melting Point",
+            "Description": "This section provides the melting point and/or freezing point. The melting point is the temperature at which a substance changes state from solid to liquid at atmospheric pressure. When considered as the temperature of the reverse change (from liquid to solid), it is referred to as the freezing point.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.01%3A_Melting_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "3306 K (3033°C or 5491°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "3033°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Boiling Point",
+            "Description": "The temperature at which this element changes state from liquid to gas at a given atmospheric pressure.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.02%3A_Boiling_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "5285 K (5012°C or 9054°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "5012°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Crustal Abundance",
+            "Description": "The estimated element abundance in the earth's crust.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1.5×10-3 milligrams per kilogram",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Oceanic Abundance",
+            "Description": "The estimated element abundance in the earth's oceans.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Not Applicable"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "History",
+        "Description": "The history of the discovery and use of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 3,
+            "Name": "History",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The name derives from the Greek osme for \"smell\" because of the sharp odor of its volatile oxide. Both osmium and iridium were discovered simultaneously in a crude platinum ore by the English chemist Smithson Tennant in 1803.",
+                  "Markup": [
+                    {
+                      "Start": 32,
+                      "Length": 4,
+                      "Type": "Italics"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Osmium and iridium were discovered at the same time by the British chemist Smithson Tennant in 1803. Osmium and iridium were identified in the black residue remaining after dissolving platinum ore with aqua regia, a mixture of 25% nitric acid (HNO3) and 75% hydrochloric acid (HCl). Today, osmium is primarily recovered during the processing of platinum and nickel ores.",
+                  "Markup": [
+                    {
+                      "Start": 247,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Discovered in 1803 by Tennant in the residue left when crude platinum is dissolved by aqua regia."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Historical Atomic Weights",
+            "Description": "This section provides the historical atomic weights. The atomic weight shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Atomic Weight (uncertainty) [u]",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1991"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1938"
+                    },
+                    {
+                      "String": "1934"
+                    },
+                    {
+                      "String": "1925"
+                    },
+                    {
+                      "String": "1909"
+                    },
+                    {
+                      "String": "1902"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "190.23(3)"
+                    },
+                    {
+                      "String": "190.2(1)"
+                    },
+                    {
+                      "String": "190.2"
+                    },
+                    {
+                      "String": "191.5"
+                    },
+                    {
+                      "String": "190.8"
+                    },
+                    {
+                      "String": "190.9"
+                    },
+                    {
+                      "String": "191.0"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1351/pac199264101519",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199264101519"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197021010091",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197021010091"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/JR9380001101",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/JR9380001101"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/JR9340000499",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/JR9340000499"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/CT9252700913",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/CT9252700913"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja01931a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja01931a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1007/BF01370337",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 22,
+                          "URL": "https://doi.org/10.1007/BF01370337"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Historical Isotopic Abundances",
+            "Description": "This section provides the historical isotopic abundance information. The abundance value shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 4,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Isotope",
+                    "Abundance (uncertainty)",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1975"
+                    },
+                    {
+                      "String": "1975"
+                    },
+                    {
+                      "String": "1975"
+                    },
+                    {
+                      "String": "1975"
+                    },
+                    {
+                      "String": "1975"
+                    },
+                    {
+                      "String": "1975"
+                    },
+                    {
+                      "String": "1975"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "184Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "186Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "187Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "188Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "189Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "190Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "192Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "184Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "186Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "187Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "188Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "189Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "190Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "192Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "184Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "186Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "187Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "188Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "189Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "190Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "192Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "184Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "186Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "187Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "188Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "189Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "190Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "192Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "184Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "186Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "187Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "188Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "189Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "190Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "192Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "0.0002(2)"
+                    },
+                    {
+                      "String": "0.0159(64)"
+                    },
+                    {
+                      "String": "0.0196(17)"
+                    },
+                    {
+                      "String": "0.1324(27)"
+                    },
+                    {
+                      "String": "0.1615(23)"
+                    },
+                    {
+                      "String": "0.2626(20)"
+                    },
+                    {
+                      "String": "0.4078(32)"
+                    },
+                    {
+                      "String": "0.0002(1)"
+                    },
+                    {
+                      "String": "0.0159(3)"
+                    },
+                    {
+                      "String": "0.0196(2)"
+                    },
+                    {
+                      "String": "0.1324(8)"
+                    },
+                    {
+                      "String": "0.1615(5)"
+                    },
+                    {
+                      "String": "0.2626(2)"
+                    },
+                    {
+                      "String": "0.4078(19)"
+                    },
+                    {
+                      "String": "0.0002(1)"
+                    },
+                    {
+                      "String": "0.0158(30)"
+                    },
+                    {
+                      "String": "0.016(3)"
+                    },
+                    {
+                      "String": "0.133(7)"
+                    },
+                    {
+                      "String": "0.161(8)"
+                    },
+                    {
+                      "String": "0.264(12)"
+                    },
+                    {
+                      "String": "0.410(8)"
+                    },
+                    {
+                      "String": "0.000 20(4)"
+                    },
+                    {
+                      "String": "0.0158(10)"
+                    },
+                    {
+                      "String": "0.016(1)"
+                    },
+                    {
+                      "String": "0.133(2)"
+                    },
+                    {
+                      "String": "0.161(3)"
+                    },
+                    {
+                      "String": "0.264(4)"
+                    },
+                    {
+                      "String": "0.410(3)"
+                    },
+                    {
+                      "String": "0.0002"
+                    },
+                    {
+                      "String": "0.0158"
+                    },
+                    {
+                      "String": "0.016"
+                    },
+                    {
+                      "String": "0.133"
+                    },
+                    {
+                      "String": "0.161"
+                    },
+                    {
+                      "String": "0.264"
+                    },
+                    {
+                      "String": "0.41"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1515/pac-2015-0503",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0503"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1515/pac-2015-0503",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0503"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1515/pac-2015-0503",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0503"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1515/pac-2015-0503",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0503"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1515/pac-2015-0503",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0503"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1515/pac-2015-0503",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0503"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1515/pac-2015-0503",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0503"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199870010217",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199870010217"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199870010217",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199870010217"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199870010217",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199870010217"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199870010217",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199870010217"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199870010217",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199870010217"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199870010217",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199870010217"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199870010217",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199870010217"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199163070991",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199163070991"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199163070991",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199163070991"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199163070991",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199163070991"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199163070991",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199163070991"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199163070991",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199163070991"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199163070991",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199163070991"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199163070991",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199163070991"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198052102349",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198052102349"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198052102349",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198052102349"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198052102349",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198052102349"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198052102349",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198052102349"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198052102349",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198052102349"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198052102349",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198052102349"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198052102349",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198052102349"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Description",
+        "Description": "A short description of this element, provided by authoritative sources.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The metal is lustrous, bluish white, extremely hard, and brittle even at high temperatures. It has the highest melting point and the lowest vapor pressure of the platinum group. The metal is very difficult to fabricate, but the powdered or spongy metal slowly gives off osmium tetroxide, which as a powerful oxidizing agent and has a strong smell. The tetroxide is highly toxic, and boils at 130°C."
+                },
+                {
+                  "String": "Density measurements show osmium to be a little more dense than iridium, and osmium is often cited as the heavier element. However, calculations of the density from the space lattice, which may be more reliable than these measurements, give a density of 22.65 for iridium compared to 22.61 for osmium. According to IUPAC, because of this apparent contradiction, no decision has been made as to which is heavier."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Uses",
+        "Description": "Uses of this element in industry and other fields.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Metallic osmium is hard, brittle and very difficult to make. Powdered osmium is easier to make but emits osmium tetroxide (OsO4) when it is exposed to the air. Unfortunately, osmium tetroxide smells bad and is very poisonous. Because of these problems, osmium is primarily used to make very hard alloys. Osmium alloys can be found in ball point pen tips, fountain pen tips, record player needles, electrical contacts and other devices where frictional wear must be minimized.",
+                  "Markup": [
+                    {
+                      "Start": 126,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The tetroxide has been used to detect fingerprints and to stain fatty tissue for microscope slides. The metal is almost entirely used to produce very hard alloys with other metals of the platinum group for fountain pen tips, instrument pivots, phonograph needles, and electrical contacts."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Sources",
+        "Description": "Sources of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Osmium occurs in iridosule and in platinum-bearing river sands in the Urals, North America, and South America. It is also found in the nickel-bearing ores of Sudbury, Ontario region along with other platinum metals. While the quantity of platinum metals in these ores is very small, the large tonnages of processed nickel ores make commercial recovery possible."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Compounds",
+        "Description": "Compound records related to this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 8,
+            "Name": "Compounds",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=Osmium",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "See more information at the Osmium compound page."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Element Forms",
+            "Description": "Other forms of this element, including ions, isotopes, etc.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "CID",
+                    "Name",
+                    "Formula",
+                    "SMILES",
+                    "Molecular Weight"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 8,
+                "Name": "CID",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "23937",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 5,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/23937"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "472184",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/472184"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "161026",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/161026"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "177536",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/177536"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "177538",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/177538"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "167415",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/167415"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "167423",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/167423"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "167510",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/167510"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "177535",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/177535"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "177683",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/177683"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "185496",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/185496"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "5461099",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/5461099"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "22676905",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/22676905"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "154069848",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/154069848"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "154082846",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/154082846"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "10236049",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/10236049"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "46898738",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/46898738"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "70674380",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/70674380"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "131708377",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/131708377"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "131708378",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/131708378"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "131708379",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/131708379"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "131708380",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/131708380"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "osmium"
+                    },
+                    {
+                      "String": "osmium(4+)"
+                    },
+                    {
+                      "String": "osmium-191"
+                    },
+                    {
+                      "String": "osmium-182"
+                    },
+                    {
+                      "String": "osmium-181"
+                    },
+                    {
+                      "String": "osmium-189"
+                    },
+                    {
+                      "String": "osmium-185"
+                    },
+                    {
+                      "String": "osmium-193"
+                    },
+                    {
+                      "String": "osmium-180"
+                    },
+                    {
+                      "String": "osmium-194"
+                    },
+                    {
+                      "String": "osmium(8+)"
+                    },
+                    {
+                      "String": "osmium(2+)"
+                    },
+                    {
+                      "String": "osmium(6+)"
+                    },
+                    {
+                      "String": "osmium(1+)"
+                    },
+                    {
+                      "String": "osmium(5+)"
+                    },
+                    {
+                      "String": "osmium-184"
+                    },
+                    {
+                      "String": "osmium-191(4+)"
+                    },
+                    {
+                      "String": "osmium-187"
+                    },
+                    {
+                      "String": "osmium-186"
+                    },
+                    {
+                      "String": "osmium-188"
+                    },
+                    {
+                      "String": "osmium-190"
+                    },
+                    {
+                      "String": "osmium-192"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Formula",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os+4"
+                    },
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os+8"
+                    },
+                    {
+                      "String": "Os+2"
+                    },
+                    {
+                      "String": "Os+6"
+                    },
+                    {
+                      "String": "Os+"
+                    },
+                    {
+                      "String": "Os+5"
+                    },
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os+4"
+                    },
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os"
+                    },
+                    {
+                      "String": "Os"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "SMILES",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Os]"
+                    },
+                    {
+                      "String": "[Os+4]"
+                    },
+                    {
+                      "String": "[191Os]"
+                    },
+                    {
+                      "String": "[182Os]"
+                    },
+                    {
+                      "String": "[181Os]"
+                    },
+                    {
+                      "String": "[189Os]"
+                    },
+                    {
+                      "String": "[185Os]"
+                    },
+                    {
+                      "String": "[193Os]"
+                    },
+                    {
+                      "String": "[180Os]"
+                    },
+                    {
+                      "String": "[194Os]"
+                    },
+                    {
+                      "String": "[Os+8]"
+                    },
+                    {
+                      "String": "[Os+2]"
+                    },
+                    {
+                      "String": "[Os+6]"
+                    },
+                    {
+                      "String": "[Os+]"
+                    },
+                    {
+                      "String": "[Os+5]"
+                    },
+                    {
+                      "String": "[184Os]"
+                    },
+                    {
+                      "String": "[191Os+4]"
+                    },
+                    {
+                      "String": "[187Os]"
+                    },
+                    {
+                      "String": "[186Os]"
+                    },
+                    {
+                      "String": "[188Os]"
+                    },
+                    {
+                      "String": "[190Os]"
+                    },
+                    {
+                      "String": "[192Os]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Molecular Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "190.2"
+                    },
+                    {
+                      "String": "190.2"
+                    },
+                    {
+                      "String": "190.960928"
+                    },
+                    {
+                      "String": "181.9521"
+                    },
+                    {
+                      "String": "180.9532"
+                    },
+                    {
+                      "String": "188.958146"
+                    },
+                    {
+                      "String": "184.954046"
+                    },
+                    {
+                      "String": "192.96415"
+                    },
+                    {
+                      "String": "179.9524"
+                    },
+                    {
+                      "String": "193.96518"
+                    },
+                    {
+                      "String": "190.2"
+                    },
+                    {
+                      "String": "190.2"
+                    },
+                    {
+                      "String": "190.2"
+                    },
+                    {
+                      "String": "190.2"
+                    },
+                    {
+                      "String": "190.2"
+                    },
+                    {
+                      "String": "183.952493"
+                    },
+                    {
+                      "String": "190.960928"
+                    },
+                    {
+                      "String": "186.955750"
+                    },
+                    {
+                      "String": "185.953838"
+                    },
+                    {
+                      "String": "187.955837"
+                    },
+                    {
+                      "String": "189.958445"
+                    },
+                    {
+                      "String": "191.96148"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Handling and Storage",
+        "Description": "This section provides guidance on the safe handling practices and storage conditions for this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Concentrations in air as low as 107 g/m3 can cause lung congestion, skin damage, or eye damage. Exposure to osmium tetroxide should not exceed 0.0016 mg/m3 (8-hour time weighted average - 40-hour work week).",
+                  "Markup": [
+                    {
+                      "Start": 34,
+                      "Length": 1,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 39,
+                      "Length": 1,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 154,
+                      "Length": 1,
+                      "Type": "Superscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Isotopes",
+        "Description": "Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.",
+        "URL": "https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Name": "Stable Isotope Count",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "5"
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Isotopes in Earth/Planetary Science",
+            "Description": "Information on the use of this element's isotopes in earth/planetary science.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[301]  G. Faure. Principles of Isotope Geology, 2nd Edition. p. 608. Wiley, New York (1986).",
+                  "[504]  A. Schersten. Re-Os, Pt-Os and Hf-W Isotopes and Tracing the Core in Mantle Melts, MantlePlumes.org (2014), Feb. 25; http://www.mantleplumes.org/Os-W.html.",
+                  "[516]  A. D. Brandon, R. J. Walker. Earth. Planet. Sci. Lett.3-4 (232), 211 (2005).",
+                  "[517]  M. Sharma, G. J. Wasserburg, A. W. Hofmann, G. J. Chakrapani. Geochim. Cosmochim. Acta63 (23-24), 4005 (1999).",
+                  "[518]  F. S. Paquay, G. E. Ravizza, T. K. Dalai, B. Peucker-Ehrenbrink. Science320 (5873), 214 (2008)."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[301]  G. Faure. Principles of Isotope Geology, 2nd Edition. p. 608. Wiley, New York (1986)."
+                  },
+                  {
+                    "Citation": "[504]  A. Schersten. Re-Os, Pt-Os and Hf-W Isotopes and Tracing the Core in Mantle Melts, MantlePlumes.org (2014), Feb. 25; http://www.mantleplumes.org/Os-W.html."
+                  },
+                  {
+                    "Citation": "[516]  A. D. Brandon, R. J. Walker. Earth. Planet. Sci. Lett.3-4 (232), 211 (2005)."
+                  },
+                  {
+                    "Citation": "[517]  M. Sharma, G. J. Wasserburg, A. W. Hofmann, G. J. Chakrapani. Geochim. Cosmochim. Acta63 (23-24), 4005 (1999)."
+                  },
+                  {
+                    "Citation": "[518]  F. S. Paquay, G. E. Ravizza, T. K. Dalai, B. Peucker-Ehrenbrink. Science320 (5873), 214 (2008)."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "The isotope-amount ratio n(187Os)/n(186Os) in rocks can be transferred to fluids, such as magmas, groundwaters, rivers, and oceans. Variations in the inherited n(187Os)/n(186Os) ratios can provide a useful tracer for fluid sources and migration paths, including different layers of the Earth [301], [504], [516], [517]. Meteorites and meteorite dust impacting the Earth have different osmium isotopic compositions than terrestrial rocks and sediments. As a result, n(187Os)/n(186Os)-ratio studies provide evidence of continuing extraterrestrial additions to the Earth over geologic time, as well as providing a method for prospecting in the sedimentary record for large meteorite impact events that may have affected life on Earth [518].",
+                      "Markup": [
+                        {
+                          "Start": 27,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 36,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 162,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 171,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 467,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 476,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes in Geochronology",
+            "Description": "Information on the use of this element's isotopes in geochronology.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[301]  G. Faure. Principles of Isotope Geology, 2nd Edition. p. 608. Wiley, New York (1986).",
+                  "[519]  J. Kirk, J. Ruiz, J. Chesley, J. Walshe, G. England. Science297, 1856 (2002).",
+                  "[520]  H. E. Frimmel, W. E. L. Minter. Soc. Econ. Geol. Spec. Publ.9, 17 (2002)."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[301]  G. Faure. Principles of Isotope Geology, 2nd Edition. p. 608. Wiley, New York (1986)."
+                  },
+                  {
+                    "Citation": "[519]  J. Kirk, J. Ruiz, J. Chesley, J. Walshe, G. England. Science297, 1856 (2002)."
+                  },
+                  {
+                    "Citation": "[520]  H. E. Frimmel, W. E. L. Minter. Soc. Econ. Geol. Spec. Publ.9, 17 (2002)."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Some 187Os is radiogenic as a result of being formed by the beta decay of radioactive 187Re, which has a half-life of 4.16×1010 years. Variations in the isotope-amount ratio n(187Os)/n(186Os) and amount ratio n(187Re)/n(186Os) are used for geochronology; for example, variations in these ratios have been used to determine the ages of the Earth, Moon, and meteorites [301]. Kirk et al. [519] measured rhenium-osmium isotopic abundances in gold and pyrites from conglomerates of the Central Rand Group of South Africa (Fig. IUPAC.76.1), which have produced over 48 000 metric tons of gold and have accounted for 40 percent of the world’s total historic production [520]. The gold and rounded pyrites from the conglomerates yield an age of ~3.0×109 years. Kirk et al. find that this age is much older than that of the conglomerate, and they conclude that the gold is detrital (material wearing away by weathering or erosion) and was not deposited by later hydrothermal fluids.",
+                      "Markup": [
+                        {
+                          "Start": 5,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 86,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 125,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 176,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 185,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 211,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 220,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 745,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_104.jpg",
+                          "Type": "Image",
+                          "Size": "767x772",
+                          "Caption": "Fig. IUPAC.76.1: Cross plot of n(¹⁸⁷Os)/n(¹⁸⁸Os) isotope-amount ratio and n(¹⁸⁷Re)/n(¹⁸⁸Os) amount ratio of gold and pyrite from South Africa’s Witwatersrand Supergoup gold deposits (modified from [519]). The turquoise diamonds are gold-bearing samples from Vaal Reef, and they form an isochron with an age of about 3.0×10⁹ years. The purple filled circles are euhedral pyrites (crystals having a flat surface and sharp angles) from the Venterdorp Contact Reef, and they have a much younger age of (672 ± 510)×10⁶ a. "
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes Used as a Source of Radioactive Isotope(s)",
+            "Description": "Information on the use of this element's isotopes to generate radioactive isotopes.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "192Os can be used for the production of the medical radioisotope 195mPt via the 192Os (α, n) 195mPt reaction.",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 65,
+                          "Length": 4,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 80,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 93,
+                          "Length": 4,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotope Mass and Abundance",
+            "Description": "Atomic mass and abundance (composition) information for a given isotope/nuclide. The number in the parenthesis refers to an uncertainty when exist. The unit of atomic weight is the unified atomic mass unit (u) or dalton (Da). ",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Isotope",
+                    "Atomic Mass (uncertainty) [u]",
+                    "Abundance (uncertainty)"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": " 184Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 4,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": " 186Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 4,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": " 187Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 4,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": " 188Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 4,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": " 189Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 4,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": " 190Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 4,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": " 192Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 4,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Mass (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "183.952 493(6)"
+                    },
+                    {
+                      "String": "185.953 838(5)"
+                    },
+                    {
+                      "String": "186.955 750(5)"
+                    },
+                    {
+                      "String": "187.955 837(5)"
+                    },
+                    {
+                      "String": "188.958 146(5)"
+                    },
+                    {
+                      "String": "189.958 446(5)"
+                    },
+                    {
+                      "String": "191.961 48(2)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "0.0002(2)"
+                    },
+                    {
+                      "String": "0.0159(64)"
+                    },
+                    {
+                      "String": "0.0196(17)"
+                    },
+                    {
+                      "String": "0.1324(27)"
+                    },
+                    {
+                      "String": "0.1615(23)"
+                    },
+                    {
+                      "String": "0.2626(20)"
+                    },
+                    {
+                      "String": "0.4078(32)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "184Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "186Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "187Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "188Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "189Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "190Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "192Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Atomic Mass (uncertainty) [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "183.9524885(14)"
+                    },
+                    {
+                      "String": "185.9538350(16)"
+                    },
+                    {
+                      "String": "186.9557474(16)"
+                    },
+                    {
+                      "String": "187.9558352(16)"
+                    },
+                    {
+                      "String": "188.9581442(17)"
+                    },
+                    {
+                      "String": "189.9584437(17)"
+                    },
+                    {
+                      "String": "191.9614770(29)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "0.0002(1)"
+                    },
+                    {
+                      "String": "0.0159(3)"
+                    },
+                    {
+                      "String": "0.0196(2)"
+                    },
+                    {
+                      "String": "0.1324(8)"
+                    },
+                    {
+                      "String": "0.1615(5)"
+                    },
+                    {
+                      "String": "0.2626(2)"
+                    },
+                    {
+                      "String": "0.4078(19)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Mass, Half Life, and Decay",
+            "Description": "Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Nuclide",
+                    "Atomic Mass and Uncertainty [u]",
+                    "Half Life and Uncertainty",
+                    "Discovery Year",
+                    "Decay Modes, Intensities and Uncertainties [%]"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 2,
+                "Name": "Nuclide",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "161Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "162Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "163Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "164Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "165Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "166Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "167Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "167Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "168Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "169Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "170Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "171Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "172Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "173Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "174Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "175Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "176Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "177Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "178Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "179Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "179Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "179Osn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "180Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "181Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "181Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "181Osn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "182Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "182Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "182Osn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "183Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "183Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "184Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "185Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "185Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "185Osn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "186Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "187Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "187Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "187Osn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "188Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "189Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "189Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "190Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "190Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "191Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "191Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "192Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "192Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "192Osn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "193Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "193Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "194Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "195Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "195Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "196Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "197Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "197Osm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "198Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "199Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "200Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "201Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "202Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "203Os",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Atomic Mass and Uncertainty [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "160.989054 ± 0.000429 [Estimated]"
+                    },
+                    {
+                      "String": "161.984434 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "162.982462 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "163.978073158 ± 0.000160927"
+                    },
+                    {
+                      "String": "164.976654 ± 0.000215 [Estimated]"
+                    },
+                    {
+                      "String": "165.972698135 ± 0.000019287"
+                    },
+                    {
+                      "String": "166.971552304 ± 0.000086841"
+                    },
+                    {
+                      "String": "166.971552304 ± 0.000086841"
+                    },
+                    {
+                      "String": "167.967799050 ± 0.000010631"
+                    },
+                    {
+                      "String": "168.967017521 ± 0.000027847"
+                    },
+                    {
+                      "String": "169.963579273 ± 0.000010476"
+                    },
+                    {
+                      "String": "170.963180402 ± 0.000019589"
+                    },
+                    {
+                      "String": "171.960017309 ± 0.000013704"
+                    },
+                    {
+                      "String": "172.959808387 ± 0.000016059"
+                    },
+                    {
+                      "String": "173.957063192 ± 0.000011008"
+                    },
+                    {
+                      "String": "174.956945126 ± 0.00001264"
+                    },
+                    {
+                      "String": "175.954770315 ± 0.000011754"
+                    },
+                    {
+                      "String": "176.954957902 ± 0.000015687"
+                    },
+                    {
+                      "String": "177.953253334 ± 0.000014634"
+                    },
+                    {
+                      "String": "178.953815985 ± 0.000016645"
+                    },
+                    {
+                      "String": "178.953815985 ± 0.000016645"
+                    },
+                    {
+                      "String": "178.953815985 ± 0.000016645"
+                    },
+                    {
+                      "String": "179.952381665 ± 0.000016878"
+                    },
+                    {
+                      "String": "180.953247188 ± 0.000027201"
+                    },
+                    {
+                      "String": "180.953247188 ± 0.000027201"
+                    },
+                    {
+                      "String": "180.953247188 ± 0.000027201"
+                    },
+                    {
+                      "String": "181.952110154 ± 0.000023344"
+                    },
+                    {
+                      "String": "181.952110154 ± 0.000023344"
+                    },
+                    {
+                      "String": "181.952110154 ± 0.000023344"
+                    },
+                    {
+                      "String": "182.953125028 ± 0.000053428"
+                    },
+                    {
+                      "String": "182.953125028 ± 0.000053428"
+                    },
+                    {
+                      "String": "183.952492919 ± 0.00000089"
+                    },
+                    {
+                      "String": "184.954045969 ± 0.000000893"
+                    },
+                    {
+                      "String": "184.954045969 ± 0.000000893"
+                    },
+                    {
+                      "String": "184.954045969 ± 0.000000893"
+                    },
+                    {
+                      "String": "185.953837569 ± 0.000000816"
+                    },
+                    {
+                      "String": "186.955749569 ± 0.000000791"
+                    },
+                    {
+                      "String": "186.955749569 ± 0.000000791"
+                    },
+                    {
+                      "String": "186.955749569 ± 0.000000791"
+                    },
+                    {
+                      "String": "187.955837292 ± 0.000000788"
+                    },
+                    {
+                      "String": "188.958145949 ± 0.000000715"
+                    },
+                    {
+                      "String": "188.958145949 ± 0.000000715"
+                    },
+                    {
+                      "String": "189.958445442 ± 0.000000697"
+                    },
+                    {
+                      "String": "189.958445442 ± 0.000000697"
+                    },
+                    {
+                      "String": "190.960928105 ± 0.000000707"
+                    },
+                    {
+                      "String": "190.960928105 ± 0.000000707"
+                    },
+                    {
+                      "String": "191.961478765 ± 0.000002484"
+                    },
+                    {
+                      "String": "191.961478765 ± 0.000002484"
+                    },
+                    {
+                      "String": "191.961478765 ± 0.000002484"
+                    },
+                    {
+                      "String": "192.964149637 ± 0.00000249"
+                    },
+                    {
+                      "String": "192.964149637 ± 0.00000249"
+                    },
+                    {
+                      "String": "193.965179407 ± 0.000002579"
+                    },
+                    {
+                      "String": "194.968318000 ± 0.00006"
+                    },
+                    {
+                      "String": "194.968318000 ± 0.00006"
+                    },
+                    {
+                      "String": "195.969643261 ± 0.000043"
+                    },
+                    {
+                      "String": "196.973076 ± 0.000215 [Estimated]"
+                    },
+                    {
+                      "String": "196.973076 ± 0.000215 [Estimated]"
+                    },
+                    {
+                      "String": "197.974664 ± 0.000215 [Estimated]"
+                    },
+                    {
+                      "String": "198.978239 ± 0.000215 [Estimated]"
+                    },
+                    {
+                      "String": "199.980086 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "200.984069 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "201.986548 ± 0.000429 [Estimated]"
+                    },
+                    {
+                      "String": "202.992195 ± 0.000429 [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Half Life and Uncertainty",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "640 us ± 60"
+                    },
+                    {
+                      "String": "2.1 ms ± 0.1"
+                    },
+                    {
+                      "String": "5.7 ms ± 0.5"
+                    },
+                    {
+                      "String": "21 ms ± 1"
+                    },
+                    {
+                      "String": "71 ms ± 3"
+                    },
+                    {
+                      "String": "213 ms ± 5"
+                    },
+                    {
+                      "String": "839 ms ± 5"
+                    },
+                    {
+                      "String": "672 ns ± 7"
+                    },
+                    {
+                      "String": "2.1 s ± 0.1"
+                    },
+                    {
+                      "String": "3.46 s ± 0.11"
+                    },
+                    {
+                      "String": "7.37 s ± 0.18"
+                    },
+                    {
+                      "String": "8.3 s ± 0.2"
+                    },
+                    {
+                      "String": "19.2 s ± 0.9"
+                    },
+                    {
+                      "String": "22.4 s ± 0.9"
+                    },
+                    {
+                      "String": "44 s ± 4"
+                    },
+                    {
+                      "String": "1.4 m ± 0.1"
+                    },
+                    {
+                      "String": "3.6 m ± 0.5"
+                    },
+                    {
+                      "String": "3.0 m ± 0.2"
+                    },
+                    {
+                      "String": "5.0 m ± 0.4"
+                    },
+                    {
+                      "String": "6.5 m ± 0.3"
+                    },
+                    {
+                      "String": "500 ns"
+                    },
+                    {
+                      "String": "783 ns ± 14"
+                    },
+                    {
+                      "String": "21.5 m ± 0.4"
+                    },
+                    {
+                      "String": "105 m ± 3"
+                    },
+                    {
+                      "String": "2.7 m ± 0.1"
+                    },
+                    {
+                      "String": "262 ns ± 6"
+                    },
+                    {
+                      "String": "21.84 h ± 0.20"
+                    },
+                    {
+                      "String": "780 us ± 70"
+                    },
+                    {
+                      "String": "150 ns ± 10"
+                    },
+                    {
+                      "String": "13.0 h ± 0.5"
+                    },
+                    {
+                      "String": "9.9 h ± 0.3"
+                    },
+                    {
+                      "String": "11.2 Ty ± 2.3"
+                    },
+                    {
+                      "String": "92.95 d ± 0.09"
+                    },
+                    {
+                      "String": "3.0 us ± 0.4"
+                    },
+                    {
+                      "String": "780 ns ± 50"
+                    },
+                    {
+                      "String": "2.0 Py ± 1.1"
+                    },
+                    {
+                      "String": "Stable >3.2Py"
+                    },
+                    {
+                      "String": "112 ns ± 6"
+                    },
+                    {
+                      "String": "231 us ± 2"
+                    },
+                    {
+                      "String": "Stable >3.3Ey"
+                    },
+                    {
+                      "String": "Stable >3.3Py"
+                    },
+                    {
+                      "String": "5.81 h ± 0.10"
+                    },
+                    {
+                      "String": "Stable >12Ey"
+                    },
+                    {
+                      "String": "9.86 m ± 0.03"
+                    },
+                    {
+                      "String": "14.99 d ± 0.02"
+                    },
+                    {
+                      "String": "13.10 h ± 0.05"
+                    },
+                    {
+                      "String": "Stable >53Ey"
+                    },
+                    {
+                      "String": "5.94 s ± 0.09"
+                    },
+                    {
+                      "String": "205 ns ± 7"
+                    },
+                    {
+                      "String": "29.830 h ± 0.018"
+                    },
+                    {
+                      "String": "121 ns ± 28"
+                    },
+                    {
+                      "String": "6.0 y ± 0.2"
+                    },
+                    {
+                      "String": "6.5 m ± 1.1"
+                    },
+                    {
+                      "String": "47 s ± 3"
+                    },
+                    {
+                      "String": "34.9 m ± 0.2"
+                    },
+                    {
+                      "String": "93 s ± 7"
+                    },
+                    {
+                      "String": "<0.1 s"
+                    },
+                    {
+                      "String": "125 s ± 28"
+                    },
+                    {
+                      "String": "6 s ± 3"
+                    },
+                    {
+                      "String": "7 s ± 4"
+                    },
+                    {
+                      "String": "3 s >300ns [Estimated]"
+                    },
+                    {
+                      "String": "2 s >300ns [Estimated]"
+                    },
+                    {
+                      "String": "300 ms >300ns [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Discovery Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2010"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1981"
+                    },
+                    {
+                      "String": "1981"
+                    },
+                    {
+                      "String": "1978"
+                    },
+                    {
+                      "String": "1977"
+                    },
+                    {
+                      "String": "1977"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "1977"
+                    },
+                    {
+                      "String": "1972"
+                    },
+                    {
+                      "String": "1972"
+                    },
+                    {
+                      "String": "1972"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1972"
+                    },
+                    {
+                      "String": "1970"
+                    },
+                    {
+                      "String": "1970"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "1968"
+                    },
+                    {
+                      "String": "1983"
+                    },
+                    {
+                      "String": "1983"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "1966"
+                    },
+                    {
+                      "String": "1966"
+                    },
+                    {
+                      "String": "1974"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1966"
+                    },
+                    {
+                      "String": "1988"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1958"
+                    },
+                    {
+                      "String": "1937"
+                    },
+                    {
+                      "String": "1947"
+                    },
+                    {
+                      "String": "1970"
+                    },
+                    {
+                      "String": "1970"
+                    },
+                    {
+                      "String": "1931"
+                    },
+                    {
+                      "String": "1931"
+                    },
+                    {
+                      "String": "1964"
+                    },
+                    {
+                      "String": "1964"
+                    },
+                    {
+                      "String": "1931"
+                    },
+                    {
+                      "String": "1931"
+                    },
+                    {
+                      "String": "1960"
+                    },
+                    {
+                      "String": "1931"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1940"
+                    },
+                    {
+                      "String": "1952"
+                    },
+                    {
+                      "String": "1931"
+                    },
+                    {
+                      "String": "1965"
+                    },
+                    {
+                      "String": "2004"
+                    },
+                    {
+                      "String": "1940"
+                    },
+                    {
+                      "String": "2011"
+                    },
+                    {
+                      "String": "1951"
+                    },
+                    {
+                      "String": "2004"
+                    },
+                    {
+                      "String": "2012"
+                    },
+                    {
+                      "String": "1977"
+                    },
+                    {
+                      "String": "2003"
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": "2008"
+                    },
+                    {
+                      "String": "2008"
+                    },
+                    {
+                      "String": "2005"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "2012"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Decay Modes, Intensities and Uncertainties [%]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "α≈100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α≈100%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=96±0.4%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=90±0.2%; β+=10±0.2%",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=83±0.4%; β+=17±0.4%",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=51±0.4%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=57±0.4%; α=43±0.4%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=86.3±0.8%; α=13.7±0.8%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=90.5±1%; α=9.5±1%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+ ?; α=1.80±2.1%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=98.81±1.7%; α=1.19±1.7%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=99.6±0.2%; α=0.4±0.2%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+≈100%; α=0.024±0.7%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "ε=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=85±0.2%; IT=15±0.2%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IS=0.02±0.2%; α ?; 2β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 21,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "ε=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IS=1.59±6.4%; α=100%"
+                    },
+                    {
+                      "String": "IS=1.96±1.7%; α ?"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IS=13.24±2.7%; α ?"
+                    },
+                    {
+                      "String": "IS=16.15±2.3%; α ?"
+                    },
+                    {
+                      "String": "IT≈100%; β- ?",
+                      "Markup": [
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IS=26.26±2%; α ?"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IS=40.78±3.2%; 2β- ?; α ?",
+                      "Markup": [
+                        {
+                          "Start": 17,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT≈100%; β- ?",
+                      "Markup": [
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT≈100%; β- ?",
+                      "Markup": [
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT ?; β- ?",
+                      "Markup": [
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 1,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      },
+      {
+        "ReferenceNumber": 2,
+        "SourceName": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+        "SourceID": "e76",
+        "Name": "Os",
+        "Description": "The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.",
+        "URL": "https://www-nds.iaea.org/amdc/",
+        "LicenseURL": "https://www-nds.iaea.org/disclaimer.html",
+        "ANID": 6590303
+      },
+      {
+        "ReferenceNumber": 3,
+        "SourceName": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+        "SourceID": "a76",
+        "Name": "Osmium",
+        "Description": "Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.",
+        "URL": "https://www.ciaaw.org/osmium.htm",
+        "LicenseURL": "http://www.ciaaw.org/bylaws.htm",
+        "ANID": 2292457
+      },
+      {
+        "ReferenceNumber": 5,
+        "SourceName": "Jefferson Lab, U.S. Department of Energy",
+        "SourceID": "jlab76",
+        "Name": "Osmium",
+        "Description": "Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/",
+        "URL": "https://education.jlab.org/itselemental/ele076.html",
+        "LicenseNote": "Please see citation and linking information: https://education.jlab.org/faq/index.html",
+        "LicenseURL": "https://www.jlab.org/privacy-and-security-notice",
+        "ANID": 507138
+      },
+      {
+        "ReferenceNumber": 6,
+        "SourceName": "Los Alamos National Laboratory, U.S. Department of Energy",
+        "SourceID": "lanl76",
+        "Name": "Osmium",
+        "Description": "The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name.",
+        "URL": "https://periodic.lanl.gov/76.shtml",
+        "ANID": 507256
+      },
+      {
+        "ReferenceNumber": 7,
+        "SourceName": "NIST Physical Measurement Laboratory",
+        "SourceID": "e76",
+        "Name": "Osmium",
+        "Description": "The periodic table contains NIST's critically-evaluated data on atomic properties of the elements. The provenance data that include data for atomic spectroscopy, X-ray and gamma ray, radiation dosimetry, nuclear physics, and condensed matter physics may be found from the link under the source name. Ref: https://www.nist.gov/pml/atomic-spectra-database",
+        "URL": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=76",
+        "LicenseURL": "https://www.nist.gov/pml/database-disclaimer",
+        "ANID": 2292693
+      },
+      {
+        "ReferenceNumber": 4,
+        "SourceName": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+        "SourceID": "p76",
+        "Description": "The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703.",
+        "URL": "https://doi.org/10.1515/pac-2015-0703",
+        "LicenseNote": "Copyright (c) 2020 International Union of Pure and Applied Chemistry.\u000A\u000AThe International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated.",
+        "LicenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "ANID": 13296481
+      },
+      {
+        "ReferenceNumber": 9,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ep_76",
+        "Name": "Osmium",
+        "Description": "The element property data was retrieved from publications.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24834188
+      },
+      {
+        "ReferenceNumber": 8,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ef_76",
+        "Name": "Osmium",
+        "Description": "This section provides all form of data related to element Osmium.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24834004
+      }
+    ]
+  }
+}

@@ -1,0 +1,695 @@
+{
+  "Record": {
+    "RecordType": "AtomicNumber",
+    "RecordNumber": 118,
+    "RecordTitle": "Oganesson",
+    "Section": [
+      {
+        "TOCHeading": "Identifiers",
+        "Description": "Identifiers for this element, including element name, element symbol, InChI string, and InChIKey.",
+        "Section": [
+          {
+            "TOCHeading": "Element Name",
+            "Description": "The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Oganesson"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Oganesson"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Symbol",
+            "Description": "Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Og"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Og"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChI",
+            "Description": "The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChI",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "InChI=1S/Og"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChIKey",
+            "Description": "An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChIKey",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "GOANEQIZDYDFCO-UHFFFAOYSA-N"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Properties",
+        "Description": "Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on.",
+        "Section": [
+          {
+            "TOCHeading": "Atomic Weight",
+            "Description": "Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u).",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "294"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "294"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Relative Mass: 294.21392(71#)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Configuration",
+            "Description": "The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result.",
+            "URL": "https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Rn] 7s2 7p6 5f14 6d10(predicted)",
+                      "Markup": [
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 11,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 15,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 20,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Oxidation States",
+            "Description": "The oxidation state(s) that this element commonly has in a compound.  The oxidation state of an atom is defined as the hypothetical charge that would be held by that atom if all of its bonds to other atoms were completely ionic in nature. For example, the oxidation state of carbon in CO2 would be +4 since the hypothetical charge held by the carbon atom if both of the carbon-oxygen double bonds were completely ionic would be equal to +4 (each oxygen atom would hold a charge of -2 since oxygen is more electronegative than carbon).",
+            "URL": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/20%3A_Electrochemistry/20.01%3A_Oxidation_States_and_Redox_Reactions",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "-1, 0, +1,+2,+4, +6 ​(predicted)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Physical Description",
+            "Description": "The appearance or features of this element, including color, odor, state, taste and more in general.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Expected to be a Gas"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Classification",
+            "Description": "Classification according to the element's chemical and physical properties, and location within the periodic table.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Non-metal"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Period Number",
+            "Description": "The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "7"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Group Number",
+            "Description": "Element group refers to a set of chemical elements in the same vertical column of the periodic table",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "18 - Noble Gas"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Boiling Point",
+            "Description": "The temperature at which this element changes state from liquid to gas at a given atmospheric pressure.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.02%3A_Boiling_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "350±30K​(80±30°C,​170±50°F)(extrapolated)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Crustal Abundance",
+            "Description": "The estimated element abundance in the earth's crust.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Not Applicable"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Oceanic Abundance",
+            "Description": "The estimated element abundance in the earth's oceans.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Not Applicable"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "History",
+        "Description": "The history of the discovery and use of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "On October 16, 2006, scientists working at the Joint Institute for Nuclear Research in Dubna, Russia, along with scientists from the U.S. Department of Energy's Lawrence Livermore National Laboratory, announced the creation of oganesson. They produced oganesson by bombarding atoms of californium-249 with ions of calcium-48. This produced oganesson-294, an isotope with a half-life of about 0.89 milliseconds (0.00089 seconds), and three free neutrons. The californium target was irradiated with a total of 1.6*1019 calcium ions over the course of 1080 hours, resulting in the production of three atoms of oganesson. Oganesson's most stable isotope, oganesson-294, has a half-life of about 0.89 milliseconds. It decays into livermorium-290 through alpha decay.",
+                  "Markup": [
+                    {
+                      "Start": 514,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "On Novemer 28th, 2016, element 118 was named Oganesson with the symbol (Og). The name was proposed by the Joint Institute for Nuclear Research, Dubna (Russia) and Lawrence Livermore National Laboratory (USA). It honors Professor Yuri Oganessian (born 1933) for his pioneering contributions to transactinoid elements research."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Description",
+        "Description": "A short description of this element, provided by authoritative sources.",
+        "Information": [
+          {
+            "ReferenceNumber": 4,
+            "Reference": [
+              "[680]  Los Alamos National Laboratory. Periodic Table of Elements: LANL-Oganesson, Los Alamos National Laboratory (2014), Feb. 21; http://periodic.lanl.gov/118.shtml.",
+              "[681]  Science Education at Jefferson Lab. It’s Elemental – The Element Oganesson, (2014), Feb. 21; http://education.jlab.org/itselemental/ele118.html.",
+              "[682]  A. Stark. Livermore Scientists Team with Russia to Discover Element 118, Lawrence Livermore National Laboratory (2017), Feb. 21; https://www.llnl.gov/news/livermore-scientists-team-russia-discover-element-118.",
+              "[683]  BBC News. Heavy Atom Makes Brief Appearance, BBC News (2014), Feb. 21; http://news.bbc.co.uk/2/hi/science/nature/6059656.stm.",
+              "[684]  Texas A&M University Institute for Advanced Study. New Element in Periodic Table Set to Be Named for TIAS Faculty Fellow, Texas A&M University (2017), August 28; http://www.science.tamu.edu/news/story.php?story_ID=1613#.WZwp0FWGM-X."
+            ],
+            "ExtendedReference": [
+              {
+                "Citation": "[680]  Los Alamos National Laboratory. Periodic Table of Elements: LANL-Oganesson, Los Alamos National Laboratory (2014), Feb. 21; http://periodic.lanl.gov/118.shtml."
+              },
+              {
+                "Citation": "[681]  Science Education at Jefferson Lab. It’s Elemental – The Element Oganesson, (2014), Feb. 21; http://education.jlab.org/itselemental/ele118.html."
+              },
+              {
+                "Citation": "[682]  A. Stark. Livermore Scientists Team with Russia to Discover Element 118, Lawrence Livermore National Laboratory (2017), Feb. 21; https://www.llnl.gov/news/livermore-scientists-team-russia-discover-element-118."
+              },
+              {
+                "Citation": "[683]  BBC News. Heavy Atom Makes Brief Appearance, BBC News (2014), Feb. 21; http://news.bbc.co.uk/2/hi/science/nature/6059656.stm."
+              },
+              {
+                "Citation": "[684]  Texas A&M University Institute for Advanced Study. New Element in Periodic Table Set to Be Named for TIAS Faculty Fellow, Texas A&M University (2017), August 28; http://www.science.tamu.edu/news/story.php?story_ID=1613#.WZwp0FWGM-X."
+              }
+            ],
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Oganesson does not occur naturally in the Earth’s crust. The name oganesson and symbol Og are the accepted ones for element 118. The name is in line with the tradition of honoring a scientist and recognizes Prof. Yuri Oganessian (Fig. IUPAC.118.1; born 1933) for his pioneering contribution to trans-actinoid element research. His many achievements include the discovery of super-heavy elements and significant advances in the nuclear physics of super-heavy nuclei, including experimental evidence for the “island of stability.”"
+                },
+                {
+                  "String": "In 2005, experiments were performed in Dubna’s U-400 cyclotron, where 48Ca bombarded a spinning target of 249Cf at nearly 3×104 km/s to produce oganesson. With the success of creating oganesson, scientists from Livermore and Joint Institute for Nuclear Research (JINR) are starting experiments to create element 120 by bombarding a 244Pu target with a beam of 58Fe [680], [681], [682], [683]. Oganesson has no known isotopic applications aside from scientific research.",
+                  "Markup": [
+                    {
+                      "Start": 70,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 106,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 126,
+                      "Length": 1,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 332,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 360,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    }
+                  ]
+                },
+                {
+                  "String": "          ",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 1,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_156.jpg",
+                      "Type": "Image",
+                      "Size": "963x646",
+                      "Caption": "Fig. IUPAC.118.1: Prof. Yuri Oganessian after whom element 118 was named. (Image Source: Texas A&M University Institute for Advanced Study) [684]. "
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Uses",
+        "Description": "Uses of this element in industry and other fields.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Since only a few atoms of oganesson have ever been produced, it currently has no uses outside of basic scientific research."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Compounds",
+        "Description": "Compound records related to this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 8,
+            "Name": "Compounds",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=Oganesson",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "See more information at the Oganesson compound page."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Isotopes",
+        "Description": "Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.",
+        "URL": "https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Name": "Stable Isotope Count",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "0"
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Atomic Mass, Half Life, and Decay",
+            "Description": "Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Nuclide",
+                    "Atomic Mass and Uncertainty [u]",
+                    "Half Life and Uncertainty",
+                    "Discovery Year",
+                    "Decay Modes, Intensities and Uncertainties [%]"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 2,
+                "Name": "Nuclide",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "293Og",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "294Og",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "295Og",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Atomic Mass and Uncertainty [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "293.213423 ± 0.000761 [Estimated]"
+                    },
+                    {
+                      "String": "294.213979 ± 0.000594 [Estimated]"
+                    },
+                    {
+                      "String": "295.216178 ± 0.000703 [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Half Life and Uncertainty",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1 ms [Estimated]"
+                    },
+                    {
+                      "String": "0.7 ms ± 0.3"
+                    },
+                    {
+                      "String": "680 ms ± 540"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Discovery Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2010"
+                    },
+                    {
+                      "String": "2004"
+                    },
+                    {
+                      "String": "2006"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Decay Modes, Intensities and Uncertainties [%]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "α ?"
+                    },
+                    {
+                      "String": "α≈100%; SF ?"
+                    },
+                    {
+                      "String": "α≈100%"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 1,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      },
+      {
+        "ReferenceNumber": 2,
+        "SourceName": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+        "SourceID": "e118",
+        "Name": "Og",
+        "Description": "The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.",
+        "URL": "https://www-nds.iaea.org/amdc/",
+        "LicenseURL": "https://www-nds.iaea.org/disclaimer.html",
+        "ANID": 6590345
+      },
+      {
+        "ReferenceNumber": 3,
+        "SourceName": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+        "SourceID": "a118",
+        "Name": "Oganesson",
+        "Description": "Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.",
+        "URL": "https://www.ciaaw.org/",
+        "LicenseURL": "http://www.ciaaw.org/bylaws.htm",
+        "ANID": 2292499
+      },
+      {
+        "ReferenceNumber": 4,
+        "SourceName": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+        "SourceID": "p118",
+        "Description": "The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703.",
+        "URL": "https://doi.org/10.1515/pac-2015-0703",
+        "LicenseNote": "Copyright (c) 2020 International Union of Pure and Applied Chemistry.\u000A\u000AThe International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated.",
+        "LicenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "ANID": 13296523
+      },
+      {
+        "ReferenceNumber": 5,
+        "SourceName": "Jefferson Lab, U.S. Department of Energy",
+        "SourceID": "jlab118",
+        "Name": "Oganesson",
+        "Description": "Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/",
+        "URL": "https://education.jlab.org/itselemental/ele118.html",
+        "LicenseNote": "Please see citation and linking information: https://education.jlab.org/faq/index.html",
+        "LicenseURL": "https://www.jlab.org/privacy-and-security-notice",
+        "ANID": 507180
+      },
+      {
+        "ReferenceNumber": 6,
+        "SourceName": "Los Alamos National Laboratory, U.S. Department of Energy",
+        "SourceID": "lanl118",
+        "Name": "Oganesson",
+        "Description": "The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name.",
+        "URL": "https://periodic.lanl.gov/118.shtml",
+        "ANID": 507298
+      },
+      {
+        "ReferenceNumber": 7,
+        "SourceName": "NIST Physical Measurement Laboratory",
+        "SourceID": "e118",
+        "Name": "Oganesson",
+        "Description": "The periodic table contains NIST's critically-evaluated data on atomic properties of the elements.",
+        "URL": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=118",
+        "LicenseURL": "https://www.nist.gov/pml/database-disclaimer",
+        "ANID": 2292735
+      },
+      {
+        "ReferenceNumber": 8,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ef_118",
+        "Name": "Oganesson",
+        "Description": "This section provides all form of data related to element Oganesson.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24839431
+      }
+    ]
+  }
+}

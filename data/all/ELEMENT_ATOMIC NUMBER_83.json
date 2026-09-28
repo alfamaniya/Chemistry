@@ -1,0 +1,5396 @@
+{
+  "Record": {
+    "RecordType": "AtomicNumber",
+    "RecordNumber": 83,
+    "RecordTitle": "Bismuth",
+    "Section": [
+      {
+        "TOCHeading": "Identifiers",
+        "Description": "Identifiers for this element, including element name, element symbol, InChI string, and InChIKey.",
+        "Section": [
+          {
+            "TOCHeading": "Element Name",
+            "Description": "The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Bismuth"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Bismuth"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Symbol",
+            "Description": "Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Bi"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Bi"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChI",
+            "Description": "The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChI",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "InChI=1S/Bi"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChIKey",
+            "Description": "An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChIKey",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "JCXGWMGPZLAOME-UHFFFAOYSA-N"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Properties",
+        "Description": "Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on.",
+        "Section": [
+          {
+            "TOCHeading": "Atomic Weight",
+            "Description": "Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u).",
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "208.980 40(1)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "208.98040"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "209.0"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "208.98040(1)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Configuration",
+            "Description": "The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result.",
+            "URL": "https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Xe]6s24f145d106p3",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 9,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 13,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 17,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Radius",
+            "Description": "The atomic radius of a chemical element is a measure of the size of its atom, usually, the distance from the center of the nucleus to the outermost isolated electron.  Because an atom does not have a discrete boundary, there are various non-equivalent definitions of atomic radius, such as Van der Waals radius and covalent radius.",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Name": "Van der Waals Atomic Radius",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "207 pm (Van der Waals)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Empirical Atomic Radius",
+                "Reference": [
+                  "J.C. Slater, J Chem Phys, 1964, 41(10), 3199-3205. DOI:10.1063/1.1725697"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "J.C. Slater, J Chem Phys, 1964, 41(10), 3199-3205. DOI:10.1063/1.1725697"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    160
+                  ],
+                  "Unit": "pm (Empirical)"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Covalent Atomic Radius",
+                "Reference": [
+                  "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "148(4) pm (Covalent)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Oxidation States",
+            "Description": "The oxidation state(s) that this element commonly has in a compound.  The oxidation state of an atom is defined as the hypothetical charge that would be held by that atom if all of its bonds to other atoms were completely ionic in nature. For example, the oxidation state of carbon in CO2 would be +4 since the hypothetical charge held by the carbon atom if both of the carbon-oxygen double bonds were completely ionic would be equal to +4 (each oxygen atom would hold a charge of -2 since oxygen is more electronegative than carbon).",
+            "URL": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/20%3A_Electrochemistry/20.01%3A_Oxidation_States_and_Redox_Reactions",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "+5, +3"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "5, 4, 3, 2, 1, -1, -2, -3"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ground Level",
+            "Description": "Also called ground-state level. The ground state electron configuration is the arrangement of electrons around the nucleus of an atom with lower energy levels.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "4S°3/2",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 3,
+                          "Length": 3,
+                          "Type": "Subscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ionization Energy",
+            "Description": "Ionization energy, also called ionization potential, is the amount of energy required to remove an electron from an isolated atom or molecule.",
+            "URL": "https://www.britannica.com/science/ionization-energy",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "7.289 eV"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Reference": [
+                  "Absorption Spectrum of Bi I in the 2022- to 1307-Å Region, C. W. Mathews, M. L. Ginter, D. S. Ginter, and C. M. Brown, J. Opt. Soc. Am. B 6, 1627–1643 (1989) DOI:10.1364/JOSAB.6.001627",
+                  "Investigation of the 6p2(3P0)np Rydberg Series of Bismuth by Multiphoton Excitation, B. Bühler, C. Cremer, and G. Gerber, Z. Phys. A 320, 71–79 (1985) DOI:10.1007/BF01411927"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Absorption Spectrum of Bi I in the 2022- to 1307-Å Region, C. W. Mathews, M. L. Ginter, D. S. Ginter, and C. M. Brown, J. Opt. Soc. Am. B 6, 1627–1643 (1989) DOI:10.1364/JOSAB.6.001627"
+                  },
+                  {
+                    "Citation": "Investigation of the 6p2(3P0)np Rydberg Series of Bismuth by Multiphoton Excitation, B. Bühler, C. Cremer, and G. Gerber, Z. Phys. A 320, 71–79 (1985) DOI:10.1007/BF01411927"
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "7.285516 ± 0.000006 eV"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electronegativity",
+            "Description": "Electronegativity is a measure of the tendency of an atom to attract a bonding pair of electrons.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electronegativity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Name": "Pauling Scale Electronegativity",
+                "Reference": [
+                  "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    2.02
+                  ],
+                  "Unit": "(Pauling Scale)"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Allen Scale Electronegativity",
+                "Reference": [
+                  "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003",
+                  "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e",
+                  "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    2.01
+                  ],
+                  "Unit": "(Allen Scale)"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Affinity",
+            "Description": "Electron affinity refers to the energy released when an additional electron is attached to a neutral atom to form a singly charged negative ion.  Alternatively, it can also be defined as the energy required to detach an electron from the singly charged negative ion.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electron_Affinity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    0.946
+                  ],
+                  "Unit": "eV"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    0.95
+                  ],
+                  "Unit": "eV"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Spectra",
+            "Description": "The spectrum of the electromagnetic radiation emitted or absorbed by an electron during transitions between different energy levels within an atom.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/lines_hold.pl?el=Bi",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Lines Holdings"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/levels_hold.pl?el=Bi",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Levels Holdings"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Physical Description",
+            "Description": "The appearance or features of this element, including color, odor, state, taste and more in general.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Solid"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Classification",
+            "Description": "Classification according to the element's chemical and physical properties, and location within the periodic table.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Metal"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Period Number",
+            "Description": "The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "6"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Group Number",
+            "Description": "Element group refers to a set of chemical elements in the same vertical column of the periodic table",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "15 - Pnictogen"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Density",
+            "Description": "This section provides information on the density of an element. It is the mass of a unit volume of the element and commonly expressed in units of kg/m3 or g/cm3.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Map%3A_Fundamentals_of_General_Organic_and_Biological_Chemistry_(McMurry_et_al.)/01%3A_Matter_and_Measurements/1.12%3A_Density_and_Specific_Gravity",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "9.807 grams per cubic centimeter"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Melting Point",
+            "Description": "This section provides the melting point and/or freezing point. The melting point is the temperature at which a substance changes state from solid to liquid at atmospheric pressure. When considered as the temperature of the reverse change (from liquid to solid), it is referred to as the freezing point.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.01%3A_Melting_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "544.55 K (271.40°C or 520.52°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "271.5°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Boiling Point",
+            "Description": "The temperature at which this element changes state from liquid to gas at a given atmospheric pressure.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.02%3A_Boiling_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1837 K (1564°C or 2847°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1564°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Crustal Abundance",
+            "Description": "The estimated element abundance in the earth's crust.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "8.5×10-3 milligrams per kilogram",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Oceanic Abundance",
+            "Description": "The estimated element abundance in the earth's oceans.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2×10-5 milligrams per liter",
+                      "Markup": [
+                        {
+                          "Start": 4,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "History",
+        "Description": "The history of the discovery and use of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 3,
+            "Name": "History",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The name derives from the German weisse masse for \"white mass\" from the colour of its oxides. The ancients did not distinguish bismuth from lead. The French chemist Claude-Francois Geoffroy showed that bismuth was distinct from lead in 1753.",
+                  "Markup": [
+                    {
+                      "Start": 33,
+                      "Length": 12,
+                      "Type": "Italics"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Bismuth, which has been known since ancient times, was often confused with lead and tin. Bismuth was first shown to be a distinct element in 1753 by Claude Geoffroy the Younger. Bismuth does occur free in nature and in such minerals as bismuthinite (Bi2S3) and bismite (Bi2O3). The largest deposits of bismuth are found in Bolivia, although bismuth is usually obtained as a by-product of mining and refining lead, copper, tin, silver and gold.",
+                  "Markup": [
+                    {
+                      "Start": 252,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 254,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 272,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 274,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "From the German Weisse Masse, meaning white mass; later Wisuth and Bisemutum. In early times bismuth was confused with tin and lead. Claude Geoffroy the Younger showed it to be distinct from lead in 1753."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Historical Atomic Weights",
+            "Description": "This section provides the historical atomic weights. The atomic weight shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Atomic Weight (uncertainty) [u]",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2005"
+                    },
+                    {
+                      "String": "1995"
+                    },
+                    {
+                      "String": "1985"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1961"
+                    },
+                    {
+                      "String": "1925"
+                    },
+                    {
+                      "String": "1922"
+                    },
+                    {
+                      "String": "1907"
+                    },
+                    {
+                      "String": "1902"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "208.980 40(1)"
+                    },
+                    {
+                      "String": "208.980 38(2)"
+                    },
+                    {
+                      "String": "208.980 37(3)"
+                    },
+                    {
+                      "String": "208.9804(1)"
+                    },
+                    {
+                      "String": "208.9806(1)"
+                    },
+                    {
+                      "String": "208.980"
+                    },
+                    {
+                      "String": "209.00"
+                    },
+                    {
+                      "String": "209.0"
+                    },
+                    {
+                      "String": "208.0"
+                    },
+                    {
+                      "String": "208.5"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1351/pac200678112051",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac200678112051"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199668122339",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199668122339"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198658121677",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198658121677"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197230030637",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197230030637"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197021010091",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197021010091"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja00881a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja00881a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/CT9252700913",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/CT9252700913"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja01441a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja01441a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja01956a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja01956a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1007/BF01370337",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 22,
+                          "URL": "https://doi.org/10.1007/BF01370337"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Historical Isotopic Abundances",
+            "Description": "This section provides the historical isotopic abundance information. The abundance value shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 4,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Isotope",
+                    "Abundance (uncertainty)",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1975"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "209Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Description",
+        "Description": "A short description of this element, provided by authoritative sources.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "It is a white, crystalline, brittle metal with a pinkish tinge. It occurs in a native state. Bismuth is the most diamagnetic of all metals, and the thermal conductivity is lower than any metal, except mercury. It has a high electrical resistance, and has the highest Hall effect of any metal (i.e., greatest increase in electrical resistance when placed in a magnetic field)."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Uses",
+        "Description": "Uses of this element in industry and other fields.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Pure bismuth is a white, brittle metal with a slight pink color. Bismuth is usually mixed with other metals, such as lead, tin, iron or cadmium to form low-melting alloys. These alloys are used in such things as automatic fire sprinkler systems, fire detection systems and electrical fuses."
+                },
+                {
+                  "String": "Bismuth oxide (Bi2O3), a bismuth compound, is used as a yellow pigment in paints and cosmetics. Bismuth oxychloride (BiOCl) is used to make a pigment known as bismuth white. Bismuth carbonate (Bi2(CO3)3) is used to treat diarrhea and gastric ulcers.",
+                  "Markup": [
+                    {
+                      "Start": 17,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 19,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 195,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 199,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 201,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                },
+                {
+                  "String": "Once thought to be the heaviest stable isotope to exist in nature, experiments conducted in 2002 showed that bismuth-209 is unstable and decays into thallium-205 through alpha decay. Bismuth-209 has a half-life of roughly 19,000,000,000,000,000,000 years."
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "\"Bismanol\" is a permanent magnet of high coercive force, made of MnBi, by the U.S. Naval Surface Weapons Center. Bismuth expands 3.32% on solidification. This property makes bismuth alloys particularly suited to the making of sharp castings of objects subject to damage by high temperatures. With other metals such as tin, cadmium, etc., bismuth forms low-melting alloys which are extensively used for safety devices in fire detection and extinguishing systems. Bismuth is used in producing malleable irons and is finding use as a catalyst for making acrylic fibers. When bismuth is heated in air it burns with a blue flame, forming yellow fumes of the oxide. The metal is also used as a thermocoupling material, and has found application as a carrier for 235U or 233U fuel in nuclear reactors. Its soluble salts are characterized by forming unsoluble basic salts on the addition of water, a property sometimes used in detection work. Bismuth oxychloride is used extensively in cosmetics. Bismuth subnitrate and subcarbonate are used in medicine.",
+                  "Markup": [
+                    {
+                      "Start": 756,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 764,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Sources",
+        "Description": "Sources of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The most important ores are bismuthinite or bismuth glance and bismite. Peru, Japan, Mexico, Bolivia, and Canada are major bismuth producers. Much of the bismuth produced in the U.S. is obtained as a by-product in refining lead, copper, tin, silver, and gold ores."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Compounds",
+        "Description": "Compound records related to this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 8,
+            "Name": "Compounds",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=Bismuth",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "See more information at the Bismuth compound page."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Element Forms",
+            "Description": "Other forms of this element, including ions, isotopes, etc.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "CID",
+                    "Name",
+                    "Formula",
+                    "SMILES",
+                    "Molecular Weight"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 8,
+                "Name": "CID",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "5359367",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/5359367"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "105143",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/105143"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6328547",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6328547"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6328549",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6328549"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6335500",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6335500"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6335818",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6335818"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6336623",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6336623"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6337093",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6337093"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6337623",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6337623"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6337532",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6337532"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6337548",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6337548"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6337577",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6337577"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6337633",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6337633"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "6337620",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/6337620"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "16048797",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/16048797"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "130476802",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/130476802"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "9813166",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/9813166"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "11701310",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/11701310"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "44148263",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/44148263"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "73456766",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/73456766"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "75124216",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/75124216"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "75124217",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/75124217"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "75124266",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 8,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/75124266"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "135474617",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 9,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/135474617"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "bismuth"
+                    },
+                    {
+                      "String": "bismuth(3+)"
+                    },
+                    {
+                      "String": "bismuth-210"
+                    },
+                    {
+                      "String": "bismuth-214"
+                    },
+                    {
+                      "String": "bismuth-212"
+                    },
+                    {
+                      "String": "bismuth-207"
+                    },
+                    {
+                      "String": "bismuth-206"
+                    },
+                    {
+                      "String": "bismuth-213"
+                    },
+                    {
+                      "String": "bismuth-205"
+                    },
+                    {
+                      "String": "bismuth-200"
+                    },
+                    {
+                      "String": "bismuth-202"
+                    },
+                    {
+                      "String": "bismuth-211"
+                    },
+                    {
+                      "String": "bismuth-203"
+                    },
+                    {
+                      "String": "bismuth-201"
+                    },
+                    {
+                      "String": "bismuth-209"
+                    },
+                    {
+                      "String": "bismuth(2+)"
+                    },
+                    {
+                      "String": "bismuth-213(3+)"
+                    },
+                    {
+                      "String": "bismuth-216"
+                    },
+                    {
+                      "String": "bismuth-208"
+                    },
+                    {
+                      "String": "bismuth-198"
+                    },
+                    {
+                      "String": "bismuth-192"
+                    },
+                    {
+                      "String": "bismuth-194"
+                    },
+                    {
+                      "String": "bismuth-196"
+                    },
+                    {
+                      "String": "bismuth-217"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Formula",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi+3"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi+2"
+                    },
+                    {
+                      "String": "Bi+3"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    },
+                    {
+                      "String": "Bi"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "SMILES",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Bi]"
+                    },
+                    {
+                      "String": "[Bi+3]"
+                    },
+                    {
+                      "String": "[210Bi]"
+                    },
+                    {
+                      "String": "[214Bi]"
+                    },
+                    {
+                      "String": "[212Bi]"
+                    },
+                    {
+                      "String": "[207Bi]"
+                    },
+                    {
+                      "String": "[206Bi]"
+                    },
+                    {
+                      "String": "[213Bi]"
+                    },
+                    {
+                      "String": "[205Bi]"
+                    },
+                    {
+                      "String": "[200Bi]"
+                    },
+                    {
+                      "String": "[202Bi]"
+                    },
+                    {
+                      "String": "[211Bi]"
+                    },
+                    {
+                      "String": "[203Bi]"
+                    },
+                    {
+                      "String": "[201Bi]"
+                    },
+                    {
+                      "String": "[209Bi]"
+                    },
+                    {
+                      "String": "[Bi+2]"
+                    },
+                    {
+                      "String": "[213Bi+3]"
+                    },
+                    {
+                      "String": "[216Bi]"
+                    },
+                    {
+                      "String": "[208Bi]"
+                    },
+                    {
+                      "String": "[198Bi]"
+                    },
+                    {
+                      "String": "[192Bi]"
+                    },
+                    {
+                      "String": "[194Bi]"
+                    },
+                    {
+                      "String": "[196Bi]"
+                    },
+                    {
+                      "String": "[217Bi]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Molecular Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "208.98040"
+                    },
+                    {
+                      "String": "208.98040"
+                    },
+                    {
+                      "String": "209.98412"
+                    },
+                    {
+                      "String": "213.9987"
+                    },
+                    {
+                      "String": "211.99129"
+                    },
+                    {
+                      "String": "206.97847"
+                    },
+                    {
+                      "String": "205.97850"
+                    },
+                    {
+                      "String": "212.99438"
+                    },
+                    {
+                      "String": "204.97739"
+                    },
+                    {
+                      "String": "199.9781"
+                    },
+                    {
+                      "String": "201.9777"
+                    },
+                    {
+                      "String": "210.98727"
+                    },
+                    {
+                      "String": "202.9769"
+                    },
+                    {
+                      "String": "200.9770"
+                    },
+                    {
+                      "String": "208.98040"
+                    },
+                    {
+                      "String": "208.98040"
+                    },
+                    {
+                      "String": "212.99438"
+                    },
+                    {
+                      "String": "216.0063"
+                    },
+                    {
+                      "String": "207.97974"
+                    },
+                    {
+                      "String": "197.9792"
+                    },
+                    {
+                      "String": "191.9855"
+                    },
+                    {
+                      "String": "193.98280"
+                    },
+                    {
+                      "String": "195.9807"
+                    },
+                    {
+                      "String": "217.0094"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Isotopes",
+        "Description": "Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.",
+        "URL": "https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Name": "Stable Isotope Count",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "0"
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Isotopes in Medicine",
+            "Description": "Information on the use of this element's isotopes in medicine.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[559]  D. E. Milenic, M. Roselli, S. Mirzadeh, C. G. Pippin, O. A. Gansow, D. Colcher, M. W. Brechbiel, J. Schlom. Cancer Biother. Radiopharm.16, 133 (2001).",
+                  "[560]  F. Hartmann, E. M. Horak, K. Garmestani, C. Wu, M. W. Brechbiel, R. W. Kozak, J. Tso, S. A. Kosteiny, O. A. Gansow, D. L. Nelson. Cancer Res.54, 4362 (1994).",
+                  "[561]  National Cancer Institute, Skin Cancer, Melanoma, Foot. https://visualsonline.cancer.gov/details.cfm?imageid=9246.",
+                  "[562]  S. Supiot, A. Faivre-Chauvet, O. Couturier, M. F. Heymann, N. Robillard, F. Kraeber-Bodéré, L. Morandeau, M. A. Mahé, M. Chérel. Cancer94, 1202 (2002)."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[559]  D. E. Milenic, M. Roselli, S. Mirzadeh, C. G. Pippin, O. A. Gansow, D. Colcher, M. W. Brechbiel, J. Schlom. Cancer Biother. Radiopharm.16, 133 (2001)."
+                  },
+                  {
+                    "Citation": "[560]  F. Hartmann, E. M. Horak, K. Garmestani, C. Wu, M. W. Brechbiel, R. W. Kozak, J. Tso, S. A. Kosteiny, O. A. Gansow, D. L. Nelson. Cancer Res.54, 4362 (1994)."
+                  },
+                  {
+                    "Citation": "[561]  National Cancer Institute, Skin Cancer, Melanoma, Foot. https://visualsonline.cancer.gov/details.cfm?imageid=9246."
+                  },
+                  {
+                    "Citation": "[562]  S. Supiot, A. Faivre-Chauvet, O. Couturier, M. F. Heymann, N. Robillard, F. Kraeber-Bodéré, L. Morandeau, M. A. Mahé, M. Chérel. Cancer94, 1202 (2002)."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "212Bi and 213Bi (with half-lives of 1 h and 0.76 h, respectively) are both used in medicine for radioimmunotherapy as bismuth-labeled monoclonal antibodies to treat cancer cells from melanoma (skin cancer) (Fig. IUPAC.83.1) and ovarian cancer [559]. Figure 4.83.2 compares the biologic effect of 131I and 213Bi using a specific monoclonal antibody, B-B4, coupled to 213Bi by a chelating agent (a substance that can form multiple bonds to a single metal ion). 213Bi is a mixed alpha and beta emitter with a half-life of 0.76 h. The primary mode of decay is by beta emission to the very short-lived alpha emitter 213Po. The 8.4 MeV alpha particle emitted by 213Po has a path length of 76 μm in human tissue and is responsible for its cytotoxic effects (toxic to living cells). 213Bi is produced from a series of alpha particle decays beginning with 225Ac, which is a pure alpha emitter with a half-life of 10 days. A schematic of the Institute for Transuranium Elements (ITU) Standard 225Ac/ 213Bi Radionuclide Generator is shown in Fig. IUPAC.83.3.",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 296,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 305,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 366,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 459,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 611,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 656,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 775,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 847,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 983,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 990,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "212Bi has been used for radioimmunotherapy of leukemia and for targeting the vascular endothelial cells (thin layer of simple squamous cells that forms the interface between circulating blood or lymph and the remainder of the vessel wall) of tumors [560].",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_113.jpg",
+                          "Type": "Image",
+                          "Size": "709x1052",
+                          "Caption": "Fig. IUPAC.83.1: Melanoma (skin cancer) on a patient’s foot. ²¹²Bi and ²¹³Bi are both used as bismuth-labeled monoclonal antibodies to treat cancer cells from melanoma. (Photo Source: Kelly Nelson, National Cancer Institute) [561]. "
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_114.jpg",
+                          "Type": "Image",
+                          "Size": "721x719",
+                          "Caption": "Fig. IUPAC.83.2: Comparison of biological effectiveness of ²¹³Bi and ¹³¹I when coupled to the specific monoclonal antibody B-B4 (modified after [562]); MBq/L, million becquerel per litre. "
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_115.jpg",
+                          "Type": "Image",
+                          "Size": "969x256",
+                          "Caption": "Fig. IUPAC.83.3: Schematic of the Institute for Transuranium Elements (ITU) Standard ²²⁵Ac/ ²¹³Bi Radionuclide Generator. Image kindly provided by Dr. Alfred Morgenstern, European Commission, Joint Research Centre – Institute for Transuranium Elements, Karlsruhe, Germany. "
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes Used as a Source of Radioactive Isotope(s)",
+            "Description": "Information on the use of this element's isotopes to generate radioactive isotopes.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[75]  J. Peterson, M. McDonell, L. Haroun, F. Monette, R. D. Hildebrand, A. Taboas. Radiological and Chemical Fact Sheets to Support Health Risk Analyses for Contaminated Areas, Prepared by Argonne National Laboratory Environmental Science Division in collaboration with U.S. Department of Energy, Richland Operations Office and Chicago Operations Office (2014), Feb. 22; http://www.remm.nlm.gov/ANL_ContaminantFactSheets_All_070418.pdf."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[75]  J. Peterson, M. McDonell, L. Haroun, F. Monette, R. D. Hildebrand, A. Taboas. Radiological and Chemical Fact Sheets to Support Health Risk Analyses for Contaminated Areas, Prepared by Argonne National Laboratory Environmental Science Division in collaboration with U.S. Department of Energy, Richland Operations Office and Chicago Operations Office (2014), Feb. 22; http://www.remm.nlm.gov/ANL_ContaminantFactSheets_All_070418.pdf."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "209Bi is bombarded with neutrons in a nuclear reactor to form radioactive 210Bi. The 210Bi (with a half-life of 5 days) decays via the reaction 210Bi→ 210Po+β −. The half-life of 210Po is 138 days and it is used in static eliminators in machinery [75].",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 74,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 85,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 144,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 151,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 159,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 179,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotope Mass and Abundance",
+            "Description": "Atomic mass and abundance (composition) information for a given isotope/nuclide. The number in the parenthesis refers to an uncertainty when exist. The unit of atomic weight is the unified atomic mass unit (u) or dalton (Da). ",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Isotope",
+                    "Atomic Mass (uncertainty) [u]",
+                    "Abundance (uncertainty)"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": " 209Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 4,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Mass (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "208.980 40(1)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "209Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Atomic Mass (uncertainty) [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "208.9803991(16)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Mass, Half Life, and Decay",
+            "Description": "Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Nuclide",
+                    "Atomic Mass and Uncertainty [u]",
+                    "Half Life and Uncertainty",
+                    "Discovery Year",
+                    "Decay Modes, Intensities and Uncertainties [%]"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 2,
+                "Name": "Nuclide",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "184Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "184Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "185Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "185Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "185Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "186Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "186Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "187Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "187Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "187Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "188Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "188Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "188Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "189Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "189Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "189Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "190Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "190Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "190Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "190Bip",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "191Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "191Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "191Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "191Bip",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "192Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "192Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "193Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "193Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "193Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "193Bip",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "193Biq",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "194Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "194Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "194Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "195Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "195Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "195Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "195Bip",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "196Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "196Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "196Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "197Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "197Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "197Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "197Bip",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "197Biq",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "198Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "198Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "198Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "199Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "199Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "199Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "199Bip",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "200Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "200Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "200Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "201Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "201Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "201Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "201Bip",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "201Biq",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "202Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "202Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "202Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "203Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "203Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "203Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "204Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "204Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "204Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "205Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "205Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "205Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "205Bip",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "206Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "206Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "206Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "206Bip",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "206Biq",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "207Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "207Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "208Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "208Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "209Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "210Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "210Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "211Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "211Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "212Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "212Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "212Bin",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "213Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "213Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "214Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "214Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "215Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "215Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "216Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "216Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "217Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "217Bim",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "218Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "219Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "220Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "221Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "222Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "223Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "224Bi",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Atomic Mass and Uncertainty [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "184.001347 ± 0.000131 [Estimated]"
+                    },
+                    {
+                      "String": "184.001347 ± 0.000131 [Estimated]"
+                    },
+                    {
+                      "String": "184.997600 ± 0.000087 [Estimated]"
+                    },
+                    {
+                      "String": "184.997600 ± 0.000087 [Estimated]"
+                    },
+                    {
+                      "String": "184.997600 ± 0.000087 [Estimated]"
+                    },
+                    {
+                      "String": "185.996623169 ± 0.0000182"
+                    },
+                    {
+                      "String": "185.996623169 ± 0.0000182"
+                    },
+                    {
+                      "String": "186.993147272 ± 0.00001074"
+                    },
+                    {
+                      "String": "186.993147272 ± 0.00001074"
+                    },
+                    {
+                      "String": "186.993147272 ± 0.00001074"
+                    },
+                    {
+                      "String": "187.992276064 ± 0.000012001"
+                    },
+                    {
+                      "String": "187.992276064 ± 0.000012001"
+                    },
+                    {
+                      "String": "187.992276064 ± 0.000012001"
+                    },
+                    {
+                      "String": "188.989195139 ± 0.000022384"
+                    },
+                    {
+                      "String": "188.989195139 ± 0.000022384"
+                    },
+                    {
+                      "String": "188.989195139 ± 0.000022384"
+                    },
+                    {
+                      "String": "189.988624828 ± 0.000022515"
+                    },
+                    {
+                      "String": "189.988624828 ± 0.000022515"
+                    },
+                    {
+                      "String": "189.988624828 ± 0.000022515"
+                    },
+                    {
+                      "String": "189.988624828 ± 0.000022515"
+                    },
+                    {
+                      "String": "190.985786972 ± 0.000008037"
+                    },
+                    {
+                      "String": "190.985786972 ± 0.000008037"
+                    },
+                    {
+                      "String": "190.985786972 ± 0.000008037"
+                    },
+                    {
+                      "String": "190.985786972 ± 0.000008037"
+                    },
+                    {
+                      "String": "191.985470077 ± 0.000032326"
+                    },
+                    {
+                      "String": "191.985470077 ± 0.000032326"
+                    },
+                    {
+                      "String": "192.982947220 ± 0.000008132"
+                    },
+                    {
+                      "String": "192.982947220 ± 0.000008132"
+                    },
+                    {
+                      "String": "192.982947220 ± 0.000008132"
+                    },
+                    {
+                      "String": "192.982947220 ± 0.000008132"
+                    },
+                    {
+                      "String": "192.982947220 ± 0.000008132"
+                    },
+                    {
+                      "String": "193.982798581 ± 0.000005638"
+                    },
+                    {
+                      "String": "193.982798581 ± 0.000005638"
+                    },
+                    {
+                      "String": "193.982798581 ± 0.000005638"
+                    },
+                    {
+                      "String": "194.980648759 ± 0.000005675"
+                    },
+                    {
+                      "String": "194.980648759 ± 0.000005675"
+                    },
+                    {
+                      "String": "194.980648759 ± 0.000005675"
+                    },
+                    {
+                      "String": "194.980648759 ± 0.000005675"
+                    },
+                    {
+                      "String": "195.980666509 ± 0.000026224"
+                    },
+                    {
+                      "String": "195.980666509 ± 0.000026224"
+                    },
+                    {
+                      "String": "195.980666509 ± 0.000026224"
+                    },
+                    {
+                      "String": "196.978864927 ± 0.000008946"
+                    },
+                    {
+                      "String": "196.978864927 ± 0.000008946"
+                    },
+                    {
+                      "String": "196.978864927 ± 0.000008946"
+                    },
+                    {
+                      "String": "196.978864927 ± 0.000008946"
+                    },
+                    {
+                      "String": "196.978864927 ± 0.000008946"
+                    },
+                    {
+                      "String": "197.979201316 ± 0.000029598"
+                    },
+                    {
+                      "String": "197.979201316 ± 0.000029598"
+                    },
+                    {
+                      "String": "197.979201316 ± 0.000029598"
+                    },
+                    {
+                      "String": "198.977672841 ± 0.000011395"
+                    },
+                    {
+                      "String": "198.977672841 ± 0.000011395"
+                    },
+                    {
+                      "String": "198.977672841 ± 0.000011395"
+                    },
+                    {
+                      "String": "198.977672841 ± 0.000011395"
+                    },
+                    {
+                      "String": "199.978131290 ± 0.00002437"
+                    },
+                    {
+                      "String": "199.978131290 ± 0.00002437"
+                    },
+                    {
+                      "String": "199.978131290 ± 0.00002437"
+                    },
+                    {
+                      "String": "200.976995017 ± 0.000013072"
+                    },
+                    {
+                      "String": "200.976995017 ± 0.000013072"
+                    },
+                    {
+                      "String": "200.976995017 ± 0.000013072"
+                    },
+                    {
+                      "String": "200.976995017 ± 0.000013072"
+                    },
+                    {
+                      "String": "200.976995017 ± 0.000013072"
+                    },
+                    {
+                      "String": "201.977723042 ± 0.000015032"
+                    },
+                    {
+                      "String": "201.977723042 ± 0.000015032"
+                    },
+                    {
+                      "String": "201.977723042 ± 0.000015032"
+                    },
+                    {
+                      "String": "202.976892077 ± 0.000013717"
+                    },
+                    {
+                      "String": "202.976892077 ± 0.000013717"
+                    },
+                    {
+                      "String": "202.976892077 ± 0.000013717"
+                    },
+                    {
+                      "String": "203.977835687 ± 0.000009854"
+                    },
+                    {
+                      "String": "203.977835687 ± 0.000009854"
+                    },
+                    {
+                      "String": "203.977835687 ± 0.000009854"
+                    },
+                    {
+                      "String": "204.977385182 ± 0.000005161"
+                    },
+                    {
+                      "String": "204.977385182 ± 0.000005161"
+                    },
+                    {
+                      "String": "204.977385182 ± 0.000005161"
+                    },
+                    {
+                      "String": "204.977385182 ± 0.000005161"
+                    },
+                    {
+                      "String": "205.978498843 ± 0.000008193"
+                    },
+                    {
+                      "String": "205.978498843 ± 0.000008193"
+                    },
+                    {
+                      "String": "205.978498843 ± 0.000008193"
+                    },
+                    {
+                      "String": "205.978498843 ± 0.000008193"
+                    },
+                    {
+                      "String": "205.978498843 ± 0.000008193"
+                    },
+                    {
+                      "String": "206.978470551 ± 0.000002573"
+                    },
+                    {
+                      "String": "206.978470551 ± 0.000002573"
+                    },
+                    {
+                      "String": "207.979742060 ± 0.000002474"
+                    },
+                    {
+                      "String": "207.979742060 ± 0.000002474"
+                    },
+                    {
+                      "String": "208.980398599 ± 0.000001465"
+                    },
+                    {
+                      "String": "209.984120237 ± 0.000001463"
+                    },
+                    {
+                      "String": "209.984120237 ± 0.000001463"
+                    },
+                    {
+                      "String": "210.987268715 ± 0.000005842"
+                    },
+                    {
+                      "String": "210.987268715 ± 0.000005842"
+                    },
+                    {
+                      "String": "211.991285030 ± 0.000001989"
+                    },
+                    {
+                      "String": "211.991285030 ± 0.000001989"
+                    },
+                    {
+                      "String": "211.991285030 ± 0.000001989"
+                    },
+                    {
+                      "String": "212.994383570 ± 0.000005455"
+                    },
+                    {
+                      "String": "212.994383570 ± 0.000005455"
+                    },
+                    {
+                      "String": "213.998710909 ± 0.000012033"
+                    },
+                    {
+                      "String": "213.998710909 ± 0.000012033"
+                    },
+                    {
+                      "String": "215.001749095 ± 0.000006037"
+                    },
+                    {
+                      "String": "215.001749095 ± 0.000006037"
+                    },
+                    {
+                      "String": "216.006305985 ± 0.000012"
+                    },
+                    {
+                      "String": "216.006305985 ± 0.000012"
+                    },
+                    {
+                      "String": "217.009372000 ± 0.000019"
+                    },
+                    {
+                      "String": "217.009372000 ± 0.000019"
+                    },
+                    {
+                      "String": "218.014188000 ± 0.000029"
+                    },
+                    {
+                      "String": "219.017520 ± 0.000215 [Estimated]"
+                    },
+                    {
+                      "String": "220.022501 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "221.025980 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "222.031079 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "223.034611 ± 0.000429 [Estimated]"
+                    },
+                    {
+                      "String": "224.039796 ± 0.000429 [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Half Life and Uncertainty",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "6.6 ms ± 1.5"
+                    },
+                    {
+                      "String": "13 ms ± 2"
+                    },
+                    {
+                      "String": "2 ms [Estimated]"
+                    },
+                    {
+                      "String": "58 us ± 4"
+                    },
+                    {
+                      "String": "50 us ± 10"
+                    },
+                    {
+                      "String": "14.8 ms ± 0.7"
+                    },
+                    {
+                      "String": "9.8 ms ± 0.4"
+                    },
+                    {
+                      "String": "37 ms ± 2"
+                    },
+                    {
+                      "String": "370 us ± 20"
+                    },
+                    {
+                      "String": "7 us ± 5"
+                    },
+                    {
+                      "String": "60 ms ± 3"
+                    },
+                    {
+                      "String": ">5 us"
+                    },
+                    {
+                      "String": "265 ms ± 15"
+                    },
+                    {
+                      "String": "688 ms ± 5"
+                    },
+                    {
+                      "String": "5.0 ms ± 0.1"
+                    },
+                    {
+                      "String": "880 ns ± 50"
+                    },
+                    {
+                      "String": "6.3 s ± 0.1"
+                    },
+                    {
+                      "String": "6.2 s ± 0.1"
+                    },
+                    {
+                      "String": "175 ns ± 8"
+                    },
+                    {
+                      "String": "1.3 us ± 0.8"
+                    },
+                    {
+                      "String": "12.4 s ± 0.3"
+                    },
+                    {
+                      "String": "125 ms ± 8"
+                    },
+                    {
+                      "String": "562 ns ± 10"
+                    },
+                    {
+                      "String": "400 ns ± 40"
+                    },
+                    {
+                      "String": "34.6 s ± 0.9"
+                    },
+                    {
+                      "String": "39.6 s ± 0.4"
+                    },
+                    {
+                      "String": "63.6 s ± 3.0"
+                    },
+                    {
+                      "String": "3.20 s ± 0.14"
+                    },
+                    {
+                      "String": "153 ns ± 10"
+                    },
+                    {
+                      "String": "85 us ± 3"
+                    },
+                    {
+                      "String": "3.02 us ± 0.08"
+                    },
+                    {
+                      "String": "95 s ± 3"
+                    },
+                    {
+                      "String": "125 s ± 2"
+                    },
+                    {
+                      "String": "115 s ± 4"
+                    },
+                    {
+                      "String": "183 s ± 4"
+                    },
+                    {
+                      "String": "87 s ± 1"
+                    },
+                    {
+                      "String": "614 ns ± 5"
+                    },
+                    {
+                      "String": "1.49 us ± 0.01"
+                    },
+                    {
+                      "String": "5.13 m ± 0.20"
+                    },
+                    {
+                      "String": "0.6 s ± 0.5"
+                    },
+                    {
+                      "String": "4.00 m ± 0.05"
+                    },
+                    {
+                      "String": "9.33 m ± 0.50"
+                    },
+                    {
+                      "String": "5.04 m ± 0.16"
+                    },
+                    {
+                      "String": "204 ns ± 18"
+                    },
+                    {
+                      "String": "263 ns ± 13"
+                    },
+                    {
+                      "String": "209 ns ± 30"
+                    },
+                    {
+                      "String": "10.3 m ± 0.3"
+                    },
+                    {
+                      "String": "11.6 m ± 0.3"
+                    },
+                    {
+                      "String": "7.7 s ± 0.5"
+                    },
+                    {
+                      "String": "27 m ± 1"
+                    },
+                    {
+                      "String": "24.70 m ± 0.15"
+                    },
+                    {
+                      "String": "100 ns ± 30"
+                    },
+                    {
+                      "String": "168 ns ± 13"
+                    },
+                    {
+                      "String": "36.4 m ± 0.5"
+                    },
+                    {
+                      "String": "31 m ± 2"
+                    },
+                    {
+                      "String": "400 ms ± 50"
+                    },
+                    {
+                      "String": "103 m ± 3"
+                    },
+                    {
+                      "String": "57.5 m ± 2.1"
+                    },
+                    {
+                      "String": "118 ns ± 28"
+                    },
+                    {
+                      "String": "105 ns ± 75"
+                    },
+                    {
+                      "String": "124 ns ± 4"
+                    },
+                    {
+                      "String": "1.72 h ± 0.05"
+                    },
+                    {
+                      "String": "3.04 us ± 0.06"
+                    },
+                    {
+                      "String": "310 ns ± 50"
+                    },
+                    {
+                      "String": "11.76 h ± 0.05"
+                    },
+                    {
+                      "String": "305 ms ± 5"
+                    },
+                    {
+                      "String": "194 ns ± 30"
+                    },
+                    {
+                      "String": "11.22 h ± 0.10"
+                    },
+                    {
+                      "String": "13.0 ms ± 0.1"
+                    },
+                    {
+                      "String": "1.07 ms ± 0.03"
+                    },
+                    {
+                      "String": "14.91 d ± 0.07"
+                    },
+                    {
+                      "String": "7.9 us ± 0.7"
+                    },
+                    {
+                      "String": "100 ns ± 6"
+                    },
+                    {
+                      "String": "220 ns ± 25"
+                    },
+                    {
+                      "String": "6.243 d ± 0.003"
+                    },
+                    {
+                      "String": "7.7 us ± 0.2"
+                    },
+                    {
+                      "String": "890 us ± 10"
+                    },
+                    {
+                      "String": "155 ns ± 15"
+                    },
+                    {
+                      "String": ">2 us"
+                    },
+                    {
+                      "String": "31.22 y ± 0.17"
+                    },
+                    {
+                      "String": "182 us ± 6"
+                    },
+                    {
+                      "String": "368 ky ± 4"
+                    },
+                    {
+                      "String": "2.58 ms ± 0.04"
+                    },
+                    {
+                      "String": "20.1 Ey ± 0.8"
+                    },
+                    {
+                      "String": "5.012 d ± 0.005"
+                    },
+                    {
+                      "String": "3.04 My ± 0.06"
+                    },
+                    {
+                      "String": "2.14 m ± 0.02"
+                    },
+                    {
+                      "String": "1.4 us ± 0.3"
+                    },
+                    {
+                      "String": "60.55 m ± 0.06"
+                    },
+                    {
+                      "String": "25.0 m ± 0.2"
+                    },
+                    {
+                      "String": "7.0 m ± 0.3"
+                    },
+                    {
+                      "String": "45.60 m ± 0.04"
+                    },
+                    {
+                      "String": ">168 s"
+                    },
+                    {
+                      "String": "19.9 m ± 0.4"
+                    },
+                    {
+                      "String": ">93 s"
+                    },
+                    {
+                      "String": "7.62 m ± 0.13"
+                    },
+                    {
+                      "String": "36.9 s ± 0.6"
+                    },
+                    {
+                      "String": "2.21 m ± 0.04"
+                    },
+                    {
+                      "String": "6.6 m ± 2.1"
+                    },
+                    {
+                      "String": "98.5 s ± 1.3"
+                    },
+                    {
+                      "String": "3.0 us ± 0.2"
+                    },
+                    {
+                      "String": "33 s ± 1"
+                    },
+                    {
+                      "String": "8.7 s ± 2.9"
+                    },
+                    {
+                      "String": "9.5 s ± 5.7"
+                    },
+                    {
+                      "String": "2 s >300ns [Estimated]"
+                    },
+                    {
+                      "String": "3 s >300ns [Estimated]"
+                    },
+                    {
+                      "String": "1 s >300ns [Estimated]"
+                    },
+                    {
+                      "String": "1 s >300ns [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Discovery Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2003"
+                    },
+                    {
+                      "String": "2002"
+                    },
+                    {
+                      "String": "1996"
+                    },
+                    {
+                      "String": "1996"
+                    },
+                    {
+                      "String": "2004"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1984"
+                    },
+                    {
+                      "String": "1999"
+                    },
+                    {
+                      "String": "1984"
+                    },
+                    {
+                      "String": "2002"
+                    },
+                    {
+                      "String": "1980"
+                    },
+                    {
+                      "String": "1984"
+                    },
+                    {
+                      "String": "1984"
+                    },
+                    {
+                      "String": "1973"
+                    },
+                    {
+                      "String": "1984"
+                    },
+                    {
+                      "String": "2001"
+                    },
+                    {
+                      "String": "1972"
+                    },
+                    {
+                      "String": "1988"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "2001"
+                    },
+                    {
+                      "String": "1972"
+                    },
+                    {
+                      "String": "1981"
+                    },
+                    {
+                      "String": "2001"
+                    },
+                    {
+                      "String": "2016"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1966"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1970"
+                    },
+                    {
+                      "String": "2004"
+                    },
+                    {
+                      "String": "2004"
+                    },
+                    {
+                      "String": "2004"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1976"
+                    },
+                    {
+                      "String": "1988"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1974"
+                    },
+                    {
+                      "String": "2003"
+                    },
+                    {
+                      "String": "2018"
+                    },
+                    {
+                      "String": "1976"
+                    },
+                    {
+                      "String": "1987"
+                    },
+                    {
+                      "String": "1987"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1966"
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": "1986"
+                    },
+                    {
+                      "String": "1986"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1992"
+                    },
+                    {
+                      "String": "1972"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1974"
+                    },
+                    {
+                      "String": "1985"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1978"
+                    },
+                    {
+                      "String": "1972"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1982"
+                    },
+                    {
+                      "String": "1985"
+                    },
+                    {
+                      "String": "1982"
+                    },
+                    {
+                      "String": "1951"
+                    },
+                    {
+                      "String": "1981"
+                    },
+                    {
+                      "String": "1981"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1984"
+                    },
+                    {
+                      "String": "1978"
+                    },
+                    {
+                      "String": "1947"
+                    },
+                    {
+                      "String": "1974"
+                    },
+                    {
+                      "String": "1974"
+                    },
+                    {
+                      "String": "1951"
+                    },
+                    {
+                      "String": "1972"
+                    },
+                    {
+                      "String": "1978"
+                    },
+                    {
+                      "String": "1978"
+                    },
+                    {
+                      "String": "1947"
+                    },
+                    {
+                      "String": "1957"
+                    },
+                    {
+                      "String": "1974"
+                    },
+                    {
+                      "String": "2012"
+                    },
+                    {
+                      "String": "2012"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "1953"
+                    },
+                    {
+                      "String": "1961"
+                    },
+                    {
+                      "String": "1924"
+                    },
+                    {
+                      "String": "1905"
+                    },
+                    {
+                      "String": "1953"
+                    },
+                    {
+                      "String": "1905"
+                    },
+                    {
+                      "String": "1998"
+                    },
+                    {
+                      "String": "1905"
+                    },
+                    {
+                      "String": "1978"
+                    },
+                    {
+                      "String": "1978"
+                    },
+                    {
+                      "String": "1947"
+                    },
+                    {
+                      "String": "2008"
+                    },
+                    {
+                      "String": "1904"
+                    },
+                    {
+                      "String": "2008"
+                    },
+                    {
+                      "String": "1953"
+                    },
+                    {
+                      "String": "2001"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1989"
+                    },
+                    {
+                      "String": "1998"
+                    },
+                    {
+                      "String": "2012"
+                    },
+                    {
+                      "String": "1998"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "2010"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "2010"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Decay Modes, Intensities and Uncertainties [%]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "p ?; α ?"
+                    },
+                    {
+                      "String": "p=90±0.2%; α=10±0.2%"
+                    },
+                    {
+                      "String": "p=?; α=?"
+                    },
+                    {
+                      "String": "α≈100%; β+=?; β+SF≈0.011%",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 15,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α≈100%; β+=?; β+SF≈0.011%",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 15,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "α≈100%; β+ ?; β+SF=0.0014±0.7%",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 15,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT ?; α ?; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α≈100%; β+ ?; β+SF=0.0046±0.9%",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 15,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α≈100%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=83±0.5%; IT=17±0.5%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "α=77±2.1%; β+=23±2.1%; β+SF=6e-6±0.5%",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 24,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=70±0.9%; β+ ?; β+SF=4e-6±0.3%",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 18,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "α=51±1%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=68±0.5%; IT ?; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 18,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=88±0.5%; α=12±0.5%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=90±0.3%; α=10±0.3%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=96.5±1.5%; α=3.5±1.5%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=84±1.6%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+≈100%; α=0.46±2.5%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+≈100%; α ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+≈100%; α=0.20±0.7%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+≈100%; α=0.030±1.2%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=67±1.7%; α=33±1.7%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+≈100%; α=0.00115±3.4%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT≈100%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=74.2±2.5%; IT=25.8±2.5%; α=0.00038±1%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%; α ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=55±4%; β+=45±4%; IT ?",
+                      "Markup": [
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=?; IT<2%; α≈0.01%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+<100%; IT ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+≈100%; α=?; IT ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=100%; α<1e-5%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "IS=100%; α=100%"
+                    },
+                    {
+                      "String": "β-=100%; α=13.2e-5±1%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α≈100%; β-=0.276±0.4%",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β-=64.06±0.6%; α=35.94±0.6%; β-α≈0.014%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 30,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=67±0.1%; β-=33±0.1%; β-α=30±0.1%",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 24,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=?; IT ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=97.91±0.3%; α=2.09±0.3%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; IT ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=99.979±0.1%; α=0.021±0.1%; β-α≈0.003%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 31,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+ ?; IT ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=76.9±0.5%; β-=23.1±0.5%",
+                      "Markup": [
+                        {
+                          "Start": 15,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β- ?; β-n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 1,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      },
+      {
+        "ReferenceNumber": 2,
+        "SourceName": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+        "SourceID": "e83",
+        "Name": "Bi",
+        "Description": "The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.",
+        "URL": "https://www-nds.iaea.org/amdc/",
+        "LicenseURL": "https://www-nds.iaea.org/disclaimer.html",
+        "ANID": 6590310
+      },
+      {
+        "ReferenceNumber": 3,
+        "SourceName": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+        "SourceID": "a83",
+        "Name": "Bismuth",
+        "Description": "Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.",
+        "URL": "https://www.ciaaw.org/bismuth.htm",
+        "LicenseURL": "http://www.ciaaw.org/bylaws.htm",
+        "ANID": 2292464
+      },
+      {
+        "ReferenceNumber": 5,
+        "SourceName": "Jefferson Lab, U.S. Department of Energy",
+        "SourceID": "jlab83",
+        "Name": "Bismuth",
+        "Description": "Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/",
+        "URL": "https://education.jlab.org/itselemental/ele083.html",
+        "LicenseNote": "Please see citation and linking information: https://education.jlab.org/faq/index.html",
+        "LicenseURL": "https://www.jlab.org/privacy-and-security-notice",
+        "ANID": 507145
+      },
+      {
+        "ReferenceNumber": 6,
+        "SourceName": "Los Alamos National Laboratory, U.S. Department of Energy",
+        "SourceID": "lanl83",
+        "Name": "Bismuth",
+        "Description": "The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name.",
+        "URL": "https://periodic.lanl.gov/83.shtml",
+        "ANID": 507263
+      },
+      {
+        "ReferenceNumber": 7,
+        "SourceName": "NIST Physical Measurement Laboratory",
+        "SourceID": "e83",
+        "Name": "Bismuth",
+        "Description": "The periodic table contains NIST's critically-evaluated data on atomic properties of the elements. The provenance data that include data for atomic spectroscopy, X-ray and gamma ray, radiation dosimetry, nuclear physics, and condensed matter physics may be found from the link under the source name. Ref: https://www.nist.gov/pml/atomic-spectra-database",
+        "URL": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=83",
+        "LicenseURL": "https://www.nist.gov/pml/database-disclaimer",
+        "ANID": 2292700
+      },
+      {
+        "ReferenceNumber": 4,
+        "SourceName": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+        "SourceID": "p83",
+        "Description": "The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703.",
+        "URL": "https://doi.org/10.1515/pac-2015-0703",
+        "LicenseNote": "Copyright (c) 2020 International Union of Pure and Applied Chemistry.\u000A\u000AThe International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated.",
+        "LicenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "ANID": 13296488
+      },
+      {
+        "ReferenceNumber": 9,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ep_83",
+        "Name": "Bismuth",
+        "Description": "The element property data was retrieved from publications.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24834202
+      },
+      {
+        "ReferenceNumber": 8,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ef_83",
+        "Name": "Bismuth",
+        "Description": "This section provides all form of data related to element Bismuth.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24834011
+      }
+    ]
+  }
+}
