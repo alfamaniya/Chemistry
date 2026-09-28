@@ -6,6 +6,10 @@
   text-align: right;
 }
 
+.information-box + .information-box {
+  margin-top: 24px;
+}
+
 .information-box__content {
   width: 100%;
   min-height: 180px;
