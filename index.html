@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/description-box.css" />
     <link rel="stylesheet" href="styles/search-box.css" />
+    <link rel="stylesheet" href="styles/periodic-table-box.css" />
     <link rel="stylesheet" href="styles/site-preferences.css" />
     <title>Chemistry</title>
   </head>
@@ -31,6 +32,17 @@
           <label class="search-box__label" for="search-input" data-i18n="search-label">جستجو</label>
           <input class="search-box__input bidi-text" id="search-input" type="search" data-i18n="search-placeholder" placeholder="عبارت مورد نظر را وارد کنید" />
           <button class="search-box__button" type="button" data-i18n="search-button">جستجو</button>
+        </div>
+      </section>
+
+      <section class="periodic-table-box" aria-label="جدول تناوبی">
+        <div class="periodic-table-box__content">
+          <div class="periodic-table-box__header">
+            <h2 class="periodic-table-box__title" data-i18n="periodic-table-title">جدول تناوبی</h2>
+          </div>
+          <div class="periodic-table" id="periodic-table" aria-label="Periodic Table">
+            <!-- عناصر جدول تناوبی در این بخش قرار خواهند گرفت. -->
+          </div>
         </div>
       </section>
     </main>
