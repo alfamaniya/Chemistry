@@ -202,7 +202,8 @@ Data Layer مشترک است و مسئول:
 - پشتیبانی از quoted fields، comma و newline داخل field؛
 - رد ردیف‌های malformed؛
 - `normalizeDetailRow()`؛
-- بارگذاری موازی سه CSV با `Promise.all()`.
+- بارگذاری موازی سه CSV با `Promise.all()`؛
+- جلوگیری از اضافه‌شدن ردیف کاملاً خالی در انتهای فایل CSV.
 
 منابع runtime:
 
@@ -213,6 +214,8 @@ data/ELEMENTS_118_VERY_ADVANCED.csv
 ```
 
 کلید اتصال داده‌ها `AtomicNumber` است. در Advanced و Very Advanced، `atomic_number` به قرارداد `AtomicNumber` normalize می‌شود.
+
+ستون `level` در فایل‌های `ELEMENTS_118_ADVANCED.csv` و `ELEMENTS_118_VERY_ADVANCED.csv` عمداً در داده نگه داشته شده است، اما runtime فعلی برای نمایش یا منطق برنامه به آن وابسته نیست؛ سطح داده از نام فایل و مسیر dataset مشخص می‌شود.
 
 ---
 
@@ -283,7 +286,7 @@ advanced-info
 very-advanced-info
 ```
 
-هر فیلد علمی در `createDataGrid()` یک `.data-item` مستقل است. `.data-grid` از `flex-wrap` استفاده می‌کند و عرض آیتم بر اساس محتوا تنظیم می‌شود؛ متن طولانی در همان کارت wrap می‌شود و در mobile نیز آیتم‌ها به ردیف‌های فشرده تقسیم می‌شوند. بنابراین فضای عمودی کمتری نسبت به شبکهٔ ثابت دو ستونه مصرف می‌شود، بدون اینکه داده یا schema تغییر کند.
+هر فیلد علمی در `createDataGrid()` یک `.data-item` مستقل است. `.data-grid` با `flex-wrap` کار می‌کند و هر `.data-item` عرض خود را بر اساس محتوای قابل‌نمایش می‌گیرد، در حالی که `max-width:100%` و wrapping متن از خروج افقی جلوگیری می‌کند. در mobile نیز سطح‌ها تک‌ستونه می‌شوند و فیلدها به ردیف‌های فشرده تقسیم می‌شوند.
 
 ### Footer
 
@@ -305,6 +308,8 @@ assets/css/components/footer.css
   ↓
 آبی — یک flash
   ↓
+قرمز میانی
+  ↓
 سبز — یک flash
   ↓
 قرمز — رنگ پایدار انتخاب
@@ -313,13 +318,15 @@ assets/css/components/footer.css
 جزئیات قرارداد:
 
 - تنها تعریف animation و `@keyframes` در `assets/js/main.js` و در runtime به‌صورت `<style>` تزریق می‌شود؛
-- تعریف تکراری یا مردهٔ `selected-flash` و `@keyframes` در `periodic-table.css` وجود ندارد؛
+- `assets/css/main.css` دیگر `@keyframes element-selection-flash` یا rule انیمیشن قدیمی `.element.selected-flash` را ندارد؛
+- `assets/css/components/periodic-table.css` نیز animation یا keyframes مربوط به flash تعریف نمی‌کند؛
 - مدت animation برابر `2.7s` و یک iteration است؛
 - آبی: `rgba(37,99,235,...)`؛
 - سبز: `rgba(22,163,74,...)`؛
 - رنگ پایدار پس از پایان: `rgba(220,38,38,...)`؛
 - شدت و الگوی glow رنگ قرمز با الگوی قبلی سایهٔ انتخاب حفظ شده است؛
 - بعد از `animationend` کلاس `selected-flash` حذف می‌شود و کلاس `selected` باقی می‌ماند؛
+- قانون ماندگار `.element.selected:not(.selected-flash)` در `assets/css/main.css` سایهٔ قرمز را اعمال می‌کند؛
 - انتخاب عنصر و انتقال `AtomicNumber` به Element Details مستقل از animation است؛
 - هنگام انتخاب عنصر دیگر، وضعیت flash قبلی پاک می‌شود تا فقط عنصر جدید flash بزند.
 
@@ -334,8 +341,8 @@ periodic-table.js
 main.js
     → تنها محل تعریف animation و keyframes
 
-periodic-table.css
-    → فقط وضعیت پایدار selected با box-shadow قرمز
+main.css
+    → وضعیت پایدار selected با box-shadow قرمز
 ```
 
 بنابراین selection logic و selection animation از نظر مسئولیت از هم جدا هستند، اما برای اجرای افکت فقط از همان state انتخاب موجود استفاده می‌شود.
@@ -473,7 +480,7 @@ assets/css/components/
 └── footer.css
 ```
 
-در `periodic-table.css` وضعیت پایدار `.element.selected` با سایهٔ قرمز `rgba(220,38,38,.34)` تعریف می‌شود. Animation و keyframes مربوط به flash در CSS Component تعریف نمی‌شوند و فقط در `main.js` وجود دارند.
+در `main.css` وضعیت پایدار `.element.selected:not(.selected-flash)` با سایهٔ قرمز `rgba(220,38,38,.34)` تعریف می‌شود. Animation و keyframes مربوط به flash در هیچ فایل CSS تعریف نمی‌شوند و فقط در `main.js` وجود دارند.
 
 در `element-details.css`، `.data-grid` با `flex-wrap` و `.data-item` با اندازهٔ محتوایی و محدودیت `max-width:100%` پیاده‌سازی شده‌اند تا متن‌های کوتاه و بلند adaptive باقی بمانند.
 
@@ -548,25 +555,27 @@ find assets/js -type f -name '*.js' -print0 | xargs -0 -n1 node --check
 15. اگر code و documentation اختلاف داشتند، رفتار واقعی code مبناست و README اصلاح شود.
 16. تغییرات غیرمرتبط با درخواست انجام نشوند.
 17. layout فیلدهای Element Details باید برای متن کوتاه و بلند adaptive باقی بماند و به شبکهٔ ثابت یا ارتفاع ثابت برنگردد.
+18. ستون `level` در Advanced/Very Advanced حذف نشود؛ این metadata در فایل داده حفظ می‌شود، حتی اگر runtime فعلی از آن برای render استفاده نکند.
 
 ---
 
 ## 17. آخرین تغییر این مرحله
 
-باگ افکت انتخاب عنصر اصلاح شد. اکنون هنگام کلیک روی یک عنصر:
+دو اصلاح فنی این مرحله انجام شد:
+
+1. **Selection Flash:** تعریف قدیمی و تکراری انیمیشن از `assets/css/main.css` حذف شد و تنها تعریف animation/keyframes در `assets/js/main.js` باقی ماند. سایهٔ پایدار انتخاب و حالت `prefers-reduced-motion` نیز به قرمز `rgba(220,38,38,...)` هماهنگ شدند.
+2. **CSV Parser:** پردازش خط پایانی `parseCsv()` مانند خطوط میانی فقط وقتی ردیف را ثبت می‌کند که حداقل یک مقدار غیرخالی داشته باشد؛ بنابراین یک خط خالی انتهایی دیگر به‌عنوان داده وارد نمی‌شود.
+
+رفتار selection پس از این اصلاح:
 
 ```text
-قرمز نهایی
-   ↓
 آبی — یک بار
-   ↓
-قرمز
    ↓
 سبز — یک بار
    ↓
 قرمز نهایی و پایدار
 ```
 
-رنگ آبی و سبز از مقادیر قراردادی پروژه حفظ شده‌اند و رنگ پایدار از نارنجی تیره به `rgba(220,38,38,...)` تغییر کرده است. هیچ تغییری در CSVها، i18n، Themeهای جدول، ساختار HTML یا مسیر انتقال دادهٔ عنصر به Element Details انجام نشده است.
+رنگ آبی و سبز از مقادیر قراردادی پروژه حفظ شده‌اند. هیچ تغییری در CSVهای علمی، زبان، Themeهای جدول، ساختار HTML، منطق انتخاب عنصر یا مسیر انتقال `AtomicNumber` به Element Details انجام نشده است.
 
-این تغییر فقط برای برگرداندن/اصلاح selection feedback بصری انجام شده و منطق انتخاب عنصر همچنان همان `selectedAtomicNumber` و `onElementSelected(AtomicNumber)` است.
+موارد دیگری که در فهرست audit مطرح شده بودند اما در Repository فعلی از قبل برطرف یا obsolete هستند نیز دوباره دستکاری نشدند؛ از جمله `main-legacy.js` و کامنت‌های قدیمی `index.html`. پوشهٔ `data/Elements/` نیز طبق تصمیم پروژه عمداً حفظ شده است.
