@@ -1,0 +1,59 @@
+name: Build Chemistry SQLite database
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-database:
+    if: github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[skip database build]')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Build SQLite database
+        run: python3 scripts/build_sqlite_database.py
+
+      - name: Validate database
+        run: |
+          python3 - <<'PY'
+          import sqlite3
+          from pathlib import Path
+
+          path = Path('data/chemistry.sqlite')
+          assert path.is_file() and path.stat().st_size > 0
+          conn = sqlite3.connect(path)
+          try:
+              elements = conn.execute('SELECT COUNT(*) FROM elements').fetchone()[0]
+              sections = conn.execute('SELECT COUNT(*) FROM sections').fetchone()[0]
+              information = conn.execute('SELECT COUNT(*) FROM information').fetchone()[0]
+              assert elements == 118, elements
+              assert sections > 0, sections
+              assert information > 0, information
+              print(f'validated database: {elements} elements, {sections} sections, {information} information rows')
+          finally:
+              conn.close()
+          PY
+
+      - name: Commit database
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/chemistry.sqlite
+          if git diff --cached --quiet; then
+            echo 'SQLite database is already up to date.'
+          else
+            git commit -m 'Build SQLite database from element JSON [skip database build]'
+            git push
+          fi
