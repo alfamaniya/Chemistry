@@ -71,6 +71,7 @@ export function mountPeriodicTable({
       document.querySelectorAll(".element.selected, .element.selected-flash").forEach(node => {
         node.classList.remove("selected", "selected-flash");
       });
+      void card.offsetWidth;
       card.classList.add("selected", "selected-flash");
       onElementSelected(selectedAtomicNumber);
     });
