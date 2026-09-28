@@ -1,0 +1,43 @@
+.periodic-table-box {
+  width: min(100% - 32px, 1400px);
+  margin: 24px auto;
+  box-sizing: border-box;
+  direction: rtl;
+  text-align: right;
+}
+
+.periodic-table-box__content {
+  width: 100%;
+  min-height: 260px;
+  padding: 24px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(23, 107, 58, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.periodic-table-box__header {
+  margin-bottom: 20px;
+}
+
+.periodic-table-box__title {
+  margin: 0;
+  line-height: 1.6;
+  direction: rtl;
+  text-align: right;
+}
+
+.periodic-table {
+  min-width: 900px;
+  min-height: 160px;
+  display: grid;
+  place-items: center;
+  border: 1px dashed rgba(23, 107, 58, 0.3);
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 24px;
+  direction: ltr;
+  text-align: left;
+}
