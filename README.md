@@ -314,48 +314,38 @@ assets/css/components/footer.css
 
 ---
 
-## 7. Selection Animation — وضعیت واقعی
+## 7. Selection Effect — وضعیت واقعی
 
-مالک canonical انیمیشن انتخاب عنصر، فایل زیر است:
+افکت چشمک رنگی هنگام انتخاب عنصر **عمداً حذف شده است**.
 
-```text
-assets/css/components/periodic-table.css
-```
-
-منطق افزودن کلاس انتخاب در:
+مالک فعلی selection state فقط این دو بخش است:
 
 ```text
 assets/js/components/periodic-table/periodic-table.js
+assets/css/components/periodic-table.css
 ```
 
 رفتار فعلی:
 
-1. با کلیک، کارت `selected` می‌شود.
-2. کلاس موقت `selected-flash` اضافه می‌شود.
-3. انیمیشن حدود ۲٫۷ ثانیه یک بار اجرا می‌شود.
-4. دو flash اصلی دیده می‌شود: ابتدا آبی، سپس سبز.
-5. بعد از پایان animation، کلاس `selected-flash` حذف می‌شود.
-6. کلاس `selected` باقی می‌ماند.
-7. سایهٔ انتخاب نهایی نارنجی تیره باقی می‌ماند.
-8. در `prefers-reduced-motion` animation اجرا نمی‌شود و حالت نارنجی تیره ثابت می‌ماند.
+1. با کلیک، کارت انتخاب‌شده کلاس `selected` می‌گیرد.
+2. کارت انتخاب‌شده همچنان با transform و سایهٔ نارنجی تیرهٔ معمول خود مشخص می‌شود.
+3. هیچ کلاس `selected-flash`، listener مربوط به `animationend` یا `@keyframes` برای چشمک رنگی در Component وجود ندارد.
+4. رنگ‌های چشمک آبی و سبز دیگر اجرا نمی‌شوند.
+5. انتخاب عنصر و انتقال `AtomicNumber` به Element Details بدون تغییر باقی مانده است.
 
-پس مشاهدهٔ زیر رفتار مورد انتظار است:
+بنابراین مسیر فعلی چنین است:
 
 ```text
-نارنجی تیره پایه
-      ↓
-آبی
-      ↓
-سبز
-      ↓
-نارنجی تیره ثابت
+click element
+    ↓
+selectedAtomicNumber
+    ↓
+onElementSelected(AtomicNumber)
+    ↓
+selected visual state
 ```
 
-### نکتهٔ legacy CSS
-
-در `assets/css/main.css` یک تعریف قدیمی برای `selected-flash` و flash قرمز تاریخی هنوز وجود دارد. stylesheet مربوط به Periodic Table بعد از `main.css` بارگذاری می‌شود و تعریف canonical آبی→سبز را اعمال می‌کند. بنابراین رفتار runtime فعلی همان آبی→سبز→نارنجی تیره است.
-
-این تعریف قدیمی نباید به‌عنوان رفتار فعال جدید توسعه داده شود و در refactor بعدی می‌تواند به‌صورت مستقل حذف شود؛ حذف آن در این مرحله برای کاهش ریسک migration انجام نشده است.
+هدف این تغییر فقط حذف افکت چشمک رنگی بوده و هیچ تغییری در داده، انتخاب عنصر، نمایش اطلاعات یا Theme جدول ایجاد نشده است.
 
 ---
 
@@ -478,7 +468,7 @@ CI نیز تعداد ۱۱۸ فایل را بررسی می‌کند تا این �
 | Theme | main.js + `.table-shell` + localStorage | Theme انتخاب‌شده |
 | Selected Element | Periodic Table + app.js | `AtomicNumber` انتخاب‌شده |
 | Element Data | data.js + app.js | سه dataset در حافظه |
-| Selection Animation | DOM class | state بصری موقت |
+| Selection Visual State | `.element.selected` | وضعیت بصری پایدار عنصر انتخاب‌شده |
 
 فقط این دو کلید localStorage قراردادی‌اند:
 
@@ -496,10 +486,11 @@ chemistry-pdf-theme
 - وضعیت شمارندهٔ `table-status` دیگر در UI وجود ندارد و به‌عنوان قرارداد runtime استفاده نمی‌شود.
 - زبان فارسی با `rtl` و انگلیسی با `ltr` مدیریت می‌شود.
 - focus state نباید در refactorهای آینده حذف شود.
-- `prefers-reduced-motion` برای selection و background رعایت می‌شود.
+- `prefers-reduced-motion` برای background متحرک رعایت می‌شود.
 - جدول ۱۸ ستونه در mobile با حداقل عرض داخلی و horizontal scrolling قابل استفاده می‌ماند.
 - Element Details در mobile به یک ستون برای سه سطح اصلی تبدیل می‌شود، اما فیلدهای داخل هر سطح به کارت‌های کوچک و content-sized با `flex-wrap` تقسیم می‌شوند تا فضای عمودی کمتر و مشاهدهٔ اطلاعات راحت‌تر شود.
 - متن‌های طولانی فیلدها باید داخل کارت خود wrap شوند و نباید باعث خروج افقی محتوا از container شوند.
+- انتخاب عنصر فقط با وضعیت `selected` مشخص می‌شود و افکت چشمک رنگی ندارد.
 
 ---
 
@@ -521,6 +512,8 @@ assets/css/components/
 در `element-details.css`، `.data-grid` با `flex-wrap` پیاده‌سازی شده و `.data-item` به‌صورت محتوایی (`width: max-content`) اندازه می‌گیرد، با `max-width: 100%` محدود می‌شود و برای متن‌های طولانی `overflow-wrap:anywhere` دارد. این طراحی جایگزین شبکهٔ ثابت دو ستونهٔ قبلی شده است تا اطلاعات فشرده‌تر نمایش داده شوند.
 
 استایل‌های اختصاصی عنوان/زیرعنوان حذف‌شده Element Details و `.table-status` نیز از stylesheetهای Component پاک شده‌اند.
+
+افکت چشمک انتخاب عنصر دیگر در `periodic-table.css` تعریف نمی‌شود. همچنین کد JavaScript مربوط به افزودن/حذف `selected-flash` حذف شده است؛ بنابراین دیگر animation یا keyframe پنهانی برای چشمک رنگی وجود ندارد.
 
 در حال حاضر بعضی selectorهای legacy مربوط به Componentها هنوز در `main.css` نیز باقی مانده‌اند تا migration محافظه‌کارانه بماند. stylesheetهای Component بعد از `main.css` بارگذاری می‌شوند و source جدید Component را اعمال می‌کنند.
 
@@ -588,7 +581,7 @@ find assets/js -type f -name '*.js' -print0 | xargs -0 -n1 node --check
 3. schema CSV بدون بررسی Data Core تغییر نکند.
 4. IDهای runtime بدون بررسی dependencyها تغییر نکنند.
 5. Theme System از Data Layer جدا بماند.
-6. Selection animation فقط یک مالک canonical داشته باشد.
+6. selection feedback فقط از وضعیت `selected` استفاده کند و افکت چشمک رنگی دوباره اضافه نشود مگر با تصمیم معماری صریح.
 7. i18n در Core بماند.
 8. Componentها implementation داخلی یکدیگر را مستقیم مصرف نکنند.
 9. `data/Elements/` بدون تصمیم مستقل حذف نشود.
@@ -622,6 +615,7 @@ find assets/js -type f -name '*.js' -print0 | xargs -0 -n1 node --check
 14 validation و مستندسازی نهایی
 15 حذف عنوان/زیرعنوان‌های اضافی UI و وضعیت شمارندهٔ جدول
 16 فشرده‌سازی پویا و واکنش‌گرای فیلدهای Element Details
+17 حذف افکت رنگی چشمک هنگام انتخاب عنصر
 ```
 
 وضعیت فعلی:
@@ -667,15 +661,23 @@ app.js
 
 Theme selector، خود جدول، f-block و تمام سه سطح اطلاعات عنصر حفظ شده‌اند.
 
-### Selection animation
+### Selection effect cleanup — آخرین تغییر
 
-رفتار مورد انتظار فعلی تغییری نکرده است:
+افکت رنگی چشمک هنگام کلیک روی آجر/کارت عنصر حذف شد.
+
+قبل:
 
 ```text
-آبی → سبز → نارنجی تیرهٔ ثابت
+نارنجی تیره → آبی → سبز → نارنجی تیره
 ```
 
-نسخهٔ canonical در `periodic-table.css` قرار دارد و `main.js` آن را inject نمی‌کند.
+اکنون:
+
+```text
+کلیک → کارت selected با حالت بصری معمول
+```
+
+برای این تغییر، فقط منطق مستقیم `selected-flash` و CSS animation/keyframe مربوط به آن حذف شده است. منطق انتخاب عنصر، `AtomicNumber`، انتقال به Element Details و سایهٔ معمول کارت انتخاب‌شده دست‌نخورده مانده‌اند.
 
 ### Element Details — compact responsive fields
 
@@ -694,5 +696,7 @@ Repository فعلی یک Static Vanilla Web Application با معماری Compon
 در وضعیت فعلی UI، بعد از Hero مستقیماً Theme selector و جدول نمایش داده می‌شوند و عنوان/زیرعنوان اضافی جدول یا پیام شمارندهٔ بارگذاری نمایش داده نمی‌شود. بعد از جدول نیز Element Details بدون heading معرفی اضافی آغاز می‌شود و سه سطح اطلاعات همچنان فعال هستند.
 
 مشخصات علمی داخل کارت عنصر و سه سطح اطلاعات، به‌صورت کارت‌های کوچک و پویا چیده می‌شوند؛ اندازهٔ هر کارت با حجم متن سازگار است، فیلدهای طولانی داخل container می‌شکنند و layout در mobile نیز فشرده و قابل مشاهده باقی می‌ماند.
+
+هنگام انتخاب عنصر هیچ افکت رنگی چشمک‌زن اجرا نمی‌شود؛ کارت فقط با وضعیت `selected` مشخص می‌شود و انتخاب عنصر و نمایش جزئیات بدون تغییر ادامه دارد.
 
 هر تغییر بعدی باید ابتدا Repository و این README را بررسی کند، سپس با کمترین دستکاری لازم انجام شود و در پایان همین README متناسب با رفتار واقعی کد به‌روزرسانی شود.
