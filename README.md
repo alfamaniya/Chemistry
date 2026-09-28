@@ -1,74 +1,26 @@
-# Chemistry — مرجع کامل پروژه، معماری و قراردادهای توسعه
+# Chemistry — مرجع کامل پروژه
 
-> این فایل README رسمی پروژه است و باید رفتار واقعی Repository را توضیح دهد. در صورت اختلاف بین مستندات و کد، کد واقعی مبناست و README باید اصلاح شود.
+> این README وضعیت واقعی Repository را توضیح می‌دهد. در صورت اختلاف بین مستندات و کد، کد اجراشونده مبناست.
 
-## 1. هدف سایت
+## 1. هدف
 
-Chemistry یک وب‌سایت آموزشی و تعاملی برای مشاهده و مطالعهٔ ۱۱۸ عنصر جدول تناوبی است. پروژه کاملاً client-side و بدون Backend، Database، framework یا build system است.
+Chemistry یک وب‌سایت آموزشی و تعاملی برای ۱۱۸ عنصر جدول تناوبی است.
 
-کاربر می‌تواند:
+- HTML/CSS/JavaScript خالص و کاملاً client-side
+- بدون Backend، Database، framework یا build system
+- فارسی و انگلیسی
+- جدول ۱۸ گروهی و f-block
+- اطلاعات هر عنصر در سه سطح Beginner، Advanced و Very Advanced
+- ۱۵ Theme: چهارده دسته‌بندی PDF و یک حالت «بدون دسته‌بندی»
+- responsive برای desktop و mobile
+- keyboard interaction و قابلیت‌های accessibility موجود
+- داده‌های علمی از سه CSV runtime
 
-- بین فارسی و انگلیسی جابه‌جا شود؛
-- جدول تناوبی ۱۸ گروهی و f-block را ببیند؛
-- روی هر عنصر کلیک کند و اطلاعات آن را در سه سطح Beginner، Advanced و Very Advanced ببیند؛
-- از ۱۵ حالت رنگ‌بندی/دسته‌بندی جدول استفاده کند؛
-- در desktop و mobile از جدول responsive استفاده کند؛
-- از keyboard interaction و قابلیت‌های accessibility موجود استفاده کند.
-
-اطلاعات علمی عناصر در HTML hard-code نمی‌شوند و از سه CSV runtime خوانده می‌شوند.
-
----
-
-## 2. معماری فعلی
-
-پروژه با Vanilla HTML/CSS/JavaScript و معماری Component-Based اجرا می‌شود:
-
-```text
-index.html
-   ↓
-assets/js/main.js
-   ├── mount Header / Hero / Periodic Table shell / Element Details shell / Footer
-   ├── load Component CSS
-   ├── Theme System
-   ├── page background
-   └── selection flash animation definition
-            ↓
-       assets/js/app.js
-       ├── core/i18n.js
-       ├── core/data.js
-       ├── Periodic Table
-       └── Element Details
-```
-
-اصل معماری:
-
-> Core مالک منطق مشترک است؛ Componentها مصرف‌کنندهٔ Core هستند؛ Componentها implementation داخلی یکدیگر را مستقیماً مصرف نمی‌کنند.
-
-### Dependency اصلی
-
-```text
-main.js
-  ├─ imports component modules
-  ├─ mounts component shells
-  ├─ loads component CSS
-  └─ imports app.js
-
-app.js
-  ├─ core/data.js → سه CSV runtime
-  ├─ core/i18n.js → زبان و ترجمه
-  ├─ periodic-table.js → جدول و selection
-  └─ element-details.js → جزئیات سه سطح
-```
-
----
-
-## 3. ساختار Repository
+## 2. ساختار Repository
 
 ```text
 Repository
-├── .github/
-│   └── workflows/
-│       └── webpack.yml
+├── .github/workflows/webpack.yml
 ├── assets/
 │   ├── css/
 │   │   ├── main.css
@@ -81,9 +33,8 @@ Repository
 │   └── js/
 │       ├── main.js
 │       ├── app.js
-│       ├── core/
-│       │   ├── i18n.js
-│       │   └── data.js
+│       ├── core/i18n.js
+│       ├── core/data.js
 │       └── components/
 │           ├── header/header.js
 │           ├── hero/hero.js
@@ -94,40 +45,38 @@ Repository
 │   ├── PubChemElements_all.csv
 │   ├── ELEMENTS_118_ADVANCED.csv
 │   ├── ELEMENTS_118_VERY_ADVANCED.csv
-│   └── Elements/
-│       └── 118 CSV files — retained, non-runtime data
+│   └── Elements/                 # 118 فایل non-runtime، عمداً حفظ شده
 ├── index.html
 └── README.md
 ```
 
-`README2.md` و `README3.md` حذف شده‌اند و دیگر بخشی از Repository نیستند.
+`README2.md`، `README3.md` و `assets/js/main-legacy.js` در Repository فعلی وجود ندارند.
 
-`assets/js/main-legacy.js` نیز حذف شده و runtime فعلی به آن وابسته نیست.
+## 3. HTML
 
----
-
-## 4. Composition Layer — `index.html`
-
-`index.html` فقط shell و slotهای Componentها، metadata و script entry point را نگه می‌دارد:
+`index.html` فقط metadata، shell صفحه و entry point را نگه می‌دارد:
 
 ```html
 <header class="site-header" data-component="header"></header>
-<section class="hero container" data-component="hero"></section>
-<section id="periodic-table" class="section container" data-component="periodic-table"></section>
-<section class="element-details container" data-component="element-details"></section>
+<main id="top">
+  <section class="hero container" data-component="hero"></section>
+  <section id="periodic-table" class="section container" data-component="periodic-table"></section>
+  <section class="element-details container" data-component="element-details"></section>
+</main>
 <footer id="footer" class="site-footer" data-component="footer"></footer>
 <script type="module" src="assets/js/main.js"></script>
 ```
 
-اطلاعات علمی ۱۱۸ عنصر نباید به این فایل برگردد.
+محتوای علمی عناصر در HTML hard-code نمی‌شود.
 
 IDهای حساس runtime:
 
 ```text
 periodic-table-grid
-f-block
 table-theme-select
 table-theme-description
+table-status
+f-block
 selected-element
 beginner-info
 advanced-info
@@ -135,447 +84,205 @@ very-advanced-info
 levels
 ```
 
-عنوان/زیرعنوان قدیمی جدول، `table-status` و عنوان/زیرعنوان قدیمی Element Details دیگر در DOM وجود ندارند.
-
----
-
-## 5. JavaScript
+## 4. JavaScript Architecture
 
 ### `assets/js/main.js`
 
-Bootstrap و Theme System است و مسئول این موارد است:
+Bootstrap و Theme/visual system است:
 
-- import و mount کردن Componentها؛
-- بارگذاری stylesheetهای Component؛
-- تعریف ۱۵ Theme؛
-- ساخت و ترجمهٔ Theme selector؛
-- اعمال `theme-pdf` و `theme-1 ... theme-15` روی `.table-shell`؛
-- ذخیره و بازیابی Theme از `localStorage`؛
-- همگام‌سازی labelهای Theme با زبان سند؛
-- مدیریت background متحرک صفحه؛
-- تعریف تنها animation مربوط به flash انتخاب عنصر؛
-- رعایت `prefers-reduced-motion` برای background و selection flash.
+- import و mount Componentها
+- بارگذاری CSSهای Component
+- تعریف و اعمال ۱۵ Theme
+- ذخیره/بازیابی `chemistry-pdf-theme`
+- هماهنگ‌سازی Theme selector با زبان
+- background متحرک
+- تعریف تنها animation مربوط به selection flash
+- رعایت `prefers-reduced-motion`
 
 ### `assets/js/app.js`
 
-Application Orchestrator است و مسئول:
+Application orchestrator است:
 
-- دریافت داده از `core/data.js`؛
-- اتصال Periodic Table به Element Details؛
-- نگهداری state زبان در سطح application؛
-- هماهنگی re-render بعد از تغییر زبان؛
-- انتقال `AtomicNumber` انتخاب‌شده به Element Details؛
-- مدیریت خطای بارگذاری داده.
+- دریافت داده از `core/data.js`
+- اتصال Periodic Table به Element Details
+- نگهداری زبان فعلی
+- re-render بعد از تغییر زبان
+- انتقال `AtomicNumber` انتخاب‌شده
+- مدیریت خطای بارگذاری
 
-ارتباط انتخاب عنصر:
+مسیر انتخاب:
 
 ```text
-Periodic Table
-    ↓ onElementSelected(AtomicNumber)
-app.js
-    ↓
-Element Details
+Periodic Table → onElementSelected(AtomicNumber) → app.js → Element Details
 ```
 
 ### `assets/js/core/i18n.js`
 
-مالک Shared i18n است:
+مالک dictionary فارسی/انگلیسی، `lang/dir`، language buttons، localStorage زبان، نام عناصر و ترجمهٔ مقادیر علمی است.
 
-- dictionary فارسی/انگلیسی؛
-- ترجمهٔ `[data-i18n]` و `data-i18n-aria` در صورت وجود؛
-- `lang` و `dir`؛
-- وضعیت دکمه‌های زبان؛
-- `chemistry-language` در localStorage؛
-- نام فارسی/انگلیسی عناصر؛
-- ترجمهٔ مقادیر علمی مانند GroupBlock و StandardState.
-
-Dictionary فقط کلیدهای مورد استفاده در UI/runtime فعلی را نگه می‌دارد.
+کلیدهای ترجمهٔ بلااستفادهٔ قدیمی حذف شده‌اند.
 
 ### `assets/js/core/data.js`
 
-Data Layer مشترک است و مسئول:
+مالک fetch و parse سه CSV است و شامل BOM removal، quoted fields، newline داخل field، رد ردیف‌های malformed، normalize داده‌های پیشرفته و `Promise.all()` است. ردیف کاملاً خالی انتهای CSV اضافه نمی‌شود.
 
-- مسیر سه CSV runtime؛
-- `fetch()`؛
-- parser CSV؛
-- حذف BOM؛
-- پشتیبانی از quoted fields، comma و newline داخل field؛
-- رد ردیف‌های malformed؛
-- `normalizeDetailRow()`؛
-- بارگذاری موازی سه CSV با `Promise.all()`؛
-- جلوگیری از اضافه‌شدن ردیف کاملاً خالی در انتهای فایل CSV.
-
-منابع runtime:
-
-```text
-data/PubChemElements_all.csv
-data/ELEMENTS_118_ADVANCED.csv
-data/ELEMENTS_118_VERY_ADVANCED.csv
-```
-
-کلید اتصال داده‌ها `AtomicNumber` است. در Advanced و Very Advanced، `atomic_number` به قرارداد `AtomicNumber` normalize می‌شود.
-
-ستون `level` در فایل‌های `ELEMENTS_118_ADVANCED.csv` و `ELEMENTS_118_VERY_ADVANCED.csv` عمداً در داده نگه داشته شده است، اما runtime فعلی برای نمایش یا منطق برنامه به آن وابسته نیست؛ سطح داده از نام فایل و مسیر dataset مشخص می‌شود.
-
----
-
-## 6. Componentها
+## 5. Componentها
 
 ### Header
 
-```text
-assets/js/components/header/header.js
-assets/css/components/header.css
-```
+`assets/js/components/header/header.js` و `assets/css/components/header.css`
 
-مالک brand، navigation و language switcher است. تغییر زبان با event قراردادی `chemistry:language-change` به `app.js` منتقل می‌شود.
+Brand، navigation و language switcher. تغییر زبان با `chemistry:language-change` انجام می‌شود.
 
 ### Hero
 
-```text
-assets/js/components/hero/hero.js
-assets/css/components/hero.css
-```
+`assets/js/components/hero/hero.js` و `assets/css/components/hero.css`
 
-مالک معرفی سایت و CTA به `#periodic-table` است و به دادهٔ علمی وابسته نیست.
+معرفی سایت و CTA جدول.
 
 ### Periodic Table
 
-```text
-assets/js/components/periodic-table/periodic-table.js
-assets/css/components/periodic-table.css
-```
+`assets/js/components/periodic-table/periodic-table.js` و `assets/css/components/periodic-table.css`
 
-مالک:
-
-- mapping جدول ۱۸ گروهی؛
-- ۱۱۸ کارت عنصر؛
-- f-block؛
-- selection؛
-- شمارهٔ عنصر؛
-- قرارداد `onElementSelected(AtomicNumber)`؛
-- افزودن/حذف موقت کلاس `selected-flash` فقط برای اجرای افکت بصری انتخاب.
-
-شمارهٔ کارت فقط از داده می‌آید:
-
-```text
-CSV → AtomicNumber → .element-number
-```
+چیدمان ۱۸ گروهی، ۱۱۸ عنصر، f-block، انتخاب، شماره/نماد/نام و `table-status` را مدیریت می‌کند. عنوان و زیرعنوان جدول نیز توسط همین Component ساخته و ترجمه می‌شوند.
 
 ### Element Details
 
-```text
-assets/js/components/element-details/element-details.js
-assets/css/components/element-details.css
-```
+`assets/js/components/element-details/element-details.js` و `assets/css/components/element-details.css`
 
-سه سطح:
-
-```text
-Beginner
-Advanced
-Very Advanced
-```
-
-داده‌ها در این نقاط DOM قرار می‌گیرند:
-
-```text
-selected-element
-beginner-info
-advanced-info
-very-advanced-info
-```
-
-هر فیلد علمی در `createDataGrid()` یک `.data-item` مستقل است. `.data-grid` با `flex-wrap` کار می‌کند و هر `.data-item` عرض خود را بر اساس محتوای قابل‌نمایش می‌گیرد، در حالی که `max-width:100%` و wrapping متن از خروج افقی جلوگیری می‌کند. در mobile نیز سطح‌ها تک‌ستونه می‌شوند و فیلدها به ردیف‌های فشرده تقسیم می‌شوند.
+سه سطح Beginner، Advanced و Very Advanced را نمایش می‌دهد. هر فیلد یک `.data-item` مستقل است. `.data-grid` با `flex-wrap` و عرض محتوایی، فضای خالی را کم می‌کند؛ `max-width:100%` و wrapping از خروج متن جلوگیری می‌کنند و در mobile سطح‌ها تک‌ستونه می‌شوند.
 
 ### Footer
 
-```text
-assets/js/components/footer/footer.js
-assets/css/components/footer.css
-```
+`assets/js/components/footer/footer.js` و `assets/css/components/footer.css`
 
-مالک footer، متن ترجمه‌شده و لینک `#top` است.
+Footer و لینک بازگشت به بالا.
 
----
+## 6. Selection Flash
 
-## 7. Selection Flash — رفتار واقعی فعلی
-
-افکت انتخاب عنصر اکنون **دو بار و با دو رنگ** اجرا می‌شود:
+توالی فعلی:
 
 ```text
-کلیک
-  ↓
-آبی — یک flash
-  ↓
-قرمز میانی
-  ↓
-سبز — یک flash
-  ↓
-قرمز — رنگ پایدار انتخاب
+کلیک → آبی → سبز → قرمز پایدار
 ```
 
-جزئیات قرارداد:
+- تنها `assets/js/main.js` مالک animation و keyframes است.
+- تعریف قدیمی `element-selection-flash` در CSS وجود ندارد.
+- مدت animation برابر `2.7s` و یک iteration است.
+- آبی: `rgba(37,99,235,...)`
+- سبز: `rgba(22,163,74,...)`
+- قرمز نهایی: `rgba(220,38,38,...)`
+- بعد از `animationend` فقط `selected-flash` حذف می‌شود و `selected` باقی می‌ماند.
+- انتخاب جدید selection قبلی را پاک می‌کند.
+- listener پایان animation فقط animation موردنظر را بررسی می‌کند تا انتخاب سریع/تکراری باعث حذف زودهنگام کلاس نشود.
+- در `prefers-reduced-motion: reduce` animation اجرا نمی‌شود و سایهٔ قرمز نهایی مستقیماً اعمال می‌شود.
 
-- تنها تعریف animation و `@keyframes` در `assets/js/main.js` و در runtime به‌صورت `<style>` تزریق می‌شود؛
-- `assets/css/main.css` دیگر `@keyframes element-selection-flash` یا rule انیمیشن قدیمی `.element.selected-flash` را ندارد؛
-- `assets/css/components/periodic-table.css` نیز animation یا keyframes مربوط به flash تعریف نمی‌کند؛
-- مدت animation برابر `2.7s` و یک iteration است؛
-- آبی: `rgba(37,99,235,...)`؛
-- سبز: `rgba(22,163,74,...)`؛
-- رنگ پایدار پس از پایان: `rgba(220,38,38,...)`؛
-- شدت و الگوی glow رنگ قرمز با الگوی قبلی سایهٔ انتخاب حفظ شده است؛
-- بعد از `animationend` کلاس `selected-flash` حذف می‌شود و کلاس `selected` باقی می‌ماند؛
-- قانون ماندگار `.element.selected:not(.selected-flash)` در `assets/css/main.css` سایهٔ قرمز را اعمال می‌کند؛
-- انتخاب عنصر و انتقال `AtomicNumber` به Element Details مستقل از animation است؛
-- هنگام انتخاب عنصر دیگر، وضعیت flash قبلی پاک می‌شود تا فقط عنصر جدید flash بزند.
+## 7. Theme System
 
-در `prefers-reduced-motion: reduce`، animation اجرا نمی‌شود و عنصر مستقیماً با همان سایهٔ قرمز نهایی نمایش داده می‌شود.
-
-نکتهٔ معماری مهم:
+۱۵ Theme در `assets/js/main.js` تعریف شده‌اند:
 
 ```text
-periodic-table.js
-    → کنترل کلاس selected / selected-flash
-
-main.js
-    → تنها محل تعریف animation و keyframes
-
-main.css
-    → وضعیت پایدار selected با box-shadow قرمز
+15 Uncategorized
+1  Atomic Mass
+2  Density
+3  Standard State
+10 Melting Point
+11 Boiling Point
+7  Atomic Radius
+6  Electron Configuration
+5  Ionization Energy
+9  Electron Affinity
+4  Electronegativity
+8  Oxidation States
+13 Metal / Metalloid / Nonmetal
+14 Chemical Group / Family
+12 Year Discovered
 ```
 
-بنابراین selection logic و selection animation از نظر مسئولیت از هم جدا هستند، اما برای اجرای افکت فقط از همان state انتخاب موجود استفاده می‌شود.
+Theme در `localStorage["chemistry-pdf-theme"]` ذخیره و در reload بازیابی می‌شود. تغییر زبان labelها را عوض می‌کند ولی Theme را از بین نمی‌برد.
 
----
+## 8. State و Storage
 
-## 8. Theme System
-
-۱۵ حالت در selector وجود دارد. IDهای داخلی به دلایل compatibility الزاماً برابر با ترتیب نمایش نیستند.
-
-| ID | حالت |
-|---|---|
-| `15` | Uncategorized / بدون دسته‌بندی |
-| `1` | Atomic Mass / جرم اتمی |
-| `2` | Density / چگالی |
-| `3` | Standard State / حالت استاندارد |
-| `10` | Melting Point / نقطه ذوب |
-| `11` | Boiling Point / نقطه جوش |
-| `7` | Atomic Radius / شعاع اتمی |
-| `6` | Electron Configuration / آرایش الکترونی |
-| `5` | Ionization Energy / انرژی یونش |
-| `9` | Electron Affinity / الکترون‌خواهی |
-| `4` | Electronegativity / الکترونگاتیویته |
-| `8` | Oxidation States / حالت‌های اکسایش |
-| `13` | Metal / Metalloid / Nonmetal |
-| `14` | Chemical Group / Family |
-| `12` | Year Discovered / سال کشف |
-
-کلاس‌های Theme:
-
-```text
-theme-pdf
-theme-1 ... theme-15
-```
-
-کلید storage:
-
-```text
-chemistry-pdf-theme
-```
-
-Theme انتخاب‌شده در refresh از localStorage بازیابی می‌شود. تغییر زبان فقط labelهای selector را بازسازی می‌کند و ID انتخاب‌شده را حفظ می‌کند.
-
----
-
-## 9. Data Model و Flow
-
-سه CSV اصلی شامل ۱۱۸ عنصر هستند. دادهٔ پایه برای Beginner و جدول استفاده می‌شود و دو فایل Advanced/Very Advanced دادهٔ جزئیات تکمیلی را فراهم می‌کنند.
-
-Flow:
-
-```text
-three runtime CSVs
-       ↓
-core/data.js
-       ↓
-parse + filter + normalize
-       ↓
-app.js
-   ↙       ↘
-Periodic   Details
- Table        ↑
-   ↓          │
-AtomicNumber ─┘
-```
-
-بارگذاری سه فایل با `Promise.all()` موازی است.
-
----
-
-## 10. `data/Elements/` — retained data
-
-پوشهٔ زیر عمداً حفظ شده است:
-
-```text
-data/Elements/
-```
-
-این پوشه شامل دقیقاً **۱۱۸ فایل CSV**، یکی برای هر عنصر، است. این فایل‌ها توسط runtime فعلی مصرف نمی‌شوند و سه CSV اصلی همچنان تنها منابع runtime هستند.
-
-تصمیم رسمی:
-
-> **این ۱۱۸ فایل حذف نشوند.**
-
-unused بودن runtime به‌تنهایی دلیل کافی برای حذف دادهٔ علمی نیست و این مجموعه ممکن است برای archive، import یا توسعهٔ آینده مورد نیاز باشد.
-
-CI نیز تعداد ۱۱۸ فایل را بررسی می‌کند.
-
----
-
-## 11. State و Storage
-
-| State | محل | توضیح |
+| State | محل | ماندگاری |
 |---|---|---|
-| Language | i18n + document + localStorage | زبان و جهت صفحه |
-| Theme | main.js + `.table-shell` + localStorage | Theme انتخاب‌شده |
-| Selected Element | Periodic Table + app.js | `AtomicNumber` انتخاب‌شده |
-| Element Data | data.js + app.js | سه dataset در حافظه |
-| Selection Visual State | `.element.selected` و موقتاً `.selected-flash` | وضعیت بصری انتخاب |
+| زبان | application + `document.documentElement` | `localStorage` |
+| Theme | کلاس‌های `theme-*` روی `.table-shell` | `localStorage` |
+| عنصر انتخاب‌شده | state Periodic Table/application | تا refresh |
+| داده‌های CSV | state application | تا refresh |
 
-فقط این دو کلید localStorage قراردادی‌اند:
+کلیدهای localStorage فقط:
 
 ```text
 chemistry-language
 chemistry-pdf-theme
 ```
 
-`selectedAtomicNumber` در localStorage ذخیره نمی‌شود.
+## 9. Data
 
----
+سه CSV runtime باید هرکدام ۱۱۸ ردیف داده داشته باشند:
 
-## 12. Accessibility و UX
+| فایل | کاربرد |
+|---|---|
+| `data/PubChemElements_all.csv` | داده پایه و جدول |
+| `data/ELEMENTS_118_ADVANCED.csv` | Advanced |
+| `data/ELEMENTS_118_VERY_ADVANCED.csv` | Very Advanced |
 
-- کارت‌های عنصر `button` هستند و با keyboard قابل تعامل‌اند.
-- `aria-label` کارت شامل نام عنصر و Atomic Number است.
-- زبان فارسی با `rtl` و انگلیسی با `ltr` مدیریت می‌شود.
-- focus state نباید در refactorهای آینده حذف شود.
-- `prefers-reduced-motion` برای background و selection flash رعایت می‌شود.
-- جدول ۱۸ ستونه در mobile با حداقل عرض داخلی و horizontal scrolling قابل استفاده می‌ماند.
-- Element Details در mobile فشرده است و فیلدهای هر سطح با `flex-wrap` و اندازهٔ محتوایی نمایش داده می‌شوند.
-- متن‌های طولانی فیلدها داخل کارت خود wrap می‌شوند و نباید باعث خروج افقی محتوا از container شوند.
+ستون `level` در دو CSV پیشرفته عمداً حفظ شده، اما runtime فعلی برای منطق نمایش به آن وابسته نیست.
 
----
+`data/Elements/` شامل ۱۱۸ CSV جداگانه است و **عمداً نگه داشته شده است**. این پوشه runtime نیست و نباید بدون دستور صریح حذف شود.
 
-## 13. CSS Architecture
+## 10. CSS
 
-`main.css` مالک global styles و متغیرهای پایه است. CSS اختصاصی Componentها در این مسیرهاست:
+`assets/css/main.css` شامل قواعد عمومی، responsive و Themeهای جدول است. CSSهای Component نیز جداگانه از `assets/css/components/` بارگذاری می‌شوند.
 
-```text
-assets/css/components/
-├── header.css
-├── hero.css
-├── periodic-table.css
-├── element-details.css
-└── footer.css
-```
+هیچ animation/keyframes متناقضی برای selection flash نباید در CSSهای دیگر اضافه شود؛ منبع selection flash `assets/js/main.js` است.
 
-در `main.css` وضعیت پایدار `.element.selected:not(.selected-flash)` با سایهٔ قرمز `rgba(220,38,38,.34)` تعریف می‌شود. Animation و keyframes مربوط به flash در هیچ فایل CSS تعریف نمی‌شوند و فقط در `main.js` وجود دارند.
+## 11. CI / Validation
 
-در `element-details.css`، `.data-grid` با `flex-wrap` و `.data-item` با اندازهٔ محتوایی و محدودیت `max-width:100%` پیاده‌سازی شده‌اند تا متن‌های کوتاه و بلند adaptive باقی بمانند.
+Workflow در `.github/workflows/webpack.yml` قرار دارد. نام فایل تاریخی است؛ پروژه Webpack build ندارد و job فعلی Static site validation است.
 
----
+CI شامل این کنترل‌هاست:
 
-## 14. CI / GitHub Actions
+1. وجود فایل‌های اصلی؛
+2. non-empty بودن CSSهای Component؛
+3. `node --check` برای JavaScriptها؛
+4. کنترل قرارداد animation، رنگ‌های selection و headingهای اصلی؛
+5. اعتبارسنجی header و عرض ردیف CSV؛
+6. اطمینان از ۱۱۸ ردیف در هر CSV runtime؛
+7. اطمینان از دقیقاً ۱۱۸ فایل در `data/Elements/`؛
+8. smoke test با HTTP server محلی و `curl`.
 
-Workflow:
+## 12. قرارداد توسعه
 
-```text
-.github/workflows/webpack.yml
-```
+- `data/Elements/` بدون دستور صریح حذف نشود.
+- CSVهای runtime باید ۱۱۸ عنصر را حفظ کنند.
+- منطق انتخاب عنصر مستقل از animation باشد.
+- selection flash فقط یک منبع حقیقت داشته باشد.
+- رنگ پایدار selection قرمز `rgba(220,38,38,...)` باشد.
+- داده علمی در HTML hard-code نشود.
+- متن قابل ترجمه از dictionary عبور کند.
+- تغییرات غیرمرتبط با درخواست انجام نشود.
+- بعد از تغییر، syntax و validationهای CI بررسی شوند.
 
-نام:
+## 13. اجرای محلی
 
-```text
-Static site validation
-```
-
-موارد validation:
-
-- وجود `index.html`؛
-- وجود `main.js`، `app.js`، Core و Componentهای JS؛
-- وجود CSSهای Component؛
-- `node --check` برای تمام JSهای زیر `assets/js`؛
-- header و عرض ردیف‌های سه CSV runtime؛
-- وجود دقیق ۱۱۸ فایل در `data/Elements/`؛
-- smoke test HTTP برای HTML، JSهای اصلی/Core/Periodic Table و سه CSV runtime.
-
-CI browser automation ندارد؛ smoke test دسترسی HTTP و syntax/data validation انجام می‌دهد، نه اجرای کامل UI در مرورگر.
-
----
-
-## 15. اجرای محلی
-
-چون CSVها با `fetch()` خوانده می‌شوند، صفحه را با `file://` اجرا نکنید.
+CSVها با `fetch()` خوانده می‌شوند؛ بنابراین صفحه را با `file://` اجرا نکنید. از وب‌سرور محلی استفاده کنید:
 
 ```bash
-python -m http.server 8000
+python3 -m http.server 8000
 ```
 
-سپس:
+## 14. وضعیت فعلی
 
-```text
-http://localhost:8000
-```
+اصلاحات اصلی اعمال‌شده:
 
-Syntax check:
-
-```bash
-find assets/js -type f -name '*.js' -print0 | xargs -0 -n1 node --check
-```
-
----
-
-## 16. قراردادهای توسعه آینده
-
-1. `AtomicNumber` تنها منبع شمارهٔ عنصر است.
-2. دادهٔ علمی در HTML hard-code نشود.
-3. schema CSV بدون بررسی Data Core تغییر نکند.
-4. IDهای runtime بدون بررسی dependencyها تغییر نکنند.
-5. Theme System از Data Layer جدا بماند.
-6. selection logic در `periodic-table.js` باقی بماند و animation definition فقط در `main.js` نگهداری شود.
-7. رنگ پایدار selection قرمز `rgba(220,38,38,...)` باقی بماند مگر با تصمیم صریح UI.
-8. `prefers-reduced-motion` نباید animation selection را اجرا کند و باید همان وضعیت قرمز نهایی را نشان دهد.
-9. i18n در Core بماند.
-10. Componentها implementation داخلی یکدیگر را مستقیم مصرف نکنند.
-11. `data/Elements/` بدون تصمیم مستقل حذف نشود.
-12. localStorage فقط برای stateهای قراردادی UI استفاده شود، نه منبع علمی.
-13. پروژه بدون Backend/Database/build system باقی بماند مگر تصمیم معماری صریح گرفته شود.
-14. قبل از refactor جدید، Repository واقعی بررسی شود و README تنها source of truth فرض نشود.
-15. اگر code و documentation اختلاف داشتند، رفتار واقعی code مبناست و README اصلاح شود.
-16. تغییرات غیرمرتبط با درخواست انجام نشوند.
-17. layout فیلدهای Element Details باید برای متن کوتاه و بلند adaptive باقی بماند و به شبکهٔ ثابت یا ارتفاع ثابت برنگردد.
-18. ستون `level` در Advanced/Very Advanced حذف نشود؛ این metadata در فایل داده حفظ می‌شود، حتی اگر runtime فعلی از آن برای render استفاده نکند.
-
----
-
-## 17. آخرین تغییر این مرحله
-
-دو اصلاح فنی این مرحله انجام شد:
-
-1. **Selection Flash:** تعریف قدیمی و تکراری انیمیشن از `assets/css/main.css` حذف شد و تنها تعریف animation/keyframes در `assets/js/main.js` باقی ماند. سایهٔ پایدار انتخاب و حالت `prefers-reduced-motion` نیز به قرمز `rgba(220,38,38,...)` هماهنگ شدند.
-2. **CSV Parser:** پردازش خط پایانی `parseCsv()` مانند خطوط میانی فقط وقتی ردیف را ثبت می‌کند که حداقل یک مقدار غیرخالی داشته باشد؛ بنابراین یک خط خالی انتهایی دیگر به‌عنوان داده وارد نمی‌شود.
-
-رفتار selection پس از این اصلاح:
-
-```text
-آبی — یک بار
-   ↓
-سبز — یک بار
-   ↓
-قرمز نهایی و پایدار
-```
-
-رنگ آبی و سبز از مقادیر قراردادی پروژه حفظ شده‌اند. هیچ تغییری در CSVهای علمی، زبان، Themeهای جدول، ساختار HTML، منطق انتخاب عنصر یا مسیر انتقال `AtomicNumber` به Element Details انجام نشده است.
-
-موارد دیگری که در فهرست audit مطرح شده بودند اما در Repository فعلی از قبل برطرف یا obsolete هستند نیز دوباره دستکاری نشدند؛ از جمله `main-legacy.js` و کامنت‌های قدیمی `index.html`. پوشهٔ `data/Elements/` نیز طبق تصمیم پروژه عمداً حفظ شده است.
+- headingهای جدول و Element Details به UI و i18n برگشته‌اند؛
+- `table-status` و حالت صفر عنصر وجود دارد؛
+- خطای بارگذاری داده در status نیز نمایش داده می‌شود؛
+- selection flash فقط یک منبع animation دارد و توالی آن آبی → سبز → قرمز است؛
+- Theme ذخیره‌شده در reload بازیابی می‌شود؛
+- parser CSV ردیف پایانی خالی ایجاد نمی‌کند؛
+- مسیر ترجمهٔ aria بلااستفاده حذف شده است؛
+- CSSهای Component در CI خالی بودنشان کنترل می‌شوند؛
+- `data/Elements/` عمداً حفظ شده است؛
+- README2 و README3 حذف شده‌اند.
