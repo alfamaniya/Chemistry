@@ -1,0 +1,1861 @@
+{
+  "Record": {
+    "RecordType": "AtomicNumber",
+    "RecordNumber": 100,
+    "RecordTitle": "Fermium",
+    "Section": [
+      {
+        "TOCHeading": "Identifiers",
+        "Description": "Identifiers for this element, including element name, element symbol, InChI string, and InChIKey.",
+        "Section": [
+          {
+            "TOCHeading": "Element Name",
+            "Description": "The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Fermium"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Fermium"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Symbol",
+            "Description": "Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Fm"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Fm"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChI",
+            "Description": "The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChI",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "InChI=1S/Fm"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChIKey",
+            "Description": "An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChIKey",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "MIORUQGGZCBUGO-UHFFFAOYSA-N"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Properties",
+        "Description": "Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on.",
+        "Section": [
+          {
+            "TOCHeading": "Atomic Weight",
+            "Description": "Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u).",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "257"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "257"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Relative Mass: 257.0951061(69)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Configuration",
+            "Description": "The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result.",
+            "URL": "https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Rn] 5f12 7s2",
+                      "Markup": [
+                        {
+                          "Start": 7,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Oxidation States",
+            "Description": "The oxidation state(s) that this element commonly has in a compound.  The oxidation state of an atom is defined as the hypothetical charge that would be held by that atom if all of its bonds to other atoms were completely ionic in nature. For example, the oxidation state of carbon in CO2 would be +4 since the hypothetical charge held by the carbon atom if both of the carbon-oxygen double bonds were completely ionic would be equal to +4 (each oxygen atom would hold a charge of -2 since oxygen is more electronegative than carbon).",
+            "URL": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/20%3A_Electrochemistry/20.01%3A_Oxidation_States_and_Redox_Reactions",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "+3"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2, 3"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ground Level",
+            "Description": "Also called ground-state level. The ground state electron configuration is the arrangement of electrons around the nucleus of an atom with lower energy levels.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "3H6",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 2,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ionization Energy",
+            "Description": "Ionization energy, also called ionization potential, is the amount of energy required to remove an electron from an isolated atom or molecule.",
+            "URL": "https://www.britannica.com/science/ionization-energy",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "6.50 eV"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Reference": [
+                  "Revised Ionization Energies of the Neutral Actinides, J. Sugar, J. Chem. Phys. 60, 4103 (1974) DOI:10.1063/1.1680874"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Revised Ionization Energies of the Neutral Actinides, J. Sugar, J. Chem. Phys. 60, 4103 (1974) DOI:10.1063/1.1680874"
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "6.50 ± 0.07 eV  (The level was determined by interpolation or extrapolation of known experimental values or by semiempirical calculation; its absolutre accuracy is reflected in the number of significant figures assigned to it.)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electronegativity",
+            "Description": "Electronegativity is a measure of the tendency of an atom to attract a bonding pair of electrons.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electronegativity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Name": "Pauling Scale Electronegativity",
+                "Reference": [
+                  "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    1.3
+                  ],
+                  "Unit": "(Pauling Scale)"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Spectra",
+            "Description": "The spectrum of the electromagnetic radiation emitted or absorbed by an electron during transitions between different energy levels within an atom.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/levels_hold.pl?el=Fm",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Levels Holdings"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Physical Description",
+            "Description": "The appearance or features of this element, including color, odor, state, taste and more in general.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Solid"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Classification",
+            "Description": "Classification according to the element's chemical and physical properties, and location within the periodic table.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Metal"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Period Number",
+            "Description": "The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "7"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Group Number",
+            "Description": "Element group refers to a set of chemical elements in the same vertical column of the periodic table",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "- Actinide"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Melting Point",
+            "Description": "This section provides the melting point and/or freezing point. The melting point is the temperature at which a substance changes state from solid to liquid at atmospheric pressure. When considered as the temperature of the reverse change (from liquid to solid), it is referred to as the freezing point.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.01%3A_Melting_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1800 K (1527°C or 2781°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1527°C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Crustal Abundance",
+            "Description": "The estimated element abundance in the earth's crust.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Not Applicable"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Oceanic Abundance",
+            "Description": "The estimated element abundance in the earth's oceans.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Not Applicable"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "History",
+        "Description": "The history of the discovery and use of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Fermium was discovered by a team of scientists led by Albert Ghiorso in 1952 while studying the radioactive debris produced by the detonation of the first hydrogen bomb. The isotope they discovered, fermium-255, has a half-life of about 20 hours and was produced by combining 17 neutrons with uranium-238, which then underwent eight beta decays. Today, fermium is produced though a lengthy chain of nuclear reactions that involves bombarding each isotope in the chain with neutrons and then allowing the resulting isotope to undergo beta decay. Fermium's most stable isotope, fermium-257, has a half-life of about 100.5 days. It decays into californium-253 through alpha decay or decays through spontaneous fission."
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Fermium, element 100, is the eighth transuranium element of the actinide series and is named after the Italian physicist and Nobel Laureate Enrico Fermi. Element 100 was first discovered in 1952 in the fallout from the 10-megaton \"Ivy Mike\" nuclear test in the south Pacific the first successful test of a hydrogen fusion bomb. Researchers identified a new Pu-244 isotope found on filter papers on drone aircraft flown through the fallout. They determined that it could only have formed by the unexpected absorption of six neutrons by uranium-238 followed by successive beta-decays. At the time, the absorption of neutrons by a heavy nucleus was thought to be a rare process, but the identification of Pu-244 raised the possibility that still more neutrons could have been absorbed by the uranium nuclei leading to additional new elements."
+                },
+                {
+                  "String": "Element 99, einsteinium was discovered almost immediately on other filter papers by Albert Ghiorso and co-workers at the Lawrence Berkeley Laboratory in collaboration with Argonne and Los Alamos National Laboratories, demonstrating that 15 neutrons were captured by U-238! The subsequent discovery of fermium required more material, as the yield of element 100 was expected to be at least an order of magnitude lower than that of einsteinium. So, contaminated coral from ground zero on Eniwetok atoll was shipped to Berkeley for processing and analysis. About two months after the Ivy-Mike test, a new activity was isolated emitting high-energy α-particles (7.1 MeV) with a half-life of about 1 day. It was the β- decay daughter of an isotope of einsteinium, and it had to be an isotope of element 100. : It was identified as 255Fm (half-life 20.07 hours). The discovery of the new elements, and the new data on neutron capture, was kept secret on the orders of the U.S. Military until 1955 due to Cold War tensions. Later the Berkeley team was able to prepare elements 99 and 100 in the lab by neutron bombardment of Pu-239 in a cyclotron. They published this work in 1954, with the disclaimer that these were not the first studies that had been carried out on the element. The 'Ivy Mike' studies were later declassified and published in 1955. Meanwhile, a group at the Nobel Institute for Physics in Stockholm independently claimed discovery of element 100 by producing an isotope with a 30-minute half-life and published their work in May 1954. Nevertheless, the historical precedence of the Berkeley team was generally recognized, and with it the prerogative to name the new element in honor of the recently deceased Enrico Fermi, the developer of the first artificial self-sustained nuclear reactor.",
+                  "Markup": [
+                    {
+                      "Start": 826,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Description",
+        "Description": "A short description of this element, provided by authoritative sources.",
+        "Information": [
+          {
+            "ReferenceNumber": 4,
+            "Reference": [
+              "[632]  Nobelprize.org. Enrico Fermi – Biographical, Nobel Media AB (2014), Feb. 25; http://www.nobelprize.org/nobel_prizes/physics/laureates/1938/fermi-bio.html.",
+              "[633]  Los Alamos National Laboratory. Periodic Table of Elements: LANL- Fermium, Los Alamos National Laboratory (2014), Feb. 25; http://periodic.lanl.gov/100.shtml.",
+              "[634]  Berkeley Lab-Lawrence Berkeley National Laboratory. The Search for “Heavy” Elements, Berkeley Lab-Lawrence Berkeley National Laboratory (2014), Feb. 25; http://www.lbl.gov/abc/wallchart/chapters/08/0.html.",
+              "[635]  U.S. Department of Energy. The Manhattan Project-Ivy Mike, the world’s first thermonuclear (hydrogen bomb) test, November 1, 1952, U.S. Department of Energy (2017), April 8; https://www.osti.gov/opennet/manhattan-project-history/images/ivy_mike_image.htm."
+            ],
+            "ExtendedReference": [
+              {
+                "Citation": "[632]  Nobelprize.org. Enrico Fermi – Biographical, Nobel Media AB (2014), Feb. 25; http://www.nobelprize.org/nobel_prizes/physics/laureates/1938/fermi-bio.html."
+              },
+              {
+                "Citation": "[633]  Los Alamos National Laboratory. Periodic Table of Elements: LANL- Fermium, Los Alamos National Laboratory (2014), Feb. 25; http://periodic.lanl.gov/100.shtml."
+              },
+              {
+                "Citation": "[634]  Berkeley Lab-Lawrence Berkeley National Laboratory. The Search for “Heavy” Elements, Berkeley Lab-Lawrence Berkeley National Laboratory (2014), Feb. 25; http://www.lbl.gov/abc/wallchart/chapters/08/0.html."
+              },
+              {
+                "Citation": "[635]  U.S. Department of Energy. The Manhattan Project-Ivy Mike, the world’s first thermonuclear (hydrogen bomb) test, November 1, 1952, U.S. Department of Energy (2017), April 8; https://www.osti.gov/opennet/manhattan-project-history/images/ivy_mike_image.htm."
+              }
+            ],
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Fermium does not occur naturally in the Earth’s crust. It was first identified in December 1952 by American scientists from the Argonne National Laboratory near Chicago, Illinois, the Los Alamos National Laboratory in Los Alamos, New Mexico, and The University of California Laboratory in Berkeley, California in the debris of thermonuclear weapons (Fig. IUPAC.100.1). The element was named for Enrico Fermi, who built the first man-made nuclear reactor. 255Fm (with a half-life of 20 h) was the first fermium isotope identified. Fermium is the heaviest element that can be formed by neutron bombardment of lighter elements and is thus the heaviest element that can be synthesized in macroscopic quantities [632], [633].",
+                  "Markup": [
+                    {
+                      "Start": 455,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    }
+                  ]
+                },
+                {
+                  "String": "Fermium is of interest in particle physics research, but it has no commercial applications. 253Fm was one of the decay products used to confirm synthesis of copernicium in a particle accelerator experiment [634].",
+                  "Markup": [
+                    {
+                      "Start": 92,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    }
+                  ]
+                },
+                {
+                  "String": "          ",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 1,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_135.jpg",
+                      "Type": "Image",
+                      "Size": "957x625",
+                      "Caption": "Fig. IUPAC.100.1: The first successful hydrogen bomb test (Ivy-Mike) in 1952 produced ²⁵⁵Fm, which was the first fermium isotope detected [635]. "
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Fermium is the heaviest synthetic element that can be formed by neutron bombardment of lighter elements, and hence the heaviest element that can be prepared in macroscopic quantities. The chemical properties of fermium have been studied solely using tracer amounts and innovative experimental techniques are required. Fermium metal has not been prepared, however measurements have been made on fermium alloys with rare earth metals and a number of predictions have been made. It was deduced that fermium metal prefers a divalent state but with modest compression can form a trivalent state. Other measurements on mixed fermium alloys and compounds include the magnetic moment, inner-shell binding energies, x-ray energies, sublimation enthalpy, etc."
+                },
+                {
+                  "String": "The chemistry of fermium is typical of the late actinides, with a dominance of the +3 oxidation state but also a tendency toward an accessible +2 oxidation state. In the solid state no pure fermium compounds have been prepared, however Fm(III) has been studied by co-crystallization techniques as a trace component in a rare earth matrix with the same charge. Fermium co-precipitates with rare earth fluorides and hydroxides. In aqueous solution, fermium exists in solution as the Fm3+ ion, which has a hydration number of 16.9 and an acid dissociation constant of 1.6 × 10-4 (pKa = 3.8). Fm3+ forms complexes with a wide variety of organic ligands with hard donor atoms such as oxygen, and these complexes are usually more stable than those of the lighter actinides. It also forms complexes with ligands such as chloride or nitrate and, again, these complexes appear to be more stable than those formed by einsteinium or californium. Bonding in the heavier actinides is mostly ionic in character and the ionic radius of the Fm3+ ion is smaller than the preceding An3+ ions because of the actinide contraction. This is the result of a higher effective nuclear charge of fermium, and thus fermium forms shorter and stronger metal–ligand bonds. In the heavier actinides there is an increasing tendency to form a divalent ion that emerges at einsteinium. Fm3+ can be readily reduced to stable Fm2+ using moderately strong reducing agents such as samarium(II) chloride. In aqueous media, the Fm(III)/Fm(III) redox couple has been investigated via radio-electrochemistry and other techniques. The electrode potentials have been estimated to be similar to that of the ytterbium redox couple. The redox potentials for the various fermium couples have been measured and/or estimated by various workers: Fm3+ → Fm2+ (- 1.15 V); Fm2+ → Fm0 (-2.37 V), all versus the Normal Hydrogen Electrode.",
+                  "Markup": [
+                    {
+                      "Start": 573,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 579,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 591,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 1027,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 1066,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 1354,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 1392,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 1797,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 1804,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 1821,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 1828,
+                      "Length": 1,
+                      "Type": "Superscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Uses",
+        "Description": "Uses of this element in industry and other fields.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Due to the small amounts produced and its short half-life, there are currently no uses for fermium outside of basic scientific research."
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Owing to the minute amounts of fermium produced and all of its isotopes having relatively short half-lives, there are currently no uses for it outside of basic scientific research that expands knowledge of the rest of the periodic table.",
+                  "Markup": [
+                    {
+                      "Start": 222,
+                      "Length": 14,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/ptable"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Production",
+        "Description": "Production of this element (from raw materials or other compounds containing the element).",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Because of the short half-life of all fermium isotopes, all that may have been present on the Earth during its formation has long since decayed away. Einsteinium and fermium did occur in the natural nuclear fission reactor at Oklo, but no longer exist. Fermium is produced as the result of multiple neutron captures in lighter elements, such as uranium and curium, followed by successive beta decays. The probability of such events increases with increased neutron flux, and nuclear explosions are the most powerful neutron sources on Earth. Fermium is also produced by the bombardment of lighter actinides with neutrons in nuclear reactors or accelerators. Fermium-257 is the heaviest isotope that is obtained via neutron capture, and can only be produced in nanogram quantities. The major source is the 85 MW High Flux Isotope Reactor (HFIR) at the Oak Ridge National Laboratory in Tennessee, USA. In a HFIR \"campaign\", tens of grams of curium are irradiated to produce heavier actinides and picogram quantities of fermium. The quantities of fermium produced in 20–200 kiloton thermonuclear explosions are believed to be of the order of milligrams, although it is mixed in with a huge quantity of debris. Forty picograms of 257Fm were recovered from 10 kilograms of debris from the 'Hutch' nuclear test in 1969. After production, fermium must be separated from debris and a host of other actinides and lanthanide fission products by solvent extraction, ion exchange, etc.). The annual reactor production of fermium-257 is in the picogram range. However, pure 255Fm (half-life 20 hours) can be easily isolated by \"milking\" the beta-decay daughter of pure 255Es (half-life 39.8 days).",
+                  "Markup": [
+                    {
+                      "Start": 1226,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 1561,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 1656,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Compounds",
+        "Description": "Compound records related to this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 8,
+            "Name": "Compounds",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=Fermium",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "See more information at the Fermium compound page."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Element Forms",
+            "Description": "Other forms of this element, including ions, isotopes, etc.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "CID",
+                    "Name",
+                    "Formula",
+                    "SMILES",
+                    "Molecular Weight"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 8,
+                "Name": "CID",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "23998",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 5,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/23998"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "167361",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/167361"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "167360",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/167360"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "167362",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/167362"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "167391",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/167391"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "176985",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 6,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/176985"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "fermium"
+                    },
+                    {
+                      "String": "fermium-255"
+                    },
+                    {
+                      "String": "fermium-254"
+                    },
+                    {
+                      "String": "fermium-257"
+                    },
+                    {
+                      "String": "fermium-252"
+                    },
+                    {
+                      "String": "fermium-253"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Formula",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Fm"
+                    },
+                    {
+                      "String": "Fm"
+                    },
+                    {
+                      "String": "Fm"
+                    },
+                    {
+                      "String": "Fm"
+                    },
+                    {
+                      "String": "Fm"
+                    },
+                    {
+                      "String": "Fm"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "SMILES",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Fm]"
+                    },
+                    {
+                      "String": "[255Fm]"
+                    },
+                    {
+                      "String": "[254Fm]"
+                    },
+                    {
+                      "String": "[257Fm]"
+                    },
+                    {
+                      "String": "[252Fm]"
+                    },
+                    {
+                      "String": "[253Fm]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Molecular Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "257.09511"
+                    },
+                    {
+                      "String": "255.08996"
+                    },
+                    {
+                      "String": "254.08685"
+                    },
+                    {
+                      "String": "257.09511"
+                    },
+                    {
+                      "String": "252.08247"
+                    },
+                    {
+                      "String": "253.08518"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Isotopes",
+        "Description": "Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.",
+        "URL": "https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Name": "Stable Isotope Count",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "0"
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Name": "Summary",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "A total of 21 known isotopes of fermium exist with atomic weights from 242 to 260, including 2 that are metastable. Fermium-257 is the longest-lived with a half-life of 100.5 days. Other relatively long-lived isotopes include Fm-253 (3 days), Fm-252 (25.4 hours) and Fm-255 (~20 hours). Fm-250, with a half-life of 30 minutes, was shown to be a decay product of nobelium, element 102 and the chemical identification of the isotope 250Fm confirmed the production and discovery of element 102. All the remaining isotopes of fermium have half-lives ranging from 30 minutes to less than a millisecond. The neutron-capture product of fermium-257, 258Fm, undergoes spontaneous fission with a half-life of just 370 microseconds; 259Fm and 260Fm are also unstable with respect to spontaneous fission (t½ = 1.5 s and 4 ms respectively). This means that the neutron capture production chain essentially terminates at mass number 257 because of the very short spontaneous fission half-lives of the heavier isotopes.",
+                  "Markup": [
+                    {
+                      "Start": 431,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 642,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 722,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 732,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Isotope Mass and Abundance",
+            "Description": "Atomic mass and abundance (composition) information for a given isotope/nuclide. The number in the parenthesis refers to an uncertainty when exist. The unit of atomic weight is the unified atomic mass unit (u) or dalton (Da). ",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Isotope",
+                    "Atomic Mass (uncertainty) [u]",
+                    "Abundance (uncertainty)"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "257Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Atomic Mass (uncertainty) [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "257.0951061(69)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": ""
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Mass, Half Life, and Decay",
+            "Description": "Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Nuclide",
+                    "Atomic Mass and Uncertainty [u]",
+                    "Half Life and Uncertainty",
+                    "Discovery Year",
+                    "Decay Modes, Intensities and Uncertainties [%]"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 2,
+                "Name": "Nuclide",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "241Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "242Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "243Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "244Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "245Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "246Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "247Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "247Fmm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "248Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "248Fmm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "249Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "250Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "250Fmm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "251Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "251Fmm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "252Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "253Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "253Fmm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "253Fmn",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "254Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "255Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "255Fmp",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 5,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "256Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "257Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "258Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "259Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "260Fm",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Atomic Mass and Uncertainty [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "241.074311 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "242.073430 ± 0.00043 [Estimated]"
+                    },
+                    {
+                      "String": "243.074414 ± 0.00014 [Estimated]"
+                    },
+                    {
+                      "String": "244.074036 ± 0.000216 [Estimated]"
+                    },
+                    {
+                      "String": "245.075354 ± 0.00021 [Estimated]"
+                    },
+                    {
+                      "String": "246.075353334 ± 0.000014675"
+                    },
+                    {
+                      "String": "247.076944 ± 0.000194 [Estimated]"
+                    },
+                    {
+                      "String": "247.076944 ± 0.000194 [Estimated]"
+                    },
+                    {
+                      "String": "248.077185451 ± 0.000009122"
+                    },
+                    {
+                      "String": "248.077185451 ± 0.000009122"
+                    },
+                    {
+                      "String": "249.078926042 ± 0.000006668"
+                    },
+                    {
+                      "String": "250.079519765 ± 0.000008468"
+                    },
+                    {
+                      "String": "250.079519765 ± 0.000008468"
+                    },
+                    {
+                      "String": "251.081545130 ± 0.000015342"
+                    },
+                    {
+                      "String": "251.081545130 ± 0.000015342"
+                    },
+                    {
+                      "String": "252.082466019 ± 0.000005604"
+                    },
+                    {
+                      "String": "253.085180945 ± 0.000001662"
+                    },
+                    {
+                      "String": "253.085180945 ± 0.000001662"
+                    },
+                    {
+                      "String": "253.085180945 ± 0.000001662"
+                    },
+                    {
+                      "String": "254.086852424 ± 0.000001978"
+                    },
+                    {
+                      "String": "255.089963495 ± 0.000004223"
+                    },
+                    {
+                      "String": "255.089963495 ± 0.000004223"
+                    },
+                    {
+                      "String": "256.091771699 ± 0.000003241"
+                    },
+                    {
+                      "String": "257.095105419 ± 0.000004669"
+                    },
+                    {
+                      "String": "258.097077 ± 0.000215 [Estimated]"
+                    },
+                    {
+                      "String": "259.100596 ± 0.000304 [Estimated]"
+                    },
+                    {
+                      "String": "260.102809 ± 0.000467 [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Half Life and Uncertainty",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "730 us ± 60"
+                    },
+                    {
+                      "String": "800 us ± 200"
+                    },
+                    {
+                      "String": "231 ms ± 9"
+                    },
+                    {
+                      "String": "3.12 ms ± 0.08"
+                    },
+                    {
+                      "String": "4.2 s ± 1.3"
+                    },
+                    {
+                      "String": "1.54 s ± 0.04"
+                    },
+                    {
+                      "String": "31 s ± 1"
+                    },
+                    {
+                      "String": "5.1 s ± 0.2"
+                    },
+                    {
+                      "String": "34.5 s ± 1.2"
+                    },
+                    {
+                      "String": "10.1 ms ± 0.6"
+                    },
+                    {
+                      "String": "1.6 m ± 0.1"
+                    },
+                    {
+                      "String": "31.0 m ± 1.1"
+                    },
+                    {
+                      "String": "1.92 s ± 0.05"
+                    },
+                    {
+                      "String": "5.30 h ± 0.08"
+                    },
+                    {
+                      "String": "21.8 us ± 0.8"
+                    },
+                    {
+                      "String": "25.39 h ± 0.04"
+                    },
+                    {
+                      "String": "3.00 d ± 0.12"
+                    },
+                    {
+                      "String": ">100 ns [Estimated]"
+                    },
+                    {
+                      "String": "560 ns ± 60"
+                    },
+                    {
+                      "String": "3.240 h ± 0.002"
+                    },
+                    {
+                      "String": "20.07 h ± 0.07"
+                    },
+                    {
+                      "String": "Not-specified"
+                    },
+                    {
+                      "String": "157.1 m ± 1.3"
+                    },
+                    {
+                      "String": "100.5 d ± 0.2"
+                    },
+                    {
+                      "String": "370 us ± 14"
+                    },
+                    {
+                      "String": "1.5 s ± 0.2"
+                    },
+                    {
+                      "String": "1 m [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Discovery Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2008"
+                    },
+                    {
+                      "String": "1975"
+                    },
+                    {
+                      "String": "1981"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "1966"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "1967"
+                    },
+                    {
+                      "String": "1958"
+                    },
+                    {
+                      "String": "2010"
+                    },
+                    {
+                      "String": "1960"
+                    },
+                    {
+                      "String": "1954"
+                    },
+                    {
+                      "String": "1973"
+                    },
+                    {
+                      "String": "1957"
+                    },
+                    {
+                      "String": "1970"
+                    },
+                    {
+                      "String": "1956"
+                    },
+                    {
+                      "String": "1957"
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": "2011"
+                    },
+                    {
+                      "String": "1954"
+                    },
+                    {
+                      "String": "1954"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "1955"
+                    },
+                    {
+                      "String": "1964"
+                    },
+                    {
+                      "String": "1971"
+                    },
+                    {
+                      "String": "1980"
+                    },
+                    {
+                      "String": ""
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Decay Modes, Intensities and Uncertainties [%]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "SF=?; α<14%; β+<12%",
+                      "Markup": [
+                        {
+                          "Start": 14,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "SF≈100%; α ?"
+                    },
+                    {
+                      "String": "α=91±0.3%; SF=9±0.3%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "SF>97%; β+<2%; α<1%",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α≈100%; β+<7%; SF<0.3%",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=93.2±0.6%; SF=6.8±0.6%; ε<1.3%"
+                    },
+                    {
+                      "String": "α≈64%; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 8,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α=88±0.2%; β+ ?; IT ?",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α≈100%; β+ ?; SF=0.10±0.5%",
+                      "Markup": [
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT ?; α ?; β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+ ?; α=33±0.9%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "α≈100%; SF=0.0069±1%; ε ?"
+                    },
+                    {
+                      "String": "IT≈100%; α ?; β+ ?; SF ?",
+                      "Markup": [
+                        {
+                          "Start": 15,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=98.20±1.3%; α=1.80±1.3%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "α≈100%; SF=0.0023±0.2%; 2β+ ?",
+                      "Markup": [
+                        {
+                          "Start": 26,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "ε=88±0.1%; α=12±0.1%"
+                    },
+                    {
+                      "String": "IT ?"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "α=99.9408±0.3%; SF=0.0592±0.3%"
+                    },
+                    {
+                      "String": "α=100%; SF=2.4e-5±1%"
+                    },
+                    {
+                      "String": "IT=100%"
+                    },
+                    {
+                      "String": "SF=91.9±0.3%; α=8.1±0.3%"
+                    },
+                    {
+                      "String": "α=99.790±0.4%; SF=0.210±0.4%"
+                    },
+                    {
+                      "String": "SF≈100%; α ?"
+                    },
+                    {
+                      "String": "SF=100%"
+                    },
+                    {
+                      "String": "SF ?"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 1,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      },
+      {
+        "ReferenceNumber": 2,
+        "SourceName": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+        "SourceID": "e100",
+        "Name": "Fm",
+        "Description": "The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.",
+        "URL": "https://www-nds.iaea.org/amdc/",
+        "LicenseURL": "https://www-nds.iaea.org/disclaimer.html",
+        "ANID": 6590327
+      },
+      {
+        "ReferenceNumber": 3,
+        "SourceName": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+        "SourceID": "a100",
+        "Name": "Fermium",
+        "Description": "Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.",
+        "URL": "https://www.ciaaw.org/",
+        "LicenseURL": "http://www.ciaaw.org/bylaws.htm",
+        "ANID": 2292481
+      },
+      {
+        "ReferenceNumber": 4,
+        "SourceName": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+        "SourceID": "p100",
+        "Description": "The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703.",
+        "URL": "https://doi.org/10.1515/pac-2015-0703",
+        "LicenseNote": "Copyright (c) 2020 International Union of Pure and Applied Chemistry.\u000A\u000AThe International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated.",
+        "LicenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "ANID": 13296505
+      },
+      {
+        "ReferenceNumber": 6,
+        "SourceName": "Los Alamos National Laboratory, U.S. Department of Energy",
+        "SourceID": "lanl100",
+        "Name": "Fermium",
+        "Description": "The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name.",
+        "URL": "https://periodic.lanl.gov/100.shtml",
+        "ANID": 507280
+      },
+      {
+        "ReferenceNumber": 5,
+        "SourceName": "Jefferson Lab, U.S. Department of Energy",
+        "SourceID": "jlab100",
+        "Name": "Fermium",
+        "Description": "Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/",
+        "URL": "https://education.jlab.org/itselemental/ele100.html",
+        "LicenseNote": "Please see citation and linking information: https://education.jlab.org/faq/index.html",
+        "LicenseURL": "https://www.jlab.org/privacy-and-security-notice",
+        "ANID": 507162
+      },
+      {
+        "ReferenceNumber": 7,
+        "SourceName": "NIST Physical Measurement Laboratory",
+        "SourceID": "e100",
+        "Name": "Fermium",
+        "Description": "The periodic table contains NIST's critically-evaluated data on atomic properties of the elements. The provenance data that include data for atomic spectroscopy, X-ray and gamma ray, radiation dosimetry, nuclear physics, and condensed matter physics may be found from the link under the source name. Ref: https://www.nist.gov/pml/atomic-spectra-database",
+        "URL": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=100",
+        "LicenseURL": "https://www.nist.gov/pml/database-disclaimer",
+        "ANID": 2292717
+      },
+      {
+        "ReferenceNumber": 8,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ef_100",
+        "Name": "Fermium",
+        "Description": "This section provides all form of data related to element Fermium.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24834028
+      },
+      {
+        "ReferenceNumber": 9,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ep_100",
+        "Name": "Fermium",
+        "Description": "The element property data was retrieved from publications.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24834236
+      }
+    ]
+  }
+}
