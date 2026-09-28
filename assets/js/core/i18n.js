@@ -56,6 +56,10 @@ export function setLanguage(language, { fBlock, languageButtons, onLanguageChang
     const key = node.dataset.i18n;
     if (t[key]) node.textContent = t[key];
   });
+  document.querySelectorAll("[data-i18n-aria]").forEach(node => {
+    const key = node.dataset.i18nAria;
+    if (t[key]) node.setAttribute("aria-label", t[key]);
+  });
   if (fBlock) fBlock.setAttribute("aria-label", t.fBlockAria);
 
   if (languageButtons) languageButtons.forEach(button => {
