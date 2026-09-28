@@ -53,13 +53,14 @@
   `;
   document.head.appendChild(backgroundStyle);
 
+  // Selection flash has a single runtime source of truth.
   const selectionStyle = document.createElement("style");
   selectionStyle.textContent = `
     .element.selected-flash {
       animation: chemistry-element-selection 2.7s ease-in-out 1 both;
     }
     @keyframes chemistry-element-selection {
-      0%, 15%, 45%, 75%, 100% {
+      0%, 15%, 45%, 75% {
         filter: brightness(1);
         box-shadow: 0 9px 22px rgba(220,38,38,.34);
       }
@@ -70,6 +71,10 @@
       60% {
         filter: brightness(1.14);
         box-shadow: 0 0 0 4px rgba(22,163,74,.28), 0 12px 26px rgba(22,163,74,.48);
+      }
+      100% {
+        filter: brightness(1);
+        box-shadow: 0 9px 22px rgba(220,38,38,.34);
       }
     }
     @media (prefers-reduced-motion: reduce) {
@@ -102,7 +107,10 @@
     {id:"12", fa:"سال کشف", en:"Year Discovered", faGroup:"تاریخی", enGroup:"History"}
   ];
 
-  function currentLanguage() { return document.documentElement.lang === "en" ? "en" : "fa"; }
+  function currentLanguage() {
+    return document.documentElement.lang === "en" ? "en" : "fa";
+  }
+
   function applyTheme(themeId) {
     if (!tableShell) return;
     for (let i = 1; i <= 15; i++) tableShell.classList.remove("theme-" + i);
@@ -110,11 +118,12 @@
     tableShell.classList.add("theme-pdf", "theme-" + normalizedTheme);
     localStorage.setItem("chemistry-pdf-theme", String(normalizedTheme));
   }
-  function syncThemeSelect(forceDefault = false) {
+
+  function syncThemeSelect() {
     if (!themeSelect) return;
     const lang = currentLanguage();
-    const saved = localStorage.getItem("chemistry-pdf-theme");
-    const current = forceDefault ? "15" : (themeSelect.value || saved || "15");
+    const saved = localStorage.getItem("chemistry-pdf-theme") || "15";
+    const current = themeSelect.value || saved;
     const fragment = document.createDocumentFragment();
     themes.forEach(theme => {
       const option = document.createElement("option");
@@ -128,11 +137,15 @@
     themeSelect.value = themes.some(theme => theme.id === current) ? current : "15";
     applyTheme(themeSelect.value);
   }
+
   function install() {
     if (!themeSelect) return;
-    syncThemeSelect(false);
+    syncThemeSelect();
     themeSelect.addEventListener("change", event => applyTheme(event.target.value));
-    new MutationObserver(() => syncThemeSelect(false)).observe(document.documentElement, {attributes:true,attributeFilter:["lang"]});
+    new MutationObserver(() => syncThemeSelect()).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["lang"]
+    });
   }
 
   install();
