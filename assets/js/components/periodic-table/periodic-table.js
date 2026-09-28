@@ -36,7 +36,7 @@ export function mountPeriodicTable({
     const number=document.createElement("span"); number.className="element-number"; number.textContent=element.AtomicNumber;
     const symbol=document.createElement("span"); symbol.className="element-symbol"; symbol.textContent=element.Symbol;
     const name=document.createElement("span"); name.className="element-name"; name.textContent=getName(element,language); card.append(number,symbol,name);
-    card.addEventListener("click",()=>{selectedAtomicNumber=Number(element.AtomicNumber); onElementSelected(selectedAtomicNumber); document.querySelectorAll(".element.selected").forEach(node=>node.classList.remove("selected")); card.classList.add("selected");});
+    card.addEventListener("click",()=>{selectedAtomicNumber=Number(element.AtomicNumber); onElementSelected(selectedAtomicNumber); document.querySelectorAll(".element.selected, .element.selected-flash").forEach(node=>{node.classList.remove("selected","selected-flash");}); card.classList.add("selected","selected-flash"); card.addEventListener("animationend",()=>card.classList.remove("selected-flash"),{once:true});});
     return card;
   }
   function createFRow(source,start,end){const row=document.createElement("div");row.className="f-row";for(let i=0;i<2;i++){const spacer=document.createElement("span");spacer.className="f-spacer";row.appendChild(spacer);}source.filter(element=>{const number=Number(element.AtomicNumber);return number>=start&&number<=end;}).forEach(element=>row.appendChild(createElementCard(element)));const finalSpacer=document.createElement("span");finalSpacer.className="f-spacer";row.appendChild(finalSpacer);return row;}
