@@ -31,11 +31,14 @@ jobs:
         test -f assets/js/components/periodic-table/periodic-table.js
         test -f assets/js/components/element-details/element-details.js
         test -f assets/js/components/footer/footer.js
-        test -f assets/css/components/header.css
-        test -f assets/css/components/hero.css
-        test -f assets/css/components/periodic-table.css
-        test -f assets/css/components/element-details.css
-        test -f assets/css/components/footer.css
+        for file in \
+          assets/css/components/header.css \
+          assets/css/components/hero.css \
+          assets/css/components/periodic-table.css \
+          assets/css/components/element-details.css \
+          assets/css/components/footer.css; do
+          test -s "$file"
+        done
         test -f data/PubChemElements_all.csv
         test -f data/ELEMENTS_118_ADVANCED.csv
         test -f data/ELEMENTS_118_VERY_ADVANCED.csv
@@ -43,6 +46,16 @@ jobs:
     - name: Check JavaScript syntax
       run: |
         find assets/js -type f -name '*.js' -print0 | xargs -0 -n1 node --check
+
+    - name: Validate runtime architecture contracts
+      run: |
+        grep -q 'chemistry-element-selection' assets/js/main.js
+        grep -q 'rgba(37,99,235' assets/js/main.js
+        grep -q 'rgba(22,163,74' assets/js/main.js
+        grep -q 'rgba(220,38,38' assets/js/main.js
+        ! grep -R -q 'element-selection-flash' assets/css
+        grep -q 'periodicTitle' assets/js/components/periodic-table/periodic-table.js
+        grep -q 'selectedElementTitle' assets/js/components/element-details/element-details.js
 
     - name: Validate runtime CSV headers and row widths
       run: |
@@ -62,10 +75,11 @@ jobs:
             width = len(rows[0])
             malformed = [i + 2 for i, row in enumerate(rows[1:]) if len(row) != width]
             assert not malformed, f"Malformed rows in {path}: {malformed[:5]}"
+            assert len(rows) - 1 == 118, f"Expected 118 data rows in {path}, got {len(rows) - 1}"
             print(f"validated {path}: {len(rows) - 1} data rows")
         PY
 
-    - name: Validate orphan data inventory
+    - name: Validate retained data inventory
       run: |
         count=$(find data/Elements -maxdepth 1 -type f -name '*.csv' | wc -l)
         test "$count" -eq 118
@@ -83,6 +97,7 @@ jobs:
         curl --fail --silent --show-error http://127.0.0.1:8000/assets/js/core/i18n.js >/dev/null
         curl --fail --silent --show-error http://127.0.0.1:8000/assets/js/core/data.js >/dev/null
         curl --fail --silent --show-error http://127.0.0.1:8000/assets/js/components/periodic-table/periodic-table.js >/dev/null
+        curl --fail --silent --show-error http://127.0.0.1:8000/assets/js/components/element-details/element-details.js >/dev/null
         curl --fail --silent --show-error http://127.0.0.1:8000/data/PubChemElements_all.csv >/dev/null
         curl --fail --silent --show-error http://127.0.0.1:8000/data/ELEMENTS_118_ADVANCED.csv >/dev/null
         curl --fail --silent --show-error http://127.0.0.1:8000/data/ELEMENTS_118_VERY_ADVANCED.csv >/dev/null
