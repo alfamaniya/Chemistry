@@ -23,7 +23,10 @@ export function parseCsv(text) {
   }
 
   if (quoted) throw new Error("Malformed CSV: unclosed quoted field");
-  if (cell || row.length) { row.push(cell); rows.push(row); }
+  if (cell || row.length) {
+    row.push(cell);
+    if (row.some(value => value !== "")) rows.push(row);
+  }
 
   const headers = (rows.shift() || []).map(header => header.trim());
   if (!headers.length || headers.some(header => !header)) throw new Error("Malformed CSV: missing or empty header");
