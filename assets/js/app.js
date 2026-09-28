@@ -10,6 +10,7 @@ import { createElementDetailsController } from "./components/element-details/ele
   const beginnerInfo = document.getElementById("beginner-info");
   const advancedInfo = document.getElementById("advanced-info");
   const veryAdvancedInfo = document.getElementById("very-advanced-info");
+  const tableStatus = document.getElementById("table-status");
   const languageButtons = document.querySelectorAll(".language-button");
 
   let currentLanguage = localStorage.getItem("chemistry-language") || "fa";
@@ -54,6 +55,7 @@ import { createElementDetailsController } from "./components/element-details/ele
       const t = translations[currentLanguage];
       document.getElementById("periodic-table-grid").innerHTML = '<div class="loading">' + t.loadError + '</div>';
       document.getElementById("f-block").innerHTML = "";
+      if (tableStatus) tableStatus.textContent = t.loadError;
       selectedElementBox.innerHTML = '<div class="empty-state">' + t.loadError + '</div>';
       beginnerInfo.innerHTML = "";
       advancedInfo.innerHTML = "";
