@@ -1,11 +1,12 @@
+const BLINK_DURATION_MS = 3000;
+const BLINK_CLASS = "element-card--blink";
 const blinkTimers = new WeakMap();
-const blinkClasses = ["element-card--blink-green", "element-card--blink-yellow", "element-card--blink-orange"];
 
 const clearBlink = (card) => {
-  const timers = blinkTimers.get(card);
-  if (timers) timers.forEach((timer) => window.clearTimeout(timer));
+  const timer = blinkTimers.get(card);
+  if (timer) window.clearTimeout(timer);
   blinkTimers.delete(card);
-  card.classList.remove(...blinkClasses);
+  card.classList.remove(BLINK_CLASS);
 };
 
 const blinkElementCard = (card) => {
@@ -13,15 +14,9 @@ const blinkElementCard = (card) => {
   clearBlink(card);
   if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
 
-  const timers = [];
-  blinkClasses.forEach((className, index) => {
-    timers.push(window.setTimeout(() => {
-      card.classList.remove(...blinkClasses);
-      card.classList.add(className);
-    }, index * 500));
-  });
-  timers.push(window.setTimeout(() => clearBlink(card), blinkClasses.length * 500));
-  blinkTimers.set(card, timers);
+  card.classList.add(BLINK_CLASS);
+  const timer = window.setTimeout(() => clearBlink(card), BLINK_DURATION_MS);
+  blinkTimers.set(card, timer);
 };
 window.blinkElementCard = blinkElementCard;
 
