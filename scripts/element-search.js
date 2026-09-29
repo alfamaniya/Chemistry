@@ -34,18 +34,26 @@ const setupElementSearch = async () => {
         return;
       }
 
+      const isPersian = document.documentElement.lang === "fa";
       const matches = elements
         .filter((element) => {
           const english = normalizeSearchText(element.name);
           const persian = normalizeSearchText(element.persian_name);
           return english.includes(query) || persian.includes(query);
         })
+        .sort((a, b) => {
+          const aName = normalizeSearchText(isPersian ? a.persian_name : a.name);
+          const bName = normalizeSearchText(isPersian ? b.persian_name : b.name);
+          return aName.localeCompare(bName, isPersian ? "fa" : "en", {
+            sensitivity: "base",
+          });
+        })
         .slice(0, 8);
 
       if (!matches.length) {
         const empty = document.createElement("div");
         empty.className = "search-box__no-results";
-        empty.textContent = document.documentElement.lang === "fa" ? "عنصری پیدا نشد" : "No element found";
+        empty.textContent = isPersian ? "عنصری پیدا نشد" : "No element found";
         results.appendChild(empty);
         results.hidden = false;
         return;
@@ -60,7 +68,7 @@ const setupElementSearch = async () => {
 
         const name = document.createElement("span");
         name.className = "search-box__result-name";
-        name.textContent = document.documentElement.lang === "fa" ? element.persian_name : element.name;
+        name.textContent = isPersian ? element.persian_name : element.name;
 
         const meta = document.createElement("span");
         meta.className = "search-box__result-meta";
