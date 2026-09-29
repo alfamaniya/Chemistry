@@ -12,6 +12,10 @@ window.getElementData = () => {
           throw new Error("Periodic table requires exactly 118 elements");
         }
         return elements;
+      })
+      .catch((error) => {
+        elementDataPromise = undefined;
+        throw error;
       });
   }
 
