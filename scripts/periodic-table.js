@@ -9,119 +9,61 @@ const PERIODIC_TABLE_LAYOUT = new Map([
 ]);
 
 const PERIODIC_TABLE_CATEGORIES = {
-  alkali: new Set([3, 11, 19, 37, 55, 87]),
-  alkaline: new Set([4, 12, 20, 38, 56, 88]),
+  alkali: new Set([3, 11, 19, 37, 55, 87]), alkaline: new Set([4, 12, 20, 38, 56, 88]),
   transition: new Set([...Array.from({ length: 10 }, (_, i) => i + 21), ...Array.from({ length: 10 }, (_, i) => i + 39), ...Array.from({ length: 9 }, (_, i) => i + 72), ...Array.from({ length: 9 }, (_, i) => i + 104)]),
-  postTransition: new Set([13, 31, 32, 49, 50, 81, 82, 83, 84, 113, 114, 115, 116]),
-  metalloid: new Set([5, 14, 33, 51, 52]),
-  nonmetal: new Set([1, 6, 7, 8, 15, 16, 34]),
-  halogen: new Set([9, 17, 35, 53, 85, 117]),
-  noble: new Set([2, 10, 18, 36, 54, 86, 118]),
-  lanthanide: new Set(Array.from({ length: 15 }, (_, i) => i + 57)),
-  actinide: new Set(Array.from({ length: 15 }, (_, i) => i + 89))
+  postTransition: new Set([13, 31, 32, 49, 50, 81, 82, 83, 84, 113, 114, 115, 116]), metalloid: new Set([5, 14, 33, 51, 52]),
+  nonmetal: new Set([1, 6, 7, 8, 15, 16, 34]), halogen: new Set([9, 17, 35, 53, 85, 117]), noble: new Set([2, 10, 18, 36, 54, 86, 118]),
+  lanthanide: new Set(Array.from({ length: 15 }, (_, i) => i + 57)), actinide: new Set(Array.from({ length: 15 }, (_, i) => i + 89))
 };
 
 const getElementCategory = (atomicNumber) => {
-  for (const [category, numbers] of Object.entries(PERIODIC_TABLE_CATEGORIES)) {
-    if (numbers.has(atomicNumber)) return category;
-  }
+  for (const [category, numbers] of Object.entries(PERIODIC_TABLE_CATEGORIES)) if (numbers.has(atomicNumber)) return category;
   return "unknown";
 };
 
 const blinkElementCard = (card) => {
   if (!card) return;
-
-  const colors = [
-    "element-card--blink-green",
-    "element-card--blink-yellow",
-    "element-card--blink-orange"
-  ];
-
+  const colors = ["element-card--blink-green", "element-card--blink-yellow", "element-card--blink-orange"];
   card.classList.remove(...colors);
   void card.offsetWidth;
-
-  colors.forEach((className, index) => {
-    window.setTimeout(() => {
-      card.classList.remove(...colors);
-      card.classList.add(className);
-    }, index * 500);
-  });
-
+  colors.forEach((className, index) => window.setTimeout(() => {
+    card.classList.remove(...colors);
+    card.classList.add(className);
+  }, index * 500));
   window.setTimeout(() => card.classList.remove(...colors), colors.length * 500);
 };
-
 window.blinkElementCard = blinkElementCard;
 
 const createCard = (element, row, column) => {
   const card = document.createElement("article");
   card.className = `element-card element-card--${getElementCategory(element.atomic_number)}`;
-  card.style.gridRow = String(row);
-  card.style.gridColumn = String(column);
-  card.dataset.atomicNumber = String(element.atomic_number);
-  card.dataset.englishName = element.name;
-  card.dataset.persianName = element.persian_name;
-  card.tabIndex = 0;
-  card.setAttribute("role", "button");
+  card.style.gridRow = String(row); card.style.gridColumn = String(column);
+  card.dataset.atomicNumber = String(element.atomic_number); card.dataset.englishName = element.name; card.dataset.persianName = element.persian_name;
+  card.tabIndex = 0; card.setAttribute("role", "button");
 
-  const atomicNumber = document.createElement("span");
-  atomicNumber.className = "element-card__atomic-number";
-  atomicNumber.textContent = element.atomic_number;
-
-  const symbol = document.createElement("span");
-  symbol.className = "element-card__symbol";
-  symbol.textContent = element.symbol;
-
-  const name = document.createElement("span");
-  name.className = "element-card__name";
-  name.textContent = element.persian_name;
-
+  const atomicNumber = document.createElement("span"); atomicNumber.className = "element-card__atomic-number"; atomicNumber.textContent = element.atomic_number;
+  const symbol = document.createElement("span"); symbol.className = "element-card__symbol"; symbol.textContent = element.symbol;
+  const name = document.createElement("span"); name.className = "element-card__name"; name.textContent = element.persian_name;
   card.append(atomicNumber, symbol, name);
   card.addEventListener("click", () => blinkElementCard(card));
-  card.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      blinkElementCard(card);
-    }
-  });
+  card.addEventListener("keydown", (event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); blinkElementCard(card); } });
   return card;
 };
 
 const renderPeriodicTable = async () => {
   const table = document.querySelector("#periodic-table");
   if (!table) return;
-
-  const response = await fetch("data/elements-index.json", { cache: "no-cache" });
-  if (!response.ok) throw new Error("Unable to load element index");
-
-  const elements = await response.json();
-  if (!Array.isArray(elements) || elements.length !== 118) {
-    throw new Error("Periodic table requires exactly 118 elements");
-  }
-
+  const elements = await window.getElementData();
   table.replaceChildren();
-
   elements.forEach((element) => {
     const isLanthanide = element.atomic_number >= 57 && element.atomic_number <= 71;
     const isActinide = element.atomic_number >= 89 && element.atomic_number <= 103;
-    const isFBlock = isLanthanide || isActinide;
     const layout = PERIODIC_TABLE_LAYOUT.get(element.atomic_number);
-
-    if (!layout && !isFBlock) return;
-
-    let row;
-    let column;
-    if (isLanthanide) {
-      row = 9;
-      column = element.atomic_number - 53;
-    } else if (isActinide) {
-      row = 10;
-      column = element.atomic_number - 85;
-    } else {
-      const [period, group] = layout;
-      row = period;
-      column = group;
-    }
-
+    if (!layout && !isLanthanide && !isActinide) return;
+    let row; let column;
+    if (isLanthanide) { row = 9; column = element.atomic_number - 53; }
+    else if (isActinide) { row = 10; column = element.atomic_number - 85; }
+    else { [row, column] = layout; }
     table.appendChild(createCard(element, row, column));
   });
 };
@@ -129,8 +71,7 @@ const renderPeriodicTable = async () => {
 window.updateElementCardLanguages = () => {
   const language = document.documentElement.lang;
   document.querySelectorAll(".element-card").forEach((card) => {
-    const name = card.querySelector(".element-card__name");
-    if (!name) return;
+    const name = card.querySelector(".element-card__name"); if (!name) return;
     name.textContent = language === "fa" ? card.dataset.persianName : card.dataset.englishName;
     name.style.direction = language === "fa" ? "rtl" : "ltr";
     card.setAttribute("aria-label", `${card.dataset.atomicNumber} ${name.textContent}`);
@@ -138,10 +79,6 @@ window.updateElementCardLanguages = () => {
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
-  try {
-    await renderPeriodicTable();
-    window.updateElementCardLanguages();
-  } catch (error) {
-    console.error(error);
-  }
+  try { await renderPeriodicTable(); window.updateElementCardLanguages(); }
+  catch (error) { console.error(error); }
 });
