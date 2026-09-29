@@ -8,16 +8,14 @@
   width: 100%;
   padding: 24px;
   box-sizing: border-box;
-  border: 1px solid rgba(23, 107, 58, 0.18);
+  border: 1px solid var(--border);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.94);
+  background: var(--surface);
+  color: var(--text);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-.periodic-table-section__title {
-  margin: 0 0 20px;
-  line-height: 1.6;
-}
+.periodic-table-section__title { margin: 0 0 20px; line-height: 1.6; }
 
 .periodic-table-scroll {
   width: 100%;
@@ -27,11 +25,6 @@
   direction: ltr;
   -webkit-overflow-scrolling: touch;
   scrollbar-gutter: stable;
-}
-
-.periodic-table-scroll:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 3px;
 }
 
 .periodic-table {
@@ -72,31 +65,9 @@
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.28);
 }
 
-.element-card__atomic-number {
-  font-size: clamp(4px, 0.55cqw, 11px);
-  line-height: 1;
-  opacity: 0.8;
-}
-
-.element-card__symbol {
-  font-size: clamp(7px, 1.85cqw, 25px);
-  line-height: 1;
-  font-weight: 800;
-  direction: ltr;
-  unicode-bidi: isolate;
-}
-
-.element-card__name {
-  width: 100%;
-  min-width: 0;
-  font-size: clamp(4px, 0.78cqw, 11px);
-  line-height: 1.15;
-  font-weight: 600;
-  white-space: normal;
-  overflow-wrap: anywhere;
-  word-break: normal;
-  text-align: center;
-}
+.element-card__atomic-number { font-size: clamp(4px, 0.55cqw, 11px); line-height: 1; opacity: 0.8; }
+.element-card__symbol { font-size: clamp(7px, 1.85cqw, 25px); line-height: 1; font-weight: 800; direction: ltr; unicode-bidi: isolate; }
+.element-card__name { width: 100%; min-width: 0; font-size: clamp(4px, 0.78cqw, 11px); line-height: 1.15; font-weight: 600; white-space: normal; overflow-wrap: anywhere; word-break: normal; text-align: center; }
 
 .element-card--alkali { background: #f4b6b9; }
 .element-card--alkaline { background: #c9c9ec; }
@@ -110,89 +81,31 @@
 .element-card--actinide { background: #9be7ce; }
 .element-card--unknown { background: #e5e7eb; }
 
-.element-card--f-block {
-  min-height: 0;
-}
+.element-card:focus-visible { outline: 3px solid currentColor; outline-offset: 2px; }
 
-.element-card:focus-visible {
-  outline: 3px solid currentColor;
-  outline-offset: 2px;
-}
+html[dir="rtl"] .element-card__name { direction: rtl; }
+html[dir="ltr"] .element-card__name { direction: ltr; }
 
-html[dir="rtl"] .element-card__name {
-  direction: rtl;
-}
-
-html[dir="ltr"] .element-card__name {
-  direction: ltr;
-}
-
-.dark-mode .periodic-table-section__content {
-  background: rgba(24, 31, 28, 0.94);
-  border-color: rgba(130, 220, 165, 0.18);
+@media (prefers-reduced-motion: reduce) {
+  .element-card { scroll-behavior: auto; }
 }
 
 @media (max-width: 700px) {
-  .periodic-table-section {
-    width: calc(100% - 20px);
-    margin: 16px auto;
-  }
-
-  .periodic-table-section__content {
-    padding: 12px 8px;
-  }
-
-  .periodic-table-section__title {
-    margin-bottom: 12px;
-  }
-
-  .periodic-table {
-    gap: 2px;
-  }
-
-  .element-card {
-    gap: clamp(1px, 0.45cqw, 2px);
-    padding: clamp(2px, 0.65cqw, 4px) clamp(1px, 0.4cqw, 3px);
-  }
-
-  .element-card__atomic-number {
-    font-size: clamp(4px, 0.55cqw, 8px);
-  }
-
-  .element-card__symbol {
-    font-size: clamp(7px, 1.85cqw, 16px);
-  }
-
-  .element-card__name {
-    font-size: clamp(4px, 0.78cqw, 7px);
-    line-height: 1.12;
-  }
+  .periodic-table-section { width: calc(100% - 20px); margin: 16px auto; }
+  .periodic-table-section__content { padding: 12px 8px; }
+  .periodic-table-section__title { margin-bottom: 12px; }
+  .periodic-table { gap: 2px; }
+  .element-card { gap: clamp(1px, 0.45cqw, 2px); padding: clamp(2px, 0.65cqw, 4px) clamp(1px, 0.4cqw, 3px); }
+  .element-card__atomic-number { font-size: clamp(4px, 0.55cqw, 8px); }
+  .element-card__symbol { font-size: clamp(7px, 1.85cqw, 16px); }
+  .element-card__name { font-size: clamp(4px, 0.78cqw, 7px); line-height: 1.12; }
 }
 
 @media (max-width: 420px) {
-  .periodic-table-section__content {
-    padding: 10px 5px;
-  }
-
-  .periodic-table {
-    gap: 1px;
-  }
-
-  .element-card {
-    gap: clamp(1px, 0.5cqw, 2px);
-    padding: clamp(2px, 0.75cqw, 3px) clamp(1px, 0.45cqw, 2px);
-  }
-
-  .element-card__atomic-number {
-    font-size: clamp(3.5px, 0.55cqw, 7px);
-  }
-
-  .element-card__symbol {
-    font-size: clamp(6px, 1.85cqw, 14px);
-  }
-
-  .element-card__name {
-    font-size: clamp(3.5px, 0.78cqw, 6px);
-    line-height: 1.15;
-  }
+  .periodic-table-section__content { padding: 10px 5px; }
+  .periodic-table { gap: 1px; }
+  .element-card { gap: clamp(1px, 0.5cqw, 2px); padding: clamp(2px, 0.75cqw, 3px) clamp(1px, 0.45cqw, 2px); }
+  .element-card__atomic-number { font-size: clamp(3.5px, 0.55cqw, 7px); }
+  .element-card__symbol { font-size: clamp(6px, 1.85cqw, 14px); }
+  .element-card__name { font-size: clamp(3.5px, 0.78cqw, 6px); line-height: 1.15; }
 }
