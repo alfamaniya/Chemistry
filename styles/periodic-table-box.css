@@ -28,7 +28,7 @@
 .periodic-table {
   min-width: 900px;
   display: grid;
-  grid-template-columns: repeat(18, minmax(58px, 1fr));
+  grid-template-columns: repeat(18, minmax(90px, 1fr));
   gap: 8px;
   padding: 4px;
   box-sizing: border-box;
@@ -38,12 +38,13 @@
 
 .element-card {
   min-height: 88px;
+  min-width: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 4px;
-  padding: 8px;
+  padding: 8px 6px;
   box-sizing: border-box;
   border: 1px solid rgba(23, 107, 58, 0.2);
   border-radius: 10px;
@@ -69,11 +70,13 @@
 }
 
 .element-card__name {
-  max-width: 100%;
+  width: 100%;
   font-size: 0.78rem;
   line-height: 1.4;
   text-align: center;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 html[dir="rtl"] .element-card__name {
