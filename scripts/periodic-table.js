@@ -28,6 +28,30 @@ const getElementCategory = (atomicNumber) => {
   return "unknown";
 };
 
+const blinkElementCard = (card) => {
+  if (!card) return;
+
+  card.classList.remove("element-card--blink-green", "element-card--blink-yellow", "element-card--blink-orange");
+  void card.offsetWidth;
+
+  const colors = [
+    "element-card--blink-green",
+    "element-card--blink-yellow",
+    "element-card--blink-orange"
+  ];
+
+  colors.forEach((className, index) => {
+    window.setTimeout(() => {
+      card.classList.remove(...colors);
+      card.classList.add(className);
+    }, index * 500);
+  });
+
+  window.setTimeout(() => {
+    card.classList.remove(...colors);
+  }, colors.length * 500);
+};
+
 const createCard = (element, row, column) => {
   const card = document.createElement("article");
   card.className = `element-card element-card--${getElementCategory(element.atomic_number)}`;
@@ -36,6 +60,8 @@ const createCard = (element, row, column) => {
   card.dataset.atomicNumber = String(element.atomic_number);
   card.dataset.englishName = element.name;
   card.dataset.persianName = element.persian_name;
+  card.tabIndex = 0;
+  card.setAttribute("role", "button");
 
   const atomicNumber = document.createElement("span");
   atomicNumber.className = "element-card__atomic-number";
@@ -50,6 +76,13 @@ const createCard = (element, row, column) => {
   name.textContent = element.persian_name;
 
   card.append(atomicNumber, symbol, name);
+  card.addEventListener("click", () => blinkElementCard(card));
+  card.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      blinkElementCard(card);
+    }
+  });
   return card;
 };
 
