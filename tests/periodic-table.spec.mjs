@@ -36,5 +36,9 @@ test("keeps the table readable on mobile and honors reduced motion", async ({ pa
 
   const firstCard = page.locator(".element-card").first();
   await firstCard.click();
-  await expect(firstCard).not.toHaveClass(/element-card--blink-/);
+  await expect(firstCard).toHaveClass(/element-card--blink/);
+  await expect(firstCard).toHaveCSS("animation-duration", "3s");
+  await expect(firstCard).toHaveCSS("animation-name", "element-card-soft-blink");
+  await page.waitForTimeout(3100);
+  await expect(firstCard).not.toHaveClass(/element-card--blink/);
 });
