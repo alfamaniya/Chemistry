@@ -39,6 +39,8 @@ const applyLanguage = async (language) => {
 
   const themeButton = document.querySelector("[data-action='theme']");
   if (themeButton) themeButton.textContent = text.theme;
+
+  window.updateElementCardLanguages?.();
 };
 
 const applyTheme = (dark) => {
