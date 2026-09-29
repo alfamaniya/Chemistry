@@ -1,0 +1,930 @@
+{
+  "Record": {
+    "RecordType": "AtomicNumber",
+    "RecordNumber": 113,
+    "RecordTitle": "Nihonium",
+    "Section": [
+      {
+        "TOCHeading": "Identifiers",
+        "Description": "Identifiers for this element, including element name, element symbol, InChI string, and InChIKey.",
+        "Section": [
+          {
+            "TOCHeading": "Element Name",
+            "Description": "The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Nihonium"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Nihonium"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Symbol",
+            "Description": "Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Nh"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Nh"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChI",
+            "Description": "The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChI",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "InChI=1S/Nh"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChIKey",
+            "Description": "An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChIKey",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "KUGNSLWRKGRKGS-UHFFFAOYSA-N"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Properties",
+        "Description": "Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on.",
+        "Section": [
+          {
+            "TOCHeading": "Atomic Weight",
+            "Description": "Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u).",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "286"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "286"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Relative Mass: 284.17873(62#)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Configuration",
+            "Description": "The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result.",
+            "URL": "https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[Rn] 5f14 6d10 7s2 7p1(predicted)",
+                      "Markup": [
+                        {
+                          "Start": 7,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 12,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 17,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 21,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Radius",
+            "Description": "The atomic radius of a chemical element is a measure of the size of its atom, usually, the distance from the center of the nucleus to the outermost isolated electron.  Because an atom does not have a discrete boundary, there are various non-equivalent definitions of atomic radius, such as Van der Waals radius and covalent radius.",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Name": "Empirical Atomic Radius",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "empirical: 170 pm (predicted)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Physical Description",
+            "Description": "The appearance or features of this element, including color, odor, state, taste and more in general.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Expected to be a Solid"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Classification",
+            "Description": "Classification according to the element's chemical and physical properties, and location within the periodic table.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Metal"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Period Number",
+            "Description": "The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "7"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Group Number",
+            "Description": "Element group refers to a set of chemical elements in the same vertical column of the periodic table",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "13"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Melting Point",
+            "Description": "This section provides the melting point and/or freezing point. The melting point is the temperature at which a substance changes state from solid to liquid at atmospheric pressure. When considered as the temperature of the reverse change (from liquid to solid), it is referred to as the freezing point.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.01%3A_Melting_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "700K​(430°C,​810°F)(predicted)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Boiling Point",
+            "Description": "The temperature at which this element changes state from liquid to gas at a given atmospheric pressure.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.02%3A_Boiling_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1430K​(1130°C,​2070°F)(predicted)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Crustal Abundance",
+            "Description": "The estimated element abundance in the earth's crust.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Not Applicable"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Oceanic Abundance",
+            "Description": "The estimated element abundance in the earth's oceans.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Not Applicable"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "History",
+        "Description": "The history of the discovery and use of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "On July 23, 2004, scientists working at the RIKEN Nishina Center for Accelerator-based Science in Wako, Japan, created the first two atoms of the element nihonium by accelerating zinc ions to 10 percent the speed of light and then impacting them onto a thin bismuth target. Both atoms quickly underwent a series of four alpha decays, forming dubnium-262, which then decayed by spontaneous fission. Nihonium's most stable isotope, nihonium-286, has a half-life of about 20 seconds. It decays into roentgenium-282 through alpha decay."
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "On November 28th, 2016 element 113 was named “nihonium” with the symbol Nh. The name was proposed by the discoverers at RIKEN Nishina Center for Accelerator-Based Science in Japan. The name means mean “the Land of Rising Sun” and comes from the word “Nihon,” which means “Japan” in Japanese."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Description",
+        "Description": "A short description of this element, provided by authoritative sources.",
+        "Information": [
+          {
+            "ReferenceNumber": 4,
+            "Reference": [
+              "[665]  Los Alamos National Laboratory. Periodic Table of Elements: LANL-Nihonium, Los Alamos National Laboratory (2017), April 8; http://periodic.lanl.gov/113.shtml.",
+              "[666]  Y. T. Oganessian, V. K. Utyonkov, Y. V. Lobanov, F. S. Abdullin, A. N. Polyakov, R. N. Sagaidak, I. V. Shirokovsky, Y. S. Tsyganov, A. A. Voinov, G. G. Gulbekian, S. L. Bogomolov, B. N. Gikal, A. N. Mezentsev, V. G. Subbotin, A. M. Sukhov, K. Subotic, V. I. Zagrebaev, G. K. Vostokin, M. G. Itkis, R. A. Henderson, J. M. Kenneally, J. H. Landrum, K. J. Moody, D. A. Shaughnessy, M. A. Stoyer, N. J. Stoyer, P. A. Wilk. Phys. Rev. C76, 011601-1 (2007).",
+              "[667]  Y. Yano, M. Kase, K. Morita. “Discovering element 113”, in RIKEN News."
+            ],
+            "ExtendedReference": [
+              {
+                "Citation": "[665]  Los Alamos National Laboratory. Periodic Table of Elements: LANL-Nihonium, Los Alamos National Laboratory (2017), April 8; http://periodic.lanl.gov/113.shtml."
+              },
+              {
+                "Citation": "[666]  Y. T. Oganessian, V. K. Utyonkov, Y. V. Lobanov, F. S. Abdullin, A. N. Polyakov, R. N. Sagaidak, I. V. Shirokovsky, Y. S. Tsyganov, A. A. Voinov, G. G. Gulbekian, S. L. Bogomolov, B. N. Gikal, A. N. Mezentsev, V. G. Subbotin, A. M. Sukhov, K. Subotic, V. I. Zagrebaev, G. K. Vostokin, M. G. Itkis, R. A. Henderson, J. M. Kenneally, J. H. Landrum, K. J. Moody, D. A. Shaughnessy, M. A. Stoyer, N. J. Stoyer, P. A. Wilk. Phys. Rev. C76, 011601-1 (2007)."
+              },
+              {
+                "Citation": "[667]  Y. Yano, M. Kase, K. Morita. “Discovering element 113”, in RIKEN News."
+              }
+            ],
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Nihonium does not occur naturally in the Earth’s crust. The name nihonium and the symbol Nh are the accepted ones for element 113. Nihon is one of the two ways to say “Japan” in Japanese and means “the land of the Rising Sun.” It is the first element to have been discovered in an Asian country [665], [666], [667]."
+                },
+                {
+                  "String": "The synthesis of nihonium was first announced in 2004. The Joint Institute for Nuclear Research (JINR) and the Lawrence Livermore National Laboratory were able to produce two super-heavy elements by bombarding a rotating 243Am disc with an ion beam of 48Ca in a U-400 cyclotron. During the reaction, isotopes of moscovium, previously known as ununpentium, were synthesized and decayed in a tenth of a second to nihonium, which then decayed to roentgenium. Because the atoms of moscovium only existed for a tenth of a second, radiochemical proof was needed to support its syntheses. A Swiss scientist at the Paul Scherrer Institute (PSI) performed the radiochemical experiment by analyzing a copper plate that had been placed behind the 243Am disc in the cyclotron. This copper plate collected all moscovium atoms that were synthesized and was processed through liquid chromatography techniques that yielded five times more moscovium atoms than produced by fusion alone. The direct synthesis of nihonium was announced later that year by a team of Japanese scientists from the Cyclotron Center of the RIKEN Research Institute. These scientists bombarded atoms of 209Bi with a beam of 70Zn in a RIKEN heavy-ion linear accelerator (RILAC), shown in Fig. IUPAC.113.1, and gas-filled recoil ion separator (GARIS), shown in Fig. IUPAC.113.2. Nihonium has no known isotopic applications aside from scientific research.",
+                  "Markup": [
+                    {
+                      "Start": 221,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 252,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 736,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 1161,
+                      "Length": 3,
+                      "Type": "Superscript"
+                    },
+                    {
+                      "Start": 1182,
+                      "Length": 2,
+                      "Type": "Superscript"
+                    }
+                  ]
+                },
+                {
+                  "String": "          ",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 1,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_149.jpg",
+                      "Type": "Image",
+                      "Size": "969x1466",
+                      "Caption": "Fig. IUPAC.113.1: RILAC (RIKEN linear accelerator) used to synthesize nihonium (kindly provided by RIKEN). "
+                    }
+                  ]
+                },
+                {
+                  "String": "          ",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 1,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_150.jpg",
+                      "Type": "Image",
+                      "Size": "969x649",
+                      "Caption": "Fig. IUPAC.113.2: GARIS (Gas filled recoil ion separator) used to synthesize nihonium (kindly provided by RIKEN). "
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Uses",
+        "Description": "Uses of this element in industry and other fields.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Since only a few atoms of nihonium have ever been produced, it currently has no uses outside of basic scientific research."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Compounds",
+        "Description": "Compound records related to this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 8,
+            "Name": "Compounds",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=Nihonium",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "See more information at the Nihonium compound page."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Isotopes",
+        "Description": "Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.",
+        "URL": "https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Name": "Stable Isotope Count",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "0"
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Atomic Mass, Half Life, and Decay",
+            "Description": "Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Nuclide",
+                    "Atomic Mass and Uncertainty [u]",
+                    "Half Life and Uncertainty",
+                    "Discovery Year",
+                    "Decay Modes, Intensities and Uncertainties [%]"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 2,
+                "Name": "Nuclide",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "278Nh",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "279Nh",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "280Nh",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "281Nh",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "282Nh",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "283Nh",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "284Nh",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "285Nh",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "286Nh",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "287Nh",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "288Nh",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "289Nh",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "290Nh",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Atomic Mass and Uncertainty [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "278.170725 ± 0.00024 [Estimated]"
+                    },
+                    {
+                      "String": "279.171187 ± 0.000644 [Estimated]"
+                    },
+                    {
+                      "String": "280.173098 ± 0.000429 [Estimated]"
+                    },
+                    {
+                      "String": "281.173710 ± 0.000322 [Estimated]"
+                    },
+                    {
+                      "String": "282.175770 ± 0.00043 [Estimated]"
+                    },
+                    {
+                      "String": "283.176666 ± 0.000469 [Estimated]"
+                    },
+                    {
+                      "String": "284.178843 ± 0.000573 [Estimated]"
+                    },
+                    {
+                      "String": "285.180106 ± 0.000832 [Estimated]"
+                    },
+                    {
+                      "String": "286.182456 ± 0.000634 [Estimated]"
+                    },
+                    {
+                      "String": "287.184064 ± 0.000759 [Estimated]"
+                    },
+                    {
+                      "String": "288.186764 ± 0.000751 [Estimated]"
+                    },
+                    {
+                      "String": "289.188461 ± 0.000537 [Estimated]"
+                    },
+                    {
+                      "String": "290.191429 ± 0.000503 [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Half Life and Uncertainty",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2.3 ms ± 1.3"
+                    },
+                    {
+                      "String": "1 ms [Estimated]"
+                    },
+                    {
+                      "String": "10 ms [Estimated]"
+                    },
+                    {
+                      "String": "100 ms [Estimated]"
+                    },
+                    {
+                      "String": "140 ms ± 90"
+                    },
+                    {
+                      "String": "140 ms ± 90"
+                    },
+                    {
+                      "String": "0.97 s ± 0.11"
+                    },
+                    {
+                      "String": "4.6 s ± 1.1"
+                    },
+                    {
+                      "String": "12 s ± 5"
+                    },
+                    {
+                      "String": "20 s [Estimated]"
+                    },
+                    {
+                      "String": "20 s [Estimated]"
+                    },
+                    {
+                      "String": "30 s [Estimated]"
+                    },
+                    {
+                      "String": "8 s ± 6"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Discovery Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2004"
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": "2007"
+                    },
+                    {
+                      "String": "2004"
+                    },
+                    {
+                      "String": "2004"
+                    },
+                    {
+                      "String": "2010"
+                    },
+                    {
+                      "String": "2010"
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": "2016"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Decay Modes, Intensities and Uncertainties [%]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "α≈100%"
+                    },
+                    {
+                      "String": "α ?; SF ?"
+                    },
+                    {
+                      "String": "α ?; SF ?"
+                    },
+                    {
+                      "String": "α ?; SF ?"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α=100%"
+                    },
+                    {
+                      "String": "α ?; SF ?"
+                    },
+                    {
+                      "String": "α ?; SF ?"
+                    },
+                    {
+                      "String": "α ?; SF ?"
+                    },
+                    {
+                      "String": "α≈100%; SF<50%"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 1,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      },
+      {
+        "ReferenceNumber": 2,
+        "SourceName": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+        "SourceID": "e113",
+        "Name": "Nh",
+        "Description": "The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.",
+        "URL": "https://www-nds.iaea.org/amdc/",
+        "LicenseURL": "https://www-nds.iaea.org/disclaimer.html",
+        "ANID": 6590340
+      },
+      {
+        "ReferenceNumber": 3,
+        "SourceName": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+        "SourceID": "a113",
+        "Name": "Nihonium",
+        "Description": "Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.",
+        "URL": "https://www.ciaaw.org/",
+        "LicenseURL": "http://www.ciaaw.org/bylaws.htm",
+        "ANID": 2292494
+      },
+      {
+        "ReferenceNumber": 4,
+        "SourceName": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+        "SourceID": "p113",
+        "Description": "The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703.",
+        "URL": "https://doi.org/10.1515/pac-2015-0703",
+        "LicenseNote": "Copyright (c) 2020 International Union of Pure and Applied Chemistry.\u000A\u000AThe International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated.",
+        "LicenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "ANID": 13296518
+      },
+      {
+        "ReferenceNumber": 5,
+        "SourceName": "Jefferson Lab, U.S. Department of Energy",
+        "SourceID": "jlab113",
+        "Name": "Nihonium",
+        "Description": "Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/",
+        "URL": "https://education.jlab.org/itselemental/ele113.html",
+        "LicenseNote": "Please see citation and linking information: https://education.jlab.org/faq/index.html",
+        "LicenseURL": "https://www.jlab.org/privacy-and-security-notice",
+        "ANID": 507175
+      },
+      {
+        "ReferenceNumber": 6,
+        "SourceName": "Los Alamos National Laboratory, U.S. Department of Energy",
+        "SourceID": "lanl113",
+        "Name": "Nihonium",
+        "Description": "The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name.",
+        "URL": "https://periodic.lanl.gov/113.shtml",
+        "ANID": 507293
+      },
+      {
+        "ReferenceNumber": 7,
+        "SourceName": "NIST Physical Measurement Laboratory",
+        "SourceID": "e113",
+        "Name": "Nihonium",
+        "Description": "The periodic table contains NIST's critically-evaluated data on atomic properties of the elements.",
+        "URL": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=113",
+        "LicenseURL": "https://www.nist.gov/pml/database-disclaimer",
+        "ANID": 2292730
+      },
+      {
+        "ReferenceNumber": 8,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ef_113",
+        "Name": "Nihonium",
+        "Description": "This section provides all form of data related to element Nihonium.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24839426
+      }
+    ]
+  }
+}
