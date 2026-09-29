@@ -36,10 +36,8 @@
 
 .periodic-table {
   --periodic-table-min-width: 1120px;
-
-.periodic-table {
-  width: 100%;
-  min-width: 0;
+  width: max(100%, var(--periodic-table-min-width));
+  min-width: var(--periodic-table-min-width);
   display: grid;
   grid-template-columns: repeat(18, minmax(0, 1fr));
   grid-template-rows: repeat(7, minmax(0, auto)) 8px minmax(0, auto) minmax(0, auto);
