@@ -131,8 +131,8 @@ html[dir="ltr"] .element-card__name {
   }
 
   .element-card {
-    gap: 1px;
-    padding: 1px;
+    gap: clamp(1px, 0.45cqw, 2px);
+    padding: clamp(2px, 0.65cqw, 4px) clamp(1px, 0.4cqw, 3px);
   }
 
   .element-card__atomic-number {
@@ -145,7 +145,7 @@ html[dir="ltr"] .element-card__name {
 
   .element-card__name {
     font-size: clamp(4px, 0.78cqw, 7px);
-    line-height: 1.05;
+    line-height: 1.12;
   }
 }
 
@@ -158,6 +158,11 @@ html[dir="ltr"] .element-card__name {
     gap: 1px;
   }
 
+  .element-card {
+    gap: clamp(1px, 0.5cqw, 2px);
+    padding: clamp(2px, 0.75cqw, 3px) clamp(1px, 0.45cqw, 2px);
+  }
+
   .element-card__atomic-number {
     font-size: clamp(3.5px, 0.55cqw, 7px);
   }
@@ -168,5 +173,6 @@ html[dir="ltr"] .element-card__name {
 
   .element-card__name {
     font-size: clamp(3.5px, 0.78cqw, 6px);
+    line-height: 1.15;
   }
 }
