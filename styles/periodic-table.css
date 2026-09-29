@@ -103,17 +103,45 @@
 .element-card__symbol { font-size: clamp(7px, 1.85cqw, 25px); line-height: 1; font-weight: 800; direction: ltr; unicode-bidi: isolate; }
 .element-card__name { width: 100%; min-width: 0; font-size: clamp(4px, 0.78cqw, 11px); line-height: 1.15; font-weight: 600; white-space: normal; overflow-wrap: anywhere; word-break: normal; text-align: center; }
 
-.element-card--alkali { background: #f4b6b9; }
-.element-card--alkaline { background: #c9c9ec; }
-.element-card--transition { background: #a9c9e8; }
-.element-card--postTransition { background: #b8e78f; }
-.element-card--metalloid { background: #d8ed8a; }
-.element-card--nonmetal { background: #f4eb93; }
-.element-card--halogen { background: #f6df98; }
-.element-card--noble { background: #f4cf9a; }
-.element-card--lanthanide { background: #86e6e5; }
-.element-card--actinide { background: #9be7ce; }
-.element-card--unknown { background: #e5e7eb; }
+.element-card--alkali {
+  background: linear-gradient(135deg, rgba(239, 71, 111, 0.62), rgba(255, 126, 95, 0.34));
+}
+.element-card--alkaline {
+  background: linear-gradient(135deg, rgba(255, 209, 102, 0.68), rgba(255, 159, 67, 0.38));
+}
+.element-card--transition {
+  background: linear-gradient(135deg, rgba(255, 159, 67, 0.62), rgba(239, 71, 111, 0.34));
+}
+.element-card--postTransition {
+  background: linear-gradient(135deg, rgba(255, 214, 102, 0.66), rgba(255, 241, 168, 0.38));
+}
+.element-card--metalloid {
+  background: linear-gradient(135deg, rgba(255, 241, 168, 0.7), rgba(255, 159, 67, 0.34));
+}
+.element-card--nonmetal {
+  background: linear-gradient(135deg, rgba(255, 230, 130, 0.72), rgba(255, 209, 102, 0.4));
+}
+.element-card--halogen {
+  background: linear-gradient(135deg, rgba(255, 209, 102, 0.7), rgba(255, 126, 95, 0.38));
+}
+.element-card--noble {
+  background: linear-gradient(135deg, rgba(255, 159, 67, 0.62), rgba(193, 18, 31, 0.28));
+}
+.element-card--lanthanide {
+  background: linear-gradient(135deg, rgba(255, 184, 77, 0.62), rgba(239, 71, 111, 0.28));
+}
+.element-card--actinide {
+  background: linear-gradient(135deg, rgba(239, 71, 111, 0.5), rgba(193, 18, 31, 0.28));
+}
+.element-card--unknown {
+  background: linear-gradient(135deg, rgba(255, 241, 168, 0.5), rgba(220, 220, 220, 0.3));
+}
+
+.element-card {
+  background-clip: padding-box;
+  backdrop-filter: blur(10px) saturate(125%);
+  -webkit-backdrop-filter: blur(10px) saturate(125%);
+}
 
 html[dir="rtl"] .element-card__name { direction: rtl; }
 html[dir="ltr"] .element-card__name { direction: ltr; }
