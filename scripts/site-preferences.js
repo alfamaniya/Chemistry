@@ -41,6 +41,7 @@ const applyLanguage = async (language) => {
   if (themeButton) themeButton.textContent = text.theme;
 
   window.updateElementCardLanguages?.();
+  window.updateElementSearchLanguage?.();
 };
 
 const applyTheme = (dark) => {
