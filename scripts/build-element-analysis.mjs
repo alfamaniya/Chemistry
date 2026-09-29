@@ -4,7 +4,7 @@ import path from 'node:path';
 const root = process.cwd();
 const dataDir = path.join(root, 'data');
 const outputDir = path.join(dataDir, 'analyzed');
-const outputFile = path.join(outputDir, 'elements-index.json');
+const outputFile = path.join(outputDir, 'elements-analysis.json');
 
 fs.mkdirSync(outputDir, { recursive: true });
 
@@ -69,7 +69,7 @@ if (elements.length !== 118) {
 fs.writeFileSync(
   outputFile,
   JSON.stringify({
-    schema_version: '1.1',
+    schema_version: 'element-analysis-v1',
     generated_by: 'scripts/build-element-analysis.mjs',
     source_directory: 'data',
     element_count: elements.length,
