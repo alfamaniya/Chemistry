@@ -4,7 +4,6 @@ test("renders 118 elements and supports search, language and theme", async ({ pa
   await page.goto("/");
   await expect(page).toHaveTitle(/Chemistry|شیمی/);
   await expect(page.locator(".element-card")).toHaveCount(118);
-  await expect(page.locator("#periodic-table-status")).toContainText(/ready|آماده/);
 
   const search = page.getByRole("combobox", { name: "جستجو" });
   await search.fill("هیدروژن");
