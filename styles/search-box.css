@@ -139,10 +139,3 @@
 @media (max-width: 600px) {
   .search-box__content { gap: 10px; padding: 16px; }
 }
-
-.periodic-table-status {
-  min-height: 1.5em;
-  margin-bottom: 8px;
-  font-size: 0.9rem;
-  color: var(--muted);
-}
