@@ -32,7 +32,7 @@ const createCard = (element, row, column) => {
   const card = document.createElement("article");
   card.className = `element-card element-card--${getElementCategory(element.atomic_number)}`;
   card.style.gridRow = String(row);
-  card.style.gridColumn = String(column + 1);
+  card.style.gridColumn = String(column);
   card.dataset.atomicNumber = String(element.atomic_number);
   card.dataset.englishName = element.name;
   card.dataset.persianName = element.persian_name;
@@ -67,24 +67,6 @@ const renderPeriodicTable = async () => {
 
   table.replaceChildren();
 
-  for (let group = 1; group <= 18; group += 1) {
-    const label = document.createElement("span");
-    label.className = "periodic-table__group-label";
-    label.textContent = group;
-    label.style.gridColumn = String(group + 1);
-    label.style.gridRow = "1";
-    table.appendChild(label);
-  }
-
-  for (let period = 1; period <= 7; period += 1) {
-    const label = document.createElement("span");
-    label.className = "periodic-table__period-label";
-    label.textContent = period;
-    label.style.gridColumn = "1";
-    label.style.gridRow = String(period + 1);
-    table.appendChild(label);
-  }
-
   elements.forEach((element) => {
     const isLanthanide = element.atomic_number >= 57 && element.atomic_number <= 71;
     const isActinide = element.atomic_number >= 89 && element.atomic_number <= 103;
@@ -96,14 +78,14 @@ const renderPeriodicTable = async () => {
     let row;
     let column;
     if (isLanthanide) {
-      row = 10;
+      row = 9;
       column = element.atomic_number - 53;
     } else if (isActinide) {
-      row = 11;
+      row = 10;
       column = element.atomic_number - 85;
     } else {
       const [period, group] = layout;
-      row = period + 1;
+      row = period;
       column = group;
     }
 
