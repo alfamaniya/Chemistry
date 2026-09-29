@@ -1,0 +1,2856 @@
+{
+  "Record": {
+    "RecordType": "AtomicNumber",
+    "RecordNumber": 6,
+    "RecordTitle": "Carbon",
+    "Section": [
+      {
+        "TOCHeading": "Identifiers",
+        "Description": "Identifiers for this element, including element name, element symbol, InChI string, and InChIKey.",
+        "Section": [
+          {
+            "TOCHeading": "Element Name",
+            "Description": "The formal, standard name for a given element, originating from factors such as common usage and the person or place involved in its discovery. Element, also called chemical element, refers to a species of atom; all varieties of atoms with the same number of protons in the nucleus (but possibly a different number of neutrons) are considered to be the same element.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Carbon"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Carbon"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Symbol",
+            "Description": "Element symbol, also called atomic symbol, typically consists of one or two letters from the Latin alphabet derived from the element name in one of several languages.",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "C"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Element Symbol",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChI",
+            "Description": "The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChI",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "InChI=1S/C"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "InChIKey",
+            "Description": "An InChIKey is a 27-character hashed code derived from an InChI.  The International Chemical Identifier (InChI) is a computed, non-proprietary identifier for a chemical structure.  The InChI is an International Union of Pure and Applied Chemistry (IUPAC) standard.",
+            "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "InChIKey",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "OKTJSMMVPCPJKN-UHFFFAOYSA-N"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Properties",
+        "Description": "Characteristics of this element, such as atomic number, atomic mass, density, melting point, boiling point and so on.",
+        "Section": [
+          {
+            "TOCHeading": "Atomic Weight",
+            "Description": "Also called relative atomic mass, is the ratio of the average mass of the atom to the unified atomic mass unit, defined as one twelfth of the mass of a carbon-12 atom in its ground state and used to express masses of atomic particles, u=1.660 5402(10) * 10**(-27) kg. The Standard atomic weights refer to recommended values of relative atomic masses of the elements revised biennially by the IUPAC Commission on Atomic Weights and Isotopic Abundances and applicable to elements in any normal sample with a high level of confidence. The number in the parenthesis refers to an uncertainty when exists. The unit of atomic weight is the dalton or unified atomic mass unit (symbol: Da or u).",
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[12.0096, 12.0116]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "12.0107"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "12.01"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[12.0096,12.0116]"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Configuration",
+            "Description": "The electron configuration refers a distribution of the electrons of an atom or a molecular entity over a set of one-electron wavefunctions (called orbitals), according to the Pauli principle. From one configuration several states with different multiplicities may result.",
+            "URL": "https://chem.libretexts.org/Courses/Sacramento_City_College/SCC%3A_Chem_420_-_Organic_Chemistry_I/Text/01%3A_Introduction_and_Review/1.04%3A_Electron_Configurations",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[He]2s22p2",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 9,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Radius",
+            "Description": "The atomic radius of a chemical element is a measure of the size of its atom, usually, the distance from the center of the nucleus to the outermost isolated electron.  Because an atom does not have a discrete boundary, there are various non-equivalent definitions of atomic radius, such as Van der Waals radius and covalent radius.",
+            "Information": [
+              {
+                "ReferenceNumber": 6,
+                "Name": "Van der Waals Atomic Radius",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "170 pm (Van der Waals)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Empirical Atomic Radius",
+                "Reference": [
+                  "J.C. Slater, J Chem Phys, 1964, 41(10), 3199-3205. DOI:10.1063/1.1725697"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "J.C. Slater, J Chem Phys, 1964, 41(10), 3199-3205. DOI:10.1063/1.1725697"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    70
+                  ],
+                  "Unit": "pm (Empirical)"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Covalent Atomic Radius",
+                "Reference": [
+                  "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "B. Cordero, V. Gómez, A.E. Platero-Prats, M. Revés, J. Echeverría, E. Cremades, F. Barragán, S. Alvarez, Dalton Trans. 2008, 21, 2832-2838. DOI:10.1039/b801115j PMID:18478144."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "76(1)[sp3], 73(2)[sp2], 69(1)[sp] pm (Covalent)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Oxidation States",
+            "Description": "The oxidation state(s) that this element commonly has in a compound.  The oxidation state of an atom is defined as the hypothetical charge that would be held by that atom if all of its bonds to other atoms were completely ionic in nature. For example, the oxidation state of carbon in CO2 would be +4 since the hypothetical charge held by the carbon atom if both of the carbon-oxygen double bonds were completely ionic would be equal to +4 (each oxygen atom would hold a charge of -2 since oxygen is more electronegative than carbon).",
+            "URL": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/20%3A_Electrochemistry/20.01%3A_Oxidation_States_and_Redox_Reactions",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "+4, +2, -4"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "+4, +3, +2, +1,0, -1, -2, -3, -4 ​(a mildly acidic oxide)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ground Level",
+            "Description": "Also called ground-state level. The ground state electron configuration is the arrangement of electrons around the nucleus of an atom with lower energy levels.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "3P0",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 2,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Ionization Energy",
+            "Description": "Ionization energy, also called ionization potential, is the amount of energy required to remove an electron from an isolated atom or molecule.",
+            "URL": "https://www.britannica.com/science/ionization-energy",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "11.260 eV"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Reference": [
+                  "Critically Evaluated Spectral Data for Neutral Carbon (C I), K. Haris and A. Kramida, Astrophys. J., Suppl. Ser. 233, 16 (2017) DOI:10.3847/1538-4365/aa86ab"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "Critically Evaluated Spectral Data for Neutral Carbon (C I), K. Haris and A. Kramida, Astrophys. J., Suppl. Ser. 233, 16 (2017) DOI:10.3847/1538-4365/aa86ab"
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "11.2602880 ± 0.0000011 eV"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electronegativity",
+            "Description": "Electronegativity is a measure of the tendency of an atom to attract a bonding pair of electrons.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electronegativity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Name": "Pauling Scale Electronegativity",
+                "Reference": [
+                  "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "A.L. Allred, J. Inorg. Nucl. Chem., 1961, 17(3-4), 215-221. DOI:10.1016/0022-1902(61)80142-5"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    2.55
+                  ],
+                  "Unit": "(Pauling Scale)"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Name": "Allen Scale Electronegativity",
+                "Reference": [
+                  "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003",
+                  "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e",
+                  "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "L.C. Allen, J. Am. Chem. Soc., 1989, 111, 9003. DOI:10.1021/ja00207a003"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek and L.C. Allen, J. Am. Chem. Soc., 2000, 122, 2780. DOI:10.1021/ja992866e"
+                  },
+                  {
+                    "Citation": "J.B. Mann, T.L. Meek, E.T. Knight, J.F. Capitani and L.C Allen, J. Am. Chem. Soc., 2000, 122, 5132. DOI:10.1021/ja9928677"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    2.544
+                  ],
+                  "Unit": "(Allen Scale)"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Electron Affinity",
+            "Description": "Electron affinity refers to the energy released when an additional electron is attached to a neutral atom to form a singly charged negative ion.  Alternatively, it can also be defined as the energy required to detach an electron from the singly charged negative ion.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Atomic_and_Molecular_Properties/Electron_Affinity",
+            "Information": [
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.T Myers, J. Chem. Edu., 1990, 67(4), 307. DOI:10.1021/ed067p307"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    1.263
+                  ],
+                  "Unit": "eV"
+                }
+              },
+              {
+                "ReferenceNumber": 9,
+                "Reference": [
+                  "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "R.J. Zollweg, J. Chem. Phys., 1969, 50, 4251. DOI:10.1063/1.1670890"
+                  }
+                ],
+                "Value": {
+                  "Number": [
+                    1.29
+                  ],
+                  "Unit": "eV"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Spectra",
+            "Description": "The spectrum of the electromagnetic radiation emitted or absorbed by an electron during transitions between different energy levels within an atom.",
+            "Information": [
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/lines_hold.pl?el=C",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Lines Holdings"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "URL": "https://physics.nist.gov/cgi-bin/ASD/levels_hold.pl?el=C",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Levels Holdings"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Physical Description",
+            "Description": "The appearance or features of this element, including color, odor, state, taste and more in general.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Solid"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Classification",
+            "Description": "Classification according to the element's chemical and physical properties, and location within the periodic table.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Non-metal"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Period Number",
+            "Description": "The element period number refers to a horizontal row of the periodic table. The periodic table has 7 periods.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Element Group Number",
+            "Description": "Element group refers to a set of chemical elements in the same vertical column of the periodic table",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "14"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Density",
+            "Description": "This section provides information on the density of an element. It is the mass of a unit volume of the element and commonly expressed in units of kg/m3 or g/cm3.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Map%3A_Fundamentals_of_General_Organic_and_Biological_Chemistry_(McMurry_et_al.)/01%3A_Matter_and_Measurements/1.12%3A_Density_and_Specific_Gravity",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2.2670 grams per cubic centimeter"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Melting Point",
+            "Description": "This section provides the melting point and/or freezing point. The melting point is the temperature at which a substance changes state from solid to liquid at atmospheric pressure. When considered as the temperature of the reverse change (from liquid to solid), it is referred to as the freezing point.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.01%3A_Melting_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "3823 K (3550°C or 6422°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "3550°C(diamond)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Boiling Point",
+            "Description": "The temperature at which this element changes state from liquid to gas at a given atmospheric pressure.",
+            "URL": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.02%3A_Boiling_Point",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "4098 K (3825°C or 6917°F)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 6,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "3800°C(sublimation)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Crustal Abundance",
+            "Description": "The estimated element abundance in the earth's crust.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2.00×102 milligrams per kilogram",
+                      "Markup": [
+                        {
+                          "Start": 7,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Estimated Oceanic Abundance",
+            "Description": "The estimated element abundance in the earth's oceans.",
+            "Information": [
+              {
+                "ReferenceNumber": 5,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2.8×101 milligrams per liter",
+                      "Markup": [
+                        {
+                          "Start": 6,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "History",
+        "Description": "The history of the discovery and use of this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 3,
+            "Name": "History",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "The name derives from the Latin carbo for \"charcoal\". It was known in prehistoric times in the form of charcoal and soot. In 1797, the English chemist Smithson Tennant proved that diamond is pure carbon.",
+                  "Markup": [
+                    {
+                      "Start": 32,
+                      "Length": 5,
+                      "Type": "Italics"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Carbon, the sixth most abundant element in the universe, has been known since ancient times. Carbon is most commonly obtained from coal deposits, although it usually must be processed into a form suitable for commercial use. Three naturally occurring allotropes of carbon are known to exist: amorphous, graphite and diamond."
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "From the Latin word carbo: charcoal. Carbon, an element of prehistoric discovery, is very widely distributed in nature. It is found in abundance in the sun, stars, comets, and atmospheres of most planets. Carbon in the form of microscopic diamonds is found in some meteorites."
+                },
+                {
+                  "String": "Natural diamonds are found in kimberlite of ancient volcanic \"pipes,\" found in South Africa, Arkansas, and elsewhere. Diamonds are now also being recovered from the ocean floor off the Cape of Good Hope. About 30% of all industrial diamonds used in the U.S. are now made synthetically."
+                },
+                {
+                  "String": "The energy of the sun and stars can be attributed at least in part to the well-known carbon-nitrogen cycle."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Historical Atomic Weights",
+            "Description": "This section provides the historical atomic weights. The atomic weight shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Atomic Weight (uncertainty) [u]",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2009"
+                    },
+                    {
+                      "String": "1995"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1961"
+                    },
+                    {
+                      "String": "1953"
+                    },
+                    {
+                      "String": "1938"
+                    },
+                    {
+                      "String": "1937"
+                    },
+                    {
+                      "String": "1931"
+                    },
+                    {
+                      "String": "1925"
+                    },
+                    {
+                      "String": "1916"
+                    },
+                    {
+                      "String": "1902"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Weight (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[12.0096, 12.0116]"
+                    },
+                    {
+                      "String": "12.0107(8)"
+                    },
+                    {
+                      "String": "12.011(1)"
+                    },
+                    {
+                      "String": "12.011 15(5)"
+                    },
+                    {
+                      "String": "12.011"
+                    },
+                    {
+                      "String": "12.010"
+                    },
+                    {
+                      "String": "12.01"
+                    },
+                    {
+                      "String": "12.00"
+                    },
+                    {
+                      "String": "12.000"
+                    },
+                    {
+                      "String": "12.005"
+                    },
+                    {
+                      "String": "12.00"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1351/PAC-REP-10-09-14",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 28,
+                          "URL": "https://doi.org/10.1351/PAC-REP-10-09-14"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199668122339",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199668122339"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197021010091",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197021010091"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja00881a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja00881a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/JR9540004713",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/JR9540004713"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/JR9380001101",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/JR9380001101"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/JR9370001900",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/JR9370001900"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/JR9310001617",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/JR9310001617"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1039/CT9252700913",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 24,
+                          "URL": "https://doi.org/10.1039/CT9252700913"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1021/ja02176a001",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 23,
+                          "URL": "https://doi.org/10.1021/ja02176a001"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1007/BF01370337",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 22,
+                          "URL": "https://doi.org/10.1007/BF01370337"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Historical Isotopic Abundances",
+            "Description": "This section provides the historical isotopic abundance information. The abundance value shown in brackets means the value range while others shown with uncertainty in parenthesis.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 4,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Year",
+                    "Isotope",
+                    "Abundance (uncertainty)",
+                    "Reference"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "2013"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1997"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1979"
+                    },
+                    {
+                      "String": "1975"
+                    },
+                    {
+                      "String": "1975"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "12C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "13C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "12C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "13C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "12C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "13C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "12C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "13C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[0.9884, 0.9904]"
+                    },
+                    {
+                      "String": "[0.0096, 0.0116]"
+                    },
+                    {
+                      "String": "0.9893(8)"
+                    },
+                    {
+                      "String": "0.0107(8)"
+                    },
+                    {
+                      "String": "0.9890(3)"
+                    },
+                    {
+                      "String": "0.0110(3)"
+                    },
+                    {
+                      "String": "0.9889"
+                    },
+                    {
+                      "String": "0.0111"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Reference",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "doi:10.1515/pac-2015-0503",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0503"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1515/pac-2015-0503",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 25,
+                          "URL": "https://doi.org/10.1515/pac-2015-0503"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199870010217",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199870010217"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac199870010217",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac199870010217"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198052102349",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198052102349"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac198052102349",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac198052102349"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "doi:10.1351/pac197647010075",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://doi.org/10.1351/pac197647010075"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Uses",
+        "Description": "Uses of this element in industry and other fields.",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Amorphous carbon is formed when a material containing carbon is burned without enough oxygen for it to burn completely. This black soot, also known as lampblack, gas black, channel black or carbon black, is used to make inks, paints and rubber products. It can also be pressed into shapes and is used to form the cores of most dry cell batteries, among other things."
+                },
+                {
+                  "String": "Graphite, one of the softest materials known, is a form of carbon that is primarily used as a lubricant. Although it does occur naturally, most commercial graphite is produced by treating petroleum coke, a black tar residue remaining after the refinement of crude oil, in an oxygen-free oven. Naturally occurring graphite occurs in two forms, alpha and beta. These two forms have identical physical properties but different crystal structures. All artificially produced graphite is of the alpha type. In addition to its use as a lubricant, graphite, in a form known as coke, is used in large amounts in the production of steel. Coke is made by heating soft coal in an oven without allowing oxygen to mix with it. Although commonly called lead, the black material used in pencils is actually graphite."
+                },
+                {
+                  "String": "Diamond, the third naturally occurring form of carbon, is one of the hardest substances known. Although naturally occurring diamond is typically used for jewelry, most commercial quality diamonds are artificially produced. These small diamonds are made by squeezing graphite under high temperatures and pressures for several days or weeks and are primarily used to make things like diamond tipped saw blades. Although they posses very different physical properties, graphite and diamond differ only in their crystal structure."
+                },
+                {
+                  "String": "A fourth allotrope of carbon, known as white carbon, was produced in 1969. It is a transparent material that can split a single beam of light into two beams, a property known as birefringence. Very little is known about this form of carbon."
+                },
+                {
+                  "String": "Large molecules consisting only of carbon, known as buckminsterfullerenes, or buckyballs, have recently been discovered and are currently the subject of much scientific interest. A single buckyball consists of 60 or 70 carbon atoms (C60 or C70) linked together in a structure that looks like a soccer ball. They can trap other atoms within their framework, appear to be capable of withstanding great pressures and have magnetic and superconductive properties.",
+                  "Markup": [
+                    {
+                      "Start": 234,
+                      "Length": 2,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 241,
+                      "Length": 2,
+                      "Type": "Subscript"
+                    }
+                  ]
+                },
+                {
+                  "String": "Carbon-14, a radioactive isotope of carbon with a half-life of 5,730 years, is used to find the age of formerly living things through a process known as radiocarbon dating. The theory behind carbon dating is fairly simple. Scientists know that a small amount of naturally occurring carbon is carbon-14. Although carbon-14 decays into nitrogen-14 through beta decay, the amount of carbon-14 in the environment remains constant because new carbon-14 is always being created in the upper atmosphere by cosmic rays. Living things tend to ingest materials that contain carbon, so the percentage of carbon-14 within living things is the same as the percentage of carbon-14 in the environment. Once an organism dies, it no longer ingests much of anything. The carbon-14 within that organism is no longer replaced and the percentage of carbon-14 begins to decrease as it decays. By measuring the percentage of carbon-14 in the remains of an organism, and by assuming that the natural abundance of carbon-14 has remained constant over time, scientists can estimate when that organism died. For example, if the concentration of carbon-14 in the remains of an organism is half of the natural concentration of carbon-14, a scientist would estimate that the organism died about 5,730 years ago, the half-life of carbon-14."
+                },
+                {
+                  "String": "There are nearly ten million known carbon compounds and an entire branch of chemistry, known as organic chemistry, is devoted to their study. Many carbon compounds are essential for life as we know it. Some of the most common carbon compounds are: carbon dioxide (CO2), carbon monoxide (CO), carbon disulfide (CS2), chloroform (CHCl3), carbon tetrachloride (CCl4), methane (CH4), ethylene (C2H4), acetylene (C2H2), benzene (C6H6), ethyl alcohol (C2H5OH) and acetic acid (CH3COOH).",
+                  "Markup": [
+                    {
+                      "Start": 266,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 312,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 332,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 361,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 376,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 391,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 393,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 409,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 411,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 425,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 427,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 447,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 449,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 473,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Compounds",
+        "Description": "Compound records related to this element.",
+        "Information": [
+          {
+            "ReferenceNumber": 6,
+            "Name": "Molecular Forms",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Carbon is found free in nature in three allotropic forms: graphite, diamond, and fullerines. A fourth form, known as \"white\" carbon, is now thought to exist. Ceraphite is one of the softest known materials while diamond is one of the hardest."
+                },
+                {
+                  "String": "Graphite exists in two forms: alpha and beta. These have identical physical properties, except for their crystal structure. Naturally occurring graphites are reported to contain as much as 30% of the rhombohedral (beta) form, whereas synthetic materials contain only the alpha form. The hexagonal alpha type can be converted to the beta by mechanical treatment, and the beta form reverts to the alpha on heating it above 1000°C."
+                },
+                {
+                  "String": "In 1969 a new allotropic form of carbon was produced during the sublimation of pyrolytic graphite at low pressures. Under free-vaporization conditions above ~2550°K, \"white\" carbon forms as small transparent crystals on the edges of the planes of graphite. The interplanar spacings of \"white\" carbon are identical to those of carbon form noted in the graphite gneiss from the Ries (meteroritic) Crater of Germany. \"White\" carbon is a transparent birefringent material. Little information is presently available about this allotrope."
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "In combination, carbon is found as carbon dioxide in the atmosphere of the earth and dissolved in all natural waters. It is a component of great rock masses in the form of carbonates of calcium (limestone), magnesium, and iron. Coal, petroleum, and natural gas are chiefly hydrocarbons."
+                },
+                {
+                  "String": "Carbon is unique among the elements in the vast number and variety of compounds it can form. With hydrogen, oxygen, nitrogen, and other elements, it forms a very large number of compounds, carbon atom often being linked to another carbon atom. There are close to ten million known carbon compounds, many thousands of which are vital to organic and life processes."
+                },
+                {
+                  "String": "Without carbon, the basis for life would be impossible. While it has been thought that silicon might take the place of carbon in forming a host of similar compounds, it is now not possible to form stable compounds with very long chains of silicon atoms. The atmosphere of Mars contains 96.2% CO2. Some of the most important compounds of carbon are carbon dioxide (CO2), carbon monoxide (CO), carbon disulfide (CS2), chloroform (CHCl3), carbon tetrachloride (CCl4), methane (CH4), ethylene (C2H4), acetylene (C2H2), benzene (C6H6), acetic acid (CH3COOH), and their derivatives.",
+                  "Markup": [
+                    {
+                      "Start": 294,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 366,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 412,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 432,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 461,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 476,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 493,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 509,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 511,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 525,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 527,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    },
+                    {
+                      "Start": 546,
+                      "Length": 1,
+                      "Type": "Subscript"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 8,
+            "Name": "Compounds",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=Carbon",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "See more information at the Carbon compound page."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Element Forms",
+            "Description": "Other forms of this element, including ions, isotopes, etc.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "CID",
+                    "Name",
+                    "Formula",
+                    "SMILES",
+                    "Molecular Weight"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 8,
+                "Name": "CID",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "5462310",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/5462310"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Name",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "carbon"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Formula",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "C"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "SMILES",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[C]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 8,
+                "Name": "Molecular Weight",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "12.011"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Isotopes",
+        "Description": "Isotopes are nuclides having the same atomic number but different mass numbers.  This section provides information on the isotopes of this element and their uses in various fields.",
+        "URL": "https://chem.libretexts.org/Courses/Furman_University/CHM101%3A_Chemistry_and_Global_Awareness_(Gordon)/03%3A_Atoms_and_the_Periodic_Table/3.05%3A_Isotopes",
+        "Information": [
+          {
+            "ReferenceNumber": 5,
+            "Name": "Stable Isotope Count",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "2"
+                }
+              ]
+            }
+          },
+          {
+            "ReferenceNumber": 6,
+            "Name": "Summary",
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "Carbon has seven isotopes. In 1961 the International Union of Pure and Applied Chemistry adopted the isotope carbon-12 as the basis for atomic weights. Carbon-14, an isotope with a half-life of 5715 years, has been widely used to date such materials as wood, archaeological specimens, etc."
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Isotopes in Biology",
+            "Description": "Information on the use of this element's isotopes in biology.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[59]  Q. Hua, M. Barbetti, A. Z. Rakowski. Radiocarbon55, 2059 (2013).",
+                  "[60]  K. L. Spalding, R. D. Bhardwaj, B. A. Buchholz, H. Druid, J. Frisén. Cell122, 133 (2005).",
+                  "[61]  K. M. Heinemeier, P. Schjerling, J. Heinemeier, S. P. Magnusson, M. Kjaer. FASEB J.27, 2074 (2013).",
+                  "[62]  G. D. Weinstein, E. J. V. Scott. J. Invest. Dermatol.45, 257 (1965).",
+                  "[63]  K. L. Spalding, E. Arner, P. O. Westermark, S. Bernard, B. A. Buchholz, O. Bergmann, L. Blomqvist, J. Hoffstedt, E. Näslund, T. Britton, H. Concha, M. Hassan, M. Rydén, J. Frisén, P. Arner. Nature453, 783 (2008).",
+                  "[64]  D. Shemin, D. Rittenberg. J. Biol. Chem.166, (1946).",
+                  "[65]  N. Lynnerup, H. Kjeldsen, S. Heegaard, C. Jacobsen, J. Heinemeier. PloS One3, e1529 (2008). https://doi.org/10.1371/journal.pone.0001529."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[59]  Q. Hua, M. Barbetti, A. Z. Rakowski. Radiocarbon55, 2059 (2013)."
+                  },
+                  {
+                    "Citation": "[60]  K. L. Spalding, R. D. Bhardwaj, B. A. Buchholz, H. Druid, J. Frisén. Cell122, 133 (2005)."
+                  },
+                  {
+                    "Citation": "[61]  K. M. Heinemeier, P. Schjerling, J. Heinemeier, S. P. Magnusson, M. Kjaer. FASEB J.27, 2074 (2013)."
+                  },
+                  {
+                    "Citation": "[62]  G. D. Weinstein, E. J. V. Scott. J. Invest. Dermatol.45, 257 (1965)."
+                  },
+                  {
+                    "Citation": "[63]  K. L. Spalding, E. Arner, P. O. Westermark, S. Bernard, B. A. Buchholz, O. Bergmann, L. Blomqvist, J. Hoffstedt, E. Näslund, T. Britton, H. Concha, M. Hassan, M. Rydén, J. Frisén, P. Arner. Nature453, 783 (2008)."
+                  },
+                  {
+                    "Citation": "[64]  D. Shemin, D. Rittenberg. J. Biol. Chem.166, (1946)."
+                  },
+                  {
+                    "Citation": "[65]  N. Lynnerup, H. Kjeldsen, S. Heegaard, C. Jacobsen, J. Heinemeier. PloS One3, e1529 (2008). https://doi.org/10.1371/journal.pone.0001529."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Because of above-ground nuclear bomb testing, the neutrons released reacted with CO2 to increase atmospheric 14C via the 14N (n, p) 14C reaction, and 14C started rising in about 1955 (Fig. IUPAC.6.1) and reached a peak in the mid-1960s [59]. With the curtailment of above-ground nuclear testing in the 1960s, the atmospheric 14C concentration has since been decreasing exponentially (Fig. IUPAC.6.1). This variation in 14C concentration is used to establish when cells in biology were born and how quickly they are renewed [60]. This technique is commonly called carbon-14 bomb pulse biology and it has provided information on the age of cells and their regeneration. Figure 4.6.2 shows the average age of selected cells in a 30-year-old human.",
+                      "Markup": [
+                        {
+                          "Start": 83,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        },
+                        {
+                          "Start": 109,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 121,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 132,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 150,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 325,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 419,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_011.jpg",
+                          "Type": "Image",
+                          "Size": "945x680",
+                          "Caption": "Fig. IUPAC.6.1: Global relative average atmospheric ¹⁴C concentration (isotope-amount ratio n(¹⁴C)/n(¹²C)) between 1950 and 2010 (modified from [59]). "
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_012.jpg",
+                          "Type": "Image",
+                          "Size": "981x999",
+                          "Caption": "Fig. IUPAC.6.2: Average age of selected cells in a 30-year-old human, determined with ¹⁴C produced primarily in the 1960s as a result of above-ground, nuclear-weapons testing (figure compiled from published data [60], [61], [62], [63], [64], [65]). This technique commonly is called carbon-14 bomb pulse biology. Occipital neurons in the cortex of the adult human brain are as old as the individual [60]. Lens crystallines are special proteins in the eye lens and are formed almost exclusively at birth with a very small, and decreasing, continuous formation throughout life [65]. Achilles tendon cells do not regenerate after the first 17 years of life [61]. Half of human fat cells are replaced about every 8 years [63]. "
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes in Earth/Planetary Science",
+            "Description": "Information on the use of this element's isotopes in earth/planetary science.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[13]  M. W. Wieser, T. B. Coplen. Pure Appl Chem.83, 359 (2011).",
+                  "[17]  T. B. Coplen, J. A. Hopple, J. K. Böhlke, H. S. Peiser, S. E. Rieder, H. R. Krouse, K. J. R. Rosman, T. Ding, R. D. Vocke, K. Revesz, A. Lamberty, P. D. P. Taylor, P. D. Bièvre. United States Geological Survey Water-Resources Investigations Report, 01-4222, (2002).",
+                  "[66]  RealClimate. How Do We Know That Recent CO2 Increases Are Due to Human Activities? RealClimate (2014), Feb. 22; http://www.realclimate.org/index.php/archives/2004/12/how-do-we-know-that-recent-cosub2sub-increases-are-due-to-human-activities-updated/."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[13]  M. W. Wieser, T. B. Coplen. Pure Appl Chem.83, 359 (2011)."
+                  },
+                  {
+                    "Citation": "[17]  T. B. Coplen, J. A. Hopple, J. K. Böhlke, H. S. Peiser, S. E. Rieder, H. R. Krouse, K. J. R. Rosman, T. Ding, R. D. Vocke, K. Revesz, A. Lamberty, P. D. P. Taylor, P. D. Bièvre. United States Geological Survey Water-Resources Investigations Report, 01-4222, (2002)."
+                  },
+                  {
+                    "Citation": "[66]  RealClimate. How Do We Know That Recent CO2 Increases Are Due to Human Activities? RealClimate (2014), Feb. 22; http://www.realclimate.org/index.php/archives/2004/12/how-do-we-know-that-recent-cosub2sub-increases-are-due-to-human-activities-updated/."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Because molecules, atoms, and ions of the stable isotopes of carbon possess slightly different physical and chemical properties, they commonly will be fractionated during physical, chemical, and biological processes, giving rise to variations in isotopic abundances and in atomic weights. Carbon in natural terrestrial materials shows a substantial variation in isotopic abundance (Fig. IUPAC.6.3), providing many different ways of distinguishing sources of materials and processes affecting them [13]. Variations in the isotope-amount ratio n(13C)/n(12C) in tree rings and in CO2 trapped in ice cores have been used to study causes of variations in atmospheric CO2 levels [66]. Variations in the isotope-amount ratio n(13C)/n(12C) and in the 14C concentration of surface ocean waters have been used to trace the incorporation and movement of atmospheric CO2 in the ocean [66].",
+                      "Markup": [
+                        {
+                          "Start": 544,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 551,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 579,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        },
+                        {
+                          "Start": 664,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        },
+                        {
+                          "Start": 720,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 727,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 743,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 857,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_013.jpg",
+                          "Type": "Image",
+                          "Size": "1241x1571",
+                          "Caption": "Fig. IUPAC.6.3: Variation in atomic weight with isotopic composition of selected carbon-bearing materials (modified from [13], [17]). "
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes in Forensic Science and Anthropology",
+            "Description": "Information on the use of this element's isotopes in forensic science and anthropology.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[67]  C. Cordella, I. Moussa, A. C. Martel, N. Sbirrazzuoli, L. Lizzani-Cuvelier. J. Agric. Food. Chem.50, 1751 (2002).",
+                  "[68]  J. R. Brooks, N. Buchmann, S. Phillips, B. Ehleringer, R. D. Evans, M. Lott, L. A. Martinelli, W. T. Pockman, D. Sandquist, J. P. Sparks, L. Sperry, D. Williams, J. R. Ehleringer. J. Agric. Food. Chem.50, 6413 (2002).",
+                  "[69]  B. D. Ahrens, A. W. Butch. Drug Test Anal.5, 534 (2013).",
+                  "[70]  E. Bulska, D. Gorczyca, I. Zalewska, A. Pokrywka, D. Kwiatkowska. J. Pharm. Biomed. Anal.106, 159 (2015).",
+                  "[71]  A. Casilli, T. Piper, F. A. de Oliveira, M. Costa Padilha, H. Marcelo Pereira, M. Thevis, F. R. de Aquino Neto. Drug Test Anal.8, 1204 (2016).",
+                  "[72]  E. K. Shibuya, J. E. Souza Sarkis, O. N. Neto, M. Z. Moreira, R. L. Victoria. Forensic Sci. Int.160, 35 (2006).",
+                  "[73]  J. B. West, J. M. Hurley, J. R. Ehleringer. J Forensic Sci.54, 84 (2009).",
+                  "[74]  United States Drug Enforcement Administration. Marijuana-Indoor Marijuana Grow, United States Department of Justice (2014), Feb. 22; http://www.justice.gov/dea/pr/multimedia-library/image-gallery/images_marijuana.shtml."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[67]  C. Cordella, I. Moussa, A. C. Martel, N. Sbirrazzuoli, L. Lizzani-Cuvelier. J. Agric. Food. Chem.50, 1751 (2002)."
+                  },
+                  {
+                    "Citation": "[68]  J. R. Brooks, N. Buchmann, S. Phillips, B. Ehleringer, R. D. Evans, M. Lott, L. A. Martinelli, W. T. Pockman, D. Sandquist, J. P. Sparks, L. Sperry, D. Williams, J. R. Ehleringer. J. Agric. Food. Chem.50, 6413 (2002)."
+                  },
+                  {
+                    "Citation": "[69]  B. D. Ahrens, A. W. Butch. Drug Test Anal.5, 534 (2013)."
+                  },
+                  {
+                    "Citation": "[70]  E. Bulska, D. Gorczyca, I. Zalewska, A. Pokrywka, D. Kwiatkowska. J. Pharm. Biomed. Anal.106, 159 (2015)."
+                  },
+                  {
+                    "Citation": "[71]  A. Casilli, T. Piper, F. A. de Oliveira, M. Costa Padilha, H. Marcelo Pereira, M. Thevis, F. R. de Aquino Neto. Drug Test Anal.8, 1204 (2016)."
+                  },
+                  {
+                    "Citation": "[72]  E. K. Shibuya, J. E. Souza Sarkis, O. N. Neto, M. Z. Moreira, R. L. Victoria. Forensic Sci. Int.160, 35 (2006)."
+                  },
+                  {
+                    "Citation": "[73]  J. B. West, J. M. Hurley, J. R. Ehleringer. J Forensic Sci.54, 84 (2009)."
+                  },
+                  {
+                    "Citation": "[74]  United States Drug Enforcement Administration. Marijuana-Indoor Marijuana Grow, United States Department of Justice (2014), Feb. 22; http://www.justice.gov/dea/pr/multimedia-library/image-gallery/images_marijuana.shtml."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Variations in the isotope-amount ratio n(13C)/n(12C) of biological products can be observed using isotope-ratio mass spectrometry (IRMS) to detect adulteration (the addition of inferior ingredients) in honey and other food products.",
+                      "Markup": [
+                        {
+                          "Start": 41,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 48,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "The isotope-amount ratio n(13C)/n(12C) can fluctuate between carbon sources, for example C3 plants (found in temperate climates and which use atmospheric carbon dioxide to make a 3-carbon molecule during photosynthesis — examples include rice, potatoes, tomatoes, and sugar beets), C4 plants (found in hot climates and which use atmospheric carbon dioxide to make a 4-carbon molecule during photosynthesis — examples include corn and sugar cane), animal carbon, atmospheric CO2, etc. This commonly makes it possible to detect whether these different carbon sources have been mixed by using isotope or mass balance to distinguish, for example, between beet sugar and cane sugar. Complications in source identification can arise with plants that open stomata at night to collect carbon dioxide to use a third mechanism to fix atmospheric carbon dioxide (CAM or crassulacean acid metabolism). The isotope-amount ratio n(13C)/n(12C) of CAM plants overlaps that of C3 or C4 plants — examples include pineapples and jade plants. The following adulterations are commonly detected using stable carbon isotope IRMS:",
+                      "Markup": [
+                        {
+                          "Start": 27,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 34,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 90,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        },
+                        {
+                          "Start": 283,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        },
+                        {
+                          "Start": 476,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        },
+                        {
+                          "Start": 917,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 924,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 961,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        },
+                        {
+                          "Start": 967,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "–Variations in the isotope-amount ratio n(13C)/n(12C) of honey are used to detect the addition (and potential adulteration) of high fructose corn syrup, corn, or sugar cane [67].",
+                      "Markup": [
+                        {
+                          "Start": 42,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 49,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "–Variations in the isotope-amount ratio n(13C)/n(12C) of fruit juice have been used to detect the addition of a sugar [67].",
+                      "Markup": [
+                        {
+                          "Start": 42,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 49,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "–Variations in the isotope-amount ratio n(13C)/n(12C) of natural vanilla extract have been used to detect the addition of artificial vanillin or p-hydroxybenzaldehyde [67].",
+                      "Markup": [
+                        {
+                          "Start": 42,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 49,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "–Variations in the isotope-amount ratio n(13C)/n(12C) of beer are used to detect C4 carbon, which would indicate that a beer company may have added ingredients that are not traditionally used in brewing beer. Therefore, this ratio is used to detect the misrepresentation of a product as being pure [67], [68].",
+                      "Markup": [
+                        {
+                          "Start": 42,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 49,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 82,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Stable carbon IRMS has been used to determine if the botanical origin of an alcoholic spirit has been mislabeled and if chaptalization (the process of adding sugar to increase the alcoholic content) of wine has occurred [67], [68]. 14C scintillation counting has been used to determine the age of wine and alcoholic spirits [67], [68]. Variations in the isotope-amount ratio n(13C)/n(12C) of urine has been used to determine if steroids in urine are natural or of synthetic origin. These measurements enable anti-doping laboratories to perfect their methods for detecting steroid doping in athletes [69], [70], [71]. Variations in the isotope-amount ratio n(13C)/n(12C) of marijuana can provide information to determine if the plants were grown “inside” a building or greenhouse or were “open grown” (Fig. IUPAC.6.4). Plant carbon isotopic compositions are controlled by atmospheric CO2 and the supply and demand of CO2 in photosynthesis (the process used by plants to convert light energy from the sun into chemical energy). “Open grown” plants are grown in an area that is well ventilated and receives natural CO2. In contrast, plants grown “inside” receive supplemented CO2 and the photosynthesis process is more confined. Additionally, CO2 from a tank of compressed gas used to augment atmospheric CO2 to increase the growth of marijuana plants is commonly highly depleted in 13C as a refinery by-product. These differences change the carbon isotope ratios of the plants and the ratios vary enough to enable the determination of the growing and cultivation process of marijuana [72], [73].",
+                      "Markup": [
+                        {
+                          "Start": 232,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 377,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 384,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 658,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 665,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 885,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        },
+                        {
+                          "Start": 918,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        },
+                        {
+                          "Start": 1114,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        },
+                        {
+                          "Start": 1175,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        },
+                        {
+                          "Start": 1242,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        },
+                        {
+                          "Start": 1304,
+                          "Length": 1,
+                          "Type": "Subscript"
+                        },
+                        {
+                          "Start": 1380,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "          ",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/images/iupac/j_pac-2015-0703_fig_014.jpg",
+                          "Type": "Image",
+                          "Size": "945x709",
+                          "Caption": "Fig. IUPAC.6.4: Variations in the isotope-amount ratio n(¹³C)/n(¹²C) of marijuana have been used to determine if the plants were grown inside a building or greenhouse or were “open grown.” (Image Source: U.S. Drug Enforcement Administration and U.S. Department of Justice) [74]. "
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes in Geochronology",
+            "Description": "Information on the use of this element's isotopes in geochronology.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[15]  I. D. Clark, P. Fritz. Environmental Isotopes in Hydrogeology, p. 328, Lewis Publishers, New York (1997)."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[15]  I. D. Clark, P. Fritz. Environmental Isotopes in Hydrogeology, p. 328, Lewis Publishers, New York (1997)."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Radioactive 14C is the basis for the radiocarbon dating method to determine the ages of carbon-bearing materials. 14C is formed naturally in the atmosphere by cosmic-ray interactions and was also released by above-ground, nuclear weapons testing (Fig. IUPAC.6.1). Atmospheric 14C is incorporated into plants, animals, soils, groundwater, and ocean water, and it decays with a half-life of ~5700 years. This makes it useful for dating objects, such as archaeological remains and water masses in oceans and aquifers, on time scales ranging from hundreds of years to tens of thousands of years [15]. Plants and animals living since the 1950s can be identified by bomb-peak 14C in their cells.",
+                      "Markup": [
+                        {
+                          "Start": 12,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 114,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 276,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 670,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotopes in Medicine",
+            "Description": "Information on the use of this element's isotopes in medicine.",
+            "Information": [
+              {
+                "ReferenceNumber": 4,
+                "Reference": [
+                  "[75]  J. Peterson, M. McDonell, L. Haroun, F. Monette, R. D. Hildebrand, A. Taboas. Radiological and Chemical Fact Sheets to Support Health Risk Analyses for Contaminated Areas, Prepared by Argonne National Laboratory Environmental Science Division in collaboration with U.S. Department of Energy, Richland Operations Office and Chicago Operations Office (2014), Feb. 22; http://www.remm.nlm.gov/ANL_ContaminantFactSheets_All_070418.pdf.",
+                  "[76]  GI & Liver Laboratory at Centre for Liver & Digestive Disorders, The Royal Infirmary of Edinburgh. GI & Liver Laboratory Patient Leaflet.",
+                  "[77]  S. L. Kitson. Tracking Human Metabolism with Carbon-14, Drug Discovery and Development (2014), Feb. 23; http://www.dddmag.com/articles/2013/02/tracking-human-metabolism-carbon-14.",
+                  "[78]  Medical Health Tests. Reasons, Procedure and Preparation for C Urea Breath Test-Carbon Urea Breath Test, Medical Health Tests (2014), Feb. 23; http://www.medicalhealthtests.com/urea-breath-test/c-urea-breath-test.html."
+                ],
+                "ExtendedReference": [
+                  {
+                    "Citation": "[75]  J. Peterson, M. McDonell, L. Haroun, F. Monette, R. D. Hildebrand, A. Taboas. Radiological and Chemical Fact Sheets to Support Health Risk Analyses for Contaminated Areas, Prepared by Argonne National Laboratory Environmental Science Division in collaboration with U.S. Department of Energy, Richland Operations Office and Chicago Operations Office (2014), Feb. 22; http://www.remm.nlm.gov/ANL_ContaminantFactSheets_All_070418.pdf."
+                  },
+                  {
+                    "Citation": "[76]  GI & Liver Laboratory at Centre for Liver & Digestive Disorders, The Royal Infirmary of Edinburgh. GI & Liver Laboratory Patient Leaflet."
+                  },
+                  {
+                    "Citation": "[77]  S. L. Kitson. Tracking Human Metabolism with Carbon-14, Drug Discovery and Development (2014), Feb. 23; http://www.dddmag.com/articles/2013/02/tracking-human-metabolism-carbon-14."
+                  },
+                  {
+                    "Citation": "[78]  Medical Health Tests. Reasons, Procedure and Preparation for C Urea Breath Test-Carbon Urea Breath Test, Medical Health Tests (2014), Feb. 23; http://www.medicalhealthtests.com/urea-breath-test/c-urea-breath-test.html."
+                  }
+                ],
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "14C is used to create isotopically labeled drugs to study their uptake and metabolism in humans [75], [76], [77]. 13C is used in breath tests to detect Helicobacter pylori bacteria (bacteria in the stomach linked to ulcers), which can cause cancers [78].",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 114,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Isotope Mass and Abundance",
+            "Description": "Atomic mass and abundance (composition) information for a given isotope/nuclide. The number in the parenthesis refers to an uncertainty when exist. The unit of atomic weight is the unified atomic mass unit (u) or dalton (Da). ",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 3,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Isotope",
+                    "Atomic Mass (uncertainty) [u]",
+                    "Abundance (uncertainty)"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 3,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": " 12C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": " 13C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 3,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Atomic Mass (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "12(exact)"
+                    },
+                    {
+                      "String": "13.003 354 835(2)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 3,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "[0.9884, 0.9904]"
+                    },
+                    {
+                      "String": "[0.0096, 0.0116]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Isotope",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "12C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "13C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "14C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Atomic Mass (uncertainty) [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "12.0000000(00)"
+                    },
+                    {
+                      "String": "13.00335483507(23)"
+                    },
+                    {
+                      "String": "14.0032419884(40)"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 7,
+                "Name": "Abundance (uncertainty)",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "0.9893(8)"
+                    },
+                    {
+                      "String": "0.0107(8)"
+                    },
+                    {
+                      "String": ""
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Atomic Mass, Half Life, and Decay",
+            "Description": "Information on the atomic mass, half life, and decay for this element, from the the Atomic Mass Data Center. The number after the ± refers to an uncertainty when exists.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/atomic-mass/",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 5,
+                "ColumnsFromNamedLists": {
+                  "Name": [
+                    "Nuclide",
+                    "Atomic Mass and Uncertainty [u]",
+                    "Half Life and Uncertainty",
+                    "Discovery Year",
+                    "Decay Modes, Intensities and Uncertainties [%]"
+                  ],
+                  "UseNamesAsColumnHeadings": true
+                }
+              }
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 2,
+                "Name": "Nuclide",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "8C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "9C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "10C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "11C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "12C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "13C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "14C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "15C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "16C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "17C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "18C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "19C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "20C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "21C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "22C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "23C",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 2,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Atomic Mass and Uncertainty [u]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "8.037643039 ± 0.000019584"
+                    },
+                    {
+                      "String": "9.031037202 ± 0.000002293"
+                    },
+                    {
+                      "String": "10.016853217 ± 0.000000075"
+                    },
+                    {
+                      "String": "11.011432597 ± 0.000000064"
+                    },
+                    {
+                      "String": "12.0000000 ± 0."
+                    },
+                    {
+                      "String": "13.00335483534 ± 0.00000000025"
+                    },
+                    {
+                      "String": "14.00324198862 ± 0.00000000403"
+                    },
+                    {
+                      "String": "15.010599256 ± 0.000000858"
+                    },
+                    {
+                      "String": "16.014701255 ± 0.00000384"
+                    },
+                    {
+                      "String": "17.022578650 ± 0.000018641"
+                    },
+                    {
+                      "String": "18.026751930 ± 0.000032206"
+                    },
+                    {
+                      "String": "19.034797594 ± 0.000105625"
+                    },
+                    {
+                      "String": "20.040261732 ± 0.000247585"
+                    },
+                    {
+                      "String": "21.049000 ± 0.00064 [Estimated]"
+                    },
+                    {
+                      "String": "22.057553990 ± 0.000248515"
+                    },
+                    {
+                      "String": "23.068890 ± 0.00107 [Estimated]"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Half Life and Uncertainty",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "3.5 zs ± 1.4"
+                    },
+                    {
+                      "String": "126.5 ms ± 0.9"
+                    },
+                    {
+                      "String": "19.3011 s ± 0.0015"
+                    },
+                    {
+                      "String": "20.3402 m ± 0.0053"
+                    },
+                    {
+                      "String": "Stable"
+                    },
+                    {
+                      "String": "Stable"
+                    },
+                    {
+                      "String": "5.70 ky ± 0.03"
+                    },
+                    {
+                      "String": "2.449 s ± 0.005"
+                    },
+                    {
+                      "String": "750 ms ± 6"
+                    },
+                    {
+                      "String": "193 ms ± 6"
+                    },
+                    {
+                      "String": "92 ms ± 2"
+                    },
+                    {
+                      "String": "46.2 ms ± 2.3"
+                    },
+                    {
+                      "String": "16 ms ± 3"
+                    },
+                    {
+                      "String": "Not-specified <30ns"
+                    },
+                    {
+                      "String": "6.2 ms ± 1.3"
+                    },
+                    {
+                      "String": "Not-specified"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Discovery Year",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "1974"
+                    },
+                    {
+                      "String": "1964"
+                    },
+                    {
+                      "String": "1949"
+                    },
+                    {
+                      "String": "1934"
+                    },
+                    {
+                      "String": "1919"
+                    },
+                    {
+                      "String": "1929"
+                    },
+                    {
+                      "String": "1936"
+                    },
+                    {
+                      "String": "1950"
+                    },
+                    {
+                      "String": "1961"
+                    },
+                    {
+                      "String": "1968"
+                    },
+                    {
+                      "String": "1969"
+                    },
+                    {
+                      "String": "1974"
+                    },
+                    {
+                      "String": "1981"
+                    },
+                    {
+                      "String": ""
+                    },
+                    {
+                      "String": "1986"
+                    },
+                    {
+                      "String": ""
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 2,
+                "Name": "Decay Modes, Intensities and Uncertainties [%]",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "2p=100%"
+                    },
+                    {
+                      "String": "β+=100%; β+p=7.5±0.6%; β+α=38.4±1.6%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 24,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β+=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "IS=98.94±0.6%"
+                    },
+                    {
+                      "String": "IS=1.06±0.6%"
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=99.0±0.3%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=28.4±1.3%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 25,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=31.5±1.5%; β-2n ?",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 25,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=47±0.3%; β-2n=7±0.3%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "β-=100%; β-n=70±1.1%; β-2n<18.6%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "n ?"
+                    },
+                    {
+                      "String": "β-=100%; β-n=61±1.4%; β-2n<37%",
+                      "Markup": [
+                        {
+                          "Start": 1,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 10,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        },
+                        {
+                          "Start": 23,
+                          "Length": 1,
+                          "Type": "Superscript"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "n ?"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 1,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      },
+      {
+        "ReferenceNumber": 2,
+        "SourceName": "Atomic Mass Data Center (AMDC), International Atomic Energy Agency (IAEA)",
+        "SourceID": "e6",
+        "Name": "C",
+        "Description": "The half-life and atomic mass data was provided by the Atomic Mass Data Center at the International Atomic Energy Agency.",
+        "URL": "https://www-nds.iaea.org/amdc/",
+        "LicenseURL": "https://www-nds.iaea.org/disclaimer.html",
+        "ANID": 6590233
+      },
+      {
+        "ReferenceNumber": 3,
+        "SourceName": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+        "SourceID": "a6",
+        "Name": "Carbon",
+        "Description": "Element data are cited from the Atomic weights of the elements (an IUPAC Technical Report). The IUPAC periodic table of elements can be found at https://iupac.org/what-we-do/periodic-table-of-elements/. Additional information can be found within IUPAC publication doi:10.1515/pac-2015-0703 Copyright © 2020 International Union of Pure and Applied Chemistry.",
+        "URL": "https://www.ciaaw.org/carbon.htm",
+        "LicenseURL": "http://www.ciaaw.org/bylaws.htm",
+        "ANID": 2292387
+      },
+      {
+        "ReferenceNumber": 5,
+        "SourceName": "Jefferson Lab, U.S. Department of Energy",
+        "SourceID": "jlab6",
+        "Name": "Carbon",
+        "Description": "Thomas Jefferson National Accelerator Facility (Jefferson Lab) is one of 17 national laboratories funded by the U.S. Department of Energy. The lab's primary mission is to conduct basic research of the atom's nucleus using the lab's unique particle accelerator, known as the Continuous Electron Beam Accelerator Facility (CEBAF). For more information visit https://www.jlab.org/",
+        "URL": "https://education.jlab.org/itselemental/ele006.html",
+        "LicenseNote": "Please see citation and linking information: https://education.jlab.org/faq/index.html",
+        "LicenseURL": "https://www.jlab.org/privacy-and-security-notice",
+        "ANID": 507068
+      },
+      {
+        "ReferenceNumber": 6,
+        "SourceName": "Los Alamos National Laboratory, U.S. Department of Energy",
+        "SourceID": "lanl6",
+        "Name": "Carbon",
+        "Description": "The periodic table at the LANL (Los Alamos National Laboratory) contains basic element information together with the history, source, properties, use, handling and more. The provenance data may be found from the link under the source name.",
+        "URL": "https://periodic.lanl.gov/6.shtml",
+        "ANID": 507186
+      },
+      {
+        "ReferenceNumber": 7,
+        "SourceName": "NIST Physical Measurement Laboratory",
+        "SourceID": "e6",
+        "Name": "Carbon",
+        "Description": "The periodic table contains NIST's critically-evaluated data on atomic properties of the elements. The provenance data that include data for atomic spectroscopy, X-ray and gamma ray, radiation dosimetry, nuclear physics, and condensed matter physics may be found from the link under the source name. Ref: https://www.nist.gov/pml/atomic-spectra-database",
+        "URL": "https://physics.nist.gov/cgi-bin/Elements/elInfo.pl?element=6",
+        "LicenseURL": "https://www.nist.gov/pml/database-disclaimer",
+        "ANID": 2292623
+      },
+      {
+        "ReferenceNumber": 4,
+        "SourceName": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
+        "SourceID": "p6",
+        "Description": "The information are cited from Pure Appl. Chem. 2018; 90(12): 1833-2092, https://doi.org/10.1515/pac-2015-0703.",
+        "URL": "https://doi.org/10.1515/pac-2015-0703",
+        "LicenseNote": "Copyright (c) 2020 International Union of Pure and Applied Chemistry.\u000A\u000AThe International Union of Pure and Applied Chemistry (IUPAC) contribution within Pubchem is provided under a CC-BY-NC-ND 4.0 license, unless otherwise stated.",
+        "LicenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "ANID": 13296411
+      },
+      {
+        "ReferenceNumber": 9,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ep_6",
+        "Name": "Carbon",
+        "Description": "The element property data was retrieved from publications.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24834048
+      },
+      {
+        "ReferenceNumber": 8,
+        "SourceName": "PubChem Elements",
+        "SourceID": "ef_6",
+        "Name": "Carbon",
+        "Description": "This section provides all form of data related to element Carbon.",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24833934
+      }
+    ]
+  }
+}
