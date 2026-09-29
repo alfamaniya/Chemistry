@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/search-box.css" />
     <link rel="stylesheet" href="styles/information-boxes.css" />
     <link rel="stylesheet" href="styles/site-preferences.css" />
-    <link rel="stylesheet" href="styles/empty-box.css" />
+    <link rel="stylesheet" href="styles/periodic-table.css" />
     <title>Chemistry</title>
   </head>
   <body>
@@ -36,8 +36,13 @@
         </div>
       </section>
 
-      <section class="empty-box" aria-hidden="true">
-        <div class="empty-box__content"></div>
+      <section class="periodic-table-section" aria-label="جدول تناوبی" data-i18n-aria-label="periodicTableAria">
+        <div class="periodic-table-section__content">
+          <h2 class="periodic-table-section__title" data-i18n="periodicTableTitle">جدول تناوبی</h2>
+          <div class="periodic-table-scroll">
+            <div class="periodic-table" id="periodic-table" aria-live="polite"></div>
+          </div>
+        </div>
       </section>
 
       <section class="information-box information-box--basic" aria-label="اطلاعات پایه" data-i18n-aria-label="basicInformationAria">
@@ -62,6 +67,7 @@
       </section>
     </main>
 
+    <script src="scripts/periodic-table.js"></script>
     <script src="scripts/site-preferences.js"></script>
   </body>
 </html>
