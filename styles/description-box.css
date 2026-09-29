@@ -2,8 +2,6 @@
   width: min(100% - 32px, 1100px);
   margin: 24px auto;
   box-sizing: border-box;
-  direction: rtl;
-  text-align: right;
 }
 
 .description-box__content {
@@ -13,8 +11,6 @@
   box-sizing: border-box;
   padding: 24px;
   overflow-wrap: anywhere;
-  direction: rtl;
-  text-align: right;
   unicode-bidi: plaintext;
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid rgba(23, 107, 58, 0.18);
@@ -25,7 +21,19 @@
 .description-box__text {
   margin: 0;
   line-height: 1.9;
+  unicode-bidi: plaintext;
+}
+
+html[dir="rtl"] .description-box,
+html[dir="rtl"] .description-box__content,
+html[dir="rtl"] .description-box__text {
   direction: rtl;
   text-align: right;
-  unicode-bidi: plaintext;
+}
+
+html[dir="ltr"] .description-box,
+html[dir="ltr"] .description-box__content,
+html[dir="ltr"] .description-box__text {
+  direction: ltr;
+  text-align: left;
 }
