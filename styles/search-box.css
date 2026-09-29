@@ -2,8 +2,6 @@
   width: min(100% - 32px, 1100px);
   margin: 24px auto;
   box-sizing: border-box;
-  direction: rtl;
-  text-align: right;
 }
 
 .search-box__content {
@@ -24,7 +22,6 @@
 .search-box__label {
   grid-column: 1 / -1;
   font-weight: 700;
-  text-align: right;
 }
 
 .search-box__input {
@@ -32,8 +29,7 @@
   min-height: 44px;
   padding: 10px 14px;
   box-sizing: border-box;
-  direction: rtl;
-  text-align: right;
+  unicode-bidi: plaintext;
   border: 1px solid rgba(23, 107, 58, 0.25);
   border-radius: 10px;
   background: #fff;
