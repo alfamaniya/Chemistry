@@ -21,48 +21,49 @@
 
 .periodic-table-scroll {
   width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding-bottom: 8px;
+  overflow: visible;
+  padding-bottom: 0;
   direction: ltr;
-  -webkit-overflow-scrolling: touch;
 }
 
 .periodic-table {
-  min-width: 1470px;
+  width: 100%;
+  min-width: 0;
   display: grid;
-  grid-template-columns: repeat(18, minmax(82px, 1fr));
-  grid-template-rows: repeat(7, minmax(92px, auto)) 14px minmax(92px, auto) minmax(92px, auto);
-  gap: 4px;
+  grid-template-columns: repeat(18, minmax(0, 1fr));
+  grid-template-rows: repeat(7, minmax(0, auto)) 8px minmax(0, auto) minmax(0, auto);
+  gap: clamp(2px, 0.35vw, 6px);
   box-sizing: border-box;
   direction: ltr;
   text-align: center;
 }
 
 .element-card {
+  width: 100%;
   min-width: 0;
-  min-height: 92px;
+  min-height: 0;
+  aspect-ratio: 1 / 1.08;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3px;
-  padding: 7px 5px;
+  gap: clamp(1px, 0.2vw, 3px);
+  padding: clamp(2px, 0.45vw, 7px) clamp(1px, 0.3vw, 5px);
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 3px;
+  border-radius: clamp(2px, 0.25vw, 4px);
   color: #101820;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.28);
 }
 
 .element-card__atomic-number {
-  font-size: 0.72rem;
+  font-size: clamp(0.42rem, 0.75vw, 0.72rem);
   line-height: 1;
   opacity: 0.8;
 }
 
 .element-card__symbol {
-  font-size: 1.45rem;
+  font-size: clamp(0.62rem, 1.55vw, 1.45rem);
   line-height: 1;
   font-weight: 800;
   direction: ltr;
@@ -71,10 +72,13 @@
 
 .element-card__name {
   width: 100%;
-  font-size: 0.72rem;
-  line-height: 1.25;
+  min-width: 0;
+  font-size: clamp(0.34rem, 0.72vw, 0.72rem);
+  line-height: 1.15;
   font-weight: 600;
+  white-space: normal;
   overflow-wrap: anywhere;
+  word-break: normal;
   text-align: center;
 }
 
@@ -91,7 +95,7 @@
 .element-card--unknown { background: #e5e7eb; }
 
 .element-card--f-block {
-  min-height: 92px;
+  min-height: 0;
 }
 
 html[dir="rtl"] .element-card__name {
@@ -114,10 +118,24 @@ html[dir="ltr"] .element-card__name {
   }
 
   .periodic-table-section__content {
-    padding: 16px;
+    padding: 12px 8px;
   }
 
   .periodic-table-section__title {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
+  }
+
+  .periodic-table {
+    gap: 2px;
+  }
+}
+
+@media (max-width: 420px) {
+  .periodic-table-section__content {
+    padding: 10px 5px;
+  }
+
+  .periodic-table {
+    gap: 1px;
   }
 }
