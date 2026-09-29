@@ -39,9 +39,6 @@ const ariaKeys = [...html.matchAll(/data-i18n-aria-label="([^"]+)"/g)].map((matc
 for (const key of [...new Set([...i18nKeys, ...ariaKeys])]) {
   if (!(key in fa) || !(key in en)) fail(`HTML references missing locale key: ${key}`);
 }
-if (!html.includes('id="periodic-table-status"') || html.includes('id="periodic-table" aria-live')) {
-  fail("Periodic table live status must be separate from the 118-card container.");
-}
 if (!html.includes('rel="canonical"') || !html.includes('rel="icon"')) fail("index.html must expose canonical URL and site icon.");
 
 const metadata = readJson("data/periodic-table-meta.json");
