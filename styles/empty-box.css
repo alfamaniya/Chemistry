@@ -1,0 +1,26 @@
+.empty-box {
+  width: min(100% - 32px, 1400px);
+  margin: 24px auto;
+  box-sizing: border-box;
+}
+
+.empty-box__content {
+  width: 100%;
+  min-height: 180px;
+  box-sizing: border-box;
+  border: 1px solid rgba(23, 107, 58, 0.18);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 600px) {
+  .empty-box {
+    width: calc(100% - 20px);
+    margin: 16px auto;
+  }
+
+  .empty-box__content {
+    min-height: 140px;
+  }
+}
