@@ -1,4 +1,4 @@
-const BLINK_DURATION_MS = 3000;
+const BLINK_DURATION_MS = 1400;
 const BLINK_CLASS = "element-card--blink";
 const blinkTimers = new WeakMap();
 
