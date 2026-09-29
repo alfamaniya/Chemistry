@@ -36,6 +36,7 @@
   box-sizing: border-box;
   direction: ltr;
   text-align: center;
+  container-type: inline-size;
 }
 
 .element-card {
@@ -57,13 +58,13 @@
 }
 
 .element-card__atomic-number {
-  font-size: clamp(0.42rem, 0.75vw, 0.72rem);
+  font-size: clamp(4px, 0.55cqw, 11px);
   line-height: 1;
   opacity: 0.8;
 }
 
 .element-card__symbol {
-  font-size: clamp(0.62rem, 1.55vw, 1.45rem);
+  font-size: clamp(7px, 1.85cqw, 25px);
   line-height: 1;
   font-weight: 800;
   direction: ltr;
@@ -73,7 +74,7 @@
 .element-card__name {
   width: 100%;
   min-width: 0;
-  font-size: clamp(0.34rem, 0.72vw, 0.72rem);
+  font-size: clamp(4px, 0.78cqw, 11px);
   line-height: 1.15;
   font-weight: 600;
   white-space: normal;
@@ -128,6 +129,24 @@ html[dir="ltr"] .element-card__name {
   .periodic-table {
     gap: 2px;
   }
+
+  .element-card {
+    gap: 1px;
+    padding: 1px;
+  }
+
+  .element-card__atomic-number {
+    font-size: clamp(4px, 0.55cqw, 8px);
+  }
+
+  .element-card__symbol {
+    font-size: clamp(7px, 1.85cqw, 16px);
+  }
+
+  .element-card__name {
+    font-size: clamp(4px, 0.78cqw, 7px);
+    line-height: 1.05;
+  }
 }
 
 @media (max-width: 420px) {
@@ -137,5 +156,17 @@ html[dir="ltr"] .element-card__name {
 
   .periodic-table {
     gap: 1px;
+  }
+
+  .element-card__atomic-number {
+    font-size: clamp(3.5px, 0.55cqw, 7px);
+  }
+
+  .element-card__symbol {
+    font-size: clamp(6px, 1.85cqw, 14px);
+  }
+
+  .element-card__name {
+    font-size: clamp(3.5px, 0.78cqw, 6px);
   }
 }
