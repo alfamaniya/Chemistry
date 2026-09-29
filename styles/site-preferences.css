@@ -15,6 +15,14 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+body {
+  background:
+    radial-gradient(circle at 8% 12%, rgba(255, 241, 168, 0.72), transparent 28%),
+    radial-gradient(circle at 88% 18%, rgba(239, 71, 111, 0.24), transparent 30%),
+    radial-gradient(circle at 52% 92%, rgba(255, 140, 66, 0.34), transparent 34%),
+    linear-gradient(135deg, #fff4b8 0%, #ffd166 30%, #ff9f43 58%, #ef476f 82%, #c1121f 100%);
+}
+
 .site-header__content {
   justify-content: flex-end;
   gap: 10px;
@@ -49,7 +57,10 @@ body {
 
 .dark-mode body {
   color: var(--text);
-  background: linear-gradient(180deg, #173c29 0%, #0d2418 50%, #07140d 100%);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(255, 214, 102, 0.18), transparent 30%),
+    radial-gradient(circle at 88% 18%, rgba(239, 71, 111, 0.16), transparent 32%),
+    linear-gradient(135deg, #3b120f 0%, #6d1a14 34%, #8f2d18 68%, #42100f 100%);
 }
 
 .dark-mode .site-header {
