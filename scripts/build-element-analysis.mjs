@@ -35,7 +35,7 @@ const files = [...manifest.files].sort((a, b) => {
 
 const elements = files.map((file) => {
   const atomicNumber = Number(file.match(/(\d+)/)[1]);
-  const sourcePath = path.join(dataDir, file);
+  const sourcePath = path.join(root, file);
   if (!fs.existsSync(sourcePath)) throw new Error(`Missing raw element file: ${file}`);
   const raw = fs.readFileSync(sourcePath, "utf8");
   const json = JSON.parse(raw);
