@@ -86,23 +86,54 @@
 .search-box__no-results { justify-content: center; opacity: 0.7; }
 .search-box__retry { cursor: pointer; justify-content: center; border: 1px solid var(--border); border-radius: 8px; }
 
-.element-card--blink-green,
-.element-card--blink-yellow,
-.element-card--blink-orange {
-  outline: 4px solid currentColor;
-  outline-offset: 3px;
-  transform: scale(1.06);
+.element-card--blink {
+  position: relative;
   z-index: 5;
+  animation: element-card-soft-blink 3s cubic-bezier(0.45, 0, 0.55, 1) both;
+  will-change: box-shadow;
 }
 
-.element-card--blink-green { outline-color: #22c55e; box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.22), 0 0 22px rgba(34, 197, 94, 0.8); }
-.element-card--blink-yellow { outline-color: #eab308; box-shadow: 0 0 0 3px rgba(234, 179, 8, 0.22), 0 0 22px rgba(234, 179, 8, 0.8); }
-.element-card--blink-orange { outline-color: #f97316; box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.22), 0 0 22px rgba(249, 115, 22, 0.8); }
+@keyframes element-card-soft-blink {
+  0%,
+  100% {
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.28),
+      0 0 0 0 rgba(23, 107, 58, 0);
+  }
+
+  18% {
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.34),
+      0 0 0 2px rgba(23, 107, 58, 0.08),
+      0 0 10px 2px rgba(23, 107, 58, 0.16);
+  }
+
+  42% {
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.38),
+      0 0 0 3px rgba(23, 107, 58, 0.11),
+      0 0 24px 6px rgba(23, 107, 58, 0.28);
+  }
+
+  62% {
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.34),
+      0 0 0 2px rgba(23, 107, 58, 0.07),
+      0 0 14px 3px rgba(23, 107, 58, 0.18);
+  }
+
+  82% {
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.31),
+      0 0 0 1px rgba(23, 107, 58, 0.04),
+      0 0 6px 1px rgba(23, 107, 58, 0.10);
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
-  .element-card--blink-green,
-  .element-card--blink-yellow,
-  .element-card--blink-orange { transition: none; }
+  .element-card--blink {
+    animation: none;
+  }
 }
 
 @media (max-width: 600px) {
