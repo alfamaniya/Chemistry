@@ -2,8 +2,6 @@
   width: min(100% - 32px, 1400px);
   margin: 24px auto;
   box-sizing: border-box;
-  direction: rtl;
-  text-align: right;
 }
 
 .periodic-table-box__content {
@@ -25,10 +23,9 @@
 .periodic-table-box__title {
   margin: 0;
   line-height: 1.6;
-  direction: rtl;
-  text-align: right;
 }
 
+/* The element grid keeps a stable LTR order in every site language. */
 .periodic-table {
   min-width: 900px;
   min-height: 160px;
