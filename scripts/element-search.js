@@ -90,8 +90,10 @@ const setupElementSearch = async () => {
       const card = document.querySelector(`.element-card[data-atomic-number="${element.atomic_number}"]`);
       if (!card) return;
       card.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
-      card.classList.add("element-card--search-highlight");
-      window.setTimeout(() => card.classList.remove("element-card--search-highlight"), 1600);
+      card.classList.remove("element-card--search-highlight");
+      window.setTimeout(() => card.classList.add("element-card--search-highlight"), 250);
+      window.setTimeout(() => card.classList.remove("element-card--search-highlight"), 1850);
+      window.blinkElementCard?.(card);
     };
 
     input.addEventListener("input", renderResults);
