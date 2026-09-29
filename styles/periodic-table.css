@@ -18,10 +18,12 @@
 .periodic-table-section__title { margin: 0 0 20px; line-height: 1.6; }
 
 .periodic-table-scroll {
-  width: 100%;
+  width: calc(100% + 24px);
+  margin-inline: -12px;
   overflow-x: auto;
   overflow-y: hidden;
-  padding-bottom: 8px;
+  padding: 12px 12px 8px;
+  box-sizing: border-box;
   direction: ltr;
   -webkit-overflow-scrolling: touch;
   scrollbar-gutter: stable;
