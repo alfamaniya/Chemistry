@@ -56,6 +56,23 @@ const setupElementSearch = async () => {
       window.blinkElementCard?.(card);
     };
 
+    let matches = [];
+    let activeIndex = -1;
+
+    const setExpanded = (expanded) => {
+      results.hidden = !expanded;
+      input.setAttribute("aria-expanded", String(expanded));
+      if (!expanded) { activeIndex = -1; input.removeAttribute("aria-activedescendant"); }
+    };
+
+    const updateActive = (index) => {
+      if (!matches.length) return;
+      activeIndex = Math.max(0, Math.min(index, matches.length - 1));
+      results.querySelectorAll("[role='option']").forEach((option, optionIndex) => option.setAttribute("aria-selected", String(optionIndex === activeIndex)));
+      const active = results.querySelectorAll("[role='option']")[activeIndex];
+      if (active) { input.setAttribute("aria-activedescendant", active.id); active.scrollIntoView({ block: "nearest" }); }
+    };
+
     const renderResults = () => {
       const query = normalizeSearchText(input.value);
       results.replaceChildren();
