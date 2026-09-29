@@ -21,38 +21,65 @@ const getElementCategory = (atomicNumber) => {
   return "unknown";
 };
 
+const blinkTimers = new WeakMap();
+const blinkClasses = ["element-card--blink-green", "element-card--blink-yellow", "element-card--blink-orange"];
+
+const clearBlink = (card) => {
+  const timers = blinkTimers.get(card);
+  if (timers) timers.forEach((timer) => window.clearTimeout(timer));
+  blinkTimers.delete(card);
+  card.classList.remove(...blinkClasses);
+};
+
 const blinkElementCard = (card) => {
   if (!card) return;
-  const colors = ["element-card--blink-green", "element-card--blink-yellow", "element-card--blink-orange"];
-  card.classList.remove(...colors);
-  void card.offsetWidth;
-  colors.forEach((className, index) => window.setTimeout(() => {
-    card.classList.remove(...colors);
-    card.classList.add(className);
-  }, index * 500));
-  window.setTimeout(() => card.classList.remove(...colors), colors.length * 500);
+  clearBlink(card);
+
+  if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
+
+  const timers = [];
+  blinkClasses.forEach((className, index) => {
+    timers.push(window.setTimeout(() => {
+      card.classList.remove(...blinkClasses);
+      card.classList.add(className);
+    }, index * 500));
+  });
+  timers.push(window.setTimeout(() => clearBlink(card), blinkClasses.length * 500));
+  blinkTimers.set(card, timers);
 };
 window.blinkElementCard = blinkElementCard;
 
 const createCard = (element, row, column) => {
-  const card = document.createElement("article");
+  const card = document.createElement("button");
+  card.type = "button";
   card.className = `element-card element-card--${getElementCategory(element.atomic_number)}`;
-  card.style.gridRow = String(row); card.style.gridColumn = String(column);
-  card.dataset.atomicNumber = String(element.atomic_number); card.dataset.englishName = element.name; card.dataset.persianName = element.persian_name;
-  card.tabIndex = 0; card.setAttribute("role", "button");
+  card.style.gridRow = String(row);
+  card.style.gridColumn = String(column);
+  card.dataset.atomicNumber = String(element.atomic_number);
+  card.dataset.englishName = element.name;
+  card.dataset.persianName = element.persian_name;
+  card.setAttribute("aria-label", `${element.atomic_number} ${element.persian_name}`);
 
-  const atomicNumber = document.createElement("span"); atomicNumber.className = "element-card__atomic-number"; atomicNumber.textContent = element.atomic_number;
-  const symbol = document.createElement("span"); symbol.className = "element-card__symbol"; symbol.textContent = element.symbol;
-  const name = document.createElement("span"); name.className = "element-card__name"; name.textContent = element.persian_name;
+  const atomicNumber = document.createElement("span");
+  atomicNumber.className = "element-card__atomic-number";
+  atomicNumber.textContent = element.atomic_number;
+  const symbol = document.createElement("span");
+  symbol.className = "element-card__symbol";
+  symbol.textContent = element.symbol;
+  const name = document.createElement("span");
+  name.className = "element-card__name";
+  name.textContent = element.persian_name;
   card.append(atomicNumber, symbol, name);
   card.addEventListener("click", () => blinkElementCard(card));
-  card.addEventListener("keydown", (event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); blinkElementCard(card); } });
   return card;
 };
 
 const renderPeriodicTable = async () => {
   const table = document.querySelector("#periodic-table");
+  const status = document.querySelector("#periodic-table-status");
   if (!table) return;
+  if (status) status.textContent = document.documentElement.lang === "fa" ? "در حال بارگذاری جدول تناوبی…" : "Loading periodic table…";
+
   const elements = await window.getElementData();
   table.replaceChildren();
   elements.forEach((element) => {
@@ -66,12 +93,14 @@ const renderPeriodicTable = async () => {
     else { [row, column] = layout; }
     table.appendChild(createCard(element, row, column));
   });
+  if (status) status.textContent = document.documentElement.lang === "fa" ? "جدول تناوبی آماده است." : "Periodic table ready.";
 };
 
 window.updateElementCardLanguages = () => {
   const language = document.documentElement.lang;
   document.querySelectorAll(".element-card").forEach((card) => {
-    const name = card.querySelector(".element-card__name"); if (!name) return;
+    const name = card.querySelector(".element-card__name");
+    if (!name) return;
     name.textContent = language === "fa" ? card.dataset.persianName : card.dataset.englishName;
     name.style.direction = language === "fa" ? "rtl" : "ltr";
     card.setAttribute("aria-label", `${card.dataset.atomicNumber} ${name.textContent}`);
@@ -79,6 +108,12 @@ window.updateElementCardLanguages = () => {
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
-  try { await renderPeriodicTable(); window.updateElementCardLanguages(); }
-  catch (error) { console.error(error); }
+  try {
+    await renderPeriodicTable();
+    window.updateElementCardLanguages();
+  } catch (error) {
+    const status = document.querySelector("#periodic-table-status");
+    if (status) status.textContent = document.documentElement.lang === "fa" ? "بارگذاری جدول تناوبی ناموفق بود." : "Unable to load the periodic table.";
+    console.error(error);
+  }
 });
