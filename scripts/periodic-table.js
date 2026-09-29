@@ -31,14 +31,14 @@ const getElementCategory = (atomicNumber) => {
 const blinkElementCard = (card) => {
   if (!card) return;
 
-  card.classList.remove("element-card--blink-green", "element-card--blink-yellow", "element-card--blink-orange");
-  void card.offsetWidth;
-
   const colors = [
     "element-card--blink-green",
     "element-card--blink-yellow",
     "element-card--blink-orange"
   ];
+
+  card.classList.remove(...colors);
+  void card.offsetWidth;
 
   colors.forEach((className, index) => {
     window.setTimeout(() => {
@@ -47,10 +47,10 @@ const blinkElementCard = (card) => {
     }, index * 500);
   });
 
-  window.setTimeout(() => {
-    card.classList.remove(...colors);
-  }, colors.length * 500);
+  window.setTimeout(() => card.classList.remove(...colors), colors.length * 500);
 };
+
+window.blinkElementCard = blinkElementCard;
 
 const createCard = (element, row, column) => {
   const card = document.createElement("article");
