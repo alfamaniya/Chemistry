@@ -1,3 +1,15 @@
+:root {
+  --page-bg: #d9f7e3;
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-strong: rgba(255, 255, 255, 0.98);
+  --text: #101820;
+  --muted: #52645a;
+  --border: rgba(23, 107, 58, 0.18);
+  --accent: #176b3a;
+  --input-bg: #fff;
+  --focus: #176b3a;
+}
+
 html,
 body {
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -18,13 +30,25 @@ body {
   border: 1px solid rgba(23, 107, 58, 0.25);
   border-radius: 10px;
   background: transparent;
-  color: #176b3a;
+  color: var(--accent);
   font: inherit;
   cursor: pointer;
 }
 
+.dark-mode {
+  --page-bg: #07140d;
+  --surface: rgba(24, 31, 28, 0.96);
+  --surface-strong: #111b15;
+  --text: #f2f2f2;
+  --muted: #c1cec6;
+  --border: rgba(150, 220, 175, 0.25);
+  --accent: #9fe0b8;
+  --input-bg: #111b15;
+  --focus: #b8f0ca;
+}
+
 .dark-mode body {
-  color: #f2f2f2;
+  color: var(--text);
   background: linear-gradient(180deg, #173c29 0%, #0d2418 50%, #07140d 100%);
 }
 
@@ -34,18 +58,50 @@ body {
 }
 
 .dark-mode .site-header__action {
-  border-color: rgba(150, 220, 175, 0.3);
-  color: #d9f7e3;
+  border-color: var(--border);
+  color: var(--accent);
 }
 
 .dark-mode .description-box__content,
-.dark-mode .search-box__content {
-  background: rgba(25, 36, 29, 0.94);
-  border-color: rgba(150, 220, 175, 0.2);
+.dark-mode .search-box__content,
+.dark-mode .information-box__content,
+.dark-mode .periodic-table-section__content {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
 }
 
 .dark-mode .search-box__input {
-  background: #111b15;
-  color: #f2f2f2;
-  border-color: rgba(150, 220, 175, 0.25);
+  background: var(--input-bg);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.dark-mode .search-box__results {
+  background: var(--surface-strong);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.dark-mode .search-box__result {
+  color: var(--text);
+  border-bottom-color: rgba(150, 220, 175, 0.12);
+}
+
+.dark-mode .search-box__result:hover,
+.dark-mode .search-box__result[aria-selected="true"],
+.dark-mode .search-box__result:focus-visible {
+  background: rgba(130, 220, 165, 0.16);
+}
+
+.dark-mode .search-box__no-results,
+.dark-mode .periodic-table-status {
+  color: var(--muted);
+}
+
+.dark-mode .periodic-table-status__retry,
+.dark-mode .search-box__retry {
+  color: var(--accent);
+  border-color: var(--border);
+  background: transparent;
 }
