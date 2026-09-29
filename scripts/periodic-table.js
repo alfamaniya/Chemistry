@@ -99,9 +99,7 @@ const createCard = (element, meta) => {
 
 const renderPeriodicTable = async () => {
   const table = document.querySelector("#periodic-table");
-  const status = document.querySelector("#periodic-table-status");
   if (!table) return;
-  if (status) status.textContent = document.documentElement.lang === "fa" ? "در حال بارگذاری جدول تناوبی…" : "Loading periodic table…";
 
   const [elements, metadata] = await Promise.all([window.getElementData(), getPeriodicTableMeta()]);
   table.replaceChildren();
@@ -112,7 +110,6 @@ const renderPeriodicTable = async () => {
 
   const firstCard = table.querySelector(".element-card");
   if (firstCard) firstCard.tabIndex = 0;
-  if (status) status.textContent = document.documentElement.lang === "fa" ? "جدول تناوبی آماده است." : "Periodic table ready.";
 };
 
 window.updateElementCardLanguages = () => {
@@ -132,18 +129,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       await renderPeriodicTable();
       window.updateElementCardLanguages();
     } catch (error) {
-      const status = document.querySelector("#periodic-table-status");
-      if (!status) return;
-      const language = document.documentElement.lang === "fa";
-      status.replaceChildren();
-      const message = document.createElement("span");
-      message.textContent = language ? "بارگذاری جدول ناموفق بود." : "Unable to load the periodic table.";
-      const retry = document.createElement("button");
-      retry.type = "button";
-      retry.className = "periodic-table-status__retry";
-      retry.textContent = language ? "تلاش مجدد" : "Retry";
-      retry.addEventListener("click", load, { once: true });
-      status.append(message, " ", retry);
       console.error(error);
     }
   };
