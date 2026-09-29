@@ -2,8 +2,6 @@
   width: min(100% - 32px, 1100px);
   margin: 24px auto;
   box-sizing: border-box;
-  direction: rtl;
-  text-align: right;
 }
 
 .information-box + .information-box {
@@ -24,14 +22,10 @@
 .information-box__title {
   margin: 0 0 16px;
   line-height: 1.6;
-  direction: inherit;
-  text-align: inherit;
 }
 
 .information-box__body {
   min-height: 90px;
   line-height: 1.9;
   overflow-wrap: anywhere;
-  direction: inherit;
-  text-align: inherit;
 }
