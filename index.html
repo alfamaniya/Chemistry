@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive periodic table of the chemical elements with bilingual Persian and English search." />
+    <meta name="theme-color" content="#176b3a" />
+    <meta property="og:title" content="Chemistry | Periodic Table" />
+    <meta property="og:description" content="Interactive periodic table of the chemical elements with Persian and English support." />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles/background-gradient.css" />
     <link rel="stylesheet" href="styles/bidi.css" />
     <link rel="stylesheet" href="styles/header.css" />
@@ -11,7 +16,7 @@
     <link rel="stylesheet" href="styles/information-boxes.css" />
     <link rel="stylesheet" href="styles/site-preferences.css" />
     <link rel="stylesheet" href="styles/periodic-table.css" />
-    <title>Chemistry</title>
+    <title data-i18n="pageTitle">Chemistry | Periodic Table</title>
   </head>
   <body>
     <header class="site-header">
@@ -23,7 +28,7 @@
     <main>
       <section class="description-box" aria-label="توضیحات" data-i18n-aria-label="descriptionAria"><div class="description-box__content"><p class="description-box__text bidi-text" data-i18n="description">توضیحات صفحه در این قسمت قرار می‌گیرد.</p></div></section>
       <section class="search-box" aria-label="جستجو" data-i18n-aria-label="searchAria"><div class="search-box__content"><label class="search-box__label" for="search-input" data-i18n="search">جستجو</label><input class="search-box__input bidi-text" id="search-input" type="search" data-i18n="searchPlaceholder" placeholder="عبارت مورد نظر را وارد کنید" autocomplete="off" /></div></section>
-      <section class="periodic-table-section" aria-label="جدول تناوبی" data-i18n-aria-label="periodicTableAria"><div class="periodic-table-section__content"><h2 class="periodic-table-section__title" data-i18n="periodicTableTitle">جدول تناوبی</h2><div class="periodic-table-scroll"><div class="periodic-table" id="periodic-table" aria-live="polite"></div></div></div></section>
+      <section class="periodic-table-section" aria-label="جدول تناوبی" data-i18n-aria-label="periodicTableAria"><div class="periodic-table-section__content"><h2 class="periodic-table-section__title" data-i18n="periodicTableTitle">جدول تناوبی</h2><div class="periodic-table-scroll"><div class="periodic-table-status" id="periodic-table-status" role="status" aria-live="polite"></div><div class="periodic-table" id="periodic-table"></div></div></div></section>
       <section class="information-box information-box--basic" aria-label="اطلاعات پایه" data-i18n-aria-label="basicInformationAria"><div class="information-box__content"><h2 class="information-box__title" data-i18n="basicInformationTitle">اطلاعات پایه</h2><div class="information-box__body" data-i18n="basicInformationPlaceholder">اطلاعات پایه در این قسمت نمایش داده خواهد شد.</div></div></section>
       <section class="information-box information-box--advanced" aria-label="اطلاعات پیشرفته" data-i18n-aria-label="advancedInformationAria"><div class="information-box__content"><h2 class="information-box__title" data-i18n="advancedInformationTitle">اطلاعات پیشرفته</h2><div class="information-box__body" data-i18n="advancedInformationPlaceholder">اطلاعات پیشرفته در این قسمت نمایش داده خواهد شد.</div></div></section>
       <section class="information-box information-box--professional" aria-label="اطلاعات حرفه‌ای" data-i18n-aria-label="professionalInformationAria"><div class="information-box__content"><h2 class="information-box__title" data-i18n="professionalInformationTitle">اطلاعات حرفه‌ای</h2><div class="information-box__body" data-i18n="professionalInformationPlaceholder">اطلاعات حرفه‌ای در این قسمت نمایش داده خواهد شد.</div></div></section>
