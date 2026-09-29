@@ -104,37 +104,37 @@
 .element-card__name { width: 100%; min-width: 0; font-size: clamp(4px, 0.78cqw, 11px); line-height: 1.15; font-weight: 600; white-space: normal; overflow-wrap: anywhere; word-break: normal; text-align: center; }
 
 .element-card--alkali {
-  background: linear-gradient(135deg, rgba(239, 71, 111, 0.62), rgba(255, 126, 95, 0.34));
+  background: linear-gradient(135deg, rgba(244, 182, 185, 0.88), rgba(244, 182, 185, 0.46));
 }
 .element-card--alkaline {
-  background: linear-gradient(135deg, rgba(255, 209, 102, 0.68), rgba(255, 159, 67, 0.38));
+  background: linear-gradient(135deg, rgba(201, 201, 236, 0.88), rgba(201, 201, 236, 0.46));
 }
 .element-card--transition {
-  background: linear-gradient(135deg, rgba(255, 159, 67, 0.62), rgba(239, 71, 111, 0.34));
+  background: linear-gradient(135deg, rgba(169, 201, 232, 0.88), rgba(169, 201, 232, 0.46));
 }
 .element-card--postTransition {
-  background: linear-gradient(135deg, rgba(255, 214, 102, 0.66), rgba(255, 241, 168, 0.38));
+  background: linear-gradient(135deg, rgba(184, 231, 143, 0.88), rgba(184, 231, 143, 0.46));
 }
 .element-card--metalloid {
-  background: linear-gradient(135deg, rgba(255, 241, 168, 0.7), rgba(255, 159, 67, 0.34));
+  background: linear-gradient(135deg, rgba(216, 237, 138, 0.88), rgba(216, 237, 138, 0.46));
 }
 .element-card--nonmetal {
-  background: linear-gradient(135deg, rgba(255, 230, 130, 0.72), rgba(255, 209, 102, 0.4));
+  background: linear-gradient(135deg, rgba(244, 235, 147, 0.88), rgba(244, 235, 147, 0.46));
 }
 .element-card--halogen {
-  background: linear-gradient(135deg, rgba(255, 209, 102, 0.7), rgba(255, 126, 95, 0.38));
+  background: linear-gradient(135deg, rgba(246, 223, 152, 0.88), rgba(246, 223, 152, 0.46));
 }
 .element-card--noble {
-  background: linear-gradient(135deg, rgba(255, 159, 67, 0.62), rgba(193, 18, 31, 0.28));
+  background: linear-gradient(135deg, rgba(244, 207, 154, 0.88), rgba(244, 207, 154, 0.46));
 }
 .element-card--lanthanide {
-  background: linear-gradient(135deg, rgba(255, 184, 77, 0.62), rgba(239, 71, 111, 0.28));
+  background: linear-gradient(135deg, rgba(134, 230, 229, 0.88), rgba(134, 230, 229, 0.46));
 }
 .element-card--actinide {
-  background: linear-gradient(135deg, rgba(239, 71, 111, 0.5), rgba(193, 18, 31, 0.28));
+  background: linear-gradient(135deg, rgba(155, 231, 206, 0.88), rgba(155, 231, 206, 0.46));
 }
 .element-card--unknown {
-  background: linear-gradient(135deg, rgba(255, 241, 168, 0.5), rgba(220, 220, 220, 0.3));
+  background: linear-gradient(135deg, rgba(229, 231, 235, 0.88), rgba(229, 231, 235, 0.46));
 }
 
 .element-card {
