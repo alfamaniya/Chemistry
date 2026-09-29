@@ -1,172 +1,186 @@
-# Chemistry
+# Chemistry — Code Audit
 
-## وضعیت بررسی کد
+## وضعیت بررسی
 
-این مخزن در شاخه `main` به‌صورت فایل‌های HTML/CSS/JavaScript و داده‌های JSON بررسی شده است. بررسی شامل ساختار پروژه، جریان اجرای صفحه، جدول تناوبی، جستجو، چندزبانه‌بودن، دسترسی‌پذیری، responsive، مدیریت خطا، performance و هم‌خوانی componentها با فایل ورودی است.
+این فایل گزارش بازبینی عمیق کد مخزن در شاخه main است. بررسی در تاریخ 2026-09-29 انجام شد و فایل‌های اجرایی HTML/CSS/JavaScript/ESM، تنظیمات CI، localeها، runtime index و ساختار داده‌های عنصر بررسی شدند.
 
- > **دامنه بررسی:** فایل‌های `index.html`، `scripts/` و `styles/` و همچنین componentهای HTML که پیش از اصلاح در `components/` قرار داشتند بررسی شده‌اند. فایل‌های JSON به‌عنوان داده/پیکربندی بررسی شده‌اند، نه «کد اجرایی».  
-> **تاریخ بررسی:** 2026-09-29  
-> **شاخه:** `main`
+> روش بررسی: فایل‌های source به‌صورت کامل خوانده شدند و جریان بین HTML، CSS، JavaScript، locale و داده بررسی شد؛ سپس خطاهای منطقی، accessibility، responsive، performance، robustness، security، maintainability و CI استخراج شدند. فایل‌های ELEMENT_ATOMIC NUMBER_*.json داده خام هستند و کد اجرایی محسوب نمی‌شوند؛ ساختار و ارتباط آن‌ها با runtime نیز بررسی شد.
 
 ## اولویت‌ها
-
-- **P0 — بحرانی:** مانع اجرای اصلی یا باعث خرابی جدی قابلیت اصلی می‌شود.
-- **P1 — بالا:** مشکل مهم در معماری، UX، accessibility، سازگاری یا نگهداری که باید در نزدیک‌ترین مرحله اصلاح شود.
-- **P2 — متوسط:** مشکل قابل‌توجه ولی غیرمسدودکننده.
-- **P3 — پایین:** بهبود کیفیت، مستندسازی یا polish.
+- P0 — بحرانی: خرابی جدی، ریسک امنیتی مهم یا مانع اجرای قابلیت اصلی.
+- P1 — بالا: مشکل مهم در UX، accessibility، correctness یا معماری.
+- P2 — متوسط: مشکل قابل‌توجه ولی غیرمسدودکننده.
+- P3 — پایین: بهبود کیفیت، hardening، performance یا polish.
 
 ## فهرست ایرادات
 
-| # | اولویت | فایل/ناحیه | ایراد | اثر |
+| # | اولویت | فایل/ناحیه | ایراد | وضعیت |
 |---|---|---|---|---|
-| 1 | P1 | `styles/periodic-table.css` | **حل شد:** wrapper جدول اکنون اسکرول افقی واقعی دارد و جدول حداقل عرض خوانا دارد. | — |
-| 2 | P1 | `components/*` در برابر `index.html` | **حل شد:** componentهای HTML مستقل و stale حذف شدند و `index.html` به‌عنوان تنها source of truth markup باقی ماند. | — |
-| 3 | P1 | `scripts/build-element-analysis.mjs` + `README.md` | **حل شد:** خروجی تحلیل اکنون با نام و schema مستقل `data/analyzed/elements-analysis.json` تولید می‌شود و `data/elements-index.json` صراحتاً فقط source runtime است. | — |
-| 4 | P1 | `scripts/periodic-table.js` | **حل شد:** کارت‌های عنصر با native `<button type="button">` ساخته می‌شوند. | — |
-| 5 | P1 | `scripts/element-search.js` | **حل شد:** combobox/listbox اکنون `aria-expanded`، `aria-activedescendant`، `aria-selected` و navigation با Arrow/Home/End/Escape/Enter را مدیریت می‌کند. | — |
-| 6 | P1 | `scripts/periodic-table.js` + `styles/search-box.css` | **حل شد:** قبل از اجرای blink وضعیت `prefers-reduced-motion` بررسی می‌شود و در حالت reduce هیچ sequence جاوااسکریپتی اجرا نمی‌شود؛ اسکرول جستجو نیز در این حالت بدون smooth animation است. | — |
-| 7 | P2 | `scripts/periodic-table.js` | **حل شد:** timerهای هر کارت در `WeakMap` نگهداری و قبل از sequence جدید پاک می‌شوند. | — |
-| 8 | P2 | `scripts/element-data.js` | **حل شد:** پس از reject شدن promise، cache پاک می‌شود تا درخواست بعدی امکان retry داشته باشد. | — |
-| 9 | P2 | `scripts/site-preferences.js` | **حل شد:** زبان ذخیره‌شده فقط در whitelist `fa`/`en` پذیرفته می‌شود و مقدار نامعتبر به `fa` برمی‌گردد. | — |
-| 10 | P2 | `index.html` + `scripts/periodic-table.js` | **حل شد:** live region از container ۱۱۸ کارت جدا و به status کوچک اختصاصی منتقل شد. | — |
-| 11 | P2 | `index.html` | **حل شد:** description، theme-color، Open Graph metadata و title معنادار اضافه شد و title با localeها همگام است. | — |
-| 12 | P3 | کل پروژه | **حل شد:** `package.json`، validation بدون dependency و GitHub Actions برای syntax/JSON/i18n/runtime-data checks اضافه شد. | — |
+| 1 | P1 | styles/periodic-table.css | فشرده‌شدن ۱۸ ستون روی موبایل و نبود اسکرول افقی واقعی | حل شد |
+| 2 | P1 | components/* | componentهای stale و ناسازگار با runtime | حل شد |
+| 3 | P1 | لایه داده/تحلیل | اختلاط source runtime و خروجی تحلیل | حل شد |
+| 4 | P1 | scripts/periodic-table.js | semantics نامناسب کارت‌های تعاملی | حل شد |
+| 5 | P1 | scripts/element-search.js | مدل ناقص combobox/listbox و keyboard navigation | حل شد |
+| 6 | P1 | reduced motion | blink جاوااسکریپتی با prefers-reduced-motion متوقف نمی‌شد | حل شد |
+| 7 | P2 | blink timers | overlap شدن timerها در کلیک‌های سریع | حل شد |
+| 8 | P2 | element-data.js | cache شدن Promise ناموفق و نبود retry | حل شد |
+| 9 | P2 | site-preferences.js | پذیرش locale نامعتبر از localStorage | حل شد |
+| 10 | P2 | live region | قرارگرفتن ۱۱۸ کارت داخل aria-live | حل شد |
+| 11 | P2 | index.html | SEO metadata ناکافی | حل شد |
+| 12 | P3 | CI/tooling | نبود validation و CI پایه | حل شد |
+| 13 | P1 | site-preferences.css + search-box.css + information-boxes.css | کنتراست و theme در Dark Mode برای بعضی سطوح UI کامل نیست | باز |
+| 14 | P1 | periodic-table.js | ترتیب Tab با ترتیب بصری جدول، مخصوصاً f-block، هم‌خوان نیست | باز |
+| 15 | P1 | site-preferences.js | دسترسی مستقیم به localStorage بدون مدیریت SecurityError/Unavailable Storage | باز |
+| 16 | P1 | periodic-table.js + element-data.js | failure state برای load جدول و search یکپارچه نیست | باز |
+| 17 | P2 | validate-project.mjs | validation فقط بخشی از قرارداد داده/HTML را بررسی می‌کند | باز |
+| 18 | P2 | .github/workflows/quality.yml | Actionها با tag نسخه‌ای pin شده‌اند و permissions حداقلی صریح نیست | باز |
+| 19 | P2 | CI + package.json | تحلیل داده در CI اجرا نمی‌شود و test واقعی browser وجود ندارد | باز |
+| 20 | P2 | site-preferences.js | locale بعد از parse از نظر schema و کلیدهای موردنیاز validate نمی‌شود | باز |
+| 21 | P2 | periodic-table.js | layout و categoryها duplicate/hand-maintained هستند و validation مستقل ندارند | باز |
+| 22 | P2 | data/ELEMENT_ATOMIC NUMBER_*.json | حجم و تعداد بالای فایل‌های raw data نگهداری و diff را دشوار می‌کند | باز |
+| 23 | P3 | periodic-table.css | periodic-table-scroll:focus-visible روی عنصر غیرقابل focus عملاً بی‌اثر است | باز |
+| 24 | P3 | periodic-table.css | کلاس element-card--f-block تعریف شده ولی در ساخت کارت استفاده نمی‌شود | باز |
+| 25 | P3 | index.html | SEO پایه بهتر شده اما canonical/robots/icon و metadata کامل‌تر وجود ندارد | باز |
+| 26 | P3 | کل پروژه | تست regression برای interactionهای اصلی وجود ندارد | باز |
 
-## تحلیل جزئی‌تر
+# تحلیل تفصیلی
 
-### 1. Responsive جدول — P1 — حل شد
+## 1 تا 12 — موارد قبلی که اصلاح شده‌اند
 
-در `styles/periodic-table.css`، wrapper جدول به `overflow-x: auto` تغییر کرده و جدول با یک حداقل عرض خوانا (`1120px`) از فشرده‌شدن ۱۸ ستون در نمایشگرهای کوچک جلوگیری می‌کند. اسکرول لمسی و `scrollbar-gutter` نیز در نظر گرفته شده است.
+1. Responsive جدول: wrapper با overflow-x:auto و حداقل عرض خوانا اصلاح شد.
+2. componentهای stale حذف شدند و index.html تنها source of truth markup شد.
+3. runtime data از خروجی تحلیل جدا شد.
+4. کارت‌های عنصر به native button تبدیل شدند.
+5. combobox/listbox و keyboard navigation تکمیل شد.
+6. reduced motion در blink جاوااسکریپتی رعایت شد.
+7. timerهای blink با WeakMap مدیریت شدند.
+8. Promise ناموفق data layer دیگر دائمی cache نمی‌شود.
+9. زبان localStorage فقط از fa/en پذیرفته می‌شود.
+10. live region از grid بزرگ ۱۱۸ کارت جدا شد.
+11. description، theme-color، Open Graph و title اضافه شدند.
+12. package.json، validator و GitHub Actions اضافه شدند.
 
-### 2. componentهای جدا از runtime — P1 — حل شد
+## 13. Dark Mode ناقص — P1
 
-فایل‌های HTML داخل `components/` با `index.html` همگام نبودند و هیچ‌کدام در runtime استفاده نمی‌شدند. این فایل‌های stale حذف شدند تا یک منبع حقیقت برای markup وجود داشته باشد. ساختار چندزبانه فعال نیز همان کلیدهای canonical موجود در `locales/fa.json` و `locales/en.json` را در `index.html` استفاده می‌کند.
+در site-preferences.css برای برخی containerهای اصلی dark theme تعریف شده، اما تمام سطوح UI یکپارچه theme نمی‌شوند.
 
-### 3. مدل تحلیل داده — P1 — حل شد
+- information-box__content پس‌زمینه روشن خود را حفظ می‌کند در حالی که رنگ متن می‌تواند روشن باشد.
+- search-box__results پس‌زمینه روشن دارد ولی رنگ متن از context تیره به ارث می‌رسد.
+- resultهای search در Dark Mode می‌توانند کنتراست نامناسب داشته باشند.
+- theme token مرکزی وجود ندارد و رنگ‌ها در چند فایل به‌صورت literal تکرار شده‌اند.
 
-`scripts/build-element-analysis.mjs` فایل‌های خام `ELEMENT_ATOMIC NUMBER_*.json` را می‌خواند و خروجی object شامل `schema_version` و `elements` تولید می‌کند. در مقابل، runtime از `data/elements-index.json` استفاده می‌کند که یک آرایه مستقیم از ۱۱۸ عنصر است.
+اثر: کاهش خوانایی و accessibility در Dark Mode.
+راهکار: تعریف CSS custom properties برای background/text/border/surface و اعمال صریح theme روی تمام سطح‌های interactive.
 
-اکنون این دو لایه صریحاً جدا هستند: `data/elements-index.json` منبع runtime است و `data/analyzed/elements-analysis.json` خروجی مشتق‌شده تحلیل است.
+## 14. ترتیب Tab با ترتیب بصری جدول — P1
 
-### 4. semantics کارت‌ها — P1 — حل شد
+DOM کارت‌ها بر اساس atomic number ساخته می‌شود، در حالی که CSS Grid کارت‌های 57–71 و 89–103 را به ردیف‌های جدا منتقل می‌کند. در نتیجه keyboard user ممکن است از 56 به f-block برود، در حالی که از نظر بصری ادامه جدول اصلی به 72 می‌رسد.
 
-کارت‌ها با `article` ساخته شده‌اند ولی `role="button"` گرفته‌اند و سپس `tabIndex=0` و handler کیبورد اضافه شده است. این کار قابل اجراست، اما برای یک کنترل تعاملی ساده، `button` native رفتار استانداردتری برای focus و assistive technology فراهم می‌کند.
+اثر: navigation غیرقابل‌پیش‌بینی برای keyboard/assistive-technology users.
+راهکار: هماهنگ‌کردن DOM order با reading/navigation order مطلوب یا تعریف navigation keyboard اختصاصی برای grid. از tabindex مثبت تا حد امکان اجتناب شود.
 
-### 5. جستجو و ARIA — P1 — حل شد
+## 15. localStorage بدون defensive handling — P1
 
-ساختار نتیجه جستجو به سمت combobox/listbox رفته، اما چرخه کامل interaction پیاده نشده است. Enter و Escape پشتیبانی می‌شوند، ولی انتخاب با Arrow keys، focus management و selected state کامل نیست.
+در site-preferences.js چند مسیر مستقیماً localStorage.getItem/setItem را فراخوانی می‌کنند. در محیط‌هایی که storage در دسترس نیست یا SecurityError می‌دهد، initialization تنظیمات می‌تواند متوقف شود.
 
-**نتیجه:** یک combobox/listbox کامل با keyboard navigation و active descendant پیاده‌سازی شده است.
+راهکار: wrapper امن برای storage با try/catch و fallback حافظه‌ای.
 
-### 6. Reduced Motion — P1 — حل شد
+## 16. failure state کامل load — P1
 
-کد blink با `setTimeout` کلاس‌های visual را در سه مرحله اعمال می‌کند. media query مربوط به `prefers-reduced-motion` فقط transition را تغییر می‌دهد، اما transition اصلاً عامل animation اصلی نیست.
+renderPeriodicTable و search هر دو به getElementData وابسته‌اند، اما failure handling مستقل است. جدول پیام خطا نمایش می‌دهد، در حالی که search صرفاً console.error می‌کند و UI وضعیت خطا یا retry ندارد.
 
-**نتیجه:** blink در حالت reduced motion اصلاً اجرا نمی‌شود.
+راهکار: error state مشترک برای data layer و UI feedback مشخص + retry action.
 
-### 7. مدیریت timerهای blink — P2 — حل شد
+## 17. validation داده ناقص — P2
 
-هر اجرای `blinkElementCard` سه timer و یک timer نهایی ایجاد می‌کند. اگر کاربر چند بار سریع کلیک کند، timerهای اجرای قبلی لغو نمی‌شوند.
+validator فعلی تعداد و ترتیب ۱۱۸ عنصر، parity locale، چند key اصلی HTML و syntax اسکریپت‌ها را بررسی می‌کند؛ اما موارد زیر را کامل validate نمی‌کند:
 
-**نتیجه:** timeoutهای هر کارت با `WeakMap` مدیریت می‌شوند.
+- نوع و وجود symbol/name/persian_name برای همه عناصر.
+- یکتا بودن symbol و name.
+- تطابق index با ۱۱۸ فایل raw.
+- تطابق atomic number فایل raw با محتوای همان فایل.
+- قرارداد schema فایل‌های raw.
+- تمام data-i18n و data-i18n-aria-label های HTML با localeها.
+- موفقیت اجرای check:analysis.
 
-### 8. retry داده — P2 — حل شد
+## 18. hardening GitHub Actions — P2
 
-`getElementData()` از یک promise cache استفاده می‌کند که تصمیم خوبی برای جلوگیری از fetch تکراری است؛ اما promise rejected نیز cache می‌شود.
+workflow از actions/checkout@v4 و actions/setup-node@v4 استفاده می‌کند و permissions صریح ندارد. برای workflow production بهتر است Actionها با commit SHA کامل pin شوند و permissions حداقلی تعریف شود. GitHub نیز pin کردن Actionها به SHA کامل را برای immutable/hardening توصیه می‌کند.
 
-**نتیجه:** cache در زمان خطا reset می‌شود.
+## 19. CI و test coverage ناکافی — P2
 
-### 9. اعتبارسنجی locale — P2 — حل شد
+CI فقط npm run check را اجرا می‌کند. اجرای واقعی browser، rendering جدول، search keyboard interaction، تغییر زبان، Dark Mode، reduced motion و check:analysis به‌صورت خودکار تست نمی‌شوند.
 
-`localStorage.getItem("language")` بدون whitelist بررسی می‌شود.
+راهکار: browser smoke/E2E test و اجرای analysis validation در CI.
 
-**نتیجه:** whitelist زبان‌ها در runtime اعمال می‌شود.
+## 20. schema validation برای locale — P2
 
-### 10. live region جدول — P2 — حل شد
+loadLocale فقط JSON را parse می‌کند. schema رسمی برای locale وجود ندارد و missing/extra/incorrect-type بودن مقادیر به‌صورت مرکزی گزارش نمی‌شود.
 
-کل جدول ۱۱۸ عنصر داخل عنصر دارای `aria-live="polite"` است. برای چنین محتوای بزرگی live announcement مناسب نیست.
+راهکار: validator مرکزی برای required keys و type آن‌ها.
 
-**نتیجه:** status مستقل از grid 118 کارت قرار گرفته است.
+## 21. layout و categoryهای hand-maintained — P2
 
-### 11. SEO — P2 — حل شد
+PERIODIC_TABLE_LAYOUT و PERIODIC_TABLE_CATEGORIES مجموعه‌های بزرگی هستند که دستی نگهداری می‌شوند. در صورت تغییر داده، mismatch بین atomic number، position، category و rendering ممکن است رخ دهد.
 
-`index.html` اکنون description، theme-color، Open Graph metadata و title معنادار دارد.
+راهکار: canonical metadata یا validation که تمام ۱۱۸ عنصر دقیقاً layout/category معتبر داشته باشند.
 
-### 12. نبود ابزار کیفیت خودکار — P3 — حل شد
+## 22. raw data fragmentation — P2
 
-پروژه اکنون `package.json` و validation بدون dependency دارد و GitHub Actions در push/PR اجرا می‌شود. validation شامل JSON، ترتیب ۱۱۸ عنصر، parity کلیدهای locale، ساختار live region و syntax همه اسکریپت‌هاست.
+data شامل تعداد زیادی JSON مستقل با نام‌هایی مانند ELEMENT_ATOMIC NUMBER_1.json است. این ساختار audit منبع را ساده می‌کند، اما diff/review را دشوار، naming را نامنظم و scriptها را به regex وابسته می‌کند.
 
-## موارد مثبت مشاهده‌شده
+راهکار: اگر فایل‌های مستقل لازم‌اند، manifest/schema و naming convention بدون space اضافه شود؛ در غیر این صورت canonical dataset versioned نگهداری ساده‌تری دارد.
 
-1. داده‌های ۱۱۸ عنصر در runtime از یک منبع مشترک خوانده می‌شوند و fetch با promise cache از درخواست تکراری جلوگیری می‌کند.
-2. برای خروجی HTML از `textContent` استفاده شده و در بخش‌های بررسی‌شده injection مستقیم با `innerHTML` دیده نشد.
-3. چیدمان جدول ۱۸ گروه را صریحاً مدل کرده و f-block را جداگانه در ردیف‌های ۹ و ۱۰ قرار می‌دهد.
-4. نام فارسی/انگلیسی کارت‌ها از dataset نگهداری می‌شود و با تغییر زبان دوباره render کامل داده لازم نیست.
-5. برای keyboard روی کارت‌ها Enter و Space در نظر گرفته شده است.
-6. ساختار locale مرکزی و پشتیبانی RTL/LTR از ابتدا در معماری لحاظ شده است.
+## 23. focus-visible بی‌اثر — P3
 
-## وضعیت فعلی
+periodic-table-scroll:focus-visible تعریف شده، اما wrapper focusable نیست و tabindex ندارد؛ بنابراین selector در حالت عادی فعال نمی‌شود.
 
-- **Runtime data index:** `data/elements-index.json`
-- **تعداد عناصر runtime:** ۱۱۸
-- **زبان‌ها:** `fa` و `en`
-- **بخش جدول:** `scripts/periodic-table.js` + `styles/periodic-table.css`
-- **جستجو:** `scripts/element-search.js`
-- **تنظیمات زبان/تم:** `scripts/site-preferences.js`
-- **تست/CI:** `npm run check` + GitHub Actions (`.github/workflows/quality.yml`).
-- **وضعیت اصلاح:** هر ۱۲ ایراد ثبت‌شده در این audit اصلاح شده‌اند.
+راهکار: حذف rule یا انتقال focus behavior به عنصر واقعاً focusable.
 
-## ساختار چندزبانه
+## 24. CSS dead rule — P3
 
-سیستم زبان سایت به‌صورت متمرکز مدیریت می‌شود و در حال حاضر از فارسی (`fa`) و انگلیسی (`en`) پشتیبانی می‌کند.
+کلاس element-card--f-block در CSS تعریف شده ولی createCard آن را به کارت‌ها اضافه نمی‌کند.
 
-### فایل‌های زبان
+راهکار: حذف rule یا استفاده واقعی پس از تعیین طراحی نهایی f-block.
 
-- `locales/fa.json` — تمام متن‌ها و برچسب‌های فارسی رابط کاربری.
-- `locales/en.json` — تمام متن‌ها و برچسب‌های انگلیسی رابط کاربری.
-- `scripts/site-preferences.js` — بارگذاری و اعمال فایل زبان، تغییر جهت `RTL/LTR` و ذخیره زبان انتخاب‌شده در `localStorage`.
+## 25. SEO هنوز کامل نیست — P3
 
-برای اضافه‌کردن متن جدید به سایت، کلید متن باید در هر دو فایل locale تعریف شود و سپس در HTML با `data-i18n` استفاده شود. برای برچسب‌های دسترسی نیز از `data-i18n-aria-label` استفاده شود.
+SEO پایه اضافه شده، اما canonical URL، robots در صورت نیاز، favicon/site icon، Open Graph image و metadata کامل‌تر شبکه‌های اجتماعی وجود ندارند.
 
-## جدول تناوبی
+## 26. نبود regression test — P3
 
-باکس بعد از جستجو به‌عنوان جدول تناوبی عناصر استفاده می‌شود و ساختار آن بر اساس چیدمان استاندارد ۱۸ گروه و ۷ دوره پیاده‌سازی شده است.
+validator فعلی static validation است و تضمین نمی‌کند تغییر آینده در JavaScript باعث خرابی search selection، language switching، blinking، table rendering یا theme switching نشود.
 
-- `data/elements-index.json` — منبع runtime شامل ۱۱۸ عنصر با عدد اتمی، نماد، نام انگلیسی و نام فارسی.
-- `scripts/periodic-table.js` — ساخت کارت‌های ۱۱۸ عنصر، جایگذاری در گروه/دوره صحیح، مدیریت لانتانیدها و اکتینیدها و تعویض نام فارسی/انگلیسی.
-- `styles/periodic-table.css` — چیدمان واکنش‌گرا، رنگ‌بندی دسته‌های عناصر، کارت‌ها و حالت تاریک جدول.
-- جدول از نظر ساختار شیمیایی همیشه `LTR` است تا ترتیب گروه‌ها و نمادهای عناصر ثابت بماند؛ نام عنصر بر اساس زبان صفحه تغییر می‌کند.
+راهکار: حداقل browser smoke test برای مسیرهای اصلی.
 
-> **وضعیت:** اسکرول افقی موبایل در ایراد شماره 1 اصلاح شده است.
+# یافته‌های مثبت
 
-## داده عناصر
+1. runtime فقط index سبک ۱۱۸ عنصری را می‌خواند و ۱۱۸ فایل raw در startup fetch نمی‌شوند.
+2. ساخت DOM با createElement و textContent انجام می‌شود و در مسیرهای بررسی‌شده injection با innerHTML دیده نشد.
+3. کارت‌ها native button هستند.
+4. RTL/LTR و bidi جداگانه مدیریت شده‌اند.
+5. search از normalized Persian text استفاده می‌کند.
+6. Promise caching از fetchهای تکراری جلوگیری می‌کند.
+7. error handling برای rendering جدول وجود دارد.
+8. CI فعلی بدون dependency خارجی برای validation پروژه قابل اجراست.
+9. داده runtime تعداد و ترتیب ۱۱۸ عنصر را حفظ می‌کند.
+10. ساختار پروژه کوچک و قابل توسعه است.
 
-پوشه `data/` شامل فایل‌های JSON مستقل عناصر و فایل index runtime است.
+# دامنه و محدودیت
 
-### لایه تحلیل داده
+- بررسی source شامل index.html، تمام scripts/ و styles/، localeها، package/CI و runtime data index انجام شد.
+- فایل‌های خام عنصر به‌عنوان داده علمی بررسی شدند، نه خط‌به‌خط از نظر صحت علمی هر property.
+- صحت علمی تک‌تک مقادیر ۱۱۸ فایل raw بدون تطبیق با منبع علمی خارجی تأیید نشده است.
+- تست visual واقعی در همه browser/deviceها در این audit انجام نشده است؛ بنابراین مشکلات browser-specific ممکن است باقی مانده باشند.
 
-`scripts/build-element-analysis.mjs` فقط خروجی مشتق‌شده `data/analyzed/elements-analysis.json` را تولید می‌کند. این فایل با `data/elements-index.json` که source runtime است متفاوت و صریحاً نام‌گذاری شده است.
+# وضعیت نهایی
 
-اجرای تحلیل از ریشه پروژه:
+تعداد موارد ثبت‌شده: 26
+حل‌شده از auditهای قبلی: 12
+ایرادات جدید باز: 14
+P0: 0
+P1 باز: 4
+P2 باز: 6
+P3 باز: 4
 
-```bash
-node scripts/build-element-analysis.mjs
-```
-
-اسکریپت در صورتی که دقیقاً ۱۱۸ فایل عنصر پیدا نکند متوقف می‌شود تا از ناقص‌شدن index جلوگیری شود.
-
-## ساختار فعلی
-
-- `index.html` — نقطه ورود صفحه و اتصال قابلیت‌ها.
-- `index.html` — تنها منبع markup صفحه؛ componentهای HTML stale حذف شده‌اند تا duplication ایجاد نشود.
-- `styles/` — فایل‌های CSS تفکیک‌شده برای قابلیت‌ها و قوانین RTL/LTR.
-- `scripts/` — منطق تعاملی، تنظیمات سایت و ابزار تحلیل داده.
-- `locales/` — فرهنگ لغات زبان‌های پشتیبانی‌شده.
-- `data/` — داده خام عناصر و index runtime.
-
-## استاندارد زبان
-
-- فارسی و عربی با جهت `RTL` نمایش داده می‌شوند.
-- انگلیسی با جهت `LTR` نمایش داده می‌شود.
-- متن‌های ترکیبی از قوانین دوطرفه (`bidi`) استفاده می‌کنند.
-- زبان انتخاب‌شده در مرورگر ذخیره می‌شود و در مراجعه بعدی حفظ خواهد شد.
+این README گزارش audit است و در این مرحله کد ایرادات جدید شماره 13 تا 26 تغییر داده نشده است.
