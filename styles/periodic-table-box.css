@@ -70,13 +70,14 @@
 }
 
 .element-card__name {
-  width: 100%;
+  width: max-content;
+  min-width: 100%;
   font-size: 0.78rem;
   line-height: 1.4;
   text-align: center;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 html[dir="rtl"] .element-card__name {
