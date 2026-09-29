@@ -1,26 +1,3 @@
-const PERIODIC_TABLE_LAYOUT = new Map([
-  [1, [1, 1]], [2, [1, 18]],
-  [3, [2, 1]], [4, [2, 2]], [5, [2, 13]], [6, [2, 14]], [7, [2, 15]], [8, [2, 16]], [9, [2, 17]], [10, [2, 18]],
-  [11, [3, 1]], [12, [3, 2]], [13, [3, 13]], [14, [3, 14]], [15, [3, 15]], [16, [3, 16]], [17, [3, 17]], [18, [3, 18]],
-  [19, [4, 1]], [20, [4, 2]], [21, [4, 3]], [22, [4, 4]], [23, [4, 5]], [24, [4, 6]], [25, [4, 7]], [26, [4, 8]], [27, [4, 9]], [28, [4, 10]], [29, [4, 11]], [30, [4, 12]], [31, [4, 13]], [32, [4, 14]], [33, [4, 15]], [34, [4, 16]], [35, [4, 17]], [36, [4, 18]],
-  [37, [5, 1]], [38, [5, 2]], [39, [5, 3]], [40, [5, 4]], [41, [5, 5]], [42, [5, 6]], [43, [5, 7]], [44, [5, 8]], [45, [5, 9]], [46, [5, 10]], [47, [5, 11]], [48, [5, 12]], [49, [5, 13]], [50, [5, 14]], [51, [5, 15]], [52, [5, 16]], [53, [5, 17]], [54, [5, 18]],
-  [55, [6, 1]], [56, [6, 2]], [72, [6, 4]], [73, [6, 5]], [74, [6, 6]], [75, [6, 7]], [76, [6, 8]], [77, [6, 9]], [78, [6, 10]], [79, [6, 11]], [80, [6, 12]], [81, [6, 13]], [82, [6, 14]], [83, [6, 15]], [84, [6, 16]], [85, [6, 17]], [86, [6, 18]],
-  [87, [7, 1]], [88, [7, 2]], [104, [7, 4]], [105, [7, 5]], [106, [7, 6]], [107, [7, 7]], [108, [7, 8]], [109, [7, 9]], [110, [7, 10]], [111, [7, 11]], [112, [7, 12]], [113, [7, 13]], [114, [7, 14]], [115, [7, 15]], [116, [7, 16]], [117, [7, 17]], [118, [7, 18]]
-]);
-
-const PERIODIC_TABLE_CATEGORIES = {
-  alkali: new Set([3, 11, 19, 37, 55, 87]), alkaline: new Set([4, 12, 20, 38, 56, 88]),
-  transition: new Set([...Array.from({ length: 10 }, (_, i) => i + 21), ...Array.from({ length: 10 }, (_, i) => i + 39), ...Array.from({ length: 9 }, (_, i) => i + 72), ...Array.from({ length: 9 }, (_, i) => i + 104)]),
-  postTransition: new Set([13, 31, 32, 49, 50, 81, 82, 83, 84, 113, 114, 115, 116]), metalloid: new Set([5, 14, 33, 51, 52]),
-  nonmetal: new Set([1, 6, 7, 8, 15, 16, 34]), halogen: new Set([9, 17, 35, 53, 85, 117]), noble: new Set([2, 10, 18, 36, 54, 86, 118]),
-  lanthanide: new Set(Array.from({ length: 15 }, (_, i) => i + 57)), actinide: new Set(Array.from({ length: 15 }, (_, i) => i + 89))
-};
-
-const getElementCategory = (atomicNumber) => {
-  for (const [category, numbers] of Object.entries(PERIODIC_TABLE_CATEGORIES)) if (numbers.has(atomicNumber)) return category;
-  return "unknown";
-};
-
 const blinkTimers = new WeakMap();
 const blinkClasses = ["element-card--blink-green", "element-card--blink-yellow", "element-card--blink-orange"];
 
@@ -34,7 +11,6 @@ const clearBlink = (card) => {
 const blinkElementCard = (card) => {
   if (!card) return;
   clearBlink(card);
-
   if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
 
   const timers = [];
@@ -49,16 +25,60 @@ const blinkElementCard = (card) => {
 };
 window.blinkElementCard = blinkElementCard;
 
-const createCard = (element, row, column) => {
+let periodicTableMetaPromise;
+const getPeriodicTableMeta = () => {
+  if (!periodicTableMetaPromise) {
+    periodicTableMetaPromise = fetch("data/periodic-table-meta.json", { cache: "no-cache" })
+      .then((response) => {
+        if (!response.ok) throw new Error("Unable to load periodic table metadata");
+        return response.json();
+      })
+      .then((payload) => {
+        if (!payload || payload.element_count !== 118 || !Array.isArray(payload.elements) || payload.elements.length !== 118) {
+          throw new Error("Periodic table metadata requires exactly 118 elements");
+        }
+        return new Map(payload.elements.map((item) => [item.atomic_number, item]));
+      })
+      .catch((error) => {
+        periodicTableMetaPromise = undefined;
+        throw error;
+      });
+  }
+  return periodicTableMetaPromise;
+};
+
+const moveCardFocus = (cards, currentCard, direction) => {
+  const row = Number(currentCard.dataset.row);
+  const column = Number(currentCard.dataset.column);
+  if (!Number.isFinite(row) || !Number.isFinite(column)) return;
+
+  const delta = direction === "left" || direction === "up" ? -1 : 1;
+  const target = cards
+    .map((card) => ({ card, row: Number(card.dataset.row), column: Number(card.dataset.column) }))
+    .filter((item) => Number.isFinite(item.row) && Number.isFinite(item.column))
+    .find((item) => direction === "left" || direction === "right"
+      ? item.row === row && item.column === column + delta
+      : item.column === column && item.row === row + delta);
+
+  if (!target) return;
+  currentCard.tabIndex = -1;
+  target.card.tabIndex = 0;
+  target.card.focus();
+};
+
+const createCard = (element, meta) => {
   const card = document.createElement("button");
   card.type = "button";
-  card.className = `element-card element-card--${getElementCategory(element.atomic_number)}`;
-  card.style.gridRow = String(row);
-  card.style.gridColumn = String(column);
+  card.className = `element-card element-card--${meta.category}`;
+  card.style.gridRow = String(meta.row);
+  card.style.gridColumn = String(meta.column);
   card.dataset.atomicNumber = String(element.atomic_number);
   card.dataset.englishName = element.name;
   card.dataset.persianName = element.persian_name;
+  card.dataset.row = String(meta.row);
+  card.dataset.column = String(meta.column);
   card.setAttribute("aria-label", `${element.atomic_number} ${element.persian_name}`);
+  card.tabIndex = -1;
 
   const atomicNumber = document.createElement("span");
   atomicNumber.className = "element-card__atomic-number";
@@ -70,7 +90,15 @@ const createCard = (element, row, column) => {
   name.className = "element-card__name";
   name.textContent = element.persian_name;
   card.append(atomicNumber, symbol, name);
+
   card.addEventListener("click", () => blinkElementCard(card));
+  card.addEventListener("keydown", (event) => {
+    const keyMap = { ArrowLeft: "left", ArrowRight: "right", ArrowUp: "up", ArrowDown: "down" };
+    const direction = keyMap[event.key];
+    if (!direction) return;
+    event.preventDefault();
+    moveCardFocus([...document.querySelectorAll(".element-card")], card, direction);
+  });
   return card;
 };
 
@@ -80,19 +108,15 @@ const renderPeriodicTable = async () => {
   if (!table) return;
   if (status) status.textContent = document.documentElement.lang === "fa" ? "در حال بارگذاری جدول تناوبی…" : "Loading periodic table…";
 
-  const elements = await window.getElementData();
+  const [elements, metadata] = await Promise.all([window.getElementData(), getPeriodicTableMeta()]);
   table.replaceChildren();
   elements.forEach((element) => {
-    const isLanthanide = element.atomic_number >= 57 && element.atomic_number <= 71;
-    const isActinide = element.atomic_number >= 89 && element.atomic_number <= 103;
-    const layout = PERIODIC_TABLE_LAYOUT.get(element.atomic_number);
-    if (!layout && !isLanthanide && !isActinide) return;
-    let row; let column;
-    if (isLanthanide) { row = 9; column = element.atomic_number - 53; }
-    else if (isActinide) { row = 10; column = element.atomic_number - 85; }
-    else { [row, column] = layout; }
-    table.appendChild(createCard(element, row, column));
+    const meta = metadata.get(element.atomic_number);
+    if (meta) table.appendChild(createCard(element, meta));
   });
+
+  const firstCard = table.querySelector(".element-card");
+  if (firstCard) firstCard.tabIndex = 0;
   if (status) status.textContent = document.documentElement.lang === "fa" ? "جدول تناوبی آماده است." : "Periodic table ready.";
 };
 
@@ -108,12 +132,25 @@ window.updateElementCardLanguages = () => {
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
-  try {
-    await renderPeriodicTable();
-    window.updateElementCardLanguages();
-  } catch (error) {
-    const status = document.querySelector("#periodic-table-status");
-    if (status) status.textContent = document.documentElement.lang === "fa" ? "بارگذاری جدول تناوبی ناموفق بود." : "Unable to load the periodic table.";
-    console.error(error);
-  }
+  const load = async () => {
+    try {
+      await renderPeriodicTable();
+      window.updateElementCardLanguages();
+    } catch (error) {
+      const status = document.querySelector("#periodic-table-status");
+      if (!status) return;
+      const language = document.documentElement.lang === "fa";
+      status.replaceChildren();
+      const message = document.createElement("span");
+      message.textContent = language ? "بارگذاری جدول ناموفق بود." : "Unable to load the periodic table.";
+      const retry = document.createElement("button");
+      retry.type = "button";
+      retry.className = "periodic-table-status__retry";
+      retry.textContent = language ? "تلاش مجدد" : "Retry";
+      retry.addEventListener("click", load, { once: true });
+      status.append(message, " ", retry);
+      console.error(error);
+    }
+  };
+  await load();
 });
