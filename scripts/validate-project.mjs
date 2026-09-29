@@ -58,6 +58,15 @@ for (const item of metadata.elements) {
 }
 if (metadataNumbers.size !== 118) fail("Periodic table metadata must cover all 118 atomic numbers.");
 
+const manifest = readJson("data/raw-elements-manifest.json");
+if (manifest.schema_version !== "raw-element-manifest-v1" || manifest.element_count !== 118 || !Array.isArray(manifest.files) || manifest.files.length !== 118) {
+  fail("raw-elements-manifest.json must contain exactly 118 files.");
+}
+for (const [index, file] of manifest.files.entries()) {
+  const expected = `data/ELEMENT_ATOMIC NUMBER_${index + 1}.json`;
+  if (file !== expected || !fs.existsSync(path.join(root, file))) fail(`Invalid raw element manifest entry: ${file}`);
+}
+
 const dataDir = path.join(root, "data");
 const rawFiles = fs.readdirSync(dataDir).filter((name) => /^ELEMENT_ATOMIC NUMBER_\d+\.json$/.test(name));
 if (rawFiles.length !== 118) fail(`Expected 118 raw element files, found ${rawFiles.length}.`);
