@@ -21,16 +21,16 @@
 |---|---|---|---|---|
 | 1 | P1 | `styles/periodic-table.css` | **حل شد:** wrapper جدول اکنون اسکرول افقی واقعی دارد و جدول حداقل عرض خوانا دارد. | — |
 | 2 | P1 | `components/*` در برابر `index.html` | **حل شد:** componentهای HTML مستقل و stale حذف شدند و `index.html` به‌عنوان تنها source of truth markup باقی ماند. | — |
-| 3 | P1 | `scripts/build-element-analysis.mjs` + `README.md` | مستندات از `data/analyzed/` و مدل تحلیل مشتق‌شده صحبت می‌کنند، ولی ساختار فعلی مخزن فایل فعال `data/elements-index.json` را در ریشه `data/` دارد و لایه `data/analyzed/` در وضعیت فعلی وجود ندارد. اسکریپت نیز خروجی جدیدی با schema متفاوت تولید می‌کند. | ابهام در منبع واقعی داده و خطر divergence بین داده runtime و داده تحلیل |
-| 4 | P1 | `scripts/periodic-table.js` | کارت عنصر با `article role="button"` ساخته شده است. برای عنصر تعاملی، استفاده از `button` واقعی semantics و keyboard/accessibility بهتری دارد. | افزایش پیچیدگی accessibility و احتمال رفتار متفاوت screen readerها |
-| 5 | P1 | `scripts/element-search.js` | الگوی ARIA جستجو ناقص است: `role="listbox"` و `role="option"` استفاده شده، اما navigation با ArrowUp/ArrowDown، مدیریت focus و `aria-activedescendant` پیاده‌سازی نشده و فقط اولین گزینه `aria-selected="false"` می‌گیرد. | جستجو برای keyboard و screen readerها تجربه ناقصی دارد |
-| 6 | P1 | `scripts/periodic-table.js` + `styles/search-box.css` | پشتیبانی `prefers-reduced-motion` عملاً animation جاوااسکریپتی blink را متوقف نمی‌کند؛ CSS فقط `transition: none` تعیین کرده در حالی که تغییرات با `setTimeout` و class انجام می‌شوند. | عدم رعایت کامل نیاز کاربران حساس به حرکت |
-| 7 | P2 | `scripts/periodic-table.js` | هر کلیک روی کارت سه timeout مستقل ایجاد می‌کند و کلیک‌های سریع می‌توانند sequenceهای قبلی را با sequence جدید تداخل دهند. | flicker، outline نهایی غیرقابل‌پیش‌بینی و هزینه اضافی timer |
-| 8 | P2 | `scripts/element-data.js` | promise داده پس از reject شدن در `elementDataPromise` باقی می‌ماند؛ retry واقعی در همان session انجام نمی‌شود. | خطای موقت شبکه می‌تواند بارگذاری داده را برای ادامه session مسدود کند |
-| 9 | P2 | `scripts/site-preferences.js` | مقدار `language` مستقیماً از `localStorage` خوانده می‌شود و قبل از fetch اعتبارسنجی نمی‌شود. مقدار نامعتبر باعث خطای 404 می‌شود. | تنظیمات خراب یا دستکاری‌شده باعث شکست بارگذاری locale می‌شود |
-| 10 | P2 | `scripts/periodic-table.js` | جدول با `aria-live="polite"` روی container اصلی ۱۱۸ کارت را هنگام render در ناحیه live قرار می‌دهد. | ممکن است screen reader محتوای بسیار زیادی را announce کند |
-| 11 | P2 | `index.html` | برای SEO پایه `meta description` و metadataهای مرتبط وجود ندارد؛ title نیز بسیار عمومی است. | discoverability و preview اشتراک‌گذاری ضعیف‌تر |
-| 12 | P3 | کل پروژه | هیچ `package.json`، تست خودکار، lint/format configuration یا CI قابل مشاهده در ریشه مخزن وجود ندارد. | regressionها و خطاهای accessibility/JS/CSS به‌صورت خودکار کنترل نمی‌شوند |
+| 3 | P1 | `scripts/build-element-analysis.mjs` + `README.md` | **حل شد:** خروجی تحلیل اکنون با نام و schema مستقل `data/analyzed/elements-analysis.json` تولید می‌شود و `data/elements-index.json` صراحتاً فقط source runtime است. | — |
+| 4 | P1 | `scripts/periodic-table.js` | **حل شد:** کارت‌های عنصر با native `<button type="button">` ساخته می‌شوند. | — |
+| 5 | P1 | `scripts/element-search.js` | **حل شد:** combobox/listbox اکنون `aria-expanded`، `aria-activedescendant`، `aria-selected` و navigation با Arrow/Home/End/Escape/Enter را مدیریت می‌کند. | — |
+| 6 | P1 | `scripts/periodic-table.js` + `styles/search-box.css` | **حل شد:** قبل از اجرای blink وضعیت `prefers-reduced-motion` بررسی می‌شود و در حالت reduce هیچ sequence جاوااسکریپتی اجرا نمی‌شود؛ اسکرول جستجو نیز در این حالت بدون smooth animation است. | — |
+| 7 | P2 | `scripts/periodic-table.js` | **حل شد:** timerهای هر کارت در `WeakMap` نگهداری و قبل از sequence جدید پاک می‌شوند. | — |
+| 8 | P2 | `scripts/element-data.js` | **حل شد:** پس از reject شدن promise، cache پاک می‌شود تا درخواست بعدی امکان retry داشته باشد. | — |
+| 9 | P2 | `scripts/site-preferences.js` | **حل شد:** زبان ذخیره‌شده فقط در whitelist `fa`/`en` پذیرفته می‌شود و مقدار نامعتبر به `fa` برمی‌گردد. | — |
+| 10 | P2 | `index.html` + `scripts/periodic-table.js` | **حل شد:** live region از container ۱۱۸ کارت جدا و به status کوچک اختصاصی منتقل شد. | — |
+| 11 | P2 | `index.html` | **حل شد:** description، theme-color، Open Graph metadata و title معنادار اضافه شد و title با localeها همگام است. | — |
+| 12 | P3 | کل پروژه | **حل شد:** `package.json`، validation بدون dependency و GitHub Actions برای syntax/JSON/i18n/runtime-data checks اضافه شد. | — |
 
 ## تحلیل جزئی‌تر
 
@@ -42,61 +42,59 @@
 
 فایل‌های HTML داخل `components/` با `index.html` همگام نبودند و هیچ‌کدام در runtime استفاده نمی‌شدند. این فایل‌های stale حذف شدند تا یک منبع حقیقت برای markup وجود داشته باشد. ساختار چندزبانه فعال نیز همان کلیدهای canonical موجود در `locales/fa.json` و `locales/en.json` را در `index.html` استفاده می‌کند.
 
-### 3. مدل تحلیل داده — P1
+### 3. مدل تحلیل داده — P1 — حل شد
 
 `scripts/build-element-analysis.mjs` فایل‌های خام `ELEMENT_ATOMIC NUMBER_*.json` را می‌خواند و خروجی object شامل `schema_version` و `elements` تولید می‌کند. در مقابل، runtime از `data/elements-index.json` استفاده می‌کند که یک آرایه مستقیم از ۱۱۸ عنصر است.
 
-این دو schema باید صریحاً از هم تفکیک یا یکی شوند؛ در غیر این صورت احتمال استفاده اشتباه از خروجی تحلیل به‌عنوان source runtime بالا می‌رود.
+اکنون این دو لایه صریحاً جدا هستند: `data/elements-index.json` منبع runtime است و `data/analyzed/elements-analysis.json` خروجی مشتق‌شده تحلیل است.
 
-### 4. semantics کارت‌ها — P1
+### 4. semantics کارت‌ها — P1 — حل شد
 
 کارت‌ها با `article` ساخته شده‌اند ولی `role="button"` گرفته‌اند و سپس `tabIndex=0` و handler کیبورد اضافه شده است. این کار قابل اجراست، اما برای یک کنترل تعاملی ساده، `button` native رفتار استانداردتری برای focus و assistive technology فراهم می‌کند.
 
-### 5. جستجو و ARIA — P1
+### 5. جستجو و ARIA — P1 — حل شد
 
 ساختار نتیجه جستجو به سمت combobox/listbox رفته، اما چرخه کامل interaction پیاده نشده است. Enter و Escape پشتیبانی می‌شوند، ولی انتخاب با Arrow keys، focus management و selected state کامل نیست.
 
-**راهکار:** یا یک combobox استاندارد کامل پیاده شود، یا ساختار ساده‌تر و semantic انتخاب شود تا ARIA اضافی بدون behavior متناظر باقی نماند.
+**نتیجه:** یک combobox/listbox کامل با keyboard navigation و active descendant پیاده‌سازی شده است.
 
-### 6. Reduced Motion — P1
+### 6. Reduced Motion — P1 — حل شد
 
 کد blink با `setTimeout` کلاس‌های visual را در سه مرحله اعمال می‌کند. media query مربوط به `prefers-reduced-motion` فقط transition را تغییر می‌دهد، اما transition اصلاً عامل animation اصلی نیست.
 
-**راهکار:** قبل از اجرای blink، `matchMedia('(prefers-reduced-motion: reduce)'` بررسی شود یا animation با CSS و media query به‌صورت کامل کنترل شود.
+**نتیجه:** blink در حالت reduced motion اصلاً اجرا نمی‌شود.
 
-### 7. مدیریت timerهای blink — P2
+### 7. مدیریت timerهای blink — P2 — حل شد
 
 هر اجرای `blinkElementCard` سه timer و یک timer نهایی ایجاد می‌کند. اگر کاربر چند بار سریع کلیک کند، timerهای اجرای قبلی لغو نمی‌شوند.
 
-**راهکار:** یک animation state یا timeout reference برای هر کارت نگهداری و قبل از اجرای sequence جدید پاک شود.
+**نتیجه:** timeoutهای هر کارت با `WeakMap` مدیریت می‌شوند.
 
-### 8. retry داده — P2
+### 8. retry داده — P2 — حل شد
 
 `getElementData()` از یک promise cache استفاده می‌کند که تصمیم خوبی برای جلوگیری از fetch تکراری است؛ اما promise rejected نیز cache می‌شود.
 
-**راهکار:** در `catch`، cache به `undefined` برگردانده شود تا retry کنترل‌شده ممکن باشد.
+**نتیجه:** cache در زمان خطا reset می‌شود.
 
-### 9. اعتبارسنجی locale — P2
+### 9. اعتبارسنجی locale — P2 — حل شد
 
 `localStorage.getItem("language")` بدون whitelist بررسی می‌شود.
 
-**راهکار:** فقط `fa` و `en` مجاز باشند و در غیر این صورت مقدار پیش‌فرض `fa` انتخاب شود.
+**نتیجه:** whitelist زبان‌ها در runtime اعمال می‌شود.
 
-### 10. live region جدول — P2
+### 10. live region جدول — P2 — حل شد
 
 کل جدول ۱۱۸ عنصر داخل عنصر دارای `aria-live="polite"` است. برای چنین محتوای بزرگی live announcement مناسب نیست.
 
-**راهکار:** live region کوچک و اختصاصی برای status بارگذاری/انتخاب عنصر ایجاد شود.
+**نتیجه:** status مستقل از grid 118 کارت قرار گرفته است.
 
-### 11. SEO — P2
+### 11. SEO — P2 — حل شد
 
-`index.html` فقط title عمومی `Chemistry` دارد. description و metadataهای پایه برای موتور جستجو و اشتراک‌گذاری وجود ندارد.
+`index.html` اکنون description، theme-color، Open Graph metadata و title معنادار دارد.
 
-### 12. نبود ابزار کیفیت خودکار — P3
+### 12. نبود ابزار کیفیت خودکار — P3 — حل شد
 
-پروژه فاقد package manager metadata و pipeline قابل مشاهده برای lint، format، test یا validation است.
-
-**راهکار:** حداقل validation مربوط به JSON، JavaScript syntax، accessibility smoke test و build/check در CI اضافه شود.
+پروژه اکنون `package.json` و validation بدون dependency دارد و GitHub Actions در push/PR اجرا می‌شود. validation شامل JSON، ترتیب ۱۱۸ عنصر، parity کلیدهای locale، ساختار live region و syntax همه اسکریپت‌هاست.
 
 ## موارد مثبت مشاهده‌شده
 
@@ -115,8 +113,8 @@
 - **بخش جدول:** `scripts/periodic-table.js` + `styles/periodic-table.css`
 - **جستجو:** `scripts/element-search.js`
 - **تنظیمات زبان/تم:** `scripts/site-preferences.js`
-- **تست/CI:** در ریشه مخزن مورد قابل مشاهده‌ای وجود ندارد.
-- **وضعیت اصلاح:** موارد 1 و 2 اصلاح شده‌اند؛ اولویت بعدی بررسی موارد 3 تا 6 است.
+- **تست/CI:** `npm run check` + GitHub Actions (`.github/workflows/quality.yml`).
+- **وضعیت اصلاح:** هر ۱۲ ایراد ثبت‌شده در این audit اصلاح شده‌اند.
 
 ## ساختار چندزبانه
 
@@ -147,7 +145,7 @@
 
 ### لایه تحلیل داده
 
-`scripts/build-element-analysis.mjs` یک لایه مشتق‌شده برای تحلیل فایل‌های خام عناصر تولید می‌کند. خروجی این اسکریپت با index runtime یکسان نیست و باید به‌صورت مستقل و صریح مستندسازی/مدیریت شود؛ این موضوع در ایراد شماره 3 ثبت شده است.
+`scripts/build-element-analysis.mjs` فقط خروجی مشتق‌شده `data/analyzed/elements-analysis.json` را تولید می‌کند. این فایل با `data/elements-index.json` که source runtime است متفاوت و صریحاً نام‌گذاری شده است.
 
 اجرای تحلیل از ریشه پروژه:
 
