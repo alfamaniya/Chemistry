@@ -94,12 +94,10 @@ body {
   background: rgba(130, 220, 165, 0.16);
 }
 
-.dark-mode .search-box__no-results,
-.dark-mode .periodic-table-status {
+.dark-mode .search-box__no-results {
   color: var(--muted);
 }
 
-.dark-mode .periodic-table-status__retry,
 .dark-mode .search-box__retry {
   color: var(--accent);
   border-color: var(--border);
