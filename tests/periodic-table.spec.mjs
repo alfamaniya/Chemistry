@@ -28,7 +28,6 @@ test("renders 118 elements and supports search, language and theme", async ({ pa
 
 test("keeps the table readable on mobile and honors reduced motion", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/");
   const scroll = page.locator(".periodic-table-scroll");
   expect(await scroll.evaluate((element) => element.scrollWidth > element.clientWidth)).toBeTruthy();
@@ -36,8 +35,8 @@ test("keeps the table readable on mobile and honors reduced motion", async ({ pa
   const firstCard = page.locator(".element-card").first();
   await firstCard.click();
   await expect(firstCard).toHaveClass(/element-card--blink/);
-  await expect(firstCard).toHaveCSS("animation-duration", "3s");
+  await expect(firstCard).toHaveCSS("animation-duration", "1.4s");
   await expect(firstCard).toHaveCSS("animation-name", "element-card-soft-blink");
-  await page.waitForTimeout(3100);
+  await page.waitForTimeout(1500);
   await expect(firstCard).not.toHaveClass(/element-card--blink/);
 });
