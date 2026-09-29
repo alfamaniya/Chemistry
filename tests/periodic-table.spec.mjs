@@ -7,15 +7,21 @@ test("renders 118 elements and supports search, language and theme", async ({ pa
   await expect(page.locator("#periodic-table-status")).toContainText(/ready|آماده/);
 
   const search = page.getByRole("combobox", { name: "جستجو" });
-  await search.fill("hydrogen");
+  await search.fill("هیدروژن");
   await expect(page.getByRole("option")).toHaveCount(1);
   await search.press("ArrowDown");
   await search.press("Enter");
-  await expect(search).toHaveValue("Hydrogen");
+  await expect(search).toHaveValue("هیدروژن");
 
   await page.getByRole("button", { name: "English" }).click();
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
   await expect(page.getByRole("combobox", { name: "Search" })).toBeVisible();
+
+  const englishSearch = page.getByRole("combobox", { name: "Search" });
+  await englishSearch.fill("Hydrogen");
+  await expect(page.getByRole("option")).toHaveCount(1);
+  await englishSearch.press("Enter");
+  await expect(englishSearch).toHaveValue("Hydrogen");
 
   await page.getByRole("button", { name: "Dark mode" }).click();
   await expect(page.locator("html")).toHaveClass(/dark-mode/);
