@@ -1,151 +1,119 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" data-theme="light">
+<html lang="fa" dir="rtl" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>جدول تناوبی عناصر | Periodic Table</title>
+<title>ELEMENTS — Interactive Periodic Table</title>
 <style>
-:root{--bg:#f3f5fa;--pn:#fff;--tx:#1a1f36;--mu:#586079;--bd:#d6dae5;--ac:#2563eb;--mx:38%;--cb:#cdd1dd;--ct:#171c35;
---alkali:#f8a7aa;--alkaline:#cbc6f3;--transition:#b5d2f7;--post:#b4eea6;--metalloid:#dae49d;--nonmetal:#fdf6a2;--halogen:#fbe18c;--noble:#fcd6a8;--lanthanide:#a4eded;--actinide:#afF1d1;--unknown:#e5e7eb}
-[data-theme=dark]{--bg:#0d1324;--pn:#172038;--tx:#e8ecf8;--mu:#9ba6c2;--bd:#2c3659;--ac:#6ea0ff;--mx:10%;--cb:#3a4568;--ct:#f2f5ff;
---alkali:#82343d;--alkaline:#4b4690;--transition:#2d5589;--post:#2f6c3b;--metalloid:#5d6b2b;--nonmetal:#7b701e;--halogen:#8b6b1c;--noble:#8b5b24;--lanthanide:#206d71;--actinide:#206f53;--unknown:#3a4252}
+:root{
+ --bg:#05070d;--panel:rgba(10,14,24,.78);--panel2:rgba(255,255,255,.045);
+ --ink:#f4f7ff;--muted:#aab3c6;--line:rgba(255,255,255,.13);--accent:#e8d1cb;
+ --alkali:#a9565f;--alkaline:#756fae;--transition:#4f79a8;--post:#4f9360;
+ --metalloid:#89974d;--nonmetal:#8d822c;--halogen:#a7832c;--noble:#9a6a3a;
+ --lanthanide:#3b8585;--actinide:#398261;--unknown:#596174;
+ --mx:0%;--cb:rgba(255,255,255,.35);--ct:#fff;
+}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.6 Vazirmatn,"Segoe UI",Tahoma,system-ui,sans-serif;transition:background .3s,color .3s}
-button,select,input{font:inherit;color:inherit}
+html{min-height:100%;background:var(--bg)}
+body{margin:0;min-height:100vh;background:
+ radial-gradient(circle at 50% 15%,rgba(113,125,155,.16),transparent 34%),
+ linear-gradient(135deg,#05070d,#0a0d15 55%,#05070d);
+ color:var(--ink);font:14px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+ -webkit-font-smoothing:antialiased}
+button,input,select{font:inherit;color:inherit}
 button{cursor:pointer}
-:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
-.wrap{max-width:1500px;margin:0 auto;padding:0 20px}
-header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--pn) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd)}
-.bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 0}
-.logo{width:42px;height:42px;border-radius:12px;background:var(--ac);color:#fff;display:grid;place-items:center;font-weight:800;font-size:18px}
-.ttl{margin:0;font-size:19px;line-height:1.2}.sub{margin:0;font-size:12px;color:var(--mu)}
-.sp{flex:1}
-.btn{border:1px solid var(--bd);background:var(--pn);border-radius:10px;padding:7px 14px;font-weight:700;transition:.15s}
-.btn:hover{border-color:var(--ac);color:var(--ac)}
-.seg{display:flex;border:1px solid var(--bd);border-radius:10px;overflow:hidden}
-.seg button{border:0;background:none;padding:7px 12px;font-weight:700;font-size:13px}
-.seg button[aria-pressed=true]{background:var(--ac);color:#fff}
-.search{position:relative;margin:18px 0 12px}
-.search input{width:100%;padding:14px 18px;border-radius:14px;border:2px solid var(--bd);background:var(--pn);font-size:16px}
-.search input:focus{border-color:var(--ac);outline:0}
-#res{position:absolute;inset-inline:0;top:100%;margin-top:4px;background:var(--pn);border:1px solid var(--bd);border-radius:12px;box-shadow:0 12px 32px #0003;max-height:320px;overflow:auto;z-index:60}
-#res button{display:flex;gap:12px;align-items:center;width:100%;border:0;border-bottom:1px solid var(--bd);background:none;padding:10px 16px;text-align:start}
-#res button:hover,#res button:focus{background:color-mix(in srgb,var(--ac) 12%,transparent)}
-#res b{width:38px;height:38px;border-radius:8px;display:grid;place-items:center;background:var(--c);color:var(--ct);border:1px solid var(--cb)}
-#res small{margin-inline-start:auto;color:var(--mu)}
-.panel{background:var(--pn);border:1px solid var(--bd);border-radius:16px;padding:16px 18px;display:grid;grid-template-columns:minmax(240px,1.3fr) minmax(220px,1fr);gap:20px 28px;margin-bottom:16px}
-.panel label{font-size:13px;font-weight:700;color:var(--mu);display:flex;justify-content:space-between;margin-bottom:6px}
-.panel output{color:var(--ac);direction:ltr}
-input[type=range]{width:100%;accent-color:var(--ac)}
-select{width:100%;padding:9px 12px;border-radius:10px;border:1px solid var(--bd);background:var(--bg)}
-.states{display:flex;gap:16px;font-size:12px;font-weight:600;margin-top:6px;flex-wrap:wrap}
-.states i{display:inline-block;width:18px;height:5px;border-radius:3px;margin-inline-end:5px;vertical-align:middle}
-#hbar{margin-top:10px}#hbar div{height:10px;border-radius:5px;background:linear-gradient(90deg,hsl(215 70% 92%),hsl(215 70% 37%));border:1px solid var(--bd)}
-#hbar p{display:flex;justify-content:space-between;margin:2px 0 0;font-size:12px;color:var(--mu);direction:ltr}
-.legend{display:flex;flex-wrap:wrap;gap:8px;grid-column:1/-1}
-.chip{display:flex;align-items:center;gap:8px;border:1px solid var(--bd);background:var(--bg);border-radius:999px;padding:4px 12px 4px 6px;font-size:13px;font-weight:600}
-.chip[aria-pressed=true]{border-color:var(--ac);box-shadow:0 0 0 2px var(--ac)}
-.chip i{width:18px;height:18px;border-radius:5px;background:var(--c);border:1.5px solid var(--cb)}
-.tw{overflow-x:auto;padding:6px 2px 40px}
-#table{direction:ltr;display:grid;min-width:820px;max-width:1500px;margin:0 auto;gap:3px;grid-template-columns:22px repeat(18,minmax(0,1fr));grid-template-rows:20px repeat(7,auto) 14px auto auto}
-.gl,.pl{display:grid;place-items:center;font-size:13px;color:var(--mu)}
-.cell{container-type:inline-size;position:relative;aspect-ratio:1/1.08;min-width:0;padding:2px 0 8px;border:2px solid var(--cb);border-radius:4px;background:var(--c);background:linear-gradient(180deg,color-mix(in srgb,var(--c),#fff var(--mx)),var(--c));color:var(--ct);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.1;transition:transform .15s,opacity .2s,box-shadow .15s}
-.cell:hover,.cell:focus-visible{transform:scale(1.18);z-index:20;box-shadow:0 8px 20px #0004}
-.cell::after{content:"";position:absolute;inset-inline:18%;bottom:3px;height:4px;border-radius:2px;background:var(--st,transparent)}
-.n{font-size:max(9px,19cqw);opacity:.8}
-.s{font-size:max(14px,40cqw);font-weight:800}
-.nm{display:none;font-size:max(9px,13cqw);max-width:96%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-@container (min-width:62px){.nm{display:block}}
-.cell.heat{background:var(--heat);color:var(--hf)}
-.cell.heat .nm{display:block}
-.cell.dim{opacity:.16;filter:grayscale(.9)}
-.ph{aspect-ratio:auto;font-size:max(9px,1vw);font-weight:700}
-.ph .s{font-size:inherit}
-aside{position:fixed;inset-block:0;inset-inline-end:0;width:min(520px,100%);background:var(--pn);z-index:120;overflow-y:auto;box-shadow:0 0 40px #0006;transform:translateX(105%);transition:transform .35s ease;visibility:hidden}
-[dir=rtl] aside{transform:translateX(-105%)}
-aside.open{transform:none;visibility:visible}
-#ov{position:fixed;inset:0;background:#0008;z-index:115;backdrop-filter:blur(3px)}
-#ov[hidden]{display:none}
-.dh{display:flex;gap:18px;align-items:center;padding:24px;border-bottom:1px solid var(--bd);background:linear-gradient(180deg,color-mix(in srgb,var(--c) 45%,transparent),transparent)}
-.big{width:96px;height:108px;border-radius:12px;background:var(--c);color:var(--ct);border:3px solid var(--cb);display:flex;flex-direction:column;align-items:center;justify-content:center;direction:ltr;flex:none}
-.big span{font-size:14px}.big b{font-size:46px;line-height:1}
-.dh h2{margin:0;font-size:28px;line-height:1.2}.dh p{margin:2px 0 0;color:var(--mu);font-size:14px}
-.acts{margin-inline-start:auto;display:flex;flex-direction:column;gap:8px}
-.ic{width:40px;height:40px;border-radius:50%;border:1px solid var(--bd);background:var(--bg);font-size:18px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;padding:22px 24px}
-.grid dt{font-size:12px;color:var(--mu);font-weight:700}.grid dd{margin:0;font-weight:700;overflow-wrap:anywhere}
-.grid .w{grid-column:1/-1}.grid .mono{direction:ltr;text-align:start;font-family:ui-monospace,Consolas,monospace;background:var(--bg);padding:8px 12px;border-radius:8px}
-.about{margin:0 24px 28px;padding:4px 16px;border-inline-start:4px solid var(--ac);color:var(--mu)}
-dialog{border:0;border-radius:20px;padding:0;background:var(--pn);color:var(--tx);width:min(720px,94vw);max-height:90vh}
-dialog::backdrop{background:#0009;backdrop-filter:blur(4px)}
-.dp{padding:24px}.dt{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.dt h3{margin:0;font-size:22px}
-.cmp{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
-table{width:100%;border-collapse:collapse}th,td{padding:9px 8px;border-bottom:1px solid var(--bd);text-align:start}th{color:var(--mu);font-weight:700;width:30%}
-td.hi{color:var(--ac);font-weight:800}td{direction:ltr;text-align:center}
-.qh{display:flex;justify-content:space-between;margin-bottom:18px;font-weight:700}
-.qq{font-size:22px;font-weight:800;text-align:center;margin:0 0 18px}
-.qo{display:grid;gap:10px}.qo button{padding:14px;border-radius:12px;border:2px solid var(--bd);background:var(--bg);font-weight:700;font-size:17px}
-.qo button:hover:not(:disabled){border-color:var(--ac)}.qo .ok{background:#16a34a;border-color:#16a34a;color:#fff}.qo .bad{background:#dc2626;border-color:#dc2626;color:#fff}
-.go{width:100%;padding:14px;border:0;border-radius:12px;background:var(--ac);color:#fff;font-weight:800;font-size:17px;margin-top:8px}
-[data-theme=dark] .go{color:#0d1324}
-.ctr{text-align:center}
-footer{text-align:center;color:var(--mu);font-size:12px;padding:0 0 30px}
-@media(max-width:760px){.panel{grid-template-columns:1fr}.wrap{padding:0 12px}.ttl{font-size:16px}.sub{display:none}}
-@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.stage{min-height:100vh;padding:30px;position:relative;overflow:hidden}
+.stage:before{content:"";position:fixed;inset:30px;border:1px solid var(--line);pointer-events:none;
+ clip-path:polygon(0 0,26px 0,26px 1px,calc(100% - 26px) 1px,calc(100% - 26px) 0,100% 0,100% 26px,calc(100% - 1px) 26px,calc(100% - 1px) calc(100% - 26px),100% calc(100% - 26px),100% 100%,calc(100% - 26px) 100%,calc(100% - 26px) calc(100% - 1px),26px calc(100% - 1px),26px 100%,0 100%,0 calc(100% - 26px),1px calc(100% - 26px),1px 26px,0 26px)}
+.shell{max-width:1700px;margin:0 auto;position:relative;z-index:1}
+.top{display:flex;align-items:center;gap:18px;min-height:58px;padding:0 10px 18px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);min-width:max-content}
+.brandmark{width:38px;height:38px;border:1px solid rgba(255,255,255,.3);display:grid;place-items:center;
+ background:linear-gradient(135deg,rgba(232,209,203,.2),rgba(255,255,255,.02));font-weight:800;letter-spacing:-1px}
+.brand h1{font-size:16px;letter-spacing:.16em;margin:0;text-transform:uppercase}
+.brand p{margin:2px 0 0;color:var(--muted);font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.topnav{display:flex;gap:18px;margin-inline-start:auto;align-items:center}
+.topnav button,.topnav .navbtn{border:0;background:none;color:var(--muted);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:10px 4px}
+.topnav button:hover,.topnav .navbtn:hover{color:#fff}
+.action{height:38px;padding:0 15px;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.04);letter-spacing:.1em;font-size:10px;text-transform:uppercase}
+.action.primary{background:var(--accent);color:#15131b;border-color:var(--accent)}
+.toolbar{display:grid;grid-template-columns:minmax(250px,1.6fr) minmax(220px,1fr) auto;gap:12px;align-items:center;padding:20px 0 12px}
+.search{position:relative}
+.search input{width:100%;height:48px;border:1px solid var(--line);background:rgba(255,255,255,.035);padding:0 16px;outline:0;color:#fff}
+.search input:focus{border-color:rgba(232,209,203,.65)}
+#res{position:absolute;inset-inline:0;top:calc(100% + 6px);z-index:80;background:#0b101a;border:1px solid var(--line);max-height:300px;overflow:auto;box-shadow:0 20px 50px #0008}
+#res button{width:100%;display:flex;gap:12px;align-items:center;background:none;border:0;border-bottom:1px solid var(--line);padding:10px 14px;text-align:start}
+#res button:hover{background:rgba(255,255,255,.06)}
+#res b{width:38px;height:38px;display:grid;place-items:center;background:var(--c);color:#fff}
+#res small{margin-inline-start:auto;color:var(--muted)}
+.controlbar{display:flex;gap:10px;align-items:center;justify-content:flex-end;flex-wrap:wrap}
+.controlbar .select{height:48px;border:1px solid var(--line);background:rgba(255,255,255,.035);padding:0 12px;min-width:210px}
+.meta{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.meta output{color:#fff}
+.panel{background:rgba(255,255,255,.025);border:1px solid var(--line);padding:12px 16px;display:grid;grid-template-columns:minmax(220px,1fr) minmax(260px,1fr);gap:16px;margin-bottom:10px}
+.panel label{font-size:10px;color:var(--muted);display:flex;justify-content:space-between;letter-spacing:.1em;text-transform:uppercase}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.states{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:10px;margin-top:5px}
+.states i{display:inline-block;width:18px;height:3px;margin-inline-end:5px}
+.legend{grid-column:1/-1;display:flex;gap:6px;flex-wrap:wrap}
+.chip{display:flex;align-items:center;gap:7px;border:1px solid var(--line);background:rgba(255,255,255,.025);padding:5px 9px;color:var(--muted);font-size:10px}
+.chip[aria-pressed=true]{color:#fff;border-color:var(--accent)}
+.chip i{width:12px;height:12px;background:var(--c);display:inline-block}
+.tw{overflow:auto;padding:12px 0 32px}
+#table{direction:ltr;display:grid;min-width:1040px;gap:4px;grid-template-columns:24px repeat(18,minmax(45px,1fr));grid-template-rows:20px repeat(7,minmax(74px,1fr)) 14px 74px 74px}
+.gl,.pl{display:grid;place-items:center;color:#626d82;font-size:9px;letter-spacing:.08em}
+.cell{container-type:inline-size;position:relative;min-width:0;aspect-ratio:1/.94;padding:5px 2px;border:1px solid rgba(255,255,255,.18);border-radius:0;background:linear-gradient(145deg,color-mix(in srgb,var(--c),#fff 4%),var(--c));color:var(--ct);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;transition:transform .2s,box-shadow .2s,filter .2s,opacity .2s}
+.cell:hover,.cell:focus-visible{transform:translateY(-4px) scale(1.08);z-index:20;box-shadow:0 16px 35px #0009;border-color:rgba(255,255,255,.6)}
+.cell::after{content:"";position:absolute;left:15%;right:15%;bottom:4px;height:2px;background:var(--st,transparent)}
+.n{font-size:max(8px,15cqw);opacity:.72}.s{font-size:max(15px,38cqw);font-weight:800;letter-spacing:-.04em}.nm{display:none;font-size:max(8px,12cqw);max-width:96%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:3px}
+@container (min-width:64px){.nm{display:block}}
+.cell.heat{background:var(--heat);color:var(--hf)}.cell.heat .nm{display:block}.cell.dim{opacity:.12;filter:grayscale(1)}
+.ph{aspect-ratio:auto;font-size:9px}.ph .s{font-size:inherit;font-weight:700}
+footer{border-top:1px solid var(--line);padding:12px 0;color:#657087;font-size:10px;letter-spacing:.05em}
+aside{position:fixed;inset-block:0;inset-inline-end:0;width:min(520px,100%);background:#0a0f19;z-index:120;overflow-y:auto;box-shadow:-30px 0 70px #0009;transform:translateX(105%);transition:transform .35s ease;visibility:hidden;border-inline-start:1px solid var(--line)}
+[dir=rtl] aside{transform:translateX(-105%)}aside.open{transform:none;visibility:visible}
+#ov{position:fixed;inset:0;background:#0009;z-index:115;backdrop-filter:blur(4px)}#ov[hidden]{display:none}
+.dh{display:flex;gap:14px;align-items:center;padding:22px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,color-mix(in srgb,var(--c) 30%,transparent),transparent)}
+.big{width:88px;height:98px;background:var(--c);border:1px solid rgba(255,255,255,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;direction:ltr;flex:none}.big span{font-size:11px}.big b{font-size:42px}.dh h2{margin:0;font-size:26px}.dh p{margin:2px 0;color:var(--muted);font-size:12px}.acts{margin-inline-start:auto;display:flex;flex-direction:column;gap:7px}.ic{width:38px;height:38px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:18px 22px}.grid>div{padding:11px 0;border-bottom:1px solid var(--line)}.grid .w{grid-column:1/-1}.grid dt{font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}.grid dd{margin:2px 0 0;font-weight:700}.grid .mono{font-family:ui-monospace,monospace;direction:ltr;text-align:start}
+.about{margin:0 22px 25px;padding:12px 14px;border:1px solid var(--line);color:var(--muted);font-size:12px}
+dialog{border:1px solid var(--line);border-radius:0;padding:0;background:#0a0f19;color:#fff;width:min(720px,94vw);max-height:90vh}dialog::backdrop{background:#000a;backdrop-filter:blur(5px)}.dp{padding:22px}.dt{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.dt h3{margin:0;font-size:20px}.cmp{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}.cmp select{height:42px;background:#101725;border:1px solid var(--line);padding:0 10px}table{width:100%;border-collapse:collapse}th,td{padding:8px;border-bottom:1px solid var(--line);text-align:start}th{color:var(--muted);font-size:11px}td{direction:ltr;text-align:center}.hi{color:var(--accent);font-weight:800}.go{width:100%;height:44px;border:0;background:var(--accent);color:#15131b;font-weight:800}.ctr{text-align:center}.qq{font-size:20px;font-weight:800}.qo{display:grid;gap:8px}.qo button{padding:12px;border:1px solid var(--line);background:rgba(255,255,255,.04)}.qo .ok{background:#247a4a;color:#fff}.qo .bad{background:#8b3038;color:#fff}
+@media(max-width:1100px){.toolbar{grid-template-columns:1fr}.controlbar{justify-content:flex-start}.panel{grid-template-columns:1fr}.legend{grid-column:auto}.topnav{display:none}}
+@media(max-width:650px){.stage{padding:18px}.stage:before{inset:18px}.top{padding-inline:0}.brand p{display:none}.action{padding:0 10px}.toolbar{padding-top:14px}.panel{padding:12px}.grid{grid-template-columns:1fr}.grid .w{grid-column:auto}.cmp{grid-template-columns:1fr}.tw{margin-inline:-4px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
-<header><div class="wrap bar">
- <div class="logo" aria-hidden="true">Pt</div>
- <div><h1 class="ttl" data-i="title"></h1><p class="sub" data-i="subtitle"></p></div>
- <div class="sp"></div>
- <button class="btn" id="bQuiz" data-i="quiz"></button>
- <button class="btn" id="bCmp" data-i="compare"></button>
- <button class="btn" id="bTheme" aria-label="theme"></button>
- <div class="seg"><button id="lEn" aria-pressed="false">EN</button><button id="lFa" aria-pressed="true">FA</button></div>
-</div></header>
-
-<main class="wrap">
- <div class="search">
-  <input id="q" type="search" autocomplete="off" data-ph="search" aria-label="search">
-  <div id="res" role="listbox" hidden></div>
+<div class="stage"><div class="shell">
+<header class="top">
+ <a class="brand" href="#" aria-label="Periodic Table home"><span class="brandmark">Pt</span><span><h1>ELEMENTS</h1><p>Periodic table / interactive atlas</p></span></a>
+ <nav class="topnav" aria-label="Main"><button id="bQuiz" data-i="quiz"></button><button id="bCmp" data-i="compare"></button></nav>
+ <div style="margin-inline-start:auto;display:flex;gap:7px;align-items:center">
+  <button class="action" id="bTheme" aria-label="theme"></button>
+  <button class="action" id="lEn" aria-pressed="false">EN</button><button class="action" id="lFa" aria-pressed="true">FA</button>
  </div>
+</header>
+<main>
+ <section class="toolbar">
+  <div class="search"><input id="q" type="search" autocomplete="off" data-ph="search" aria-label="search"><div id="res" role="listbox" hidden></div></div>
+  <div class="controlbar"><select class="select" id="trend" aria-label="property"></select><button class="action primary" id="bCmp2" data-i="compare"></button></div>
+  <div class="meta"><span>Temp</span><output id="tv"></output></div>
+ </section>
  <section class="panel">
-  <div>
-   <label for="tmp"><span data-i="temp"></span><output id="tv"></output></label>
-   <input id="tmp" type="range" min="0" max="6000" step="1" value="298">
-   <div class="states"><span><i style="background:#1d4ed8"></i><span data-i="solid"></span></span><span><i style="background:#059669"></i><span data-i="liquid"></span></span><span><i style="background:#d97706"></i><span data-i="gas"></span></span><span><i style="background:#94a3b8"></i><span data-i="unknown"></span></span></div>
-  </div>
-  <div>
-   <label for="trend"><span data-i="trend"></span></label>
-   <select id="trend"></select>
-   <div id="hbar" hidden><div></div><p><span id="hmin"></span><span id="hmax"></span></p></div>
-  </div>
+  <div><label for="tmp"><span data-i="temp"></span><output id="tv2"></output></label><input id="tmp" type="range" min="0" max="6000" step="1" value="298"><div class="states"><span><i style="background:#1d4ed8"></i><span data-i="solid"></span></span><span><i style="background:#059669"></i><span data-i="liquid"></span></span><span><i style="background:#d97706"></i><span data-i="gas"></span></span><span><i style="background:#94a3b8"></i><span data-i="unknown"></span></span></div></div>
+  <div id="hbar" hidden><label><span data-i="trend"></span><output><span id="hmin"></span> — <span id="hmax"></span></output></label><div style="height:5px;margin-top:10px;background:linear-gradient(90deg,#dbeafe,#1d4ed8)"></div></div>
   <div class="legend" id="legend"></div>
  </section>
  <div class="tw"><div id="table"></div></div>
 </main>
 <footer data-i="foot"></footer>
-
-<div id="ov" hidden></div>
-<aside id="drawer" role="dialog" aria-modal="true" aria-labelledby="dname"></aside>
-
-<dialog id="cmpD"><div class="dp">
- <div class="dt"><h3 data-i="cmpTitle"></h3><button class="ic" data-close aria-label="close">✕</button></div>
- <div class="cmp"><select id="csa"></select><select id="csb"></select></div>
- <table id="ctab"></table>
-</div></dialog>
-
-<dialog id="qzD"><div class="dp">
- <div class="dt"><h3 data-i="qzTitle"></h3><button class="ic" data-close aria-label="close">✕</button></div>
- <div id="qs" class="ctr"><p data-i="qzDesc"></p><button class="go" id="qGo" data-i="qzStart"></button></div>
- <div id="qa" hidden><div class="qh"><span id="qp"></span><span id="qsc"></span></div><p class="qq" id="qq"></p><div class="qo" id="qo"></div></div>
- <div id="qr" class="ctr" hidden><h3 id="qrt" style="font-size:28px;margin:0 0 6px"></h3><p id="qrs" style="font-size:22px;font-weight:800;color:var(--ac)"></p><button class="go" id="qAgain" data-i="qzAgain"></button></div>
-</div></dialog>
-
-<script>
+</div></div>
+<div id="ov" hidden></div><aside id="drawer" role="dialog" aria-modal="true" aria-labelledby="dname"></aside>
+<dialog id="cmpD"><div class="dp"><div class="dt"><h3 data-i="cmpTitle"></h3><button class="ic" data-close aria-label="close">✕</button></div><div class="cmp"><select id="csa"></select><select id="csb"></select></div><table id="ctab"></table></div></dialog>
+<dialog id="qzD"><div class="dp"><div class="dt"><h3 data-i="qzTitle"></h3><button class="ic" data-close aria-label="close">✕</button></div><div id="qs" class="ctr"><p data-i="qzDesc"></p><button class="go" id="qGo" data-i="qzStart"></button></div><div id="qa" hidden><div class="qh"><span id="qp"></span><span id="qsc"></span></div><p class="qq" id="qq"></p><div class="qo" id="qo"></div></div><div id="qr" class="ctr" hidden><h3 id="qrt"></h3><p id="qrs"></p><button class="go" id="qAgain" data-i="qzAgain"></button></div></div></dialog>
+<script id="appscript">
 const DATA=[{"n":1,"s":"H","nm":"Hydrogen","m":1.008,"cfg":"1s1","en":2.2,"r":120,"ie":13.598,"ea":0.754,"ox":"+1, -1","st":"Gas","mp":13.81,"bp":20.28,"d":8.988e-05,"gb":"Nonmetal","y":1766},{"n":2,"s":"He","nm":"Helium","m":4.0026,"cfg":"1s2","en":null,"r":140,"ie":24.587,"ea":null,"ox":"0","st":"Gas","mp":0.95,"bp":4.22,"d":0.0001785,"gb":"Noble gas","y":1868},{"n":3,"s":"Li","nm":"Lithium","m":7.0,"cfg":"[He]2s1","en":0.98,"r":182,"ie":5.392,"ea":0.618,"ox":"+1","st":"Solid","mp":453.65,"bp":1615,"d":0.534,"gb":"Alkali metal","y":1817},{"n":4,"s":"Be","nm":"Beryllium","m":9.012183,"cfg":"[He]2s2","en":1.57,"r":153,"ie":9.323,"ea":null,"ox":"+2","st":"Solid","mp":1560,"bp":2744,"d":1.85,"gb":"Alkaline earth metal","y":1798},{"n":5,"s":"B","nm":"Boron","m":10.81,"cfg":"[He]2s2 2p1","en":2.04,"r":192,"ie":8.298,"ea":0.277,"ox":"+3","st":"Solid","mp":2348,"bp":4273,"d":2.37,"gb":"Metalloid","y":1808},{"n":6,"s":"C","nm":"Carbon","m":12.011,"cfg":"[He]2s2 2p2","en":2.55,"r":170,"ie":11.26,"ea":1.263,"ox":"+4, +2, -4","st":"Solid","mp":3823,"bp":4098,"d":2.267,"gb":"Nonmetal","y":"Ancient"},{"n":7,"s":"N","nm":"Nitrogen","m":14.007,"cfg":"[He] 2s2 2p3","en":3.04,"r":155,"ie":14.534,"ea":null,"ox":"+5, +4, +3, +2, +1, -1, -2, -3","st":"Gas","mp":63.15,"bp":77.36,"d":0.0012506,"gb":"Nonmetal","y":1772},{"n":8,"s":"O","nm":"Oxygen","m":15.999,"cfg":"[He]2s2 2p4","en":3.44,"r":152,"ie":13.618,"ea":1.461,"ox":"-2","st":"Gas","mp":54.36,"bp":90.2,"d":0.001429,"gb":"Nonmetal","y":1774},{"n":9,"s":"F","nm":"Fluorine","m":18.99840316,"cfg":"[He]2s2 2p5","en":3.98,"r":135,"ie":17.423,"ea":3.339,"ox":"-1","st":"Gas","mp":53.53,"bp":85.03,"d":0.001696,"gb":"Halogen","y":1670},{"n":10,"s":"Ne","nm":"Neon","m":20.18,"cfg":"[He]2s2 2p6","en":null,"r":154,"ie":21.565,"ea":null,"ox":"0","st":"Gas","mp":24.56,"bp":27.07,"d":0.0008999,"gb":"Noble gas","y":1898},{"n":11,"s":"Na","nm":"Sodium","m":22.9897693,"cfg":"[Ne]3s1","en":0.93,"r":227,"ie":5.139,"ea":0.548,"ox":"+1","st":"Solid","mp":370.95,"bp":1156,"d":0.97,"gb":"Alkali metal","y":1807},{"n":12,"s":"Mg","nm":"Magnesium","m":24.305,"cfg":"[Ne]3s2","en":1.31,"r":173,"ie":7.646,"ea":null,"ox":"+2","st":"Solid","mp":923,"bp":1363,"d":1.74,"gb":"Alkaline earth metal","y":1808},{"n":13,"s":"Al","nm":"Aluminum","m":26.981538,"cfg":"[Ne]3s2 3p1","en":1.61,"r":184,"ie":5.986,"ea":0.441,"ox":"+3","st":"Solid","mp":933.437,"bp":2792,"d":2.7,"gb":"Post-transition metal","y":"Ancient"},{"n":14,"s":"Si","nm":"Silicon","m":28.085,"cfg":"[Ne]3s2 3p2","en":1.9,"r":210,"ie":8.152,"ea":1.385,"ox":"+4, +2, -4","st":"Solid","mp":1687,"bp":3538,"d":2.3296,"gb":"Metalloid","y":1854},{"n":15,"s":"P","nm":"Phosphorus","m":30.973762,"cfg":"[Ne]3s2 3p3","en":2.19,"r":180,"ie":10.487,"ea":0.746,"ox":"+5, +3, -3","st":"Solid","mp":317.3,"bp":553.65,"d":1.82,"gb":"Nonmetal","y":1669},{"n":16,"s":"S","nm":"Sulfur","m":32.07,"cfg":"[Ne]3s2 3p4","en":2.58,"r":180,"ie":10.36,"ea":2.077,"ox":"+6, +4, -2","st":"Solid","mp":388.36,"bp":717.75,"d":2.067,"gb":"Nonmetal","y":"Ancient"},{"n":17,"s":"Cl","nm":"Chlorine","m":35.45,"cfg":"[Ne]3s2 3p5","en":3.16,"r":175,"ie":12.968,"ea":3.617,"ox":"+7, +5, +1, -1","st":"Gas","mp":171.65,"bp":239.11,"d":0.003214,"gb":"Halogen","y":1774},{"n":18,"s":"Ar","nm":"Argon","m":39.9,"cfg":"[Ne]3s2 3p6","en":null,"r":188,"ie":15.76,"ea":null,"ox":"0","st":"Gas","mp":83.8,"bp":87.3,"d":0.0017837,"gb":"Noble gas","y":1894},{"n":19,"s":"K","nm":"Potassium","m":39.0983,"cfg":"[Ar]4s1","en":0.82,"r":275,"ie":4.341,"ea":0.501,"ox":"+1","st":"Solid","mp":336.53,"bp":1032,"d":0.89,"gb":"Alkali metal","y":1807},{"n":20,"s":"Ca","nm":"Calcium","m":40.08,"cfg":"[Ar]4s2","en":1,"r":231,"ie":6.113,"ea":null,"ox":"+2","st":"Solid","mp":1115,"bp":1757,"d":1.54,"gb":"Alkaline earth metal","y":"Ancient"},{"n":21,"s":"Sc","nm":"Scandium","m":44.95591,"cfg":"[Ar]4s2 3d1","en":1.36,"r":211,"ie":6.561,"ea":0.188,"ox":"+3","st":"Solid","mp":1814,"bp":3109,"d":2.99,"gb":"Transition metal","y":1879},{"n":22,"s":"Ti","nm":"Titanium","m":47.867,"cfg":"[Ar]4s2 3d2","en":1.54,"r":187,"ie":6.828,"ea":0.079,"ox":"+4, +3, +2","st":"Solid","mp":1941,"bp":3560,"d":4.5,"gb":"Transition metal","y":1791},{"n":23,"s":"V","nm":"Vanadium","m":50.9415,"cfg":"[Ar]4s2 3d3","en":1.63,"r":179,"ie":6.746,"ea":0.525,"ox":"+5, +4, +3, +2","st":"Solid","mp":2183,"bp":3680,"d":6.0,"gb":"Transition metal","y":1801},{"n":24,"s":"Cr","nm":"Chromium","m":51.996,"cfg":"[Ar]3d5 4s1","en":1.66,"r":189,"ie":6.767,"ea":0.666,"ox":"+6, +3, +2","st":"Solid","mp":2180,"bp":2944,"d":7.15,"gb":"Transition metal","y":1797},{"n":25,"s":"Mn","nm":"Manganese","m":54.93804,"cfg":"[Ar]4s2 3d5","en":1.55,"r":197,"ie":7.434,"ea":null,"ox":"+7, +4, +3, +2","st":"Solid","mp":1519,"bp":2334,"d":7.3,"gb":"Transition metal","y":1774},{"n":26,"s":"Fe","nm":"Iron","m":55.84,"cfg":"[Ar]4s2 3d6","en":1.83,"r":194,"ie":7.902,"ea":0.163,"ox":"+3, +2","st":"Solid","mp":1811,"bp":3134,"d":7.874,"gb":"Transition metal","y":"Ancient"},{"n":27,"s":"Co","nm":"Cobalt","m":58.93319,"cfg":"[Ar]4s2 3d7","en":1.88,"r":192,"ie":7.881,"ea":0.661,"ox":"+3, +2","st":"Solid","mp":1768,"bp":3200,"d":8.86,"gb":"Transition metal","y":1735},{"n":28,"s":"Ni","nm":"Nickel","m":58.693,"cfg":"[Ar]4s2 3d8","en":1.91,"r":163,"ie":7.64,"ea":1.156,"ox":"+3, +2","st":"Solid","mp":1728,"bp":3186,"d":8.912,"gb":"Transition metal","y":1751},{"n":29,"s":"Cu","nm":"Copper","m":63.55,"cfg":"[Ar]4s1 3d10","en":1.9,"r":140,"ie":7.726,"ea":1.228,"ox":"+2, +1","st":"Solid","mp":1357.77,"bp":2835,"d":8.933,"gb":"Transition metal","y":"Ancient"},{"n":30,"s":"Zn","nm":"Zinc","m":65.4,"cfg":"[Ar]4s2 3d10","en":1.65,"r":139,"ie":9.394,"ea":null,"ox":"+2","st":"Solid","mp":692.68,"bp":1180,"d":7.134,"gb":"Transition metal","y":1746},{"n":31,"s":"Ga","nm":"Gallium","m":69.723,"cfg":"[Ar]4s2 3d10 4p1","en":1.81,"r":187,"ie":5.999,"ea":0.3,"ox":"+3","st":"Solid","mp":302.91,"bp":2477,"d":5.91,"gb":"Post-transition metal","y":1875},{"n":32,"s":"Ge","nm":"Germanium","m":72.63,"cfg":"[Ar]4s2 3d10 4p2","en":2.01,"r":211,"ie":7.9,"ea":1.35,"ox":"+4, +2","st":"Solid","mp":1211.4,"bp":3106,"d":5.323,"gb":"Metalloid","y":1886},{"n":33,"s":"As","nm":"Arsenic","m":74.92159,"cfg":"[Ar]4s2 3d10 4p3","en":2.18,"r":185,"ie":9.815,"ea":0.81,"ox":"+5, +3, -3","st":"Solid","mp":1090,"bp":887,"d":5.776,"gb":"Metalloid","y":"Ancient"},{"n":34,"s":"Se","nm":"Selenium","m":78.97,"cfg":"[Ar]4s2 3d10 4p4","en":2.55,"r":190,"ie":9.752,"ea":2.021,"ox":"+6, +4, -2","st":"Solid","mp":493.65,"bp":958,"d":4.809,"gb":"Nonmetal","y":1817},{"n":35,"s":"Br","nm":"Bromine","m":79.9,"cfg":"[Ar]4s2 3d10 4p5","en":2.96,"r":183,"ie":11.814,"ea":3.365,"ox":"+5, +1, -1","st":"Liquid","mp":265.95,"bp":331.95,"d":3.11,"gb":"Halogen","y":1826},{"n":36,"s":"Kr","nm":"Krypton","m":83.8,"cfg":"[Ar]4s2 3d10 4p6","en":3,"r":202,"ie":14.0,"ea":null,"ox":"0","st":"Gas","mp":115.79,"bp":119.93,"d":0.003733,"gb":"Noble gas","y":1898},{"n":37,"s":"Rb","nm":"Rubidium","m":85.468,"cfg":"[Kr]5s1","en":0.82,"r":303,"ie":4.177,"ea":0.468,"ox":"+1","st":"Solid","mp":312.46,"bp":961,"d":1.53,"gb":"Alkali metal","y":1861},{"n":38,"s":"Sr","nm":"Strontium","m":87.62,"cfg":"[Kr]5s2","en":0.95,"r":249,"ie":5.695,"ea":null,"ox":"+2","st":"Solid","mp":1050,"bp":1655,"d":2.64,"gb":"Alkaline earth metal","y":1790},{"n":39,"s":"Y","nm":"Yttrium","m":88.90584,"cfg":"[Kr]5s2 4d1","en":1.22,"r":219,"ie":6.217,"ea":0.307,"ox":"+3","st":"Solid","mp":1795,"bp":3618,"d":4.47,"gb":"Transition metal","y":1794},{"n":40,"s":"Zr","nm":"Zirconium","m":91.22,"cfg":"[Kr]5s2 4d2","en":1.33,"r":186,"ie":6.634,"ea":0.426,"ox":"+4","st":"Solid","mp":2128,"bp":4682,"d":6.52,"gb":"Transition metal","y":1789},{"n":41,"s":"Nb","nm":"Niobium","m":92.90637,"cfg":"[Kr]5s1 4d4","en":1.6,"r":207,"ie":6.759,"ea":0.893,"ox":"+5, +3","st":"Solid","mp":2750,"bp":5017,"d":8.57,"gb":"Transition metal","y":1801},{"n":42,"s":"Mo","nm":"Molybdenum","m":95.95,"cfg":"[Kr]5s1 4d5","en":2.16,"r":209,"ie":7.092,"ea":0.746,"ox":"+6","st":"Solid","mp":2896,"bp":4912,"d":10.2,"gb":"Transition metal","y":1778},{"n":43,"s":"Tc","nm":"Technetium","m":96.90636,"cfg":"[Kr]5s2 4d5","en":1.9,"r":209,"ie":7.28,"ea":0.55,"ox":"+7, +6, +4","st":"Solid","mp":2430,"bp":4538,"d":11,"gb":"Transition metal","y":1937},{"n":44,"s":"Ru","nm":"Ruthenium","m":101.1,"cfg":"[Kr]5s1 4d7","en":2.2,"r":207,"ie":7.361,"ea":1.05,"ox":"+3","st":"Solid","mp":2607,"bp":4423,"d":12.1,"gb":"Transition metal","y":1827},{"n":45,"s":"Rh","nm":"Rhodium","m":102.9055,"cfg":"[Kr]5s1 4d8","en":2.28,"r":195,"ie":7.459,"ea":1.137,"ox":"+3","st":"Solid","mp":2237,"bp":3968,"d":12.4,"gb":"Transition metal","y":1803},{"n":46,"s":"Pd","nm":"Palladium","m":106.42,"cfg":"[Kr]4d10","en":2.2,"r":202,"ie":8.337,"ea":0.557,"ox":"+3, +2","st":"Solid","mp":1828.05,"bp":3236,"d":12.0,"gb":"Transition metal","y":1803},{"n":47,"s":"Ag","nm":"Silver","m":107.868,"cfg":"[Kr]5s1 4d10","en":1.93,"r":172,"ie":7.576,"ea":1.302,"ox":"+1","st":"Solid","mp":1234.93,"bp":2435,"d":10.501,"gb":"Transition metal","y":"Ancient"},{"n":48,"s":"Cd","nm":"Cadmium","m":112.41,"cfg":"[Kr]5s2 4d10","en":1.69,"r":158,"ie":8.994,"ea":null,"ox":"+2","st":"Solid","mp":594.22,"bp":1040,"d":8.69,"gb":"Transition metal","y":1817},{"n":49,"s":"In","nm":"Indium","m":114.818,"cfg":"[Kr]5s2 4d10 5p1","en":1.78,"r":193,"ie":5.786,"ea":0.3,"ox":"+3","st":"Solid","mp":429.75,"bp":2345,"d":7.31,"gb":"Post-transition metal","y":1863},{"n":50,"s":"Sn","nm":"Tin","m":118.71,"cfg":"[Kr]5s2 4d10 5p2","en":1.96,"r":217,"ie":7.344,"ea":1.2,"ox":"+4, +2","st":"Solid","mp":505.08,"bp":2875,"d":7.287,"gb":"Post-transition metal","y":"Ancient"},{"n":51,"s":"Sb","nm":"Antimony","m":121.76,"cfg":"[Kr]5s2 4d10 5p3","en":2.05,"r":206,"ie":8.64,"ea":1.07,"ox":"+5, +3, -3","st":"Solid","mp":903.78,"bp":1860,"d":6.685,"gb":"Metalloid","y":"Ancient"},{"n":52,"s":"Te","nm":"Tellurium","m":127.6,"cfg":"[Kr]5s2 4d10 5p4","en":2.1,"r":206,"ie":9.01,"ea":1.971,"ox":"+6, +4, -2","st":"Solid","mp":722.66,"bp":1261,"d":6.232,"gb":"Metalloid","y":1782},{"n":53,"s":"I","nm":"Iodine","m":126.9045,"cfg":"[Kr]5s2 4d10 5p5","en":2.66,"r":198,"ie":10.451,"ea":3.059,"ox":"+7, +5, +1, -1","st":"Solid","mp":386.85,"bp":457.55,"d":4.93,"gb":"Halogen","y":1811},{"n":54,"s":"Xe","nm":"Xenon","m":131.29,"cfg":"[Kr]5s2 4d10 5p6","en":2.6,"r":216,"ie":12.13,"ea":null,"ox":"0","st":"Gas","mp":161.36,"bp":165.03,"d":0.005887,"gb":"Noble gas","y":1898},{"n":55,"s":"Cs","nm":"Cesium","m":132.905452,"cfg":"[Xe]6s1","en":0.79,"r":343,"ie":3.894,"ea":0.472,"ox":"+1","st":"Solid","mp":301.59,"bp":944,"d":1.93,"gb":"Alkali metal","y":1860},{"n":56,"s":"Ba","nm":"Barium","m":137.33,"cfg":"[Xe]6s2","en":0.89,"r":268,"ie":5.212,"ea":null,"ox":"+2","st":"Solid","mp":1000,"bp":2170,"d":3.62,"gb":"Alkaline earth metal","y":1808},{"n":57,"s":"La","nm":"Lanthanum","m":138.9055,"cfg":"[Xe]6s2 5d1","en":1.1,"r":240,"ie":5.577,"ea":0.5,"ox":"+3","st":"Solid","mp":1191,"bp":3737,"d":6.15,"gb":"Lanthanide","y":1839},{"n":58,"s":"Ce","nm":"Cerium","m":140.116,"cfg":"[Xe]6s2 4f1 5d1","en":1.12,"r":235,"ie":5.539,"ea":0.5,"ox":"+4, +3","st":"Solid","mp":1071,"bp":3697,"d":6.77,"gb":"Lanthanide","y":1803},{"n":59,"s":"Pr","nm":"Praseodymium","m":140.90766,"cfg":"[Xe]6s2 4f3","en":1.13,"r":239,"ie":5.464,"ea":null,"ox":"+3","st":"Solid","mp":1204,"bp":3793,"d":6.77,"gb":"Lanthanide","y":1885},{"n":60,"s":"Nd","nm":"Neodymium","m":144.24,"cfg":"[Xe]6s2 4f4","en":1.14,"r":229,"ie":5.525,"ea":null,"ox":"+3","st":"Solid","mp":1294,"bp":3347,"d":7.01,"gb":"Lanthanide","y":1885},{"n":61,"s":"Pm","nm":"Promethium","m":144.91276,"cfg":"[Xe]6s2 4f5","en":null,"r":236,"ie":5.55,"ea":null,"ox":"+3","st":"Solid","mp":1315,"bp":3273,"d":7.26,"gb":"Lanthanide","y":1945},{"n":62,"s":"Sm","nm":"Samarium","m":150.4,"cfg":"[Xe]6s2 4f6","en":1.17,"r":229,"ie":5.644,"ea":null,"ox":"+3, +2","st":"Solid","mp":1347,"bp":2067,"d":7.52,"gb":"Lanthanide","y":1879},{"n":63,"s":"Eu","nm":"Europium","m":151.964,"cfg":"[Xe]6s2 4f7","en":null,"r":233,"ie":5.67,"ea":null,"ox":"+3, +2","st":"Solid","mp":1095,"bp":1802,"d":5.24,"gb":"Lanthanide","y":1901},{"n":64,"s":"Gd","nm":"Gadolinium","m":157.25,"cfg":"[Xe]6s2 4f7 5d1","en":1.2,"r":237,"ie":6.15,"ea":null,"ox":"+3","st":"Solid","mp":1586,"bp":3546,"d":7.9,"gb":"Lanthanide","y":1880},{"n":65,"s":"Tb","nm":"Terbium","m":158.92535,"cfg":"[Xe]6s2 4f9","en":null,"r":221,"ie":5.864,"ea":null,"ox":"+3","st":"Solid","mp":1629,"bp":3503,"d":8.23,"gb":"Lanthanide","y":1843},{"n":66,"s":"Dy","nm":"Dysprosium","m":162.5,"cfg":"[Xe]6s2 4f10","en":1.22,"r":229,"ie":5.939,"ea":null,"ox":"+3","st":"Solid","mp":1685,"bp":2840,"d":8.55,"gb":"Lanthanide","y":1886},{"n":67,"s":"Ho","nm":"Holmium","m":164.93033,"cfg":"[Xe]6s2 4f11","en":1.23,"r":216,"ie":6.022,"ea":null,"ox":"+3","st":"Solid","mp":1747,"bp":2973,"d":8.8,"gb":"Lanthanide","y":1878},{"n":68,"s":"Er","nm":"Erbium","m":167.26,"cfg":"[Xe]6s2 4f12","en":1.24,"r":235,"ie":6.108,"ea":null,"ox":"+3","st":"Solid","mp":1802,"bp":3141,"d":9.07,"gb":"Lanthanide","y":1843},{"n":69,"s":"Tm","nm":"Thulium","m":168.93422,"cfg":"[Xe]6s2 4f13","en":1.25,"r":227,"ie":6.184,"ea":null,"ox":"+3","st":"Solid","mp":1818,"bp":2223,"d":9.32,"gb":"Lanthanide","y":1879},{"n":70,"s":"Yb","nm":"Ytterbium","m":173.05,"cfg":"[Xe]6s2 4f14","en":null,"r":242,"ie":6.254,"ea":null,"ox":"+3, +2","st":"Solid","mp":1092,"bp":1469,"d":6.9,"gb":"Lanthanide","y":1878},{"n":71,"s":"Lu","nm":"Lutetium","m":174.9667,"cfg":"[Xe]6s2 4f14 5d1","en":1.27,"r":221,"ie":5.426,"ea":null,"ox":"+3","st":"Solid","mp":1936,"bp":3675,"d":9.84,"gb":"Lanthanide","y":1907},{"n":72,"s":"Hf","nm":"Hafnium","m":178.49,"cfg":"[Xe]6s2 4f14 5d2","en":1.3,"r":212,"ie":6.825,"ea":null,"ox":"+4","st":"Solid","mp":2506,"bp":4876,"d":13.3,"gb":"Transition metal","y":1923},{"n":73,"s":"Ta","nm":"Tantalum","m":180.9479,"cfg":"[Xe]6s2 4f14 5d3","en":1.5,"r":217,"ie":7.89,"ea":0.322,"ox":"+5","st":"Solid","mp":3290,"bp":5731,"d":16.4,"gb":"Transition metal","y":1802},{"n":74,"s":"W","nm":"Tungsten","m":183.84,"cfg":"[Xe]6s2 4f14 5d4","en":2.36,"r":210,"ie":7.98,"ea":0.815,"ox":"+6","st":"Solid","mp":3695,"bp":5828,"d":19.3,"gb":"Transition metal","y":1783},{"n":75,"s":"Re","nm":"Rhenium","m":186.207,"cfg":"[Xe]6s2 4f14 5d5","en":1.9,"r":217,"ie":7.88,"ea":0.15,"ox":"+7, +6, +4","st":"Solid","mp":3459,"bp":5869,"d":20.8,"gb":"Transition metal","y":1925},{"n":76,"s":"Os","nm":"Osmium","m":190.2,"cfg":"[Xe]6s2 4f14 5d6","en":2.2,"r":216,"ie":8.7,"ea":1.1,"ox":"+4, +3","st":"Solid","mp":3306,"bp":5285,"d":22.57,"gb":"Transition metal","y":1803},{"n":77,"s":"Ir","nm":"Iridium","m":192.22,"cfg":"[Xe]6s2 4f14 5d7","en":2.2,"r":202,"ie":9.1,"ea":1.565,"ox":"+4, +3","st":"Solid","mp":2719,"bp":4701,"d":22.42,"gb":"Transition metal","y":1803},{"n":78,"s":"Pt","nm":"Platinum","m":195.08,"cfg":"[Xe]6s1 4f14 5d9","en":2.28,"r":209,"ie":9,"ea":2.128,"ox":"+4, +2","st":"Solid","mp":2041.55,"bp":4098,"d":21.46,"gb":"Transition metal","y":1735},{"n":79,"s":"Au","nm":"Gold","m":196.96657,"cfg":"[Xe]6s1 4f14 5d10","en":2.54,"r":166,"ie":9.226,"ea":2.309,"ox":"+3, +1","st":"Solid","mp":1337.33,"bp":3129,"d":19.282,"gb":"Transition metal","y":"Ancient"},{"n":80,"s":"Hg","nm":"Mercury","m":200.59,"cfg":"[Xe]6s2 4f14 5d10","en":2,"r":209,"ie":10.438,"ea":null,"ox":"+2, +1","st":"Liquid","mp":234.32,"bp":629.88,"d":13.5336,"gb":"Transition metal","y":"Ancient"},{"n":81,"s":"Tl","nm":"Thallium","m":204.383,"cfg":"[Xe]6s2 4f14 5d10 6p1","en":1.62,"r":196,"ie":6.108,"ea":0.2,"ox":"+3, +1","st":"Solid","mp":577,"bp":1746,"d":11.8,"gb":"Post-transition metal","y":1861},{"n":82,"s":"Pb","nm":"Lead","m":207,"cfg":"[Xe]6s2 4f14 5d10 6p2","en":2.33,"r":202,"ie":7.417,"ea":0.36,"ox":"+4, +2","st":"Solid","mp":600.61,"bp":2022,"d":11.342,"gb":"Post-transition metal","y":"Ancient"},{"n":83,"s":"Bi","nm":"Bismuth","m":208.9804,"cfg":"[Xe]6s2 4f14 5d10 6p3","en":2.02,"r":207,"ie":7.289,"ea":0.946,"ox":"+5, +3","st":"Solid","mp":544.55,"bp":1837,"d":9.807,"gb":"Post-transition metal","y":1753},{"n":84,"s":"Po","nm":"Polonium","m":208.98243,"cfg":"[Xe]6s2 4f14 5d10 6p4","en":2,"r":197,"ie":8.417,"ea":1.9,"ox":"+4, +2","st":"Solid","mp":527,"bp":1235,"d":9.32,"gb":"Metalloid","y":1898},{"n":85,"s":"At","nm":"Astatine","m":209.98715,"cfg":"[Xe]6s2 4f14 5d10 6p5","en":2.2,"r":202,"ie":9.5,"ea":2.8,"ox":"7, 5, 3, 1, -1","st":"Solid","mp":575,"bp":null,"d":7,"gb":"Halogen","y":1940},{"n":86,"s":"Rn","nm":"Radon","m":222.01758,"cfg":"[Xe]6s2 4f14 5d10 6p6","en":null,"r":220,"ie":10.745,"ea":null,"ox":"0","st":"Gas","mp":202,"bp":211.45,"d":0.00973,"gb":"Noble gas","y":1900},{"n":87,"s":"Fr","nm":"Francium","m":223.01973,"cfg":"[Rn]7s1","en":0.7,"r":348,"ie":3.9,"ea":0.47,"ox":"+1","st":"Solid","mp":300,"bp":null,"d":null,"gb":"Alkali metal","y":1939},{"n":88,"s":"Ra","nm":"Radium","m":226.02541,"cfg":"[Rn]7s2","en":0.9,"r":283,"ie":5.279,"ea":null,"ox":"+2","st":"Solid","mp":973,"bp":1413,"d":5,"gb":"Alkaline earth metal","y":1898},{"n":89,"s":"Ac","nm":"Actinium","m":227.02775,"cfg":"[Rn]7s2 6d1","en":1.1,"r":260,"ie":5.17,"ea":null,"ox":"+3","st":"Solid","mp":1324,"bp":3471,"d":10.07,"gb":"Actinide","y":1899},{"n":90,"s":"Th","nm":"Thorium","m":232.038,"cfg":"[Rn]7s2 6d2","en":1.3,"r":237,"ie":6.08,"ea":null,"ox":"+4","st":"Solid","mp":2023,"bp":5061,"d":11.72,"gb":"Actinide","y":1828},{"n":91,"s":"Pa","nm":"Protactinium","m":231.03588,"cfg":"[Rn]7s2 5f2 6d1","en":1.5,"r":243,"ie":5.89,"ea":null,"ox":"+5, +4","st":"Solid","mp":1845,"bp":null,"d":15.37,"gb":"Actinide","y":1913},{"n":92,"s":"U","nm":"Uranium","m":238.0289,"cfg":"[Rn]7s2 5f3 6d1","en":1.38,"r":240,"ie":6.194,"ea":null,"ox":"+6, +5, +4, +3","st":"Solid","mp":1408,"bp":4404,"d":18.95,"gb":"Actinide","y":1789},{"n":93,"s":"Np","nm":"Neptunium","m":237.048172,"cfg":"[Rn]7s2 5f4 6d1","en":1.36,"r":221,"ie":6.266,"ea":null,"ox":"+6, +5, +4, +3","st":"Solid","mp":917,"bp":4175,"d":20.25,"gb":"Actinide","y":1940},{"n":94,"s":"Pu","nm":"Plutonium","m":244.0642,"cfg":"[Rn]7s2 5f6","en":1.28,"r":243,"ie":6.06,"ea":null,"ox":"+6, +5, +4, +3","st":"Solid","mp":913,"bp":3501,"d":19.84,"gb":"Actinide","y":1940},{"n":95,"s":"Am","nm":"Americium","m":243.06138,"cfg":"[Rn]7s2 5f7","en":1.3,"r":244,"ie":5.993,"ea":null,"ox":"+6, +5, +4, +3","st":"Solid","mp":1449,"bp":2284,"d":13.69,"gb":"Actinide","y":1944},{"n":96,"s":"Cm","nm":"Curium","m":247.07035,"cfg":"[Rn]7s2 5f7 6d1","en":1.3,"r":245,"ie":6.02,"ea":null,"ox":"+3","st":"Solid","mp":1618,"bp":3400,"d":13.51,"gb":"Actinide","y":1944},{"n":97,"s":"Bk","nm":"Berkelium","m":247.07031,"cfg":"[Rn]7s2 5f9","en":1.3,"r":244,"ie":6.23,"ea":null,"ox":"+4, +3","st":"Solid","mp":1323,"bp":null,"d":14,"gb":"Actinide","y":1949},{"n":98,"s":"Cf","nm":"Californium","m":251.07959,"cfg":"[Rn]7s2 5f10","en":1.3,"r":245,"ie":6.3,"ea":null,"ox":"+3","st":"Solid","mp":1173,"bp":null,"d":null,"gb":"Actinide","y":1950},{"n":99,"s":"Es","nm":"Einsteinium","m":252.083,"cfg":"[Rn]7s2 5f11","en":1.3,"r":245,"ie":6.42,"ea":null,"ox":"+3","st":"Solid","mp":1133,"bp":null,"d":null,"gb":"Actinide","y":1952},{"n":100,"s":"Fm","nm":"Fermium","m":257.09511,"cfg":"[Rn] 5f12 7s2","en":1.3,"r":null,"ie":6.5,"ea":null,"ox":"+3","st":"Solid","mp":1800,"bp":null,"d":null,"gb":"Actinide","y":1952},{"n":101,"s":"Md","nm":"Mendelevium","m":258.09843,"cfg":"[Rn]7s2 5f13","en":1.3,"r":null,"ie":6.58,"ea":null,"ox":"+3, +2","st":"Solid","mp":1100,"bp":null,"d":null,"gb":"Actinide","y":1955},{"n":102,"s":"No","nm":"Nobelium","m":259.101,"cfg":"[Rn]7s2 5f14","en":1.3,"r":null,"ie":6.65,"ea":null,"ox":"+3, +2","st":"Solid","mp":1100,"bp":null,"d":null,"gb":"Actinide","y":1957},{"n":103,"s":"Lr","nm":"Lawrencium","m":266.12,"cfg":"[Rn]7s2 5f14 6d1","en":1.3,"r":null,"ie":null,"ea":null,"ox":"+3","st":"Solid","mp":1900,"bp":null,"d":null,"gb":"Actinide","y":1961},{"n":104,"s":"Rf","nm":"Rutherfordium","m":267.122,"cfg":"[Rn]7s2 5f14 6d2","en":null,"r":null,"ie":null,"ea":null,"ox":"+4","st":"Solid","mp":null,"bp":null,"d":null,"gb":"Transition metal","y":1964},{"n":105,"s":"Db","nm":"Dubnium","m":268.126,"cfg":"[Rn]7s2 5f14 6d3","en":null,"r":null,"ie":null,"ea":null,"ox":"5, 4, 3","st":"Solid","mp":null,"bp":null,"d":null,"gb":"Transition metal","y":1967},{"n":106,"s":"Sg","nm":"Seaborgium","m":269.128,"cfg":"[Rn]7s2 5f14 6d4","en":null,"r":null,"ie":null,"ea":null,"ox":"6, 5, 4, 3, 0","st":"Solid","mp":null,"bp":null,"d":null,"gb":"Transition metal","y":1974},{"n":107,"s":"Bh","nm":"Bohrium","m":270.133,"cfg":"[Rn]7s2 5f14 6d5","en":null,"r":null,"ie":null,"ea":null,"ox":"7, 5, 4, 3","st":"Solid","mp":null,"bp":null,"d":null,"gb":"Transition metal","y":1976},{"n":108,"s":"Hs","nm":"Hassium","m":269.1336,"cfg":"[Rn]7s2 5f14 6d6","en":null,"r":null,"ie":null,"ea":null,"ox":"8, 6, 5, 4, 3, 2","st":"Solid","mp":null,"bp":null,"d":null,"gb":"Transition metal","y":1984},{"n":109,"s":"Mt","nm":"Meitnerium","m":277.154,"cfg":"[Rn]7s2 5f14 6d7 (calculated)","en":null,"r":null,"ie":null,"ea":null,"ox":"9, 8, 6, 4, 3, 1","st":"Solid","mp":null,"bp":null,"d":null,"gb":"Transition metal","y":1982},{"n":110,"s":"Ds","nm":"Darmstadtium","m":282.166,"cfg":"[Rn]7s2 5f14 6d8 (predicted)","en":null,"r":null,"ie":null,"ea":null,"ox":"8, 6, 4, 2, 0","st":"Expected to be a Solid","mp":null,"bp":null,"d":null,"gb":"Transition metal","y":1994},{"n":111,"s":"Rg","nm":"Roentgenium","m":282.169,"cfg":"[Rn]7s2 5f14 6d9 (predicted)","en":null,"r":null,"ie":null,"ea":null,"ox":"5, 3, 1, -1","st":"Expected to be a Solid","mp":null,"bp":null,"d":null,"gb":"Transition metal","y":1994},{"n":112,"s":"Cn","nm":"Copernicium","m":286.179,"cfg":"[Rn]7s2 5f14 6d10 (predicted)","en":null,"r":null,"ie":null,"ea":null,"ox":"2, 1, 0","st":"Expected to be a Solid","mp":null,"bp":null,"d":null,"gb":"Transition metal","y":1996},{"n":113,"s":"Nh","nm":"Nihonium","m":286.182,"cfg":"[Rn]5f14 6d10 7s2 7p1 (predicted)","en":null,"r":null,"ie":null,"ea":null,"ox":null,"st":"Expected to be a Solid","mp":null,"bp":null,"d":null,"gb":"Post-transition metal","y":2004},{"n":114,"s":"Fl","nm":"Flerovium","m":290.192,"cfg":"[Rn]7s2 7p2 5f14 6d10 (predicted)","en":null,"r":null,"ie":null,"ea":null,"ox":"6, 4,2, 1, 0","st":"Expected to be a Solid","mp":null,"bp":null,"d":null,"gb":"Post-transition metal","y":1998},{"n":115,"s":"Mc","nm":"Moscovium","m":290.196,"cfg":"[Rn]7s2 7p3 5f14 6d10 (predicted)","en":null,"r":null,"ie":null,"ea":null,"ox":"3, 1","st":"Expected to be a Solid","mp":null,"bp":null,"d":null,"gb":"Post-transition metal","y":2003},{"n":116,"s":"Lv","nm":"Livermorium","m":293.205,"cfg":"[Rn]7s2 7p4 5f14 6d10 (predicted)","en":null,"r":null,"ie":null,"ea":null,"ox":"+4, +2, -2","st":"Expected to be a Solid","mp":null,"bp":null,"d":null,"gb":"Post-transition metal","y":2000},{"n":117,"s":"Ts","nm":"Tennessine","m":294.211,"cfg":"[Rn]7s2 7p5 5f14 6d10 (predicted)","en":null,"r":null,"ie":null,"ea":null,"ox":"+5, +3, +1, -1","st":"Expected to be a Solid","mp":null,"bp":null,"d":null,"gb":"Halogen","y":2010},{"n":118,"s":"Og","nm":"Oganesson","m":295.216,"cfg":"[Rn]7s2 7p6 5f14 6d10 (predicted)","en":null,"r":null,"ie":null,"ea":null,"ox":"+6, +4, +2, +1, 0, -1","st":"Expected to be a Gas","mp":null,"bp":null,"d":null,"gb":"Noble gas","y":2006}];
 //#core
 const FA="هیدروژن|هلیم|لیتیوم|بریلیوم|بور|کربن|نیتروژن|اکسیژن|فلوئور|نئون|سدیم|منیزیم|آلومینیوم|سیلیسیم|فسفر|گوگرد|کلر|آرگون|پتاسیم|کلسیم|اسکاندیم|تیتانیم|وانادیم|کروم|منگنز|آهن|کبالت|نیکل|مس|روی|گالیوم|ژرمانیم|آرسنیک|سلنیوم|بروم|کریپتون|روبیدیوم|استرانسیم|ایتریم|زیرکونیوم|نیوبیوم|مولیبدن|تکنسیوم|روتنیم|رودیم|پالادیم|نقره|کادمیوم|ایندیوم|قلع|آنتیموان|تلوریم|ید|زنون|سزیوم|باریم|لانتان|سریم|پرازئودیمیم|نئودیمیم|پرومتیم|ساماریم|اروپیم|گادولینیم|تربیم|دیسپروزیم|هولمیم|اربیم|تولیم|ایتربیم|لوتسیم|هافنیم|تانتال|تنگستن|رنیم|اسمیم|ایریدیم|پلاتین|طلا|جیوه|تالیوم|سرب|بیسموت|پولونیم|استاتین|رادون|فرانسیم|رادیم|اکتینیم|توریم|پروتاکتینیم|اورانیم|نپتونیم|پلوتونیم|امریسیم|کوریم|برکلیم|کالیفرنیم|اینشتینیم|فرمیم|مندلیفیم|نوبلیم|لارنسیم|رادرفوردیم|دوبنیم|سیبورگیم|بوهریم|هاسیم|مایتنریم|دارمشتادیم|رونتگنیم|کوپرنیسیم|نیهونیم|فلروویم|مسکوویم|لیورموریوم|تنسین|اوگانسون".split("|");
@@ -326,6 +294,5 @@ $("#csa").onchange=e=>{S.cmp[0]=+e.target.value||null;renderCmp()};
 $("#csb").onchange=e=>{S.cmp[1]=+e.target.value||null;renderCmp()};
 document.querySelectorAll("dialog").forEach(d=>{d.addEventListener("click",e=>{if(e.target===d)d.close()});d.querySelector("[data-close]").onclick=()=>d.close()});
 buildTable();statics();view();
-</script>
-</body>
+</script></body>
 </html>
