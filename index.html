@@ -294,5 +294,7 @@ $("#csa").onchange=e=>{S.cmp[0]=+e.target.value||null;renderCmp()};
 $("#csb").onchange=e=>{S.cmp[1]=+e.target.value||null;renderCmp()};
 document.querySelectorAll("dialog").forEach(d=>{d.addEventListener("click",e=>{if(e.target===d)d.close()});d.querySelector("[data-close]").onclick=()=>d.close()});
 buildTable();statics();view();
+$("#bCmp2").onclick=openCmp;
+$("#tv2").textContent=`${S.temp} K (${Math.round(S.temp-273.15)} °C)`;
 </script></body>
 </html>
